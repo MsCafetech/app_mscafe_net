@@ -1,0 +1,320 @@
+{
+ "schemaVersion": 2,
+ "updatedAt": "2026-11-02",
+ "modes": [
+  {
+   "id": "nengo",
+   "title": "日本史年号",
+   "catch": "出来事 → 年号",
+   "version": 4,
+   "count": 529,
+   "parts": [
+    {
+     "no": 0,
+     "file": "nengo000.zip",
+     "sha256": "ac7b5c60f70cb9cc31b5113cb1c5e5d051ca5a7bede3840a0add623576939694",
+     "size": 15527
+    },
+    {
+     "no": 1,
+     "file": "nengo001.zip",
+     "sha256": "db9a52656b716508c3a53a1536d3f9e45d09396abc04fb866a781c0f49e4c563",
+     "size": 15677
+    },
+    {
+     "no": 2,
+     "file": "nengo002.zip",
+     "sha256": "52433cd7bea4edbbda3b92d227ef9ec438700d94bb0a165277ca8e4042269a7e",
+     "size": 16432
+    },
+    {
+     "no": 3,
+     "file": "nengo003.zip",
+     "sha256": "cc3ad43f750dc360230e6d2ab3c16c1b53cd883cca2b07b94dfbbb07647ad0b8",
+     "size": 15235
+    },
+    {
+     "no": 4,
+     "file": "nengo004.zip",
+     "sha256": "a17ab7b59a049263fa91867389270331c037840639ff4a298430f5875a2d858f",
+     "size": 15760
+    },
+    {
+     "no": 5,
+     "file": "nengo005.zip",
+     "sha256": "d7d3fb85162992f6187549c2b5f09ac3a8d3de533eed4a24ee748a308367070e",
+     "size": 5237
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "sekaishi",
+   "title": "世界史年号",
+   "catch": "出来事 → 年号（世界の歴史）",
+   "version": 1,
+   "count": 556,
+   "parts": [
+    {
+     "no": 0,
+     "file": "sekaishi000.zip",
+     "sha256": "f1c5badb593df7efe08aed72db4c9f40c749078ab0d511afccf8fc32fad87d8d",
+     "size": 17879
+    },
+    {
+     "no": 1,
+     "file": "sekaishi001.zip",
+     "sha256": "9ed6d2abb151e6cc4968752124374f0efd73a5df075c41ceaddd6002e36d9c04",
+     "size": 16778
+    },
+    {
+     "no": 2,
+     "file": "sekaishi002.zip",
+     "sha256": "594b8a28fbfba8bd397880953405ba07ec4e790024b011e8e633c0895ca2c145",
+     "size": 17241
+    },
+    {
+     "no": 3,
+     "file": "sekaishi003.zip",
+     "sha256": "09ca5e69f78df083d0428ce5550214732dd847388b18c89848c6fa1ca7a80d78",
+     "size": 16732
+    },
+    {
+     "no": 4,
+     "file": "sekaishi004.zip",
+     "sha256": "aa4f7d786634a946ca5ceff4d95a8a8e082efd6a01acffcc686e666c695fa8a0",
+     "size": 17061
+    },
+    {
+     "no": 5,
+     "file": "sekaishi005.zip",
+     "sha256": "31b5615884e20041faad91abd0a0d95d23b09bec19a2223fd3d1e84518d59627",
+     "size": 9707
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "kagaku",
+   "title": "化学式",
+   "catch": "物質名 → 化学式（立体の分子模型つき）",
+   "version": 5,
+   "count": 54,
+   "parts": [
+    {
+     "no": 0,
+     "file": "kagaku000.zip",
+     "sha256": "103e9b27fa13cfb40007f47556b805f69d58eca82f1cc06c36775fc2adac6e83",
+     "size": 586289
+    }
+   ],
+   "enabled": true
+  },
+  {
+   "id": "hannou",
+   "title": "化学反応式",
+   "catch": "反応する物質 → できる物質（分子模型つき・電離式も）",
+   "version": 4,
+   "count": 63,
+   "parts": [
+    {
+     "no": 0,
+     "file": "hannou000.zip",
+     "sha256": "62b2b6efce0f18c0ee7af7daf75ee9a3f31c8759336da9cd678bc107ea1b595e",
+     "size": 1166824
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "yamanote",
+   "title": "JR山手線",
+   "catch": "駅 → 外回りの次の駅（答えは駅名標）",
+   "version": 4,
+   "count": 30,
+   "parts": [
+    {
+     "no": 0,
+     "file": "yamanote000.zip",
+     "sha256": "2e3350ff2647d10e17ae82d1d54a43616d53b37d61692d44f3d253ef53450f21",
+     "size": 664788
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "kokki",
+   "title": "世界の国旗",
+   "catch": "国旗 → 国名（国連加盟国など199枚）",
+   "version": 3,
+   "count": 199,
+   "parts": [
+    {
+     "no": 0,
+     "file": "kokki000.zip",
+     "sha256": "5d0b8500fddba4ef64f12b811b3a9b47937208bacc55479e83573f4dffcf4893",
+     "size": 448739
+    },
+    {
+     "no": 1,
+     "file": "kokki001.zip",
+     "sha256": "c8806fac54202f93b4a76bbb895be9fb2f6be9c65089ae34c284721c1df5aefe",
+     "size": 527010
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "todofuken",
+   "title": "日本地図",
+   "catch": "色の付いた都道府県 → 名前（47都道府県）",
+   "version": 4,
+   "count": 47,
+   "parts": [
+    {
+     "no": 0,
+     "file": "todofuken000.zip",
+     "sha256": "447a06fb8b4115b5bd3242242567c8d20a21da2b33d4e696f0801921a3360cf8",
+     "size": 1826024
+    }
+   ],
+   "enabled": true
+  },
+  {
+   "id": "sekai",
+   "title": "世界地図",
+   "catch": "地図で色の付いた国 → 国名（198か国）",
+   "version": 3,
+   "count": 198,
+   "parts": [
+    {
+     "no": 0,
+     "file": "sekai000.zip",
+     "sha256": "1a769ba8d121a90c8f874de49e636d3aadfef25dfabb3a7d111ad480abbb4367",
+     "size": 5823020
+    },
+    {
+     "no": 1,
+     "file": "sekai001.zip",
+     "sha256": "123e9bb412f588331d0065da8a200d613fb683d764769045982589d8d699568f",
+     "size": 3588472
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "chikei",
+   "title": "日本の地形",
+   "catch": "地図で色の付いた場所 → 川・山・平野などの名前",
+   "version": 5,
+   "count": 101,
+   "parts": [
+    {
+     "no": 0,
+     "file": "chikei000.zip",
+     "sha256": "09df927f524a0d64153c01825556da1bacc3615644b9d5db77339613a5435b34",
+     "size": 1516340
+    },
+    {
+     "no": 1,
+     "file": "chikei001.zip",
+     "sha256": "5116889c3274e19ec8398ff94e401b589e827167e89826faad023bff9e34c916",
+     "size": 17000
+    }
+   ],
+   "enabled": true
+  },
+  {
+   "id": "tentai",
+   "title": "天体・星座",
+   "catch": "太陽系の惑星・衛星・88星座の形・星の名前",
+   "version": 4,
+   "count": 131,
+   "parts": [
+    {
+     "no": 0,
+     "file": "tentai000.zip",
+     "sha256": "b756c83f1315a3f70095a4df5f7069aaaaceec4285dd24ea34ebd413df23eb20",
+     "size": 529348
+    },
+    {
+     "no": 1,
+     "file": "tentai001.zip",
+     "sha256": "fe34a469e3a839847bbe247fbaa1eb9de390f056783a8880c9e1e050acee031d",
+     "size": 178446
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "ryakusho",
+   "title": "社会の略語",
+   "catch": "APEC・UNESCO など → 日本語の名前（中学の社会）",
+   "version": 5,
+   "count": 73,
+   "parts": [
+    {
+     "no": 0,
+     "file": "ryakusho000.zip",
+     "sha256": "b8290778f014486c0e30f2ecb8220a402adf10b6e6955ba90b279d7e6b189cdc",
+     "size": 16896
+    }
+   ],
+   "enabled": true
+  },
+  {
+   "id": "kigou",
+   "title": "地図記号",
+   "catch": "地形図の記号 → 名前（国土地理院の地図記号）",
+   "version": 2,
+   "count": 35,
+   "parts": [
+    {
+     "no": 0,
+     "file": "kigou000.zip",
+     "sha256": "4c7451f86233540ebaa8618e939a82ea73f21b9ab09e5d15c1b968ad05baf918",
+     "size": 151713
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "butsuri",
+   "title": "物理の名称",
+   "catch": "説明と図 → 中学理科の用語・法則",
+   "version": 1,
+   "count": 73,
+   "parts": [
+    {
+     "no": 0,
+     "file": "butsuri000.zip",
+     "sha256": "a7fff0f1ea0cd64fde3e070b38fd8e72ab2005718c3d14213e72fcbe7d2f998b",
+     "size": 400847
+    }
+   ],
+   "enabled": false
+  },
+  {
+   "id": "katsuyou",
+   "title": "英語活用",
+   "catch": "go → went → gone・I → my → me → mine（中学）",
+   "version": 2,
+   "count": 110,
+   "parts": [
+    {
+     "no": 0,
+     "file": "katsuyou000.zip",
+     "sha256": "9296d8cd03922d34a1b9a91e86cc805a122c27ce50cc611a3cedadddcdae2737",
+     "size": 35723
+    },
+    {
+     "no": 1,
+     "file": "katsuyou001.zip",
+     "sha256": "3a094dedd2b48a5127002797d4b7dcb55f2286611e304f76e599519dcc31e05d",
+     "size": 3603
+    }
+   ],
+   "enabled": false
+  }
+ ]
+}
