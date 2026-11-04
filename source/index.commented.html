@@ -51,6 +51,7 @@ const SITE = {
 /* お知らせ：新しいものを上に書く。text の中の \n で改行。
    一覧には5行まで表示し、5行を超えるときは4行目までにする。「すべてを表示」は件数にかかわらず出す */
 const NEWS = [
+  { date: '2026/11/04', tag: 'TG1900 Master', text: 'クローズドテストを中止しました。リリースも当面見送ります。' },
   { date: '2026/11/04', tag: 'タップる？', text: '新しいゲーム「タップる？」のクローズドテストを始めました。テスターを募集しています。' },
   { date: '2026/11/01', tag: 'FuRUSH', text: 'Android 版のクローズドテストを開始しました。テスターを募集しています。' },
   { date: '2026/10/26', tag: 'アプリ見守り', text: 'Android 版のクローズドテストを開始しました。テスターを募集しています。' },
@@ -1112,11 +1113,11 @@ const APPS = [
     info: [['アプリ名', 'PDF暗記マーカー'], ['監修', '現役東大生'], ['対応OS', 'Android 8.0 以上 ／ iOS（未開発）'], ['料金', '無料（広告あり）'], ['配布', 'Google Play（クローズドテスト中）'], ['保存', 'マスク・チェック・ハイライト・落書き・栞はPDFごとに記録します。PDFファイルのコピーは作りません。'], ['操作説明', '初回に動く絵で説明します。PDFを開いた画面のメニュー（☰）から、いつでも見直せます。']],
   },
   {
-    id: 'tg1900', name: 'TG1900 Master', icon: tgIcon, status: 'クローズドテスト中 ／ リリースは当面見送り',
-    flag: ['リリース見送り', 'クローズドテストは継続中です。一般公開（リリース）は当面見送ります。'], tester: TESTER_FORM_URL, bug: BUG_FORM_TG1900, test: TEST_URL_TG1900,
+    id: 'tg1900', name: 'TG1900 Master', icon: tgIcon, status: 'クローズドテスト中止 ／ リリースは当面見送り',
+    flag: ['テスト中止', 'クローズドテストは中止しました。一般公開（リリース）も当面見送ります。'], bug: BUG_FORM_TG1900, test: TEST_URL_TG1900,
     one: '大学受験向けの英単語1900語を、5つのモードで覚える無料アプリ。',
     headline: '<span class="nb">覚えていない単語から、</span><span class="nb"><span class="hl">先</span>に出る。</span>',
-    lead: '大学受験向けの英単語1900語を、5つのモードで覚える無料アプリです。苦手な単語ほど出やすいので、ムダなく進みます。単語データはアプリに入っているので、電波がなくても学習できます。クローズドテストは続けますが、一般公開（リリース）は当面見送ります。',
+    lead: '大学受験向けの英単語1900語を、5つのモードで覚える無料アプリです。苦手な単語ほど出やすいので、ムダなく進みます。単語データはアプリに入っているので、電波がなくても学習できます。クローズドテストは中止しており、一般公開（リリース）も当面見送ります。',
     os: '対応OS　Android 8.0 以上 ／ iOS（開発中）　　料金　無料（広告あり）', store: { label: 'リリースは当面見送り', url: '' },
     demo: tgDemo, init: initTg,
     modes: [
@@ -1137,7 +1138,7 @@ const APPS = [
       [ILL.cache, 'オフラインでも学習', '単語データはアプリに入っているので、初めての起動から電波なしで学習できます。例文とイラストは、ネットにつながると自動で取得。一度取得すれば、電波がなくても使えます。最新への更新は、ホームを下に引っ張るか、右上の「≡」から。'],
       [ILL.tune, '自分好みに調整', '効果音・バイブのオン／オフ、ホームのモードのドラッグ入れ替え、モードごとの履歴リセット。初回は動く操作説明つきで、あとから何度でも見られます。'],
     ],
-    info: [['アプリ名', 'TG1900 Master'], ['対応OS', 'Android 8.0 以上 ／ iOS（開発中）'], ['料金', '無料（広告あり）'], ['配布', 'Google Play のクローズドテストのみ（リリースは当面見送り）'], ['データ', '単語・例文・例文のイラストは、店長が用意しています。'], ['学習履歴', '端末内に保存。モードごとにリセットできます。']],
+    info: [['アプリ名', 'TG1900 Master'], ['対応OS', 'Android 8.0 以上 ／ iOS（開発中）'], ['料金', '無料（広告あり）'], ['配布', 'なし（クローズドテストは中止、リリースは当面見送り）'], ['データ', '単語・例文・例文のイラストは、店長が用意しています。'], ['学習履歴', '端末内に保存。モードごとにリセットできます。']],
     note: '『英単語ターゲット1900』の出題単語を使っていますが、出版社とは無関係の非公式アプリです。デモの単語は例で、実際のアプリとは異なります。',
   },
   {
@@ -1961,8 +1962,9 @@ ${url
   ? `<a class="btn btn-main" href="${url}" target="_blank" rel="noopener">Google グループに参加する</a><p class="tester-n">Google グループのページが開きます。「グループに参加」を押してください。グループのアドレス：${TESTER_GROUP}</p>`
   : '<span class="btn btn-off">参加の受付準備中</span>'}</div>`;
 /* クローズドテスト：アプリごとの Google Play のページへのボタン */
+const RECRUIT = () => APPS.filter(a => a.tester !== undefined);
 const testEl = () => `<div class="bugs"><p class="tester-h">クローズドテストのリンク</p><p class="tester-p">Google グループに参加したあとで開いてください。参加前のアカウントでは、ページが表示されないことがあります。</p>
-${APPS.map(a => `<div class="bug-row"><b>${a.name}</b>${a.test
+${RECRUIT().map(a => `<div class="bug-row"><b>${a.name}</b>${a.test
   ? `<a class="btn btn-main" href="${a.test}" target="_blank" rel="noopener">Google Play で開く</a>`
   : '<span class="btn btn-off">準備中</span>'}</div>`).join('\n')}
 </div>`;
@@ -2003,7 +2005,7 @@ const initNews = () => {
 };
 /* 不具合報告：アプリごとのフォームへのボタン */
 const bugEl = () => `<div class="bugs"><p class="tester-h">不具合報告</p><p class="tester-p">お出ししたアプリに不具合がありましたら、こちらからお知らせください。Google フォームが開きます。</p>
-${APPS.map(a => `<div class="bug-row"><b>${a.name}</b>${a.bug
+${RECRUIT().map(a => `<div class="bug-row"><b>${a.name}</b>${a.bug
   ? `<a class="btn btn-main" href="${a.bug}" target="_blank" rel="noopener">不具合を報告する</a>`
   : '<span class="btn btn-off">フォーム準備中</span>'}</div>`).join('\n')}
 </div>`;
@@ -2061,7 +2063,7 @@ const render = () => {
   </section>
   <section class="sec wrap" id="recruit">
     <div class="sec-head"><h2>テスター募集</h2><p class="sec-lead">お店のアプリづくりに協力してくださる方を、全アプリで募集しています。</p></div>
-    <div class="recruit-apps">${APPS.map(a => `<a class="ra" href="#${a.id}" data-open="${a.id}">${a.icon(36)}<span><b>${a.name}</b><small>${a.status}</small></span></a>`).join('')}</div>
+    <div class="recruit-apps">${RECRUIT().map(a => `<a class="ra" href="#${a.id}" data-open="${a.id}">${a.icon(36)}<span><b>${a.name}</b><small>${a.status}</small></span></a>`).join('')}</div>
     <div class="accs boxes">
       ${boxItem('closed-test', 'test', 'クローズドテストの募集', '参加のしかたと条件、アプリごとのクローズドテストのリンク', testerEl(TESTER_FORM_URL) + testEl())}
       ${boxItem('bug-report', 'bug', '不具合報告', 'アプリごとの不具合報告フォーム', bugEl())}
