@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 267,007 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 267,927 バイト）。</pre>';
   }
 });
 </script>
@@ -113,7 +113,7 @@ const ADMIN_ICON = 'data:image/jpeg;base64,' + [
   'BSoRQhKhFKFGajNFOSAgKURAERMkAREQBERAEQIgGaIiAIiIAiIgCZoiAKETJCBTmijJATmoUqEBOahMkVB//9k=',
 ].join('');
 const LEGAL_DATE = '2026年10月11日';
-const LEGAL_UPDATED = '2026年11月4日';
+const LEGAL_UPDATED = '2026年11月6日';
 const MAIL_R = '==QbvNmLslWYtdGQ5JXZ25SeuFWbukncyVWb';
 const TEAM = [
   { cls: 'pm',     role: 'PM',      name: 'M.A.C.Y', kind: 'human', desc: '企画と優先順位を決める' },
@@ -1466,6 +1466,7 @@ const LEGAL = [
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
     'アプリがサーバーと通信する際（出題データの取得など）、サーバー側でIPアドレスが記録されます。それ以外の個人を特定する情報は取得しません。',
+    'FuRUSH は、問題のデータを GitHub（GitHub, Inc.）の公開リポジトリから取得します（raw.githubusercontent.com）。アプリの起動時に更新の有無を確かめ、モードを開いたときにデータをダウンロードします。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。',
     'アプリによっては、不具合の調査とアプリの改善のため、Google の Firebase（Crashlytics / Analytics）を利用します。クラッシュ情報、端末情報（機種・OSなど）、アプリの利用状況、アプリのインスタンスIDが Google に送信されます。',
     `広告を表示するアプリ（${AD_APPS}）では、広告配信のため、Google AdMob が広告IDなどを取得します（次項参照）。`,
     '不具合報告は、Google フォームで受け付けます。フォームに入力された内容は Google に送信され、不具合の調査・修正にのみ利用します。',
@@ -1504,7 +1505,7 @@ const LEGAL = [
   H('7. 第三者提供・外部事業者によるデータ利用') +
   UL([
     '店長は、法令に基づく場合を除き、本人の同意なく、取得した個人情報を第三者に提供しません。また、個人情報を販売することはありません。',
-    'ただし、前項までに記載した広告・外部サービスの事業者（Google LLC、Wikimedia Foundation、脅威リスト・国データの配布元など）は、それぞれ自らのポリシーに従って情報を取得・利用します。',
+    'ただし、前項までに記載した広告・外部サービスの事業者（Google LLC、Wikimedia Foundation、GitHub, Inc.、脅威リスト・国データの配布元など）は、それぞれ自らのポリシーに従って情報を取得・利用します。',
     'これらの事業者は、米国など日本以外の国にサーバーを置いており、情報はそれらの国で保存・処理されることがあります。各事業者のポリシーで、保護の取り組みをご確認ください。',
   ]) +
   H('8. 利用者の選択と、開示・訂正・削除などの請求') +
@@ -1539,6 +1540,7 @@ const LEGAL = [
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
     'When an app communicates with a server (for example, to download question data), the server records your IP address. No other personally identifiable information is collected.',
+    'FuRUSH downloads its question data from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. It checks for updates when the app starts and downloads data when you open a mode. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub.',
     'Some apps use Google Firebase (Crashlytics / Analytics) to investigate bugs and improve the apps. Crash information, device information (model, OS, etc.), app usage and the app instance ID are sent to Google.',
     `In the apps that show ads (${AD_APPS_EN}), Google AdMob collects the advertising ID and other information to serve ads (see Section 3).`,
     'Bug reports are accepted through Google Forms. What you enter is sent to Google and used only to investigate and fix bugs.',
@@ -1577,7 +1579,7 @@ const LEGAL = [
   H('7. Sharing with third parties') +
   UL([
     'The Manager does not provide personal information to third parties without your consent, except as required by law. The Manager does not sell personal information.',
-    'However, the providers of the advertising and external services described above (Google LLC, Wikimedia Foundation, distributors of threat lists and country data, etc.) collect and use information under their own policies.',
+    'However, the providers of the advertising and external services described above (Google LLC, Wikimedia Foundation, GitHub, Inc., distributors of threat lists and country data, etc.) collect and use information under their own policies.',
     'These providers have servers in countries outside Japan, such as the United States, and information may be stored and processed in those countries. Please see each provider’s policy for how they protect it.',
   ]) +
   H('8. Your choices and requests for disclosure, correction or deletion') +
