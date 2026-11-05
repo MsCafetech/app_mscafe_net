@@ -14,7 +14,7 @@
 <meta property="og:locale" content="ja_JP">
 </head>
 <body>
-<noscript>このサイトの表示にはJavaScriptが必要です。</noscript>
+<noscript>このサイトの表示にはJavaScriptが必要です。 / This site requires JavaScript.</noscript>
 <div id="app"></div>
 <script>
 window.addEventListener('error', function (e) {
@@ -27,24 +27,41 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 241,288 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 276,954 バイト）。</pre>';
   }
 });
 </script>
 <script>
 (() => {
 'use strict';
+const LANG_KEY = 'mscafe-lang';
+const firstLang = () => {
+  const h = /-(en|ja)$/.exec(location.hash);
+  if (h) return h[1];
+  try { const v = localStorage.getItem(LANG_KEY); if (v === 'ja' || v === 'en') return v; } catch (e) {  }
+  try { return /^ja/i.test((navigator.languages && navigator.languages[0]) || navigator.language || 'ja') ? 'ja' : 'en'; } catch (e) { return 'ja'; }
+};
+let LANG = firstLang();
+const L = (ja, en) => (LANG === 'en' ? en : ja);
+let DEMO_I = -1;
+let AC = null, RO = null;
+const ANCHORS = '#app header, #app section, #app h2, #app h4, #app .card, #app .steps li, #app .dl > div, #app .demo, #app .pn-top, #app footer';
+const boot = (keep = {}) => {
+AC && AC.abort(); AC = new AbortController();
+const SIG = { signal: AC.signal };
+RO && RO.disconnect(); RO = null;
+document.documentElement.lang = LANG;
 const SITE = {
   name: 'MsCafe', tld: '.tech', admin: 'M.A.C.Y', year: 2026,
-  lead: 'アプリを紹介する喫茶店です。気になるアプリを開いて、ゆっくりご覧ください。',
+  lead: L('アプリを紹介する喫茶店です。気になるアプリを開いて、ゆっくりご覧ください。', 'Welcome to a caf\u00E9 that serves apps. Open any app that catches your eye and take your time.'),
 };
 const NEWS = [
-  { date: '2026/11/04', tag: 'タップる？', text: '新しいゲーム「タップる？」のクローズドテストを始めました。テスターを募集しています。' },
-  { date: '2026/11/01', tag: 'FuRUSH', text: 'Android 版のクローズドテストを開始しました。テスターを募集しています。' },
-  { date: '2026/10/26', tag: 'アプリ見守り', text: 'Android 版のクローズドテストを開始しました。テスターを募集しています。' },
-  { date: '2026/10/23', tag: 'アプリ見守り', text: '新しいアプリ「アプリ見守り」の紹介を掲載しました。Android 版のクローズドテストを開始予定です。' },
-  { date: '2026/10/20', tag: 'FuRUSH', text: '新しいアプリ「FuRUSH」を開発中です。' },
-  { date: '2026/10/19', tag: 'PDF暗記マーカー', text: 'PlayStoreクローズドテスト開始' },
+  { date: '2026/11/04', tag: L('タップる？', 'TaPru'), text: L('新しいゲーム「タップる？」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new game “TaPru”. We are looking for testers.') },
+  { date: '2026/11/01', tag: 'FuRUSH', text: L('Android 版のクローズドテストを開始しました。テスターを募集しています。', 'Closed testing of the Android version has started. We are looking for testers.') },
+  { date: '2026/10/26', tag: L('アプリ見守り', 'App Monitor'), text: L('Android 版のクローズドテストを開始しました。テスターを募集しています。', 'Closed testing of the Android version has started. We are looking for testers.') },
+  { date: '2026/10/23', tag: L('アプリ見守り', 'App Monitor'), text: L('新しいアプリ「アプリ見守り」の紹介を掲載しました。Android 版のクローズドテストを開始予定です。', 'Added an introduction to our new app “App Monitor”. Closed testing of the Android version is coming soon.') },
+  { date: '2026/10/20', tag: 'FuRUSH', text: L('新しいアプリ「FuRUSH」を開発中です。', 'Our new app “FuRUSH” is in development.') },
+  { date: '2026/10/19', tag: L('PDF暗記マーカー', 'PDF Memorization Marker'), text: L('PlayStoreクローズドテスト開始', 'Closed testing started on Google Play') },
 ];
 const NEWS_LINES = 5;
 const TESTER_FORM_URL = 'https://groups.google.com/g/mscafemobiletester';
@@ -111,17 +128,17 @@ const LEGAL_DATE = '2026年10月11日';
 const LEGAL_UPDATED = '2026年11月6日';
 const MAIL_R = '==QbvNmLslWYtdGQ5JXZ25SeuFWbukncyVWb';
 const TEAM = [
-  { cls: 'pm',     role: 'PM',      name: 'M.A.C.Y', kind: 'human', desc: '企画と優先順位を決める' },
-  { cls: 'coder',  role: 'CODER',   name: 'Claude',  kind: 'ai',    desc: '設計と実装を担当する' },
-  { cls: 'subc',   role: 'DESIGNER', name: 'Gemini',  kind: 'ai',    desc: '画面とデザインを担当する' },
-  { cls: 'adv',    role: 'ADVISOR', name: 'ChatGPT', kind: 'ai',    desc: '企画の相談役' },
-  { cls: 'sup',    role: 'SUPERVISOR', name: '現役東大生', kind: 'human', desc: 'アプリの監修' },
+  { cls: 'pm',     role: 'PM',      name: 'M.A.C.Y', kind: 'human', desc: L('企画と優先順位を決める', 'Plans the menu and sets priorities') },
+  { cls: 'coder',  role: 'CODER',   name: 'Claude',  kind: 'ai',    desc: L('設計と実装を担当する', 'Designs and builds the apps') },
+  { cls: 'subc',   role: 'DESIGNER', name: 'Gemini',  kind: 'ai',    desc: L('画面とデザインを担当する', 'Handles screens and visual design') },
+  { cls: 'adv',    role: 'ADVISOR', name: 'ChatGPT', kind: 'ai',    desc: L('企画の相談役', 'Advises on ideas') },
+  { cls: 'sup',    role: 'SUPERVISOR', name: L('現役東大生', 'A current University of Tokyo student'), kind: 'human', desc: L('アプリの監修', 'Supervises the apps') },
 ];
 const avatar = kind => kind === 'ai'
   ? `<svg class="av" viewBox="0 0 56 56" aria-hidden="true"><rect class="av-bg" width="56" height="56" rx="16"/><path class="av-ai" d="M28 11l4.6 11.4L44 27l-11.4 4.6L28 43l-4.6-11.4L12 27l11.4-4.6z"/><path class="av-ai" d="M42 8l1.6 3.4L47 13l-3.4 1.6L42 18l-1.6-3.4L37 13l3.4-1.6z"/></svg>`
   : `<svg class="av" viewBox="0 0 56 56" aria-hidden="true"><rect class="av-bg" width="56" height="56" rx="28"/><circle class="av-h" cx="28" cy="22" r="9"/><path class="av-h" d="M10 49c1.6-10 8.6-15 18-15s16.4 5 18 15z"/></svg>`;
 const orgHtml = () => {
-  const node = m => `<div class="node ${m.cls}">${avatar(m.kind)}<span class="role">${m.role}</span><span class="nm">${m.name}<span class="kind ${m.kind}">${m.kind === 'ai' ? 'AI' : '人'}</span></span><span class="dsc">${m.desc}</span></div>`;
+  const node = m => `<div class="node ${m.cls}">${avatar(m.kind)}<span class="role">${m.role}</span><span class="nm">${m.name}<span class="kind ${m.kind}">${m.kind === 'ai' ? 'AI' : L('人', 'Human')}</span></span><span class="dsc">${m.desc}</span></div>`;
   return `<div class="org">${TEAM.map(node).join('')}</div>`;
 };
 const $ = (s, r = document) => r.querySelector(s);
@@ -419,11 +436,16 @@ h2{font:900 clamp(26px,4vw,38px)/1.3 var(--f-display);text-wrap:balance}
 .mailbox{display:flex;flex-direction:column;gap:6px;align-items:flex-start;padding:16px 18px;border:1.5px dashed var(--line);border-radius:16px;background:var(--tint);margin:6px 0 16px}
 .mailbox canvas{display:block;max-width:100%;height:auto;color:var(--ink);user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .mailbox small{color:var(--muted);font-size:12.5px;line-height:1.6}
-.accs.legal:not(.en) .l-en,.accs.legal.en .l-ja{display:none}
 .sec-lead span[lang="en"]{display:block;font-size:13px}
 .lang-sw{display:inline-flex;margin-top:14px;padding:4px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface)}
 .lang-sw button{appearance:none;border:0;background:none;color:var(--muted);font:700 14px/1 var(--f-body);padding:9px 18px;border-radius:999px;cursor:pointer}
 .lang-sw button[aria-pressed="true"]{background:var(--mask);color:var(--mask-ink)}
+.no-anim *{transition:none!important}
+.nav-r{display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px}
+.lang-sw.hd{margin-top:0;padding:3px;border-color:rgba(255,255,255,.24);background:rgba(0,0,0,.2)}
+.lang-sw.hd button{color:var(--on-deep-muted);font-size:12.5px;padding:7px 12px}
+.lang-sw.hd button[aria-pressed="true"]{background:var(--mask);color:var(--mask-ink)}
+@media (max-width:640px){.nav{position:relative}.lang-sw.hd{position:absolute;top:21px;right:0}}
 .accs.boxes{margin-top:22px}
 .pn.pn-box{gap:0}
 .pn-box>.tester:first-child,.pn-box>.bugs:first-child{margin-top:0}
@@ -517,7 +539,7 @@ const PDF_ICON = 'data:image/webp;base64,' + [
   'jDU6XMPlFfSZKLpexdvEDAqyf0RVW1+cQcUkDuMQ+4xl4JkkiVrRyl6C6qeWrU6xtm/V1kICOvhozHMfMtQ22FyNHtCKGTCpvXfSHNTIpOfEoqMTAFWaFczNJnMNnha3HRoMTlZnAFhBnNt6H5xzul1mgo2hGzsX2D36pRnZyRx3siShSLYfE+Oc7vERNzcJMW0izPe1tgb8HbYcV64TCTVUjNinrJQpZmYK8pbE4D8h13IA5G4svKVnIqGJJCBg9oE/zsHbO067uGH2JIrqIkqtojV9c1TsCJ3RS/U6lvB3',
   '+ACydROofC6SWnSSvPNQSqq9NRGEQBpodINtl4DiOKcK5Js0PDsXIO2/JcXuEkSm5TtpEy+vVhxevqYKl2tkdvwecEUuHAKWOE5zu3FSIRaU/7CSPh6tqc6vkWx/k29v2mbQNG+gxpF00vD5GghT3VKuyCW2Qd+X4BN65R7ETFxkakqXOSRE1EkMF8Fq+XrDkAM1BRqG2h8sut194whlqRmrASo7xlD8wKZzElFu93/XeVToj4JYAAA=',
 ].join('');
-const pdfIcon = (s = 48) => `<img src="${PDF_ICON}" width="${s}" height="${s}" alt="PDF暗記マーカーのアイコン" style="display:block;border-radius:22%">`;
+const pdfIcon = (s = 48) => `<img src="${PDF_ICON}" width="${s}" height="${s}" alt="${L('PDF暗記マーカーのアイコン', 'PDF Memorization Marker icon')}" style="display:block;border-radius:22%">`;
 const MT_ICON = 'data:image/webp;base64,' + [
   'UklGRlgcAABXRUJQVlA4IEwcAACwagCdASrAAMAAPlEkjkUjoiEUCj4AOAUEsROA2wHMuLw1gaQnAb19ns3PHS7QkIessvvrH/rfcB8LP+1/evdH+hPYG/Vrpd/3D/s+or+kf4H9yPep/0X7Ke9X/GeoB/Sf9b6WHsWf37/kewB+w///9eX9z/hS/sH/P/dn2pf//1gHAtdv3+N/KnsZ/PPtb/cufr05/vfQj+UfdH87/e/3C+LP9P/zfDv4e/5PqF/kP8m/uX5k/3f1Q9tZpH+5/5HqC+r/0j/Tf3P/Df+b',
   '++/H59V/m/Q7+S/v/+d/LT6AP1b/y/5n/3Lnrvvn+89gL+R/0z/Xf5H92/8B8lv/J/r/Q99Gf9r/QfAX/L/6r/vf7x/m/2X+cP2Zfu17LX7Rf/9AVF2zgCXk/Yrkwtpqad7VoIfMt5FvV1XP+UjfuEWlfFyDF5IBScw9R26hjq8q/2PMN1q2b3aVxTT4wV/wMfJx8AAeeUfigmYsF9hKVEtmVWLQfBuenDfdALicqkQAEi1ODKvek7ZIbYLwpNI6uu0NnJumCP6KQFSmc64BF2CR2CtV63XO/u/a3aT18YUc',
@@ -553,7 +575,7 @@ const MT_ICON = 'data:image/webp;base64,' + [
   'JpEo7AdOlHhFvSXrgCCKOa0fpahNWX0KTLiS/3AEUO8B1OzF1xYF3eaOEp4s3mSGYUnVhMXWPV2Yygg509gfwdKw+xb+FCtrY4LAPd59GrFPxtm9WjkW0AUY4nWFvsxMwo3WmP5TUdS9NOzfkWFAqg/oFpBFEffIkoOag4b3lNEor1hHOgF1pEH+Y0stMJafIWqQSV+iPpwwAaBRDj11r64/uKiLqPtlsgo81lOkYWLnQ4dCFNXaMTJiU5ouQox/BcPu29SYeGjjRm7t6SUPEWKYkyg21vmeBxdKesupcO8A',
   '1lqYOc7u46gyAIkDm1vvliJfu9lJjoDpdvO9wPq8iaEGJO2rQyHdlWfYKBjv8K+SJY7tYsAvdk74PbVU2AAAAA==',
 ].join('');
-const mtIcon = (s = 48) => `<img src="${MT_ICON}" width="${s}" height="${s}" alt="マルチ翻訳PDFビューワーのアイコン" style="display:block;border-radius:22%">`;
+const mtIcon = (s = 48) => `<img src="${MT_ICON}" width="${s}" height="${s}" alt="${L('マルチ翻訳PDFビューワーのアイコン', 'Multi-Translation PDF Viewer icon')}" style="display:block;border-radius:22%">`;
 const FR_ICON = 'data:image/webp;base64,' + [
   'UklGRrAdAABXRUJQVlA4IKQdAABQZQCdASrAAMAAPmEokEUkIqGWC46IQAYEsgBo3SMujyr/VebvZn89/dftq913ZD8v4+j3X/L9V36e9g39af1x9bP9qvfD+7PqV/cL9nPfI/4Hrk/zvqI/07qZfRN/YD06fZ+/s3/V/dD2tNVX9C9n/+t8LfHv6O/dP2z9gD/C8WXU',
   'XmP/J/vH/F/un7b/l38yf8Dwn+KX+b6gv49/Of8b+YP93+I7sz3o22/6j/Y+op7MfQv8v/gf3t/yHywfT+an8b/nf+R7gH6o/8H7d/rHvU/P/YA/m394/83s2f0P/s/zX+u/cv3H/oP+J/8f+W+BD+Wf2L/nf4D/J++l7V/3K9pBNpIdqTFCj/c974U8+3vJhJiBn+Hh',
@@ -607,7 +629,7 @@ const FR_ICON = 'data:image/webp;base64,' + [
   'XDfrX/VO8Vs4j3rXaTW8WvDAXwbWF5wHFwF7G8OB2kumcc5rsRvPesEyLKp0JsssdpxS3Fnt6lQRbaJBz5s+LBM/AxJ7wk1ml61v7sCXSK5DEyEHtnYWngf6rlcEDerv1EsI323j0io8db6K9BcRWqE/H4gOrix5oSrdF+CaUqF/Hlbuaiwzh5xMhpYUlQxOObQn/htY',
   'GoWDxrmNdPE+4/T49XXFLLhhxfRlB3MELAwAAADrtF4WCS8LBsao7KfbRNZoANigswwgkXwjoodcNtwgm6TTOaB5VjF+mZxQCEnYI8i8IIk2e4LLVV6EpoCUA9Gz9xtSw6GXYPi//AAAAAAA',
 ].join('');
-const frIcon = (s = 48) => `<img src="${FR_ICON}" width="${s}" height="${s}" alt="FuRUSHのアイコン" style="display:block;border-radius:22%">`;
+const frIcon = (s = 48) => `<img src="${FR_ICON}" width="${s}" height="${s}" alt="${L('FuRUSHのアイコン', 'FuRUSH icon')}" style="display:block;border-radius:22%">`;
 const AM_ICON = 'data:image/webp;base64,' + [
   'UklGRs4RAABXRUJQVlA4WAoAAAAQAAAAvwAAvwAAQUxQSOoDAAABoLRts2lneteq1bZt27Ztm1PP+jd8tnumWdK2bdvupBVrVdXbCs7JdWqaiJgANDSVDABbn3bHvS998WvPsLNV1v6fPnj2rltP3hoAckmYpFkAbHb+/De62LL/emP++ZsBkDwZJAMbXnt/N0m6qrm3FjdTdZLsuv+aDYEszZYzcNDSDpJazdmy3aqS7FhyEJBzMyUBjn+IpKqz5bsqyYeOAyQ1jQD7tZNUZxBdSbbvB0hzJMEGc0doylCq',
   'c2Tu+pDUBBk45ytSGU4lvzoHyA0TrDqPrM6AeiXnrgJpUMFOr9CMQTXjKzuhNKTg+E5WBray8ziUBhRcMUJlaJXDl6NMWMENdGNwzXk9ygQVXEt1hteN16JMSMEFVGeAXXkhygQIjhgyY4jNhg6HjCtjq19pDLLx162Qx5FkpZepDHPlSytJGlvBDFYGunIGypgEJ7My1JUnQcaQ8ppfu8XK+PWaOY0mmE5lsCunQUbJafdh9Wi5Du+W8v8J2lkZ7sp2yP8IDnFjwM0Phvwn40FqxJT3IwPI2FONITfdExko',
@@ -631,7 +653,7 @@ const AM_ICON = 'data:image/webp;base64,' + [
   '5X95JRAE1gq/Dz0uKg7kE8Bd1BWEk/NkuxDoxf9nHdx/BTUxG//Qrr3p6TtOufkQA4sz1p/kh061NeoivUEq9UteCx7odK0CSVnhwWYT5FuYZ3YXi26bvatKk23hl2Ph5Q/vQezE3Px/7FQTErFEHrOUhHHC9TDqbzICmEWyecyFa79v/+d68v/+LVDY2qjU17RGeeE2AfHWdy/NvYmET7uqkg84/De0LQTxO8feMYJRXt1++jsIyrAb3xW0EpvIaFVxg5AAkPA4ACKMuKtvqU4Qx7rMYu/30RbNY9dywKeO',
   'UgfGz3ejCgZEOapXZaewLukjoPxkFJBBlpGsmya2oFDf6AXL/9R8e//54UG2VJ8DyXxWmsckzB0/YnNyRYYaNAAA',
 ].join('');
-const amIcon = (s = 48) => `<img src="${AM_ICON}" width="${s}" height="${s}" alt="アプリ見守りのアイコン" style="display:block;border-radius:22%">`;
+const amIcon = (s = 48) => `<img src="${AM_ICON}" width="${s}" height="${s}" alt="${L('アプリ見守りのアイコン', 'App Monitor icon')}" style="display:block;border-radius:22%">`;
 const TP_ICON = 'data:image/webp;base64,' + [
   'UklGRhQeAABXRUJQVlA4IAgeAACwZgCdASrAAMAAPmEmkEWkIiGWW134QAYEtQN8DR0K1Kv9r5wNkfxX4O/Jnq4Kk84/mj/T/4T9wP718vv+F6sf0//3f6x8A36h/53++f4f/af3T4tfWj+4fqC/qP+E/3f9v/f/5lPSL/d/2q9wX+if23/rerl7NPoCftz6af7T/CX+0H/h/0/wL/zf/Gf9/rAOGW/rnol8T/uH2s+Rj6p+4flt/XfcAfOPjP3U/Nf2/0P/2ngr8Uv7z1Avxn+af4j8qv7ZxFGy/6P0AvcX',
   '6P/pf8B+5/+A9K/Us8D/5v7gPsB/Vv/WcaZ6j7AP89/t3/b/vnuwfz3/r/x/nl/M/8j/4v8r8Bn8r/sP/J/vvtiey392fZM/a7/3NBRJlqGxXH6+6syxQTag2CYl1Wu1ulbweyu6e97sxSnP2nyv4oGUT7xZFtaxv7JdNGf/ZP5D+ec8hZBAaFk6pubRc04r8byBY0gmZaNKXgpN6Tvg3pbO5ZaTiww0xRMIIb0f90+zRGYRSme6mvBrRbvoEb6e+R+yLKmIF5K+P93POQ/IEPiWfNRu+3x8NEDO6di3WPf/',
@@ -669,21 +691,24 @@ const TP_ICON = 'data:image/webp;base64,' + [
   '/+xo7ZJTVz8ieCpU30Wz+C56kSijH85jbyns6wSCteNvu4kgnFX5DY19CGxGXSU3jDmYzGvVdhdHcNahqW3QctbEOTvv8uiqMTdtCddhecgA57+eafmYCgwlvvFHH9ukK7wyaWgSL2TGyEAi+AJMYEwGbZ0VTpiSuYXaJDEWLG9kN0TAydR6sFcPFL+QWfeUoF8LvfxCGZcISc6TIFtPM7CHH2clpxvMEtgcA1Kz85clIsbMHyGBlf1KZ99u0F+w0uFca8sjnkyPPcvZtgVx5syLJl+jEmHdWvyPQB3vmJfZ',
   'cYInRayXgd1lkEkL9grv5Ubvmihl7f9Rx5/Fp9sLcSJ5uXYwpZ1PnfUqXHU9yJbRkaI0J6MhjlAAAA==',
 ].join('');
-const tpIcon = (s = 48) => `<img src="${TP_ICON}" width="${s}" height="${s}" alt="タップる？のアイコン" style="display:block;border-radius:22%">`;
+const tpIcon = (s = 48) => `<img src="${TP_ICON}" width="${s}" height="${s}" alt="${L('タップる？のアイコン', 'TaPru icon')}" style="display:block;border-radius:22%">`;
 const ILL = {
-  mask: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="答えの行にオレンジのマスクがかかったPDFページ"><rect class="f-paper" x="62" y="12" width="116" height="126" rx="5"/>${lines(74, 28, 92, 3, 14, 11)}<rect class="f-mask" x="72" y="68" width="96" height="18" rx="4"/>${lines(74, 100, 92, 3, 12, 12)}</svg>`,
-  tap: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="マスクをタップして答えが表示される様子"><rect class="f-paper" x="48" y="12" width="116" height="126" rx="5"/>${lines(60, 28, 92, 3, 14, 21)}<rect class="s-mask" x="58" y="68" width="96" height="18" rx="4" stroke-dasharray="4 3"/><text class="t-ans" x="106" y="81" text-anchor="middle">${DEMO.q1[1]}</text>${lines(60, 100, 92, 3, 12, 22)}<circle class="rp" cx="170" cy="86" r="9"/><circle class="rp" cx="170" cy="86" r="16"/>${finger(170, 86)}</svg>`,
-  marks: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="青・赤・黄のチェックマーク">${[['ok', 40, '長押し'], ['ng', 120, 'ダブルタップ'], ['warn', 200, '上スワイプ']].map(([k, cx, t]) => `<g transform="translate(${cx - 23} 34) scale(1.92)">${badgeInner(k)}</g><text class="t" x="${cx}" y="112" text-anchor="middle">${t}</text>`).join('')}</svg>`,
-  swipe: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="左右にスワイプしてページを切り替える様子"><rect class="f-paper" x="10" y="28" width="62" height="96" rx="4" opacity=".6"/><rect class="f-paper" x="168" y="28" width="62" height="96" rx="4" opacity=".6"/><rect class="f-paper" x="68" y="12" width="104" height="126" rx="5"/>${lines(80, 28, 80, 6, 13, 31)}<path class="s-ink" d="M48 62l-10 13 10 13M192 62l10 13-10 13"/><circle class="dot" cx="104" cy="104" r="5"/><circle class="dot" cx="138" cy="84" r="5"/><path class="s-ink" d="M98 110l-7 7M144 78l7-7" stroke-width="2.4"/></svg>`,
+  mask: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('答えの行にオレンジのマスクがかかったPDFページ', 'A PDF page with an orange mask over the answer line')}"><rect class="f-paper" x="62" y="12" width="116" height="126" rx="5"/>${lines(74, 28, 92, 3, 14, 11)}<rect class="f-mask" x="72" y="68" width="96" height="18" rx="4"/>${lines(74, 100, 92, 3, 12, 12)}</svg>`,
+  tap: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('マスクをタップして答えが表示される様子', 'Tapping the mask reveals the answer')}"><rect class="f-paper" x="48" y="12" width="116" height="126" rx="5"/>${lines(60, 28, 92, 3, 14, 21)}<rect class="s-mask" x="58" y="68" width="96" height="18" rx="4" stroke-dasharray="4 3"/><text class="t-ans" x="106" y="81" text-anchor="middle">${DEMO.q1[1]}</text>${lines(60, 100, 92, 3, 12, 22)}<circle class="rp" cx="170" cy="86" r="9"/><circle class="rp" cx="170" cy="86" r="16"/>${finger(170, 86)}</svg>`,
+  marks: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('青・赤・黄のチェックマーク', 'Blue, red and yellow check marks')}">${[['ok', 40, L('長押し', 'Long press')], ['ng', 120, L('ダブルタップ', 'Double tap')], ['warn', 200, L('上スワイプ', 'Swipe up')]].map(([k, cx, t]) => `<g transform="translate(${cx - 23} 34) scale(1.92)">${badgeInner(k)}</g><text class="t" x="${cx}" y="112" text-anchor="middle">${t}</text>`).join('')}</svg>`,
+  swipe: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('左右にスワイプしてページを切り替える様子', 'Swiping left and right to turn pages')}"><rect class="f-paper" x="10" y="28" width="62" height="96" rx="4" opacity=".6"/><rect class="f-paper" x="168" y="28" width="62" height="96" rx="4" opacity=".6"/>
+<rect class="f-paper" x="68" y="12" width="104" height="126" rx="5"/>${lines(80, 28, 80, 6, 13, 31)}<path class="s-ink" d="M48 62l-10 13 10 13M192 62l10 13-10 13"/><circle class="dot" cx="104" cy="104" r="5"/><circle class="dot" cx="138" cy="84" r="5"/><path class="s-ink" d="M98 110l-7 7M144 78l7-7" stroke-width="2.4"/></svg>`,
   coord: () => {
     const pg = (x, y, w, h) => {
       const L = (f, wf) => `<rect class="f-line" x="${x + w * .12}" y="${y + h * f}" width="${w * wf}" height="3.5" rx="1.7"/>`;
       return `<rect class="f-paper" x="${x}" y="${y}" width="${w}" height="${h}" rx="3"/>${L(.12, .7)}${L(.24, .56)}${L(.36, .66)}<rect class="f-mask" x="${x + w * .18}" y="${y + h * .5}" width="${w * .62}" height="${h * .12}" rx="3"/>${L(.72, .6)}${L(.84, .45)}<path class="s-ink" d="M${x + 6} ${y + 14}V${y + 6}H${x + 14}" stroke-width="1.6" opacity=".5"/>`;
     };
-    return `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="大きさの違う2枚のページで、マスクが同じ位置に残る">${pg(26, 46, 70, 92)}${pg(118, 14, 104, 124)}<path class="guide" d="M96 98H118"/><text class="t" x="61" y="36" text-anchor="middle">小さい画面</text><text class="t" x="170" y="9" text-anchor="middle">拡大</text></svg>`;
+    return `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('大きさの違う2枚のページで、マスクが同じ位置に残る', 'The mask stays in the same place on pages of different sizes')}">${pg(26, 46, 70, 92)}${pg(118, 14, 104, 124)}<path class="guide" d="M96 98H118"/><text class="t" x="61" y="36" text-anchor="middle">${L('小さい画面', 'Small screen')}</text><text class="t" x="170" y="9" text-anchor="middle">${L('拡大', 'Zoomed in')}</text></svg>`;
   },
-  layers: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="PDF、マスク、チェックの3層を重ねた図"><g transform="translate(30 0) skewX(-22)"><rect class="f-paper" x="36" y="96" width="104" height="34" rx="5"/><rect class="f-line" x="48" y="106" width="60" height="4" rx="2"/><rect class="f-line" x="48" y="116" width="42" height="4" rx="2"/><rect class="f-mask" x="36" y="56" width="104" height="34" rx="5" opacity=".92"/><rect class="f-ok" x="36" y="16" width="104" height="34" rx="5" opacity=".9"/></g><text class="t" x="162" y="38">チェック</text><text class="t" x="154" y="78">マスク</text><text class="t" x="142" y="118">PDF（元のまま）</text></svg>`,
-  print: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="チェックを付けた問題だけが印刷される様子">
+  layers: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('PDF、マスク、チェックの3層を重ねた図', 'Three layers: the PDF, masks and check marks')}"><g transform="translate(30 0) skewX(-22)"><rect class="f-paper" x="36" y="96" width="104" height="34" rx="5"/><rect class="f-line" x="48" y="106" width="60" height="4" rx="2"/>
+<rect class="f-line" x="48" y="116" width="42" height="4" rx="2"/><rect class="f-mask" x="36" y="56" width="104" height="34" rx="5" opacity=".92"/><rect class="f-ok" x="36" y="16" width="104" height="34" rx="5" opacity=".9"/></g><text class="t" x="162" y="38">${L('チェック',
+      'Checks')}</text><text class="t" x="154" y="78">${L('マスク', 'Masks')}</text><text class="t" x="142" y="118">${L('PDF（元のまま）', 'PDF (unchanged)')}</text></svg>`,
+  print: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('チェックを付けた問題だけが印刷される様子', 'Only the checked questions are printed')}">
     <rect class="f-paper" x="12" y="20" width="84" height="110" rx="4"/>
     ${[0, 1, 2, 3, 4].map(i => { const y = 36 + i * 18, k = i === 1 ? 'f-ok' : i === 3 ? 'f-ng' : ''; return `<rect class="f-line" x="22" y="${y}" width="${[46, 38, 50, 34, 42][i]}" height="4" rx="2"/>${k ? `<circle class="${k}" cx="82" cy="${y + 2}" r="5.5"/>` : ''}`; }).join('')}
     <path class="s-ink" d="M104 76h22M119 69l7 7-7 7"/>
@@ -692,113 +717,157 @@ const ILL = {
     <rect class="f-paper" x="154" y="98" width="52" height="42" rx="3"/>
     <rect class="f-line" x="162" y="108" width="28" height="4" rx="2"/><circle class="f-ok" cx="198" cy="110" r="4.5"/>
     <rect class="f-line" x="162" y="124" width="24" height="4" rx="2"/><circle class="f-ng" cx="198" cy="126" r="4.5"/></svg>`,
-  translate: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="英文を選ぶと日本語の訳が出る様子">
+  translate: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('英文を選ぶと日本語の訳が出る様子', 'Selecting English text shows a Japanese translation')}">
     <rect class="f-paper" x="16" y="14" width="124" height="122" rx="5"/>
     ${lines(28, 30, 96, 3, 14, 41)}
     <rect class="f-mask" x="28" y="68" width="82" height="16" rx="4" opacity=".28"/><text class="t-ans" x="34" y="80">environment</text>
     ${lines(28, 98, 96, 3, 12, 42)}
     <path class="f-p0" d="M70 66l6 12 10-12z"/>
     <rect class="f-paper" x="100" y="26" width="122" height="40" rx="10"/>
-    <text class="t-jp" x="161" y="47" text-anchor="middle">環境</text><text class="t" x="161" y="59" text-anchor="middle">EN → JA</text></svg>`,
-  highlight: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="PDFの行に3色のハイライトを引いた様子"><rect class="f-paper" x="62" y="12" width="116" height="126" rx="5"/>${lines(74, 28, 92, 7, 15, 13)}<path d="M72 46h70" stroke="#F5D547" stroke-width="10" stroke-linecap="round" opacity=".55"/><path d="M72 76h84" stroke="#F28AA8" stroke-width="10" stroke-linecap="round" opacity=".5"/><path d="M72 106h56" stroke="#5CC8A8" stroke-width="10" stroke-linecap="round" opacity=".5"/></svg>`,
-  doodle: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="PDFに指で書き込みをした様子"><rect class="f-paper" x="62" y="12" width="116" height="126" rx="5"/>${lines(74, 28, 92, 7, 15, 17)}<path d="M84 98c10-14 22 10 32-4s20 8 30-6" fill="none" stroke="#E5484D" stroke-width="3" stroke-linecap="round"/><ellipse cx="128" cy="58" rx="34" ry="12" fill="none" stroke="#3B82F6" stroke-width="2.6"/><rect class="f-paper" x="186" y="96" width="34" height="16" rx="4"/><text class="t" x="203" y="108" text-anchor="middle">消</text></svg>`,
-  bookmark: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="ページに栞を挟んで、次は栞から再開する"><rect class="f-paper" x="40" y="22" width="96" height="112" rx="5" opacity=".6"/><rect class="f-paper" x="56" y="14" width="96" height="120" rx="5"/>${lines(66, 30, 76, 6, 14, 23)}<path class="f-mask" d="M128 8h16v36l-8-7-8 7z"/><rect class="f-paper" x="160" y="52" width="68" height="44" rx="9"/><text class="t" x="194" y="70" text-anchor="middle">栞から</text><text class="t" x="194" y="86" text-anchor="middle">再開</text></svg>`,
-  photo: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="撮った写真をA4のページにしてPDFにする"><rect class="f-paper" x="16" y="40" width="72" height="54" rx="10"/><circle class="f-line" cx="52" cy="67" r="15"/><circle class="f-paper" cx="52" cy="67" r="9"/><rect class="f-line" x="28" y="34" width="20" height="8" rx="3"/><path class="s-ink" d="M98 67h26M117 60l7 7-7 7"/><rect class="f-paper" x="136" y="14" width="88" height="124" rx="4"/>${lines(146, 30, 68, 6, 14, 29)}<text class="t" x="180" y="128" text-anchor="middle">PDF（A4）</text></svg>`,
-  mtFrame: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="英文を角丸の枠で囲むと、原文と日本語訳が出る"><rect class="f-paper" x="14" y="14" width="104" height="122" rx="5"/>${lines(24, 28, 84, 7, 14, 51)}<rect x="20" y="52" width="92" height="38" rx="9" fill="none" stroke="#2F7BEF" stroke-width="2.4"/><rect class="f-paper" x="128" y="26" width="100" height="98" rx="10"/><text class="t" x="138" y="44">原文</text><rect class="f-line" x="138" y="52" width="76" height="4" rx="2"/><rect class="f-line" x="138" y="62" width="58" height="4" rx="2"/><path class="s-ink" d="M134 76h88" opacity=".4"/><text class="t" x="138" y="94">日本語訳</text><rect class="f-mask" x="138" y="102" width="70" height="5" rx="2.5"/><rect class="f-mask" x="138" y="112" width="50" height="5" rx="2.5"/></svg>`,
-  mtLang: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="英語・中国語・韓国語・ドイツ語・フランス語から日本語へ">${[['EN', 28], ['中', 70], ['\uD55C', 112], ['DE', 154], ['FR', 196]].map(([t, x]) => `<rect class="f-paper" x="${x - 18}" y="26" width="36" height="28" rx="8"/><text class="t-ans" x="${x}" y="45" text-anchor="middle">${t}</text><path class="s-ink" d="M${x} 58L120 92" opacity=".45"/>`).join('')}<rect class="f-mask" x="78" y="94" width="84" height="32" rx="10"/><text style="font:900 14px sans-serif;fill:var(--mask-ink)" x="120" y="115" text-anchor="middle">日本語</text><text class="t" x="120" y="144" text-anchor="middle">言語は自動で判別</text></svg>`,
-  mtOcr: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="文字の入っていないページや図の中の文字も読み取る"><rect class="f-paper" x="30" y="14" width="96" height="122" rx="5"/><rect class="f-line" x="42" y="28" width="72" height="44" rx="4" opacity=".7"/><path d="M48 64l14-16 10 10 8-8 14 14" fill="none" stroke="var(--muted)" stroke-width="2"/>${lines(42, 84, 72, 4, 12, 61)}<path class="s-ink" d="M134 75h22M149 68l7 7-7 7"/><rect class="f-mask" x="164" y="56" width="58" height="38" rx="10"/><text style="font:900 14px sans-serif;fill:var(--mask-ink)" x="193" y="80" text-anchor="middle">OCR</text><text class="t" x="193" y="112" text-anchor="middle">端末内で読む</text></svg>`,
-  amVpn: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="アプリの通信を端末の中で中継して記録する"><rect class="f-paper" x="70" y="10" width="100" height="130" rx="16"/>${[['ゲーム', 32], ['SNS', 60], ['地図', 88]].map(([t, y]) => `<rect class="f-line" x="82" y="${y}" width="40" height="18" rx="5"/><text class="t" x="102" y="${y + 13}" text-anchor="middle">${t}</text><path class="s-ink" d="M126 ${y + 9}h12" opacity=".5"/>`).join('')}<rect class="f-mask" x="140" y="30" width="20" height="78" rx="6"/><path class="s-ink" d="M174 69h40M207 62l7 7-7 7"/><text class="t" x="120" y="130" text-anchor="middle">端末の中で中継</text><text class="t" x="196" y="96" text-anchor="middle">ネットへ</text></svg>`,
-  amSigns: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="兆候から危険・要注意・注意・正常を判定">${[['危険', 'f-ng', 30], ['要注意', 'f-mask', 62], ['注意', 'f-warn', 94]].map(([t, c, y]) => `<rect class="f-paper" x="30" y="${y - 16}" width="180" height="26" rx="8"/><rect class="${c}" x="38" y="${y - 10}" width="46" height="14" rx="7"/><text style="font:700 10px sans-serif;fill:#fff" x="61" y="${y + 1}" text-anchor="middle">${t}</text><rect class="f-line" x="94" y="${y - 6}" width="${100 - y / 2}" height="5" rx="2.5"/>`).join('')}<rect class="f-paper" x="30" y="110" width="180" height="26" rx="8"/><rect class="f-ok" x="38" y="116" width="46" height="14" rx="7"/><text style="font:700 10px sans-serif;fill:#fff" x="61" y="127" text-anchor="middle">正常</text><text class="t" x="96" y="127">23種類の兆候で判定</text></svg>`,
-  amThreat: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="宛先を脅威リストと照らし合わせる"><rect class="f-paper" x="22" y="30" width="88" height="90" rx="10"/><text class="t" x="66" y="50" text-anchor="middle">宛先</text>${[0, 1, 2, 3].map(i => `<rect class="f-line" x="34" y="${60 + i * 13}" width="${64 - i * 6}" height="5" rx="2.5"/>`).join('')}<rect class="f-ng" x="34" y="86" width="52" height="5" rx="2.5"/><path class="s-ink" d="M116 75h14M124 68l7 7-7 7"/><rect class="f-paper" x="138" y="30" width="82" height="90" rx="10"/><text class="t" x="179" y="50" text-anchor="middle">脅威リスト</text><text class="t-ans" x="179" y="74" text-anchor="middle">URLhaus</text><text class="t-ans" x="179" y="90" text-anchor="middle">HaGeZi</text><text class="t-ans" x="179" y="106" text-anchor="middle">Spamhaus</text></svg>`,
-  amNotify: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="危険度ごとのアプリ数を通知に表示"><rect class="f-paper" x="24" y="40" width="192" height="64" rx="14"/><circle class="f-mask" cx="46" cy="60" r="8"/><text class="t-jp" x="62" y="65" style="font-size:12px">アプリ見守り \u00B7 見守り中</text>${[['危険 1', 'f-ng', 40], ['要注意 2', 'f-mask', 100], ['注意 3', 'f-warn', 160]].map(([t, c, x]) => `<rect class="${c}" x="${x}" y="78" width="54" height="16" rx="8"/><text style="font:700 10px sans-serif;fill:#fff" x="${x + 27}" y="90" text-anchor="middle">${t}</text>`).join('')}<text class="t" x="120" y="128" text-anchor="middle">5分ごとに更新</text></svg>`,
-  amIdle: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="画面オフ中や使っていない時間の通信を見分ける"><rect x="40" y="16" width="70" height="118" rx="12" fill="var(--ink)" opacity=".85"/><path d="M84 52a16 16 0 1 1-14-22 13 13 0 0 0 14 22z" fill="var(--warn)"/><text style="font:700 10px sans-serif;fill:var(--bg)" x="75" y="96" text-anchor="middle">画面オフ</text><path class="s-ink" d="M118 75h18M130 69l6 6-6 6"/><rect class="f-paper" x="144" y="40" width="80" height="70" rx="10"/><text class="t" x="184" y="62" text-anchor="middle">深夜 2:14</text><text class="t-ans" x="184" y="84" text-anchor="middle">64 回通信</text><rect class="f-ng" x="160" y="94" width="48" height="6" rx="3"/></svg>`,
-  amFilter: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="危険度やカテゴリで絞り込み、並べ替える">${[['危険度', 24], ['カテゴリ', 84], ['並び順', 156]].map(([t, x]) => `<rect class="f-paper" x="${x}" y="18" width="${t.length * 12 + 18}" height="22" rx="11"/><text class="t" x="${x + 9}" y="33">${t} \u25BE</text>`).join('')}${[0, 1, 2].map(i => `<rect class="f-paper" x="24" y="${52 + i * 30}" width="192" height="24" rx="7"/><circle class="${['f-ng', 'f-mask', 'f-warn'][i]}" cx="38" cy="${64 + i * 30}" r="5"/><rect class="f-line" x="50" y="${61 + i * 30}" width="${90 - i * 14}" height="5" rx="2.5"/><text class="t" x="206" y="${68 + i * 30}" text-anchor="end">宛先 ${[48, 31, 12][i]}</text>`).join('')}</svg>`,
-  amBlock: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="危険なアプリはアンインストールをおすすめ"><rect class="f-paper" x="30" y="24" width="180" height="102" rx="14"/><path d="M58 44l16 28H42z" fill="var(--ng)"/><text style="font:900 14px sans-serif;fill:#fff" x="58" y="68" text-anchor="middle">!</text><text class="t-jp" x="84" y="56" style="font-size:12px">ライト（懐中電灯）</text><text class="t" x="84" y="72">脅威リストに一致</text><rect class="f-ng" x="46" y="90" width="148" height="24" rx="8"/><text style="font:700 11px sans-serif;fill:#fff" x="120" y="106" text-anchor="middle">アンインストール推奨</text></svg>`,
-  tpFever: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="直近1秒のタップ数で BOOST・RAPID FIRE・FEVER!! に変わる"><rect x="14" y="10" width="212" height="130" rx="14" fill="#070B1F"/>${[[56, 92, 22, '#2FE6FF', 'BOOST', 5], [120, 72, 42, '#FFE14D', 'RAPID FIRE', 8], [184, 46, 68, '#FF4FA3', 'FEVER!!', 10]].map(([x, y, h, c, t, n]) => `<rect x="${x - 22}" y="${y}" width="44" height="${h}" rx="4" fill="${c}"/><text x="${x}" y="${y - 8}" text-anchor="middle" style="font:800 10px var(--f-body);fill:${c}">${t}</text><text x="${x}" y="130" text-anchor="middle" style="font:600 10px var(--f-body);fill:#8C97C4">${n}回/秒</text>`).join('')}</svg>`,
-  tpFx: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="タップした所でエフェクトがはじける"><rect x="14" y="10" width="212" height="130" rx="14" fill="#070B1F"/><circle cx="78" cy="66" r="28" fill="none" stroke="#FF8A1F" stroke-width="4"/><circle cx="78" cy="66" r="10" fill="#FFE14D"/><path d="M78 24v12M78 96v12M36 66h12M108 66h12M48 36l8 8M100 88l8 8M108 36l-8 8M56 88l-8 8" stroke="#FFE14D" stroke-width="3" stroke-linecap="round"/>
-<text x="168" y="58" text-anchor="middle" style="font:900 20px var(--f-display);fill:#FF8A1F">ドカン!</text><text x="176" y="92" text-anchor="middle" style="font:900 16px var(--f-display);fill:#9FE8FF">バチッ!</text><text x="120" y="130" text-anchor="middle" style="font:600 10px var(--f-body);fill:#8C97C4">20種類 × 各5パターン</text></svg>`,
+    <text class="t-jp" x="161" y="47" text-anchor="middle">${L('環境', 'environment')}</text><text class="t" x="161" y="59" text-anchor="middle">EN → JA</text></svg>`,
+  highlight: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('PDFの行に3色のハイライトを引いた様子', 'Lines in a PDF highlighted in three colors')}"><rect class="f-paper" x="62" y="12" width="116" height="126" rx="5"/>${lines(74, 28, 92, 7, 15, 13)}<path d="M72 46h70" stroke="#F5D547" stroke-width="10" stroke-linecap="round" opacity=".55"/><path d="M72 76h84" stroke="#F28AA8" stroke-width="10" stroke-linecap="round" opacity=".5"/><path d="M72 106h56" stroke="#5CC8A8" stroke-width="10" stroke-linecap="round" opacity=".5"/></svg>`,
+  doodle: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('PDFに指で書き込みをした様子', 'Handwriting on a PDF with a finger')}"><rect class="f-paper" x="62" y="12" width="116" height="126" rx="5"/>${lines(74, 28, 92, 7, 15, 17)}<path d="M84 98c10-14 22 10 32-4s20 8 30-6" fill="none" stroke="#E5484D" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="128" cy="58" rx="34" ry="12" fill="none" stroke="#3B82F6" stroke-width="2.6"/><rect class="f-paper" x="186" y="96" width="34" height="16" rx="4"/><text class="t" x="203" y="108" text-anchor="middle">${L('消', 'Erase')}</text></svg>`,
+  bookmark: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('ページに栞を挟んで、次は栞から再開する', 'Put a bookmark in a page and resume from it next time')}"><rect class="f-paper" x="40" y="22" width="96" height="112" rx="5" opacity=".6"/><rect class="f-paper" x="56" y="14" width="96" height="120" rx="5"/>${lines(66, 30, 76, 6, 14, 23)}<path class="f-mask" d="M128 8h16v36l-8-7-8 7z"/><rect class="f-paper" x="160" y="52" width="68" height="44" rx="9"/><text class="t" x="194" y="70" text-anchor="middle">${
+      L('栞から', 'Resume')}</text><text class="t" x="194" y="86" text-anchor="middle">${L('再開', 'from here')}</text></svg>`,
+  photo: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('撮った写真をA4のページにしてPDFにする', 'Turning photos into A4 pages of a PDF')}"><rect class="f-paper" x="16" y="40" width="72" height="54" rx="10"/><circle class="f-line" cx="52" cy="67" r="15"/><circle class="f-paper" cx="52" cy="67" r="9"/>
+<rect class="f-line" x="28" y="34" width="20" height="8" rx="3"/><path class="s-ink" d="M98 67h26M117 60l7 7-7 7"/><rect class="f-paper" x="136" y="14" width="88" height="124" rx="4"/>${lines(146, 30, 68, 6, 14, 29)}<text class="t" x="180" y="128" text-anchor="middle">${L('PDF（A4）', 'PDF (A4)')}</text></svg>`,
+  mtFrame: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('英文を角丸の枠で囲むと、原文と日本語訳が出る', 'Drawing a rounded frame around English text shows the original and a Japanese translation')}"><rect class="f-paper" x="14" y="14" width="104" height="122" rx="5"/>${lines(24, 28, 84, 7, 14, 51)}<rect x="20" y="52" width="92" height="38" rx="9" fill="none" stroke="#2F7BEF" stroke-width="2.4"/><rect class="f-paper" x="128" y="26" width="100" height="98" rx="10"/><text class="t" x="138" y="44">${L('原文',
+      'Original')}</text><rect class="f-line" x="138" y="52" width="76" height="4" rx="2"/><rect class="f-line" x="138" y="62" width="58" height="4" rx="2"/><path class="s-ink" d="M134 76h88" opacity=".4"/><text class="t" x="138" y="94">${L('日本語訳', 'Japanese translation')}</text><rect class="f-mask" x="138" y="102" width="70" height="5" rx="2.5"/><rect class="f-mask" x="138" y="112" width="50" height="5" rx="2.5"/></svg>`,
+  mtLang: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('英語・中国語・韓国語・ドイツ語・フランス語から日本語へ', 'From English, Chinese, Korean, German and French into Japanese')}">${[['EN', 28], ['中', 70], ['\uD55C', 112], ['DE', 154], ['FR', 196]].map(([t, x]) => `<rect class="f-paper" x="${x - 18}" y="26" width="36" height="28" rx="8"/>
+<text class="t-ans" x="${x}" y="45" text-anchor="middle">${t}</text><path class="s-ink" d="M${x} 58L120 92" opacity=".45"/>`).join('')}<rect class="f-mask" x="78" y="94" width="84" height="32" rx="10"/><text style="font:900 14px sans-serif;fill:var(--mask-ink)" x="120" y="115" text-anchor="middle">${L('日本語',
+      'Japanese')}</text><text class="t" x="120" y="144" text-anchor="middle">${L('言語は自動で判別', 'Language detected automatically')}</text></svg>`,
+  mtOcr: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('文字の入っていないページや図の中の文字も読み取る', 'Reads text in figures and in scans with no text layer')}"><rect class="f-paper" x="30" y="14" width="96" height="122" rx="5"/><rect class="f-line" x="42" y="28" width="72" height="44" rx="4" opacity=".7"/>
+<path d="M48 64l14-16 10 10 8-8 14 14" fill="none" stroke="var(--muted)" stroke-width="2"/>${lines(42, 84, 72, 4, 12, 61)}<path class="s-ink" d="M134 75h22M149 68l7 7-7 7"/><rect class="f-mask" x="164" y="56" width="58" height="38" rx="10"/><text style="font:900 14px sans-serif;fill:var(--mask-ink)" x="193" y="80" text-anchor="middle">OCR</text><text class="t" x="193" y="112" text-anchor="middle">${L('端末内で読む',
+      'Read on the device')}</text></svg>`,
+  amVpn: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('アプリの通信を端末の中で中継して記録する', 'App traffic is relayed and recorded on the device')}"><rect class="f-paper" x="70" y="10" width="100" height="130" rx="16"/>${[[L('ゲーム',
+      'Game'), 32], ['SNS', 60], [L('地図', 'Maps'), 88]].map(([t, y]) => `<rect class="f-line" x="82" y="${y}" width="40" height="18" rx="5"/><text class="t" x="102" y="${y + 13}" text-anchor="middle">${t}</text><path class="s-ink" d="M126 ${y + 9}h12" opacity=".5"/>`).join('')}<rect class="f-mask" x="140" y="30" width="20" height="78" rx="6"/><path class="s-ink" d="M174 69h40M207 62l7 7-7 7"/><text class="t" x="120" y="130" text-anchor="middle">${L('端末の中で中継',
+      'Relayed on device')}</text><text class="t" x="196" y="96" text-anchor="middle">${L('ネットへ', 'Internet')}</text></svg>`,
+  amSigns: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('兆候から危険・要注意・注意・正常を判定', 'Signs are rated as Danger, Warning, Caution or Normal')}">${[[L('危険',
+      'Danger'), 'f-ng', 30], [L('要注意', 'Warning'), 'f-mask', 62], [L('注意', 'Caution'), 'f-warn', 94]].map(([t, c, y]) => `<rect class="f-paper" x="30" y="${y - 16}" width="180" height="26" rx="8"/><rect class="${c}" x="38" y="${y - 10}" width="46" height="14" rx="7"/><text style="font:700 10px sans-serif;fill:#fff" x="61" y="${y + 1}" text-anchor="middle">${t}</text><rect class="f-line" x="94" y="${y - 6}" width="${100 - y / 2}" height="5" rx="2.5"/>`).join('')}<rect class="f-paper" x="30" y="110" width="180" height="26" rx="8"/>
+<rect class="f-ok" x="38" y="116" width="46" height="14" rx="7"/><text style="font:700 10px sans-serif;fill:#fff" x="61" y="127" text-anchor="middle">${L('正常',
+      'Normal')}</text><text class="t" x="96" y="127">${L('23種類の兆候で判定', 'Rated by 23 kinds of signs')}</text></svg>`,
+  amThreat: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('宛先を脅威リストと照らし合わせる', 'Destinations are checked against threat lists')}"><rect class="f-paper" x="22" y="30" width="88" height="90" rx="10"/><text class="t" x="66" y="50" text-anchor="middle">${L('宛先',
+      'Destinations')}</text>${[0, 1, 2, 3].map(i => `<rect class="f-line" x="34" y="${60 + i * 13}" width="${64 - i * 6}" height="5" rx="2.5"/>`).join('')}<rect class="f-ng" x="34" y="86" width="52" height="5" rx="2.5"/><path class="s-ink" d="M116 75h14M124 68l7 7-7 7"/><rect class="f-paper" x="138" y="30" width="82" height="90" rx="10"/><text class="t" x="179" y="50" text-anchor="middle">${L('脅威リスト',
+      'Threat lists')}</text><text class="t-ans" x="179" y="74" text-anchor="middle">URLhaus</text><text class="t-ans" x="179" y="90" text-anchor="middle">HaGeZi</text><text class="t-ans" x="179" y="106" text-anchor="middle">Spamhaus</text></svg>`,
+  amNotify: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('危険度ごとのアプリ数を通知に表示', 'The notification shows how many apps are at each risk level')}"><rect class="f-paper" x="24" y="40" width="192" height="64" rx="14"/><circle class="f-mask" cx="46" cy="60" r="8"/><text class="t-jp" x="62" y="65" style="font-size:12px">${L('アプリ見守り \u00B7 見守り中', 'App Monitor \u00B7 Monitoring')}</text>${[[L('危険 1', 'Danger 1'), 'f-ng', 40], [L('要注意 2',
+      'Warning 2'), 'f-mask', 100], [L('注意 3', 'Caution 3'), 'f-warn', 160]].map(([t, c, x]) => `<rect class="${c}" x="${x}" y="78" width="54" height="16" rx="8"/><text style="font:700 10px sans-serif;fill:#fff" x="${x + 27}" y="90" text-anchor="middle">${t}</text>`).join('')}<text class="t" x="120" y="128" text-anchor="middle">${L('5分ごとに更新', 'Updated every 5 min')}</text></svg>`,
+  amIdle: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('画面オフ中や使っていない時間の通信を見分ける', 'Spots traffic while the screen is off or the app is not in use')}"><rect x="40" y="16" width="70" height="118" rx="12" fill="var(--ink)" opacity=".85"/><path d="M84 52a16 16 0 1 1-14-22 13 13 0 0 0 14 22z" fill="var(--warn)"/><text style="font:700 10px sans-serif;fill:var(--bg)" x="75" y="96" text-anchor="middle">${L('画面オフ',
+      'Screen off')}</text><path class="s-ink" d="M118 75h18M130 69l6 6-6 6"/><rect class="f-paper" x="144" y="40" width="80" height="70" rx="10"/><text class="t" x="184" y="62" text-anchor="middle">${L('深夜 2:14', '2:14 a.m.')}</text><text class="t-ans" x="184" y="84" text-anchor="middle">${L('64 回通信', '64 times')}</text><rect class="f-ng" x="160" y="94" width="48" height="6" rx="3"/></svg>`,
+  amFilter: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('危険度やカテゴリで絞り込み、並べ替える', 'Filter and sort by risk level or category')}">${[[L('危険度',
+      'Risk'), 24], [L('カテゴリ', 'Category'), 84], [L('並び順', 'Sort'), 156]].map(([t, x]) => `<rect class="f-paper" x="${x}" y="18" width="${t.length * 12 + 18}" height="22" rx="11"/><text class="t" x="${x + 9}" y="33">${t} \u25BE</text>`).join('')}${[0, 1, 2].map(i => `<rect class="f-paper" x="24" y="${52 + i * 30}" width="192" height="24" rx="7"/><circle class="${['f-ng',
+      'f-mask', 'f-warn'][i]}" cx="38" cy="${64 + i * 30}" r="5"/><rect class="f-line" x="50" y="${61 + i * 30}" width="${90 - i * 14}" height="5" rx="2.5"/><text class="t" x="206" y="${68 + i * 30}" text-anchor="end">${L('宛先', 'Destinations')} ${[48, 31, 12][i]}</text>`).join('')}</svg>`,
+  amBlock: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('危険なアプリはアンインストールをおすすめ', 'Dangerous apps get an uninstall recommendation')}"><rect class="f-paper" x="30" y="24" width="180" height="102" rx="14"/><path d="M58 44l16 28H42z" fill="var(--ng)"/><text style="font:900 14px sans-serif;fill:#fff" x="58" y="68" text-anchor="middle">!</text><text class="t-jp" x="84" y="56" style="font-size:12px">${L('ライト（懐中電灯）',
+      'Flashlight')}</text><text class="t" x="84" y="72">${L('脅威リストに一致', 'Matched a threat list')}</text><rect class="f-ng" x="46" y="90" width="148" height="24" rx="8"/><text style="font:700 11px sans-serif;fill:#fff" x="120" y="106" text-anchor="middle">${L('アンインストール推奨', 'Uninstall advised')}</text></svg>`,
+  tpFever: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('直近1秒のタップ数で BOOST・RAPID FIRE・FEVER!! に変わる', 'Taps in the last second turn into BOOST, RAPID FIRE and FEVER!!')}"><rect x="14" y="10" width="212" height="130" rx="14" fill="#070B1F"/>${[[56, 92, 22, '#2FE6FF',
+      'BOOST', 5], [120, 72, 42, '#FFE14D', 'RAPID FIRE', 8], [184, 46, 68, '#FF4FA3', 'FEVER!!', 10]].map(([x, y, h, c, t, n]) => `<rect x="${x - 22}" y="${y}" width="44" height="${h}" rx="4" fill="${c}"/><text x="${x}" y="${y - 8}" text-anchor="middle" style="font:800 10px var(--f-body);fill:${c}">${t}</text><text x="${x}" y="130" text-anchor="middle" style="font:600 10px var(--f-body);fill:#8C97C4">${n}${L('回/秒',
+      'taps/s')}</text>`).join('')}</svg>`,
+  tpFx: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('タップした所でエフェクトがはじける', 'Effects burst where you tap')}"><rect x="14" y="10" width="212" height="130" rx="14" fill="#070B1F"/><circle cx="78" cy="66" r="28" fill="none" stroke="#FF8A1F" stroke-width="4"/><circle cx="78" cy="66" r="10" fill="#FFE14D"/><path d="M78 24v12M78 96v12M36 66h12M108 66h12M48 36l8 8M100 88l8 8M108 36l-8 8M56 88l-8 8" stroke="#FFE14D" stroke-width="3" stroke-linecap="round"/>
+<text x="168" y="58" text-anchor="middle" style="font:900 20px var(--f-display);fill:#FF8A1F">${L('ドカン!', 'BOOM!')}</text><text x="176" y="92" text-anchor="middle" style="font:900 16px var(--f-display);fill:#9FE8FF">${L('バチッ!', 'ZAP!')}</text><text x="120" y="130" text-anchor="middle" style="font:600 10px var(--f-body);fill:#8C97C4">${L('20種類 × 各5パターン', '20 kinds × 5 patterns')}</text></svg>`,
   tpSp: () => {
     const ray = Array.from({ length: 18 }, (_, i) => { const a = i / 18 * 6.283, c = Math.cos(a), s = Math.sin(a); return `M${(120 + c * 62).toFixed(1)} ${(64 + s * 34).toFixed(1)}L${(120 + c * 104).toFixed(1)} ${(64 + s * 58).toFixed(1)}`; }).join('');
-    return `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="集中線の中に必殺技の文字"><rect x="14" y="10" width="212" height="130" rx="14" fill="#070B1F"/><path d="${ray}" stroke="#2FE6FF" stroke-width="2" opacity=".55"/>
-<text x="120" y="74" text-anchor="middle" style="font:900 26px var(--f-display);fill:#FFE14D">必殺技</text><text x="196" y="32" text-anchor="middle" style="font:800 12px var(--f-body);fill:#FF4FA3">25 HIT!</text><text x="120" y="130" text-anchor="middle" style="font:600 10px var(--f-body);fill:#8C97C4">直近1秒に20回で、次の1タップが必殺技</text></svg>`;
+    return `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('集中線の中に必殺技の文字', 'A special move bursting from speed lines')}"><rect x="14" y="10" width="212" height="130" rx="14" fill="#070B1F"/><path d="${ray}" stroke="#2FE6FF" stroke-width="2" opacity=".55"/>
+<text x="120" y="74" text-anchor="middle" style="font:900 26px var(--f-display);fill:#FFE14D">${L('必殺技', 'SPECIAL')}</text><text x="196" y="32" text-anchor="middle" style="font:800 12px var(--f-body);fill:#FF4FA3">25 HIT!</text><text x="120" y="130" text-anchor="middle" style="font:600 10px var(--f-body);fill:#8C97C4">${L('直近1秒に20回で、次の1タップが必殺技', '20 taps in a second makes the next tap a special move')}</text></svg>`;
   },
   tpChart: () => {
     const bars = Array.from({ length: 30 }, (_, i) => { const h = Math.round(58 - i * .9 + ((i * 7) % 5) * 4); return `<rect class="f-mask" x="${(27 + i * 6.3).toFixed(1)}" y="${108 - h}" width="4.6" height="${h}" rx="1"/>`; }).join('');
-    return `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="30秒を1秒ごとの棒グラフで表した結果"><rect class="f-paper" x="16" y="14" width="208" height="122" rx="10"/>${bars}<path d="M120 26v84" stroke="var(--paper-line)" stroke-width="1.5" stroke-dasharray="3 3"/><text class="t" x="70" y="126" text-anchor="middle">前半15秒</text><text class="t" x="172" y="126" text-anchor="middle">後半15秒</text></svg>`;
+    return `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('30秒を1秒ごとの棒グラフで表した結果', 'Results for 30 seconds as a bar chart per second')}"><rect class="f-paper" x="16" y="14" width="208" height="122" rx="10"/>${bars}<path d="M120 26v84" stroke="var(--paper-line)" stroke-width="1.5" stroke-dasharray="3 3"/><text class="t" x="70" y="126" text-anchor="middle">${
+        L('前半15秒', 'First 15 s')}</text><text class="t" x="172" y="126" text-anchor="middle">${L('後半15秒', 'Last 15 s')}</text></svg>`;
   },
   tpAuto: () => {
     const hu = [34, 45, 55, 68, 77, 91, 100, 115, 123, 138, 149, 162, 170, 185, 196, 208];
     const tick = (xs, y, c) => xs.map(x => `<rect class="${c}" x="${x}" y="${y}" width="3" height="16" rx="1.5"/>`).join('');
-    return `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="人の連打は間隔がばらつき、連打アプリは間隔がそろう"><rect class="f-paper" x="16" y="14" width="208" height="122" rx="10"/><text class="t" x="30" y="38">人の連打（ばらつく）</text>${tick(hu, 46, 'f-mask')}<text class="t" x="30" y="90">連打アプリ（そろいすぎ）</text>${tick(hu.map((_, i) => 34 + i * 11.6), 98, 'f-line')}
-<path d="M196 76l16 16M212 76l-16 16" stroke="var(--ng)" stroke-width="3" stroke-linecap="round"/><text class="t" x="120" y="130" text-anchor="middle">疑いがあれば集計しない</text></svg>`;
+    return `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('人の連打は間隔がばらつき、連打アプリは間隔がそろう', 'Human tapping has uneven gaps; auto-tap apps are perfectly even')}"><rect class="f-paper" x="16" y="14" width="208" height="122" rx="10"/><text class="t" x="30" y="38">${
+        L('人の連打（ばらつく）', 'Human (uneven)')}</text>${tick(hu, 46, 'f-mask')}<text class="t" x="30" y="90">${L('連打アプリ（そろいすぎ）', 'Auto-tapper (too even)')}</text>${tick(hu.map((_, i) => 34 + i * 11.6), 98, 'f-line')}
+<path d="M196 76l16 16M212 76l-16 16" stroke="var(--ng)" stroke-width="3" stroke-linecap="round"/><text class="t" x="120" y="130" text-anchor="middle">${L('疑いがあれば集計しない', 'Not counted if suspicious')}</text></svg>`;
   },
-  tpHand: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="横画面の右側がタップエリア、左側に数字のパネル"><rect x="14" y="14" width="212" height="104" rx="14" fill="#070B1F"/><rect x="24" y="24" width="66" height="84" rx="8" fill="#0E1534"/><text x="57" y="52" text-anchor="middle" style="font:700 9px var(--f-body);fill:#8C97C4">タップ</text><text x="57" y="74" text-anchor="middle" style="font:700 20px var(--f-mono);fill:#2FE6FF">128</text><text x="57" y="96" text-anchor="middle" style="font:800 9px var(--f-body);fill:#FFE14D">RAPID FIRE</text>
-<rect x="98" y="24" width="118" height="84" rx="8" fill="#142160"/><circle cx="157" cy="66" r="16" fill="none" stroke="#2FE6FF" stroke-width="3"/><circle cx="157" cy="66" r="5" fill="#FFE14D"/><text class="t" x="120" y="138" text-anchor="middle">右利きは右、左利きは左がタップエリア</text></svg>`,
-  amLocal: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="記録は端末の中に25時間分だけ保存"><rect class="f-paper" x="40" y="12" width="92" height="126" rx="14"/><circle cx="86" cy="66" r="30" fill="none" stroke="var(--paper-line)" stroke-width="8"/><path d="M86 36a30 30 0 1 1-29 22" fill="none" stroke="var(--mask)" stroke-width="8" stroke-linecap="round"/><text class="t-ans" x="86" y="71" text-anchor="middle">25h</text><text class="t" x="86" y="118" text-anchor="middle">端末の中だけ</text><path d="M168 52l28 28M196 52l-28 28" stroke="var(--ng)" stroke-width="3" stroke-linecap="round" opacity=".7"/><text class="t" x="182" y="104" text-anchor="middle">外部へ送らない</text></svg>`,
-  frFlash: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="？をタップすると答えが一瞬だけ出て次のカードへ"><rect class="f-paper" x="18" y="30" width="78" height="90" rx="12"/><text class="t-jp" x="57" y="70" text-anchor="middle" style="font-size:12px">大化の改新</text><circle class="f-mask" cx="57" cy="98" r="11"/><text style="font:900 13px sans-serif;fill:var(--mask-ink)" x="57" y="103" text-anchor="middle">？</text><path class="s-ink" d="M104 75h22M119 68l7 7-7 7"/><rect class="f-paper" x="136" y="30" width="86" height="90" rx="12"/><text class="t-jp" x="179" y="70" text-anchor="middle">645年</text><rect class="f-line" x="150" y="90" width="58" height="5" rx="2.5"/><rect class="f-mask" x="150" y="90" width="22" height="5" rx="2.5"/><text class="t" x="179" y="140" text-anchor="middle">0.1\u301C2.0秒だけ表示</text></svg>`,
-  frModes: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="日本史年号・化学式・JR山手線・世界の国旗・日本地図などの14のモード">${[['日本史年号', 20, 18], ['化学式', 128, 18], ['JR山手線', 20, 56], ['世界の国旗', 128, 56], ['日本地図', 20, 94]].map(([t, x, y], i) => `<rect class="f-paper" x="${x}" y="${y}" width="${i === 4 ? 100 : 92}" height="32" rx="9"/><rect class="f-mask" x="${x + 10}" y="${y + 11}" width="10" height="10" rx="3"/><text class="t-jp" x="${x + 28}" y="${y + 21}" style="font-size:11px">${t}</text>`).join('')}<rect class="f-line" x="128" y="94" width="92" height="32" rx="9"/><text class="t" x="174" y="114" text-anchor="middle">ほか9モード</text></svg>`,
-  frPic: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="国旗や地図などの絵が、問題や答えに出る"><rect class="f-paper" x="30" y="18" width="180" height="114" rx="12"/><rect class="f-line" x="76" y="30" width="88" height="56" rx="6"/><circle class="f-mask" cx="120" cy="58" r="14"/><text class="t" x="120" y="104" text-anchor="middle">どこの旗？</text><text class="t-jp" x="120" y="122" text-anchor="middle" style="font-size:12px">日本</text></svg>`,
-  frRev: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="リバース：問題と答えを入れ替える"><rect class="f-paper" x="18" y="34" width="84" height="82" rx="12"/><text class="t" x="60" y="62" text-anchor="middle">問題</text><text class="t-jp" x="60" y="92" text-anchor="middle">645年</text><rect class="f-paper" x="138" y="34" width="84" height="82" rx="12"/><text class="t" x="180" y="62" text-anchor="middle">問題</text><text class="t-jp" x="180" y="92" text-anchor="middle" style="font-size:11px">大化の改新</text><path class="s-ink" d="M108 62h24M126 55l7 7-7 7M132 92h-24M114 85l-7 7 7 7"/></svg>`,
-  frFilter: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="時代や種類、地域などでカードを絞る"><text class="t" x="120" y="28" text-anchor="middle">時代で絞る</text>${[['奈良', 20, 44], ['平安', 90, 44], ['鎌倉', 160, 44], ['室町', 20, 84], ['江戸', 90, 84], ['明治', 160, 84]].map(([t, x, y], i) => `<rect class="${i === 1 || i === 2 ? 'f-mask' : 'f-paper'}" x="${x}" y="${y}" width="60" height="30" rx="15"/><text class="t-jp" x="${x + 30}" y="${y + 20}" text-anchor="middle" style="font-size:12px${i === 1 || i === 2 ? ';fill:#fff' : ''}">${t}</text>`).join('')}<text class="t" x="120" y="140" text-anchor="middle">出るカードだけに</text></svg>`,
-  frLoop: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="無限ループ：最後まで行ったら最初に戻る"><path d="M70 75c0-20 28-20 50 0s50 20 50 0-28-20-50 0-50 20-50 0z" fill="none" stroke="var(--mask)" stroke-width="7" stroke-linecap="round"/><rect class="f-paper" x="84" y="108" width="72" height="26" rx="13"/><circle class="f-mask" cx="142" cy="121" r="9"/><text class="t" x="104" y="125" text-anchor="middle">ON</text><text class="t" x="120" y="30" text-anchor="middle">モードごとにオン／オフ</text></svg>`,
-  frColor: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="6色とダーク・ライトから選べる"><rect class="f-paper" x="20" y="22" width="200" height="106" rx="12"/>${['#E8414B', '#F2852A', '#F2C52A', '#2EBF6E', '#3FC3E6', '#9B6BEA'].map((c, i) => `<circle cx="${50 + i * 28}" cy="56" r="11" fill="${c}"/>`).join('')}<rect class="f-line" x="40" y="86" width="160" height="30" rx="15"/><rect class="f-mask" x="40" y="86" width="80" height="30" rx="15"/><text style="font:700 12px sans-serif;fill:#fff" x="80" y="106" text-anchor="middle">ダーク</text><text class="t" x="160" y="106" text-anchor="middle">ライト</text></svg>`,
-  mtView: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="画面の色を選べて、栞とスライダーでページを移動できる">${['#FFFFFF', '#F28AA8', '#F5D547', '#A8D65C', '#2FA84F', '#7CC8F0', '#0A2448', '#8C6BD8'].map((c, i) => `<circle cx="${34 + i * 25}" cy="34" r="9" fill="${c}" stroke="var(--paper-line)" stroke-width="1.5"/>`).join('')}<rect class="f-paper" x="60" y="54" width="120" height="70" rx="5"/>${lines(72, 68, 70, 4, 12, 67)}<path class="f-mask" d="M156 54h12v24l-6-5-6 5z"/><text class="t" x="174" y="116" text-anchor="end">\u25C0 3 / 20 \u25B6</text><rect class="f-line" x="60" y="134" width="120" height="5" rx="2.5"/><circle class="dot" cx="78" cy="136.5" r="6"/></svg>`,
-  gauge: (n, col) =>`<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="スコアのゲージ">${Array.from({ length: 10 }, (_, i) => `<rect class="${i < n ? col(i) : 'f-line'}" x="${22 + i * 20}" y="64" width="16" height="30" rx="3"/>`).join('')}<text class="t" x="22" y="52">0</text><text class="t" x="206" y="52" text-anchor="end">10 = MASTER</text></svg>`,
-  cache: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="サーバーのデータを端末に保存"><path class="f-paper" d="M44 74a16 16 0 0 1 6-30 22 22 0 0 1 42 4 14 14 0 0 1-2 26z"/><text class="t" x="68" y="64" text-anchor="middle">データ</text><path class="s-ink" d="M100 62h34M126 54l8 8-8 8"/><rect class="f-paper" x="148" y="26" width="52" height="92" rx="9"/><rect class="f-mask" x="156" y="40" width="36" height="14" rx="3"/><rect class="f-line" x="156" y="64" width="30" height="4" rx="2"/><rect class="f-line" x="156" y="74" width="22" height="4" rx="2"/><text class="t" x="68" y="130" text-anchor="middle">サーバー</text><text class="t" x="174" y="136" text-anchor="middle">端末に保存</text></svg>`,
-  speak: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="単語の読み上げと詳細">
+  tpHand: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('横画面の右側がタップエリア、左側に数字のパネル', 'Landscape screen with the tap area on the right and numbers on the left')}"><rect x="14" y="14" width="212" height="104" rx="14" fill="#070B1F"/><rect x="24" y="24" width="66" height="84" rx="8" fill="#0E1534"/><text x="57" y="52" text-anchor="middle" style="font:700 9px var(--f-body);fill:#8C97C4">${
+      L('タップ', 'Tap')}</text><text x="57" y="74" text-anchor="middle" style="font:700 20px var(--f-mono);fill:#2FE6FF">128</text><text x="57" y="96" text-anchor="middle" style="font:800 9px var(--f-body);fill:#FFE14D">RAPID FIRE</text>
+<rect x="98" y="24" width="118" height="84" rx="8" fill="#142160"/><circle cx="157" cy="66" r="16" fill="none" stroke="#2FE6FF" stroke-width="3"/><circle cx="157" cy="66" r="5" fill="#FFE14D"/><text class="t" x="120" y="138" text-anchor="middle">${L('右利きは右、左利きは左がタップエリア', 'Tap area on the right for right-handers, left for left-handers')}</text></svg>`,
+  amLocal: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('記録は端末の中に25時間分だけ保存', 'Only 25 hours of records are kept on the device')}"><rect class="f-paper" x="40" y="12" width="92" height="126" rx="14"/><circle cx="86" cy="66" r="30" fill="none" stroke="var(--paper-line)" stroke-width="8"/><path d="M86 36a30 30 0 1 1-29 22" fill="none" stroke="var(--mask)" stroke-width="8" stroke-linecap="round"/><text class="t-ans" x="86" y="71" text-anchor="middle">25h</text><text class="t" x="86" y="118" text-anchor="middle">${L('端末の中だけ',
+      'On device only')}</text><path d="M168 52l28 28M196 52l-28 28" stroke="var(--ng)" stroke-width="3" stroke-linecap="round" opacity=".7"/><text class="t" x="182" y="104" text-anchor="middle">${L('外部へ送らない', 'Never sent out')}</text></svg>`,
+  frFlash: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('？をタップすると答えが一瞬だけ出て次のカードへ', 'Tap ? and the answer flashes for an instant before the next card')}"><rect class="f-paper" x="18" y="30" width="78" height="90" rx="12"/><text class="t-jp" x="57" y="70" text-anchor="middle" style="font-size:12px">${
+      L('大化の改新', 'Taika Reform')}</text><circle class="f-mask" cx="57" cy="98" r="11"/><text style="font:900 13px sans-serif;fill:var(--mask-ink)" x="57" y="103" text-anchor="middle">？</text><path class="s-ink" d="M104 75h22M119 68l7 7-7 7"/><rect class="f-paper" x="136" y="30" width="86" height="90" rx="12"/><text class="t-jp" x="179" y="70" text-anchor="middle">${L('645年',
+      '645')}</text><rect class="f-line" x="150" y="90" width="58" height="5" rx="2.5"/><rect class="f-mask" x="150" y="90" width="22" height="5" rx="2.5"/><text class="t" x="179" y="140" text-anchor="middle">${L('0.1\u301C2.0秒だけ表示', 'Shown for 0.1\u20132.0 s')}</text></svg>`,
+  frModes: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('日本史年号・化学式・JR山手線・世界の国旗・日本地図などの14のモード', '14 modes such as Japanese history dates, chemical formulas, the JR Yamanote Line, world flags and the map of Japan')}">${[[L('日本史年号', 'History dates'), 20, 18], [L('化学式',
+      'Chem formulas'), 128, 18], [L('JR山手線', 'JR Yamanote'), 20, 56], [L('世界の国旗', 'World flags'), 128, 56], [L('日本地図', 'Map of Japan'), 20, 94]].map(([t, x, y], i) => `<rect class="f-paper" x="${x}" y="${y}" width="${i === 4 ? 100 : 92}" height="32" rx="9"/><rect class="f-mask" x="${x + 10}" y="${y + 11}" width="10" height="10" rx="3"/><text class="t-jp" x="${x + 28}" y="${y + 21}" style="font-size:11px">${t}</text>`).join('')}<rect class="f-line" x="128" y="94" width="92" height="32" rx="9"/><text class="t" x="174" y="114" text-anchor="middle">${L('ほか9モード',
+      '+9 more modes')}</text></svg>`,
+  frPic: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('国旗や地図などの絵が、問題や答えに出る', 'Pictures such as flags and maps appear in questions and answers')}"><rect class="f-paper" x="30" y="18" width="180" height="114" rx="12"/><rect class="f-line" x="76" y="30" width="88" height="56" rx="6"/><circle class="f-mask" cx="120" cy="58" r="14"/><text class="t" x="120" y="104" text-anchor="middle">${
+      L('どこの旗？', 'Which flag?')}</text><text class="t-jp" x="120" y="122" text-anchor="middle" style="font-size:12px">${L('日本', 'Japan')}</text></svg>`,
+  frRev: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('リバース：問題と答えを入れ替える', 'Reverse: swap questions and answers')}"><rect class="f-paper" x="18" y="34" width="84" height="82" rx="12"/><text class="t" x="60" y="62" text-anchor="middle">${
+      L('問題', 'Question')}</text><text class="t-jp" x="60" y="92" text-anchor="middle">${L('645年', '645')}</text><rect class="f-paper" x="138" y="34" width="84" height="82" rx="12"/><text class="t" x="180" y="62" text-anchor="middle">${L('問題',
+      'Question')}</text><text class="t-jp" x="180" y="92" text-anchor="middle" style="font-size:11px">${L('大化の改新', 'Taika Reform')}</text><path class="s-ink" d="M108 62h24M126 55l7 7-7 7M132 92h-24M114 85l-7 7 7 7"/></svg>`,
+  frFilter: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('時代や種類、地域などでカードを絞る', 'Narrow down cards by era, type, region and more')}"><text class="t" x="120" y="28" text-anchor="middle">${L('時代で絞る', 'Filter by era')}</text>${[[L('奈良', 'Nara'), 20, 44], [L('平安',
+      'Heian'), 90, 44], [L('鎌倉', 'Kamakura'), 160, 44], [L('室町', 'Muromachi'), 20, 84], [L('江戸', 'Edo'), 90, 84], [L('明治',
+          'Meiji'), 160, 84]].map(([t, x, y], i) => `<rect class="${i === 1 || i === 2 ? 'f-mask' : 'f-paper'}" x="${x}" y="${y}" width="60" height="30" rx="15"/><text class="t-jp" x="${x + 30}" y="${y + 20}" text-anchor="middle" style="font-size:12px${i === 1 || i === 2 ? ';fill:#fff' : ''}">${t}</text>`).join('')}<text class="t" x="120" y="140" text-anchor="middle">${L('出るカードだけに',
+      'Only these cards')}</text></svg>`,
+  frLoop: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('無限ループ：最後まで行ったら最初に戻る', 'Endless loop: back to the start after the last card')}"><path d="M70 75c0-20 28-20 50 0s50 20 50 0-28-20-50 0-50 20-50 0z" fill="none" stroke="var(--mask)" stroke-width="7" stroke-linecap="round"/>
+<rect class="f-paper" x="84" y="108" width="72" height="26" rx="13"/><circle class="f-mask" cx="142" cy="121" r="9"/><text class="t" x="104" y="125" text-anchor="middle">ON</text><text class="t" x="120" y="30" text-anchor="middle">${L('モードごとにオン／オフ', 'On/off for each mode')}</text></svg>`,
+  frColor: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('6色とダーク・ライトから選べる', 'Choose from 6 colors, dark or light')}"><rect class="f-paper" x="20" y="22" width="200" height="106" rx="12"/>${['#E8414B',
+      '#F2852A', '#F2C52A', '#2EBF6E', '#3FC3E6', '#9B6BEA'].map((c, i) => `<circle cx="${50 + i * 28}" cy="56" r="11" fill="${c}"/>`).join('')}<rect class="f-line" x="40" y="86" width="160" height="30" rx="15"/><rect class="f-mask" x="40" y="86" width="80" height="30" rx="15"/><text style="font:700 12px sans-serif;fill:#fff" x="80" y="106" text-anchor="middle">${L('ダーク',
+      'Dark')}</text><text class="t" x="160" y="106" text-anchor="middle">${L('ライト', 'Light')}</text></svg>`,
+  mtView: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('画面の色を選べて、栞とスライダーでページを移動できる', 'Pick a screen color and move through pages with bookmarks and a slider')}">${['#FFFFFF',
+      '#F28AA8', '#F5D547', '#A8D65C', '#2FA84F', '#7CC8F0', '#0A2448', '#8C6BD8'].map((c, i) => `<circle cx="${34 + i * 25}" cy="34" r="9" fill="${c}" stroke="var(--paper-line)" stroke-width="1.5"/>`).join('')}<rect class="f-paper" x="60" y="54" width="120" height="70" rx="5"/>${lines(72, 68, 70, 4, 12, 67)}<path class="f-mask" d="M156 54h12v24l-6-5-6 5z"/><text class="t" x="174" y="116" text-anchor="end">\u25C0 3 / 20 \u25B6</text><rect class="f-line" x="60" y="134" width="120" height="5" rx="2.5"/><circle class="dot" cx="78" cy="136.5" r="6"/></svg>`,
+  gauge: (n, col) =>`<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('スコアのゲージ', 'Score gauge')}">${Array.from({ length: 10 }, (_, i) => `<rect class="${i < n ? col(i) : 'f-line'}" x="${22 + i * 20}" y="64" width="16" height="30" rx="3"/>`).join('')}<text class="t" x="22" y="52">0</text><text class="t" x="206" y="52" text-anchor="end">10 = MASTER</text></svg>`,
+  cache: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('サーバーのデータを端末に保存', 'Data from the server is saved on the device')}"><path class="f-paper" d="M44 74a16 16 0 0 1 6-30 22 22 0 0 1 42 4 14 14 0 0 1-2 26z"/><text class="t" x="68" y="64" text-anchor="middle">${
+      L('データ', 'Data')}</text><path class="s-ink" d="M100 62h34M126 54l8 8-8 8"/><rect class="f-paper" x="148" y="26" width="52" height="92" rx="9"/><rect class="f-mask" x="156" y="40" width="36" height="14" rx="3"/><rect class="f-line" x="156" y="64" width="30" height="4" rx="2"/><rect class="f-line" x="156" y="74" width="22" height="4" rx="2"/><text class="t" x="68" y="130" text-anchor="middle">${L('サーバー',
+      'Server')}</text><text class="t" x="174" y="136" text-anchor="middle">${L('端末に保存', 'Saved on device')}</text></svg>`,
+  speak: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('単語の読み上げと詳細', 'Word read-aloud and details')}">
     <rect class="f-paper" x="30" y="34" width="120" height="82" rx="10"/><text class="t-jp" x="46" y="66">resilient</text>
     <rect class="f-line" x="46" y="80" width="60" height="5" rx="2.5"/><rect class="f-line" x="46" y="92" width="44" height="5" rx="2.5"/>
     <path class="f-mask" d="M168 66h10l12-10v38l-12-10h-10z"/><path class="s-mask" d="M198 64q8 11 0 22M206 58q14 17 0 34"/>
-    <text class="t" x="190" y="116" text-anchor="middle">読み上げ</text></svg>`,
-  modes: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="学習モードを後から追加できる">${[[30, 'f-ok'], [92, 'f-warn']].map(([x, c]) => `<rect class="f-paper" x="${x}" y="40" width="52" height="70" rx="8"/><rect class="${c}" x="${x + 10}" y="52" width="32" height="10" rx="3"/>${lines(x + 10, 74, 32, 3, 9, x)}`).join('')}<rect class="dash" x="154" y="40" width="52" height="70" rx="8"/><path class="s-ink" d="M180 66v18M171 75h18"/><text class="t" x="180" y="130" text-anchor="middle">追加できる</text></svg>`,
+    <text class="t" x="190" y="116" text-anchor="middle">${L('読み上げ', 'Read aloud')}</text></svg>`,
+  modes: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('学習モードを後から追加できる', 'Study modes can be added later')}">${[[30, 'f-ok'], [92, 'f-warn']].map(([x, c]) => `<rect class="f-paper" x="${x}" y="40" width="52" height="70" rx="8"/><rect class="${c}" x="${x + 10}" y="52" width="32" height="10" rx="3"/>${lines(x + 10, 74, 32, 3, 9, x)}`).join('')}<rect class="dash" x="154" y="40" width="52" height="70" rx="8"/>
+<path class="s-ink" d="M180 66v18M171 75h18"/><text class="t" x="180" y="130" text-anchor="middle">${L('追加できる', 'Add more')}</text></svg>`,
 };
 const fillLines = (n, seed) => { const r = rng(seed); return `<div class="gls">${Array.from({ length: n }, () => `<i class="gl" style="width:${Math.round(55 + r() * 43)}%"></i>`).join('')}</div>`; };
 const FIXED_DEMO = '';
 const DEMOS = [
-  { id: 'history', subject: '歴史', file: '日本史_一問一答.pdf', title: '第3章　鎌倉・室町時代 確認問題',
-    q1: ['鎌倉幕府を開いた初代将軍は？', '源頼朝'],
+  { id: 'history', subject: L('歴史', 'History'), file: L('日本史_一問一答.pdf', 'japanese_history_quiz.pdf'), title: L('第3章　鎌倉・室町時代 確認問題', 'Chapter 3: Kamakura and Muromachi Periods \u2014 Review'),
+    q1: [L('鎌倉幕府を開いた初代将軍は？', 'Who was the first shogun of the Kamakura shogunate?'), L('源頼朝', 'Minamoto no Yoritomo')],
     ex: [
-      ['鎌倉時代の朝廷と幕府', '1221年、{{後鳥羽上皇}}が鎌倉幕府を倒そうとして{{承久の乱}}を起こしたが、幕府軍に敗れた。その後、幕府は京都に{{六波羅探題}}を置いて朝廷を監視した。'],
-      ['室町幕府の成立', '{{足利尊氏}}は1338年に{{征夷大将軍}}となり、京都に幕府を開いた。'],
+      [L('鎌倉時代の朝廷と幕府', 'The court and the shogunate in the Kamakura period'), L('1221年、{{後鳥羽上皇}}が鎌倉幕府を倒そうとして{{承久の乱}}を起こしたが、幕府軍に敗れた。その後、幕府は京都に{{六波羅探題}}を置いて朝廷を監視した。', 'In 1221, {{Retired Emperor Go-Toba}} started the {{Jokyu War}} to overthrow the Kamakura shogunate, but was defeated. The shogunate then set up the {{Rokuhara Tandai}} in Kyoto to watch over the court.')],
+      [L('室町幕府の成立', 'The founding of the Muromachi shogunate'), L('{{足利尊氏}}は1338年に{{征夷大将軍}}となり、京都に幕府を開いた。', 'In 1338, {{Ashikaga Takauji}} became {{shogun}} and founded a shogunate in Kyoto.')],
     ] },
-  { id: 'chemistry', subject: '化学', file: '化学基礎_イオン化傾向.pdf', title: '第2章　金属のイオン化傾向 確認問題',
-    q1: ['Zn・Fe・Cu のうち、水素よりイオン化傾向が小さい金属は？', 'Cu'],
+  { id: 'chemistry', subject: L('化学', 'Chemistry'), file: L('化学基礎_イオン化傾向.pdf', 'chemistry_ionization.pdf'), title: L('第2章　金属のイオン化傾向 確認問題', 'Chapter 2: Ionization Tendency of Metals \u2014 Review'),
+    q1: [L('Zn・Fe・Cu のうち、水素よりイオン化傾向が小さい金属は？', 'Of Zn, Fe and Cu, which metal has a lower ionization tendency than hydrogen?'), 'Cu'],
     ex: [
-      ['イオン化列と反応性', '金属をイオンになりやすい順に並べたものを{{イオン化列}}という。イオン化傾向が大きい金属ほど{{陽イオン}}になりやすく、{{還元力}}が強い。'],
-      ['金属と酸の反応', 'イオン化傾向が{{水素}}より大きい金属は、希塩酸や希硫酸と反応して{{H\u2082}}を発生する。金や白金は{{王水}}にしか溶けない。'],
+      [L('イオン化列と反応性', 'The reactivity series'), L('金属をイオンになりやすい順に並べたものを{{イオン化列}}という。イオン化傾向が大きい金属ほど{{陽イオン}}になりやすく、{{還元力}}が強い。', 'Metals listed in order of how easily they form ions make up the {{reactivity series}}. The higher a metal’s ionization tendency, the more easily it becomes a {{cation}} and the stronger its {{reducing power}}.')],
+      [L('金属と酸の反応', 'Metals and acids'), L('イオン化傾向が{{水素}}より大きい金属は、希塩酸や希硫酸と反応して{{H\u2082}}を発生する。金や白金は{{王水}}にしか溶けない。', 'Metals with a higher ionization tendency than {{hydrogen}} react with dilute hydrochloric or sulfuric acid to release {{H\u2082}}. Gold and platinum dissolve only in {{aqua regia}}.')],
     ] },
-  { id: 'english', subject: '英語', file: '英語_基本文法.pdf', title: '第5章　英文法の基本 確認問題',
-    q1: ['「持続可能な」を表す英単語は？', 'sustainable'],
+  { id: 'english', subject: L('英語', 'English'), file: L('英語_基本文法.pdf', 'english_grammar.pdf'), title: L('第5章　英文法の基本 確認問題', 'Chapter 5: English Grammar Basics \u2014 Review'),
+    q1: [L('「持続可能な」を表す英単語は？', 'Which word means “able to be maintained over time”?'), 'sustainable'],
     ex: [
-      ['to不定詞の用法', 'to不定詞には、名詞の働きをする{{名詞的用法}}、名詞を修飾する{{形容詞的用法}}、目的や原因を表す{{副詞的用法}}がある。'],
-      ['現在完了形', '現在完了形は「{{have[has]＋過去分詞}}」の形で表し、完了・結果・経験・{{継続}}の意味がある。'],
+      [L('to不定詞の用法', 'Uses of the to-infinitive'), L('to不定詞には、名詞の働きをする{{名詞的用法}}、名詞を修飾する{{形容詞的用法}}、目的や原因を表す{{副詞的用法}}がある。', 'The to-infinitive has a {{noun use}} that works as a noun, an {{adjective use}} that modifies a noun, and an {{adverb use}} that shows purpose or cause.')],
+      [L('現在完了形', 'The present perfect'), L('現在完了形は「{{have[has]＋過去分詞}}」の形で表し、完了・結果・経験・{{継続}}の意味がある。', 'The present perfect is formed with “{{have [has] + past participle}}” and expresses completion, result, experience and {{continuation}}.')],
     ] },
-  { id: 'physics', subject: '物理', file: '物理基礎_エネルギー.pdf', title: '第4章　力学的エネルギー 確認問題',
-    q1: ['質量 m の物体が速さ v で動くとき、運動エネルギーを表す式は？', '\u00BDmv\u00B2'],
+  { id: 'physics', subject: L('物理', 'Physics'), file: L('物理基礎_エネルギー.pdf', 'physics_energy.pdf'), title: L('第4章　力学的エネルギー 確認問題', 'Chapter 4: Mechanical Energy \u2014 Review'),
+    q1: [L('質量 m の物体が速さ v で動くとき、運動エネルギーを表す式は？', 'What is the kinetic energy of an object of mass m moving at speed v?'), '\u00BDmv\u00B2'],
     ex: [
-      ['エネルギー保存の法則', '摩擦や空気抵抗がないとき、{{運動エネルギー}}と{{位置エネルギー}}の和である力学的エネルギーは一定に保たれる。これを{{力学的エネルギー保存の法則}}という。'],
-      ['重力による位置エネルギー', '高さ h にある質量 m の物体がもつ重力による位置エネルギーは{{mgh}}で表される。ここで g（重力加速度）は約{{9.8}} m/s\u00B2である。'],
+      [L('エネルギー保存の法則', 'Conservation of energy'), L('摩擦や空気抵抗がないとき、{{運動エネルギー}}と{{位置エネルギー}}の和である力学的エネルギーは一定に保たれる。これを{{力学的エネルギー保存の法則}}という。', 'Without friction or air resistance, mechanical energy, the sum of {{kinetic energy}} and {{potential energy}}, stays constant. This is the {{law of conservation of mechanical energy}}.')],
+      [L('重力による位置エネルギー', 'Gravitational potential energy'), L('高さ h にある質量 m の物体がもつ重力による位置エネルギーは{{mgh}}で表される。ここで g（重力加速度）は約{{9.8}} m/s\u00B2である。', 'The gravitational potential energy of an object of mass m at height h is {{mgh}}, where g (the acceleration due to gravity) is about {{9.8}} m/s\u00B2.')],
     ] },
-  { id: 'classics', subject: '古典', file: '古文_基礎.pdf', title: '第2章　古文の基礎 確認問題',
-    q1: ['『枕草子』の作者は？', '清少納言'],
+  { id: 'classics', subject: L('古典', 'Classics'), file: L('古文_基礎.pdf', 'japanese_classics.pdf'), title: L('第2章　古文の基礎 確認問題', 'Chapter 2: Classical Japanese Basics \u2014 Review'),
+    q1: [L('『枕草子』の作者は？', 'Who wrote The Pillow Book?'), L('清少納言', 'Sei Shonagon')],
     ex: [
-      ['係り結び', '文中に「ぞ・なむ・や・か」があると文末が{{連体形}}に、「こそ」があると文末が{{已然形}}になる。この決まりを{{係り結び}}という。'],
-      ['『源氏物語』', '『源氏物語』は、平安時代中期に{{紫式部}}が書いた長編の物語で、主人公は{{光源氏}}である。'],
+      [L('係り結び', 'Kakari-musubi'), L('文中に「ぞ・なむ・や・か」があると文末が{{連体形}}に、「こそ」があると文末が{{已然形}}になる。この決まりを{{係り結び}}という。', 'When “zo, namu, ya, ka” appears in a sentence, it ends in the {{attributive form}}; with “koso”, it ends in the {{realis form}}. This rule is called {{kakari-musubi}}.')],
+      [L('『源氏物語』', 'The Tale of Genji'), L('『源氏物語』は、平安時代中期に{{紫式部}}が書いた長編の物語で、主人公は{{光源氏}}である。', 'The Tale of Genji is a long story written by {{Murasaki Shikibu}} in the mid-Heian period. Its hero is {{Hikaru Genji}}.')],
     ] },
 ];
 const pickDemo = () => {
   const fixed = DEMOS.find(d => d.id === FIXED_DEMO);
   if (fixed) return fixed;
+  if (DEMO_I >= 0) return DEMOS[DEMO_I];
   let last = -1;
   try { const raw = localStorage.getItem('mscafe-demo'); last = raw === null ? -1 : Number(raw); } catch (e) {  }
   const pool = DEMOS.filter((_, j) => j !== last);
-  const i = DEMOS.indexOf(pool[Math.floor(Math.random() * pool.length)]);
-  try { localStorage.setItem('mscafe-demo', String(i)); } catch (e) {  }
-  return DEMOS[i];
+  DEMO_I = DEMOS.indexOf(pool[Math.floor(Math.random() * pool.length)]);
+  try { localStorage.setItem('mscafe-demo', String(DEMO_I)); } catch (e) {  }
+  return DEMOS[DEMO_I];
 };
 const DEMO = pickDemo();
 const blank = t => `<button type="button" class="mask inl" aria-pressed="false">${t}</button><span class="mk in" aria-hidden="true"></span>`;
-const explain = (n, title, html) => `<div class="ex"><div class="qrow"><span class="qn">Q${n}</span><span class="qt">${title}</span><span class="tagx">解説</span></div><p class="exp">${html}</p></div>`;
+const explain = (n, title, html) => `<div class="ex"><div class="qrow"><span class="qn">Q${n}</span><span class="qt">${title}</span><span class="tagx">${L('解説', 'Notes')}</span></div><p class="exp">${html}</p></div>`;
 const quiz = (n, text, ans) => `<div class="q"><div class="qrow"><span class="qn">Q${n}</span><span class="qt">${text}</span><span class="mk" aria-hidden="true"></span></div><button type="button" class="mask" aria-pressed="false">${ans}</button></div>`;
 const demoBody = () => {
   const hole = t => t.replace(/\{\{(.+?)\}\}/g, (_, w) => blank(w));
@@ -806,219 +875,231 @@ const demoBody = () => {
     + DEMO.ex.map(([t, h], i) => fillLines(1, 9 + i * 4) + explain(i + 2, t, hole(h))).join('');
 };
 const pdfDemo = () => `<div class="demo">
-  <div class="phone" role="group" aria-label="操作デモ">
+  <div class="phone" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
     <div class="af" aria-hidden="true"><svg viewBox="-20 -20 80 90" width="80" height="90"><circle class="af-rp" cx="0" cy="0" r="12"/>${finger(0, 0)}</svg></div>
-    <div class="ph-bar"><span>← PDF一覧</span><span class="ph-name">${DEMO.file}</span></div>
+    <div class="ph-bar"><span>${L('← PDF一覧', '← PDF list')}</span><span class="ph-name">${DEMO.file}</span></div>
     <div class="paper">
       <div class="p-title">${DEMO.title}</div>
       ${demoBody()}
     </div>
     <div class="ph-foot"><div class="track"><i class="thumb"></i></div><span>3 / 20</span></div>
   </div>
-  <p class="demo-sub">科目：${DEMO.subject}　（開くたびに入れ替わります）</p>
-  <p class="demo-note">オレンジのマスクを触ってみてください。</p>
-  <button class="replay" type="button" hidden>\u25B6 自動デモをもう一度</button>
-  <div class="legend"><span>タップ：答えを表示</span><span>${badge('ok')}長押し</span><span>${badge('ng')}ダブルタップ</span><span>${badge('warn')}上スワイプ</span></div>
+  <p class="demo-sub">${L('科目：', 'Subject: ')}${DEMO.subject}　${L('（開くたびに入れ替わります）', ' (changes each time you visit)')}</p>
+  <p class="demo-note">${L('オレンジのマスクを触ってみてください。', 'Try touching the orange masks.')}</p>
+  <button class="replay" type="button" hidden>${L('\u25B6 自動デモをもう一度', '\u25B6 Replay the auto demo')}</button>
+  <div class="legend"><span>${L('タップ：答えを表示', 'Tap: show the answer')}</span><span>${badge('ok')}${L('長押し', 'Long press')}</span><span>${badge('ng')}${L('ダブルタップ', 'Double tap')}</span><span>${badge('warn')}${L('上スワイプ', 'Swipe up')}</span></div>
 </div>`;
 const AM_APPS = [
-  ['ライト（懐中電灯）', 0, ['脅威リストに一致した宛先へ通信しました。', '画面オフ中や深夜に 64 回通信しました。', 'アンインストールをおすすめします。']],
-  ['パズルゲーム', 1, ['広告・計測の会社 11 社と通信しました。', '同じ宛先へ、約 5 分おきに 12 回接続しています。']],
-  ['スマホクリーナー', 2, ['名前を使わず IP アドレスへ直接 6 か所接続しました。']],
-  ['乗換案内', 3, ['気になる兆候はありません。']],
+  [L('ライト（懐中電灯）', 'Flashlight'), 0, [L('脅威リストに一致した宛先へ通信しました。', 'Connected to a destination on a threat list.'), L('画面オフ中や深夜に 64 回通信しました。', 'Connected 64 times while the screen was off or late at night.'), L('アンインストールをおすすめします。', 'We recommend uninstalling it.')]],
+  [L('パズルゲーム', 'Puzzle Game'), 1, [L('広告・計測の会社 11 社と通信しました。', 'Talked to 11 ad and tracking companies.'), L('同じ宛先へ、約 5 分おきに 12 回接続しています。', 'Connected to the same destination 12 times, about every 5 minutes.')]],
+  [L('スマホクリーナー', 'Phone Cleaner'), 2, [L('名前を使わず IP アドレスへ直接 6 か所接続しました。', 'Connected directly to 6 IP addresses without using host names.')]],
+  [L('乗換案内', 'Transit Guide'), 3, [L('気になる兆候はありません。', 'No worrying signs.')]],
 ];
-const AM_LV = ['危険', '要注意', '注意', '正常'];
+const AM_LV = [L('危険', 'Danger'), L('要注意', 'Warning'), L('注意', 'Caution'), L('正常', 'Normal')];
 const amDemo = () => `<div class="demo">
-  <div class="phone" role="group" aria-label="操作デモ">
+  <div class="phone" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
     <div class="amd-scr">
-      <button type="button" class="amd-ring" aria-pressed="true"><b>見守り中</b><small>要確認 3件</small></button>
-      <p class="amd-sub">過去24時間 \u00B7 4アプリを見守り中</p>
+      <button type="button" class="amd-ring" aria-pressed="true"><b>${L('見守り中', 'Monitoring')}</b><small>${L('要確認 3件', 'To check: 3')}</small></button>
+      <p class="amd-sub">${L('過去24時間 \u00B7 4アプリを見守り中', 'Last 24 hours \u00B7 Monitoring 4 apps')}</p>
       <ul class="amd-list">${AM_APPS.map(([n, lv, rs], i) => `<li><button type="button" class="amd-row" aria-expanded="false" data-i="${i}"><span class="amd-n">${n}</span><span class="amd-lv l${lv}">${AM_LV[lv]}</span></button><div class="amd-why" hidden>${rs.map(r => `<p>${r}</p>`).join('')}</div></li>`).join('')}</ul>
     </div>
   </div>
-  <p class="demo-note">丸を押すと「見守り中」と「待機中」が切り替わります。アプリを押すと、見つかった兆候が出ます。アプリ名は架空です。</p>
+  <p class="demo-note">${L('丸を押すと「見守り中」と「待機中」が切り替わります。アプリを押すと、見つかった兆候が出ます。アプリ名は架空です。', 'Press the circle to switch between “Monitoring” and “Standby”. Press an app to see the signs that were found. The app names are made up.')}</p>
 </div>`;
 const FR_DECKS = [
-  ['年号', '日本史年号', '何年？', [['聖徳太子が摂政になる', '593年'], ['大化の改新', '645年'], ['平城京に遷都', '710年'], ['平安京に遷都', '794年'], ['鎌倉幕府が成立（守護・地頭）', '1185年'], ['関ヶ原の戦い', '1600年']]],
-  ['化学式', '化学式', '化学式は？', [['水', 'H\u2082O'], ['二酸化炭素', 'CO\u2082'], ['アンモニア', 'NH\u2083'], ['塩化ナトリウム', 'NaCl'], ['硫酸', 'H\u2082SO\u2084'], ['メタン', 'CH\u2084']]],
-  ['山手線', 'JR山手線', '外回りの次の駅は？', [['東京', '有楽町'], ['有楽町', '新橋'], ['新橋', '浜松町'], ['浜松町', '田町'], ['田町', '高輪ゲートウェイ'], ['高輪ゲートウェイ', '品川']]],
-  ['都道府県', '日本地図', '県庁所在地は？', [['北海道', '札幌市'], ['岩手県', '盛岡市'], ['宮城県', '仙台市'], ['栃木県', '宇都宮市'], ['石川県', '金沢市'], ['愛媛県', '松山市']]],
+  [L('年号', 'Dates'), L('日本史年号', 'History dates'), L('何年？', 'What year?'), [[L('聖徳太子が摂政になる', 'Prince Shotoku becomes regent'), L('593年', '593')], [L('大化の改新', 'Taika Reform'), L('645年', '645')], [L('平城京に遷都', 'Capital moves to Heijo-kyo'), L('710年', '710')], [L('平安京に遷都', 'Capital moves to Heian-kyo'), L('794年', '794')], [L('鎌倉幕府が成立（守護・地頭）', 'Kamakura shogunate set up (shugo and jito)'), L('1185年', '1185')], [L('関ヶ原の戦い', 'Battle of Sekigahara'), L('1600年', '1600')]]],
+  [L('化学式', 'Formulas'), L('化学式', 'Formulas'), L('化学式は？', 'Formula?'), [[L('水', 'Water'), 'H\u2082O'], [L('二酸化炭素', 'Carbon dioxide'), 'CO\u2082'], [L('アンモニア', 'Ammonia'), 'NH\u2083'], [L('塩化ナトリウム', 'Sodium chloride'), 'NaCl'], [L('硫酸', 'Sulfuric acid'), 'H\u2082SO\u2084'], [L('メタン', 'Methane'), 'CH\u2084']]],
+  [L('山手線', 'Yamanote'), L('JR山手線', 'JR Yamanote'), L('外回りの次の駅は？', 'Next station (outer loop)?'), [[L('東京', 'Tokyo'), L('有楽町', 'Yurakucho')], [L('有楽町', 'Yurakucho'), L('新橋', 'Shimbashi')], [L('新橋', 'Shimbashi'), L('浜松町', 'Hamamatsucho')], [L('浜松町', 'Hamamatsucho'), L('田町', 'Tamachi')], [L('田町', 'Tamachi'), L('高輪ゲートウェイ', 'Takanawa Gateway')], [L('高輪ゲートウェイ', 'Takanawa Gateway'), L('品川', 'Shinagawa')]]],
+  [L('都道府県', 'Prefectures'), L('日本地図', 'Map of Japan'), L('県庁所在地は？', 'Capital city?'), [[L('北海道', 'Hokkaido'), L('札幌市', 'Sapporo')], [L('岩手県', 'Iwate'), L('盛岡市', 'Morioka')], [L('宮城県', 'Miyagi'), L('仙台市', 'Sendai')], [L('栃木県', 'Tochigi'), L('宇都宮市', 'Utsunomiya')], [L('石川県', 'Ishikawa'), L('金沢市', 'Kanazawa')], [L('愛媛県', 'Ehime'), L('松山市', 'Matsuyama')]]],
 ];
 const frDemo = () => `<div class="demo">
-  <div class="mtd-langs" role="group" aria-label="モード">${FR_DECKS.map(([k], i) => `<button type="button" class="mtd-l frd-m" data-i="${i}" aria-pressed="${i === 0}">${k}</button>`).join('')}</div>
-  <div class="phone" role="group" aria-label="操作デモ">
+  <div class="mtd-langs" role="group" aria-label="${L('モード', 'Modes')}">${FR_DECKS.map(([k], i) => `<button type="button" class="mtd-l frd-m" data-i="${i}" aria-pressed="${i === 0}">${k}</button>`).join('')}</div>
+  <div class="phone" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
     <div class="frd-scr">
       <div class="frd-top"><span class="frd-title"></span><span class="frd-sc"></span></div>
       <p class="frd-prompt"></p>
       <div class="frd-stage"><div class="frd-card"><b class="frd-q"></b><span class="frd-a" aria-live="polite"></span></div></div>
-      <button type="button" class="frd-hit" aria-label="答えを見る">？</button>
-      <div class="frd-grade"><button type="button" class="frd-rev" aria-pressed="false">\u21C4 リバース</button></div>
-      <label class="frd-sec"><span>答えの表示</span><input type="range" min="1" max="20" value="10" aria-label="答えの表示時間"><output>1.0秒</output></label>
+      <button type="button" class="frd-hit" aria-label="${L('答えを見る', 'Show the answer')}">？</button>
+      <div class="frd-grade"><button type="button" class="frd-rev" aria-pressed="false">${L('\u21C4 リバース', '\u21C4 Reverse')}</button></div>
+      <label class="frd-sec"><span>${L('答えの表示', 'Answer shown')}</span><input type="range" min="1" max="20" value="10" aria-label="${L('答えの表示時間', 'How long the answer is shown')}"><output>${L('1.0秒', '1.0 s')}</output></label>
     </div>
   </div>
-  <p class="demo-note">？を押すと答えが一瞬だけ出て、次のカードへ進みます。「リバース」を押すと、問題と答えが入れ替わります。</p>
+  <p class="demo-note">${L('？を押すと答えが一瞬だけ出て、次のカードへ進みます。「リバース」を押すと、問題と答えが入れ替わります。', 'Press ? and the answer flashes for an instant, then the next card comes up. Press “Reverse” to swap questions and answers.')}</p>
 </div>`;
-const TP_FX = [['衝撃波', '#FFFFFF', 'バン!'], ['星屑', '#FFE14D', 'キラン!'], ['ハート', '#FF4FA3', 'ポン!'], ['なし', '', '']];
+const TP_FX = [[L('衝撃波', 'Shockwave'), '#FFFFFF', L('バン!', 'BANG!')], [L('星屑', 'Stardust'), '#FFE14D', L('キラン!', 'TWINKLE!')], [L('ハート', 'Hearts'), '#FF4FA3', L('ポン!', 'POP!')], [L('なし', 'None'), '', '']];
 const TP_SEC = 10;
 const TP_LV = [['', ''], ['BOOST', '#2FE6FF'], ['RAPID FIRE', '#FFE14D'], ['FEVER!!', '#FF4FA3']];
 const tpDemo = () => `<div class="demo">
-  <div class="mtd-langs" role="group" aria-label="エフェクト">${TP_FX.map(([k], i) => `<button type="button" class="mtd-l tpd-fx" data-i="${i}" aria-pressed="${i === 0}">${k}</button>`).join('')}</div>
-  <div class="tpd" role="group" aria-label="操作デモ">
-    <div class="tpd-info"><span class="tpd-k">残り</span><b class="tpd-time">${TP_SEC}.0</b><span class="tpd-k">タップ</span><b class="tpd-n">0</b><span class="tpd-k">直近1秒</span><b class="tpd-r">0</b><span class="tpd-lv"></span></div>
+  <div class="mtd-langs" role="group" aria-label="${L('エフェクト', 'Effects')}">${TP_FX.map(([k], i) => `<button type="button" class="mtd-l tpd-fx" data-i="${i}" aria-pressed="${i === 0}">${k}</button>`).join('')}</div>
+  <div class="tpd" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
+    <div class="tpd-info"><span class="tpd-k">${L('残り', 'Time left')}</span><b class="tpd-time">${TP_SEC}.0</b><span class="tpd-k">${L('タップ', 'Tap')}</span><b class="tpd-n">0</b><span class="tpd-k">${L('直近1秒', 'Last 1 s')}</span><b class="tpd-r">0</b><span class="tpd-lv"></span></div>
     <div class="tpd-area"><canvas class="tpd-cv" aria-hidden="true"></canvas><button type="button" class="tpd-start">START</button><span class="tpd-big" aria-live="polite"></span></div>
   </div>
   <div class="tpd-res" hidden aria-live="polite"></div>
-  <p class="demo-note">START を押すと、3・2・1 のあと${TP_SEC}秒（アプリでは30秒）。右側をひたすらタップしてください。上のボタンでエフェクトを選べます。</p>
+  <p class="demo-note">${L('START を押すと、3・2・1 のあと', 'Press START. After 3, 2, 1 you have ')}${TP_SEC}${L('秒（アプリでは30秒）。右側をひたすらタップしてください。上のボタンでエフェクトを選べます。', ' seconds (30 in the app). Tap the right side as fast as you can. Pick an effect with the buttons above.')}</p>
 </div>`;
 const MT_SAMPLES = [
-  ['英語', 'EN', 'Machine translation converts text from one language into another. Recent models learn from large parallel corpora.'],
-  ['中国語', '中', '机器翻\u8BD1将文本从一\u79CD\u8BED言\u8F6C\u6362\u4E3A\u53E6一\u79CD\u8BED言。近年来的模型从大量平行\u8BED料中学\u4E60。'],
-  ['韓国語', '\uD55C', '\uAE30\uACC4 \uBC88\uC5ED\uC740 \uD55C \uC5B8\uC5B4\uC758 \uD14D\uC2A4\uD2B8\uB97C \uB2E4\uB978 \uC5B8\uC5B4\uB85C \uBC14\uAFC9\uB2C8\uB2E4. \uCD5C\uADFC \uBAA8\uB378\uC740 \uB300\uADDC\uBAA8 \uBCD1\uB82C \uB9D0\uBB49\uCE58\uB85C \uD559\uC2B5\uD569\uB2C8\uB2E4.'],
-  ['ドイツ語', 'DE', 'Maschinelle \u00DCbersetzung \u00FCbertr\u00E4gt Text von einer Sprache in eine andere. Neuere Modelle lernen aus gro\u00DFen Parallelkorpora.'],
-  ['フランス語', 'FR', 'La traduction automatique convertit un texte d’une langue \u00E0 une autre. Les mod\u00E8les r\u00E9cents apprennent \u00E0 partir de grands corpus parall\u00E8les.'],
+  [L('英語', 'English'), 'EN', 'Machine translation converts text from one language into another. Recent models learn from large parallel corpora.'],
+  [L('中国語', 'Chinese'), '中', '机器翻\u8BD1将文本从一\u79CD\u8BED言\u8F6C\u6362\u4E3A\u53E6一\u79CD\u8BED言。近年来的模型从大量平行\u8BED料中学\u4E60。'],
+  [L('韓国語', 'Korean'), '\uD55C', '\uAE30\uACC4 \uBC88\uC5ED\uC740 \uD55C \uC5B8\uC5B4\uC758 \uD14D\uC2A4\uD2B8\uB97C \uB2E4\uB978 \uC5B8\uC5B4\uB85C \uBC14\uAFC9\uB2C8\uB2E4. \uCD5C\uADFC \uBAA8\uB378\uC740 \uB300\uADDC\uBAA8 \uBCD1\uB82C \uB9D0\uBB49\uCE58\uB85C \uD559\uC2B5\uD569\uB2C8\uB2E4.'],
+  [L('ドイツ語', 'German'), 'DE', 'Maschinelle \u00DCbersetzung \u00FCbertr\u00E4gt Text von einer Sprache in eine andere. Neuere Modelle lernen aus gro\u00DFen Parallelkorpora.'],
+  [L('フランス語', 'French'), 'FR', 'La traduction automatique convertit un texte d’une langue \u00E0 une autre. Les mod\u00E8les r\u00E9cents apprennent \u00E0 partir de grands corpus parall\u00E8les.'],
 ];
 const MT_JA = '機械翻訳は、ある言語の文章を別の言語に変換します。最近のモデルは、大量の対訳コーパスから学習します。';
 const mtDemo = () => `<div class="demo">
-  <div class="mtd-langs" role="group" aria-label="原文の言語">${MT_SAMPLES.map(([n, k], i) => `<button type="button" class="mtd-l" data-i="${i}" aria-pressed="${i === 0}">${k}</button>`).join('')}</div>
-  <div class="phone" role="group" aria-label="操作デモ">
-    <div class="ph-bar"><span>← ホーム</span><span class="ph-name">paper_2026.pdf</span></div>
+  <div class="mtd-langs" role="group" aria-label="${L('原文の言語', 'Source language')}">${MT_SAMPLES.map(([n, k], i) => `<button type="button" class="mtd-l" data-i="${i}" aria-pressed="${i === 0}">${k}</button>`).join('')}</div>
+  <div class="phone" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
+    <div class="ph-bar"><span>${L('← ホーム', '← Home')}</span><span class="ph-name">paper_2026.pdf</span></div>
     <div class="paper mtd-paper">
       ${fillLines(3, 71)}
-      <button type="button" class="mtd-p" aria-label="この段落を枠で囲んで翻訳する">${MT_SAMPLES[0][2]}</button>
+      <button type="button" class="mtd-p" aria-label="${L('この段落を枠で囲んで翻訳する', 'Frame this paragraph and translate it')}">${MT_SAMPLES[0][2]}</button>
       ${fillLines(4, 73)}
-      <div class="mtd-dlg" hidden role="dialog" aria-label="翻訳結果">
-        <div class="mtd-top"><span class="mtd-lab"></span><span class="mtd-x" aria-hidden="true">\uD83D\uDD0A</span><button type="button" class="mtd-close" aria-label="閉じる">×</button></div>
+      <div class="mtd-dlg" hidden role="dialog" aria-label="${L('翻訳結果', 'Translation')}">
+        <div class="mtd-top"><span class="mtd-lab"></span><span class="mtd-x" aria-hidden="true">\uD83D\uDD0A</span><button type="button" class="mtd-close" aria-label="${L('閉じる', 'Close')}">×</button></div>
         <p class="mtd-src"></p>
-        <div class="mtd-bot"><span class="mtd-lab">日本語訳</span><p class="mtd-ja">${MT_JA}</p></div>
+        <div class="mtd-bot"><span class="mtd-lab">${L('日本語訳', 'Japanese translation')}</span><p class="mtd-ja">${MT_JA}</p></div>
       </div>
     </div>
   </div>
-  <p class="demo-note">言語を選んで、ページの段落を押してみてください。実際のアプリでは、長押ししたまま指でなぞって枠を描きます。</p>
+  <p class="demo-note">${L('言語を選んで、ページの段落を押してみてください。実際のアプリでは、長押ししたまま指でなぞって枠を描きます。', 'Choose a language and press the paragraph on the page. In the real app, you long-press and trace with your finger to draw a frame. The app translates into Japanese.')}</p>
 </div>`;
 const APPS = [
   {
-    id: 'pdf-marker', name: 'PDF暗記マーカー', icon: pdfIcon, status: 'クローズドテスト中 ／ テスター募集中', tester: TESTER_FORM_URL, bug: BUG_FORM_PDF, test: TEST_URL_PDF,
-    one: '問題集PDFの答えをマスクして、タップで確かめる暗記アプリ。現役東大生監修。',
-    headline: '<span class="nb"><span class="hl">答え</span>を隠して、</span><span class="nb">タップで確かめる。</span>',
-    lead: '手持ちの問題集PDFの答えにマスクをかけて、タップで見え隠れ。ハイライトや書き込み、栞も使えて、開くだけで自分専用の暗記帳になります。紙の問題集は、写真から PDF にできます。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-    os: '対応OS　Android 8.0 以上 ／ iOS（未開発）　　料金　無料（広告あり）', store: { label: 'クローズドテスト中', url: '' },
+    id: 'pdf-marker', name: L('PDF暗記マーカー', 'PDF Memorization Marker'), icon: pdfIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_PDF, test: TEST_URL_PDF,
+    one: L('問題集PDFの答えをマスクして、タップで確かめる暗記アプリ。現役東大生監修。', 'A study app that masks the answers in your workbook PDFs so you can check them with a tap. Supervised by a current University of Tokyo student.'),
+    headline: L('<span class="nb"><span class="hl">答え</span>を隠して、</span><span class="nb">タップで確かめる。</span>', '<span class="nb">Hide the <span class="hl">answers</span>,</span> <span class="nb">check with a tap.</span>'),
+    lead: L('手持ちの問題集PDFの答えにマスクをかけて、タップで見え隠れ。ハイライトや書き込み、栞も使えて、開くだけで自分専用の暗記帳になります。紙の問題集は、写真から PDF にできます。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。', 'Put masks over the answers in the workbook PDFs you already have, and show or hide them with a tap. With highlights, handwriting and bookmarks, every PDF becomes your own flashcard book. Paper workbooks can be turned into PDFs from photos. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 8.0 以上 ／ iOS（未開発）　　料金　無料（広告あり）', 'OS: Android 8.0 or later / iOS (not developed yet)　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
     demo: pdfDemo, init: initPdf,
     features: [
-      [ILL.mask, '答えをマスクで隠す', 'マスキングモードで、隠したい所を指でなぞるとマスクができます。色はコーラル・ネイビー・ブルー・ミント・ピンクの5色。まとめて削除もできます。'],
-      [ILL.tap, 'タップで表示・非表示', 'マスクをタップするたびに答えが見え隠れします。自分で答えてから確かめる、を何度でも。'],
-      [ILL.marks, 'チェックで学習を記録', '長押しで青、ダブルタップで赤、上スワイプで黄色のチェック。チェックはタップで消せます。「次の青／次の赤／次の黄」で、チェックのあるページへ順に移動できます。'],
-      [ILL.highlight, 'ハイライトを引く', 'ハイライトモードで、イエロー・ピンク・ミントの3色から選んで、なぞった通りに線を引けます。引いた線はタップで消せます。'],
-      [ILL.doodle, '落書きで書き込む', '落書きモードで、5色のペンで自由に書き込めます。消しゴムを選ぶと、なぞった所だけ消せます。'],
-      [ILL.bookmark, '栞で続きから', '今のページに栞を挟めます（1つのPDFに1つ）。次に開いたとき、「栞から再開」か「最初から」を選べます。一覧にも栞のページが出ます。'],
-      [ILL.print, 'チェックしたページを印刷', 'すべてのページか、赤・青・黄のチェックがあるページを選んで印刷できます。マスク・チェック・ハイライト・落書きを含めるか、カラー／白黒、用紙サイズ（A3\u301CA5）も選べます。'],
-      [ILL.photo, '写真から問題集を作る', '紙の問題集を撮影するか、ギャラリーから選んで、A4のページにしていきます（最大25ページ）。保存すると Download フォルダに PDF ができ、一覧にも追加されます。'],
-      [ILL.swipe, 'スワイプとピンチで見やすく', '左右のスワイプで1ページずつ切り替え。ピンチで最大3倍まで拡大し、拡大中は指で動かせます。ページを変えると標準の倍率に戻ります。'],
-      [ILL.translate, '英文を簡易翻訳', '簡易翻訳モードで、訳したい英文の範囲を指でなぞると日本語訳が出ます。読み取りも翻訳も端末内で行うので、最初に翻訳データをダウンロードすれば、オフラインでも使えます。簡易的な翻訳のため、誤訳がある場合があります。'],
-      [ILL.coord, '拡大してもズレないマスク', 'マスクは画面上の位置ではなく、PDF上の座標で記録します。拡大縮小や画面の回転をしても、同じ場所に残ります。'],
-      [ILL.layers, '元のPDFは書き換えない', 'マスク・チェック・ハイライト・落書きは、PDFの上に重ねて表示するだけ。元のファイルには手を加えません。記録はPDFごとに保存されます。'],
+      [ILL.mask, L('答えをマスクで隠す', 'Hide answers with masks'), L('マスキングモードで、隠したい所を指でなぞるとマスクができます。色はコーラル・ネイビー・ブルー・ミント・ピンクの5色。まとめて削除もできます。', 'In masking mode, trace over what you want to hide to make a mask. Choose from five colors: coral, navy, blue, mint and pink. You can also delete masks all at once.')],
+      [ILL.tap, L('タップで表示・非表示', 'Show or hide with a tap'), L('マスクをタップするたびに答えが見え隠れします。自分で答えてから確かめる、を何度でも。', 'Each tap on a mask shows or hides the answer. Answer first, then check, as many times as you like.')],
+      [ILL.marks, L('チェックで学習を記録', 'Track your study with checks'), L('長押しで青、ダブルタップで赤、上スワイプで黄色のチェック。チェックはタップで消せます。「次の青／次の赤／次の黄」で、チェックのあるページへ順に移動できます。', 'Long press for a blue check, double tap for red and swipe up for yellow. Tap a check to remove it. “Next blue / red / yellow” jumps to the pages with checks in order.')],
+      [ILL.highlight, L('ハイライトを引く', 'Highlight'), L('ハイライトモードで、イエロー・ピンク・ミントの3色から選んで、なぞった通りに線を引けます。引いた線はタップで消せます。', 'In highlight mode, pick yellow, pink or mint and draw lines exactly where you trace. Tap a line to remove it.')],
+      [ILL.doodle, L('落書きで書き込む', 'Write and doodle'), L('落書きモードで、5色のペンで自由に書き込めます。消しゴムを選ぶと、なぞった所だけ消せます。', 'In doodle mode, write freely with pens in five colors. The eraser removes only what you trace over.')],
+      [ILL.bookmark, L('栞で続きから', 'Pick up where you left off'), L('今のページに栞を挟めます（1つのPDFに1つ）。次に開いたとき、「栞から再開」か「最初から」を選べます。一覧にも栞のページが出ます。', 'Put a bookmark in the current page (one per PDF). Next time, choose “Resume from bookmark” or “From the start”. The list also shows the bookmarked page.')],
+      [ILL.print, L('チェックしたページを印刷', 'Print checked pages'), L('すべてのページか、赤・青・黄のチェックがあるページを選んで印刷できます。マスク・チェック・ハイライト・落書きを含めるか、カラー／白黒、用紙サイズ（A3\u301CA5）も選べます。', 'Print all pages, or only the pages with red, blue or yellow checks. You can choose whether to include masks, checks, highlights and doodles, color or black and white, and paper size (A3 to A5).')],
+      [ILL.photo, L('写真から問題集を作る', 'Make a workbook from photos'), L('紙の問題集を撮影するか、ギャラリーから選んで、A4のページにしていきます（最大25ページ）。保存すると Download フォルダに PDF ができ、一覧にも追加されます。', 'Take photos of a paper workbook or pick them from your gallery to make A4 pages (up to 25). When you save, a PDF is created in the Download folder and added to the list.')],
+      [ILL.swipe, L('スワイプとピンチで見やすく', 'Swipe and pinch'), L('左右のスワイプで1ページずつ切り替え。ピンチで最大3倍まで拡大し、拡大中は指で動かせます。ページを変えると標準の倍率に戻ります。', 'Swipe left or right to turn pages one at a time. Pinch to zoom up to 3×, and drag while zoomed. Changing pages resets the zoom.')],
+      [ILL.translate, L('英文を簡易翻訳', 'Quick English translation'), L('簡易翻訳モードで、訳したい英文の範囲を指でなぞると日本語訳が出ます。読み取りも翻訳も端末内で行うので、最初に翻訳データをダウンロードすれば、オフラインでも使えます。簡易的な翻訳のため、誤訳がある場合があります。', 'In quick translation mode, trace over English text to see a Japanese translation. Reading and translation happen on the device, so after downloading the translation data once, it works offline. As a simple translation, it may contain mistakes.')],
+      [ILL.coord, L('拡大してもズレないマスク', 'Masks that stay put when zoomed'), L('マスクは画面上の位置ではなく、PDF上の座標で記録します。拡大縮小や画面の回転をしても、同じ場所に残ります。', 'Masks are saved by their position in the PDF, not on the screen, so they stay in place when you zoom or rotate.')],
+      [ILL.layers, L('元のPDFは書き換えない', 'Your original PDF stays untouched'), L('マスク・チェック・ハイライト・落書きは、PDFの上に重ねて表示するだけ。元のファイルには手を加えません。記録はPDFごとに保存されます。', 'Masks, checks, highlights and doodles are only shown on top of the PDF. The original file is never changed. Records are saved for each PDF.')],
     ],
     steps: [
-      ['PDFを追加する', '一覧の「＋」から問題集のPDFを選びます。「写真から問題集を作る」で、紙の問題集から作ることもできます。登録は10個までです。PDFのコピーは作らず、元のファイルはそのままです。'],
-      ['答えにマスクをかける', 'マスキングモードで、答えの上を指でなぞってマスクを作ります。あとから移動やサイズ変更、色の変更もできます。'],
-      ['タップして確かめる', 'マスクをタップして答えを確認。できた問題、間違えた問題をチェックで残せます。', `<div class="marks"><span>${badge('ok')}長押し</span><span>${badge('ng')}ダブルタップ</span><span>${badge('warn')}上スワイプ</span></div>`],
+      [L('PDFを追加する', 'Add a PDF'), L('一覧の「＋」から問題集のPDFを選びます。「写真から問題集を作る」で、紙の問題集から作ることもできます。登録は10個までです。PDFのコピーは作らず、元のファイルはそのままです。', 'Pick a workbook PDF with “+” in the list, or make one from a paper workbook with “Make a workbook from photos”. Up to 10 PDFs. No copy is made; the original file stays as it is.')],
+      [L('答えにマスクをかける', 'Mask the answers'), L('マスキングモードで、答えの上を指でなぞってマスクを作ります。あとから移動やサイズ変更、色の変更もできます。', 'In masking mode, trace over the answers to make masks. You can move, resize and recolor them later.')],
+      [L('タップして確かめる', 'Tap to check'), L('マスクをタップして答えを確認。できた問題、間違えた問題をチェックで残せます。', 'Tap a mask to check the answer. Mark questions you got right or wrong with checks.'), `<div class="marks"><span>${badge('ok')}${L('長押し', 'Long press')}</span><span>${badge('ng')}${L('ダブルタップ', 'Double tap')}</span><span>${badge('warn')}${L('上スワイプ', 'Swipe up')}</span></div>`],
     ],
-    info: [['アプリ名', 'PDF暗記マーカー'], ['監修', '現役東大生'], ['対応OS', 'Android 8.0 以上 ／ iOS（未開発）'], ['料金', '無料（広告あり）'], ['配布', 'Google Play（クローズドテスト中）'], ['保存', 'マスク・チェック・ハイライト・落書き・栞はPDFごとに記録します。PDFファイルのコピーは作りません。'], ['操作説明', '初回に動く絵で説明します。PDFを開いた画面のメニュー（\u2630）から、いつでも見直せます。']],
+    info: [[L('アプリ名', 'App name'), L('PDF暗記マーカー', 'PDF Memorization Marker')], [L('監修', 'Supervised by'), L('現役東大生', 'A current University of Tokyo student')], [L('対応OS', 'OS'), L('Android 8.0 以上 ／ iOS（未開発）', 'Android 8.0 or later / iOS (not developed yet)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('保存', 'Storage'), L('マスク・チェック・ハイライト・落書き・栞はPDFごとに記録します。PDFファイルのコピーは作りません。',
+        'Masks, checks, highlights, doodles and bookmarks are saved for each PDF. No copies of PDF files are made.')], [L('操作説明', 'How-to'), L('初回に動く絵で説明します。PDFを開いた画面のメニュー（\u2630）から、いつでも見直せます。', 'Animated guides are shown the first time. You can see them again any time from the menu (\u2630) on the PDF screen.')]],
   },
   {
-    id: 'mt-pdf', name: 'マルチ翻訳PDFビューワー', icon: mtIcon, status: '公開準備中 ／ テスター募集中', tester: TESTER_FORM_URL, bug: BUG_FORM_MT, test: TEST_URL_MT,
-    one: '論文や技術文書のPDFを、枠で囲んで日本語に訳せるPDFビューワー。現役東大生立案・監修。',
-    headline: '<span class="nb">読めない所を、</span><span class="nb"><span class="hl">囲む</span>だけ。</span>',
-    lead: '英語・中国語・韓国語・ドイツ語・フランス語のPDFを、指でなぞって囲んだ所だけ日本語に訳します。翻訳は端末の中で行うので、文章を外に送りません。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-    os: '対応OS　Android 7.0 以上 ／ iOS（準備中）', store: { label: 'Google Play 公開準備中', url: '' },
+    id: 'mt-pdf', name: L('マルチ翻訳PDFビューワー', 'Multi-Translation PDF Viewer'), icon: mtIcon, status: L('公開準備中 ／ テスター募集中', 'Getting ready for release / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_MT, test: TEST_URL_MT,
+    one: L('論文や技術文書のPDFを、枠で囲んで日本語に訳せるPDFビューワー。現役東大生立案・監修。', 'A PDF viewer that translates any part of a paper or technical document into Japanese when you draw a frame around it. Planned and supervised by a current University of Tokyo student.'),
+    headline: L('<span class="nb">読めない所を、</span><span class="nb"><span class="hl">囲む</span>だけ。</span>', '<span class="nb">Can’t read it?</span> <span class="nb">Just <span class="hl">frame</span> it.</span>'),
+    lead: L('英語・中国語・韓国語・ドイツ語・フランス語のPDFを、指でなぞって囲んだ所だけ日本語に訳します。翻訳は端末の中で行うので、文章を外に送りません。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。', 'Trace a frame around any part of an English, Chinese, Korean, German or French PDF, and just that part is translated into Japanese. Translation runs on the device, so your text is never sent anywhere. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 7.0 以上 ／ iOS（準備中）', 'OS: Android 7.0 or later / iOS (in preparation)'), store: { label: L('Google Play 公開準備中', 'Coming soon to Google Play'), url: '' },
     demo: mtDemo, init: initMt,
     features: [
-      [ILL.mtFrame, '枠で囲んで翻訳', '長押ししたまま指でなぞると、角丸の枠が描けます。指を離すと、枠の中の文を読み取って翻訳。画面の真ん中に、上に原文、下に日本語訳が出ます。'],
-      [ILL.mtLang, '5つの言語を自動で判別', '英語・中国語（簡体字・繁体字）・韓国語・ドイツ語・フランス語から日本語へ。言語は自動で判別し、違ったときは選び直せます。選んだ言語はPDFごとに覚えます。'],
-      [ILL.speak, '原文を読み上げ', 'スピーカーのボタンで、枠の中の外国語の文を読み上げます。端末の読み上げ音声を使います。'],
-      [ILL.mtOcr, '図やスキャンも読める', '枠の中は、端末内の文字認識（OCR）で読み取ります。図の中の文字や、文字の入っていないスキャンのPDFも訳せます。'],
-      [ILL.cache, 'オフラインで翻訳', '翻訳モデル（1言語約30MB）を一度ダウンロードすれば、通信なしで翻訳できます。通信するのはモデルの取得だけで、翻訳する文章は送りません。'],
-      [ILL.photo, '写真からPDFを作る', '紙の資料を撮った写真（最大100枚）を、1枚1ページのPDFにして Download フォルダに保存します。そのまま開いて翻訳できます。'],
-      [ILL.mtView, '自分好みに読む', '画面の色は9種類から選べて、それぞれライト・ダークに対応。栞、\u25C0\u25B6 のページ送り、スライダーで、長い文書も移動しやすくしました。'],
+      [ILL.mtFrame, L('枠で囲んで翻訳', 'Frame to translate'), L('長押ししたまま指でなぞると、角丸の枠が描けます。指を離すと、枠の中の文を読み取って翻訳。画面の真ん中に、上に原文、下に日本語訳が出ます。', 'Long-press and trace to draw a rounded frame. Lift your finger and the text inside is read and translated, with the original on top and the Japanese translation below, in the middle of the screen.')],
+      [ILL.mtLang, L('5つの言語を自動で判別', 'Detects five languages'), L('英語・中国語（簡体字・繁体字）・韓国語・ドイツ語・フランス語から日本語へ。言語は自動で判別し、違ったときは選び直せます。選んだ言語はPDFごとに覚えます。', 'From English, Chinese (Simplified and Traditional), Korean, German and French into Japanese. The language is detected automatically, and you can change it if it is wrong. The choice is remembered for each PDF.')],
+      [ILL.speak, L('原文を読み上げ', 'Read the original aloud'), L('スピーカーのボタンで、枠の中の外国語の文を読み上げます。端末の読み上げ音声を使います。', 'The speaker button reads the foreign-language text in the frame aloud, using your device’s text-to-speech voice.')],
+      [ILL.mtOcr, L('図やスキャンも読める', 'Reads figures and scans'), L('枠の中は、端末内の文字認識（OCR）で読み取ります。図の中の文字や、文字の入っていないスキャンのPDFも訳せます。', 'Text in the frame is read with on-device text recognition (OCR), so even text in figures and scanned PDFs without a text layer can be translated.')],
+      [ILL.cache, L('オフラインで翻訳', 'Translate offline'), L('翻訳モデル（1言語約30MB）を一度ダウンロードすれば、通信なしで翻訳できます。通信するのはモデルの取得だけで、翻訳する文章は送りません。', 'Download a translation model once (about 30 MB per language) and translate with no connection. The only network use is getting the models; the text you translate is never sent.')],
+      [ILL.photo, L('写真からPDFを作る', 'Make PDFs from photos'), L('紙の資料を撮った写真（最大100枚）を、1枚1ページのPDFにして Download フォルダに保存します。そのまま開いて翻訳できます。', 'Turn photos of paper documents (up to 100) into a PDF with one photo per page, saved in the Download folder. Open it right away and translate.')],
+      [ILL.mtView, L('自分好みに読む', 'Read your way'), L('画面の色は9種類から選べて、それぞれライト・ダークに対応。栞、\u25C0\u25B6 のページ送り、スライダーで、長い文書も移動しやすくしました。', 'Choose from nine screen colors, each with light and dark versions. Bookmarks, \u25C0\u25B6 page buttons and a slider make long documents easy to move through.')],
     ],
     steps: [
-      ['PDFを登録する', 'ホーム右上の \u2295 から PDF を選びます。登録は25件までです。ファイルのコピーは作らず、元のファイルはそのままです。'],
-      ['言語データを入れる', 'ホーム右上の ≡ →「言語データのダウンロード」で、翻訳モデルと読み上げ音声を入れておくと、通信なしで使えます。'],
-      ['囲んで訳す', '長押ししたまま指でなぞって枠を描くと、枠の中を翻訳します。'],
+      [L('PDFを登録する', 'Add a PDF'), L('ホーム右上の \u2295 から PDF を選びます。登録は25件までです。ファイルのコピーは作らず、元のファイルはそのままです。', 'Pick a PDF with \u2295 at the top right of Home. Up to 25 PDFs. No copy is made; the original file stays as it is.')],
+      [L('言語データを入れる', 'Get the language data'), L('ホーム右上の ≡ →「言語データのダウンロード」で、翻訳モデルと読み上げ音声を入れておくと、通信なしで使えます。', 'Use ≡ → “Download language data” at the top right of Home to get the translation models and voices, and the app works with no connection.')],
+      [L('囲んで訳す', 'Frame and translate'), L('長押ししたまま指でなぞって枠を描くと、枠の中を翻訳します。', 'Long-press and trace to draw a frame, and the text inside is translated.')],
     ],
-    info: [['アプリ名', 'マルチ翻訳PDFビューワー'], ['立案・監修', '現役東大生'], ['対応OS', 'Android 7.0 以上 ／ iOS（準備中）'], ['配布', 'Google Play（公開準備中）'], ['翻訳', '英語・中国語・韓国語・ドイツ語・フランス語 → 日本語（端末内で翻訳）'], ['通信', '翻訳モデルのダウンロードのみ（翻訳する文章は送信しません）'], ['保存', '登録したPDFの場所、翻訳結果、PDFごとの言語、画面の色は端末内に保存します。PDFファイルのコピーは作りません。']],
-    note: '翻訳は機械翻訳のため、誤訳がある場合があります。デモの文章は例で、実際のアプリとは異なります。',
+    info: [[L('アプリ名', 'App name'), L('マルチ翻訳PDFビューワー', 'Multi-Translation PDF Viewer')], [L('立案・監修', 'Planned and supervised by'), L('現役東大生', 'A current University of Tokyo student')], [L('対応OS', 'OS'), L('Android 7.0 以上 ／ iOS（準備中）', 'Android 7.0 or later / iOS (in preparation)')], [L('配布', 'Available on'), L('Google Play（公開準備中）', 'Google Play (coming soon)')], [L('翻訳', 'Translation'), L('英語・中国語・韓国語・ドイツ語・フランス語 → 日本語（端末内で翻訳）',
+        'English, Chinese, Korean, German, French → Japanese (translated on the device)')], [L('通信', 'Network'), L('翻訳モデルのダウンロードのみ（翻訳する文章は送信しません）', 'Only to download translation models (the text you translate is never sent)')], [L('保存', 'Storage'), L('登録したPDFの場所、翻訳結果、PDFごとの言語、画面の色は端末内に保存します。PDFファイルのコピーは作りません。', 'The location of added PDFs, translation results, the language for each PDF and the screen color are saved on the device. No copies of PDF files are made.')]],
+    note: L('翻訳は機械翻訳のため、誤訳がある場合があります。デモの文章は例で、実際のアプリとは異なります。', 'Translations are machine translations and may contain mistakes. The demo text is only an example and differs from the real app.'),
   },
   {
-    id: 'furush', name: 'FuRUSH', icon: frIcon, status: 'クローズドテスト中 ／ テスター募集中', tester: TESTER_FORM_URL, bug: BUG_FORM_FR, test: TEST_URL_FR,
-    one: '答えが一瞬だけ出るフラッシュカードで、年号や化学式を考える前に答えが出るまで刻む暗記アプリ。',
-    headline: '<span class="nb">脳に刻め。</span><span class="nb"><span class="hl">脊髄</span>に刻め。</span>',
-    lead: 'こんなレベルは、知識じゃない。年号・化学式・山手線・国旗・地図などを、答えが一瞬だけ出るフラッシュカードで、考える前に答えが出るまで繰り返します。THINK LESS. KNOW INSTANTLY. Android 版のクローズドテストを始めました。モードは全部で14、いまは社会の略語・日本地図・化学式の3つが使えます（ほかは準備中）。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-    os: '対応OS　Android 8.0 以上 ／ iOS（開発中）　　料金　無料（広告あり）', store: { label: 'クローズドテスト中', url: '' },
+    id: 'furush', name: 'FuRUSH', icon: frIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_FR, test: TEST_URL_FR,
+    one: L('答えが一瞬だけ出るフラッシュカードで、年号や化学式を考える前に答えが出るまで刻む暗記アプリ。', 'A memorization app with flashcards that show the answer for just an instant, drilling dates and chemical formulas until the answer comes before you think.'),
+    headline: L('<span class="nb">脳に刻め。</span><span class="nb"><span class="hl">脊髄</span>に刻め。</span>', '<span class="nb">Carve it into your brain.</span> <span class="nb">Into your <span class="hl">spine</span>.</span>'),
+    lead: L('こんなレベルは、知識じゃない。年号・化学式・山手線・国旗・地図などを、答えが一瞬だけ出るフラッシュカードで、考える前に答えが出るまで繰り返します。THINK LESS. KNOW INSTANTLY. Android 版のクローズドテストを始めました。モードは全部で14、いまは社会の略語・日本地図・化学式の3つが使えます（ほかは準備中）。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
+        'At this level, it is not knowledge anymore. Dates, chemical formulas, the Yamanote Line, flags, maps and more, on flashcards that show the answer for just an instant, repeated until the answer comes before you think. THINK LESS. KNOW INSTANTLY. Closed testing of the Android version has started. There are 14 modes in all; three are available now: social studies abbreviations, the map of Japan and chemical formulas (the rest are on the way). The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 8.0 以上 ／ iOS（開発中）　　料金　無料（広告あり）', 'OS: Android 8.0 or later / iOS (in development)　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
     demo: frDemo, init: initFr,
     features: [
-      [ILL.frFlash, '答えは一瞬だけ', '？をタップすると、答えが設定した秒数（0.1\u301C2.0秒）だけ出て、すぐ次のカードへ。カードは上へ消えて、下から次が出ます。'],
-      [ILL.frModes, '全部で14のモード', '日本史年号・世界史年号・化学式・化学反応式・JR山手線・世界の国旗・世界地図・日本地図・天体・星座・社会の略語・地図記号・物理の名称・英語活用・日本の地形。モードは配信するので、あとから増やせます。'],
-      [ILL.frPic, '絵つきの問題と答え', '国旗・地図・駅名標・分子模型・星座・地図記号などの絵が、問題や答えに出ます。'],
-      [ILL.frRev, 'リバース', 'モードごとにオン／オフ。問題と答えを入れ替えて、答えから問題を思い出す練習ができます。絵は答えの側に出ます。'],
-      [ILL.frFilter, '出るカードを絞る', '時代・種類・地域・単元などで、出るカードを絞れます。ホームのタイルには、枚数と何回目かが出ます。'],
-      [ILL.frLoop, '無限ループとランダム', 'モードごとにオン／オフ。ランダムを切ると、山手線のように順番どおりに出せます。最後まで進むと「1周クリア！」です。'],
-      [ILL.frColor, '6色とダーク／ライト', '赤・オレンジ・黄・緑・青・紫の6色と、ダーク／ライトから選べます。縦向きにも横向きにも対応します。オプションで、答えの読み上げ・ヒント・バイブも切り替えられます。'],
-      [ILL.cache, 'ダウンロードして電波なしで', '一度ダウンロードしたモードは、電波がなくても使えます。ホームで下に引っぱると更新を確認して、変わった部分だけをダウンロードします。'],
+      [ILL.frFlash, L('答えは一瞬だけ', 'The answer flashes by'), L('？をタップすると、答えが設定した秒数（0.1\u301C2.0秒）だけ出て、すぐ次のカードへ。カードは上へ消えて、下から次が出ます。', 'Tap ? and the answer appears for the time you set (0.1\u20132.0 seconds), then it is straight on to the next card. Cards slide away upward as the next one rises from below.')],
+      [ILL.frModes, L('全部で14のモード', '14 modes in all'), L('日本史年号・世界史年号・化学式・化学反応式・JR山手線・世界の国旗・世界地図・日本地図・天体・星座・社会の略語・地図記号・物理の名称・英語活用・日本の地形。モードは配信するので、あとから増やせます。',
+          'Japanese history dates, world history dates, chemical formulas, chemical equations, the JR Yamanote Line, world flags, the world map, the map of Japan, celestial bodies, constellations, social studies abbreviations, map symbols, physics terms, English verb forms and Japanese landforms. Modes are delivered online, so more can be added later.')],
+      [ILL.frPic, L('絵つきの問題と答え', 'Questions and answers with pictures'), L('国旗・地図・駅名標・分子模型・星座・地図記号などの絵が、問題や答えに出ます。', 'Pictures of flags, maps, station signs, molecular models, constellations, map symbols and more appear in questions and answers.')],
+      [ILL.frRev, L('リバース', 'Reverse'), L('モードごとにオン／オフ。問題と答えを入れ替えて、答えから問題を思い出す練習ができます。絵は答えの側に出ます。', 'On or off for each mode. Swap questions and answers to practice recalling the question from the answer. Pictures appear on the answer side.')],
+      [ILL.frFilter, L('出るカードを絞る', 'Choose which cards appear'), L('時代・種類・地域・単元などで、出るカードを絞れます。ホームのタイルには、枚数と何回目かが出ます。', 'Narrow down cards by era, type, region, unit and more. Tiles on Home show the number of cards and how many rounds you have done.')],
+      [ILL.frLoop, L('無限ループとランダム', 'Endless loop and shuffle'), L('モードごとにオン／オフ。ランダムを切ると、山手線のように順番どおりに出せます。最後まで進むと「1周クリア！」です。', 'On or off for each mode. Turn shuffle off to go in order, like stations on the Yamanote Line. Reach the end and you get “Round clear!”.')],
+      [ILL.frColor, L('6色とダーク／ライト', '6 colors, dark or light'), L('赤・オレンジ・黄・緑・青・紫の6色と、ダーク／ライトから選べます。縦向きにも横向きにも対応します。オプションで、答えの読み上げ・ヒント・バイブも切り替えられます。', 'Choose red, orange, yellow, green, blue or purple, in dark or light. Works in portrait and landscape. Options let you turn answer read-aloud, hints and vibration on or off.')],
+      [ILL.cache, L('ダウンロードして電波なしで', 'Download once, use offline'), L('一度ダウンロードしたモードは、電波がなくても使えます。ホームで下に引っぱると更新を確認して、変わった部分だけをダウンロードします。', 'Modes you have downloaded work without a signal. Pull down on Home to check for updates and download only what has changed.')],
     ],
     steps: [
-      ['モードを選ぶ', 'ホームのタイルから、覚えたいモードを選びます。未ダウンロードのモードは、先にダウンロードします。'],
-      ['？をタップ', '答えが一瞬だけ出て、次のカードへ。表示時間は下のスライダーで変えられます。'],
-      ['1周クリア', '最後のカードまで進むと「1周クリア！」。そのまま、もう1周もできます。'],
+      [L('モードを選ぶ', 'Pick a mode'), L('ホームのタイルから、覚えたいモードを選びます。未ダウンロードのモードは、先にダウンロードします。', 'Choose the mode you want to learn from the tiles on Home. Modes not yet downloaded are downloaded first.')],
+      [L('？をタップ', 'Tap ?'), L('答えが一瞬だけ出て、次のカードへ。表示時間は下のスライダーで変えられます。', 'The answer flashes, then the next card comes. Change how long it is shown with the slider below.')],
+      [L('1周クリア', 'Round clear'), L('最後のカードまで進むと「1周クリア！」。そのまま、もう1周もできます。', 'Reach the last card for “Round clear!”, then go around again if you like.')],
     ],
-    info: [['アプリ名', 'FuRUSH'], ['対応OS', 'Android 8.0 以上 ／ iOS（開発中）'], ['料金', '無料（広告あり）'], ['配布', 'Google Play（クローズドテスト中）'], ['モード', '全14モード（クローズドテストで使えるのは3モード）'], ['データ', '問題データは、店長が用意しています。']],
-    note: 'クローズドテスト中のため、内容は変わることがあります。デモの問題は例で、実際のアプリとは異なります。',
+    info: [[L('アプリ名', 'App name'), 'FuRUSH'], [L('対応OS', 'OS'), L('Android 8.0 以上 ／ iOS（開発中）', 'Android 8.0 or later / iOS (in development)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('モード', 'Modes'), L('全14モード（クローズドテストで使えるのは3モード）', '14 modes (3 available in closed testing)')], [L('データ', 'Data'), L('問題データは、店長が用意しています。', 'The question data is prepared by the Manager.')]],
+    note: L('クローズドテスト中のため、内容は変わることがあります。デモの問題は例で、実際のアプリとは異なります。', 'The app is in closed testing, so details may change. The demo questions are only examples and differ from the real app.'),
   },
   {
-    id: 'app-monitor', name: 'アプリ見守り', icon: amIcon, status: 'クローズドテスト中 ／ テスター募集中', tester: TESTER_FORM_URL, bug: BUG_FORM_AM, test: TEST_URL_AM,
-    one: '不正な通信をするアプリを見つけて、アンインストールをすすめる Android の警告アプリ。',
-    headline: '<span class="nb">怪しいアプリに、</span><span class="nb"><span class="hl">気づける</span>。</span>',
-    lead: 'スマホのアプリが、知らないうちに怪しい通信をしていないか。アプリごとの通信を端末の中で記録して、Bot 化や不正利用の兆候を見つけたら警告します。不正な通信をするアプリは、アンインストールを検討してください。記録は端末の中だけに保存し、外部へは送りません。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-    os: '対応OS　Android 9 以上（Android のみ）　　料金　無料', store: { label: 'クローズドテスト中', url: '' },
+    id: 'app-monitor', name: L('アプリ見守り', 'App Monitor'), icon: amIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_AM, test: TEST_URL_AM,
+    one: L('不正な通信をするアプリを見つけて、アンインストールをすすめる Android の警告アプリ。', 'An Android alert app that finds apps with suspicious network traffic and recommends uninstalling them.'),
+    headline: L('<span class="nb">怪しいアプリに、</span><span class="nb"><span class="hl">気づける</span>。</span>', '<span class="nb">Spot the</span> <span class="nb"><span class="hl">suspicious</span> apps.</span>'),
+    lead: L('スマホのアプリが、知らないうちに怪しい通信をしていないか。アプリごとの通信を端末の中で記録して、Bot 化や不正利用の兆候を見つけたら警告します。不正な通信をするアプリは、アンインストールを検討してください。記録は端末の中だけに保存し、外部へは送りません。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
+        'Are the apps on your phone making suspicious connections without you knowing? App Monitor records each app’s traffic on the device and warns you when it finds signs that an app has become a bot or is being misused. Please consider uninstalling apps with suspicious traffic. Records stay on the device only and are never sent out. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 9 以上（Android のみ）　　料金　無料', 'OS: Android 9 or later (Android only)　　Price: Free'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
     demo: amDemo, init: initAm,
     features: [
-      [ILL.amVpn, '端末の中だけで見守る', 'VPN の仕組みで、アプリごとの通信を端末の中で中継・記録します。外部の VPN サーバーは使わず、root も不要です。'],
-      [ILL.amSigns, '23の兆候で危険度を判定', '多数の宛先、使っていない時間の通信、一定間隔の通信、IP アドレス直接の通信など23種類の兆候から、アプリごとに「危険・要注意・注意・正常・除外」を判定します。'],
-      [ILL.amThreat, '脅威リストと照合', 'URLhaus・HaGeZi・Feodo Tracker・Spamhaus DROP の脅威リストと宛先を照らし合わせます。リストはアプリが配布元から直接取得します。'],
-      [ILL.amNotify, '通知でいつでも確認', '見守りの状況（危険度ごとのアプリ数）を通知に表示し、5分ごとに更新します。'],
-      [ILL.amIdle, '使っていない時間の通信', '各アプリの使用時間とあわせて、画面オフ中や深夜の通信を見分けます。使っていないのに通信を続けるアプリが分かります。'],
-      [ILL.amFilter, 'アプリ別に絞り込み', '危険度・カテゴリ（ゲーム、SNS、金融など）で絞り込み、危険度・宛先の数・通信量の順に並べ替えられます。'],
-      [ILL.amBlock, 'アンインストールの目安に', '不正な通信の兆候があるアプリは、アンインストールを検討するよう警告します。アプリ詳細から Android のアプリ情報を開けます。信頼できるアプリは見守りから除外できます。'],
-      [ILL.amLocal, '記録は端末の中に25時間', '通信の記録は端末の中に25時間分だけ保存し、外部には送りません。結果は書き出すこともできます。'],
+      [ILL.amVpn, L('端末の中だけで見守る', 'Monitors on the device only'), L('VPN の仕組みで、アプリごとの通信を端末の中で中継・記録します。外部の VPN サーバーは使わず、root も不要です。', 'Using the VPN mechanism, each app’s traffic is relayed and recorded on the device. No outside VPN server is used, and no root is needed.')],
+      [ILL.amSigns, L('23の兆候で危険度を判定', 'Rates risk from 23 signs'), L('多数の宛先、使っていない時間の通信、一定間隔の通信、IP アドレス直接の通信など23種類の兆候から、アプリごとに「危険・要注意・注意・正常・除外」を判定します。', 'From 23 kinds of signs, such as many destinations, traffic while not in use, traffic at regular intervals and direct connections to IP addresses, each app is rated Danger, Warning, Caution, Normal or Excluded.')],
+      [ILL.amThreat, L('脅威リストと照合', 'Checks threat lists'), L('URLhaus・HaGeZi・Feodo Tracker・Spamhaus DROP の脅威リストと宛先を照らし合わせます。リストはアプリが配布元から直接取得します。', 'Destinations are checked against the URLhaus, HaGeZi, Feodo Tracker and Spamhaus DROP threat lists. The app downloads the lists directly from their publishers.')],
+      [ILL.amNotify, L('通知でいつでも確認', 'Always visible in notifications'), L('見守りの状況（危険度ごとのアプリ数）を通知に表示し、5分ごとに更新します。', 'The monitoring status (number of apps at each risk level) is shown in a notification and updated every 5 minutes.')],
+      [ILL.amIdle, L('使っていない時間の通信', 'Traffic while not in use'), L('各アプリの使用時間とあわせて、画面オフ中や深夜の通信を見分けます。使っていないのに通信を続けるアプリが分かります。', 'Combined with each app’s usage time, it spots traffic while the screen is off or late at night, so you can see apps that keep connecting when you are not using them.')],
+      [ILL.amFilter, L('アプリ別に絞り込み', 'Filter by app'), L('危険度・カテゴリ（ゲーム、SNS、金融など）で絞り込み、危険度・宛先の数・通信量の順に並べ替えられます。', 'Filter by risk level and category (games, social, finance and more), and sort by risk, number of destinations or amount of traffic.')],
+      [ILL.amBlock, L('アンインストールの目安に', 'A guide for uninstalling'), L('不正な通信の兆候があるアプリは、アンインストールを検討するよう警告します。アプリ詳細から Android のアプリ情報を開けます。信頼できるアプリは見守りから除外できます。', 'Apps with signs of suspicious traffic come with a warning to consider uninstalling them. From the app details you can open Android’s App info. Apps you trust can be excluded from monitoring.')],
+      [ILL.amLocal, L('記録は端末の中に25時間', '25 hours of records on the device'), L('通信の記録は端末の中に25時間分だけ保存し、外部には送りません。結果は書き出すこともできます。', 'Only 25 hours of traffic records are kept on the device, and they are never sent out. You can also export the results.')],
     ],
     steps: [
-      ['3つを許可して始める', 'VPN 接続・通知・電池の最適化の対象外を許可して、「はじめる」を押します。'],
-      ['丸で切り替え', 'TOP の丸を押すと「見守り中」と「待機中」を切り替えられます。'],
-      ['気になるアプリを確認', '「アプリ別に見る」で危険度の高い順に並び、見つかった兆候の説明が読めます。'],
+      [L('3つを許可して始める', 'Allow three things and start'), L('VPN 接続・通知・電池の最適化の対象外を許可して、「はじめる」を押します。', 'Allow the VPN connection, notifications and exemption from battery optimization, then press “Start”.')],
+      [L('丸で切り替え', 'Switch with the circle'), L('TOP の丸を押すと「見守り中」と「待機中」を切り替えられます。', 'Press the circle on TOP to switch between “Monitoring” and “Standby”.')],
+      [L('気になるアプリを確認', 'Check the apps that concern you'), L('「アプリ別に見る」で危険度の高い順に並び、見つかった兆候の説明が読めます。', '“View by app” lists apps from highest risk down, with explanations of the signs that were found.')],
     ],
-    info: [['アプリ名', 'アプリ見守り'], ['対応OS', 'Android 9 以上（iOS 版はありません）'], ['料金', '無料'], ['配布', 'Google Play（クローズドテスト中）'], ['記録', '端末の中に25時間分。外部へは送りません。'], ['外部との通信', '脅威リストと国データの取得のときだけ']],
-    note: '危険度は、決めたルールに当てはめて機械的に判定した参考情報です。最終的な判断はご自身で行ってください。会社や学校など、ファイアウォールのあるネットワークにつないでいるときは、通信が遮られたり書き換えられたりするため、誤検知することがあります。使う前に、設定の「プライベート DNS」を「自動」か「オフ」にしてください。ほかの VPN アプリとは同時に使えません。',
+    info: [[L('アプリ名', 'App name'), L('アプリ見守り', 'App Monitor')], [L('対応OS', 'OS'), L('Android 9 以上（iOS 版はありません）', 'Android 9 or later (no iOS version)')], [L('料金',
+        'Price'), L('無料', 'Free')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('記録',
+        'Records'), L('端末の中に25時間分。外部へは送りません。', '25 hours, kept on the device. Never sent out.')], [L('外部との通信', 'External connections'), L('脅威リストと国データの取得のときだけ', 'Only to download threat lists and country data')]],
+    note: L('危険度は、決めたルールに当てはめて機械的に判定した参考情報です。最終的な判断はご自身で行ってください。会社や学校など、ファイアウォールのあるネットワークにつないでいるときは、通信が遮られたり書き換えられたりするため、誤検知することがあります。使う前に、設定の「プライベート DNS」を「自動」か「オフ」にしてください。ほかの VPN アプリとは同時に使えません。',
+        'Risk levels are reference information rated mechanically by fixed rules. Please make the final decision yourself. On networks with a firewall, such as at work or school, traffic may be blocked or altered, which can cause false alarms. Before use, set “Private DNS” in Settings to “Automatic” or “Off”. It cannot be used at the same time as other VPN apps.'),
   },
   {
-    id: 'tapru', name: 'タップる？', genre: 'ゲーム', icon: tpIcon, status: 'クローズドテスト中 ／ テスター募集中', tester: TESTER_FORM_URL, bug: BUG_FORM_TP, test: TEST_URL_TP,
-    one: '30秒間ひたすら連打して、速さ・持久力・リズム・位置のブレを分析する、横画面のミニゲーム。',
-    headline: '<span class="nb">30秒、</span><span class="nb">ひたすら<span class="hl">連打</span>。</span>',
-    lead: '喫茶店のテーブルゲームのように、ひと息つきながら遊べるゲームです。3・2・1 の合図のあと30秒間、画面をひたすらタップ。タップのたびに爆発や雷撃、刀などのエフェクトがはじけ、終わると速さ・持久力・リズム・位置のブレを分析します。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-    os: '対応OS　Android 8.0 以上　　料金　無料（広告あり）', store: { label: 'クローズドテスト中', url: '' },
+    id: 'tapru', name: L('タップる？', 'TaPru'), genre: L('ゲーム', 'Game'), icon: tpIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_TP, test: TEST_URL_TP,
+    one: L('30秒間ひたすら連打して、速さ・持久力・リズム・位置のブレを分析する、横画面のミニゲーム。', 'A landscape mini game: tap as fast as you can for 30 seconds, then see your speed, stamina, rhythm and how much your taps drift.'),
+    headline: L('<span class="nb">30秒、</span><span class="nb">ひたすら<span class="hl">連打</span>。</span>', '<span class="nb">30 seconds.</span> <span class="nb">Just <span class="hl">tap</span>.</span>'),
+    lead: L('喫茶店のテーブルゲームのように、ひと息つきながら遊べるゲームです。3・2・1 の合図のあと30秒間、画面をひたすらタップ。タップのたびに爆発や雷撃、刀などのエフェクトがはじけ、終わると速さ・持久力・リズム・位置のブレを分析します。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
+        'Like the table games in an old caf\u00E9, it is a game to enjoy during a coffee break. After 3, 2, 1, tap the screen as fast as you can for 30 seconds. Explosions, lightning, swords and more burst with every tap, and at the end you get an analysis of your speed, stamina, rhythm and drift. Now in closed testing. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 8.0 以上　　料金　無料（広告あり）', 'OS: Android 8.0 or later　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
     demo: tpDemo, init: initTp,
     features: [
-      [ILL.tpFever, '30秒ひたすら連打', '3・2・1 の合図のあと30秒。直近1秒のタップ数が5回で BOOST、8回で RAPID FIRE、10回で FEVER!! に変わります。指を置いたままや、2本目の指でのタップは数えません。'],
-      [ILL.tpFx, 'エフェクト20種×5パターン', '爆発・ピストル・雷撃・レーザー・氷結・ハート・刀・画面割など20種類。障子・水面・釘打ち・コンクリート・ハンコは背景ごと変わります。「複合」で3つまで混ぜられ、「なし」でも遊べます。'],
-      [ILL.tpSp, '必殺技と HIT!', '直近1秒に20回たたくと、次の1タップが必殺技に。25回ごとに「HIT!」が出て、画面も揺れます。'],
-      [ILL.tpChart, '30秒を分析', '1秒ごとの棒グラフ、平均と最高の速さ、前半と後半の比べ（持久力）、タップ間隔のリズム、位置のブレや重心の移動がわかります。'],
-      [ILL.tpAuto, '連打アプリはお断り', 'タップの間隔や位置が機械のようにそろいすぎているときは、連打アプリの疑いとして集計しません。'],
-      [ILL.tpHand, '利き手と見た目', '右利き・左利きで、タップエリアを左右に入れ替えます。テーマは端末に合わせる・ライト・ダークから。HOME では時間帯のあいさつを読み上げます。'],
+      [ILL.tpFever, L('30秒ひたすら連打', '30 seconds of tapping'), L('3・2・1 の合図のあと30秒。直近1秒のタップ数が5回で BOOST、8回で RAPID FIRE、10回で FEVER!! に変わります。指を置いたままや、2本目の指でのタップは数えません。', '30 seconds after 3, 2, 1. Five taps in the last second gives BOOST, eight gives RAPID FIRE and ten gives FEVER!!. Resting a finger on the screen or tapping with a second finger does not count.')],
+      [ILL.tpFx, L('エフェクト20種×5パターン', '20 effects × 5 patterns'), L('爆発・ピストル・雷撃・レーザー・氷結・ハート・刀・画面割など20種類。障子・水面・釘打ち・コンクリート・ハンコは背景ごと変わります。「複合」で3つまで混ぜられ、「なし」でも遊べます。', '20 kinds, including explosions, pistols, lightning, lasers, ice, hearts, swords and shattered screens. Shoji paper, water, nails, concrete and stamps change the whole background. Mix up to three with “Combo”, or play with “None”.')],
+      [ILL.tpSp, L('必殺技と HIT!', 'Special moves and HIT!'), L('直近1秒に20回たたくと、次の1タップが必殺技に。25回ごとに「HIT!」が出て、画面も揺れます。', 'Hit 20 times in a second and your next tap becomes a special move. Every 25 taps, “HIT!” appears and the screen shakes.')],
+      [ILL.tpChart, L('30秒を分析', 'Analysis of your 30 seconds'), L('1秒ごとの棒グラフ、平均と最高の速さ、前半と後半の比べ（持久力）、タップ間隔のリズム、位置のブレや重心の移動がわかります。', 'See a bar chart for each second, average and top speed, first half versus second half (stamina), the rhythm of your tap gaps, and how your taps drift and shift.')],
+      [ILL.tpAuto, L('連打アプリはお断り', 'No auto-tappers'), L('タップの間隔や位置が機械のようにそろいすぎているときは、連打アプリの疑いとして集計しません。', 'If tap gaps or positions are too perfectly even, like a machine, the result is treated as a possible auto-tap app and not counted.')],
+      [ILL.tpHand, L('利き手と見た目', 'Handedness and looks'), L('右利き・左利きで、タップエリアを左右に入れ替えます。テーマは端末に合わせる・ライト・ダークから。HOME では時間帯のあいさつを読み上げます。', 'The tap area switches sides for right- or left-handed players. Themes: follow the device, light or dark. HOME reads out a greeting for the time of day.')],
     ],
     steps: [
-      ['利き手とエフェクトを選ぶ', 'HOME で利き手（右・左）と、タップのエフェクトを選びます。「複合」をオンにすると、エフェクトを3つまで混ぜられます。'],
-      ['3・2・1 で連打', 'START を押すと 3・2・1 のカウントダウン。合図のあと30秒間、タップエリアをひたすらタップします。'],
-      ['結果を見る', '30秒たつと FINISH!。1秒ごとのグラフと、速さ・持久力・リズム・位置の分析が出ます。'],
+      [L('利き手とエフェクトを選ぶ', 'Choose your hand and effect'), L('HOME で利き手（右・左）と、タップのエフェクトを選びます。「複合」をオンにすると、エフェクトを3つまで混ぜられます。', 'On HOME, choose your dominant hand (right or left) and a tap effect. Turn on “Combo” to mix up to three effects.')],
+      [L('3・2・1 で連打', 'Tap after 3, 2, 1'), L('START を押すと 3・2・1 のカウントダウン。合図のあと30秒間、タップエリアをひたすらタップします。', 'Press START for a 3, 2, 1 countdown, then tap the tap area as fast as you can for 30 seconds.')],
+      [L('結果を見る', 'See your results'), L('30秒たつと FINISH!。1秒ごとのグラフと、速さ・持久力・リズム・位置の分析が出ます。', 'After 30 seconds comes FINISH!, with a chart for each second and an analysis of speed, stamina, rhythm and position.')],
     ],
-    info: [['アプリ名', 'タップる？（TaPru）'], ['ジャンル', 'ゲーム'], ['対応OS', 'Android 8.0 以上（横画面専用）'], ['料金', '無料（広告あり）'], ['配布', 'Google Play（クローズドテスト中）'], ['記録', 'タップの記録と分析は、端末の中だけで行います。'], ['準備中', '50種類の称号診断、自己ベスト・履歴、効果音']],
-    note: 'クローズドテスト中のため、内容は変わることがあります。計測結果は遊びとして楽しむためのもので、医学的・科学的な評価ではありません。連打のしすぎにご注意いただき、適度に休憩しながらお楽しみください。',
+    info: [[L('アプリ名', 'App name'), L('タップる？（TaPru）', 'タップる？ (TaPru)')], [L('ジャンル', 'Genre'), L('ゲーム', 'Game')], [L('対応OS',
+        'OS'), L('Android 8.0 以上（横画面専用）', 'Android 8.0 or later (landscape only)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布',
+        'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('記録', 'Records'), L('タップの記録と分析は、端末の中だけで行います。',
+        'Taps are recorded and analyzed on the device only.')], [L('準備中', 'Coming'), L('50種類の称号診断、自己ベスト・履歴、効果音', '50 player titles, personal bests and history, sound effects')]],
+    note: L('クローズドテスト中のため、内容は変わることがあります。計測結果は遊びとして楽しむためのもので、医学的・科学的な評価ではありません。連打のしすぎにご注意いただき、適度に休憩しながらお楽しみください。', 'The app is in closed testing, so details may change. The results are just for fun and are not a medical or scientific assessment. Please do not overdo the tapping, and take breaks as you play.'),
   },
 ];
 function initPdf(root) {
@@ -1054,11 +1135,11 @@ function autoDemo(root) {
   const sleep = ms => new Promise(r => setTimeout(r, ms));
   const place = (x, y, ms) => { af.style.transition = `transform ${ms}ms cubic-bezier(.4,0,.2,1),opacity .3s`; af.style.transform = `translate(${x - 20}px,${y - 20}px)`; };
   const target = m => { const p = phone.getBoundingClientRect(), b = m.getBoundingClientRect(); return [b.left - p.left + b.width * .82, b.top - p.top + b.height * .55]; };
-  const ready = async t => { while (t === token && !(root.classList.contains('open') && !document.hidden)) await sleep(300); return t === token; };
+  const ready = async t => { while (t === token && root.isConnected && !(root.classList.contains('open') && !document.hidden)) await sleep(300); return t === token && root.isConnected; };
   const reset = () => masks.forEach(m => m.setAttribute('aria-pressed', 'false'));
   const run = async () => {
     const t = ++token; active = true;
-    btn.hidden = true; note.textContent = '自動で再生中です。触ると、自分で操作できます。';
+    btn.hidden = true; note.textContent = L('自動で再生中です。触ると、自分で操作できます。', 'Playing automatically. Touch it to try it yourself.');
     while (t === token) {
       if (!await ready(t)) return;
       await sleep(700); if (t !== token) return;
@@ -1082,7 +1163,7 @@ function autoDemo(root) {
   const stop = () => {
     if (!active) return;
     active = false; token++; af.style.opacity = 0;
-    btn.hidden = false; note.textContent = '操作できます。';
+    btn.hidden = false; note.textContent = L('操作できます。', 'Your turn. Go ahead.');
   };
   phone.addEventListener('pointerdown', stop);
   phone.addEventListener('keydown', stop);
@@ -1097,8 +1178,8 @@ function initAm(root) {
   const counts = AM_APPS.reduce((a, [, lv]) => (lv < 3 ? a + 1 : a), 0);
   const draw = on => {
     ring.setAttribute('aria-pressed', on); scr.classList.toggle('off', !on);
-    $('b', ring).textContent = on ? '見守り中' : '待機中';
-    $('small', ring).textContent = on ? `要確認 ${counts}件` : '記録と検知を停止中';
+    $('b', ring).textContent = on ? L('見守り中', 'Monitoring') : L('待機中', 'Standby');
+    $('small', ring).textContent = on ? `${L('要確認', 'To check:')} ${counts}${L('件', '')}` : L('記録と検知を停止中', 'Recording and detection paused');
   };
   ring.addEventListener('click', () => draw(ring.getAttribute('aria-pressed') !== 'true'));
   $$('.amd-row', root).forEach(b => b.addEventListener('click', () => {
@@ -1130,7 +1211,7 @@ function initFr(root) {
     timer = setTimeout(next, Number(rng.value) * 100);
   });
   revBtn.addEventListener('click', () => { clearTimeout(timer); rev = !rev; revBtn.setAttribute('aria-pressed', rev); draw(); });
-  rng.addEventListener('input', () => { out.textContent = (Number(rng.value) / 10).toFixed(1) + '秒'; });
+  rng.addEventListener('input', () => { out.textContent = (Number(rng.value) / 10).toFixed(1) + L('秒', ' s'); });
   $$('.frd-m', root).forEach(m => m.addEventListener('click', () => {
     clearTimeout(timer); deck = Number(m.dataset.i); idx = 0; rev = false; revBtn.setAttribute('aria-pressed', 'false');
     $$('.frd-m', root).forEach(x => x.setAttribute('aria-pressed', x === m)); draw();
@@ -1167,7 +1248,7 @@ function initTp(root) {
       const s = 9 * sz * (1 + k * .6), x = f.x, y = f.y - k * 34;
       c.beginPath(); c.moveTo(x, y + s * .9); c.bezierCurveTo(x - s * 1.6, y - s * .2, x - s * .6, y - s * 1.3, x, y - s * .45); c.bezierCurveTo(x + s * .6, y - s * 1.3, x + s * 1.6, y - s * .2, x, y + s * .9); c.fill();
     }
-    if (snd && k < .7) { c.globalAlpha = 1 - k / .7; c.font = `900 ${f.sp ? 22 : 13}px "Zen Maru Gothic",sans-serif`; c.textAlign = 'center'; c.fillText(f.sp ? '必殺技!!' : snd, f.x + 18, f.y - 22 - k * 12); }
+    if (snd && k < .7) { c.globalAlpha = 1 - k / .7; c.font = `900 ${f.sp ? 22 : 13}px "Zen Maru Gothic",sans-serif`; c.textAlign = 'center'; c.fillText(f.sp ? L('必殺技!!', 'SPECIAL!!') : snd, f.x + 18, f.y - 22 - k * 12); }
     return true;
   };
   const loop = () => {
@@ -1191,10 +1272,10 @@ function initTp(root) {
     const half = TP_SEC / 2, a = sec.slice(0, half).reduce((x, y) => x + y, 0), z = sec.slice(half).reduce((x, y) => x + y, 0), mx = Math.max(...sec, 1);
     const ch = a ? Math.round((z - a) / a * 100) : null;
     setTimeout(() => {
-      show(''); start.textContent = 'もう一度'; start.hidden = false;
-      res.innerHTML = `<div class="tpd-sum"><span>合計 <b>${taps.length}</b> 回</span><span>平均 <b>${(taps.length / TP_SEC).toFixed(1)}</b> 回/秒</span><span>最高 <b>${Math.max(...sec)}</b> 回/秒</span></div>
-<div class="tpd-bars" role="img" aria-label="1秒ごとのタップ数">${sec.map(n => `<i style="height:${Math.round(n / mx * 100)}%" title="${n}回"></i>`).join('')}</div>
-<p class="tpd-cap">${ch === null ? '前半と後半は比べられませんでした。' : `後半${half}秒は、前半${half}秒にくらべて ${ch >= 0 ? '+' : ''}${ch}%。`}アプリでは30秒を、持久力・リズム・位置のブレまで分析します。</p>`;
+      show(''); start.textContent = L('もう一度', 'Again'); start.hidden = false;
+      res.innerHTML = `<div class="tpd-sum"><span>${L('合計', 'Total')} <b>${taps.length}</b> ${L('回', 'taps')}</span><span>${L('平均', 'Average')} <b>${(taps.length / TP_SEC).toFixed(1)}</b> ${L('回/秒', 'taps/s')}</span><span>${L('最高', 'Best')} <b>${Math.max(...sec)}</b> ${L('回/秒', 'taps/s')}</span></div>
+<div class="tpd-bars" role="img" aria-label="${L('1秒ごとのタップ数', 'Taps per second')}">${sec.map(n => `<i style="height:${Math.round(n / mx * 100)}%" title="${n}${L('回', 'taps')}"></i>`).join('')}</div>
+<p class="tpd-cap">${ch === null ? L('前半と後半は比べられませんでした。', 'Could not compare the first and second halves. ') : `${L('後半', 'Last ')}${half}${L('秒は、前半', ' s vs. first ')}${half}${L('秒にくらべて', ' s:')} ${ch >= 0 ? '+' : ''}${ch}${L('%。', '%. ')}`}${L('アプリでは30秒を、持久力・リズム・位置のブレまで分析します。', 'The app analyzes all 30 seconds, down to stamina, rhythm and drift.')}</p>`;
       res.hidden = false;
     }, 900);
   };
@@ -1237,7 +1318,7 @@ function initMt(root) {
   const show = () => {
     const [name, , text] = MT_SAMPLES[cur];
     p.classList.add('on');
-    $('.mtd-top .mtd-lab', root).textContent = `${name}（自動判別）▼`;
+    $('.mtd-top .mtd-lab', root).textContent = `${name}${L('（自動判別）▼', ' (auto-detected) ▼')}`;
     $('.mtd-src', root).textContent = text;
     dlg.hidden = false;
   };
@@ -1286,7 +1367,7 @@ const LEGAL = [
   H('2. 取得する情報と取得方法') +
   UL([
     '会員登録・ログイン・入力フォームはなく、氏名やメールアドレスなどを取得することはありません。',
-    'Cookie は使用していません。デモの題材を毎回変えるため、直前の題材名をブラウザの localStorage（お使いの端末内）に保存しますが、外部へは送信しません。',
+    'Cookie は使用していません。デモの題材を毎回変えるための直前の題材名と、切替スイッチで選んだ表示言語（日本語／English）を、ブラウザの localStorage（お使いの端末内）に保存しますが、外部へは送信しません。',
     '本サイトは、文字のデザインのため Google Fonts から読み込みを行い、このとき IP アドレスやブラウザ情報などが Google に送信されます。',
     '本サイトのアクセスログ（IPアドレスなど）がホスティング側で記録され、約90日間保存します。アクセス解析ツールは使用していません。',
     'アプリで作成したマスク、チェック、ハイライト、落書き、栞、学習の履歴、設定は、端末内に保存し、店長には送信しません。取り込んだ PDF を店長が受け取ることもありません。',
@@ -1359,7 +1440,7 @@ const LEGAL = [
   H('2. Information we collect and how') +
   UL([
     'There is no account registration, sign-in or input form. We do not collect your name, email address or similar information.',
-    'This website does not use cookies. To change the demo topic each time, it stores the name of the last topic in your browser’s localStorage (on your device). This is never sent anywhere.',
+    'This website does not use cookies. It stores the name of the last demo topic (so the topic changes each time) and the display language you chose with the language switch (Japanese / English) in your browser’s localStorage (on your device). This is never sent anywhere.',
     'This website loads fonts from Google Fonts. When it does, your IP address and browser information are sent to Google.',
     'The hosting provider records access logs for this website (such as IP addresses), which are kept for about 90 days. We do not use any web analytics tools.',
     'Masks, check marks, highlights, drawings, bookmarks, learning history and settings you create in the apps are stored on your device and are not sent to the Manager. The Manager never receives the PDFs you open in the apps.',
@@ -1629,14 +1710,14 @@ const ICONS = {
 };
 const docIcon = k => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[k]}</svg>`;
 const CHEV = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
-const legalItem = d => `<section class="acc doc" id="${d.id}" data-id="${d.id}" data-title="${d.title}">
+const legalItem = d0 => { const d = LANG === 'en' ? { ...d0, ...d0.en } : d0; return `<section class="acc doc" id="${d.id}" data-id="${d.id}" data-title="${d.title}">
   <h3 class="acc-hd"><button class="acc-h" type="button" aria-expanded="false" aria-controls="p-${d.id}" id="h-${d.id}">
     <span class="ico">${docIcon(d.ic)}</span>
-    <span><span class="acc-name"><span class="l-ja">${d.title}</span><span class="l-en" lang="en">${d.en.title}</span></span><span class="acc-one"><span class="l-ja">${d.one}</span><span class="l-en" lang="en">${d.en.one}</span></span></span>
+    <span><span class="acc-name">${d.title}</span><span class="acc-one">${d.one}</span></span>
     ${CHEV}
   </button></h3>
-  <div class="acc-p" id="p-${d.id}" role="region" aria-labelledby="h-${d.id}" inert><div class="acc-in"><div class="pn doc-body"><div class="l-ja">${d.body}</div><div class="l-en" lang="en">${d.en.body}</div></div></div></div>
-</section>`;
+  <div class="acc-p" id="p-${d.id}" role="region" aria-labelledby="h-${d.id}" inert><div class="acc-in"><div class="pn doc-body">${d.body}</div></div></div>
+</section>`; };
 const boxItem = (id, ic, title, one, html) => `<section class="acc doc" id="${id}" data-id="${id}" data-title="${title}">
   <h3 class="acc-hd"><button class="acc-h" type="button" aria-expanded="false" aria-controls="p-${id}" id="h-${id}">
     <span class="ico">${docIcon(ic)}</span>
@@ -1662,24 +1743,25 @@ const drawMail = () => {
 const initMail = () => {
   drawMail();
   try { document.fonts && document.fonts.load('500 18px "JetBrains Mono"').then(drawMail).catch(() => {}); } catch (e) {  }
-  try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawMail); } catch (e) {  }
+  try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawMail, SIG); } catch (e) {  }
 };
-const storeEl = s => s.url ? `<a class="btn btn-main" href="${s.url}" target="_blank" rel="noopener">Google Play で入手</a>` : `<span class="btn btn-off">${s.label}</span>`;
-const testerEl = url => `<div class="tester"><p class="tester-h">テスター募集中（すべてのアプリが対象）</p><p class="tester-p">公開前・開発中のアプリを先に試して、使い心地や不具合を教えてくださる方を募集しています。</p><ul class="tester-l">
-<li>Google Play で使っている Google アカウントで、Google グループにご自身で参加してください。グループに参加したアカウントが、クローズドテストの対象になります。</li>
-<li>参加したあとは、下の「クローズドテストのリンク」から、試したいアプリをインストールしてください。</li>
-<li><b>参加の条件：</b>インストールしたあと14日間は、アプリを削除しないでください。また、1日1回くらいはアプリを起動してください（Google Play で公開するための条件です）。</li>
-<li>グループに参加したメールアドレスは、テストのご案内・ご連絡以外の目的には利用しません。やめたいときは、いつでもグループから退出できます。</li>
-<li>不具合を見つけたときは、下の「不具合報告」から、アプリごとのフォームでお知らせください。</li>
+const langSw = cls => `<div class="lang-sw ${cls}" role="group" aria-label="表示する言語 / Language"><button type="button" data-lang="ja" lang="ja" aria-pressed="${LANG === 'ja'}">日本語</button><button type="button" data-lang="en" lang="en" aria-pressed="${LANG === 'en'}">English</button></div>`;
+const storeEl = s => s.url ? `<a class="btn btn-main" href="${s.url}" target="_blank" rel="noopener">${L('Google Play で入手', 'Get it on Google Play')}</a>` : `<span class="btn btn-off">${s.label}</span>`;
+const testerEl = url => `<div class="tester"><p class="tester-h">${L('テスター募集中（すべてのアプリが対象）', 'Testers wanted (for all apps)')}</p><p class="tester-p">${L('公開前・開発中のアプリを先に試して、使い心地や不具合を教えてくださる方を募集しています。', 'We are looking for people who will try our apps before release and tell us how they feel and what goes wrong.')}</p><ul class="tester-l">
+<li>${L('Google Play で使っている Google アカウントで、Google グループにご自身で参加してください。グループに参加したアカウントが、クローズドテストの対象になります。', 'Join the Google Group yourself with the Google account you use on Google Play. Accounts that join the group can take part in closed testing.')}</li>
+<li>${L('参加したあとは、下の「クローズドテストのリンク」から、試したいアプリをインストールしてください。', 'After joining, install the apps you want to try from “Closed testing links” below.')}</li>
+<li><b>${L('参加の条件：', 'Conditions: ')}</b>${L('インストールしたあと14日間は、アプリを削除しないでください。また、1日1回くらいはアプリを起動してください（Google Play で公開するための条件です）。', 'Please keep the app installed for 14 days after installing it, and open it about once a day (this is required for release on Google Play).')}</li>
+<li>${L('グループに参加したメールアドレスは、テストのご案内・ご連絡以外の目的には利用しません。やめたいときは、いつでもグループから退出できます。', 'The email address you join the group with is used only for test announcements and contact. You can leave the group at any time.')}</li>
+<li>${L('不具合を見つけたときは、下の「不具合報告」から、アプリごとのフォームでお知らせください。', 'If you find a bug, please let us know with the form for each app under “Bug reports” below.')}</li>
 </ul>
 ${url
-  ? `<a class="btn btn-main" href="${url}" target="_blank" rel="noopener">Google グループに参加する</a><p class="tester-n">Google グループのページが開きます。「グループに参加」を押してください。グループのアドレス：${TESTER_GROUP}</p>`
-  : '<span class="btn btn-off">参加の受付準備中</span>'}</div>`;
+  ? `<a class="btn btn-main" href="${url}" target="_blank" rel="noopener">${L('Google グループに参加する', 'Join the Google Group')}</a><p class="tester-n">${L('Google グループのページが開きます。「グループに参加」を押してください。グループのアドレス：', 'The Google Group page opens. Press “Join group”. Group address: ')}${TESTER_GROUP}</p>`
+  : L('<span class="btn btn-off">参加の受付準備中</span>', '<span class="btn btn-off">Sign-up coming soon</span>')}</div>`;
 const RECRUIT = () => APPS.filter(a => a.tester !== undefined);
-const testEl = () => `<div class="bugs"><p class="tester-h">クローズドテストのリンク</p><p class="tester-p">Google グループに参加したあとで開いてください。参加前のアカウントでは、ページが表示されないことがあります。</p>
+const testEl = () => `<div class="bugs"><p class="tester-h">${L('クローズドテストのリンク', 'Closed testing links')}</p><p class="tester-p">${L('Google グループに参加したあとで開いてください。参加前のアカウントでは、ページが表示されないことがあります。', 'Open these after joining the Google Group. The page may not appear for accounts that have not joined.')}</p>
 ${RECRUIT().map(a => `<div class="bug-row"><b>${a.name}</b>${a.test
-  ? `<a class="btn btn-main" href="${a.test}" target="_blank" rel="noopener">Google Play で開く</a>`
-  : '<span class="btn btn-off">準備中</span>'}</div>`).join('\n')}
+  ? `<a class="btn btn-main" href="${a.test}" target="_blank" rel="noopener">${L('Google Play で開く', 'Open in Google Play')}</a>`
+  : L('<span class="btn btn-off">準備中</span>', '<span class="btn btn-off">Coming soon</span>')}</div>`).join('\n')}
 </div>`;
 const newsLi = n => `<li><span class="n-top"><span class="n-date">${n.date}</span><span class="n-tag">${n.tag}</span></span>${n.text.split('\n').map(t => `<span class="n-txt">${t}</span>`).join('')}</li>`;
 const newsEl = () => {
@@ -1695,10 +1777,10 @@ const newsEl = () => {
   return `<div class="news">
   <div class="nboard">
     <ul class="nl">${shown.map(newsLi).join('')}</ul>
-    ${more ? '<button type="button" class="n-more" aria-expanded="false" aria-controls="news-all">・・・ すべてを表示</button>' : ''}
+    ${more ? L('<button type="button" class="n-more" aria-expanded="false" aria-controls="news-all">・・・ すべてを表示</button>', '<button type="button" class="n-more" aria-expanded="false" aria-controls="news-all">... Show all</button>') : ''}
   </div>
-  ${more ? `<div class="bubble" id="news-all" role="region" aria-label="お知らせ（すべて）" tabindex="-1" hidden>
-    <div class="bubble-h"><span>お知らせ　すべて（${NEWS.length}件）</span><button type="button" class="bubble-x" aria-label="閉じる">×</button></div>
+  ${more ? `<div class="bubble" id="news-all" role="region" aria-label="${L('お知らせ（すべて）', 'News (all)')}" tabindex="-1" hidden>
+    <div class="bubble-h"><span>${L('お知らせ　すべて（', 'All news (')}${NEWS.length}${L('件）', ')')}</span><button type="button" class="bubble-x" aria-label="${L('閉じる', 'Close')}">×</button></div>
     <ul class="nl">${NEWS.map(newsLi).join('')}</ul>
   </div>` : ''}
 </div>`;
@@ -1708,28 +1790,28 @@ const initNews = () => {
   if (!btn || !bub) return;
   const toggle = on => {
     bub.hidden = !on; box.classList.toggle('open', on); btn.setAttribute('aria-expanded', on);
-    btn.textContent = on ? '・・・ 閉じる' : '・・・ すべてを表示';
+    btn.textContent = on ? L('・・・ 閉じる', '... Close') : L('・・・ すべてを表示', '... Show all');
     if (on) { bub.focus({ preventScroll: true }); if (innerWidth < 900) bub.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'nearest' }); }
   };
   btn.addEventListener('click', () => toggle(bub.hidden));
   $('.bubble-x', bub).addEventListener('click', () => { toggle(false); btn.focus(); });
-  addEventListener('keydown', e => { if (e.key === 'Escape' && !bub.hidden) { toggle(false); btn.focus(); } });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && !bub.hidden) { toggle(false); btn.focus(); } }, SIG);
 };
-const bugEl = () => `<div class="bugs"><p class="tester-h">不具合報告</p><p class="tester-p">お出ししたアプリに不具合がありましたら、こちらからお知らせください。Google フォームが開きます。</p>
+const bugEl = () => `<div class="bugs"><p class="tester-h">${L('不具合報告', 'Bug reports')}</p><p class="tester-p">${L('お出ししたアプリに不具合がありましたら、こちらからお知らせください。Google フォームが開きます。', 'If something is wrong with an app we served, please let us know here. A Google Form opens.')}</p>
 ${RECRUIT().map(a => `<div class="bug-row"><b>${a.name}</b>${a.bug
-  ? `<a class="btn btn-main" href="${a.bug}" target="_blank" rel="noopener">不具合を報告する</a>`
-  : '<span class="btn btn-off">フォーム準備中</span>'}</div>`).join('\n')}
+  ? `<a class="btn btn-main" href="${a.bug}" target="_blank" rel="noopener">${L('不具合を報告する', 'Report a bug')}</a>`
+  : L('<span class="btn btn-off">フォーム準備中</span>', '<span class="btn btn-off">Form coming soon</span>')}</div>`).join('\n')}
 </div>`;
 const panel = a => `<div class="pn">
   ${a.flag ? `<div class="pn-flag" role="note"><b>\u26A0 ${a.flag[0]}</b><span>${a.flag[1]}</span></div>` : ''}
   <div class="pn-top">
-    <div><p class="pn-h">${a.headline}</p><p class="pn-lead">${a.lead}</p><p class="pn-os">${a.os}</p><div class="cta">${storeEl(a.store)}</div>${a.tester !== undefined ? '<p class="tester-n" style="margin-top:14px"><a href="#closed-test">このアプリのテスターも募集中です（参加はこちら）</a></p>' : ''}</div>
+    <div><p class="pn-h">${a.headline}</p><p class="pn-lead">${a.lead}</p><p class="pn-os">${a.os}</p><div class="cta">${storeEl(a.store)}</div>${a.tester !== undefined ? L('<p class="tester-n" style="margin-top:14px"><a href="#closed-test">このアプリのテスターも募集中です（参加はこちら）</a></p>', '<p class="tester-n" style="margin-top:14px"><a href="#closed-test">We are looking for testers for this app too (join here)</a></p>') : ''}</div>
     ${a.demo()}
   </div>
-  ${a.modes ? `<div><h4 class="sub">学習モード</h4><div class="grid g3">${a.modes.map(([ill, h, p]) => `<article class="card">${ill()}<div class="card-body"><h5>${h}</h5><p>${p}</p></div></article>`).join('')}</div></div>` : ''}
-  <div><h4 class="sub">${a.featuresTitle || 'できること'}</h4><div class="grid ${a.features.length % 4 === 0 ? 'g4' : 'g3'}">${a.features.map(([ill, h, p]) => `<article class="card">${ill()}<div class="card-body"><h5>${h}</h5><p>${p}</p></div></article>`).join('')}</div></div>
-  ${a.steps ? `<div><h4 class="sub">使い方</h4><ol class="steps">${a.steps.map(([h, p, extra], i) => `<li><span class="num">${i + 1}</span><h5>${h}</h5><p>${p}</p>${extra || ''}</li>`).join('')}</ol></div>` : ''}
-  <div><h4 class="sub">アプリ情報</h4><div class="info"><dl class="dl">${a.info.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl></div>${a.note ? `<p class="note">${a.note}</p>` : ''}</div>
+  ${a.modes ? `<div><h4 class="sub">${L('学習モード', 'Study modes')}</h4><div class="grid g3">${a.modes.map(([ill, h, p]) => `<article class="card">${ill()}<div class="card-body"><h5>${h}</h5><p>${p}</p></div></article>`).join('')}</div></div>` : ''}
+  <div><h4 class="sub">${a.featuresTitle || L('できること', 'What it does')}</h4><div class="grid ${a.features.length % 4 === 0 ? 'g4' : 'g3'}">${a.features.map(([ill, h, p]) => `<article class="card">${ill()}<div class="card-body"><h5>${h}</h5><p>${p}</p></div></article>`).join('')}</div></div>
+  ${a.steps ? `<div><h4 class="sub">${L('使い方', 'How to use')}</h4><ol class="steps">${a.steps.map(([h, p, extra], i) => `<li><span class="num">${i + 1}</span><h5>${h}</h5><p>${p}</p>${extra || ''}</li>`).join('')}</ol></div>` : ''}
+  <div><h4 class="sub">${L('アプリ情報', 'App info')}</h4><div class="info"><dl class="dl">${a.info.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl></div>${a.note ? `<p class="note">${a.note}</p>` : ''}</div>
 </div>`;
 const accItem = a => `<section class="acc" id="${a.id}" data-id="${a.id}">
   <h3 class="acc-hd"><button class="acc-h" type="button" aria-expanded="false" aria-controls="p-${a.id}" id="h-${a.id}">
@@ -1740,69 +1822,71 @@ const accItem = a => `<section class="acc" id="${a.id}" data-id="${a.id}">
   <div class="acc-p" id="p-${a.id}" role="region" aria-labelledby="h-${a.id}" inert><div class="acc-in">${panel(a)}</div></div>
 </section>`;
 const render = () => {
-  const font = document.createElement('link');
-  font.rel = 'stylesheet';
-  font.href = 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@700;900&display=swap';
-  document.head.appendChild(font);
-  const st = document.createElement('style'); st.textContent = CSS; document.head.appendChild(st);
+  if (!$('#site-css')) {
+    const font = document.createElement('link');
+    font.rel = 'stylesheet';
+    font.href = 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@700;900&display=swap';
+    document.head.appendChild(font);
+    const st = document.createElement('style'); st.id = 'site-css'; st.textContent = CSS; document.head.appendChild(st);
+  }
   $('#app').innerHTML = `
 <header class="hero" id="top"><canvas id="bg" aria-hidden="true"></canvas>
   <div class="wrap">
-    <nav class="nav" aria-label="サイト内メニュー">
+    <nav class="nav" aria-label="${L('サイト内メニュー', 'Site menu')}">
       <a class="brand" href="#top"><img class="brand-ico" src="${ADMIN_ICON}" alt="" width="40" height="40"><span>${SITE.name}</span><span class="tld">${SITE.tld}</span></a>
-      <ul><li><a href="#apps">アプリ</a></li><li><a href="#recruit">テスター募集</a></li><li><a href="#team">開発体制</a></li><li><a href="#admin">店長</a></li><li><a href="#legal">ポリシー・お問い合わせ</a></li></ul>
+      <div class="nav-r"><ul><li><a href="#apps">${L('アプリ', 'Apps')}</a></li><li><a href="#recruit">${L('テスター募集', 'Testers wanted')}</a></li><li><a href="#team">${L('開発体制', 'Our team')}</a></li><li><a href="#admin">${L('店長', 'Caf\u00E9 Manager')}</a></li><li><a href="#legal">${L('ポリシー・お問い合わせ', 'Policies & contact')}</a></li></ul>${langSw('hd')}</div>
     </nav>
     <div class="hero-copy">
       <p class="tag">App Caf\u00E9 by ${SITE.admin}</p>
-      <h1><span class="nb">毎日使う<span class="hl">道具</span>を、</span><span class="nb">少しずつ。</span></h1>
+      <h1>${L('<span class="nb">毎日使う<span class="hl">道具</span>を、</span><span class="nb">少しずつ。</span>', '<span class="nb">Brewing everyday <span class="hl">tools</span>,</span> <span class="nb">a little at a time.</span>')}</h1>
       <p class="lead">${SITE.lead}</p>
     </div>
   </div>
 </header>
 <main>
   <section class="sec wrap" id="news">
-    <div class="sec-head"><h2>お知らせ</h2><p class="sec-lead">お店からの最近のお知らせです。</p></div>
+    <div class="sec-head"><h2>${L('お知らせ', 'News')}</h2><p class="sec-lead">${L('お店からの最近のお知らせです。', 'Recent news from the caf\u00E9.')}</p></div>
     ${newsEl()}
   </section>
   <section class="sec wrap" id="apps">
-    <div class="sec-head"><h2>アプリ</h2><p class="sec-lead app-links"><span>本日のメニュー</span>${APPS.map(a => `<a href="#${a.id}" data-open="${a.id}">${a.name}</a>`).join('')}</p></div>
+    <div class="sec-head"><h2>${L('アプリ', 'Apps')}</h2><p class="sec-lead app-links"><span>${L('本日のメニュー', 'Today’s menu')}</span>${APPS.map(a => `<a href="#${a.id}" data-open="${a.id}">${a.name}</a>`).join('')}</p></div>
     <div class="accs" data-default="${APPS[0].id}">${APPS.map(accItem).join('')}</div>
   </section>
   <section class="sec wrap" id="recruit">
-    <div class="sec-head"><h2>テスター募集</h2><p class="sec-lead">お店のアプリづくりに協力してくださる方を、全アプリで募集しています。</p></div>
+    <div class="sec-head"><h2>${L('テスター募集', 'Testers wanted')}</h2><p class="sec-lead">${L('お店のアプリづくりに協力してくださる方を、全アプリで募集しています。', 'We are looking for people to help us make the caf\u00E9’s apps. All apps are open for testers.')}</p></div>
     <div class="recruit-apps">${RECRUIT().map(a => `<a class="ra" href="#${a.id}" data-open="${a.id}">${a.icon(36)}<span><b>${a.name}</b><small>${a.status}</small></span></a>`).join('')}</div>
     <div class="accs boxes">
-      ${boxItem('closed-test', 'test', 'クローズドテストの募集', '参加のしかたと条件、アプリごとのクローズドテストのリンク', testerEl(TESTER_FORM_URL) + testEl())}
-      ${boxItem('bug-report', 'bug', '不具合報告', 'アプリごとの不具合報告フォーム', bugEl())}
+      ${boxItem('closed-test', 'test', L('クローズドテストの募集', 'Join closed testing'), L('参加のしかたと条件、アプリごとのクローズドテストのリンク', 'How to join, conditions, and closed testing links for each app'), testerEl(TESTER_FORM_URL) + testEl())}
+      ${boxItem('bug-report', 'bug', L('不具合報告', 'Bug reports'), L('アプリごとの不具合報告フォーム', 'Bug report forms for each app'), bugEl())}
     </div>
   </section>
   <section class="sec wrap" id="team">
-    <div class="sec-head"><h2>開発体制</h2><p class="sec-lead">人とAIのスタッフで役割を分けて、アプリを作っています。</p></div>
+    <div class="sec-head"><h2>${L('開発体制', 'Our team')}</h2><p class="sec-lead">${L('人とAIのスタッフで役割を分けて、アプリを作っています。', 'Our staff of people and AI share the work of making the apps.')}</p></div>
     ${orgHtml()}
   </section>
   <section class="sec wrap" id="admin">
-    <div class="sec-head"><h2>店長</h2></div>
+    <div class="sec-head"><h2>${L('店長', 'Caf\u00E9 Manager')}</h2></div>
     <div class="admin"><div class="badge-adm"><img src="${ADMIN_ICON}" alt="" width="96" height="96"></div>
       <div><h3>${SITE.admin}</h3>
-        <p>${SITE.name}${SITE.tld} は、${SITE.admin} が店長をつとめる、アプリを紹介する喫茶店です。自分が毎日使いたい道具を、一杯ずつ淹れるように、少しずつ形にしています。</p>
-        <p class="small">お店へのご連絡：<a href="#contact">お問い合わせ先を見る</a></p></div></div>
-    <h3 class="sub" style="margin-top:44px">スキルマップ</h3>
+        <p>${SITE.name}${SITE.tld} ${L('は、', 'is a caf\u00E9 that serves apps, run by')}${SITE.admin} ${L('が店長をつとめる、アプリを紹介する喫茶店です。自分が毎日使いたい道具を、一杯ずつ淹れるように、少しずつ形にしています。', 'as its Caf\u00E9 Manager. Like brewing coffee one cup at a time, the Manager is shaping, bit by bit, the tools they want to use every day.')}</p>
+        <p class="small">${L('お店へのご連絡：', 'Contact the caf\u00E9: ')}<a href="#contact">${L('お問い合わせ先を見る', 'See contact details')}</a></p></div></div>
+    <h3 class="sub" style="margin-top:44px">${L('スキルマップ', 'Skill map')}</h3>
     <div class="skills">
-      <article class="sk"><span class="sk-n">セキュリティアーキテクト</span><div class="lv" role="img" aria-label="レベル：5／5">${'<i class="on"></i>'.repeat(5)}</div></article>
-      <article class="sk"><span class="sk-n">ITスペシャリスト</span><div class="lv" role="img" aria-label="レベル：5／5">${'<i class="on"></i>'.repeat(5)}</div></article>
-      <article class="sk"><span class="sk-n">アプリ開発</span><div class="lv" role="img" aria-label="レベル：1／5">${'<i class="on"></i>'.repeat(1)}${'<i></i>'.repeat(4)}</div></article>
-      <article class="sk"><span class="sk-n">目Grep</span><div class="lv" role="img" aria-label="レベル：5段階の上限を超えて7">${'<i class="on"></i>'.repeat(5)}${'<i class="over"></i>'.repeat(2)}</div></article>
+      <article class="sk"><span class="sk-n">${L('セキュリティアーキテクト', 'Security architect')}</span><div class="lv" role="img" aria-label="${L('レベル：5／5', 'Level: 5/5')}">${'<i class="on"></i>'.repeat(5)}</div></article>
+      <article class="sk"><span class="sk-n">${L('ITスペシャリスト', 'IT specialist')}</span><div class="lv" role="img" aria-label="${L('レベル：5／5', 'Level: 5/5')}">${'<i class="on"></i>'.repeat(5)}</div></article>
+      <article class="sk"><span class="sk-n">${L('アプリ開発', 'App development')}</span><div class="lv" role="img" aria-label="${L('レベル：1／5', 'Level: 1/5')}">${'<i class="on"></i>'.repeat(1)}${'<i></i>'.repeat(4)}</div></article>
+      <article class="sk"><span class="sk-n">${L('目Grep', 'Eyeball grep')}</span><div class="lv" role="img" aria-label="${L('レベル：5段階の上限を超えて7', 'Level: 7, beyond the 5-level maximum')}">${'<i class="on"></i>'.repeat(5)}${'<i class="over"></i>'.repeat(2)}</div></article>
     </div>
   </section>
   <section class="sec wrap" id="legal">
-    <div class="sec-head"><h2>ポリシー・お問い合わせ</h2><p class="sec-lead">お店のきまりごとです。プライバシーや利用条件などは、開くと読めます。<span lang="en">English versions are also available.</span></p>
-      <div class="lang-sw" role="group" aria-label="表示する言語 / Language"><button type="button" data-lang="ja" aria-pressed="true">日本語</button><button type="button" data-lang="en" aria-pressed="false" lang="en">English</button></div></div>
+    <div class="sec-head"><h2>${L('ポリシー・お問い合わせ', 'Policies & contact')}</h2><p class="sec-lead">${L('お店のきまりごとです。プライバシーや利用条件などは、開くと読めます。', 'The caf\u00E9’s house rules. Open each one to read about privacy, terms of use and more.')}${L('<span lang="en">English versions are also available.</span>', '<span lang="ja">日本語版もあります。</span>')}</p>
+      ${langSw('')}</div>
     <div class="accs legal">${LEGAL.map(legalItem).join('')}</div>
   </section>
 </main>
 <footer class="foot"><div class="wrap">
-  <nav class="foot-links" aria-label="ポリシーとお問い合わせ">${LEGAL.map(d => `<a href="#${d.id}">${d.title}</a>`).join('')}<a href="#privacy-en" lang="en">Privacy Policy</a><a href="#terms-en" lang="en">Terms of Use</a></nav>
-  <span>\u00A9 ${SITE.year} ${SITE.name}${SITE.tld} / ${SITE.admin}</span><a href="#top">ページの先頭へ</a></div></footer>`;
+  <nav class="foot-links" aria-label="${L('ポリシーとお問い合わせ', 'Policies and contact')}">${LEGAL.map(d => `<a href="#${d.id}">${L(d.title, d.en.title)}</a>`).join('')}${L('<a href="#privacy-en" lang="en">Privacy Policy</a><a href="#terms-en" lang="en">Terms of Use</a>', '<a href="#privacy-ja" lang="ja">プライバシーポリシー（日本語）</a><a href="#terms-ja" lang="ja">利用規約（日本語）</a>')}</nav>
+  <span>\u00A9 ${SITE.year} ${SITE.name}${SITE.tld} / ${SITE.admin}</span><a href="#top">${L('ページの先頭へ', 'Back to top')}</a></div></footer>`;
 };
 const paintBg = () => {
   const cv = $('#bg'), box = cv.parentElement.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
@@ -1819,18 +1903,14 @@ const paintBg = () => {
     }
   }
 };
-const initAccordions = () => {
-  const BASE = document.title;
+const initAccordions = (keep = {}) => {
+  const BASE = SITE.name + SITE.tld;
   const groups = $$('.accs').map(el => ({ el, items: $$('.acc', el), def: el.dataset.default || null }));
   const all = groups.flatMap(g => g.items);
   const groupOf = id => groups.find(g => g.items.some(it => it.dataset.id === id));
-  const legalBox = $('.accs.legal'), isLegal = id => !!id && LEGAL.some(d => d.id === id);
-  const setLang = en => {
-    legalBox.classList.toggle('en', en);
-    $$('.lang-sw button').forEach(b => b.setAttribute('aria-pressed', (b.dataset.lang === 'en') === en));
-  };
-  const parse = raw => { const m = /^(.+)-(en|ja)$/.exec(raw); if (m && isLegal(m[1])) { setLang(m[2] === 'en'); return m[1]; } return raw; };
-  const setHash = id => { const h = id && isLegal(id) && legalBox.classList.contains('en') ? id + '-en' : id; try { history.replaceState(null, '', h ? '#' + h : location.pathname + location.search); } catch (e) {  } };
+  const isLegal = id => !!id && LEGAL.some(d => d.id === id);
+  const parse = raw => { const m = /^(.+)-(en|ja)$/.exec(raw); return m && isLegal(m[1]) ? { id: m[1], lang: m[2] } : { id: raw, lang: null }; };
+  const setHash = id => { const h = id && isLegal(id) && LANG === 'en' ? id + '-en' : id; try { history.replaceState(null, '', h ? '#' + h : location.pathname + location.search); } catch (e) {  } };
   const setTitle = id => { const it = all.find(x => x.dataset.id === id); document.title = it && it.dataset.title ? it.dataset.title + ' | ' + BASE : BASE; };
   const set = (g, id, { scroll = true, silent = false } = {}) => {
     g.items.forEach(it => {
@@ -1848,25 +1928,50 @@ const initAccordions = () => {
   };
   groups.forEach(g => g.items.forEach(it => $('.acc-h', it).addEventListener('click', () => set(g, it.classList.contains('open') ? null : it.dataset.id))));
   $$('a[data-open]').forEach(a => a.addEventListener('click', e => { const id = a.dataset.open, g = groupOf(id); if (!g) return; e.preventDefault(); set(g, id); }));
-  addEventListener('hashchange', () => { const id = parse(location.hash.slice(1)), g = groupOf(id); if (g) set(g, id, { scroll: false }); });
-  try { if (!/^ja/i.test((navigator.languages && navigator.languages[0]) || navigator.language || 'ja')) setLang(true); } catch (e) {  }
-  $$('.lang-sw button').forEach(b => b.addEventListener('click', () => {
-    setLang(b.dataset.lang === 'en');
-    const open = LEGAL.find(d => $('#' + d.id).classList.contains('open'));
-    if (open) setHash(open.id);
-  }));
+  addEventListener('hashchange', () => {
+    const { id, lang } = parse(location.hash.slice(1));
+    if (lang && lang !== LANG) { switchLang(lang, { save: false, open: id }); return; }
+    const g = groupOf(id); if (g) set(g, id, { scroll: false });
+  }, SIG);
+  $$('.lang-sw button').forEach(b => b.addEventListener('click', () => switchLang(b.dataset.lang)));
   groups.forEach(g => set(g, g.def, { silent: true }));
-  const start = parse(location.hash.slice(1)), sg = groupOf(start);
+  if (keep.open) {
+    keep.open.forEach(id => { const g = groupOf(id); if (g) set(g, id, { silent: true }); });
+    const legal = keep.open.find(isLegal);
+    if (legal) { setHash(legal); setTitle(legal); } else setTitle(null);
+    if (keep.goto) { const g = groupOf(keep.goto); if (g) set(g, keep.goto); }
+    else if (keep.anchor) { const el = $$(ANCHORS)[keep.anchor.i]; if (el) scrollTo({ top: scrollY + el.getBoundingClientRect().top - keep.anchor.top, behavior: 'instant' }); }
+    return;
+  }
+  const start = parse(location.hash.slice(1)).id, sg = groupOf(start);
   if (sg) set(sg, start);
 };
 render();
+if (keep.open) { $('#app').classList.add('no-anim'); requestAnimationFrame(() => requestAnimationFrame(() => $('#app').classList.remove('no-anim'))); }
 APPS.forEach(a => a.init($('#' + a.id)));
 initNews();
 window.__siteReady = true;
 paintBg();
-initAccordions();
+initAccordions(keep);
 initMail();
-if ('ResizeObserver' in window) new ResizeObserver(paintBg).observe($('#top')); else addEventListener('resize', paintBg);
+if ('ResizeObserver' in window) { RO = new ResizeObserver(paintBg); RO.observe($('#top')); } else addEventListener('resize', paintBg, SIG);
+};
+const switchLang = (lang, { save = true, open = null } = {}) => {
+  if (lang !== 'ja' && lang !== 'en') return;
+  if (save) { try { localStorage.setItem(LANG_KEY, lang); } catch (e) {  } }
+  if (lang === LANG && !open) return;
+  const marks = [...document.querySelectorAll(ANCHORS)];
+  const ai = marks.findIndex(el => el.offsetParent !== null && el.getBoundingClientRect().bottom > 0 && el.getBoundingClientRect().top > -400);
+  const anchor = ai < 0 ? null : marks[ai];
+  const keep = {
+    open: open ? [open] : [...document.querySelectorAll('.acc.open')].map(el => el.dataset.id),
+    anchor: !open && anchor ? { i: ai, top: anchor.getBoundingClientRect().top } : null,
+    goto: open,
+  };
+  LANG = lang;
+  boot(keep);
+};
+boot();
 })();
 </script>
 </body>
