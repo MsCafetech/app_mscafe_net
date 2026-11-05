@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MsCafe.tech</title>
-<meta name="description" content="MsCafe.tech は、M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店です。PDF暗記マーカー、TG1900 Master、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？ の紹介と、プライバシーポリシー・利用規約・お問い合わせを掲載しています。">
+<meta name="description" content="MsCafe.tech は、M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店です。PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？ の紹介と、プライバシーポリシー・利用規約・お問い合わせを掲載しています。">
 <meta name="theme-color" content="#0A2622">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MsCafe.tech">
 <meta property="og:title" content="MsCafe.tech｜アプリを紹介する喫茶店">
-<meta property="og:description" content="M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店。PDF暗記マーカー、TG1900 Master、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？ を紹介しています。">
+<meta property="og:description" content="M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店。PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？ を紹介しています。">
 <meta property="og:locale" content="ja_JP">
 </head>
 <body>
@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 265,424 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 241,288 バイト）。</pre>';
   }
 });
 </script>
@@ -39,27 +39,22 @@ const SITE = {
   lead: 'アプリを紹介する喫茶店です。気になるアプリを開いて、ゆっくりご覧ください。',
 };
 const NEWS = [
-  { date: '2026/11/04', tag: 'TG1900 Master', text: 'クローズドテストを中止しました。リリースも当面見送ります。' },
   { date: '2026/11/04', tag: 'タップる？', text: '新しいゲーム「タップる？」のクローズドテストを始めました。テスターを募集しています。' },
   { date: '2026/11/01', tag: 'FuRUSH', text: 'Android 版のクローズドテストを開始しました。テスターを募集しています。' },
   { date: '2026/10/26', tag: 'アプリ見守り', text: 'Android 版のクローズドテストを開始しました。テスターを募集しています。' },
-  { date: '2026/10/26', tag: 'TG1900 Master', text: 'クローズドテストは継続しますが、リリースは当面見送ります。' },
   { date: '2026/10/23', tag: 'アプリ見守り', text: '新しいアプリ「アプリ見守り」の紹介を掲載しました。Android 版のクローズドテストを開始予定です。' },
   { date: '2026/10/20', tag: 'FuRUSH', text: '新しいアプリ「FuRUSH」を開発中です。' },
-  { date: '2026/10/19', tag: 'TG1900 Master', text: '単語データ 6訂版 全50単語（開発中のため単語を制限しています）・例文データ 版3にてPlayStoreクローズドテスト開始' },
   { date: '2026/10/19', tag: 'PDF暗記マーカー', text: 'PlayStoreクローズドテスト開始' },
 ];
 const NEWS_LINES = 5;
 const TESTER_FORM_URL = 'https://groups.google.com/g/mscafemobiletester';
 const TESTER_GROUP = 'mscafemobiletester@googlegroups.com';
 const BUG_FORM_PDF = 'https://forms.gle/qD1Hyj36brexTcek9';
-const BUG_FORM_TG1900 = 'https://forms.gle/7ttv3WgxQrM2a9Vq9';
 const BUG_FORM_MT = '';
 const BUG_FORM_FR = '';
 const BUG_FORM_AM = 'https://forms.gle/7fReguSQ3ut8kDpGA';
 const BUG_FORM_TP = '';
 const TEST_URL_PDF = 'https://play.google.com/store/apps/details?id=net.mscafe.pdfmasking';
-const TEST_URL_TG1900 = 'https://play.google.com/store/apps/details?id=net.mscafe.tg1900master';
 const TEST_URL_MT = '';
 const TEST_URL_FR = 'https://play.google.com/store/apps/details?id=net.mscafe.furush';
 const TEST_URL_AM = 'https://play.google.com/store/apps/details?id=net.mscafe.appmonitor';
@@ -352,26 +347,6 @@ h2{font:900 clamp(26px,4vw,38px)/1.3 var(--f-display);text-wrap:balance}
 .ph-foot{display:flex;align-items:center;gap:12px;padding:12px 14px 14px;border-radius:0 0 25px 25px;background:#17302B;color:#EAF4F1;font:500 12px/1 var(--f-mono)}
 .track{position:relative;flex:1;height:4px;border-radius:2px;background:rgba(234,244,241,.22)}
 .thumb{position:absolute;left:14%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--mask)}
-.tgd{position:relative;width:min(380px,100%);background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;display:grid;gap:18px}
-.tgd canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;border-radius:22px}
-.wc{display:grid;gap:2px;justify-items:center;background:var(--tint);border-radius:16px;padding:20px 12px;text-align:center}
-.wc small{font:500 11px var(--f-mono);color:var(--muted);letter-spacing:.1em}
-.wc b{font:900 34px/1.3 var(--f-display)}.wc span{color:var(--muted);font-size:15px}
-.gauge{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
-.seg{aspect-ratio:1;border-radius:50%;background:var(--line);transition:background-color .25s}
-.seg.c1{background:var(--ng)}.seg.c2{background:var(--mask)}.seg.c3{background:var(--warn)}.seg.c4{background:#8DBE2F}.seg.c5{background:#2FA84F}.seg.m{background:#2FA84F;box-shadow:0 0 0 2px var(--mask)}
-.gmeta{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.score{font:700 28px/1 var(--f-mono)}.score small{font-size:14px;color:var(--muted)}
-.state{font-size:14px;color:var(--muted);text-align:right}
-.btns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.bt{appearance:none;border:2px solid var(--line);background:var(--surface);border-radius:12px;padding:12px 6px;cursor:pointer;font-weight:700;font-size:14px;display:grid;gap:2px;justify-items:center}
-.bt i{font:700 12px var(--f-mono);font-style:normal;color:var(--muted)}
-.bt:hover:not(:disabled){border-color:var(--ink)}.bt:disabled{opacity:.4;cursor:default}
-.bt.ok{border-color:var(--ok)}.bt.wr{border-color:var(--warn)}.bt.ng{border-color:var(--ng)}
-.master{display:grid;justify-items:center;gap:6px;text-align:center}
-.master[hidden]{display:none}
-.master b{font:900 26px var(--f-display);color:var(--mask)}
-.reset{appearance:none;border:0;background:var(--mask);color:var(--mask-ink);font-weight:700;border-radius:10px;padding:10px 18px;cursor:pointer}
 .node{position:relative;background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 14px;align-items:center}
 .node.pm{border-color:var(--mask)}
 .node .av{grid-row:1/4;width:56px;height:56px;display:block}
@@ -542,22 +517,6 @@ const PDF_ICON = 'data:image/webp;base64,' + [
   'jDU6XMPlFfSZKLpexdvEDAqyf0RVW1+cQcUkDuMQ+4xl4JkkiVrRyl6C6qeWrU6xtm/V1kICOvhozHMfMtQ22FyNHtCKGTCpvXfSHNTIpOfEoqMTAFWaFczNJnMNnha3HRoMTlZnAFhBnNt6H5xzul1mgo2hGzsX2D36pRnZyRx3siShSLYfE+Oc7vERNzcJMW0izPe1tgb8HbYcV64TCTVUjNinrJQpZmYK8pbE4D8h13IA5G4svKVnIqGJJCBg9oE/zsHbO067uGH2JIrqIkqtojV9c1TsCJ3RS/U6lvB3',
   '+ACydROofC6SWnSSvPNQSqq9NRGEQBpodINtl4DiOKcK5Js0PDsXIO2/JcXuEkSm5TtpEy+vVhxevqYKl2tkdvwecEUuHAKWOE5zu3FSIRaU/7CSPh6tqc6vkWx/k29v2mbQNG+gxpF00vD5GghT3VKuyCW2Qd+X4BN65R7ETFxkakqXOSRE1EkMF8Fq+XrDkAM1BRqG2h8sut194whlqRmrASo7xlD8wKZzElFu93/XeVToj4JYAAA=',
 ].join('');
-const TG_ICON = 'data:image/webp;base64,' + [
-  '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',
-].join('');
 const pdfIcon = (s = 48) => `<img src="${PDF_ICON}" width="${s}" height="${s}" alt="PDF暗記マーカーのアイコン" style="display:block;border-radius:22%">`;
 const MT_ICON = 'data:image/webp;base64,' + [
   'UklGRlgcAABXRUJQVlA4IEwcAACwagCdASrAAMAAPlEkjkUjoiEUCj4AOAUEsROA2wHMuLw1gaQnAb19ns3PHS7QkIessvvrH/rfcB8LP+1/evdH+hPYG/Vrpd/3D/s+or+kf4H9yPep/0X7Ke9X/GeoB/Sf9b6WHsWf37/kewB+w///9eX9z/hS/sH/P/dn2pf//1gHAtdv3+N/KnsZ/PPtb/cufr05/vfQj+UfdH87/e/3C+LP9P/zfDv4e/5PqF/kP8m/uX5k/3f1Q9tZpH+5/5HqC+r/0j/Tf3P/Df+b',
@@ -711,7 +670,6 @@ const TP_ICON = 'data:image/webp;base64,' + [
   'cYInRayXgd1lkEkL9grv5Ubvmihl7f9Rx5/Fp9sLcSJ5uXYwpZ1PnfUqXHU9yJbRkaI0J6MhjlAAAA==',
 ].join('');
 const tpIcon = (s = 48) => `<img src="${TP_ICON}" width="${s}" height="${s}" alt="タップる？のアイコン" style="display:block;border-radius:22%">`;
-const tgIcon = (s = 48) => `<img src="${TG_ICON}" width="${s}" height="${s}" alt="TG1900 Masterのアイコン" style="display:block;border-radius:22%">`;
 const ILL = {
   mask: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="答えの行にオレンジのマスクがかかったPDFページ"><rect class="f-paper" x="62" y="12" width="116" height="126" rx="5"/>${lines(74, 28, 92, 3, 14, 11)}<rect class="f-mask" x="72" y="68" width="96" height="18" rx="4"/>${lines(74, 100, 92, 3, 12, 12)}</svg>`,
   tap: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="マスクをタップして答えが表示される様子"><rect class="f-paper" x="48" y="12" width="116" height="126" rx="5"/>${lines(60, 28, 92, 3, 14, 21)}<rect class="s-mask" x="58" y="68" width="96" height="18" rx="4" stroke-dasharray="4 3"/><text class="t-ans" x="106" y="81" text-anchor="middle">${DEMO.q1[1]}</text>${lines(60, 100, 92, 3, 12, 22)}<circle class="rp" cx="170" cy="86" r="9"/><circle class="rp" cx="170" cy="86" r="16"/>${finger(170, 86)}</svg>`,
@@ -786,48 +744,7 @@ const ILL = {
   frColor: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="6色とダーク・ライトから選べる"><rect class="f-paper" x="20" y="22" width="200" height="106" rx="12"/>${['#E8414B', '#F2852A', '#F2C52A', '#2EBF6E', '#3FC3E6', '#9B6BEA'].map((c, i) => `<circle cx="${50 + i * 28}" cy="56" r="11" fill="${c}"/>`).join('')}<rect class="f-line" x="40" y="86" width="160" height="30" rx="15"/><rect class="f-mask" x="40" y="86" width="80" height="30" rx="15"/><text style="font:700 12px sans-serif;fill:#fff" x="80" y="106" text-anchor="middle">ダーク</text><text class="t" x="160" y="106" text-anchor="middle">ライト</text></svg>`,
   mtView: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="画面の色を選べて、栞とスライダーでページを移動できる">${['#FFFFFF', '#F28AA8', '#F5D547', '#A8D65C', '#2FA84F', '#7CC8F0', '#0A2448', '#8C6BD8'].map((c, i) => `<circle cx="${34 + i * 25}" cy="34" r="9" fill="${c}" stroke="var(--paper-line)" stroke-width="1.5"/>`).join('')}<rect class="f-paper" x="60" y="54" width="120" height="70" rx="5"/>${lines(72, 68, 70, 4, 12, 67)}<path class="f-mask" d="M156 54h12v24l-6-5-6 5z"/><text class="t" x="174" y="116" text-anchor="end">\u25C0 3 / 20 \u25B6</text><rect class="f-line" x="60" y="134" width="120" height="5" rx="2.5"/><circle class="dot" cx="78" cy="136.5" r="6"/></svg>`,
   gauge: (n, col) =>`<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="スコアのゲージ">${Array.from({ length: 10 }, (_, i) => `<rect class="${i < n ? col(i) : 'f-line'}" x="${22 + i * 20}" y="64" width="16" height="30" rx="3"/>`).join('')}<text class="t" x="22" y="52">0</text><text class="t" x="206" y="52" text-anchor="end">10 = MASTER</text></svg>`,
-  order: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="スコアの低い単語ほど先に出る">${[[2, 'f-ng', 18], [5, 'f-warn', 54], [9, 'f-ok', 90]].map(([s, c, y]) => `<rect class="f-paper" x="40" y="${y}" width="${130 - (s - 2) * 6}" height="30" rx="6"/><rect class="${c}" x="48" y="${y + 10}" width="${s * 8}" height="10" rx="3"/><text class="t" x="${40 + 130 - (s - 2) * 6 + 8}" y="${y + 19}">${s}</text>`).join('')}<text class="t" x="40" y="140">低いほど出やすい</text></svg>`,
   cache: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="サーバーのデータを端末に保存"><path class="f-paper" d="M44 74a16 16 0 0 1 6-30 22 22 0 0 1 42 4 14 14 0 0 1-2 26z"/><text class="t" x="68" y="64" text-anchor="middle">データ</text><path class="s-ink" d="M100 62h34M126 54l8 8-8 8"/><rect class="f-paper" x="148" y="26" width="52" height="92" rx="9"/><rect class="f-mask" x="156" y="40" width="36" height="14" rx="3"/><rect class="f-line" x="156" y="64" width="30" height="4" rx="2"/><rect class="f-line" x="156" y="74" width="22" height="4" rx="2"/><text class="t" x="68" y="130" text-anchor="middle">サーバー</text><text class="t" x="174" y="136" text-anchor="middle">端末に保存</text></svg>`,
-  dots: n => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="スコアは10個の丸で表示">${Array.from({ length: 10 }, (_, i) => `<circle class="${i < n ? 'f-s' + (Math.floor(i / 2) + 1) : 'f-line'}" cx="${33 + i * 19.4}" cy="78" r="8"/>`).join('')}<text class="t" x="24" y="52">0</text><text class="t" x="216" y="52" text-anchor="end">10 = MASTER</text><text class="t" x="24" y="116">赤 → オレンジ → 黄 → 黄緑 → 緑</text></svg>`,
-  wordbook: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="単語帳：意味、カタカナ、活用形、関連語">
-    <rect class="f-paper" x="36" y="16" width="168" height="118" rx="12"/><text class="t-jp" x="50" y="44">resilient</text>
-    <text class="t-ans" x="50" y="62">レジ<tspan style="fill:var(--mask);font-weight:900">リ</tspan>アント</text>
-    <rect class="f-mask" x="50" y="72" width="22" height="14" rx="4"/><rect class="f-line" x="78" y="76" width="82" height="5" rx="2.5"/>
-    <rect class="f-line" x="50" y="94" width="58" height="16" rx="8"/><rect class="f-line" x="114" y="94" width="58" height="16" rx="8"/>
-    <text class="t" x="79" y="106" text-anchor="middle">活用形</text><text class="t" x="143" y="106" text-anchor="middle">関連語</text></svg>`,
-  example: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="例文と場面のイラスト">
-    <rect class="f-paper" x="22" y="22" width="112" height="106" rx="10"/>
-    <rect class="f-line" x="34" y="38" width="88" height="6" rx="3"/><rect class="f-mask" x="34" y="52" width="46" height="7" rx="3.5"/><rect class="f-line" x="34" y="66" width="70" height="6" rx="3"/>
-    <rect class="f-line" x="34" y="92" width="80" height="5" rx="2.5" opacity=".6"/><rect class="f-line" x="34" y="104" width="56" height="5" rx="2.5" opacity=".6"/>
-    <rect class="f-paper" x="146" y="34" width="74" height="82" rx="10"/><circle class="f-warn" cx="200" cy="56" r="9"/><path class="f-s5" d="M146 116l22-34 16 20 12-14 24 28z"/></svg>`,
-  tune: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="効果音とバイブのオンオフ、モードの並べ替え">
-    ${[[34, '効果音'], [70, '自動読み上げ']].map(([y, l]) => `<text class="t" x="28" y="${y + 14}">${l}</text><rect class="f-ok" x="150" y="${y}" width="56" height="20" rx="10"/><circle fill="#fff" cx="196" cy="${y + 10}" r="7"/>`).join('')}
-    <text class="t" x="28" y="122">モードの並べ替え</text><path class="s-ink" d="M158 108h40M158 118h40M158 128h40" opacity=".6"/></svg>`,
-  mJp: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="日本語訳：タイルと3段階の自己評価">
-    <rect class="f-paper" x="48" y="12" width="144" height="126" rx="12"/><text class="t-jp" x="120" y="42" text-anchor="middle">resilient</text>
-    ${Array.from({ length: 10 }, (_, i) => `<circle class="${i < 5 ? 'f-s' + (Math.floor(i / 2) + 1) : 'f-line'}" cx="${75 + i * 10}" cy="58" r="3.8"/>`).join('')}
-    <rect class="f-line" x="72" y="72" width="96" height="16" rx="8"/><text class="t" x="120" y="84" text-anchor="middle">タップで答え</text>
-    <rect class="f-ok" x="58" y="102" width="38" height="24" rx="6"/><rect class="f-warn" x="101" y="102" width="38" height="24" rx="6"/><rect class="f-ng" x="144" y="102" width="38" height="24" rx="6"/>
-    <text style="font:700 10px sans-serif;fill:#fff" x="77" y="118" text-anchor="middle">正解</text><text style="font:700 10px sans-serif;fill:#fff" x="120" y="118" text-anchor="middle">不安</text><text style="font:700 10px sans-serif;fill:#fff" x="163" y="118" text-anchor="middle">間違い</text></svg>`,
-  mBuild: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="単語づくり：文字カードを並べる">
-    <rect class="f-paper" x="40" y="12" width="160" height="126" rx="12"/><text class="t-jp" x="120" y="42" text-anchor="middle">勇敢な</text>
-    ${[['b', 1], ['r', 1], ['', 0], ['', 0], ['', 0]].map(([c, on], i) => `<rect class="${on ? 'f-line' : 'f-line'}" x="${54 + i * 28}" y="56" width="24" height="28" rx="6" ${on ? '' : 'opacity=".5"'}/>${c ? `<text class="t-ans" x="${66 + i * 28}" y="75" text-anchor="middle">${c}</text>` : ''}`).join('')}
-    ${['v', 'a', 'e'].map((c, i) => `<rect class="f-mask" x="${82 + i * 30}" y="100" width="26" height="28" rx="6"/><text style="font:900 14px monospace;fill:var(--mask-ink)" x="${95 + i * 30}" y="119" text-anchor="middle">${c}</text>`).join('')}</svg>`,
-  mKata: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="カタカナ英語：強く読む所をオレンジで表示">
-    <rect class="f-paper" x="40" y="10" width="160" height="130" rx="12"/><text class="t-jp" x="120" y="36" text-anchor="middle">banana</text>
-    ${[['バ', 'ナ', 'ナ', 1], ['バ', 'ナー', 'ナ', 0], ['ブ', 'ナ', 'ナ', 0]].map(([a, b, c, ok], i) => `<rect class="f-line" x="56" y="${48 + i * 28}" width="128" height="22" rx="8" ${ok ? 'style="stroke:var(--ok);stroke-width:2"' : 'opacity=".7"'}/><text style="font:700 12px sans-serif;fill:var(--paper-ink)" x="120" y="${63 + i * 28}" text-anchor="middle">${a}<tspan style="fill:var(--mask);font-weight:900">${b}</tspan>${c}</text>`).join('')}</svg>`,
-  mKnock: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="単語ノック：答えが一瞬出て次へ">
-    <rect class="f-mask" x="60" y="14" width="120" height="40" rx="10"/><text style="font:900 22px sans-serif;fill:var(--mask-ink)" x="120" y="42" text-anchor="middle">？</text>
-    <rect class="f-paper" x="60" y="64" width="120" height="40" rx="10" opacity=".55"/><text class="t-jp" x="120" y="90" text-anchor="middle" opacity=".6">next</text>
-    <path class="s-ink" d="M196 30v44M190 66l6 8 6-8"/>
-    <rect class="f-line" x="40" y="120" width="160" height="6" rx="3"/><rect class="f-mask" x="40" y="120" width="52" height="6" rx="3"/><circle class="dot" cx="92" cy="123" r="7"/><text class="t" x="40" y="146">0.1\u301C2.0秒</text><text class="t" x="200" y="146" text-anchor="end">無限ノック</text></svg>`,
-  mMagma: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="マグマ暗記：一覧の？をタップして確認">
-    <rect class="f-paper" x="32" y="12" width="176" height="126" rx="12"/>
-    ${['brave', 'quiet', 'honest', 'gentle'].map((w, i) => `<text class="t-ans" x="46" y="${40 + i * 28}">${w}</text>${i === 1 ? `<rect class="f-line" x="120" y="${26 + i * 28}" width="76" height="20" rx="6"/><text class="t-ans" x="158" y="${40 + i * 28}" text-anchor="middle">静かな</text>` : `<rect class="f-mask" x="120" y="${26 + i * 28}" width="76" height="20" rx="6"/><text style="font:900 12px sans-serif;fill:var(--mask-ink)" x="158" y="${40 + i * 28}" text-anchor="middle">？</text>`}`).join('')}</svg>`,
-  range: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="No.で出題範囲を指定する">
-    <rect class="f-line" x="24" y="64" width="192" height="22" rx="6"/><rect class="f-mask" x="96" y="64" width="64" height="22" rx="6"/>
-    <path class="s-ink" d="M96 54v-12M160 54v-12M96 42h64"/><text class="t" x="128" y="32" text-anchor="middle">No.XX\u301CXX</text>
-    <text class="t" x="24" y="110">No.1</text><text class="t" x="216" y="110" text-anchor="end">No.1900</text></svg>`,
   speak: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="単語の読み上げと詳細">
     <rect class="f-paper" x="30" y="34" width="120" height="82" rx="10"/><text class="t-jp" x="46" y="66">resilient</text>
     <rect class="f-line" x="46" y="80" width="60" height="5" rx="2.5"/><rect class="f-line" x="46" y="92" width="44" height="5" rx="2.5"/>
@@ -903,29 +820,6 @@ const pdfDemo = () => `<div class="demo">
   <button class="replay" type="button" hidden>\u25B6 自動デモをもう一度</button>
   <div class="legend"><span>タップ：答えを表示</span><span>${badge('ok')}長押し</span><span>${badge('ng')}ダブルタップ</span><span>${badge('warn')}上スワイプ</span></div>
 </div>`;
-const WORDS = [
-  ['resilient', '回復力のある'], ['sustainable', '持続可能な'], ['ambiguous', '曖昧な'], ['deliberate', '意図的な；熟慮する'],
-  ['reluctant', '気が進まない'], ['inevitable', '避けられない'], ['comprehensive', '包括的な'], ['subtle', '微妙な'],
-  ['advocate', '擁護する；提唱者'], ['inherent', '本来備わっている'],
-];
-const pickWord = () => {
-  let last = -1;
-  try { const raw = localStorage.getItem('mscafe-word'); last = raw === null ? -1 : Number(raw); } catch (e) {  }
-  const pool = WORDS.filter((_, j) => j !== last);
-  const i = WORDS.indexOf(pool[Math.floor(Math.random() * pool.length)]);
-  try { localStorage.setItem('mscafe-word', String(i)); } catch (e) {  }
-  return WORDS[i];
-};
-const tgDemo = () => { const [en, ja] = pickWord(); return `<div class="demo">
-  <div class="tgd"><canvas class="petals" aria-hidden="true"></canvas>
-    <div class="wc"><small>例</small><b>${en}</b><span>${ja}</span></div>
-    <div class="gauge" role="meter" aria-label="単語のスコア" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5">${'<i class="seg"></i>'.repeat(10)}</div>
-    <div class="gmeta"><span class="score">5<small> / 10</small></span><span class="state"></span></div>
-    <div class="btns"><button class="bt ok" data-d="1" type="button">正解<i>+1</i></button><button class="bt wr" data-d="-1" type="button">不安<i>-1</i></button><button class="bt ng" data-d="-2" type="button">間違い<i>-2</i></button></div>
-    <div class="master" hidden><b>Congratulations!</b><span>MASTER。この単語は、出る確率が最低限になります。</span><button class="reset" type="button">もう一度試す</button></div>
-  </div>
-  <p class="demo-note">ボタンでスコアを動かして、10を目指してみてください。</p>
-</div>`; };
 const AM_APPS = [
   ['ライト（懐中電灯）', 0, ['脅威リストに一致した宛先へ通信しました。', '画面オフ中や深夜に 64 回通信しました。', 'アンインストールをおすすめします。']],
   ['パズルゲーム', 1, ['広告・計測の会社 11 社と通信しました。', '同じ宛先へ、約 5 分おきに 12 回接続しています。']],
@@ -1028,35 +922,6 @@ const APPS = [
       ['タップして確かめる', 'マスクをタップして答えを確認。できた問題、間違えた問題をチェックで残せます。', `<div class="marks"><span>${badge('ok')}長押し</span><span>${badge('ng')}ダブルタップ</span><span>${badge('warn')}上スワイプ</span></div>`],
     ],
     info: [['アプリ名', 'PDF暗記マーカー'], ['監修', '現役東大生'], ['対応OS', 'Android 8.0 以上 ／ iOS（未開発）'], ['料金', '無料（広告あり）'], ['配布', 'Google Play（クローズドテスト中）'], ['保存', 'マスク・チェック・ハイライト・落書き・栞はPDFごとに記録します。PDFファイルのコピーは作りません。'], ['操作説明', '初回に動く絵で説明します。PDFを開いた画面のメニュー（\u2630）から、いつでも見直せます。']],
-  },
-  {
-    id: 'tg1900', name: 'TG1900 Master', icon: tgIcon, status: 'クローズドテスト中止 ／ リリースは当面見送り',
-    flag: ['テスト中止', 'クローズドテストは中止しました。一般公開（リリース）も当面見送ります。'], bug: BUG_FORM_TG1900, test: TEST_URL_TG1900,
-    one: '大学受験向けの英単語1900語を、5つのモードで覚える無料アプリ。',
-    headline: '<span class="nb">覚えていない単語から、</span><span class="nb"><span class="hl">先</span>に出る。</span>',
-    lead: '大学受験向けの英単語1900語を、5つのモードで覚える無料アプリです。苦手な単語ほど出やすいので、ムダなく進みます。単語データはアプリに入っているので、電波がなくても学習できます。クローズドテストは中止しており、一般公開（リリース）も当面見送ります。',
-    os: '対応OS　Android 8.0 以上 ／ iOS（開発中）　　料金　無料（広告あり）', store: { label: 'リリースは当面見送り', url: '' },
-    demo: tgDemo, init: initTg,
-    modes: [
-      [ILL.mJp, '日本語訳', '基本のフラッシュカード。英単語を見て意味を思い出し、タップで答えを確認。左右にスワイプすると、単語詳細や意味ごとの例文が見られます。「正解／不安／間違い」で自己評価。'],
-      [ILL.mBuild, '単語づくり', '日本語訳を見て、バラバラの文字カードを並べてつづりを作ります。完成すると、例文とイラストつきの答えが出ます。'],
-      [ILL.mKata, 'カタカナ英語', '街中にあふれるカタカナ英語。以外とそっちが覚える？ 正しい読みを選ぶと、強く読むところがオレンジで見えます。'],
-      [ILL.mKnock, '単語ノック', '単語が次々と出てきます。次々と日本語化してください。？をタップすると答えが一瞬だけ出て、すぐ次へ。表示時間は0.1\u301C2.0秒で調整でき、「無限ノック」で終わりなく出題。スコアには影響しません。'],
-      [ILL.mMagma, 'マグマ暗記', '単語がもりもり盛り上がります。電車の中でも片手で操作を重視しました。一覧の？をタップして、意味を確認していきます。'],
-    ],
-    featuresTitle: '全モード共通の特徴',
-    features: [
-      [() => ILL.dots(5), 'スコアで理解度を管理', '単語ごとに0\u301C10。最初は5で、正解+1、不安\u22121、間違い\u22122。10になるとMASTER。色は全モード共通です。'],
-      [ILL.order, '苦手な単語ほど出やすい', '覚えていない単語が多く出て、覚えた単語は後回し。MASTERの単語は、出る確率が最低限になります。'],
-      [ILL.wordbook, '単語帳（単語詳細）', '品詞つきの意味、カタカナ英語、活用形、関連語（派生語）をまとめて確認できます。'],
-      [ILL.example, '例文とイラスト', '意味ごとに、例文と和訳、場面がひと目でわかるイラスト。英文をタップすると読み上げます。'],
-      [ILL.speak, 'タップで発音', '端末の音声合成で読み上げ。単語・活用形・関連語もタップで発音。自動読み上げはオン／オフできます。'],
-      [ILL.range, '出題範囲を指定', 'No.で範囲を指定できます（例：No.1\u301C100だけ）。範囲は次回起動後も保存されます。範囲を変えると、全モードのスコアと進み具合がリセットされます。'],
-      [ILL.cache, 'オフラインでも学習', '単語データはアプリに入っているので、初めての起動から電波なしで学習できます。例文とイラストは、ネットにつながると自動で取得。一度取得すれば、電波がなくても使えます。最新への更新は、ホームを下に引っ張るか、右上の「≡」から。'],
-      [ILL.tune, '自分好みに調整', '効果音・バイブのオン／オフ、ホームのモードのドラッグ入れ替え、モードごとの履歴リセット。初回は動く操作説明つきで、あとから何度でも見られます。'],
-    ],
-    info: [['アプリ名', 'TG1900 Master'], ['対応OS', 'Android 8.0 以上 ／ iOS（開発中）'], ['料金', '無料（広告あり）'], ['配布', 'なし（クローズドテストは中止、リリースは当面見送り）'], ['データ', '単語・例文・例文のイラストは、店長が用意しています。'], ['学習履歴', '端末内に保存。モードごとにリセットできます。']],
-    note: '『英単語ターゲット1900』の出題単語を使っていますが、出版社とは無関係の非公式アプリです。デモの単語は例で、実際のアプリとは異なります。',
   },
   {
     id: 'mt-pdf', name: 'マルチ翻訳PDFビューワー', icon: mtIcon, status: '公開準備中 ／ テスター募集中', tester: TESTER_FORM_URL, bug: BUG_FORM_MT, test: TEST_URL_MT,
@@ -1227,21 +1092,6 @@ function autoDemo(root) {
   });
   run();
 }
-function petals(cv) {
-  if (reduced()) return;
-  const box = cv.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
-  cv.width = box.width * dpr; cv.height = box.height * dpr;
-  const c = cv.getContext('2d'); c.setTransform(dpr, 0, 0, dpr, 0, 0);
-  const r = rng(Date.now() & 0xffff);
-  const ps = Array.from({ length: 42 }, () => ({ x: r() * box.width, y: -20 - r() * box.height * .6, v: 1.2 + r() * 1.6, sw: r() * 6, ph: r() * 6, rot: r() * 6, s: 6 + r() * 6, col: r() < .7 ? '#E5B95C' : '#B07F1E' }));
-  const t0 = performance.now();
-  const tick = now => {
-    const t = now - t0; c.clearRect(0, 0, box.width, box.height);
-    ps.forEach(p => { p.y += p.v; p.rot += .03; c.save(); c.translate(p.x + Math.sin(t / 400 + p.ph) * p.sw * 4, p.y); c.rotate(p.rot); c.fillStyle = p.col; c.globalAlpha = .9; c.beginPath(); c.ellipse(0, 0, p.s * .55, p.s, 0, 0, 6.3); c.fill(); c.restore(); });
-    if (t < 4200) requestAnimationFrame(tick); else c.clearRect(0, 0, box.width, box.height);
-  };
-  requestAnimationFrame(tick);
-}
 function initAm(root) {
   const ring = $('.amd-ring', root), scr = $('.amd-scr', root);
   const counts = AM_APPS.reduce((a, [, lv]) => (lv < 3 ? a + 1 : a), 0);
@@ -1401,24 +1251,6 @@ function initMt(root) {
   p.addEventListener('click', show);
   $('.mtd-close', root).addEventListener('click', hide);
 }
-function initTg(root) {
-  let score = 5, master = false;
-  const segs = $$('.seg', root), sc = $('.score', root), st = $('.state', root), g = $('.gauge', root), m = $('.master', root);
-  const draw = () => {
-    segs.forEach((s, i) => { s.className = 'seg' + (i < score ? (master ? ' m' : ' c' + (Math.floor(i / 2) + 1)) : ''); });
-    sc.innerHTML = `${score}<small> / 10</small>`; g.setAttribute('aria-valuenow', score);
-    st.textContent = master ? 'MASTER' : score <= 3 ? 'よく出る' : score <= 6 ? 'ふつうに出る' : 'あまり出ない';
-    m.hidden = !master; $$('.bt', root).forEach(b => b.disabled = master);
-  };
-  $$('.bt', root).forEach(b => b.addEventListener('click', () => {
-    if (master) return;
-    score = Math.max(0, Math.min(10, score + Number(b.dataset.d)));
-    if (score >= 10) { master = true; petals($('.petals', root)); }
-    draw();
-  }));
-  $('.reset', root).addEventListener('click', () => { score = 5; master = false; draw(); });
-  draw();
-}
 const T = s => SHOW_TODO ? `<span class="todo">要確認：${s}</span>` : '';
 const H = s => `<h4 class="dh">${s}</h4>`;
 const P = s => `<p>${s}</p>`;
@@ -1431,12 +1263,12 @@ const dateLine = `<p class="dm">制定：${LEGAL_DATE}　最終更新：${LEGAL_
 const dateLineEn = `<p class="dm">Established: ${enDate(LEGAL_DATE)} / Last updated: ${enDate(LEGAL_UPDATED)}</p>`;
 const MAILBOX = `<div class="mailbox"><canvas class="mail" aria-label="メールアドレス（スパム対策のため画像で表示しています）" role="img"></canvas><small>スパム対策のため、アドレスは画像で表示しています。お手数ですが、画像を見ながら入力してください。</small></div>`;
 const MAILBOX_EN = `<div class="mailbox"><canvas class="mail" aria-label="Email address (shown as an image to prevent spam)" role="img"></canvas><small>To prevent spam, the address is shown as an image. Please type it in by looking at the image.</small></div>`;
-const AD_APPS = 'PDF暗記マーカー、TG1900 Master、FuRUSH、タップる？';
+const AD_APPS = 'PDF暗記マーカー、FuRUSH、タップる？';
 const NOAD_APPS = 'マルチ翻訳PDFビューワー、アプリ見守り';
-const AD_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), TG1900 Master, FuRUSH and タップる？ (TaPru)';
+const AD_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), FuRUSH and タップる？ (TaPru)';
 const NOAD_APPS_EN = 'マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer) and アプリ見守り (App Monitor)';
-const ALL_APPS = 'PDF暗記マーカー、TG1900 Master、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？';
-const ALL_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), TG1900 Master, マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer), FuRUSH, アプリ見守り (App Monitor) and タップる？ (TaPru)';
+const ALL_APPS = 'PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？';
+const ALL_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer), FuRUSH, アプリ見守り (App Monitor) and タップる？ (TaPru)';
 const L_GOOGLE_PARTNER = 'https://policies.google.com/technologies/partner-sites';
 const L_GOOGLE_ADS = 'https://policies.google.com/technologies/ads';
 const L_GOOGLE_PRIV = 'https://policies.google.com/privacy';
@@ -1458,7 +1290,7 @@ const LEGAL = [
     '本サイトは、文字のデザインのため Google Fonts から読み込みを行い、このとき IP アドレスやブラウザ情報などが Google に送信されます。',
     '本サイトのアクセスログ（IPアドレスなど）がホスティング側で記録され、約90日間保存します。アクセス解析ツールは使用していません。',
     'アプリで作成したマスク、チェック、ハイライト、落書き、栞、学習の履歴、設定は、端末内に保存し、店長には送信しません。取り込んだ PDF を店長が受け取ることもありません。',
-    'アプリ見守りは、VPN の仕組みを使って、アプリごとの通信の宛先・通信量・時刻を端末の中で記録します。記録は端末の中に25時間分だけ保存し、店長を含む外部へは送信しません。脅威リストと国データを取得するときだけ、配布元（urlhaus.abuse.ch、feodotracker.abuse.ch、raw.githubusercontent.com、www.spamhaus.org、download.db-ip.com）に接続します。',
+    'アプリ見守りは、VPN の仕組みを使って、アプリごとの通信の宛先・通信量・時刻を端末の中で記録します。記録は端末の中に25時間分だけ保存し、店長を含む外部へは送信しません。脅威リストと国データを取得するときだけ、配布元（urlhaus.abuse.ch、feodotracker.abuse.ch、www.spamhaus.org、download.db-ip.com）に接続します。',
     'アプリ見守りは、使っていない時間の通信を見分けるために各アプリの使用時間を、アプリ名を表示するために端末のアプリの一覧を参照します。これらも端末の外には送りません。',
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
@@ -1531,7 +1363,7 @@ const LEGAL = [
     'This website loads fonts from Google Fonts. When it does, your IP address and browser information are sent to Google.',
     'The hosting provider records access logs for this website (such as IP addresses), which are kept for about 90 days. We do not use any web analytics tools.',
     'Masks, check marks, highlights, drawings, bookmarks, learning history and settings you create in the apps are stored on your device and are not sent to the Manager. The Manager never receives the PDFs you open in the apps.',
-    'App Monitor uses the Android VPN mechanism to record, on your device, the destination, amount and time of each app’s network traffic. The records are kept on the device for 25 hours only and are not sent outside the device, including to the Manager. The app connects only to the distributors of threat lists and country data (urlhaus.abuse.ch, feodotracker.abuse.ch, raw.githubusercontent.com, www.spamhaus.org, download.db-ip.com) to download them.',
+    'App Monitor uses the Android VPN mechanism to record, on your device, the destination, amount and time of each app’s network traffic. The records are kept on the device for 25 hours only and are not sent outside the device, including to the Manager. The app connects only to the distributors of threat lists and country data (urlhaus.abuse.ch, feodotracker.abuse.ch, www.spamhaus.org, download.db-ip.com) to download them.',
     'App Monitor reads each app’s usage time to tell apart traffic while an app is not in use, and the list of installed apps to show app names. This information is not sent outside the device either.',
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
@@ -1654,7 +1486,6 @@ const LEGAL = [
     'アプリの入手・更新には、Google Play の利用規約が適用されます。iOS 版を App Store で提供する場合は、App Store の利用規約と Apple の標準使用許諾契約（' + A(L_APPLE_EULA, 'Licensed Application End User License Agreement') + '）も適用されます。',
     '利用料金：アプリは無料で利用できます。',
     `英文翻訳機能には、Google の ML Kit を利用します。ML Kit の${A(L_MLKIT, '利用規約')}も適用されます。`,
-    'TG1900 Master の例文は、店長が AI と相談しながら独自に作成したものです。必ずしも正しい使い方とは限らないことを、ご理解ください。',
   ]) +
   H('3. 未成年の方の利用') +
   P('未成年の方は、保護者の方の同意を得てからアプリを利用してください。子どもがアプリを利用するときは、保護者の方がこの規約とプライバシーポリシーを確認してください。') +
@@ -1714,7 +1545,6 @@ const LEGAL = [
     'The Google Play Terms of Service apply to downloading and updating the apps. If iOS versions are offered on the App Store, the App Store Terms and Apple’s ' + A(L_APPLE_EULA, 'Licensed Application End User License Agreement') + ' also apply.',
     'Fees: The apps are free to use.',
     `The English translation feature uses Google ML Kit. The ${A(L_MLKIT, 'ML Kit Terms of Service')} also apply.`,
-    'The example sentences in TG1900 Master were created by the Manager in consultation with AI. Please understand that they may not always reflect correct usage.',
   ]) +
   H('3. Use by minors') +
   P('If you are a minor, please obtain your parent’s or guardian’s consent before using the apps. When a child uses the apps, a parent or guardian should read these terms and the Privacy Policy.') +
