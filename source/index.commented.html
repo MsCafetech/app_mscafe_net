@@ -819,7 +819,6 @@ const ILL = {
   photo: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="撮った写真をA4のページにしてPDFにする"><rect class="f-paper" x="16" y="40" width="72" height="54" rx="10"/><circle class="f-line" cx="52" cy="67" r="15"/><circle class="f-paper" cx="52" cy="67" r="9"/><rect class="f-line" x="28" y="34" width="20" height="8" rx="3"/><path class="s-ink" d="M98 67h26M117 60l7 7-7 7"/><rect class="f-paper" x="136" y="14" width="88" height="124" rx="4"/>${lines(146, 30, 68, 6, 14, 29)}<text class="t" x="180" y="128" text-anchor="middle">PDF（A4）</text></svg>`,
   mtFrame: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="英文を角丸の枠で囲むと、原文と日本語訳が出る"><rect class="f-paper" x="14" y="14" width="104" height="122" rx="5"/>${lines(24, 28, 84, 7, 14, 51)}<rect x="20" y="52" width="92" height="38" rx="9" fill="none" stroke="#2F7BEF" stroke-width="2.4"/><rect class="f-paper" x="128" y="26" width="100" height="98" rx="10"/><text class="t" x="138" y="44">原文</text><rect class="f-line" x="138" y="52" width="76" height="4" rx="2"/><rect class="f-line" x="138" y="62" width="58" height="4" rx="2"/><path class="s-ink" d="M134 76h88" opacity=".4"/><text class="t" x="138" y="94">日本語訳</text><rect class="f-mask" x="138" y="102" width="70" height="5" rx="2.5"/><rect class="f-mask" x="138" y="112" width="50" height="5" rx="2.5"/></svg>`,
   mtLang: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="英語・中国語・韓国語・ドイツ語・フランス語から日本語へ">${[['EN', 28], ['中', 70], ['한', 112], ['DE', 154], ['FR', 196]].map(([t, x]) => `<rect class="f-paper" x="${x - 18}" y="26" width="36" height="28" rx="8"/><text class="t-ans" x="${x}" y="45" text-anchor="middle">${t}</text><path class="s-ink" d="M${x} 58L120 92" opacity=".45"/>`).join('')}<rect class="f-mask" x="78" y="94" width="84" height="32" rx="10"/><text style="font:900 14px sans-serif;fill:var(--mask-ink)" x="120" y="115" text-anchor="middle">日本語</text><text class="t" x="120" y="144" text-anchor="middle">言語は自動で判別</text></svg>`,
-  mtWiki: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="長押しした語の Wikipedia の概要が出る"><rect class="f-paper" x="14" y="20" width="96" height="112" rx="5"/>${lines(24, 34, 76, 6, 15, 57)}<rect class="f-mask" x="40" y="62" width="40" height="11" rx="3" opacity=".55"/><circle class="rp" cx="60" cy="68" r="12"/><rect class="f-paper" x="120" y="22" width="108" height="106" rx="10"/><text class="t-ans" x="132" y="44">Wikipedia</text><rect class="f-line" x="132" y="54" width="84" height="4" rx="2"/><rect class="f-line" x="132" y="64" width="72" height="4" rx="2"/><rect class="f-line" x="132" y="74" width="80" height="4" rx="2"/><rect class="f-line" x="132" y="84" width="52" height="4" rx="2"/><text class="t" x="132" y="116">出典・CC BY-SA</text></svg>`,
   mtOcr: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="文字の入っていないページや図の中の文字も読み取る"><rect class="f-paper" x="30" y="14" width="96" height="122" rx="5"/><rect class="f-line" x="42" y="28" width="72" height="44" rx="4" opacity=".7"/><path d="M48 64l14-16 10 10 8-8 14 14" fill="none" stroke="var(--muted)" stroke-width="2"/>${lines(42, 84, 72, 4, 12, 61)}<path class="s-ink" d="M134 75h22M149 68l7 7-7 7"/><rect class="f-mask" x="164" y="56" width="58" height="38" rx="10"/><text style="font:900 14px sans-serif;fill:var(--mask-ink)" x="193" y="80" text-anchor="middle">OCR</text><text class="t" x="193" y="112" text-anchor="middle">端末内で読む</text></svg>`,
   amVpn: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="アプリの通信を端末の中で中継して記録する"><rect class="f-paper" x="70" y="10" width="100" height="130" rx="16"/>${[['ゲーム', 32], ['SNS', 60], ['地図', 88]].map(([t, y]) => `<rect class="f-line" x="82" y="${y}" width="40" height="18" rx="5"/><text class="t" x="102" y="${y + 13}" text-anchor="middle">${t}</text><path class="s-ink" d="M126 ${y + 9}h12" opacity=".5"/>`).join('')}<rect class="f-mask" x="140" y="30" width="20" height="78" rx="6"/><path class="s-ink" d="M174 69h40M207 62l7 7-7 7"/><text class="t" x="120" y="130" text-anchor="middle">端末の中で中継</text><text class="t" x="196" y="96" text-anchor="middle">ネットへ</text></svg>`,
   amSigns: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="兆候から危険・要注意・注意・正常を判定">${[['危険', 'f-ng', 30], ['要注意', 'f-mask', 62], ['注意', 'f-warn', 94]].map(([t, c, y]) => `<rect class="f-paper" x="30" y="${y - 16}" width="180" height="26" rx="8"/><rect class="${c}" x="38" y="${y - 10}" width="46" height="14" rx="7"/><text style="font:700 10px sans-serif;fill:#fff" x="61" y="${y + 1}" text-anchor="middle">${t}</text><rect class="f-line" x="94" y="${y - 6}" width="${100 - y / 2}" height="5" rx="2.5"/>`).join('')}<rect class="f-paper" x="30" y="110" width="180" height="26" rx="8"/><rect class="f-ok" x="38" y="116" width="46" height="14" rx="7"/><text style="font:700 10px sans-serif;fill:#fff" x="61" y="127" text-anchor="middle">正常</text><text class="t" x="96" y="127">23種類の兆候で判定</text></svg>`,
@@ -1155,14 +1154,13 @@ const APPS = [
     id: 'mt-pdf', name: 'マルチ翻訳PDFビューワー', icon: mtIcon, status: '公開準備中 ／ テスター募集中', tester: TESTER_FORM_URL, bug: BUG_FORM_MT, test: TEST_URL_MT,
     one: '論文や技術文書のPDFを、枠で囲んで日本語に訳せるPDFビューワー。現役東大生立案・監修。',
     headline: '<span class="nb">読めない所を、</span><span class="nb"><span class="hl">囲む</span>だけ。</span>',
-    lead: '英語・中国語・韓国語・ドイツ語・フランス語のPDFを、指でなぞって囲んだ所だけ日本語に訳します。翻訳は端末の中で行うので、文章を外に送りません。わからない用語は、長押しで Wikipedia の概要を確かめられます。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
+    lead: '英語・中国語・韓国語・ドイツ語・フランス語のPDFを、指でなぞって囲んだ所だけ日本語に訳します。翻訳は端末の中で行うので、文章を外に送りません。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
     os: '対応OS　Android 7.0 以上 ／ iOS（準備中）', store: { label: 'Google Play 公開準備中', url: '' },
     demo: mtDemo, init: initMt,
     features: [
       [ILL.mtFrame, '枠で囲んで翻訳', '長押ししたまま指でなぞると、角丸の枠が描けます。指を離すと、枠の中の文を読み取って翻訳。画面の真ん中に、上に原文、下に日本語訳が出ます。'],
       [ILL.mtLang, '5つの言語を自動で判別', '英語・中国語（簡体字・繁体字）・韓国語・ドイツ語・フランス語から日本語へ。言語は自動で判別し、違ったときは選び直せます。選んだ言語はPDFごとに覚えます。'],
       [ILL.speak, '原文を読み上げ', 'スピーカーのボタンで、枠の中の外国語の文を読み上げます。端末の読み上げ音声を使います。'],
-      [ILL.mtWiki, '長押しで Wikipedia', '指を動かさずに長押しした語を、Wikipedia で調べて概要を出します。日本語版の記事を優先し、出典とライセンスも表示。送るのは調べる語だけです。'],
       [ILL.mtOcr, '図やスキャンも読める', '枠の中は、端末内の文字認識（OCR）で読み取ります。図の中の文字や、文字の入っていないスキャンのPDFも訳せます。'],
       [ILL.cache, 'オフラインで翻訳', '翻訳モデル（1言語約30MB）を一度ダウンロードすれば、通信なしで翻訳できます。通信するのはモデルの取得だけで、翻訳する文章は送りません。'],
       [ILL.photo, '写真からPDFを作る', '紙の資料を撮った写真（最大100枚）を、1枚1ページのPDFにして Download フォルダに保存します。そのまま開いて翻訳できます。'],
@@ -1171,10 +1169,10 @@ const APPS = [
     steps: [
       ['PDFを登録する', 'ホーム右上の ⊕ から PDF を選びます。登録は25件までです。ファイルのコピーは作らず、元のファイルはそのままです。'],
       ['言語データを入れる', 'ホーム右上の ≡ →「言語データのダウンロード」で、翻訳モデルと読み上げ音声を入れておくと、通信なしで使えます。'],
-      ['囲んで訳す・長押しで調べる', '長押ししたまま指でなぞって枠を描くと翻訳、指を動かさずに長押しすると Wikipedia の概要が出ます。'],
+      ['囲んで訳す', '長押ししたまま指でなぞって枠を描くと、枠の中を翻訳します。'],
     ],
-    info: [['アプリ名', 'マルチ翻訳PDFビューワー'], ['立案・監修', '現役東大生'], ['対応OS', 'Android 7.0 以上 ／ iOS（準備中）'], ['配布', 'Google Play（公開準備中）'], ['翻訳', '英語・中国語・韓国語・ドイツ語・フランス語 → 日本語（端末内で翻訳）'], ['通信', '翻訳モデルのダウンロードと、Wikipedia の検索（調べる語だけを送信）'], ['保存', '登録したPDFの場所、翻訳結果、PDFごとの言語、画面の色は端末内に保存します。PDFファイルのコピーは作りません。']],
-    note: '翻訳は機械翻訳のため、誤訳がある場合があります。Wikipedia の本文は CC BY-SA 4.0 のもとで利用でき、アプリ内で出典とライセンスを表示します。デモの文章は例で、実際のアプリとは異なります。',
+    info: [['アプリ名', 'マルチ翻訳PDFビューワー'], ['立案・監修', '現役東大生'], ['対応OS', 'Android 7.0 以上 ／ iOS（準備中）'], ['配布', 'Google Play（公開準備中）'], ['翻訳', '英語・中国語・韓国語・ドイツ語・フランス語 → 日本語（端末内で翻訳）'], ['通信', '翻訳モデルのダウンロードのみ（翻訳する文章は送信しません）'], ['保存', '登録したPDFの場所、翻訳結果、PDFごとの言語、画面の色は端末内に保存します。PDFファイルのコピーは作りません。']],
+    note: '翻訳は機械翻訳のため、誤訳がある場合があります。デモの文章は例で、実際のアプリとは異なります。',
   },
   {
     id: 'furush', name: 'FuRUSH', icon: frIcon, status: 'クローズドテスト中 ／ テスター募集中', tester: TESTER_FORM_URL, bug: BUG_FORM_FR, test: TEST_URL_FR,
@@ -1573,7 +1571,6 @@ const LEGAL = [
     '本サイトは、文字のデザインのため Google Fonts から読み込みを行い、このとき IP アドレスやブラウザ情報などが Google に送信されます。',
     '本サイトのアクセスログ（IPアドレスなど）がホスティング側で記録され、約90日間保存します。アクセス解析ツールは使用していません。',
     'アプリで作成したマスク、チェック、ハイライト、落書き、栞、学習の履歴、設定は、端末内に保存し、店長には送信しません。取り込んだ PDF を店長が受け取ることもありません。',
-    'マルチ翻訳PDFビューワーで語を長押しすると、その語だけを Wikipedia（Wikimedia Foundation）に送って概要を取得します。このとき、IP アドレスと、アプリ名・バージョン・連絡先（本サイトのURL）が Wikimedia に送られます。PDFの文章や翻訳結果は送りません。',
     'アプリ見守りは、VPN の仕組みを使って、アプリごとの通信の宛先・通信量・時刻を端末の中で記録します。記録は端末の中に25時間分だけ保存し、店長を含む外部へは送信しません。脅威リストと国データを取得するときだけ、配布元（urlhaus.abuse.ch、feodotracker.abuse.ch、raw.githubusercontent.com、www.spamhaus.org、download.db-ip.com）に接続します。',
     'アプリ見守りは、使っていない時間の通信を見分けるために各アプリの使用時間を、アプリ名を表示するために端末のアプリの一覧を参照します。これらも端末の外には送りません。',
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
@@ -1618,7 +1615,7 @@ const LEGAL = [
   H('7. 第三者提供・外部事業者によるデータ利用') +
   UL([
     '店長は、法令に基づく場合を除き、本人の同意なく、取得した個人情報を第三者に提供しません。また、個人情報を販売することはありません。',
-    'ただし、前項までに記載した広告・外部サービスの事業者（Google LLC、Wikimedia Foundation、GitHub, Inc.、脅威リスト・国データの配布元など）は、それぞれ自らのポリシーに従って情報を取得・利用します。',
+    'ただし、前項までに記載した広告・外部サービスの事業者（Google LLC、GitHub, Inc.、脅威リスト・国データの配布元など）は、それぞれ自らのポリシーに従って情報を取得・利用します。',
     'これらの事業者は、米国など日本以外の国にサーバーを置いており、情報はそれらの国で保存・処理されることがあります。各事業者のポリシーで、保護の取り組みをご確認ください。',
   ]) +
   H('8. 利用者の選択と、開示・訂正・削除などの請求') +
@@ -1647,7 +1644,6 @@ const LEGAL = [
     'This website loads fonts from Google Fonts. When it does, your IP address and browser information are sent to Google.',
     'The hosting provider records access logs for this website (such as IP addresses), which are kept for about 90 days. We do not use any web analytics tools.',
     'Masks, check marks, highlights, drawings, bookmarks, learning history and settings you create in the apps are stored on your device and are not sent to the Manager. The Manager never receives the PDFs you open in the apps.',
-    'In the Multi-Translation PDF Viewer, when you long-press a word, only that word is sent to Wikipedia (Wikimedia Foundation) to get a summary. Your IP address and the app name, version and contact information (the URL of this website) are sent to Wikimedia. The text of the PDF and translation results are not sent.',
     'App Monitor uses the Android VPN mechanism to record, on your device, the destination, amount and time of each app’s network traffic. The records are kept on the device for 25 hours only and are not sent outside the device, including to the Manager. The app connects only to the distributors of threat lists and country data (urlhaus.abuse.ch, feodotracker.abuse.ch, raw.githubusercontent.com, www.spamhaus.org, download.db-ip.com) to download them.',
     'App Monitor reads each app’s usage time to tell apart traffic while an app is not in use, and the list of installed apps to show app names. This information is not sent outside the device either.',
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
@@ -1692,7 +1688,7 @@ const LEGAL = [
   H('7. Sharing with third parties') +
   UL([
     'The Manager does not provide personal information to third parties without your consent, except as required by law. The Manager does not sell personal information.',
-    'However, the providers of the advertising and external services described above (Google LLC, Wikimedia Foundation, GitHub, Inc., distributors of threat lists and country data, etc.) collect and use information under their own policies.',
+    'However, the providers of the advertising and external services described above (Google LLC, GitHub, Inc., distributors of threat lists and country data, etc.) collect and use information under their own policies.',
     'These providers have servers in countries outside Japan, such as the United States, and information may be stored and processed in those countries. Please see each provider’s policy for how they protect it.',
   ]) +
   H('8. Your choices and requests for disclosure, correction or deletion') +
@@ -1724,7 +1720,6 @@ const LEGAL = [
   UL([
     'Android、Google Play、AdMob、Firebase などは Google LLC の商標です。その他の会社名・製品名は、各社の商標または登録商標です。',
     'アプリには、Android（Google）の公式ライブラリなど、第三者のソフトウェアを利用しています。それらは各ライセンスの条件に従って利用しています。',
-    'マルチ翻訳PDFビューワーで表示する Wikipedia の概要は、Wikipedia の記事の抜粋です。本文は CC BY-SA 4.0 のもとで利用でき、アプリ内で出典の記事とライセンスを表示します。',
     'アプリ見守りの国データは、DB-IP Lite（db-ip.com、CC BY 4.0）を利用しています。脅威リストは、URLhaus・HaGeZi・Feodo Tracker・Spamhaus DROP の各配布元の条件に従って利用します。',
     `ML Kit の利用にあたっては、${A(L_MLKIT, 'ML Kit の利用規約')}に従います。`,
     'タップる？のロゴの文字には、M PLUS Rounded 1c（SIL Open Font License 1.1）の一部を利用しています。',
@@ -1749,7 +1744,6 @@ const LEGAL = [
   UL([
     'Android, Google Play, AdMob, Firebase and related marks are trademarks of Google LLC. Other company and product names are trademarks or registered trademarks of their respective owners.',
     'The apps use third-party software, such as official Android (Google) libraries, under the terms of their respective licenses.',
-    'The Wikipedia summaries shown in the Multi-Translation PDF Viewer are excerpts from Wikipedia articles. The text is available under CC BY-SA 4.0, and the app shows the source article and license.',
     'Country data in App Monitor is from DB-IP Lite (db-ip.com, CC BY 4.0). Threat lists are used under the terms of their distributors: URLhaus, HaGeZi, Feodo Tracker and Spamhaus DROP.',
     `ML Kit is used in accordance with the ${A(L_MLKIT, 'ML Kit Terms of Service')}.`,
     'The TaPru logo uses part of the M PLUS Rounded 1c font (SIL Open Font License 1.1).',
