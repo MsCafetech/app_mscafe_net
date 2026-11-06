@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 283,264 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 283,768 バイト）。</pre>';
   }
 });
 </script>
@@ -1056,7 +1056,7 @@ const APPS = [
     headline: L('<span class="nb">怪しいアプリに、</span><span class="nb"><span class="hl">気づける</span>。</span>', '<span class="nb">Spot the</span> <span class="nb"><span class="hl">suspicious</span> apps.</span>'),
     lead: L('スマホのアプリが、知らないうちに怪しい通信をしていないか。店長が店内を見回るように、アプリごとの通信を端末の中で記録して、Bot 化や不正利用の兆候を見つけたら警告します。不正な通信をするアプリは、アンインストールを検討してください。記録は端末の中だけに保存し、外部へは送りません。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
         'Are the apps on your phone making suspicious connections without you knowing? Like a caf\u00E9 manager walking the floor, App Monitor records each app’s traffic on the device and warns you when it finds signs that an app has become a bot or is being misused. Please consider uninstalling apps with suspicious traffic. Records stay on the device only and are never sent out. The screens on this site differ in detail from the real app.'),
-    os: L('対応OS　Android 9 以上（Android のみ）　　料金　無料', 'OS: Android 9 or later (Android only)　　Price: Free'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
+    os: L('対応OS　Android 9 以上（Android のみ）　　料金　無料（広告あり）', 'OS: Android 9 or later (Android only)　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
     demo: amDemo, init: initAm,
     features: [
       [ILL.amVpn, L('端末の中だけで見守る', 'Monitors on the device only'), L('VPN の仕組みで、アプリごとの通信を端末の中で中継・記録します。外部の VPN サーバーは使わず、root も不要です。', 'Using the VPN mechanism, each app’s traffic is relayed and recorded on the device. No outside VPN server is used, and no root is needed.')],
@@ -1074,8 +1074,8 @@ const APPS = [
       [L('気になるアプリを確認', 'Check the apps that concern you'), L('「アプリ別に見る」で危険度の高い順に並び、見つかった兆候の説明が読めます。', '“View by app” lists apps from highest risk down, with explanations of the signs that were found.')],
     ],
     info: [[L('アプリ名', 'App name'), L('アプリ見守り', 'App Monitor')], [L('対応OS', 'OS'), L('Android 9 以上（iOS 版はありません）', 'Android 9 or later (no iOS version)')], [L('料金',
-        'Price'), L('無料', 'Free')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('記録',
-        'Records'), L('端末の中に25時間分。外部へは送りません。', '25 hours, kept on the device. Never sent out.')], [L('外部との通信', 'External connections'), L('脅威リストと国データの取得のときだけ', 'Only to download threat lists and country data')]],
+        'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('記録',
+        'Records'), L('端末の中に25時間分。外部へは送りません。', '25 hours, kept on the device. Never sent out.')], [L('外部との通信', 'External connections'), L('脅威リストと国データの取得、広告の表示、異常終了時のクラッシュ報告だけ（通信の記録は送りません）', 'Only to download threat lists and country data, show ads and send crash reports (traffic records are never sent)')]],
     note: L('危険度は、決めたルールに当てはめて機械的に判定した参考情報です。最終的な判断はご自身で行ってください。会社や学校など、ファイアウォールのあるネットワークにつないでいるときは、通信が遮られたり書き換えられたりするため、誤検知することがあります。使う前に、設定の「プライベート DNS」を「自動」か「オフ」にしてください。ほかの VPN アプリとは同時に使えません。家庭内のプリンターやテレビなど、LAN の機器との通信は見守りの対象外です。',
         'Risk levels are reference information rated mechanically by fixed rules. Please make the final decision yourself. On networks with a firewall, such as at work or school, traffic may be blocked or altered, which can cause false alarms. Before use, set “Private DNS” in Settings to “Automatic” or “Off”. It cannot be used at the same time as other VPN apps. Traffic with devices on your home LAN, such as printers and TVs, is not monitored.'),
   },
@@ -1351,10 +1351,10 @@ const dateLine = `<p class="dm">制定：${LEGAL_DATE}　最終更新：${LEGAL_
 const dateLineEn = `<p class="dm">Established: ${enDate(LEGAL_DATE)} / Last updated: ${enDate(LEGAL_UPDATED)}</p>`;
 const MAILBOX = `<div class="mailbox"><canvas class="mail" aria-label="メールアドレス（スパム対策のため画像で表示しています）" role="img"></canvas><small>スパム対策のため、アドレスは画像で表示しています。お手数ですが、画像を見ながら入力してください。</small></div>`;
 const MAILBOX_EN = `<div class="mailbox"><canvas class="mail" aria-label="Email address (shown as an image to prevent spam)" role="img"></canvas><small>To prevent spam, the address is shown as an image. Please type it in by looking at the image.</small></div>`;
-const AD_APPS = 'PDF暗記マーカー、FuRUSH、タップる？';
-const NOAD_APPS = 'マルチ翻訳PDFビューワー、アプリ見守り';
-const AD_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), FuRUSH and タップる？ (TaPru)';
-const NOAD_APPS_EN = 'マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer) and アプリ見守り (App Monitor)';
+const AD_APPS = 'PDF暗記マーカー、FuRUSH、アプリ見守り、タップる？';
+const NOAD_APPS = 'マルチ翻訳PDFビューワー';
+const AD_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), FuRUSH, アプリ見守り (App Monitor) and タップる？ (TaPru)';
+const NOAD_APPS_EN = 'マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
 const ALL_APPS = 'PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？';
 const ALL_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer), FuRUSH, アプリ見守り (App Monitor) and タップる？ (TaPru)';
 const L_GOOGLE_PARTNER = 'https://policies.google.com/technologies/partner-sites';
@@ -1378,7 +1378,7 @@ const LEGAL = [
     '本サイトは、文字のデザインのため Google Fonts から読み込みを行い、このとき IP アドレスやブラウザ情報などが Google に送信されます。',
     '本サイトのアクセスログ（IPアドレスなど）がホスティング側で記録され、約90日間保存します。アクセス解析ツールは使用していません。',
     'アプリで作成したマスク、チェック、ハイライト、落書き、栞、学習の履歴、設定は、端末内に保存し、店長には送信しません。取り込んだ PDF を店長が受け取ることもありません。',
-    'アプリ見守りは、VPN の仕組みを使って、アプリごとの通信の宛先・通信量・時刻を端末の中で記録します。記録は端末の中に25時間分だけ保存し、店長を含む外部へは送信しません。脅威リストと国データを取得するときだけ、配布元（urlhaus.abuse.ch、feodotracker.abuse.ch、www.spamhaus.org、download.db-ip.com）に接続します。',
+    'アプリ見守りは、VPN の仕組みを使って、アプリごとの通信の宛先・通信量・時刻を端末の中で記録します。記録は端末の中に25時間分だけ保存し、店長を含む外部へは送信しません。脅威リストと国データを取得するときは、配布元（urlhaus.abuse.ch、feodotracker.abuse.ch、www.spamhaus.org、download.db-ip.com）に接続します。このほかの通信は、広告の表示（Google AdMob）と、異常終了したときのクラッシュ報告（Firebase Crashlytics）だけです。',
     'アプリ見守りは、使っていない時間の通信を見分けるために各アプリの使用時間を、アプリ名を表示するために端末のアプリの一覧を参照します。これらも端末の外には送りません。',
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
@@ -1451,7 +1451,7 @@ const LEGAL = [
     'This website loads fonts from Google Fonts. When it does, your IP address and browser information are sent to Google.',
     'The hosting provider records access logs for this website (such as IP addresses), which are kept for about 90 days. We do not use any web analytics tools.',
     'Masks, check marks, highlights, drawings, bookmarks, learning history and settings you create in the apps are stored on your device and are not sent to the Manager. The Manager never receives the PDFs you open in the apps.',
-    'App Monitor uses the Android VPN mechanism to record, on your device, the destination, amount and time of each app’s network traffic. The records are kept on the device for 25 hours only and are not sent outside the device, including to the Manager. The app connects only to the distributors of threat lists and country data (urlhaus.abuse.ch, feodotracker.abuse.ch, www.spamhaus.org, download.db-ip.com) to download them.',
+    'App Monitor uses the Android VPN mechanism to record, on your device, the destination, amount and time of each app’s network traffic. The records are kept on the device for 25 hours only and are not sent outside the device, including to the Manager. The app connects to the distributors of threat lists and country data (urlhaus.abuse.ch, feodotracker.abuse.ch, www.spamhaus.org, download.db-ip.com) to download them. Its only other connections are for showing ads (Google AdMob) and sending crash reports when the app stops unexpectedly (Firebase Crashlytics).',
     'App Monitor reads each app’s usage time to tell apart traffic while an app is not in use, and the list of installed apps to show app names. This information is not sent outside the device either.',
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
@@ -1465,7 +1465,7 @@ const LEGAL = [
     'If you email us, we receive your email address and the content of your message.',
   ]) +
   H('3. Advertising (Google AdMob)') +
-  P(`Among the Manager’s apps, ${AD_APPS_EN} show ads served by Google AdMob, an advertising service of Google LLC. ${NOAD_APPS_EN} do not show ads.`) +
+  P(`Among the Manager’s apps, ${AD_APPS_EN} show ads served by Google AdMob, an advertising service of Google LLC. ${NOAD_APPS_EN} does not show ads.`) +
   UL([
     'To serve ads, measure impressions and performance, and prevent fraud, AdMob collects and sends to Google information such as your device’s advertising ID (Android Advertising ID / iOS IDFA), IP address, approximate location (estimated from the IP address), device and OS information, app usage, and ad views and taps.',
     'Third-party vendors, including Google, may use cookies and identifiers such as the advertising ID to serve ads based on your past use of this app and other apps and websites (personalized ads).',
