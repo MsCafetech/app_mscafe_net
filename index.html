@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MsCafe.tech</title>
-<meta name="description" content="MsCafe.tech は、M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店です。PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？ の紹介と、プライバシーポリシー・利用規約・お問い合わせを掲載しています。">
+<meta name="description" content="MsCafe.tech は、M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店です。PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？、MP3変換 の紹介と、プライバシーポリシー・利用規約・お問い合わせを掲載しています。">
 <meta name="theme-color" content="#0A2622">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MsCafe.tech">
 <meta property="og:title" content="MsCafe.tech｜アプリを紹介する喫茶店">
-<meta property="og:description" content="M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店。PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？ を紹介しています。">
+<meta property="og:description" content="M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店。PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？、MP3変換 を紹介しています。">
 <meta property="og:locale" content="ja_JP">
 </head>
 <body>
@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 283,768 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 317,097 バイト）。</pre>';
   }
 });
 </script>
@@ -56,6 +56,7 @@ const SITE = {
   lead: L('アプリを紹介する喫茶店です。気になるアプリを開いて、ゆっくりご覧ください。', 'Welcome to a caf\u00E9 that serves apps. Open any app that catches your eye and take your time.'),
 };
 const NEWS = [
+  { date: '2026/11/10', tag: L('MP3変換', 'MP3 Converter'), text: L('新しいアプリ「MP3変換」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new app “MP3 Converter”. We are looking for testers.') },
   { date: '2026/11/04', tag: L('タップる？', 'TaPru'), text: L('新しいゲーム「タップる？」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new game “TaPru”. We are looking for testers.') },
   { date: '2026/11/01', tag: 'FuRUSH', text: L('Android 版のクローズドテストを開始しました。テスターを募集しています。', 'Closed testing of the Android version has started. We are looking for testers.') },
   { date: '2026/10/26', tag: L('アプリ見守り', 'App Monitor'), text: L('Android 版のクローズドテストを開始しました。テスターを募集しています。', 'Closed testing of the Android version has started. We are looking for testers.') },
@@ -71,11 +72,13 @@ const BUG_FORM_MT = '';
 const BUG_FORM_FR = '';
 const BUG_FORM_AM = 'https://forms.gle/7fReguSQ3ut8kDpGA';
 const BUG_FORM_TP = '';
+const BUG_FORM_M2A = '';
 const TEST_URL_PDF = 'https://play.google.com/store/apps/details?id=net.mscafe.pdfmasking';
 const TEST_URL_MT = '';
 const TEST_URL_FR = 'https://play.google.com/store/apps/details?id=net.mscafe.furush';
 const TEST_URL_AM = 'https://play.google.com/store/apps/details?id=net.mscafe.appmonitor';
 const TEST_URL_TP = 'https://play.google.com/store/apps/details?id=net.mscafe.tapru';
+const TEST_URL_M2A = 'https://play.google.com/store/apps/details?id=net.mscafe.movie2audio';
 const SHOW_TODO = true;
 const ADMIN_ICON = 'data:image/jpeg;base64,' + [
   '/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCAEAAQADASIAAhEBAxEB/8QAHQABAAEFAQEBAAAA',
@@ -125,7 +128,7 @@ const ADMIN_ICON = 'data:image/jpeg;base64,' + [
   'BSoRQhKhFKFGajNFOSAgKURAERMkAREQBERAEQIgGaIiAIiIAiIgCZoiAKETJCBTmijJATmoUqEBOahMkVB//9k=',
 ].join('');
 const LEGAL_DATE = '2026年10月11日';
-const LEGAL_UPDATED = '2026年11月6日';
+const LEGAL_UPDATED = '2026年11月10日';
 const MAIL_R = '==QbvNmLslWYtdGQ5JXZ25SeuFWbukncyVWb';
 const TEAM = [
   { cls: 'pm',     role: 'PM',      name: 'M.A.C.Y', kind: 'human', desc: L('企画と優先順位を決める', 'Plans the menu and sets priorities') },
@@ -332,6 +335,32 @@ h2{font:900 clamp(26px,4vw,38px)/1.3 var(--f-display);text-wrap:balance}
 .bd{display:block;width:24px;height:24px}
 .bc-ok{fill:var(--ok)}.bc-ng{fill:var(--ng)}.bc-warn{fill:var(--warn)}
 .bp-ok,.bp-ng{stroke:#fff}.bp-warn{stroke:#4A3600}
+.m2d-scr{background:#F2FAFC;color:#173042;border-radius:25px;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;min-height:440px}
+.m2d-ad{height:66px;margin:10px 10px 0;border-radius:12px;background:#E4EEF1;display:flex;align-items:center;gap:8px;padding:8px 10px;font-size:11px;line-height:1.35;min-width:0}
+.m2d-ad i{width:38px;height:38px;border-radius:9px;background:#C6D9DE;flex:none}
+.m2d-ad div{min-width:0}.m2d-ad b{display:block;font-size:12px}.m2d-ad small{color:#577083}
+.m2d-ad em{font-style:normal;font-size:9.5px;font-weight:700;background:#F2C04C;color:#3A2C10;border-radius:4px;padding:1px 5px;margin-right:4px}
+.m2d-cta{margin-left:auto;flex:none;border:1px solid #0F766E;color:#0F766E;border-radius:999px;padding:5px 10px;font-weight:700;white-space:nowrap}
+.m2d-body{padding:12px 14px;display:grid;gap:9px;align-content:start}
+.m2d-vid{display:flex;gap:10px;align-items:center;padding:10px;border-radius:12px;background:#fff;border:1px solid #D4E4EA}
+.m2d-th{width:56px;height:40px;border-radius:6px;background:linear-gradient(135deg,#0F766E,#4FC3B5);flex:none;display:grid;place-content:center;color:#fff;font-size:14px}
+.m2d-vn{font:700 12.5px/1.4 var(--f-body);overflow-wrap:anywhere}.m2d-vm{font:500 11px/1.4 var(--f-mono);color:#577083}
+.m2d-lab{font:700 11.5px/1 var(--f-body);color:#577083}
+.m2d-chips{display:flex;flex-wrap:wrap;gap:6px}.m2d-chips[hidden]{display:none}
+.m2d-c{appearance:none;border:1px solid #D4E4EA;background:#fff;color:#173042;border-radius:999px;padding:7px 11px;font:700 12px/1 var(--f-body);cursor:pointer}
+.m2d-c[aria-pressed="true"]{background:#0F766E;border-color:#0F766E;color:#fff}
+.m2d-note{font-size:11px;line-height:1.5;color:#577083}
+.m2d-est{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:9px 12px;border-radius:10px;background:#E3F3F1;font-size:12px}.m2d-est b{font:700 15px/1 var(--f-mono);color:#0F766E}
+.m2d-foot{padding:10px 14px 14px}
+.m2d-go{appearance:none;width:100%;border:0;border-radius:999px;padding:13px 0;background:#0F766E;color:#fff;font:700 14px/1 var(--f-body);cursor:pointer}
+.m2d-sub{background:#fff;color:#0F766E;box-shadow:inset 0 0 0 1px #0F766E}
+.m2d-run,.m2d-done{display:grid;gap:12px;align-content:center;justify-items:center;text-align:center;padding:18px 16px}
+.m2d-body[hidden],.m2d-foot[hidden],.m2d-run[hidden],.m2d-done[hidden]{display:none}
+.m2d-bar{width:100%;height:8px;border-radius:4px;background:#D4E4EA;overflow:hidden}.m2d-bar i{display:block;height:100%;width:0;background:#0F766E}
+.m2d-pct{font:700 26px/1 var(--f-mono);color:#0F766E}
+.m2d-ok{width:56px;height:56px;border-radius:50%;background:#0F766E;color:#fff;display:grid;place-content:center;font:900 28px/1 var(--f-body)}
+.m2d-kv{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;margin:0;text-align:left;font-size:12px}.m2d-kv dt{color:#577083}.m2d-kv dd{margin:0;font-weight:700;overflow-wrap:anywhere}
+.m2d-row{display:flex;gap:8px;width:100%}.m2d-row .m2d-go{flex:1}
 .phone{position:relative;overflow:hidden;width:min(340px,100%);background:#0A1513;border-radius:34px;padding:9px;box-shadow:0 26px 50px -22px rgba(0,0,0,.5)}
 .af{position:absolute;left:0;top:0;width:80px;height:90px;pointer-events:none;z-index:5;opacity:0;transition:transform .8s cubic-bezier(.4,0,.2,1),opacity .3s;filter:drop-shadow(0 4px 6px rgba(0,0,0,.3))}
 .af svg{display:block;overflow:visible}
@@ -693,7 +722,34 @@ const TP_ICON = 'data:image/webp;base64,' + [
   'cYInRayXgd1lkEkL9grv5Ubvmihl7f9Rx5/Fp9sLcSJ5uXYwpZ1PnfUqXHU9yJbRkaI0J6MhjlAAAA==',
 ].join('');
 const tpIcon = (s = 48) => `<img src="${TP_ICON}" width="${s}" height="${s}" alt="${L('タップる？のアイコン', 'TaPru icon')}" style="display:block;border-radius:22%">`;
+const M2A_ICON = 'data:image/webp;base64,' + [
+  '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',
+].join('');
+const m2aIcon = (s = 48) => `<img src="${M2A_ICON}" width="${s}" height="${s}" alt="${L('MP3変換のアイコン', 'MP3 Converter icon')}" style="display:block;border-radius:22%">`;
 const ILL = {
+  m2aPick: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('動画から音声だけを取り出す様子', 'Taking just the audio out of a video')}"><rect class="f-paper" x="20" y="34" width="86" height="64" rx="8"/><path class="f-mask" d="M53 52v28l24-14z"/>
+<text class="t" x="63" y="120" text-anchor="middle">${L('動画', 'Video')}</text><path class="s-ink" d="M116 66h24m-9-9 9 9-9 9"/><path class="s-ink" d="M178 88V46l34-8v42"/><circle class="f-mask" cx="170" cy="88" r="10"/><circle class="f-mask" cx="204" cy="80" r="10"/>
+<text class="t" x="188" y="120" text-anchor="middle">${L('音声', 'Audio')}</text></svg>`,
+  m2aFormat: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('MP3・AAC・WAV と音質を選ぶ様子', 'Choosing MP3, AAC or WAV and the quality')}">${[['MP3', 24, 1], ['AAC', 92, 0], ['WAV', 160, 0]].map(([t, x, on]) => `<rect x="${x}" y="22" width="56" height="30" rx="15" class="${on ? 'f-mask' : 'f-paper'}"/><text x="${x + 28}" y="42" text-anchor="middle" class="t-ans"${on ? ' style="fill:#fff"' : ''}>${t}</text>`).join('')}
+${[['128', 22, 0], ['192', 73, 1], ['256', 124, 0], ['320', 175, 0]].map(([t, x, on]) => `<rect x="${x}" y="64" width="44" height="24" rx="12" class="${on ? 'f-mask' : 'f-paper'}"/><text x="${x + 22}" y="80" text-anchor="middle" class="t-ans"${on ? ' style="fill:#fff"' : ''}>${t}</text>`).join('')}
+<text class="t" x="120" y="114" text-anchor="middle">kbps</text><text class="t-jp" x="120" y="138" text-anchor="middle">${L('推定 約 4.9 MB', 'About 4.9 MB')}</text></svg>`,
+  m2aPreview: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('音声トラックを選んで30秒試聴する様子', 'Choosing an audio track and previewing 30 seconds')}"><rect x="30" y="18" width="84" height="28" rx="14" class="f-mask"/><text x="72" y="37" text-anchor="middle" class="t-ans" style="fill:#fff">${L('トラック 1', 'Track 1')}</text>
+<rect x="126" y="18" width="84" height="28" rx="14" class="f-paper"/><text x="168" y="37" text-anchor="middle" class="t-ans">${L('トラック 2', 'Track 2')}</text><circle class="f-mask" cx="56" cy="94" r="20"/><path d="M50 84v20l16-10z" fill="#fff"/>
+<rect class="f-line" x="88" y="91" width="122" height="6" rx="3"/><rect class="f-mask" x="88" y="91" width="50" height="6" rx="3"/><text class="t" x="210" y="118" text-anchor="end">0:30</text><text class="t" x="88" y="118">0:12</text></svg>`,
+  m2aSave: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('保存先のフォルダを選ぶ様子', 'Choosing the folder to save to')}">${[[L('音楽', 'Music'), 14, 1], [L('ダウンロード', 'Downloads'), 70, 0], [L('元の動画', 'Video’s'), 126, 0], [L('指定', 'Choose'), 182, 0]].map(([t, x, on]) => `<path class="${on ? 'f-mask' : 'f-paper'}" d="M${x} 46h16l6 7h22v40h-44z"/><text class="t" x="${x + 22}" y="112" text-anchor="middle" style="font-size:9px">${t}</text>`).join('')}
+<text class="t-ans" x="120" y="136" text-anchor="middle">${L('旅行動画_2026 (2).mp3', 'trip_2026 (2).mp3')}</text></svg>`,
+  m2aAd: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('画面の上の決まった枠にだけ広告が出る画面', 'A screen with ads only in a fixed frame at the top')}"><rect class="f-paper" x="78" y="6" width="84" height="138" rx="12"/><rect class="f-warn" x="84" y="13" width="72" height="20" rx="5" opacity=".85"/>
+<text class="t" x="120" y="27" text-anchor="middle" style="font-size:9px;fill:#3A2C10">${L('広告 15%', 'Ad 15%')}</text>${lines(88, 44, 64, 5, 11, 41)}<rect class="f-mask" x="86" y="120" width="68" height="16" rx="8"/>
+<text class="t" x="166" y="27" style="font-size:9.5px">${L('広告はここだけ', 'Ads only here')}</text><text class="t" x="170" y="132">${L('変換', 'Convert')}</text></svg>`,
+  m2aLocal: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('端末の中だけで変換し、サーバーへは送らない', 'Converted on the device only, never sent to a server')}"><rect class="f-paper" x="40" y="16" width="70" height="118" rx="12"/><text class="t-ans" x="75" y="70" text-anchor="middle">FFmpeg</text><path class="s-ink" d="M60 86h30"/>
+<path class="f-paper" d="M156 92a16 16 0 0 1 2-32 22 22 0 0 1 42 4 14 14 0 0 1 0 28z"/><path class="s-ink" d="M148 48l64 56" style="stroke:var(--ng);opacity:1"/><text class="t" x="180" y="128" text-anchor="middle">${L('送らない', 'Not sent')}</text></svg>`,
+  m2aDone: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('完了画面から再生・共有する様子', 'Playing or sharing from the done screen')}"><circle class="f-mask" cx="120" cy="46" r="24"/><path d="M108 46l8 8 16-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect class="f-mask" x="46" y="92" width="68" height="28" rx="14"/><text class="t-ans" x="80" y="111" text-anchor="middle" style="fill:#fff">${L('再生', 'Play')}</text><rect class="f-paper" x="126" y="92" width="68" height="28" rx="14"/><text class="t-ans" x="160" y="111" text-anchor="middle">${L('共有', 'Share')}</text></svg>`,
   mask: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('答えの行にオレンジのマスクがかかったPDFページ', 'A PDF page with an orange mask over the answer line')}"><rect class="f-paper" x="62" y="12" width="116" height="126" rx="5"/>${lines(74, 28, 92, 3, 14, 11)}<rect class="f-mask" x="72" y="68" width="96" height="18" rx="4"/>${lines(74, 100, 92, 3, 12, 12)}</svg>`,
   tap: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('マスクをタップして答えが表示される様子', 'Tapping the mask reveals the answer')}"><rect class="f-paper" x="48" y="12" width="116" height="126" rx="5"/>${lines(60, 28, 92, 3, 14, 21)}<rect class="s-mask" x="58" y="68" width="96" height="18" rx="4" stroke-dasharray="4 3"/><text class="t-ans" x="106" y="81" text-anchor="middle">${DEMO.q1[1]}</text>${lines(60, 100, 92, 3, 12, 22)}<circle class="rp" cx="170" cy="86" r="9"/><circle class="rp" cx="170" cy="86" r="16"/>${finger(170, 86)}</svg>`,
   marks: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('青・赤・黄のチェックマーク', 'Blue, red and yellow check marks')}">${[['ok', 40, L('長押し', 'Long press')], ['ng', 120, L('ダブルタップ', 'Double tap')], ['warn', 200, L('上スワイプ', 'Swipe up')]].map(([k, cx, t]) => `<g transform="translate(${cx - 23} 34) scale(1.92)">${badgeInner(k)}</g><text class="t" x="${cx}" y="112" text-anchor="middle">${t}</text>`).join('')}</svg>`,
@@ -943,6 +999,29 @@ const tpDemo = () => `<div class="demo">
   <div class="tpd-res" hidden aria-live="polite"></div>
   <p class="demo-note">${L('START を押すと、3・2・1 のあと', 'Press START. After 3, 2, 1 you have ')}${TP_SEC}${L('秒（アプリでは30秒）。右側をひたすらタップしてください。上のボタンでエフェクトを選べます。', ' seconds (30 in the app). Tap the right side as fast as you can. Pick an effect with the buttons above.')}</p>
 </div>`;
+const M2A_DUR = 204000;
+const m2aDemo = () => `<div class="demo">
+  <div class="phone" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
+    <div class="m2d-scr">
+      <div class="m2d-ad" aria-label="${L('広告枠（見本）', 'Ad frame (sample)')}"><i></i><div><b><em>${L('広告', 'Ad')}</em>${L('広告の見出し', 'Ad headline')}</b><small>${L('広告はこの枠の中だけ', 'Ads stay in this frame')}</small></div><span class="m2d-cta">${L('詳しく', 'Learn more')}</span></div>
+      <div class="m2d-body">
+        <div class="m2d-vid"><span class="m2d-th" aria-hidden="true">\u25B6</span><div><div class="m2d-vn">${L('旅行動画_2026.mp4', 'trip_2026.mp4')}</div><div class="m2d-vm">3:24 \u00B7 38.6 MB</div></div></div>
+        <span class="m2d-lab">${L('形式', 'Format')}</span>
+        <div class="m2d-chips m2d-fmt">${['MP3', 'AAC (M4A)', 'WAV'].map((t, i) => `<button type="button" class="m2d-c" data-i="${i}" aria-pressed="${i === 0}">${t}</button>`).join('')}</div>
+        <span class="m2d-lab m2d-ql">${L('音質', 'Quality')}</span>
+        <div class="m2d-chips m2d-q">${[128, 192, 256, 320].map(k => `<button type="button" class="m2d-c" data-k="${k}" aria-pressed="${k === 192}">${k} kbps</button>`).join('')}</div>
+        <p class="m2d-note"></p>
+        <div class="m2d-est"><span>${L('変換後の推定サイズ', 'Estimated size')}</span><b></b></div>
+      </div>
+      <div class="m2d-run" hidden aria-live="polite"><span class="m2d-lab">${L('変換しています', 'Converting')}</span><b class="m2d-pct">0%</b><div class="m2d-bar"><i></i></div>
+        <p class="m2d-note">${L('変換中はアプリを開いたままお待ちください。アプリを閉じると変換は中止されます。', 'Keep the app open while converting. Leaving the app stops the conversion.')}</p><button type="button" class="m2d-go m2d-sub m2d-stop">${L('キャンセル', 'Cancel')}</button></div>
+      <div class="m2d-done" hidden aria-live="polite"><span class="m2d-ok" aria-hidden="true">\u2713</span><b>${L('変換が完了しました', 'Conversion complete')}</b><dl class="m2d-kv"></dl>
+        <div class="m2d-row"><span class="m2d-go" style="text-align:center">${L('再生', 'Play')}</span><span class="m2d-go m2d-sub" style="text-align:center">${L('共有', 'Share')}</span></div><button type="button" class="m2d-go m2d-sub m2d-again">${L('別の動画を変換', 'Convert another video')}</button></div>
+      <div class="m2d-foot"><button type="button" class="m2d-go m2d-start">${L('音声に変換する', 'Convert to audio')}</button></div>
+    </div>
+  </div>
+  <p class="demo-note">${L('形式と音質を選ぶと、推定サイズが変わります。「音声に変換する」で変換から完了までを見られます。上の広告枠は見本で、動画は架空です。', 'Choose a format and quality to see the estimated size change. Press “Convert to audio” to see it through to the end. The ad frame at the top is a sample, and the video is made up.')}</p>
+</div>`;
 const MT_SAMPLES = [
   [L('英語', 'English'), 'EN', 'Machine translation converts text from one language into another. Recent models learn from large parallel corpora.'],
   [L('中国語', 'Chinese'), '中', '机器翻\u8BD1将文本从一\u79CD\u8BED言\u8F6C\u6362\u4E3A\u53E6一\u79CD\u8BED言。近年来的模型从大量平行\u8BED料中学\u4E60。'],
@@ -1108,6 +1187,35 @@ const APPS = [
         'Taps are recorded and analyzed on the device only.')], [L('言語', 'Languages'), L('日本語・English', 'Japanese, English')]],
     note: L('クローズドテスト中のため、内容は変わることがあります。計測結果は遊びとして楽しむためのもので、医学的・科学的な評価ではありません。連打のしすぎにご注意いただき、適度に休憩しながらお楽しみください。', 'The app is in closed testing, so details may change. The results are just for fun and are not a medical or scientific assessment. Please do not overdo the tapping, and take breaks as you play.'),
   },
+  {
+    id: 'mp3-convert', name: L('MP3変換', 'MP3 Converter'), icon: m2aIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_M2A, test: TEST_URL_M2A,
+    one: L('動画から音声だけを取り出して、MP3・AAC(M4A)・WAV に変換する Android アプリ。広告はあっても邪魔にならず、広告を見ながら手軽に変換。', 'An Android app that takes just the audio from a video and converts it to MP3, AAC (M4A) or WAV. The ads stay out of your way, so you can convert with ease while they sit quietly on screen.'),
+    headline: L('<span class="nb">動画の音だけ、</span><span class="nb"><span class="hl">手軽に</span>MP3に。</span>', '<span class="nb">Just the sound,</span> <span class="nb"><span class="hl">easily</span> to MP3.</span>'),
+    lead: L('コーヒーを一杯淹れるくらいの手軽さで、動画から音声だけを取り出します。動画を選んで、形式と音質を決めて、ボタンをひとつ押すだけ。MP3・AAC(M4A)・WAV に変換できます。広告は画面の上の決まった枠にだけ出して、操作の邪魔をしません。広告を眺めながら、手軽に変換できます。変換は端末の中だけで行い、動画や音声をサーバーへ送りません。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
+        'As easy as making a cup of coffee: take just the audio out of a video. Choose a video, pick a format and quality, and press one button to convert it to MP3, AAC (M4A) or WAV. Ads appear only in a fixed frame at the top of the screen and never get in the way, so you can convert with ease while they sit quietly on screen. Everything happens on your device; videos and audio are never sent to a server. Now in closed testing. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 10 以上　　料金　無料（広告あり）', 'OS: Android 10 or later　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
+    demo: m2aDemo, init: initM2a,
+    features: [
+      [ILL.m2aPick, L('動画を選ぶだけ', 'Just choose a video'), L('端末のファイル選択から動画を1本選ぶと、再生時間や音声トラックを確認します。音声が入っていない動画は、その場でお知らせします。', 'Pick one video with your device’s file picker, and the app checks its length and audio tracks. If a video has no audio, it tells you right away.')],
+      [ILL.m2aFormat, L('MP3・AAC・WAV に変換', 'Convert to MP3, AAC or WAV'), L('MP3 と AAC(M4A) は 128・192・256・320kbps から音質を選べます（初めは192kbps）。WAV は PCM 16bit で、圧縮しないので劣化しません。選ぶたびに、変換後の推定サイズが出ます。', 'For MP3 and AAC (M4A), choose 128, 192, 256 or 320 kbps (192 kbps to start). WAV is 16-bit PCM and uncompressed, so there is no further loss. The estimated file size updates each time you choose.')],
+      [ILL.m2aPreview, L('トラック選びと30秒の試聴', 'Track choice and a 30-second preview'), L('音声トラックが複数ある動画は「トラック 1」「トラック 2」から選べます。先頭30秒を試聴して、変換する前に確かめられます。', 'For videos with more than one audio track, choose “Track 1”, “Track 2” and so on. Preview the first 30 seconds to check before converting.')],
+      [ILL.m2aSave, L('保存先とファイル名', 'Save location and file name'), L('音楽フォルダ（初めの設定）・ダウンロードフォルダ・元の動画と同じフォルダ・指定したフォルダから選べます。ファイル名は元の動画の名前から付け、同じ名前があれば「名前 (2)」のように番号を足します。空き容量も、変換の前に確かめます。', 'Save to the Music folder (the default), the Downloads folder, the same folder as the video, or a folder you choose. The file is named after the video, and a number such as “name (2)” is added if the name is taken. Free space is checked before converting.')],
+      [ILL.m2aAd, L('邪魔にならない広告', 'Ads that stay out of the way'), L('広告は、画面の上の決まった枠（画面の高さの15%）にだけ出します。全画面の広告や、ボタンに重なる広告はありません。「音声に変換する」ボタンは画面の下にいつも見えています。広告が読み込めなくても、すべての機能を使えます。', 'Ads appear only in a fixed frame at the top (15% of the screen height). There are no full-screen ads and no ads over buttons. The “Convert to audio” button always stays visible at the bottom. Every feature works even if no ad loads.')],
+      [ILL.m2aLocal, L('端末の中だけで変換', 'Converted on your device only'), L('変換は端末の中の FFmpeg で行い、動画や音声をサーバーへ送りません。ストレージの権限も求めません。変換中は画面を点けたままにし、端末が熱くなりすぎたときは変換を止めます。', 'Conversion runs with FFmpeg on your device, and videos and audio are never sent to a server. The app does not ask for storage permission. The screen stays on while converting, and conversion stops if the device gets too hot.')],
+      [ILL.m2aDone, L('できたらすぐ再生・共有', 'Play or share right away'), L('完了画面から、端末の音楽アプリで再生したり、ほかのアプリへ共有したりできます。そのまま別の動画も変換できます。日本語・英語、ライト・ダークに対応しています。', 'From the done screen, play the file in your music app or share it with other apps, then convert another video. Available in Japanese and English, with light and dark themes.')],
+    ],
+    steps: [
+      [L('動画を選ぶ', 'Choose a video'), L('「動画を選ぶ」を押して、端末の動画から1本選びます。', 'Press “Choose a video” and pick one video on your device.')],
+      [L('形式と音質を決める', 'Pick a format and quality'), L('形式（MP3・AAC・WAV）と音質を選びます。必要なら、保存先とファイル名も変えられます。', 'Choose the format (MP3, AAC or WAV) and quality. You can also change the save location and file name if you like.')],
+      [L('「音声に変換する」を押す', 'Press “Convert to audio”'), L('画面の下のボタンで変換が始まります。変換中はアプリを開いたままお待ちください。ほかのアプリに切り替えたり、画面をロックしたりすると、変換は中止されます。', 'The button at the bottom starts the conversion. Keep the app open while it runs; switching to another app or locking the screen stops the conversion.')],
+    ],
+    info: [[L('アプリ名', 'App name'), L('MP3変換（MP3 Converter）', 'MP3変換 (MP3 Converter)')], [L('対応OS', 'OS'), L('Android 10 以上（縦画面）', 'Android 10 or later (portrait)')], [L('料金',
+        'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('変換形式',
+        'Formats'), 'MP3 / AAC (M4A) / WAV'], [L('言語', 'Languages'), L('日本語・English', 'Japanese, English')], [L('外部との通信', 'External connections'), L('広告の表示と、広告の同意の確認（Google AdMob）だけ。動画や音声は送りません。',
+        'Only to show ads and check ad consent (Google AdMob). Videos and audio are never sent.')]],
+    note: L('クローズドテスト中のため、内容は変わることがあります。変換するのは、ご自身で撮影した動画など、使ってよい動画だけにしてください。コピー防止（DRM）のかかった動画や壊れた動画、一部の形式（WMV・FLV・TS など）は、変換できないことがあります。MP3・AAC は圧縮し直すため、元の音より少し劣化することがあります。',
+        'The app is in closed testing, so details may change. Please convert only videos you are allowed to use, such as ones you filmed yourself. Copy-protected (DRM) or damaged videos and some formats (such as WMV, FLV and TS) may not convert. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original.'),
+  },
 ];
 function initPdf(root) {
   const setMark = (btn, k) => {
@@ -1223,6 +1331,43 @@ function initFr(root) {
     clearTimeout(timer); deck = Number(m.dataset.i); idx = 0; rev = false; revBtn.setAttribute('aria-pressed', 'false');
     $$('.frd-m', root).forEach(x => x.setAttribute('aria-pressed', x === m)); draw();
   }));
+  draw();
+}
+function initM2a(root) {
+  const st = { f: 0, k: 192 }, ext = ['.mp3', '.m4a', '.wav'], fmt = ['MP3', 'AAC (M4A)', 'WAV'];
+  const notes = [L('多くの機器で再生できます。再圧縮で少し劣化することがあります。', 'Plays almost anywhere. Re-encoding may reduce quality slightly.'),
+    L('スマホで扱いやすい形式です。再圧縮で少し劣化することがあります。', 'Good for phones. Re-encoding may reduce quality slightly.'),
+    L('圧縮しないので劣化しませんが、サイズが大きくなります。', 'Uncompressed, so no further loss, but files are large.')];
+  const body = $('.m2d-body', root), foot = $('.m2d-foot', root), run = $('.m2d-run', root), done = $('.m2d-done', root);
+  const bytes = () => (st.f === 2 ? M2A_DUR * 48000 * 2 * 16 / 8 / 1000 : M2A_DUR * st.k / 8);
+  const mb = b => `${(Math.round(b / 1e5) / 10).toFixed(1)} MB`;
+  const draw = () => {
+    $$('.m2d-fmt .m2d-c', root).forEach(b => b.setAttribute('aria-pressed', +b.dataset.i === st.f));
+    $$('.m2d-q .m2d-c', root).forEach(b => b.setAttribute('aria-pressed', +b.dataset.k === st.k));
+    $('.m2d-q', root).hidden = $('.m2d-ql', root).hidden = st.f === 2;
+    $('.m2d-note', body).textContent = notes[st.f];
+    $('.m2d-est b', root).textContent = `${L('約 ', 'About ')}${mb(bytes())}`;
+  };
+  const show = v => { body.hidden = foot.hidden = v !== 0; run.hidden = v !== 1; done.hidden = v !== 2; };
+  let timer = 0;
+  $$('.m2d-fmt .m2d-c', root).forEach(b => b.addEventListener('click', () => { st.f = +b.dataset.i; draw(); }));
+  $$('.m2d-q .m2d-c', root).forEach(b => b.addEventListener('click', () => { st.k = +b.dataset.k; draw(); }));
+  $('.m2d-start', root).addEventListener('click', () => {
+    let p = 0; show(1);
+    const bar = $('.m2d-bar i', root), pct = $('.m2d-pct', root);
+    bar.style.width = '0%'; pct.textContent = '0%';
+    clearInterval(timer);
+    timer = setInterval(() => {
+      p = Math.min(100, p + 4); bar.style.width = p + '%'; pct.textContent = p + '%';
+      if (p < 100) return;
+      clearInterval(timer);
+      $('.m2d-kv', root).innerHTML = [[L('ファイル名', 'File name'), L('旅行動画_2026', 'trip_2026') + ext[st.f]], [L('形式', 'Format'), fmt[st.f] + (st.f === 2 ? '' : ` \u00B7 ${st.k} kbps`)],
+        [L('サイズ', 'Size'), mb(bytes())], [L('保存先', 'Saved to'), 'Music/VideoToAudio/']].map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+      show(2);
+    }, 90);
+  });
+  $('.m2d-stop', root).addEventListener('click', () => { clearInterval(timer); show(0); });
+  $('.m2d-again', root).addEventListener('click', () => show(0));
   draw();
 }
 function initTp(root) {
@@ -1351,12 +1496,12 @@ const dateLine = `<p class="dm">制定：${LEGAL_DATE}　最終更新：${LEGAL_
 const dateLineEn = `<p class="dm">Established: ${enDate(LEGAL_DATE)} / Last updated: ${enDate(LEGAL_UPDATED)}</p>`;
 const MAILBOX = `<div class="mailbox"><canvas class="mail" aria-label="メールアドレス（スパム対策のため画像で表示しています）" role="img"></canvas><small>スパム対策のため、アドレスは画像で表示しています。お手数ですが、画像を見ながら入力してください。</small></div>`;
 const MAILBOX_EN = `<div class="mailbox"><canvas class="mail" aria-label="Email address (shown as an image to prevent spam)" role="img"></canvas><small>To prevent spam, the address is shown as an image. Please type it in by looking at the image.</small></div>`;
-const AD_APPS = 'PDF暗記マーカー、FuRUSH、アプリ見守り、タップる？';
+const AD_APPS = 'PDF暗記マーカー、FuRUSH、アプリ見守り、タップる？、MP3変換';
 const NOAD_APPS = 'マルチ翻訳PDFビューワー';
-const AD_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), FuRUSH, アプリ見守り (App Monitor) and タップる？ (TaPru)';
+const AD_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), FuRUSH, アプリ見守り (App Monitor), タップる？ (TaPru) and MP3変換 (MP3 Converter)';
 const NOAD_APPS_EN = 'マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
-const ALL_APPS = 'PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？';
-const ALL_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer), FuRUSH, アプリ見守り (App Monitor) and タップる？ (TaPru)';
+const ALL_APPS = 'PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？、MP3変換';
+const ALL_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer), FuRUSH, アプリ見守り (App Monitor), タップる？ (TaPru) and MP3変換 (MP3 Converter)';
 const L_GOOGLE_PARTNER = 'https://policies.google.com/technologies/partner-sites';
 const L_GOOGLE_ADS = 'https://policies.google.com/technologies/ads';
 const L_GOOGLE_PRIV = 'https://policies.google.com/privacy';
@@ -1365,6 +1510,11 @@ const L_ABOUTADS = 'https://www.aboutads.info/choices/';
 const L_YOURCHOICES = 'https://www.youronlinechoices.eu/';
 const L_MLKIT = 'https://developers.google.com/ml-kit/terms';
 const L_APPLE_EULA = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
+const L_FFMPEG = 'https://ffmpeg.org/';
+const L_FFMPEGKIT = 'https://github.com/arthenica/ffmpeg-kit';
+const L_LAME = 'https://lame.sourceforge.io/';
+const L_LGPL21 = 'https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html';
+const L_LGPL3 = 'https://www.gnu.org/licenses/lgpl-3.0.html';
 const LEGAL = [
 { id: 'privacy', ic: 'shield', title: 'プライバシーポリシー', one: '取得する情報、広告（AdMob）・外部サービス、問い合わせ窓口について',
   body: dateLine + P(`本サイト（app.mscafe.net）は、アプリを紹介する喫茶店です。店長として本サイトを運営する M.A.C.Y（以下「店長」）は、本サイトおよび店長が提供するアプリにおける、利用者の情報の取り扱いを以下のとおり定めます。`) +
@@ -1381,6 +1531,8 @@ const LEGAL = [
     'アプリ見守りは、VPN の仕組みを使って、アプリごとの通信の宛先・通信量・時刻を端末の中で記録します。記録は端末の中に25時間分だけ保存し、店長を含む外部へは送信しません。脅威リストと国データを取得するときは、配布元（urlhaus.abuse.ch、feodotracker.abuse.ch、www.spamhaus.org、download.db-ip.com）に接続します。このほかの通信は、広告の表示（Google AdMob）と、異常終了したときのクラッシュ報告（Firebase Crashlytics）だけです。',
     'アプリ見守りは、使っていない時間の通信を見分けるために各アプリの使用時間を、アプリ名を表示するために端末のアプリの一覧を参照します。これらも端末の外には送りません。',
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
+    'MP3変換は、利用者が選んだ動画を端末の中で読み込み、音声を取り出して変換します。動画、変換した音声、ファイル名を、店長を含む外部へ送信することはありません。試聴や変換の途中で作る一時ファイルはアプリの中に置き、使い終わると削除します。変換した音声は、利用者が選んだ保存先（音楽フォルダ、ダウンロードフォルダ、元の動画と同じフォルダ、指定したフォルダ）に保存します。フォルダを使うときは、Android のフォルダ選択で利用者が許可したフォルダにだけアクセスします。形式・音質・保存先などの設定は端末内に保存します。',
+    'MP3変換の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
     'アプリがサーバーと通信する際（出題データの取得など）、サーバー側でIPアドレスが記録されます。それ以外の個人を特定する情報は取得しません。',
     'FuRUSH は、問題のデータを GitHub（GitHub, Inc.）の公開リポジトリから取得します（raw.githubusercontent.com）。アプリの起動時に更新の有無を確かめ、モードを開いたときにデータをダウンロードします。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。',
@@ -1400,6 +1552,7 @@ const LEGAL = [
     `Google 以外の第三者配信事業者による Cookie の利用は、${A(L_ABOUTADS, 'aboutads.info')}（欧州では ${A(L_YOURCHOICES, 'youronlinechoices.eu')}）から無効にできます。`,
     '欧州経済領域（EEA）、英国、スイスなど、法令で同意が必要な地域の利用者には、同意を確認したうえで広告を配信します。同意がない場合は、パーソナライズされていない広告を表示します。',
     'タップる？では、AdMob を子ども向けとして扱う設定にし、パーソナライズ広告を表示せず、全年齢向け（G）の広告だけを表示します。',
+    'MP3変換の広告は、画面の上の決まった枠に表示するネイティブ広告だけです。同意が必要な地域では、アプリのメニューの「プライバシー設定」から、広告に関する同意をいつでも変更できます。',
     '店長が AdMob から受け取るのは、表示回数や収益などの集計された数値だけで、利用者個人を特定できる情報は受け取りません。',
     `Google による情報の取り扱いは、${A(L_GOOGLE_PARTNER, 'Google のサイトまたはアプリを利用するときの Google によるデータの使用')}、${A(L_GOOGLE_ADS, 'Google の広告に関するポリシー')}、${A(L_GOOGLE_PRIV, 'Google プライバシーポリシー')}をご覧ください。`,
   ]) +
@@ -1454,6 +1607,8 @@ const LEGAL = [
     'App Monitor uses the Android VPN mechanism to record, on your device, the destination, amount and time of each app’s network traffic. The records are kept on the device for 25 hours only and are not sent outside the device, including to the Manager. The app connects to the distributors of threat lists and country data (urlhaus.abuse.ch, feodotracker.abuse.ch, www.spamhaus.org, download.db-ip.com) to download them. Its only other connections are for showing ads (Google AdMob) and sending crash reports when the app stops unexpectedly (Firebase Crashlytics).',
     'App Monitor reads each app’s usage time to tell apart traffic while an app is not in use, and the list of installed apps to show app names. This information is not sent outside the device either.',
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
+    'MP3 Converter reads the video you choose on your device and extracts and converts its audio there. Videos, converted audio and file names are never sent outside the device, including to the Manager. Temporary files made during previews and conversion are kept inside the app and deleted when no longer needed. Converted audio is saved to the location you choose (the Music folder, the Downloads folder, the same folder as the video, or a folder you choose). When a folder is used, the app accesses only folders you have allowed through Android’s folder picker. Settings such as format, quality and save location are stored on your device.',
+    'MP3 Converter connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
     'When an app communicates with a server (for example, to download question data), the server records your IP address. No other personally identifiable information is collected.',
     'FuRUSH downloads its question data from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. It checks for updates when the app starts and downloads data when you open a mode. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub.',
@@ -1473,6 +1628,7 @@ const LEGAL = [
     `You can opt out of other third-party vendors’ use of cookies at ${A(L_ABOUTADS, 'aboutads.info')} (in Europe, ${A(L_YOURCHOICES, 'youronlinechoices.eu')}).`,
     'For users in regions where consent is required by law, such as the European Economic Area (EEA), the United Kingdom and Switzerland, ads are served after confirming consent. Without consent, only non-personalized ads are shown.',
     'In TaPru, AdMob is configured to treat the app as child-directed: personalized ads are not shown, and only ads suitable for all ages (rated G) are shown.',
+    'MP3 Converter shows only native ads in a fixed frame at the top of the screen. In regions where consent is required, you can change your ad consent at any time from “Privacy options” in the app’s menu.',
     'The Manager receives only aggregated figures from AdMob, such as impressions and revenue, and never receives information that identifies individual users.',
     `For how Google uses information, see ${A(L_GOOGLE_PARTNER, 'How Google uses information from sites or apps that use our services')}, ${A(L_GOOGLE_ADS, 'Google Advertising')} and the ${A(L_GOOGLE_PRIV, 'Google Privacy Policy')}.`,
   ]) +
@@ -1530,8 +1686,11 @@ const LEGAL = [
     'アプリ見守りの国データは、DB-IP Lite（db-ip.com、CC BY 4.0）を利用しています。脅威リストは、URLhaus・HaGeZi・Feodo Tracker・Spamhaus DROP の各配布元の条件に従って利用します。',
     `ML Kit の利用にあたっては、${A(L_MLKIT, 'ML Kit の利用規約')}に従います。`,
     'タップる？のロゴの文字には、M PLUS Rounded 1c（SIL Open Font License 1.1）の一部を利用しています。',
+    `MP3変換は、音声の変換に ${A(L_FFMPEG, 'FFmpeg')}（LGPL 2.1 以降）と ${A(L_FFMPEGKIT, 'FFmpegKit')}（LGPL 3.0。アプリに組み込んでいるのは、その後継として公開されている com.antonkarpenko:ffmpeg-kit-audio 2.2.3 で、FFmpeg 8.1 を含みます）を、MP3 の作成に ${A(L_LAME, 'LAME')}（LGPL）を利用しています。` +
+    `これらは店長が改変せず、LGPL の条件に従って、置き換えのできるライブラリとして組み込んでいます。ソースコードは各プロジェクトの公開ページから入手でき、ライセンスの全文は ${A(L_LGPL21, 'GNU LGPL 2.1')}・${A(L_LGPL3, 'GNU LGPL 3.0')} でご覧いただけます。FFmpegKit の audio 版に含まれるそのほかの音声ライブラリも、それぞれのライセンスに従って利用しています。アプリのメニューの「アプリについて」にも、使用しているソフトウェアを表示しています。`,
     'アプリの出題データは、店長が用意したものです。第三者の権利を侵害しないよう配慮します。',
     '利用者が取り込む PDF の著作権は、それぞれの権利者に帰属します。権利者の許諾なく取り込んだり、印刷・配布したりしないでください。',
+    'MP3変換で変換する動画と、変換した音声の著作権は、それぞれの権利者に帰属します。変換は、ご自身で撮影した動画など、使ってよい動画に限ってください。権利者の許諾なく、変換した音声を配布・公開しないでください。コピー防止（DRM）などの技術的な保護を外して変換することもしないでください。',
   ]) +
   H('6. 権利に関する申し立て') +
   P('本サイトやアプリが、あなたの著作権などの権利を侵害していると思われる場合は、<a href="#contact">お問い合わせ</a>の「権利に関する申し立て」からご連絡ください。次の内容をお知らせいただくと、確認がスムーズです。') +
@@ -1554,8 +1713,11 @@ const LEGAL = [
     'Country data in App Monitor is from DB-IP Lite (db-ip.com, CC BY 4.0). Threat lists are used under the terms of their distributors: URLhaus, HaGeZi, Feodo Tracker and Spamhaus DROP.',
     `ML Kit is used in accordance with the ${A(L_MLKIT, 'ML Kit Terms of Service')}.`,
     'The TaPru logo uses part of the M PLUS Rounded 1c font (SIL Open Font License 1.1).',
+    `MP3 Converter uses ${A(L_FFMPEG, 'FFmpeg')} (LGPL 2.1 or later) and ${A(L_FFMPEGKIT, 'FFmpegKit')} (LGPL 3.0; the app includes com.antonkarpenko:ffmpeg-kit-audio 2.2.3, a successor release that contains FFmpeg 8.1) for audio conversion, and ${A(L_LAME, 'LAME')} (LGPL) for creating MP3 files.` +
+    ` The Manager has not modified them, and they are included as replaceable libraries under the terms of the LGPL. Their source code is available from each project’s website, and the full license texts are at ${A(L_LGPL21, 'GNU LGPL 2.1')} and ${A(L_LGPL3, 'GNU LGPL 3.0')}. The other audio libraries included in the audio edition of FFmpegKit are also used under their respective licenses. The software used is also listed under “About” in the app’s menu.`,
     'The question data in the apps is prepared by the Manager, with care not to infringe the rights of others.',
     'The copyright of PDFs you open in the apps belongs to their respective owners. Please do not import, print or distribute them without the owner’s permission.',
+    'The copyright of videos you convert with MP3 Converter, and of the converted audio, belongs to their respective owners. Please convert only videos you are allowed to use, such as ones you filmed yourself. Do not distribute or publish converted audio without the owner’s permission, and do not remove copy protection (DRM) or other technical protection measures to convert a video.',
   ]) +
   H('6. Rights claims') +
   P('If you believe that this website or an app infringes your copyright or other rights, please contact us through <a href="#contact">Contact</a> with the subject “Rights claim”. Including the following will help us check quickly:') +
@@ -1589,7 +1751,8 @@ const LEGAL = [
   H('6. 禁止事項') +
   UL([
     '法令または公序良俗に反する行為',
-    '他人の著作権などの権利を侵害する行為（権利者の許諾なく取り込んだ PDF を配布することなどを含みます）',
+    '他人の著作権などの権利を侵害する行為（権利者の許諾なく取り込んだ PDF や、権利者の許諾なく変換した音声を配布・公開することなどを含みます）',
+    'コピー防止（DRM）などの技術的な保護を外して、動画を変換する行為',
     'アプリや本サイトの運営を妨げる行為、不正アクセス、サーバーへ過度な負荷をかける行為',
     '出題データなどを、店長の許諾なく大量に取得・再配布する行為',
     'アプリの解析・改変・再配布（法令で認められる範囲を除きます）',
@@ -1606,6 +1769,7 @@ const LEGAL = [
     '端末内のデータは、端末の故障・初期化・アンインストールなどで失われることがあります。大切なデータは、ご自身でも控えを取っておいてください。',
     'アプリ見守りの危険度は、決めたルールに当てはめて機械的に判定した参考情報です。アプリが正常かどうかの最終的な判断は、利用者ご自身で行ってください。判定をもとに行ったアンインストールなどの操作の結果について、店長は責任を負いません。',
     'タップる？の計測結果・分析・称号は、遊びとして楽しむためのもので、医学的・科学的な評価ではありません。計測値は、端末の性能やタッチパネルによって変わることがあります。連打による指や手首の痛み、端末の故障・破損について、店長は責任を負いません。適度に休憩しながらお楽しみください。',
+    'MP3変換は、端末の中で動画の音声を変換する道具です。すべての動画が変換できることや、変換後の音質を保証するものではありません。MP3・AAC は圧縮し直すため、元の音より少し劣化することがあります。変換した音声の利用について、店長は責任を負いません。長い動画の変換では、端末の発熱や電池の消費にご注意ください。',
     '外部のサービス（広告、ストアなど）や第三者のサイトの内容・動作について、店長は責任を負いません。',
   ]) +
   P('ただし、店長に故意または重大な過失がある場合は、この項は適用されません。') +
@@ -1648,7 +1812,8 @@ const LEGAL = [
   H('6. Prohibited conduct') +
   UL([
     'Conduct that violates laws or public order and morals',
-    'Infringing the copyright or other rights of others (including distributing PDFs imported without the owner’s permission)',
+    'Infringing the copyright or other rights of others (including distributing or publishing PDFs, or audio converted from videos, without the owner’s permission)',
+    'Removing copy protection (DRM) or other technical protection measures to convert videos',
     'Interfering with the operation of the apps or this website, unauthorized access, or placing excessive load on servers',
     'Collecting or redistributing question data or similar content in bulk without the Manager’s permission',
     'Reverse engineering, modifying or redistributing the apps (except as permitted by law)',
@@ -1665,6 +1830,7 @@ const LEGAL = [
     'Data on your device may be lost due to device failure, reset or uninstallation. Please keep your own copies of important data.',
     'The risk levels in App Monitor are reference information determined mechanically by fixed rules. You must make the final decision on whether an app is safe. The Manager is not responsible for the results of actions such as uninstalling an app based on these levels.',
     'TaPru’s measurements, analyses and titles are for fun and are not medical or scientific evaluations. Measured values may vary depending on device performance and touch screen. The Manager is not responsible for finger or wrist pain from rapid tapping, or for device failure or damage. Please take breaks as you play.',
+    'MP3 Converter is a tool that converts the audio of videos on your device. The Manager does not guarantee that every video can be converted or the quality of the converted audio. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original. The Manager is not responsible for how you use converted audio. When converting long videos, please watch out for device heat and battery use.',
     'The Manager is not responsible for the content or operation of external services (ads, app stores, etc.) or third-party websites.',
   ]) +
   P('However, this section does not apply where the Manager acts with intent or gross negligence.') +
