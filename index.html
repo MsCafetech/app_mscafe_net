@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 317,097 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 317,473 バイト）。</pre>';
   }
 });
 </script>
@@ -133,7 +133,8 @@ const MAIL_R = '==QbvNmLslWYtdGQ5JXZ25SeuFWbukncyVWb';
 const TEAM = [
   { cls: 'pm',     role: 'PM',      name: 'M.A.C.Y', kind: 'human', desc: L('企画と優先順位を決める', 'Plans the menu and sets priorities') },
   { cls: 'coder',  role: 'CODER',   name: 'Claude',  kind: 'ai',    desc: L('設計と実装を担当する', 'Designs and builds the apps') },
-  { cls: 'subc',   role: 'DESIGNER', name: 'Gemini',  kind: 'ai',    desc: L('画面とデザインを担当する', 'Handles screens and visual design') },
+  { cls: 'subc',   role: 'DESIGNER', name: 'Gemini / Google Flow', kind: 'ai', desc: L('画面とデザインを担当する', 'Handles screens and visual design') },
+  { cls: 'snd',    role: 'SOUND',   name: 'Flow Music', kind: 'ai', desc: L('効果音や音楽などの音響を担当する', 'Handles sound effects and music') },
   { cls: 'adv',    role: 'ADVISOR', name: 'ChatGPT', kind: 'ai',    desc: L('企画の相談役', 'Advises on ideas') },
   { cls: 'sup',    role: 'SUPERVISOR', name: L('現役東大生', 'A current University of Tokyo student'), kind: 'human', desc: L('アプリの監修', 'Supervises the apps') },
 ];
@@ -412,16 +413,18 @@ h2{font:900 clamp(26px,4vw,38px)/1.3 var(--f-display);text-wrap:balance}
   .node.sup::before{content:'';position:absolute;left:100%;top:50%;width:var(--cg);border-top:2px dashed var(--line)}
   .node.subc{grid-column:4;grid-row:2}
   .node.subc::before{content:'';position:absolute;right:100%;top:50%;width:var(--cg);border-top:2px solid var(--line)}
+  .node.snd{grid-column:1;grid-row:2}
+  .node.snd::before{content:'';position:absolute;left:100%;top:50%;width:var(--cg);border-top:2px solid var(--line)}
   .node.adv::before{content:'';position:absolute;right:100%;top:50%;width:var(--cg);border-top:2px dashed var(--line)}
   .node.coder::before{content:'';position:absolute;left:50%;bottom:100%;height:var(--rg);border-left:2px solid var(--line)}
 }
 @media (max-width:1000px){
   .org{display:grid;grid-template-columns:minmax(0,1fr);row-gap:18px}
-  .node.coder,.node.subc,.node.adv,.node.sup{margin-left:30px}
+  .node.coder,.node.subc,.node.snd,.node.adv,.node.sup{margin-left:30px}
   .node.pm::after{content:'';position:absolute;left:10px;top:100%;height:18px;border-left:2px solid var(--line)}
-  .node.coder::before,.node.subc::before,.node.adv::before,.node.sup::before{content:'';position:absolute;left:-20px;top:-9px;width:20px;height:calc(50% + 9px);border-left:2px solid var(--line);border-bottom:2px solid var(--line);border-bottom-left-radius:10px}
+  .node.coder::before,.node.subc::before,.node.snd::before,.node.adv::before,.node.sup::before{content:'';position:absolute;left:-20px;top:-9px;width:20px;height:calc(50% + 9px);border-left:2px solid var(--line);border-bottom:2px solid var(--line);border-bottom-left-radius:10px}
   .node.adv::before,.node.sup::before{border-bottom-style:dashed}
-  .node.coder::after,.node.subc::after,.node.adv::after,.node.sup::after{content:'';position:absolute;left:-20px;top:50%;bottom:-9px;border-left:2px solid var(--line)}
+  .node.coder::after,.node.subc::after,.node.snd::after,.node.adv::after,.node.sup::after{content:'';position:absolute;left:-20px;top:50%;bottom:-9px;border-left:2px solid var(--line)}
   .org>.node:last-child::after{content:none}
 }
 .admin{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
