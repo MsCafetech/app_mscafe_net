@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 368,293 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 369,336 バイト）。</pre>';
   }
 });
 </script>
@@ -1223,7 +1223,7 @@ const APPS = [
     info: [[L('アプリ名', 'App name'), 'BOMBOM'], [L('ジャンル', 'Genre'), L('ゲーム（パズル）', 'Game (puzzle)')], [L('対応OS', 'OS'), L('Android 8.0 以上（縦画面）',
         'Android 8.0 or later (portrait)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）',
         'Google Play (closed testing)')], [L('記録', 'Records'), L('進み具合・最高スコア・アイテムは、端末の中だけに保存します。', 'Progress, best scores and items are saved on the device only.')],
-        [L('外部との通信', 'External connections'), L('広告の表示（Google AdMob）だけ。遊んだ記録は送りません。', 'Only to show ads (Google AdMob). Your play records are never sent.')], [L('言語', 'Languages'), L('日本語', 'Japanese')]],
+        [L('外部との通信', 'External connections'), L('広告の表示（Google AdMob）と、ステージなどのゲームデータの更新（GitHub）だけ。遊んだ記録は送りません。', 'Only to show ads (Google AdMob) and update game data such as stages (GitHub). Your play records are never sent.')], [L('言語', 'Languages'), L('日本語', 'Japanese')]],
     note: L('クローズドテスト中のため、ステージ・得点・アイテムなどの内容は変わることがあります。進み具合やアイテムは端末の中に保存しているため、アンインストールすると消えます。',
         'The app is in closed testing, so stages, scores, items and other details may change. Progress and items are saved on the device, so they are lost if you uninstall the app.'),
   },
@@ -1742,7 +1742,7 @@ const LEGAL = [
     'アプリ見守りは、使っていない時間の通信を見分けるために各アプリの使用時間を、アプリ名を表示するために端末のアプリの一覧を参照します。これらも端末の外には送りません。',
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
     'MP3変換は、利用者が選んだ動画を端末の中で読み込み、音声を取り出して変換します。動画、変換した音声、ファイル名を、店長を含む外部へ送信することはありません。試聴や変換の途中で作る一時ファイルはアプリの中に置き、使い終わると削除します。変換した音声は、利用者が選んだ保存先（音楽フォルダ、ダウンロードフォルダ、元の動画と同じフォルダ、指定したフォルダ）に保存します。フォルダを使うときは、Android のフォルダ選択で利用者が許可したフォルダにだけアクセスします。形式・音質・保存先などの設定は端末内に保存します。',
-    'BOMBOM は、ステージの進み具合・最高スコア・アイテムの所持数・設定を端末の中に保存し、店長を含む外部へは送信しません。BOMBOM の通信は、広告の表示（Google AdMob）のためのものです。',
+    'BOMBOM は、ステージの進み具合・最高スコア・アイテムの所持数・設定を端末の中に保存し、店長を含む外部へは送信しません。BOMBOM の通信は、広告の表示（Google AdMob）と、ステージなどのゲームデータの更新のためのものです。ゲームデータは GitHub（GitHub, Inc.）の公開リポジトリから取得します（raw.githubusercontent.com）。アプリの起動時に更新の有無を確かめ、新しいデータがあればダウンロードします。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。',
     'MP3変換の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
     'アプリがサーバーと通信する際（出題データの取得など）、サーバー側でIPアドレスが記録されます。それ以外の個人を特定する情報は取得しません。',
@@ -1819,7 +1819,7 @@ const LEGAL = [
     'App Monitor reads each app’s usage time to tell apart traffic while an app is not in use, and the list of installed apps to show app names. This information is not sent outside the device either.',
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
     'MP3 Converter reads the video you choose on your device and extracts and converts its audio there. Videos, converted audio and file names are never sent outside the device, including to the Manager. Temporary files made during previews and conversion are kept inside the app and deleted when no longer needed. Converted audio is saved to the location you choose (the Music folder, the Downloads folder, the same folder as the video, or a folder you choose). When a folder is used, the app accesses only folders you have allowed through Android’s folder picker. Settings such as format, quality and save location are stored on your device.',
-    'BOMBOM saves your stage progress, best scores, items and settings on your device and does not send them outside the device, including to the Manager. BOMBOM connects to the network to show ads (Google AdMob).',
+    'BOMBOM saves your stage progress, best scores, items and settings on your device and does not send them outside the device, including to the Manager. BOMBOM connects to the network to show ads (Google AdMob) and to update game data such as stages. Game data is downloaded from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. The app checks for updates when it starts and downloads new data if there is any. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub.',
     'MP3 Converter connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
     'When an app communicates with a server (for example, to download question data), the server records your IP address. No other personally identifiable information is collected.',
