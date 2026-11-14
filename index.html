@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 368,270 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 368,293 バイト）。</pre>';
   }
 });
 </script>
@@ -1189,7 +1189,7 @@ const APPS = [
         + 'Each color blasts in its own direction: blue only where it stands, red up and down, green left and right, yellow diagonally, and purple in all four directions. '
         + 'After the blasts, bombs fall and refill, and the next wave starts by itself from fire left on the board or from your items. Add up the score of 3 turns to aim for bronze, silver or gold. '
         + 'Now in closed testing, with stages 1 to 10 of Chapter 1, “Plains”. The screens on this site differ in detail from the real app.'),
-    os: L('対応OS　Android 8.0 以上　　料金　無料（広告なし）', 'OS: Android 8.0 or later　　Price: Free (no ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
+    os: L('対応OS　Android 8.0 以上　　料金　無料（広告あり）', 'OS: Android 8.0 or later　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
     demo: bbDemo, init: initBb,
     features: [
       [ILL.bbColor, L('色ごとに違う爆炎', 'Each color blasts its own way'), L('青はその場だけ、赤は上下、緑は左右、黄は斜め、紫は上下左右の1マスに爆炎が広がります。'
@@ -1221,9 +1221,9 @@ const APPS = [
       [L('3ターンでメダル', 'A medal after 3 turns'), L('連鎖とウェーブが終わるとターン終了。3ターンの合計スコアでメダルが決まります。', 'The turn ends when the chains and waves stop. Your 3-turn total decides the medal.')],
     ],
     info: [[L('アプリ名', 'App name'), 'BOMBOM'], [L('ジャンル', 'Genre'), L('ゲーム（パズル）', 'Game (puzzle)')], [L('対応OS', 'OS'), L('Android 8.0 以上（縦画面）',
-        'Android 8.0 or later (portrait)')], [L('料金', 'Price'), L('無料（広告なし）', 'Free (no ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）',
+        'Android 8.0 or later (portrait)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）',
         'Google Play (closed testing)')], [L('記録', 'Records'), L('進み具合・最高スコア・アイテムは、端末の中だけに保存します。', 'Progress, best scores and items are saved on the device only.')],
-        [L('外部との通信', 'External connections'), L('なし（インターネットに接続しません）', 'None (the app does not connect to the internet)')], [L('言語', 'Languages'), L('日本語', 'Japanese')]],
+        [L('外部との通信', 'External connections'), L('広告の表示（Google AdMob）だけ。遊んだ記録は送りません。', 'Only to show ads (Google AdMob). Your play records are never sent.')], [L('言語', 'Languages'), L('日本語', 'Japanese')]],
     note: L('クローズドテスト中のため、ステージ・得点・アイテムなどの内容は変わることがあります。進み具合やアイテムは端末の中に保存しているため、アンインストールすると消えます。',
         'The app is in closed testing, so stages, scores, items and other details may change. Progress and items are saved on the device, so they are lost if you uninstall the app.'),
   },
@@ -1706,10 +1706,10 @@ const dateLine = `<p class="dm">制定：${LEGAL_DATE}　最終更新：${LEGAL_
 const dateLineEn = `<p class="dm">Established: ${enDate(LEGAL_DATE)} / Last updated: ${enDate(LEGAL_UPDATED)}</p>`;
 const MAILBOX = `<div class="mailbox"><canvas class="mail" aria-label="メールアドレス（スパム対策のため画像で表示しています）" role="img"></canvas><small>スパム対策のため、アドレスは画像で表示しています。お手数ですが、画像を見ながら入力してください。</small></div>`;
 const MAILBOX_EN = `<div class="mailbox"><canvas class="mail" aria-label="Email address (shown as an image to prevent spam)" role="img"></canvas><small>To prevent spam, the address is shown as an image. Please type it in by looking at the image.</small></div>`;
-const AD_APPS = 'タップる？、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り';
-const NOAD_APPS = 'BOMBOM、マルチ翻訳PDFビューワー';
-const AD_APPS_EN = 'タップる？ (TaPru), FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter) and アプリ見守り (App Monitor)';
-const NOAD_APPS_EN = 'BOMBOM and マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
+const AD_APPS = 'タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り';
+const NOAD_APPS = 'マルチ翻訳PDFビューワー';
+const AD_APPS_EN = 'タップる？ (TaPru), BOMBOM, FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter) and アプリ見守り (App Monitor)';
+const NOAD_APPS_EN = 'マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
 const ALL_APPS = 'タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー';
 const ALL_APPS_EN = 'タップる？ (TaPru), BOMBOM, FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter), アプリ見守り (App Monitor) and マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
 const L_GOOGLE_PARTNER = 'https://policies.google.com/technologies/partner-sites';
@@ -1742,7 +1742,7 @@ const LEGAL = [
     'アプリ見守りは、使っていない時間の通信を見分けるために各アプリの使用時間を、アプリ名を表示するために端末のアプリの一覧を参照します。これらも端末の外には送りません。',
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
     'MP3変換は、利用者が選んだ動画を端末の中で読み込み、音声を取り出して変換します。動画、変換した音声、ファイル名を、店長を含む外部へ送信することはありません。試聴や変換の途中で作る一時ファイルはアプリの中に置き、使い終わると削除します。変換した音声は、利用者が選んだ保存先（音楽フォルダ、ダウンロードフォルダ、元の動画と同じフォルダ、指定したフォルダ）に保存します。フォルダを使うときは、Android のフォルダ選択で利用者が許可したフォルダにだけアクセスします。形式・音質・保存先などの設定は端末内に保存します。',
-    'BOMBOM は、ステージの進み具合・最高スコア・アイテムの所持数・設定を端末の中に保存し、店長を含む外部へは送信しません。BOMBOM はインターネットに接続せず、広告や Firebase も使っていません。',
+    'BOMBOM は、ステージの進み具合・最高スコア・アイテムの所持数・設定を端末の中に保存し、店長を含む外部へは送信しません。BOMBOM の通信は、広告の表示（Google AdMob）のためのものです。',
     'MP3変換の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
     'アプリがサーバーと通信する際（出題データの取得など）、サーバー側でIPアドレスが記録されます。それ以外の個人を特定する情報は取得しません。',
@@ -1819,7 +1819,7 @@ const LEGAL = [
     'App Monitor reads each app’s usage time to tell apart traffic while an app is not in use, and the list of installed apps to show app names. This information is not sent outside the device either.',
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
     'MP3 Converter reads the video you choose on your device and extracts and converts its audio there. Videos, converted audio and file names are never sent outside the device, including to the Manager. Temporary files made during previews and conversion are kept inside the app and deleted when no longer needed. Converted audio is saved to the location you choose (the Music folder, the Downloads folder, the same folder as the video, or a folder you choose). When a folder is used, the app accesses only folders you have allowed through Android’s folder picker. Settings such as format, quality and save location are stored on your device.',
-    'BOMBOM saves your stage progress, best scores, items and settings on your device and does not send them outside the device, including to the Manager. BOMBOM does not connect to the internet and uses no ads or Firebase.',
+    'BOMBOM saves your stage progress, best scores, items and settings on your device and does not send them outside the device, including to the Manager. BOMBOM connects to the network to show ads (Google AdMob).',
     'MP3 Converter connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
     'When an app communicates with a server (for example, to download question data), the server records your IP address. No other personally identifiable information is collected.',
@@ -1832,7 +1832,7 @@ const LEGAL = [
     'If you email us, we receive your email address and the content of your message.',
   ]) +
   H('3. Advertising (Google AdMob)') +
-  P(`Among the Manager’s apps, ${AD_APPS_EN} show ads served by Google AdMob, an advertising service of Google LLC. ${NOAD_APPS_EN} do not show ads.`) +
+  P(`Among the Manager’s apps, ${AD_APPS_EN} show ads served by Google AdMob, an advertising service of Google LLC. ${NOAD_APPS_EN} does not show ads.`) +
   UL([
     'To serve ads, measure impressions and performance, and prevent fraud, AdMob collects and sends to Google information such as your device’s advertising ID (Android Advertising ID / iOS IDFA), IP address, approximate location (estimated from the IP address), device and OS information, app usage, and ad views and taps.',
     'Third-party vendors, including Google, may use cookies and identifiers such as the advertising ID to serve ads based on your past use of this app and other apps and websites (personalized ads).',
