@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MsCafe.tech</title>
-<meta name="description" content="MsCafe.tech は、M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店です。PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？、MP3変換 の紹介と、プライバシーポリシー・利用規約・お問い合わせを掲載しています。">
+<meta name="description" content="MsCafe.tech は、M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店です。タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー の紹介と、プライバシーポリシー・利用規約・お問い合わせを掲載しています。">
 <meta name="theme-color" content="#0A2622">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MsCafe.tech">
 <meta property="og:title" content="MsCafe.tech｜アプリを紹介する喫茶店">
-<meta property="og:description" content="M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店。PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？、MP3変換 を紹介しています。">
+<meta property="og:description" content="M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店。タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー を紹介しています。">
 <meta property="og:locale" content="ja_JP">
 </head>
 <body>
@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 317,473 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 368,270 バイト）。</pre>';
   }
 });
 </script>
@@ -56,6 +56,7 @@ const SITE = {
   lead: L('アプリを紹介する喫茶店です。気になるアプリを開いて、ゆっくりご覧ください。', 'Welcome to a caf\u00E9 that serves apps. Open any app that catches your eye and take your time.'),
 };
 const NEWS = [
+  { date: '2026/11/14', tag: 'BOMBOM', text: L('新しいゲーム「BOMBOM」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new game “BOMBOM”. We are looking for testers.') },
   { date: '2026/11/10', tag: L('MP3変換', 'MP3 Converter'), text: L('新しいアプリ「MP3変換」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new app “MP3 Converter”. We are looking for testers.') },
   { date: '2026/11/04', tag: L('タップる？', 'TaPru'), text: L('新しいゲーム「タップる？」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new game “TaPru”. We are looking for testers.') },
   { date: '2026/11/01', tag: 'FuRUSH', text: L('Android 版のクローズドテストを開始しました。テスターを募集しています。', 'Closed testing of the Android version has started. We are looking for testers.') },
@@ -73,12 +74,14 @@ const BUG_FORM_FR = '';
 const BUG_FORM_AM = 'https://forms.gle/7fReguSQ3ut8kDpGA';
 const BUG_FORM_TP = '';
 const BUG_FORM_M2A = '';
+const BUG_FORM_BB = '';
 const TEST_URL_PDF = 'https://play.google.com/store/apps/details?id=net.mscafe.pdfmasking';
 const TEST_URL_MT = '';
 const TEST_URL_FR = 'https://play.google.com/store/apps/details?id=net.mscafe.furush';
 const TEST_URL_AM = 'https://play.google.com/store/apps/details?id=net.mscafe.appmonitor';
 const TEST_URL_TP = 'https://play.google.com/store/apps/details?id=net.mscafe.tapru';
 const TEST_URL_M2A = 'https://play.google.com/store/apps/details?id=net.mscafe.movie2audio';
+const TEST_URL_BB = 'https://play.google.com/store/apps/details?id=net.mscafe.bombom2';
 const SHOW_TODO = true;
 const ADMIN_ICON = 'data:image/jpeg;base64,' + [
   '/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCAEAAQADASIAAhEBAxEB/8QAHQABAAEFAQEBAAAA',
@@ -128,7 +131,7 @@ const ADMIN_ICON = 'data:image/jpeg;base64,' + [
   'BSoRQhKhFKFGajNFOSAgKURAERMkAREQBERAEQIgGaIiAIiIAiIgCZoiAKETJCBTmijJATmoUqEBOahMkVB//9k=',
 ].join('');
 const LEGAL_DATE = '2026年10月11日';
-const LEGAL_UPDATED = '2026年11月10日';
+const LEGAL_UPDATED = '2026年11月14日';
 const MAIL_R = '==QbvNmLslWYtdGQ5JXZ25SeuFWbukncyVWb';
 const TEAM = [
   { cls: 'pm',     role: 'PM',      name: 'M.A.C.Y', kind: 'human', desc: L('企画と優先順位を決める', 'Plans the menu and sets priorities') },
@@ -296,6 +299,22 @@ h2{font:900 clamp(26px,4vw,38px)/1.3 var(--f-display);text-wrap:balance}
 .frd-sec{display:flex;align-items:center;gap:10px;font-size:12px;color:#A3AEC0;white-space:nowrap}
 .frd-sec input{min-width:0}
 .frd-sec input{flex:1;accent-color:#5EE1FD}.frd-sec output{font:700 12px/1 var(--f-mono);color:#EAF0FF;min-width:3.4em;text-align:right}
+.bbd{position:relative;width:min(360px,100%);display:grid;gap:8px;padding:12px;border-radius:24px;background:linear-gradient(#5BAA3C,#3E8A2A);box-shadow:0 26px 50px -22px rgba(0,0,0,.5)}
+.bbd-hud{display:flex;justify-content:space-between;padding:6px 12px;border-radius:12px;background:rgba(10,30,10,.55);color:#FFF6D6;font:900 13px/1.2 var(--f-display)}
+.bbd-hud b{font:700 17px/1 var(--f-mono);color:#FFE14D}
+.bbd-board{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;padding:6px;border-radius:14px;background:repeating-conic-gradient(#8BCB5F 0 25%,#7BBE50 0 50%) 0 0/28.6% 28.6%}
+.bbd-c{appearance:none;border:0;padding:0;aspect-ratio:1;background:transparent;border-radius:8px;cursor:pointer;display:grid;place-items:center;touch-action:manipulation}
+.bbd-c i{width:76%;height:76%;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.75) 0 12%,transparent 14%),var(--c);box-shadow:inset 0 -3px 0 rgba(0,0,0,.22),0 2px 0 rgba(0,0,0,.25);position:relative}
+.bbd-c i::after{content:'';position:absolute;right:4%;top:-14%;width:22%;height:22%;border-top:2px solid #4A3A28;border-right:2px solid #4A3A28;border-radius:0 80% 0 0}
+.bbd-c i.rare{outline:2px solid #FFF6D6;outline-offset:1px}
+.bbd-c.f{background:rgba(255,138,31,.55)}
+.bbd-c.x i{animation:bbd-x .26s ease-out forwards}
+@keyframes bbd-x{to{transform:scale(1.5);opacity:0;filter:brightness(2)}}
+.bbd-big{position:absolute;left:0;right:0;top:46%;text-align:center;font:900 30px/1 var(--f-display);color:#FFE14D;text-shadow:0 2px 0 #B3410E,0 0 16px rgba(255,138,31,.8);pointer-events:none}
+.bbd-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 12px;font-size:12px;color:var(--muted);max-width:440px}
+.bbd-legend span{display:inline-flex;align-items:center;gap:5px}.bbd-legend i{width:11px;height:11px;border-radius:50%}
+.bbd-again{cursor:pointer}.bbd-again[hidden]{display:none}
+@media (prefers-reduced-motion: reduce){.bbd-c.x i{animation:none;opacity:.2}}
 .tpd{width:min(440px,100%);max-width:100%;min-width:0;aspect-ratio:2/1;display:grid;grid-template-columns:minmax(0,34%) minmax(0,1fr);gap:8px;padding:10px;border-radius:24px;background:#070B1F;color:#E8EEFF;box-shadow:0 26px 50px -22px rgba(0,0,0,.5)}
 .tpd-info{display:grid;align-content:center;gap:1px;padding:8px 10px;border-radius:14px;background:#0E1534;min-width:0}
 .tpd-k{font-size:10.5px;color:#8C97C4}
@@ -725,6 +744,53 @@ const TP_ICON = 'data:image/webp;base64,' + [
   'cYInRayXgd1lkEkL9grv5Ubvmihl7f9Rx5/Fp9sLcSJ5uXYwpZ1PnfUqXHU9yJbRkaI0J6MhjlAAAA==',
 ].join('');
 const tpIcon = (s = 48) => `<img src="${TP_ICON}" width="${s}" height="${s}" alt="${L('タップる？のアイコン', 'TaPru icon')}" style="display:block;border-radius:22%">`;
+const BB_ICON = 'data:image/webp;base64,' + [
+  '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',
+  's7ZDZ8ulu+bLVcAIJ290Abr5Cgje/P556AAAAA==',
+].join('');
+const bbIcon = (s = 48) => `<img src="${BB_ICON}" width="${s}" height="${s}" alt="${L('BOMBOM のアイコン', 'BOMBOM icon')}" style="display:block;border-radius:22%">`;
 const M2A_ICON = 'data:image/webp;base64,' + [
   'UklGRmQKAABXRUJQVlA4IFgKAAAQNACdASrAAMAAPlEkkESjoiIVexzAOAUEpuvm3A2JW/6/t2tB+o/I/2wrf/fPwpy3Bxexz+J6JPUz5hv6k9LPzK/s36t/+t/XTsAP6v1K/oY+W17LX7t/t57QGqveTP7H23/5HlsvYDmVPO/a39F+XPIvwAvUP+c3tDlv9e/2fhU6lMVF4EVAD7tPTKzlfmX+g/ZL4Df5v/bd9T/Zwz7CGZDMhmQzIZjzZV5AytMozza7Acl+ci83bL9BsYaoxfWPPZcc4obCJkiuTE2PLuCPC+1eFGS44zG11Fo85ff17UqPdAZty1J61Tll7DPoOzY6VTrrrCve1A3uhOg9Tnsb0ZvmcAwuDnF6wIBRv8foFOFi7tILGEDbpff+eIrmAJjnzHc4RF8j7Di7YunyPRA4Ib3VGf4I9wOUSzFgp1lLQALDAgZN1zy6VWzCo6jR8MGIgxlnuo7MbcR+0KVW9TMInNtDhnubNgiVrDEz+m0pujD4XyxBNdl1XRozgPY4/xdtTxnB8kJNZsEPz5rGc2boH433c4UUO2bf+maW1EVg6uyxjW+LfFvgwAD+/S8N',
   'gu11Tb/UnfknfknZtegAAAOtDYAb3E9//jJJVilCPZ8ndCvT+v8W1zfRXmiwIsgrA3f4yLc/T84QUeYBpaC9TM/1o44CrEo3Ta2Mhe8PMK7QSvWM0w54ML8aKhNuYi06hb6AJHW8AdowD3NzHIFG/oAw8e4lXGuH8g+jKH1xmFuXOIw53NsI7T2ZrLdk0ouyfTGPQ50srkhXhN1Wxvla7Q3eJhSMVNb8QZWoFA6U5O4N2BT3fDNLMOBm3hCjja8Cu/brt3V+vaFJ/9tTKr3a6ptvAx1UDeNUmBuc4wexFED87vCga/AjZnB69f8/5IBgYkJXAfzZxo5gwl0t+l6OmB9/UvQYfnhDSm2FZYgfUO//GEQD7KvmUFZsdJ8xY1hvNd/5/9KdjQ1C7JkXYxcISKmVN40xcbAqw47o8dcow2ijEY7Mx6uCgpKXQpl62aZzgEzDocf3XlWZCLb9OG4Df3AXYAbMhxlEnadR9FmVHct7zVLhghkTWDNvoqksMKZHPJET9rfLiOmhy4a+RWyqLhP8JffseL1Mi9QolUkdxb7RoA188WO3CkeudqEtfBqsNne082TAbqBET/e0c1TevZ1F',
@@ -735,6 +801,22 @@ const M2A_ICON = 'data:image/webp;base64,' + [
 ].join('');
 const m2aIcon = (s = 48) => `<img src="${M2A_ICON}" width="${s}" height="${s}" alt="${L('MP3変換のアイコン', 'MP3 Converter icon')}" style="display:block;border-radius:22%">`;
 const ILL = {
+  bbColor: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('色ごとに爆炎の向きが違うボム', 'Bombs whose blasts go different ways by color')}">${[['#3D8BFF', 34, ''], ['#FF4D4D', 80, 'M80 42v-14M80 98v14'],
+      ['#35C759', 126, 'M106 70h-12M146 70h12'], ['#FFC933', 172, 'M160 58l-8-8M184 58l8-8M160 82l-8 8M184 82l8 8'], ['#A55BFF', 214, 'M214 50v-10M214 90v10M200 70h-6M228 70h6']].map(([c, x, d]) => `${bbB(x, 70, c, 11)}${d ? `<path d="${d}" stroke="${c}" stroke-width="4" stroke-linecap="round" fill="none"/>` : ''}`).join('')}<text class="t" x="120" y="138" text-anchor="middle">${L('青・赤・緑・黄・紫', 'Blue, red, green, yellow, purple')}</text></svg>`,
+  bbChain: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('爆炎が燃え移ってコンボが増える', 'The blast spreads and the combo grows')}">${[[40, '#35C759'], [90, '#A55BFF'], [140, '#FF4D4D'], [190, '#35C759']].map(([x, c], i) => `${bbB(x, 74, c, 13)}<text class="t" x="${x}" y="112" text-anchor="middle">${i + 1}</text>`).join('')}<path d="M56 74h16M106 74h16M156 74h16" stroke="#FF8A1F" stroke-width="5" stroke-linecap="round"/>
+    <text x="120" y="36" text-anchor="middle" style="font:900 20px sans-serif;fill:#FF8A1F">4 COMBO!</text><text class="t" x="120" y="138" text-anchor="middle">${L('燃え移るたびにコンボ', 'A combo each time it spreads')}</text></svg>`,
+  bbWave: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('ボムが落ちて補充され、次のウェーブへ', 'Bombs fall, refill and start the next wave')}"><rect class="f-paper" x="40" y="24" width="96" height="104" rx="10"/>${[['#3D8BFF', 64, 48], ['#FF4D4D', 112, 48], ['#FFC933', 64, 80], ['#35C759', 112, 80], ['#A55BFF', 64, 110]].map(([c, x, y]) => bbB(x, y, c, 10)).join('')}<circle cx="112" cy="110" r="10" fill="none" stroke="var(--muted)" stroke-dasharray="3 3"/>
+    <path class="s-ink" d="M112 14v18M105 25l7 7 7-7"/><text x="190" y="64" text-anchor="middle" style="font:900 22px sans-serif;fill:#FF8A1F">WAVE</text><text x="190" y="96" text-anchor="middle" style="font:900 30px sans-serif;fill:#FF8A1F">2</text></svg>`,
+  bbItem: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('マッチ・火炎放射・ヘリ・時限爆弾', 'Match, flamethrower, helicopter and time bomb')}">${[[L('マッチ', 'Match'), 'W1', '\uD83D\uDD25'], [L('火炎放射', 'Flame'), 'W2', '\uD83D\uDCA5'], [L('ヘリ', 'Heli'), 'W3', '\uD83D\uDE81'], [L('時限爆弾', 'Timer'), 'W4', '\u23F1']].map(([t, w, e], i) => `<rect class="f-paper" x="${14 + i * 55}" y="34" width="48" height="74" rx="10"/>
+    <text x="${38 + i * 55}" y="66" text-anchor="middle" style="font-size:22px">${e}</text><text class="t" x="${38 + i * 55}" y="88" text-anchor="middle" style="font-size:10px">${t}</text><text class="t" x="${38 + i * 55}" y="102" text-anchor="middle" style="font-size:10px">${w}</text>`).join('')}<text class="t" x="120" y="132" text-anchor="middle">${L('1ゲーム3個まで', 'Up to 3 per game')}</text></svg>`,
+  bbRock: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('岩と、ボスのゴーレム', 'A rock and the golem boss')}"><path d="M30 104l10-26 22-8 18 14 4 20z" fill="#8C8F96"/><path d="M44 84l12 6M60 76l4 12" stroke="#5F6268" stroke-width="2"/>${bbB(54, 50, '#FF4D4D', 10)}<path d="M54 64v8" stroke="#FF8A1F" stroke-width="4" stroke-linecap="round"/>
+    <rect x="120" y="36" width="80" height="74" rx="14" fill="#7B8A6E"/><circle cx="144" cy="64" r="7" fill="#FFE14D"/><circle cx="176" cy="64" r="7" fill="#FFE14D"/><rect x="146" y="84" width="28" height="6" rx="3" fill="#4D5A44"/><text x="160" y="30" text-anchor="middle" style="font:900 14px sans-serif;fill:#FF8A1F">HIT!</text><text class="t" x="160" y="132" text-anchor="middle">${L('ボス', 'Boss')}</text><text class="t" x="56" y="132" text-anchor="middle">${L('岩', 'Rock')}</text></svg>`,
+  bbMedal: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('ブロンズ・シルバー・ゴールドのメダル', 'Bronze, silver and gold medals')}">${[['#C7834A', 60, L('ブロンズ', 'Bronze')], ['#B8C4D6', 120, L('シルバー', 'Silver')], ['#F2B705', 180, L('ゴールド', 'Gold')]].map(([c, x, t]) => `<path d="M${x - 10} 30l10 22 10-22" fill="var(--mask)"/><circle cx="${x}" cy="72" r="22" fill="${c}"/>
+    <circle cx="${x}" cy="72" r="14" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><text class="t" x="${x}" y="118" text-anchor="middle">${t}</text>`).join('')}</svg>`,
+  bbTutorial: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('姫がチュートリアルで教えてくれる', 'The princess teaches you in tutorials')}"><circle cx="56" cy="78" r="26" fill="#FFD9C2"/><path d="M34 60l8-18 8 12 6-14 6 14 8-12 8 18z" fill="#F2B705"/><circle cx="48" cy="80" r="3" fill="#13231F"/><circle cx="64" cy="80" r="3" fill="#13231F"/>
+    <path d="M50 90q6 5 12 0" stroke="#13231F" stroke-width="2" fill="none"/><rect class="f-paper" x="98" y="36" width="126" height="64" rx="14"/><path class="f-paper" d="M100 72l-14 10 16-2z"/><text class="t-jp" x="161" y="62" text-anchor="middle" style="font-size:12px">${L('ボムをタップして', 'Tap a bomb')}</text><text class="t-jp" x="161" y="82" text-anchor="middle" style="font-size:12px">${L('着火してね！', 'to light it!')}</text><text class="t" x="161" y="126" text-anchor="middle">${L('チュートリアル 1・2・3', 'Tutorials 1, 2, 3')}</text></svg>`,
+  bbMap: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('ワールドマップの道にステージが並ぶ', 'Stages along the roads of the world map')}"><path d="M30 124c40 0 40-34 80-34s40-34 80-34" fill="none" stroke="var(--paper-line)" stroke-width="10" stroke-linecap="round"/>${[[30, 124, 1], [70, 104, 2], [110, 90, 3], [150, 72, 4], [190, 56, 5]].map(([x, y, n], i) => `<circle cx="${x}" cy="${y}" r="11" fill="${i < 3 ? 'var(--mask)' : 'var(--paper)'}" stroke="var(--paper-line)" stroke-width="2"/>
+    <text x="${x}" y="${y + 4}" text-anchor="middle" style="font:700 11px sans-serif;fill:${i < 3 ? '#fff' : 'var(--muted)'}">${n}</text>`).join('')}${bbB(110, 66, '#FF4D4D', 9)}<text class="t" x="120" y="28" text-anchor="middle">${L('第1章 平原', 'Chapter 1: Plains')}</text></svg>`,
   m2aPick: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('動画から音声だけを取り出す様子', 'Taking just the audio out of a video')}"><rect class="f-paper" x="20" y="34" width="86" height="64" rx="8"/><path class="f-mask" d="M53 52v28l24-14z"/>
 <text class="t" x="63" y="120" text-anchor="middle">${L('動画', 'Video')}</text><path class="s-ink" d="M116 66h24m-9-9 9 9-9 9"/><path class="s-ink" d="M178 88V46l34-8v42"/><circle class="f-mask" cx="170" cy="88" r="10"/><circle class="f-mask" cx="204" cy="80" r="10"/>
 <text class="t" x="188" y="120" text-anchor="middle">${L('音声', 'Audio')}</text></svg>`,
@@ -1002,6 +1084,21 @@ const tpDemo = () => `<div class="demo">
   <div class="tpd-res" hidden aria-live="polite"></div>
   <p class="demo-note">${L('START を押すと、3・2・1 のあと', 'Press START. After 3, 2, 1 you have ')}${TP_SEC}${L('秒（アプリでは30秒）。右側をひたすらタップしてください。上のボタンでエフェクトを選べます。', ' seconds (30 in the app). Tap the right side as fast as you can. Pick an effect with the buttons above.')}</p>
 </div>`;
+const BB_C = { BL: ['#3D8BFF', 83], GR: ['#35C759', 97], RE: ['#FF4D4D', 103], YE: ['#FFC933', 109], PA: ['#A55BFF', 113], SI: ['#B8C4D6', 137], GO: ['#F2B705', 149] };
+const BB_W = [['BL', 36], ['GR', 20], ['RE', 20], ['PA', 10], ['YE', 10], ['SI', 2], ['GO', 2]];
+const BB_N = 7, BB_TURNS = 3;
+const bbB = (x, y, c, r) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/><circle cx="${x - r * .35}" cy="${y - r * .35}" r="${r * .28}" fill="#fff" fill-opacity=".5"/><path d="M${x + r * .45} ${y - r * .85}q${r * .3} ${-r * .6} ${r * .8} ${-r * .5}" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round"/>`;
+const bbDemo = () => `<div class="demo">
+  <div class="bbd" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
+    <div class="bbd-hud"><span>TURN <b class="bbd-turn">1</b>/${BB_TURNS}</span><span>SCORE <b class="bbd-score">0</b></span></div>
+    <div class="bbd-board"></div>
+    <span class="bbd-big" aria-live="polite"></span>
+  </div>
+  <div class="bbd-legend">${[['BL', L('青：その場だけ', 'Blue: own square')], ['RE', L('赤：上下', 'Red: up/down')], ['GR', L('緑：左右', 'Green: left/right')], ['YE', L('黄：斜め', 'Yellow: diagonal')],
+      ['PA', L('紫：上下左右', 'Purple: 4 ways')], ['SI', L('銀：縦横に遠く', 'Silver: far, straight')], ['GO', L('金：斜めに遠く', 'Gold: far, diagonal')]].map(([k, t]) => `<span><i style="background:${BB_C[k][0]}"></i>${t}</span>`).join('')}</div>
+  <button type="button" class="btn btn-main bbd-again" hidden>${L('もう一度', 'Play again')}</button>
+  <p class="demo-note">${L('ボムをタップすると着火します。3ターンの合計スコアを競います。デモはウェーブ1だけの簡略版で、アプリではこのあと火種やアイテムで次のウェーブが続きます。', 'Tap a bomb to light it. Your score is the total of 3 turns. This demo is a simplified version with wave 1 only; in the app, fire and items keep the next waves going.')}</p>
+</div>`;
 const M2A_DUR = 204000;
 const m2aDemo = () => `<div class="demo">
   <div class="phone" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
@@ -1052,6 +1149,112 @@ const mtDemo = () => `<div class="demo">
 </div>`;
 const APPS = [
   {
+    id: 'tapru', name: L('タップる？', 'TaPru'), genre: L('ゲーム', 'Game'), icon: tpIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_TP, test: TEST_URL_TP,
+    one: L('30秒間ひたすら連打して、速さ・持久力・リズム・位置のブレを分析し、50種類の称号で診断するミニゲーム。', 'A mini game: tap as fast as you can for 30 seconds, then see your speed, stamina, rhythm and drift, and get one of 50 titles.'),
+    headline: L('<span class="nb">30秒、</span><span class="nb">ひたすら<span class="hl">連打</span>。</span>', '<span class="nb">30 seconds.</span> <span class="nb">Just <span class="hl">tap</span>.</span>'),
+    lead: L('喫茶店のテーブルゲームのように、ひと息つきながら遊べるゲームです。3・2・1 の合図のあと30秒間、画面をひたすらタップ。タップのたびに爆発や雷撃、刀などのエフェクトが効果音つきではじけ、終わると速さ・持久力・リズム・位置のブレの分析と、50種類の称号診断。リプレイで、いまの30秒を見返すこともできます。縦でも横でも遊べて、日本語と英語に対応。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
+        'Like the table games in an old caf\u00E9, it is a game to enjoy during a coffee break. After 3, 2, 1, tap the screen as fast as you can for 30 seconds. Explosions, lightning, swords and more burst with sound on every tap, and at the end you get an analysis of your speed, stamina, rhythm and drift, plus one of 50 titles. Replay lets you watch your 30 seconds again. Play in portrait or landscape, in Japanese or English. Now in closed testing. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 8.0 以上　　料金　無料（広告あり）', 'OS: Android 8.0 or later　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
+    demo: tpDemo, init: initTp,
+    features: [
+      [ILL.tpFever, L('30秒ひたすら連打', '30 seconds of tapping'), L('3・2・1 の合図のあと30秒。直近1秒のタップ数が5回で BOOST、8回で RAPID FIRE、10回で FEVER!! に変わります。指を置いたままや、2本目の指でのタップは数えません。', '30 seconds after 3, 2, 1. Five taps in the last second gives BOOST, eight gives RAPID FIRE and ten gives FEVER!!. Resting a finger on the screen or tapping with a second finger does not count.')],
+      [ILL.tpFx, L('エフェクト24種×5パターン', '24 effects × 5 patterns'), L('爆発・ピストル・雷撃・レーザー・氷結・ハート・刀・画面割など24種類、それぞれ効果音つき。障子・水面・釘打ち・コンクリート・ハンコ・花火・お賽銭・爆弾・流れ星の9種は背景ごと変わります。「複合」で3つまで混ぜられ、全部外せば「なし」でも遊べます。', '24 kinds, each with its own sound, including explosions, pistols, lightning, lasers, ice, hearts, swords and shattered screens. Nine of them (shoji paper, water, nails, concrete, stamps, fireworks, shrine offerings, bombs and shooting stars) change the whole background. Mix up to three with “Combo”, or turn them all off and play with “None”.')],
+      [ILL.tpSp, L('必殺技と HIT!', 'Special moves and HIT!'), L('直近1秒に12回たたくと、次の1タップが必殺技に。画面全体に連鎖します。25回ごとに「HIT!」が出て、画面も揺れます。', 'Hit 12 times in a second and your next tap becomes a special move that chains across the whole screen. Every 25 taps, “HIT!” appears and the screen shakes.')],
+      [ILL.tpChart, L('30秒を分析', 'Analysis of your 30 seconds'), L('1秒ごとの棒グラフ、平均と最高の速さ、前半と後半の比べ（持久力）、タップ間隔のリズム、位置のブレや重心の移動がわかります。', 'See a bar chart for each second, average and top speed, first half versus second half (stamina), the rhythm of your tap gaps, and how your taps drift and shift.')],
+      [ILL.tpTitle, L('50種類の称号と自己ベスト', '50 titles and personal bests'), L('プレイの中身から、10系統×5の50種類の称号をひとつ診断します。まだ持っていない称号が優先されるので、遊ぶほど集まります。自己ベストと、称号ごとの獲得回数は「称号図鑑」で見られます。', 'Based on how you played, you get one of 50 titles (10 groups × 5). Titles you do not have yet come first, so the more you play, the more you collect. Your personal bests and how many times you earned each title are in the Title Book.')],
+      [ILL.tpReplay, L('リプレイで見返す', 'Watch it again'), L('結果画面の「リプレイ」で、いま終わった30秒を、タップした位置とエフェクトのままゲーム画面で再生します。結果画面にいる間は何度でも見られます。', 'Press “Replay” on the results screen to play back the 30 seconds you just finished, with your taps and effects where they happened. Watch it as many times as you like while on the results screen.')],
+      [ILL.tpAuto, L('連打アプリはお断り', 'No auto-tappers'), L('タップの間隔や位置が機械のようにそろいすぎているときは、連打アプリの疑いとして集計しません。', 'If tap gaps or positions are too perfectly even, like a machine, the result is treated as a possible auto-tap app and not counted.')],
+      [ILL.tpHand, L('縦でも横でも、利き手も', 'Portrait or landscape, either hand'), L('縦でも横でも遊べます（プレイ中は向きを固定）。横画面では、右利き・左利きでタップエリアを左右に入れ替えます。テーマは端末に合わせる・ライト・ダーク、言語は日本語・English から。HOME には時間帯のあいさつが出ます。', 'Play in portrait or landscape (the screen stays fixed during play). In landscape, the tap area switches sides for right- or left-handers. Themes: follow the device, light or dark; language: Japanese or English. HOME shows a greeting for the time of day.')],
+    ],
+    steps: [
+      [L('利き手とエフェクトを選ぶ', 'Choose your hand and effect'), L('HOME でタップのエフェクトと、横画面なら利き手（右・左）を選びます。「複合」をオンにすると、エフェクトを3つまで混ぜられます。', 'On HOME, choose a tap effect and, in landscape, your dominant hand (right or left). Turn on “Combo” to mix up to three effects.')],
+      [L('3・2・1 で連打', 'Tap after 3, 2, 1'), L('START を押すと 3・2・1 のカウントダウン。合図のあと30秒間、タップエリアをひたすらタップします。', 'Press START for a 3, 2, 1 countdown, then tap the tap area as fast as you can for 30 seconds.')],
+      [L('結果を見る', 'See your results'), L('30秒たつと FINISH!。称号と、1秒ごとのグラフ、速さ・持久力・リズム・位置の分析が出ます。「リプレイ」で見返せます。', 'After 30 seconds comes FINISH!, with your title, a chart for each second and an analysis of speed, stamina, rhythm and position. Press “Replay” to watch it again.')],
+    ],
+    info: [[L('アプリ名', 'App name'), L('タップる？（TaPru）', 'タップる？ (TaPru)')], [L('ジャンル', 'Genre'), L('ゲーム', 'Game')], [L('対応OS',
+        'OS'), L('Android 8.0 以上（縦・横どちらでも）', 'Android 8.0 or later (portrait or landscape)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布',
+        'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('記録', 'Records'), L('タップの記録と分析は、端末の中だけで行います。',
+        'Taps are recorded and analyzed on the device only.')], [L('言語', 'Languages'), L('日本語・English', 'Japanese, English')]],
+    note: L('クローズドテスト中のため、内容は変わることがあります。計測結果は遊びとして楽しむためのもので、医学的・科学的な評価ではありません。連打のしすぎにご注意いただき、適度に休憩しながらお楽しみください。', 'The app is in closed testing, so details may change. The results are just for fun and are not a medical or scientific assessment. Please do not overdo the tapping, and take breaks as you play.'),
+  },
+  {
+    id: 'bombom', name: 'BOMBOM', genre: L('ゲーム', 'Game'), icon: bbIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_BB, test: TEST_URL_BB,
+    one: L('カラフルなボムに着火して、誘爆の連鎖でハイスコアを狙う爆発パズルゲーム。', 'An explosive puzzle game: light a colorful bomb and chain the blasts for a high score.'),
+    headline: L('<span class="nb">ひとつの火で、</span><span class="nb"><span class="hl">大連鎖</span>。</span>', '<span class="nb">One spark,</span> <span class="nb">a <span class="hl">huge chain</span>.</span>'),
+    lead: L('マッチ一本で、テーブルいっぱいの大騒ぎ。盤面のボムをひとつタップして着火すると、爆炎がとなりのボムへ燃え移り、次々に誘爆します。'
+        + 'ボムは色ごとに爆炎の向きが違い、青はその場だけ、赤は上下、緑は左右、黄は斜め、紫は上下左右。爆発のあとはボムが落ちて補充され、'
+        + '盤面に残った火種やアイテムから次のウェーブが自動で始まります。1ステージ3ターンの合計スコアで、ブロンズ・シルバー・ゴールドを目指します。'
+        + 'ただいまクローズドテスト中で、第1章「平原」のステージ1\u301C10を遊べます。本サイトでの画面と、実際に動作させたときの画面は細部が異なります。',
+        'One match, a whole table of chaos. Tap a bomb on the board to light it, and the blast spreads to the bombs next to it, setting them off one after another. '
+        + 'Each color blasts in its own direction: blue only where it stands, red up and down, green left and right, yellow diagonally, and purple in all four directions. '
+        + 'After the blasts, bombs fall and refill, and the next wave starts by itself from fire left on the board or from your items. Add up the score of 3 turns to aim for bronze, silver or gold. '
+        + 'Now in closed testing, with stages 1 to 10 of Chapter 1, “Plains”. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 8.0 以上　　料金　無料（広告なし）', 'OS: Android 8.0 or later　　Price: Free (no ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
+    demo: bbDemo, init: initBb,
+    features: [
+      [ILL.bbColor, L('色ごとに違う爆炎', 'Each color blasts its own way'), L('青はその場だけ、赤は上下、緑は左右、黄は斜め、紫は上下左右の1マスに爆炎が広がります。'
+          + 'たまに出るレアボムは、銀が縦横、金が斜めに遠くまで届き、黒は一度だけ火種を残します。', 'Blue blasts only its own square; red goes up and down, green left and right, yellow diagonally and purple in all four directions, one square each. '
+          + 'Rare bombs appear now and then: silver reaches far along rows and columns, gold far along diagonals, and black leaves fire behind once.')],
+      [ILL.bbChain, L('誘爆とコンボ', 'Chains and combos'), L('爆炎がほかのボムに燃え移るたびにコンボが1段ずつ増えます。得点は、爆発したボムの基本点の合計 × ウェーブ × コンボ倍率。'
+          + '長い連鎖ほど、得点が大きく伸びます。', 'Each time the blast spreads to more bombs, the combo goes up one step. Score = total base points of the exploded bombs × wave × combo multiplier. '
+          + 'The longer the chain, the bigger the score.')],
+      [ILL.bbWave, L('落ちて、補充して、次のウェーブ', 'Fall, refill, next wave'), L('爆発で空いたマスにはボムが落ちて補充されます。盤面に残った火種やアイテムで火がつけば、次のウェーブが自動で始まり、'
+          + 'ウェーブが進むほど得点も大きくなります。', 'Bombs fall into the empty squares and the board refills. If fire left on the board or an item lights a bomb, the next wave starts by itself, '
+          + 'and later waves are worth more.')],
+      [ILL.bbItem, L('4つのアイテム', 'Four items'), L('マッチ・火炎放射・ヘリ・時限爆弾の4種類。盤面に置いて OK で決めると、マッチはタップと同時に、火炎放射・ヘリ・時限爆弾はウェーブ2・3・4で火をつけて、連鎖をつないでくれます。'
+          + '置けるのは1ゲームに3個まで。ログインボーナスで増えます。', 'Match, flamethrower, helicopter and time bomb. Place one on the board and press OK: the match lights up with your tap, and the flamethrower, helicopter and time bomb set off waves 2, 3 and 4 to keep the chain going. '
+          + 'You can place up to 3 per game, and you get more from login bonuses.')],
+      [ILL.bbRock, L('岩とボス', 'Rocks and bosses'), L('盤面には爆炎で壊す岩が出てきます。ステージ7はボスのゴーレム戦。爆炎をボスに当てた回数（HIT）でクリアを目指します。',
+          'Rocks appear on the board, and you break them with blasts. Stage 7 is a boss battle against a golem: land enough blasts on it (HITs) to clear the stage.')],
+      [ILL.bbMedal, L('メダルと最高スコア', 'Medals and best scores'), L('3ターンの合計スコアで、ブロンズ・シルバー・ゴールドのメダル。ブロンズ以上で次のステージへ進めます。'
+          + 'ステージごとに最高スコアを記録します。', 'Your 3-turn total earns a bronze, silver or gold medal. Bronze or better unlocks the next stage. '
+          + 'Your best score is kept for each stage.')],
+      [ILL.bbTutorial, L('姫が教えるチュートリアル', 'Tutorials with the princess'), L('はじめは姫が、着火のしかた、レアボムと岩、アイテムの使い方を、3つのチュートリアルで教えてくれます。',
+          'At the start, the princess teaches you how to light bombs, about rare bombs and rocks, and how to use items, in three tutorials.')],
+      [ILL.bbMap, L('ワールドマップを進む', 'Travel the world map'), L('ステージはワールドマップの道に並んでいます。マップを進むキャラは、ボムの仲間から選べます。'
+          + '全6章120ステージを予定していて、クローズドテストでは第1章のステージ1\u301C10を遊べます。', 'Stages line the roads of the world map, and you choose which bomb buddy walks the map. '
+          + 'Six chapters and 120 stages are planned; the closed test has stages 1 to 10 of Chapter 1.')],
+    ],
+    steps: [
+      [L('ステージを選ぶ', 'Choose a stage'), L('ワールドマップでステージをタップし、目標スコアを確かめて始めます。', 'Tap a stage on the world map, check the target score, and start.')],
+      [L('ボムをタップして着火', 'Tap a bomb to light it'), L('1ターンに1回、好きなボムをタップして着火します。アイテムを置いてから着火することもできます。', 'Once per turn, tap any bomb to light it. You can place items before lighting.')],
+      [L('3ターンでメダル', 'A medal after 3 turns'), L('連鎖とウェーブが終わるとターン終了。3ターンの合計スコアでメダルが決まります。', 'The turn ends when the chains and waves stop. Your 3-turn total decides the medal.')],
+    ],
+    info: [[L('アプリ名', 'App name'), 'BOMBOM'], [L('ジャンル', 'Genre'), L('ゲーム（パズル）', 'Game (puzzle)')], [L('対応OS', 'OS'), L('Android 8.0 以上（縦画面）',
+        'Android 8.0 or later (portrait)')], [L('料金', 'Price'), L('無料（広告なし）', 'Free (no ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）',
+        'Google Play (closed testing)')], [L('記録', 'Records'), L('進み具合・最高スコア・アイテムは、端末の中だけに保存します。', 'Progress, best scores and items are saved on the device only.')],
+        [L('外部との通信', 'External connections'), L('なし（インターネットに接続しません）', 'None (the app does not connect to the internet)')], [L('言語', 'Languages'), L('日本語', 'Japanese')]],
+    note: L('クローズドテスト中のため、ステージ・得点・アイテムなどの内容は変わることがあります。進み具合やアイテムは端末の中に保存しているため、アンインストールすると消えます。',
+        'The app is in closed testing, so stages, scores, items and other details may change. Progress and items are saved on the device, so they are lost if you uninstall the app.'),
+  },
+  {
+    id: 'furush', name: 'FuRUSH', icon: frIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_FR, test: TEST_URL_FR,
+    one: L('答えが一瞬だけ出るフラッシュカードで、年号や化学式を考える前に答えが出るまで刻む暗記アプリ。', 'A memorization app with flashcards that show the answer for just an instant, drilling dates and chemical formulas until the answer comes before you think.'),
+    headline: L('<span class="nb">脳に刻め。</span><span class="nb"><span class="hl">脊髄</span>に刻め。</span>', '<span class="nb">Carve it into your brain.</span> <span class="nb">Into your <span class="hl">spine</span>.</span>'),
+    lead: L('こんなレベルは、知識じゃない。年号・化学式・山手線・国旗・地図などを、答えが一瞬だけ出るフラッシュカードで、考える前に答えが出るまで繰り返します。THINK LESS. KNOW INSTANTLY. ただいま Android 版のクローズドテスト中です。モードは全部で14、いまは社会の略語・日本地図・日本の地形・化学式の4つが使えます（ほかは仕込み中）。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
+        'At this level, it is not knowledge anymore. Dates, chemical formulas, the Yamanote Line, flags, maps and more, on flashcards that show the answer for just an instant, repeated until the answer comes before you think. THINK LESS. KNOW INSTANTLY. The Android version is now in closed testing. There are 14 modes in all; four are available now: social studies abbreviations, the map of Japan, Japanese landforms and chemical formulas (the rest are on the way). The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 8.0 以上 ／ iOS（開発中）　　料金　無料（広告あり）', 'OS: Android 8.0 or later / iOS (in development)　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
+    demo: frDemo, init: initFr,
+    features: [
+      [ILL.frFlash, L('答えは一瞬だけ', 'The answer flashes by'), L('？をタップすると、答えが設定した秒数（0.1\u301C2.0秒）だけ出て、すぐ次のカードへ。カードは上へ消えて、下から次が出ます。', 'Tap ? and the answer appears for the time you set (0.1\u20132.0 seconds), then it is straight on to the next card. Cards slide away upward as the next one rises from below.')],
+      [ILL.frModes, L('全部で14のモード', '14 modes in all'), L('日本史年号、世界史年号、化学式、化学反応式、JR山手線、世界の国旗、世界地図、日本地図、日本の地形、天体・星座、社会の略語、地図記号、物理の名称、英語活用。カードは合わせて約2,200枚。モードは配信するので、あとから増やせます。',
+          'Japanese history dates, world history dates, chemical formulas, chemical equations, the JR Yamanote Line, world flags, the world map, the map of Japan, Japanese landforms, celestial bodies and constellations, social studies abbreviations, map symbols, physics terms and English verb forms. About 2,200 cards in all. Modes are delivered online, so more can be added later.')],
+      [ILL.frPic, L('絵つきの問題と答え', 'Questions and answers with pictures'), L('国旗・地図・駅名標・分子模型・星座・地図記号などの絵が、問題や答えに出ます。', 'Pictures of flags, maps, station signs, molecular models, constellations, map symbols and more appear in questions and answers.')],
+      [ILL.frRev, L('リバース', 'Reverse'), L('モードごとにオン／オフ。問題と答えを入れ替えて、答えから問題を思い出す練習ができます。絵は答えの側に出ます。', 'On or off for each mode. Swap questions and answers to practice recalling the question from the answer. Pictures appear on the answer side.')],
+      [ILL.frFilter, L('出るカードを絞る', 'Choose which cards appear'), L('時代・種類・地域・単元などで、出るカードを絞れます。ホームのタイルには、枚数と何回目かが出ます。', 'Narrow down cards by era, type, region, unit and more. Tiles on Home show the number of cards and how many rounds you have done.')],
+      [ILL.frLoop, L('無限ループ・オート・ランダム', 'Endless loop, auto and shuffle'), L('モードごとにオン／オフ。オートにすると？を自動でタップして、手を離したまま次々にめくれます。ランダムを切ると、山手線のように順番どおりに出せます。最後まで進むと「1周クリア！」です。', 'On or off for each mode. With auto on, ? is tapped for you so cards keep flipping hands-free. Turn shuffle off to go in order, like stations on the Yamanote Line. Reach the end and you get “Round clear!”.')],
+      [ILL.frColor, L('6色とダーク／ライト', '6 colors, dark or light'), L('赤・オレンジ・黄・緑・青・紫の6色から選べて、明るさは端末に合わせる・ダーク・ライトから。縦向きにも横向きにも対応します。オプションで、答えの読み上げ・ヒント・バイブも切り替えられます。', 'Choose red, orange, yellow, green, blue or purple, and follow the device, dark or light. Works in portrait and landscape. Options let you turn answer read-aloud, hints and vibration on or off.')],
+      [ILL.cache, L('ダウンロードして電波なしで', 'Download once, use offline'), L('一度ダウンロードしたモードは、電波がなくても使えます。ホームで下に引っぱると更新を確認して、変わった部分だけをダウンロードします。', 'Modes you have downloaded work without a signal. Pull down on Home to check for updates and download only what has changed.')],
+    ],
+    steps: [
+      [L('モードを選ぶ', 'Pick a mode'), L('ホームのタイルから、覚えたいモードを選びます。未ダウンロードのモードは、先にダウンロードします。', 'Choose the mode you want to learn from the tiles on Home. Modes not yet downloaded are downloaded first.')],
+      [L('？をタップ', 'Tap ?'), L('答えが一瞬だけ出て、次のカードへ。表示時間は下のスライダーで変えられます。', 'The answer flashes, then the next card comes. Change how long it is shown with the slider below.')],
+      [L('1周クリア', 'Round clear'), L('最後のカードまで進むと「1周クリア！」。そのまま、もう1周もできます。', 'Reach the last card for “Round clear!”, then go around again if you like.')],
+    ],
+    info: [[L('アプリ名', 'App name'), 'FuRUSH'], [L('対応OS', 'OS'), L('Android 8.0 以上 ／ iOS（開発中）', 'Android 8.0 or later / iOS (in development)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('モード', 'Modes'), L('全14モード（クローズドテストで使えるのは4モード）', '14 modes (4 available in closed testing)')], [L('データ', 'Data'), L('問題データは、店長が用意しています。', 'The question data is prepared by the Manager.')]],
+    note: L('クローズドテスト中のため、内容は変わることがあります。デモの問題は例で、実際のアプリとは異なります。', 'The app is in closed testing, so details may change. The demo questions are only examples and differ from the real app.'),
+  },
+  {
     id: 'pdf-marker', name: L('PDF暗記マーカー', 'PDF Memorization Marker'), icon: pdfIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_PDF, test: TEST_URL_PDF,
     one: L('問題集PDFの答えをマスクして、タップで確かめる暗記アプリ。現役東大生監修。', 'A study app that masks the answers in your workbook PDFs so you can check them with a tap. Supervised by a current University of Tokyo student.'),
     headline: L('<span class="nb"><span class="hl">答え</span>を隠して、</span><span class="nb">タップで確かめる。</span>', '<span class="nb">Hide the <span class="hl">answers</span>,</span> <span class="nb">check with a tap.</span>'),
@@ -1081,56 +1284,33 @@ const APPS = [
         'Masks, checks, highlights, doodles and bookmarks are saved for each PDF. No copies of PDF files are made.')], [L('操作説明', 'How-to'), L('初回に動く絵で説明します。PDFを開いた画面のメニュー（\u2630）から、いつでも見直せます。', 'Animated guides are shown the first time. You can see them again any time from the menu (\u2630) on the PDF screen.')]],
   },
   {
-    id: 'mt-pdf', name: L('マルチ翻訳PDFビューワー', 'Multi-Translation PDF Viewer'), icon: mtIcon, status: L('開発中', 'In development'), bug: BUG_FORM_MT, test: TEST_URL_MT,
-    one: L('論文や技術文書のPDFを、枠で囲んで日本語に訳せるPDFビューワー。現役東大生立案・監修。', 'A PDF viewer that translates any part of a paper or technical document into Japanese when you draw a frame around it. Planned and supervised by a current University of Tokyo student.'),
-    headline: L('<span class="nb">読めない所を、</span><span class="nb"><span class="hl">囲む</span>だけ。</span>', '<span class="nb">Can’t read it?</span> <span class="nb">Just <span class="hl">frame</span> it.</span>'),
-    lead: L('海外の論文や資料も、コーヒー片手にゆっくり読めるように。英語・中国語・韓国語・ドイツ語・フランス語のPDFを、指でなぞって囲んだ所だけ日本語に訳すビューワーを仕込み中です。翻訳は端末の中で行うので、文章を外に送りません。まだまだ開発中のため、ここでご紹介している機能は予定を含み、変わることがあります。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。', 'So you can read papers and documents from abroad slowly, with a coffee in hand. We are still brewing a viewer that translates just the part of an English, Chinese, Korean, German or French PDF you trace a frame around into Japanese. Translation runs on the device, so your text is never sent anywhere. The app is still in development, so the features described here include plans and may change. The screens on this site differ in detail from the real app.'),
-    os: L('対応OS　Android 7.0 以上 ／ iOS（準備中）', 'OS: Android 7.0 or later / iOS (in preparation)'), store: { label: L('開発中', 'In development'), url: '' },
-    demo: mtDemo, init: initMt,
+    id: 'mp3-convert', name: L('MP3変換', 'MP3 Converter'), icon: m2aIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_M2A, test: TEST_URL_M2A,
+    one: L('動画から音声だけを取り出して、MP3・AAC(M4A)・WAV に変換する Android アプリ。広告はあっても邪魔にならず、広告を見ながら手軽に変換。', 'An Android app that takes just the audio from a video and converts it to MP3, AAC (M4A) or WAV. The ads stay out of your way, so you can convert with ease while they sit quietly on screen.'),
+    headline: L('<span class="nb">動画の音だけ、</span><span class="nb"><span class="hl">手軽に</span>MP3に。</span>', '<span class="nb">Just the sound,</span> <span class="nb"><span class="hl">easily</span> to MP3.</span>'),
+    lead: L('コーヒーを一杯淹れるくらいの手軽さで、動画から音声だけを取り出します。動画を選んで、形式と音質を決めて、ボタンをひとつ押すだけ。MP3・AAC(M4A)・WAV に変換できます。広告は画面の上の決まった枠にだけ出して、操作の邪魔をしません。広告を眺めながら、手軽に変換できます。変換は端末の中だけで行い、動画や音声をサーバーへ送りません。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
+        'As easy as making a cup of coffee: take just the audio out of a video. Choose a video, pick a format and quality, and press one button to convert it to MP3, AAC (M4A) or WAV. Ads appear only in a fixed frame at the top of the screen and never get in the way, so you can convert with ease while they sit quietly on screen. Everything happens on your device; videos and audio are never sent to a server. Now in closed testing. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 10 以上　　料金　無料（広告あり）', 'OS: Android 10 or later　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
+    demo: m2aDemo, init: initM2a,
     features: [
-      [ILL.mtFrame, L('枠で囲んで翻訳', 'Frame to translate'), L('長押ししたまま指でなぞると、角丸の枠が描けます。指を離すと、枠の中の文を読み取って翻訳。画面の真ん中に、上に原文、下に日本語訳が出ます。', 'Long-press and trace to draw a rounded frame. Lift your finger and the text inside is read and translated, with the original on top and the Japanese translation below, in the middle of the screen.')],
-      [ILL.mtLang, L('5つの言語を自動で判別', 'Detects five languages'), L('英語・中国語（簡体字・繁体字）・韓国語・ドイツ語・フランス語から日本語へ。言語は自動で判別し、違ったときは選び直せます。選んだ言語はPDFごとに覚えます。', 'From English, Chinese (Simplified and Traditional), Korean, German and French into Japanese. The language is detected automatically, and you can change it if it is wrong. The choice is remembered for each PDF.')],
-      [ILL.speak, L('原文を読み上げ', 'Read the original aloud'), L('スピーカーのボタンで、枠の中の外国語の文を読み上げます。端末の読み上げ音声を使います。', 'The speaker button reads the foreign-language text in the frame aloud, using your device’s text-to-speech voice.')],
-      [ILL.mtOcr, L('図やスキャンも読める', 'Reads figures and scans'), L('枠の中は、端末内の文字認識（OCR）で読み取ります。図の中の文字や、文字の入っていないスキャンのPDFも訳せます。', 'Text in the frame is read with on-device text recognition (OCR), so even text in figures and scanned PDFs without a text layer can be translated.')],
-      [ILL.cache, L('オフラインで翻訳', 'Translate offline'), L('翻訳モデル（1言語約30MB）を一度ダウンロードすれば、通信なしで翻訳できます。通信するのはモデルの取得だけで、翻訳する文章は送りません。', 'Download a translation model once (about 30 MB per language) and translate with no connection. The only network use is getting the models; the text you translate is never sent.')],
-      [ILL.photo, L('写真からPDFを作る', 'Make PDFs from photos'), L('紙の資料を撮った写真（最大100枚）を、1枚1ページのPDFにして Download フォルダに保存します。そのまま開いて翻訳できます。', 'Turn photos of paper documents (up to 100) into a PDF with one photo per page, saved in the Download folder. Open it right away and translate.')],
-      [ILL.mtView, L('自分好みに読む', 'Read your way'), L('画面の色は9種類から選べて、それぞれライト・ダークに対応。栞、\u25C0\u25B6 のページ送り、スライダーで、長い文書も移動しやすくしました。', 'Choose from nine screen colors, each with light and dark versions. Bookmarks, \u25C0\u25B6 page buttons and a slider make long documents easy to move through.')],
+      [ILL.m2aPick, L('動画を選ぶだけ', 'Just choose a video'), L('端末のファイル選択から動画を1本選ぶと、再生時間や音声トラックを確認します。音声が入っていない動画は、その場でお知らせします。', 'Pick one video with your device’s file picker, and the app checks its length and audio tracks. If a video has no audio, it tells you right away.')],
+      [ILL.m2aFormat, L('MP3・AAC・WAV に変換', 'Convert to MP3, AAC or WAV'), L('MP3 と AAC(M4A) は 128・192・256・320kbps から音質を選べます（初めは192kbps）。WAV は PCM 16bit で、圧縮しないので劣化しません。選ぶたびに、変換後の推定サイズが出ます。', 'For MP3 and AAC (M4A), choose 128, 192, 256 or 320 kbps (192 kbps to start). WAV is 16-bit PCM and uncompressed, so there is no further loss. The estimated file size updates each time you choose.')],
+      [ILL.m2aPreview, L('トラック選びと30秒の試聴', 'Track choice and a 30-second preview'), L('音声トラックが複数ある動画は「トラック 1」「トラック 2」から選べます。先頭30秒を試聴して、変換する前に確かめられます。', 'For videos with more than one audio track, choose “Track 1”, “Track 2” and so on. Preview the first 30 seconds to check before converting.')],
+      [ILL.m2aSave, L('保存先とファイル名', 'Save location and file name'), L('音楽フォルダ（初めの設定）・ダウンロードフォルダ・元の動画と同じフォルダ・指定したフォルダから選べます。ファイル名は元の動画の名前から付け、同じ名前があれば「名前 (2)」のように番号を足します。空き容量も、変換の前に確かめます。', 'Save to the Music folder (the default), the Downloads folder, the same folder as the video, or a folder you choose. The file is named after the video, and a number such as “name (2)” is added if the name is taken. Free space is checked before converting.')],
+      [ILL.m2aAd, L('邪魔にならない広告', 'Ads that stay out of the way'), L('広告は、画面の上の決まった枠（画面の高さの15%）にだけ出します。全画面の広告や、ボタンに重なる広告はありません。「音声に変換する」ボタンは画面の下にいつも見えています。広告が読み込めなくても、すべての機能を使えます。', 'Ads appear only in a fixed frame at the top (15% of the screen height). There are no full-screen ads and no ads over buttons. The “Convert to audio” button always stays visible at the bottom. Every feature works even if no ad loads.')],
+      [ILL.m2aLocal, L('端末の中だけで変換', 'Converted on your device only'), L('変換は端末の中の FFmpeg で行い、動画や音声をサーバーへ送りません。ストレージの権限も求めません。変換中は画面を点けたままにし、端末が熱くなりすぎたときは変換を止めます。', 'Conversion runs with FFmpeg on your device, and videos and audio are never sent to a server. The app does not ask for storage permission. The screen stays on while converting, and conversion stops if the device gets too hot.')],
+      [ILL.m2aDone, L('できたらすぐ再生・共有', 'Play or share right away'), L('完了画面から、端末の音楽アプリで再生したり、ほかのアプリへ共有したりできます。そのまま別の動画も変換できます。日本語・英語、ライト・ダークに対応しています。', 'From the done screen, play the file in your music app or share it with other apps, then convert another video. Available in Japanese and English, with light and dark themes.')],
     ],
     steps: [
-      [L('PDFを登録する', 'Add a PDF'), L('ホーム右上の \u2295 から PDF を選びます。登録は25件までです。ファイルのコピーは作らず、元のファイルはそのままです。', 'Pick a PDF with \u2295 at the top right of Home. Up to 25 PDFs. No copy is made; the original file stays as it is.')],
-      [L('言語データを入れる', 'Get the language data'), L('ホーム右上の ≡ →「言語データのダウンロード」で、翻訳モデルと読み上げ音声を入れておくと、通信なしで使えます。', 'Use ≡ → “Download language data” at the top right of Home to get the translation models and voices, and the app works with no connection.')],
-      [L('囲んで訳す', 'Frame and translate'), L('長押ししたまま指でなぞって枠を描くと、枠の中を翻訳します。', 'Long-press and trace to draw a frame, and the text inside is translated.')],
+      [L('動画を選ぶ', 'Choose a video'), L('「動画を選ぶ」を押して、端末の動画から1本選びます。', 'Press “Choose a video” and pick one video on your device.')],
+      [L('形式と音質を決める', 'Pick a format and quality'), L('形式（MP3・AAC・WAV）と音質を選びます。必要なら、保存先とファイル名も変えられます。', 'Choose the format (MP3, AAC or WAV) and quality. You can also change the save location and file name if you like.')],
+      [L('「音声に変換する」を押す', 'Press “Convert to audio”'), L('画面の下のボタンで変換が始まります。変換中はアプリを開いたままお待ちください。ほかのアプリに切り替えたり、画面をロックしたりすると、変換は中止されます。', 'The button at the bottom starts the conversion. Keep the app open while it runs; switching to another app or locking the screen stops the conversion.')],
     ],
-    info: [[L('アプリ名', 'App name'), L('マルチ翻訳PDFビューワー', 'Multi-Translation PDF Viewer')], [L('立案・監修', 'Planned and supervised by'), L('現役東大生', 'A current University of Tokyo student')], [L('対応OS', 'OS'), L('Android 7.0 以上 ／ iOS（準備中）', 'Android 7.0 or later / iOS (in preparation)')], [L('配布', 'Available on'), L('Google Play（開発中）', 'Google Play (in development)')], [L('翻訳', 'Translation'), L('英語・中国語・韓国語・ドイツ語・フランス語 → 日本語（端末内で翻訳）',
-        'English, Chinese, Korean, German, French → Japanese (translated on the device)')], [L('通信', 'Network'), L('翻訳モデルのダウンロードのみ（翻訳する文章は送信しません）', 'Only to download translation models (the text you translate is never sent)')], [L('保存', 'Storage'), L('登録したPDFの場所、翻訳結果、PDFごとの言語、画面の色は端末内に保存します。PDFファイルのコピーは作りません。', 'The location of added PDFs, translation results, the language for each PDF and the screen color are saved on the device. No copies of PDF files are made.')]],
-    note: L('開発中のため、機能や対応言語は変わることがあります。翻訳は機械翻訳のため、誤訳がある場合があります。デモの文章は例で、実際のアプリとは異なります。', 'The app is in development, so its features and languages may change. Translations are machine translations and may contain mistakes. The demo text is only an example and differs from the real app.'),
-  },
-  {
-    id: 'furush', name: 'FuRUSH', icon: frIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_FR, test: TEST_URL_FR,
-    one: L('答えが一瞬だけ出るフラッシュカードで、年号や化学式を考える前に答えが出るまで刻む暗記アプリ。', 'A memorization app with flashcards that show the answer for just an instant, drilling dates and chemical formulas until the answer comes before you think.'),
-    headline: L('<span class="nb">脳に刻め。</span><span class="nb"><span class="hl">脊髄</span>に刻め。</span>', '<span class="nb">Carve it into your brain.</span> <span class="nb">Into your <span class="hl">spine</span>.</span>'),
-    lead: L('こんなレベルは、知識じゃない。年号・化学式・山手線・国旗・地図などを、答えが一瞬だけ出るフラッシュカードで、考える前に答えが出るまで繰り返します。THINK LESS. KNOW INSTANTLY. ただいま Android 版のクローズドテスト中です。モードは全部で14、いまは社会の略語・日本地図・日本の地形・化学式の4つが使えます（ほかは仕込み中）。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-        'At this level, it is not knowledge anymore. Dates, chemical formulas, the Yamanote Line, flags, maps and more, on flashcards that show the answer for just an instant, repeated until the answer comes before you think. THINK LESS. KNOW INSTANTLY. The Android version is now in closed testing. There are 14 modes in all; four are available now: social studies abbreviations, the map of Japan, Japanese landforms and chemical formulas (the rest are on the way). The screens on this site differ in detail from the real app.'),
-    os: L('対応OS　Android 8.0 以上 ／ iOS（開発中）　　料金　無料（広告あり）', 'OS: Android 8.0 or later / iOS (in development)　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
-    demo: frDemo, init: initFr,
-    features: [
-      [ILL.frFlash, L('答えは一瞬だけ', 'The answer flashes by'), L('？をタップすると、答えが設定した秒数（0.1\u301C2.0秒）だけ出て、すぐ次のカードへ。カードは上へ消えて、下から次が出ます。', 'Tap ? and the answer appears for the time you set (0.1\u20132.0 seconds), then it is straight on to the next card. Cards slide away upward as the next one rises from below.')],
-      [ILL.frModes, L('全部で14のモード', '14 modes in all'), L('日本史年号、世界史年号、化学式、化学反応式、JR山手線、世界の国旗、世界地図、日本地図、日本の地形、天体・星座、社会の略語、地図記号、物理の名称、英語活用。カードは合わせて約2,200枚。モードは配信するので、あとから増やせます。',
-          'Japanese history dates, world history dates, chemical formulas, chemical equations, the JR Yamanote Line, world flags, the world map, the map of Japan, Japanese landforms, celestial bodies and constellations, social studies abbreviations, map symbols, physics terms and English verb forms. About 2,200 cards in all. Modes are delivered online, so more can be added later.')],
-      [ILL.frPic, L('絵つきの問題と答え', 'Questions and answers with pictures'), L('国旗・地図・駅名標・分子模型・星座・地図記号などの絵が、問題や答えに出ます。', 'Pictures of flags, maps, station signs, molecular models, constellations, map symbols and more appear in questions and answers.')],
-      [ILL.frRev, L('リバース', 'Reverse'), L('モードごとにオン／オフ。問題と答えを入れ替えて、答えから問題を思い出す練習ができます。絵は答えの側に出ます。', 'On or off for each mode. Swap questions and answers to practice recalling the question from the answer. Pictures appear on the answer side.')],
-      [ILL.frFilter, L('出るカードを絞る', 'Choose which cards appear'), L('時代・種類・地域・単元などで、出るカードを絞れます。ホームのタイルには、枚数と何回目かが出ます。', 'Narrow down cards by era, type, region, unit and more. Tiles on Home show the number of cards and how many rounds you have done.')],
-      [ILL.frLoop, L('無限ループ・オート・ランダム', 'Endless loop, auto and shuffle'), L('モードごとにオン／オフ。オートにすると？を自動でタップして、手を離したまま次々にめくれます。ランダムを切ると、山手線のように順番どおりに出せます。最後まで進むと「1周クリア！」です。', 'On or off for each mode. With auto on, ? is tapped for you so cards keep flipping hands-free. Turn shuffle off to go in order, like stations on the Yamanote Line. Reach the end and you get “Round clear!”.')],
-      [ILL.frColor, L('6色とダーク／ライト', '6 colors, dark or light'), L('赤・オレンジ・黄・緑・青・紫の6色から選べて、明るさは端末に合わせる・ダーク・ライトから。縦向きにも横向きにも対応します。オプションで、答えの読み上げ・ヒント・バイブも切り替えられます。', 'Choose red, orange, yellow, green, blue or purple, and follow the device, dark or light. Works in portrait and landscape. Options let you turn answer read-aloud, hints and vibration on or off.')],
-      [ILL.cache, L('ダウンロードして電波なしで', 'Download once, use offline'), L('一度ダウンロードしたモードは、電波がなくても使えます。ホームで下に引っぱると更新を確認して、変わった部分だけをダウンロードします。', 'Modes you have downloaded work without a signal. Pull down on Home to check for updates and download only what has changed.')],
-    ],
-    steps: [
-      [L('モードを選ぶ', 'Pick a mode'), L('ホームのタイルから、覚えたいモードを選びます。未ダウンロードのモードは、先にダウンロードします。', 'Choose the mode you want to learn from the tiles on Home. Modes not yet downloaded are downloaded first.')],
-      [L('？をタップ', 'Tap ?'), L('答えが一瞬だけ出て、次のカードへ。表示時間は下のスライダーで変えられます。', 'The answer flashes, then the next card comes. Change how long it is shown with the slider below.')],
-      [L('1周クリア', 'Round clear'), L('最後のカードまで進むと「1周クリア！」。そのまま、もう1周もできます。', 'Reach the last card for “Round clear!”, then go around again if you like.')],
-    ],
-    info: [[L('アプリ名', 'App name'), 'FuRUSH'], [L('対応OS', 'OS'), L('Android 8.0 以上 ／ iOS（開発中）', 'Android 8.0 or later / iOS (in development)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('モード', 'Modes'), L('全14モード（クローズドテストで使えるのは4モード）', '14 modes (4 available in closed testing)')], [L('データ', 'Data'), L('問題データは、店長が用意しています。', 'The question data is prepared by the Manager.')]],
-    note: L('クローズドテスト中のため、内容は変わることがあります。デモの問題は例で、実際のアプリとは異なります。', 'The app is in closed testing, so details may change. The demo questions are only examples and differ from the real app.'),
+    info: [[L('アプリ名', 'App name'), L('MP3変換（MP3 Converter）', 'MP3変換 (MP3 Converter)')], [L('対応OS', 'OS'), L('Android 10 以上（縦画面）', 'Android 10 or later (portrait)')], [L('料金',
+        'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('変換形式',
+        'Formats'), 'MP3 / AAC (M4A) / WAV'], [L('言語', 'Languages'), L('日本語・English', 'Japanese, English')], [L('外部との通信', 'External connections'), L('広告の表示と、広告の同意の確認（Google AdMob）だけ。動画や音声は送りません。',
+        'Only to show ads and check ad consent (Google AdMob). Videos and audio are never sent.')]],
+    note: L('クローズドテスト中のため、内容は変わることがあります。変換するのは、ご自身で撮影した動画など、使ってよい動画だけにしてください。コピー防止（DRM）のかかった動画や壊れた動画、一部の形式（WMV・FLV・TS など）は、変換できないことがあります。MP3・AAC は圧縮し直すため、元の音より少し劣化することがあります。',
+        'The app is in closed testing, so details may change. Please convert only videos you are allowed to use, such as ones you filmed yourself. Copy-protected (DRM) or damaged videos and some formats (such as WMV, FLV and TS) may not convert. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original.'),
   },
   {
     id: 'app-monitor', name: L('アプリ見守り', 'App Monitor'), icon: amIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_AM, test: TEST_URL_AM,
@@ -1162,62 +1342,29 @@ const APPS = [
         'Risk levels are reference information rated mechanically by fixed rules. Please make the final decision yourself. On networks with a firewall, such as at work or school, traffic may be blocked or altered, which can cause false alarms. Before use, set “Private DNS” in Settings to “Automatic” or “Off”. It cannot be used at the same time as other VPN apps. Traffic with devices on your home LAN, such as printers and TVs, is not monitored.'),
   },
   {
-    id: 'tapru', name: L('タップる？', 'TaPru'), genre: L('ゲーム', 'Game'), icon: tpIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_TP, test: TEST_URL_TP,
-    one: L('30秒間ひたすら連打して、速さ・持久力・リズム・位置のブレを分析し、50種類の称号で診断するミニゲーム。', 'A mini game: tap as fast as you can for 30 seconds, then see your speed, stamina, rhythm and drift, and get one of 50 titles.'),
-    headline: L('<span class="nb">30秒、</span><span class="nb">ひたすら<span class="hl">連打</span>。</span>', '<span class="nb">30 seconds.</span> <span class="nb">Just <span class="hl">tap</span>.</span>'),
-    lead: L('喫茶店のテーブルゲームのように、ひと息つきながら遊べるゲームです。3・2・1 の合図のあと30秒間、画面をひたすらタップ。タップのたびに爆発や雷撃、刀などのエフェクトが効果音つきではじけ、終わると速さ・持久力・リズム・位置のブレの分析と、50種類の称号診断。リプレイで、いまの30秒を見返すこともできます。縦でも横でも遊べて、日本語と英語に対応。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-        'Like the table games in an old caf\u00E9, it is a game to enjoy during a coffee break. After 3, 2, 1, tap the screen as fast as you can for 30 seconds. Explosions, lightning, swords and more burst with sound on every tap, and at the end you get an analysis of your speed, stamina, rhythm and drift, plus one of 50 titles. Replay lets you watch your 30 seconds again. Play in portrait or landscape, in Japanese or English. Now in closed testing. The screens on this site differ in detail from the real app.'),
-    os: L('対応OS　Android 8.0 以上　　料金　無料（広告あり）', 'OS: Android 8.0 or later　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
-    demo: tpDemo, init: initTp,
+    id: 'mt-pdf', name: L('マルチ翻訳PDFビューワー', 'Multi-Translation PDF Viewer'), icon: mtIcon, status: L('開発中', 'In development'), bug: BUG_FORM_MT, test: TEST_URL_MT,
+    one: L('論文や技術文書のPDFを、枠で囲んで日本語に訳せるPDFビューワー。現役東大生立案・監修。', 'A PDF viewer that translates any part of a paper or technical document into Japanese when you draw a frame around it. Planned and supervised by a current University of Tokyo student.'),
+    headline: L('<span class="nb">読めない所を、</span><span class="nb"><span class="hl">囲む</span>だけ。</span>', '<span class="nb">Can’t read it?</span> <span class="nb">Just <span class="hl">frame</span> it.</span>'),
+    lead: L('海外の論文や資料も、コーヒー片手にゆっくり読めるように。英語・中国語・韓国語・ドイツ語・フランス語のPDFを、指でなぞって囲んだ所だけ日本語に訳すビューワーを仕込み中です。翻訳は端末の中で行うので、文章を外に送りません。まだまだ開発中のため、ここでご紹介している機能は予定を含み、変わることがあります。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。', 'So you can read papers and documents from abroad slowly, with a coffee in hand. We are still brewing a viewer that translates just the part of an English, Chinese, Korean, German or French PDF you trace a frame around into Japanese. Translation runs on the device, so your text is never sent anywhere. The app is still in development, so the features described here include plans and may change. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 7.0 以上 ／ iOS（準備中）', 'OS: Android 7.0 or later / iOS (in preparation)'), store: { label: L('開発中', 'In development'), url: '' },
+    demo: mtDemo, init: initMt,
     features: [
-      [ILL.tpFever, L('30秒ひたすら連打', '30 seconds of tapping'), L('3・2・1 の合図のあと30秒。直近1秒のタップ数が5回で BOOST、8回で RAPID FIRE、10回で FEVER!! に変わります。指を置いたままや、2本目の指でのタップは数えません。', '30 seconds after 3, 2, 1. Five taps in the last second gives BOOST, eight gives RAPID FIRE and ten gives FEVER!!. Resting a finger on the screen or tapping with a second finger does not count.')],
-      [ILL.tpFx, L('エフェクト24種×5パターン', '24 effects × 5 patterns'), L('爆発・ピストル・雷撃・レーザー・氷結・ハート・刀・画面割など24種類、それぞれ効果音つき。障子・水面・釘打ち・コンクリート・ハンコ・花火・お賽銭・爆弾・流れ星の9種は背景ごと変わります。「複合」で3つまで混ぜられ、全部外せば「なし」でも遊べます。', '24 kinds, each with its own sound, including explosions, pistols, lightning, lasers, ice, hearts, swords and shattered screens. Nine of them (shoji paper, water, nails, concrete, stamps, fireworks, shrine offerings, bombs and shooting stars) change the whole background. Mix up to three with “Combo”, or turn them all off and play with “None”.')],
-      [ILL.tpSp, L('必殺技と HIT!', 'Special moves and HIT!'), L('直近1秒に12回たたくと、次の1タップが必殺技に。画面全体に連鎖します。25回ごとに「HIT!」が出て、画面も揺れます。', 'Hit 12 times in a second and your next tap becomes a special move that chains across the whole screen. Every 25 taps, “HIT!” appears and the screen shakes.')],
-      [ILL.tpChart, L('30秒を分析', 'Analysis of your 30 seconds'), L('1秒ごとの棒グラフ、平均と最高の速さ、前半と後半の比べ（持久力）、タップ間隔のリズム、位置のブレや重心の移動がわかります。', 'See a bar chart for each second, average and top speed, first half versus second half (stamina), the rhythm of your tap gaps, and how your taps drift and shift.')],
-      [ILL.tpTitle, L('50種類の称号と自己ベスト', '50 titles and personal bests'), L('プレイの中身から、10系統×5の50種類の称号をひとつ診断します。まだ持っていない称号が優先されるので、遊ぶほど集まります。自己ベストと、称号ごとの獲得回数は「称号図鑑」で見られます。', 'Based on how you played, you get one of 50 titles (10 groups × 5). Titles you do not have yet come first, so the more you play, the more you collect. Your personal bests and how many times you earned each title are in the Title Book.')],
-      [ILL.tpReplay, L('リプレイで見返す', 'Watch it again'), L('結果画面の「リプレイ」で、いま終わった30秒を、タップした位置とエフェクトのままゲーム画面で再生します。結果画面にいる間は何度でも見られます。', 'Press “Replay” on the results screen to play back the 30 seconds you just finished, with your taps and effects where they happened. Watch it as many times as you like while on the results screen.')],
-      [ILL.tpAuto, L('連打アプリはお断り', 'No auto-tappers'), L('タップの間隔や位置が機械のようにそろいすぎているときは、連打アプリの疑いとして集計しません。', 'If tap gaps or positions are too perfectly even, like a machine, the result is treated as a possible auto-tap app and not counted.')],
-      [ILL.tpHand, L('縦でも横でも、利き手も', 'Portrait or landscape, either hand'), L('縦でも横でも遊べます（プレイ中は向きを固定）。横画面では、右利き・左利きでタップエリアを左右に入れ替えます。テーマは端末に合わせる・ライト・ダーク、言語は日本語・English から。HOME には時間帯のあいさつが出ます。', 'Play in portrait or landscape (the screen stays fixed during play). In landscape, the tap area switches sides for right- or left-handers. Themes: follow the device, light or dark; language: Japanese or English. HOME shows a greeting for the time of day.')],
+      [ILL.mtFrame, L('枠で囲んで翻訳', 'Frame to translate'), L('長押ししたまま指でなぞると、角丸の枠が描けます。指を離すと、枠の中の文を読み取って翻訳。画面の真ん中に、上に原文、下に日本語訳が出ます。', 'Long-press and trace to draw a rounded frame. Lift your finger and the text inside is read and translated, with the original on top and the Japanese translation below, in the middle of the screen.')],
+      [ILL.mtLang, L('5つの言語を自動で判別', 'Detects five languages'), L('英語・中国語（簡体字・繁体字）・韓国語・ドイツ語・フランス語から日本語へ。言語は自動で判別し、違ったときは選び直せます。選んだ言語はPDFごとに覚えます。', 'From English, Chinese (Simplified and Traditional), Korean, German and French into Japanese. The language is detected automatically, and you can change it if it is wrong. The choice is remembered for each PDF.')],
+      [ILL.speak, L('原文を読み上げ', 'Read the original aloud'), L('スピーカーのボタンで、枠の中の外国語の文を読み上げます。端末の読み上げ音声を使います。', 'The speaker button reads the foreign-language text in the frame aloud, using your device’s text-to-speech voice.')],
+      [ILL.mtOcr, L('図やスキャンも読める', 'Reads figures and scans'), L('枠の中は、端末内の文字認識（OCR）で読み取ります。図の中の文字や、文字の入っていないスキャンのPDFも訳せます。', 'Text in the frame is read with on-device text recognition (OCR), so even text in figures and scanned PDFs without a text layer can be translated.')],
+      [ILL.cache, L('オフラインで翻訳', 'Translate offline'), L('翻訳モデル（1言語約30MB）を一度ダウンロードすれば、通信なしで翻訳できます。通信するのはモデルの取得だけで、翻訳する文章は送りません。', 'Download a translation model once (about 30 MB per language) and translate with no connection. The only network use is getting the models; the text you translate is never sent.')],
+      [ILL.photo, L('写真からPDFを作る', 'Make PDFs from photos'), L('紙の資料を撮った写真（最大100枚）を、1枚1ページのPDFにして Download フォルダに保存します。そのまま開いて翻訳できます。', 'Turn photos of paper documents (up to 100) into a PDF with one photo per page, saved in the Download folder. Open it right away and translate.')],
+      [ILL.mtView, L('自分好みに読む', 'Read your way'), L('画面の色は9種類から選べて、それぞれライト・ダークに対応。栞、\u25C0\u25B6 のページ送り、スライダーで、長い文書も移動しやすくしました。', 'Choose from nine screen colors, each with light and dark versions. Bookmarks, \u25C0\u25B6 page buttons and a slider make long documents easy to move through.')],
     ],
     steps: [
-      [L('利き手とエフェクトを選ぶ', 'Choose your hand and effect'), L('HOME でタップのエフェクトと、横画面なら利き手（右・左）を選びます。「複合」をオンにすると、エフェクトを3つまで混ぜられます。', 'On HOME, choose a tap effect and, in landscape, your dominant hand (right or left). Turn on “Combo” to mix up to three effects.')],
-      [L('3・2・1 で連打', 'Tap after 3, 2, 1'), L('START を押すと 3・2・1 のカウントダウン。合図のあと30秒間、タップエリアをひたすらタップします。', 'Press START for a 3, 2, 1 countdown, then tap the tap area as fast as you can for 30 seconds.')],
-      [L('結果を見る', 'See your results'), L('30秒たつと FINISH!。称号と、1秒ごとのグラフ、速さ・持久力・リズム・位置の分析が出ます。「リプレイ」で見返せます。', 'After 30 seconds comes FINISH!, with your title, a chart for each second and an analysis of speed, stamina, rhythm and position. Press “Replay” to watch it again.')],
+      [L('PDFを登録する', 'Add a PDF'), L('ホーム右上の \u2295 から PDF を選びます。登録は25件までです。ファイルのコピーは作らず、元のファイルはそのままです。', 'Pick a PDF with \u2295 at the top right of Home. Up to 25 PDFs. No copy is made; the original file stays as it is.')],
+      [L('言語データを入れる', 'Get the language data'), L('ホーム右上の ≡ →「言語データのダウンロード」で、翻訳モデルと読み上げ音声を入れておくと、通信なしで使えます。', 'Use ≡ → “Download language data” at the top right of Home to get the translation models and voices, and the app works with no connection.')],
+      [L('囲んで訳す', 'Frame and translate'), L('長押ししたまま指でなぞって枠を描くと、枠の中を翻訳します。', 'Long-press and trace to draw a frame, and the text inside is translated.')],
     ],
-    info: [[L('アプリ名', 'App name'), L('タップる？（TaPru）', 'タップる？ (TaPru)')], [L('ジャンル', 'Genre'), L('ゲーム', 'Game')], [L('対応OS',
-        'OS'), L('Android 8.0 以上（縦・横どちらでも）', 'Android 8.0 or later (portrait or landscape)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布',
-        'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('記録', 'Records'), L('タップの記録と分析は、端末の中だけで行います。',
-        'Taps are recorded and analyzed on the device only.')], [L('言語', 'Languages'), L('日本語・English', 'Japanese, English')]],
-    note: L('クローズドテスト中のため、内容は変わることがあります。計測結果は遊びとして楽しむためのもので、医学的・科学的な評価ではありません。連打のしすぎにご注意いただき、適度に休憩しながらお楽しみください。', 'The app is in closed testing, so details may change. The results are just for fun and are not a medical or scientific assessment. Please do not overdo the tapping, and take breaks as you play.'),
-  },
-  {
-    id: 'mp3-convert', name: L('MP3変換', 'MP3 Converter'), icon: m2aIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_M2A, test: TEST_URL_M2A,
-    one: L('動画から音声だけを取り出して、MP3・AAC(M4A)・WAV に変換する Android アプリ。広告はあっても邪魔にならず、広告を見ながら手軽に変換。', 'An Android app that takes just the audio from a video and converts it to MP3, AAC (M4A) or WAV. The ads stay out of your way, so you can convert with ease while they sit quietly on screen.'),
-    headline: L('<span class="nb">動画の音だけ、</span><span class="nb"><span class="hl">手軽に</span>MP3に。</span>', '<span class="nb">Just the sound,</span> <span class="nb"><span class="hl">easily</span> to MP3.</span>'),
-    lead: L('コーヒーを一杯淹れるくらいの手軽さで、動画から音声だけを取り出します。動画を選んで、形式と音質を決めて、ボタンをひとつ押すだけ。MP3・AAC(M4A)・WAV に変換できます。広告は画面の上の決まった枠にだけ出して、操作の邪魔をしません。広告を眺めながら、手軽に変換できます。変換は端末の中だけで行い、動画や音声をサーバーへ送りません。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-        'As easy as making a cup of coffee: take just the audio out of a video. Choose a video, pick a format and quality, and press one button to convert it to MP3, AAC (M4A) or WAV. Ads appear only in a fixed frame at the top of the screen and never get in the way, so you can convert with ease while they sit quietly on screen. Everything happens on your device; videos and audio are never sent to a server. Now in closed testing. The screens on this site differ in detail from the real app.'),
-    os: L('対応OS　Android 10 以上　　料金　無料（広告あり）', 'OS: Android 10 or later　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
-    demo: m2aDemo, init: initM2a,
-    features: [
-      [ILL.m2aPick, L('動画を選ぶだけ', 'Just choose a video'), L('端末のファイル選択から動画を1本選ぶと、再生時間や音声トラックを確認します。音声が入っていない動画は、その場でお知らせします。', 'Pick one video with your device’s file picker, and the app checks its length and audio tracks. If a video has no audio, it tells you right away.')],
-      [ILL.m2aFormat, L('MP3・AAC・WAV に変換', 'Convert to MP3, AAC or WAV'), L('MP3 と AAC(M4A) は 128・192・256・320kbps から音質を選べます（初めは192kbps）。WAV は PCM 16bit で、圧縮しないので劣化しません。選ぶたびに、変換後の推定サイズが出ます。', 'For MP3 and AAC (M4A), choose 128, 192, 256 or 320 kbps (192 kbps to start). WAV is 16-bit PCM and uncompressed, so there is no further loss. The estimated file size updates each time you choose.')],
-      [ILL.m2aPreview, L('トラック選びと30秒の試聴', 'Track choice and a 30-second preview'), L('音声トラックが複数ある動画は「トラック 1」「トラック 2」から選べます。先頭30秒を試聴して、変換する前に確かめられます。', 'For videos with more than one audio track, choose “Track 1”, “Track 2” and so on. Preview the first 30 seconds to check before converting.')],
-      [ILL.m2aSave, L('保存先とファイル名', 'Save location and file name'), L('音楽フォルダ（初めの設定）・ダウンロードフォルダ・元の動画と同じフォルダ・指定したフォルダから選べます。ファイル名は元の動画の名前から付け、同じ名前があれば「名前 (2)」のように番号を足します。空き容量も、変換の前に確かめます。', 'Save to the Music folder (the default), the Downloads folder, the same folder as the video, or a folder you choose. The file is named after the video, and a number such as “name (2)” is added if the name is taken. Free space is checked before converting.')],
-      [ILL.m2aAd, L('邪魔にならない広告', 'Ads that stay out of the way'), L('広告は、画面の上の決まった枠（画面の高さの15%）にだけ出します。全画面の広告や、ボタンに重なる広告はありません。「音声に変換する」ボタンは画面の下にいつも見えています。広告が読み込めなくても、すべての機能を使えます。', 'Ads appear only in a fixed frame at the top (15% of the screen height). There are no full-screen ads and no ads over buttons. The “Convert to audio” button always stays visible at the bottom. Every feature works even if no ad loads.')],
-      [ILL.m2aLocal, L('端末の中だけで変換', 'Converted on your device only'), L('変換は端末の中の FFmpeg で行い、動画や音声をサーバーへ送りません。ストレージの権限も求めません。変換中は画面を点けたままにし、端末が熱くなりすぎたときは変換を止めます。', 'Conversion runs with FFmpeg on your device, and videos and audio are never sent to a server. The app does not ask for storage permission. The screen stays on while converting, and conversion stops if the device gets too hot.')],
-      [ILL.m2aDone, L('できたらすぐ再生・共有', 'Play or share right away'), L('完了画面から、端末の音楽アプリで再生したり、ほかのアプリへ共有したりできます。そのまま別の動画も変換できます。日本語・英語、ライト・ダークに対応しています。', 'From the done screen, play the file in your music app or share it with other apps, then convert another video. Available in Japanese and English, with light and dark themes.')],
-    ],
-    steps: [
-      [L('動画を選ぶ', 'Choose a video'), L('「動画を選ぶ」を押して、端末の動画から1本選びます。', 'Press “Choose a video” and pick one video on your device.')],
-      [L('形式と音質を決める', 'Pick a format and quality'), L('形式（MP3・AAC・WAV）と音質を選びます。必要なら、保存先とファイル名も変えられます。', 'Choose the format (MP3, AAC or WAV) and quality. You can also change the save location and file name if you like.')],
-      [L('「音声に変換する」を押す', 'Press “Convert to audio”'), L('画面の下のボタンで変換が始まります。変換中はアプリを開いたままお待ちください。ほかのアプリに切り替えたり、画面をロックしたりすると、変換は中止されます。', 'The button at the bottom starts the conversion. Keep the app open while it runs; switching to another app or locking the screen stops the conversion.')],
-    ],
-    info: [[L('アプリ名', 'App name'), L('MP3変換（MP3 Converter）', 'MP3変換 (MP3 Converter)')], [L('対応OS', 'OS'), L('Android 10 以上（縦画面）', 'Android 10 or later (portrait)')], [L('料金',
-        'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('変換形式',
-        'Formats'), 'MP3 / AAC (M4A) / WAV'], [L('言語', 'Languages'), L('日本語・English', 'Japanese, English')], [L('外部との通信', 'External connections'), L('広告の表示と、広告の同意の確認（Google AdMob）だけ。動画や音声は送りません。',
-        'Only to show ads and check ad consent (Google AdMob). Videos and audio are never sent.')]],
-    note: L('クローズドテスト中のため、内容は変わることがあります。変換するのは、ご自身で撮影した動画など、使ってよい動画だけにしてください。コピー防止（DRM）のかかった動画や壊れた動画、一部の形式（WMV・FLV・TS など）は、変換できないことがあります。MP3・AAC は圧縮し直すため、元の音より少し劣化することがあります。',
-        'The app is in closed testing, so details may change. Please convert only videos you are allowed to use, such as ones you filmed yourself. Copy-protected (DRM) or damaged videos and some formats (such as WMV, FLV and TS) may not convert. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original.'),
+    info: [[L('アプリ名', 'App name'), L('マルチ翻訳PDFビューワー', 'Multi-Translation PDF Viewer')], [L('立案・監修', 'Planned and supervised by'), L('現役東大生', 'A current University of Tokyo student')], [L('対応OS', 'OS'), L('Android 7.0 以上 ／ iOS（準備中）', 'Android 7.0 or later / iOS (in preparation)')], [L('配布', 'Available on'), L('Google Play（開発中）', 'Google Play (in development)')], [L('翻訳', 'Translation'), L('英語・中国語・韓国語・ドイツ語・フランス語 → 日本語（端末内で翻訳）',
+        'English, Chinese, Korean, German, French → Japanese (translated on the device)')], [L('通信', 'Network'), L('翻訳モデルのダウンロードのみ（翻訳する文章は送信しません）', 'Only to download translation models (the text you translate is never sent)')], [L('保存', 'Storage'), L('登録したPDFの場所、翻訳結果、PDFごとの言語、画面の色は端末内に保存します。PDFファイルのコピーは作りません。', 'The location of added PDFs, translation results, the language for each PDF and the screen color are saved on the device. No copies of PDF files are made.')]],
+    note: L('開発中のため、機能や対応言語は変わることがあります。翻訳は機械翻訳のため、誤訳がある場合があります。デモの文章は例で、実際のアプリとは異なります。', 'The app is in development, so its features and languages may change. Translations are machine translations and may contain mistakes. The demo text is only an example and differs from the real app.'),
   },
 ];
 function initPdf(root) {
@@ -1335,6 +1482,66 @@ function initFr(root) {
     $$('.frd-m', root).forEach(x => x.setAttribute('aria-pressed', x === m)); draw();
   }));
   draw();
+}
+function initBb(root) {
+  const board = $('.bbd-board', root), big = $('.bbd-big', root), elT = $('.bbd-turn', root), elS = $('.bbd-score', root), again = $('.bbd-again', root);
+  const pick = () => { let r = Math.random() * 100; for (const [k, w] of BB_W) { if ((r -= w) < 0) return k; } return 'BL'; };
+  const inb = (r, c) => r >= 0 && r < BB_N && c >= 0 && c < BB_N;
+  const reach = (k, r, c) => {
+    const out = [], ray = (dr, dc, far) => { for (let i = 1; i <= (far ? BB_N : 1); i++) { if (inb(r + dr * i, c + dc * i)) out.push([r + dr * i, c + dc * i]); } };
+    const O = [[1, 0], [-1, 0], [0, 1], [0, -1]], X = [[1, 1], [1, -1], [-1, 1], [-1, -1]];
+    ({ RE: [[1, 0], [-1, 0]], GR: [[0, 1], [0, -1]], YE: X, PA: O, SI: O, GO: X, BL: [] })[k].forEach(([dr, dc]) => ray(dr, dc, k === 'SI' || k === 'GO'));
+    return out;
+  };
+  let g, turn, score, busy;
+  const cell = (r, c) => board.children[r * BB_N + c];
+  const draw = () => {
+    board.innerHTML = g.map((row, r) => row.map((k, c) => `<button type="button" class="bbd-c" data-r="${r}" data-c="${c}" aria-label="${L('ボム', 'Bomb')} ${r + 1}-${c + 1}"><i style="--c:${BB_C[k][0]}" class="${k === 'SI' || k === 'GO' ? 'rare' : ''}"></i></button>`).join('')).join('');
+  };
+  const reset = () => {
+    g = Array.from({ length: BB_N }, () => Array.from({ length: BB_N }, pick));
+    turn = 1; score = 0; busy = false; elT.textContent = 1; elS.textContent = 0; big.textContent = ''; again.hidden = true; draw();
+  };
+  const wait = ms => new Promise(f => setTimeout(f, reduced() ? Math.min(ms, 60) : ms));
+  const fire = async (r0, c0) => {
+    busy = true; big.textContent = '';
+    const done = new Set(), key = (r, c) => r * BB_N + c;
+    let stage = [[r0, c0]], combo = 0, base = 0;
+    done.add(key(r0, c0));
+    while (stage.length) {
+      combo++;
+      const next = [];
+      stage.forEach(([r, c]) => {
+        base += BB_C[g[r][c]][1]; cell(r, c).classList.add('x');
+        reach(g[r][c], r, c).forEach(([rr, cc]) => {
+          cell(rr, cc).classList.add('f');
+          if (g[rr][cc] && !done.has(key(rr, cc))) { done.add(key(rr, cc)); next.push([rr, cc]); }
+        });
+      });
+      if (combo > 1) big.textContent = `${combo} COMBO!`;
+      await wait(260);
+      stage.forEach(([r, c]) => { g[r][c] = null; });
+      stage = next;
+    }
+    const pts = base * combo;
+    score += pts; elS.textContent = score.toLocaleString();
+    big.textContent = `+${pts.toLocaleString()}`;
+    await wait(420);
+    for (let c = 0; c < BB_N; c++) {
+      const col = []; for (let r = BB_N - 1; r >= 0; r--) if (g[r][c]) col.push(g[r][c]);
+      for (let r = BB_N - 1, i = 0; r >= 0; r--, i++) g[r][c] = col[i] || pick();
+    }
+    draw();
+    if (turn >= BB_TURNS) { big.textContent = `${L('合計', 'Total')} ${score.toLocaleString()}`; again.hidden = false; return; }
+    turn++; elT.textContent = turn; busy = false;
+  };
+  board.addEventListener('click', e => {
+    const b = e.target.closest('.bbd-c');
+    if (!b || busy) return;
+    fire(+b.dataset.r, +b.dataset.c);
+  });
+  again.addEventListener('click', reset);
+  reset();
 }
 function initM2a(root) {
   const st = { f: 0, k: 192 }, ext = ['.mp3', '.m4a', '.wav'], fmt = ['MP3', 'AAC (M4A)', 'WAV'];
@@ -1499,12 +1706,12 @@ const dateLine = `<p class="dm">制定：${LEGAL_DATE}　最終更新：${LEGAL_
 const dateLineEn = `<p class="dm">Established: ${enDate(LEGAL_DATE)} / Last updated: ${enDate(LEGAL_UPDATED)}</p>`;
 const MAILBOX = `<div class="mailbox"><canvas class="mail" aria-label="メールアドレス（スパム対策のため画像で表示しています）" role="img"></canvas><small>スパム対策のため、アドレスは画像で表示しています。お手数ですが、画像を見ながら入力してください。</small></div>`;
 const MAILBOX_EN = `<div class="mailbox"><canvas class="mail" aria-label="Email address (shown as an image to prevent spam)" role="img"></canvas><small>To prevent spam, the address is shown as an image. Please type it in by looking at the image.</small></div>`;
-const AD_APPS = 'PDF暗記マーカー、FuRUSH、アプリ見守り、タップる？、MP3変換';
-const NOAD_APPS = 'マルチ翻訳PDFビューワー';
-const AD_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), FuRUSH, アプリ見守り (App Monitor), タップる？ (TaPru) and MP3変換 (MP3 Converter)';
-const NOAD_APPS_EN = 'マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
-const ALL_APPS = 'PDF暗記マーカー、マルチ翻訳PDFビューワー、FuRUSH、アプリ見守り、タップる？、MP3変換';
-const ALL_APPS_EN = 'PDF暗記マーカー (PDF Memorization Marker), マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer), FuRUSH, アプリ見守り (App Monitor), タップる？ (TaPru) and MP3変換 (MP3 Converter)';
+const AD_APPS = 'タップる？、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り';
+const NOAD_APPS = 'BOMBOM、マルチ翻訳PDFビューワー';
+const AD_APPS_EN = 'タップる？ (TaPru), FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter) and アプリ見守り (App Monitor)';
+const NOAD_APPS_EN = 'BOMBOM and マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
+const ALL_APPS = 'タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー';
+const ALL_APPS_EN = 'タップる？ (TaPru), BOMBOM, FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter), アプリ見守り (App Monitor) and マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
 const L_GOOGLE_PARTNER = 'https://policies.google.com/technologies/partner-sites';
 const L_GOOGLE_ADS = 'https://policies.google.com/technologies/ads';
 const L_GOOGLE_PRIV = 'https://policies.google.com/privacy';
@@ -1535,6 +1742,7 @@ const LEGAL = [
     'アプリ見守りは、使っていない時間の通信を見分けるために各アプリの使用時間を、アプリ名を表示するために端末のアプリの一覧を参照します。これらも端末の外には送りません。',
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
     'MP3変換は、利用者が選んだ動画を端末の中で読み込み、音声を取り出して変換します。動画、変換した音声、ファイル名を、店長を含む外部へ送信することはありません。試聴や変換の途中で作る一時ファイルはアプリの中に置き、使い終わると削除します。変換した音声は、利用者が選んだ保存先（音楽フォルダ、ダウンロードフォルダ、元の動画と同じフォルダ、指定したフォルダ）に保存します。フォルダを使うときは、Android のフォルダ選択で利用者が許可したフォルダにだけアクセスします。形式・音質・保存先などの設定は端末内に保存します。',
+    'BOMBOM は、ステージの進み具合・最高スコア・アイテムの所持数・設定を端末の中に保存し、店長を含む外部へは送信しません。BOMBOM はインターネットに接続せず、広告や Firebase も使っていません。',
     'MP3変換の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
     'アプリがサーバーと通信する際（出題データの取得など）、サーバー側でIPアドレスが記録されます。それ以外の個人を特定する情報は取得しません。',
@@ -1611,6 +1819,7 @@ const LEGAL = [
     'App Monitor reads each app’s usage time to tell apart traffic while an app is not in use, and the list of installed apps to show app names. This information is not sent outside the device either.',
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
     'MP3 Converter reads the video you choose on your device and extracts and converts its audio there. Videos, converted audio and file names are never sent outside the device, including to the Manager. Temporary files made during previews and conversion are kept inside the app and deleted when no longer needed. Converted audio is saved to the location you choose (the Music folder, the Downloads folder, the same folder as the video, or a folder you choose). When a folder is used, the app accesses only folders you have allowed through Android’s folder picker. Settings such as format, quality and save location are stored on your device.',
+    'BOMBOM saves your stage progress, best scores, items and settings on your device and does not send them outside the device, including to the Manager. BOMBOM does not connect to the internet and uses no ads or Firebase.',
     'MP3 Converter connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
     'When an app communicates with a server (for example, to download question data), the server records your IP address. No other personally identifiable information is collected.',
@@ -1623,7 +1832,7 @@ const LEGAL = [
     'If you email us, we receive your email address and the content of your message.',
   ]) +
   H('3. Advertising (Google AdMob)') +
-  P(`Among the Manager’s apps, ${AD_APPS_EN} show ads served by Google AdMob, an advertising service of Google LLC. ${NOAD_APPS_EN} does not show ads.`) +
+  P(`Among the Manager’s apps, ${AD_APPS_EN} show ads served by Google AdMob, an advertising service of Google LLC. ${NOAD_APPS_EN} do not show ads.`) +
   UL([
     'To serve ads, measure impressions and performance, and prevent fraud, AdMob collects and sends to Google information such as your device’s advertising ID (Android Advertising ID / iOS IDFA), IP address, approximate location (estimated from the IP address), device and OS information, app usage, and ad views and taps.',
     'Third-party vendors, including Google, may use cookies and identifiers such as the advertising ID to serve ads based on your past use of this app and other apps and websites (personalized ads).',
@@ -1688,6 +1897,7 @@ const LEGAL = [
     'アプリには、Android（Google）の公式ライブラリなど、第三者のソフトウェアを利用しています。それらは各ライセンスの条件に従って利用しています。',
     'アプリ見守りの国データは、DB-IP Lite（db-ip.com、CC BY 4.0）を利用しています。脅威リストは、URLhaus・HaGeZi・Feodo Tracker・Spamhaus DROP の各配布元の条件に従って利用します。',
     `ML Kit の利用にあたっては、${A(L_MLKIT, 'ML Kit の利用規約')}に従います。`,
+    'BOMBOM の文字には、Dela Gothic One・Kaisei Decol・M PLUS 1p・M PLUS Rounded 1c・Russo One（SIL Open Font License 1.1）と Luckiest Guy（Apache License 2.0）の一部を利用しています。BOMBOM のキャラクターや背景の絵、音楽の制作には、生成AIを利用しています。',
     'タップる？のロゴの文字には、M PLUS Rounded 1c（SIL Open Font License 1.1）の一部を利用しています。',
     `MP3変換は、音声の変換に ${A(L_FFMPEG, 'FFmpeg')}（LGPL 2.1 以降）と ${A(L_FFMPEGKIT, 'FFmpegKit')}（LGPL 3.0。アプリに組み込んでいるのは、その後継として公開されている com.antonkarpenko:ffmpeg-kit-audio 2.2.3 で、FFmpeg 8.1 を含みます）を、MP3 の作成に ${A(L_LAME, 'LAME')}（LGPL）を利用しています。` +
     `これらは店長が改変せず、LGPL の条件に従って、置き換えのできるライブラリとして組み込んでいます。ソースコードは各プロジェクトの公開ページから入手でき、ライセンスの全文は ${A(L_LGPL21, 'GNU LGPL 2.1')}・${A(L_LGPL3, 'GNU LGPL 3.0')} でご覧いただけます。FFmpegKit の audio 版に含まれるそのほかの音声ライブラリも、それぞれのライセンスに従って利用しています。アプリのメニューの「アプリについて」にも、使用しているソフトウェアを表示しています。`,
@@ -1715,6 +1925,7 @@ const LEGAL = [
     'The apps use third-party software, such as official Android (Google) libraries, under the terms of their respective licenses.',
     'Country data in App Monitor is from DB-IP Lite (db-ip.com, CC BY 4.0). Threat lists are used under the terms of their distributors: URLhaus, HaGeZi, Feodo Tracker and Spamhaus DROP.',
     `ML Kit is used in accordance with the ${A(L_MLKIT, 'ML Kit Terms of Service')}.`,
+    'BOMBOM uses parts of the Dela Gothic One, Kaisei Decol, M PLUS 1p, M PLUS Rounded 1c and Russo One fonts (SIL Open Font License 1.1) and the Luckiest Guy font (Apache License 2.0). Generative AI is used in creating BOMBOM’s character and background art and its music.',
     'The TaPru logo uses part of the M PLUS Rounded 1c font (SIL Open Font License 1.1).',
     `MP3 Converter uses ${A(L_FFMPEG, 'FFmpeg')} (LGPL 2.1 or later) and ${A(L_FFMPEGKIT, 'FFmpegKit')} (LGPL 3.0; the app includes com.antonkarpenko:ffmpeg-kit-audio 2.2.3, a successor release that contains FFmpeg 8.1) for audio conversion, and ${A(L_LAME, 'LAME')} (LGPL) for creating MP3 files.` +
     ` The Manager has not modified them, and they are included as replaceable libraries under the terms of the LGPL. Their source code is available from each project’s website, and the full license texts are at ${A(L_LGPL21, 'GNU LGPL 2.1')} and ${A(L_LGPL3, 'GNU LGPL 3.0')}. The other audio libraries included in the audio edition of FFmpegKit are also used under their respective licenses. The software used is also listed under “About” in the app’s menu.`,
@@ -1772,6 +1983,7 @@ const LEGAL = [
     '端末内のデータは、端末の故障・初期化・アンインストールなどで失われることがあります。大切なデータは、ご自身でも控えを取っておいてください。',
     'アプリ見守りの危険度は、決めたルールに当てはめて機械的に判定した参考情報です。アプリが正常かどうかの最終的な判断は、利用者ご自身で行ってください。判定をもとに行ったアンインストールなどの操作の結果について、店長は責任を負いません。',
     'タップる？の計測結果・分析・称号は、遊びとして楽しむためのもので、医学的・科学的な評価ではありません。計測値は、端末の性能やタッチパネルによって変わることがあります。連打による指や手首の痛み、端末の故障・破損について、店長は責任を負いません。適度に休憩しながらお楽しみください。',
+    'BOMBOM はクローズドテスト中のゲームで、ステージ・得点・アイテムの内容は予告なく変わることがあります。進み具合やアイテムは端末の中だけに保存しているため、アンインストールや端末の変更で失われ、店長は復元できません。',
     'MP3変換は、端末の中で動画の音声を変換する道具です。すべての動画が変換できることや、変換後の音質を保証するものではありません。MP3・AAC は圧縮し直すため、元の音より少し劣化することがあります。変換した音声の利用について、店長は責任を負いません。長い動画の変換では、端末の発熱や電池の消費にご注意ください。',
     '外部のサービス（広告、ストアなど）や第三者のサイトの内容・動作について、店長は責任を負いません。',
   ]) +
@@ -1833,6 +2045,7 @@ const LEGAL = [
     'Data on your device may be lost due to device failure, reset or uninstallation. Please keep your own copies of important data.',
     'The risk levels in App Monitor are reference information determined mechanically by fixed rules. You must make the final decision on whether an app is safe. The Manager is not responsible for the results of actions such as uninstalling an app based on these levels.',
     'TaPru’s measurements, analyses and titles are for fun and are not medical or scientific evaluations. Measured values may vary depending on device performance and touch screen. The Manager is not responsible for finger or wrist pain from rapid tapping, or for device failure or damage. Please take breaks as you play.',
+    'BOMBOM is a game in closed testing, and its stages, scores and items may change without notice. Progress and items are saved only on your device, so they are lost if you uninstall the app or change devices, and the Manager cannot restore them.',
     'MP3 Converter is a tool that converts the audio of videos on your device. The Manager does not guarantee that every video can be converted or the quality of the converted audio. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original. The Manager is not responsible for how you use converted audio. When converting long videos, please watch out for device heat and battery use.',
     'The Manager is not responsible for the content or operation of external services (ads, app stores, etc.) or third-party websites.',
   ]) +
