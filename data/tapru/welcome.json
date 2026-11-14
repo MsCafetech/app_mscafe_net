@@ -24,6 +24,6 @@
     "saisen": { "ja": "enable", "en": "enable" },
     "bomb": { "ja": "enable", "en": "enable" },
     "meteor": { "ja": "enable", "en": "enable" },
-    "oni": { "ja": "disable", "en": "disable" }
+    "oni": { "ja": "enable", "en": "enable" }
   }
 }
