@@ -1,0 +1,29 @@
+{
+  "effects": {
+    "explosion": { "ja": "enable", "en": "enable" },
+    "pistol": { "ja": "enable", "en": "disable" },
+    "machine_gun": { "ja": "enable", "en": "disable" },
+    "thunder": { "ja": "enable", "en": "enable" },
+    "laser": { "ja": "enable", "en": "enable" },
+    "ice": { "ja": "enable", "en": "enable" },
+    "heart": { "ja": "enable", "en": "enable" },
+    "drum": { "ja": "enable", "en": "enable" },
+    "shockwave": { "ja": "enable", "en": "enable" },
+    "stardust": { "ja": "enable", "en": "enable" },
+    "fire": { "ja": "enable", "en": "enable" },
+    "katana": { "ja": "enable", "en": "enable" },
+    "skull": { "ja": "enable", "en": "enable" },
+    "screen_break": { "ja": "enable", "en": "enable" },
+    "paint": { "ja": "enable", "en": "enable" },
+    "shoji": { "ja": "enable", "en": "enable" },
+    "water": { "ja": "enable", "en": "enable" },
+    "nail": { "ja": "enable", "en": "enable" },
+    "concrete": { "ja": "enable", "en": "enable" },
+    "stamp": { "ja": "enable", "en": "enable" },
+    "fireworks": { "ja": "enable", "en": "enable" },
+    "saisen": { "ja": "enable", "en": "enable" },
+    "bomb": { "ja": "enable", "en": "enable" },
+    "meteor": { "ja": "enable", "en": "enable" },
+    "oni": { "ja": "enable", "en": "enable" }
+  }
+}
