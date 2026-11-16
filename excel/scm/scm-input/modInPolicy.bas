@@ -6,7 +6,8 @@ Attribute VB_Name = "modInPolicy"
 '   参照_ポリシー選択肢 = ダブルクリック選択の候補・入力チェックの基準（②既存データ＋③～⑪の入力から作る）
 '   スコープ  : ルールの folder から見えるのは自分＋上位（RN・SC・MUC→Shared、GP・EP→MUC・Shared）。All は参照のみ
 '   前提      : modScmInput・modInFetch・modScmCommon と同じブックに入れる（API は GET だけ。JSON化・登録はしません）
-'   復号ポリシーは Service Connections にも設定でき、Pre/Post の区別がすべての folder にある（セキュリティポリシーと違う点）
+'   並び順はセキュリティ・復号とも同じ（Global Pre → Prisma Access Pre → MUC Pre → GP → EP → MUC Post → RN → SC → Prisma Access Post → Global Post）
+'   GP・EP・RN・SC は Pre/Post なし。Service Connections は復号ポリシーだけ設定できる（セキュリティポリシーは対象外）
 '==========================================================
 Option Explicit
 
@@ -631,28 +632,18 @@ Private Sub CopyGetToSet()
            "変更・削除は「操作」列で選択、追加は追加したい位置の1つ上の行（先頭なら ▼の行）を選んで「選択行の下に追加行を挿入」を押してください。", vbInformation
 End Sub
 
-' 設定できる folder・position（評価順）。All は参照のみなので作らない
-'   セキュリティ：Service Connections は対象外。GlobalProtect・Explicit Proxy・Remote Networks は1つのルールベース
-'   復号　　　　：Pre をすべて（親→子）→ Post をすべて（子→親）。Service Connections も対象
+' 設定できる folder・position（評価順。セキュリティ・復号とも同じ）。All は参照のみなので作らない
+'   GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は1つのルールベース（Pre/Post なし）
+'   Service Connections は復号ポリシーだけ（セキュリティポリシーは設定できない）
 Private Function FlowOrder() As Collection
-    Dim c As New Collection, f As Variant, i As Long
-    If mMode = "dec" Then
-        f = Array("Shared", "Remote Networks", "Service Connections", "Mobile Users Container", "Mobile Users", "Mobile Users Explicit Proxy")
-        For i = 0 To UBound(f)
-            c.Add Array(CStr(f(i)), "pre")
-        Next
-        For i = UBound(f) To 0 Step -1
-            c.Add Array(CStr(f(i)), "post")
-        Next
-        Set FlowOrder = c
-        Exit Function
-    End If
+    Dim c As New Collection
     c.Add Array("Shared", "pre")
     c.Add Array("Mobile Users Container", "pre")
     c.Add Array("Mobile Users", "pre")
     c.Add Array("Mobile Users Explicit Proxy", "pre")
     c.Add Array("Mobile Users Container", "post")
     c.Add Array("Remote Networks", "pre")
+    If mMode = "dec" Then c.Add Array("Service Connections", "pre")
     c.Add Array("Shared", "post")
     Set FlowOrder = c
 End Function
@@ -1101,9 +1092,8 @@ Private Function ScopeLabel(ByVal folder As String) As String
 End Function
 
 Private Function SingleRB(ByVal folder As String) As Boolean
-    If mMode = "dec" Then Exit Function
     Select Case LCase$(folder)
-        Case "mobile users", "mobile users explicit proxy", "remote networks": SingleRB = True
+        Case "mobile users", "mobile users explicit proxy", "remote networks", "service connections": SingleRB = True
     End Select
 End Function
 
@@ -1233,10 +1223,8 @@ End Function
 ' その folder・position を取得するか
 Private Function NeedFetch(ByVal folder As String, ByVal pos As String) As Boolean
     Dim ps As Variant
-    If mMode <> "dec" Then
-        If LCase$(folder) = "service connections" Then Exit Function
-        If SingleRB(folder) Then NeedFetch = True: Exit Function
-    End If
+    If mMode <> "dec" And LCase$(folder) = "service connections" Then Exit Function
+    If SingleRB(folder) Then NeedFetch = True: Exit Function
     For Each ps In Positions()
         If ps = pos Then NeedFetch = True
     Next
@@ -1301,33 +1289,12 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
     Set FetchRuleGroups = groups
 End Function
 
-' 取得結果の並び（既存ツールと同じ）。All は応答に含まれるときだけ
+' 取得結果の並び（セキュリティ・復号とも同じ評価順）。All は応答に含まれるときだけ
 Private Function FetchOrder(ByVal scopes As Collection) As Collection
     Dim res As New Collection, sel As Object, sc As Variant, usePre As Boolean, usePost As Boolean, ps As Variant, x As Variant
-    Dim fs() As String, n As Long, i As Long
     For Each ps In Positions()
         If ps = "pre" Then usePre = True Else usePost = True
     Next
-    If mMode = "dec" Then
-        ReDim fs(0 To scopes.Count)
-        fs(0) = "All"
-        For Each sc In scopes
-            n = n + 1
-            fs(n) = CStr(sc(1))
-        Next
-        If usePre Then
-            For i = 0 To n
-                res.Add Array(fs(i), "pre")
-            Next
-        End If
-        If usePost Then
-            For i = n To 0 Step -1
-                res.Add Array(fs(i), "post")
-            Next
-        End If
-        Set FetchOrder = res
-        Exit Function
-    End If
     Set sel = CreateObject("Scripting.Dictionary")
     sel("All") = True
     For Each sc In scopes
@@ -1338,6 +1305,7 @@ Private Function FetchOrder(ByVal scopes As Collection) As Collection
                         Array("Mobile Users Explicit Proxy", "pre"), Array("Mobile Users Explicit Proxy", "post"), _
                         Array("Mobile Users Container", "post"), _
                         Array("Remote Networks", "pre"), Array("Remote Networks", "post"), _
+                        Array("Service Connections", "pre"), Array("Service Connections", "post"), _
                         Array("Shared", "post"), Array("All", "post"))
         If sel.Exists(CStr(x(0))) Then
             If SingleRB(CStr(x(0))) Then
