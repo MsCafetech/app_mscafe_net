@@ -5,7 +5,8 @@ Attribute VB_Name = "modInPolicy"
 '   ⑫・⑬     = 入力（既存ツールの「③…_設定」と同じ列。操作：追加・変更・削除・移動・変更+移動）
 '   参照_ポリシー選択肢 = ダブルクリック選択の候補・入力チェックの基準（②既存データ＋③～⑪の入力から作る）
 '   スコープ  : ルールの folder から見えるのは自分＋上位（RN・SC・MUC→Shared、GP・EP→MUC・Shared）。All は参照のみ
-'   前提      : modScmInput と同じブックに入れる（API・JSON は使いません）
+'   前提      : modScmInput・modInFetch・modScmCommon と同じブックに入れる（API は GET だけ。JSON化・登録はしません）
+'   復号ポリシーは Service Connections にも設定でき、Pre/Post の区別がすべての folder にある（セキュリティポリシーと違う点）
 '==========================================================
 Option Explicit
 
@@ -353,9 +354,10 @@ Public Sub BuildChoices()
     Set mRef = BuildRefMap()
 End Sub
 
+' ③～⑪で登録するオブジェクトの folder（①基本設定の「オブジェクト取得folder」。通常 Shared）
 Private Function CustFolder() As String
     On Error Resume Next
-    CustFolder = Trim$(SafeStr(ThisWorkbook.Names("CUST_FOLDER").RefersToRange.Value))
+    CustFolder = Trim$(SafeStr(ThisWorkbook.Names("CFG_OBJ_FOLDER").RefersToRange.Value))
     On Error GoTo 0
     If CustFolder = "" Then CustFolder = "Shared"
     CustFolder = NormFolder(CustFolder)
@@ -599,7 +601,7 @@ Private Sub CopyGetToSet()
         Next
     Else
         ' 既存なし：設定できるスコープの見出しだけ（評価順）
-        ReDim out(1 To 7, 1 To S_HF + 1)
+        ReDim out(1 To FlowOrder().Count, 1 To S_HF + 1)
         For Each x In FlowOrder()
             n = n + 1
             out(n, 1) = HDR
@@ -629,9 +631,22 @@ Private Sub CopyGetToSet()
            "変更・削除は「操作」列で選択、追加は追加したい位置の1つ上の行（先頭なら ▼の行）を選んで「選択行の下に追加行を挿入」を押してください。", vbInformation
 End Sub
 
-' 設定できる folder・position（評価順）。Service Connections は対象外、All は参照のみなので作らない
+' 設定できる folder・position（評価順）。All は参照のみなので作らない
+'   セキュリティ：Service Connections は対象外。GlobalProtect・Explicit Proxy・Remote Networks は1つのルールベース
+'   復号　　　　：Pre をすべて（親→子）→ Post をすべて（子→親）。Service Connections も対象
 Private Function FlowOrder() As Collection
-    Dim c As New Collection
+    Dim c As New Collection, f As Variant, i As Long
+    If mMode = "dec" Then
+        f = Array("Shared", "Remote Networks", "Service Connections", "Mobile Users Container", "Mobile Users", "Mobile Users Explicit Proxy")
+        For i = 0 To UBound(f)
+            c.Add Array(CStr(f(i)), "pre")
+        Next
+        For i = UBound(f) To 0 Step -1
+            c.Add Array(CStr(f(i)), "post")
+        Next
+        Set FlowOrder = c
+        Exit Function
+    End If
     c.Add Array("Shared", "pre")
     c.Add Array("Mobile Users Container", "pre")
     c.Add Array("Mobile Users", "pre")
@@ -677,8 +692,8 @@ Private Sub InsertRuleRow()
         MsgBox "グローバル（All）のスコープには追加できません（参照のみ）。", vbExclamation
         Exit Sub
     End If
-    If LCase$(folder) = "service connections" Then
-        MsgBox "Service Connections にはポリシーを設定できません。", vbExclamation
+    If LCase$(folder) = "service connections" And mMode <> "dec" Then
+        MsgBox "Service Connections にはセキュリティポリシーを設定できません。", vbExclamation
         Exit Sub
     End If
     Application.ScreenUpdating = False
@@ -756,7 +771,7 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
                     ngs = ngs & vbLf & "NG:操作はプルダウンから選択してください"
             End Select
             If LCase$(folder) = "all" And op <> "" Then ngs = ngs & vbLf & "NG:グローバル（All）のルールは操作できません（参照のみ）"
-            If LCase$(folder) = "service connections" And op <> "" Then ngs = ngs & vbLf & "NG:Service Connections にはポリシーを設定できません"
+            If LCase$(folder) = "service connections" And op <> "" And mMode <> "dec" Then ngs = ngs & vbLf & "NG:Service Connections にはセキュリティポリシーを設定できません"
             If id <> "" Then
                 If before.Exists(id) Then
                     b = before(id)
@@ -1086,6 +1101,7 @@ Private Function ScopeLabel(ByVal folder As String) As String
 End Function
 
 Private Function SingleRB(ByVal folder As String) As Boolean
+    If mMode = "dec" Then Exit Function
     Select Case LCase$(folder)
         Case "mobile users", "mobile users explicit proxy", "remote networks": SingleRB = True
     End Select
@@ -1175,6 +1191,482 @@ Private Sub PaintBase(ByVal ws As Worksheet, ByVal r As Long)
     ws.Range(ws.Cells(r, S_NAME), ws.Cells(r, S_LAST)).Interior.Color = C_IN
     ws.Cells(r, 1).Interior.Color = C_FX
     ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_ID)).Interior.Color = C_FX
+End Sub
+
+'==========================================================
+' API 取得（GET のみ。modInFetch.FetchExistingAll から呼ぶ）
+'   ②-2／②-3：既存ツールと同じく folder × position ごとに GET → スコープごとに表化（継承分は定義元のスコープだけに出す）
+'   戻り値：失敗した種類の数
+'==========================================================
+Public Function FetchPolicies(ByRef msg As String) As Long
+    Dim m As Variant, groups As Collection, failN As Long, g As Variant, n As Long, lbl As String
+    For Each m In Array("sec", "dec")
+        SetMode CStr(m)
+        lbl = IIf(m = "dec", "復号ポリシー", "セキュリティポリシー")
+        failN = 0
+        Set groups = FetchRuleGroups("既存取得（" & lbl & "）", failN)
+        If groups Is Nothing Then
+            FetchPolicies = FetchPolicies + 1
+            msg = msg & vbLf & "　" & lbl & "：失敗（①の対象スコープに○がありません）"
+        ElseIf groups.Count = 0 Then
+            FetchPolicies = FetchPolicies + 1
+            msg = msg & vbLf & "　" & lbl & "：失敗"
+        Else
+            WriteGetSheet groups
+            n = 0
+            For Each g In groups
+                n = n + g(3).Count
+            Next
+            msg = msg & vbLf & "　" & lbl & "：" & n & " 件" & IIf(failN > 0, "（" & failN & " 件のスコープは取得失敗）", "")
+        End If
+    Next
+End Function
+
+Private Function Positions() As Variant
+    Select Case LCase$(CfgOpt("CFG_POSITION"))
+        Case "post": Positions = Array("post")
+        Case "pre": Positions = Array("pre")
+        Case Else: Positions = Array("pre", "post")
+    End Select
+End Function
+
+' その folder・position を取得するか
+Private Function NeedFetch(ByVal folder As String, ByVal pos As String) As Boolean
+    Dim ps As Variant
+    If mMode <> "dec" Then
+        If LCase$(folder) = "service connections" Then Exit Function
+        If SingleRB(folder) Then NeedFetch = True: Exit Function
+    End If
+    For Each ps In Positions()
+        If ps = pos Then NeedFetch = True
+    Next
+End Function
+
+Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) As Collection
+    Dim scopes As Collection, sc As Variant, ps As Variant, items As Collection, item As Variant, url As String
+    Dim own As Object, seen As Object, allD As Object, c As Collection, groups As New Collection, fo As Variant
+    Dim st As Long, m As String, f As String, k As String, inh As Long, q As String, key As String
+    Set scopes = modInFetch.InSelScopes()
+    If scopes.Count = 0 Then Exit Function
+    url = modInFetch.InApiBase() & IIf(mMode = "dec", "/sse/config/v1/decryption-rules", "/sse/config/v1/security-rules")
+    Set own = CreateObject("Scripting.Dictionary")
+    Set allD = CreateObject("Scripting.Dictionary")
+    For Each ps In Array("pre", "post")
+        Set seen = CreateObject("Scripting.Dictionary")
+        Set allD(CStr(ps)) = New Collection
+        For Each sc In scopes
+            If NeedFetch(CStr(sc(1)), CStr(ps)) Then
+                Prog opLabel & "：" & sc(0) & "（" & ps & "）を取得中…"
+                q = "folder=" & modInFetch.InEnc(CStr(sc(1))) & "&position=" & ps
+                Set items = modInFetch.InGetAll(url, q, opLabel, st, m)
+                If items Is Nothing Then
+                    failN = failN + 1
+                Else
+                    Set c = New Collection
+                    inh = 0
+                    For Each item In items
+                        f = Nz(item, "folder")
+                        If f = "" Or f = CStr(sc(1)) Then
+                            c.Add item
+                        ElseIf LCase$(f) = "all" Then
+                            k = Nz(item, "id")
+                            If k = "" Then k = Nz(item, "name")
+                            If Not seen.Exists(k) Then
+                                seen(k) = True
+                                allD(CStr(ps)).Add item
+                            End If
+                        Else
+                            inh = inh + 1
+                        End If
+                    Next
+                    Set own(CStr(sc(1)) & "|" & ps) = c
+                    WriteLog opLabel, CStr(sc(0)) & "／" & ps, "GET", WithQuery(url, q), 200, _
+                             "定義 " & c.Count & " 件（上位folderから継承 " & inh & " 件は定義元のスコープに表示）"
+                End If
+            End If
+        Next
+    Next
+    For Each fo In FetchOrder(scopes)
+        key = fo(0) & "|" & fo(1)
+        If fo(0) = "All" Then
+            If allD.Exists(CStr(fo(1))) Then
+                If allD(CStr(fo(1))).Count > 0 Then groups.Add Array("All", CStr(fo(1)), GroupLabel("All", CStr(fo(1))), allD(CStr(fo(1))))
+            End If
+        ElseIf own.Exists(key) Then
+            If Not (SingleRB(CStr(fo(0))) And fo(1) = "post" And own(key).Count = 0) Then
+                groups.Add Array(CStr(fo(0)), CStr(fo(1)), GroupLabel(CStr(fo(0)), CStr(fo(1))), own(key))
+            End If
+        End If
+    Next
+    Set FetchRuleGroups = groups
+End Function
+
+' 取得結果の並び（既存ツールと同じ）。All は応答に含まれるときだけ
+Private Function FetchOrder(ByVal scopes As Collection) As Collection
+    Dim res As New Collection, sel As Object, sc As Variant, usePre As Boolean, usePost As Boolean, ps As Variant, x As Variant
+    Dim fs() As String, n As Long, i As Long
+    For Each ps In Positions()
+        If ps = "pre" Then usePre = True Else usePost = True
+    Next
+    If mMode = "dec" Then
+        ReDim fs(0 To scopes.Count)
+        fs(0) = "All"
+        For Each sc In scopes
+            n = n + 1
+            fs(n) = CStr(sc(1))
+        Next
+        If usePre Then
+            For i = 0 To n
+                res.Add Array(fs(i), "pre")
+            Next
+        End If
+        If usePost Then
+            For i = n To 0 Step -1
+                res.Add Array(fs(i), "post")
+            Next
+        End If
+        Set FetchOrder = res
+        Exit Function
+    End If
+    Set sel = CreateObject("Scripting.Dictionary")
+    sel("All") = True
+    For Each sc In scopes
+        sel(CStr(sc(1))) = True
+    Next
+    For Each x In Array(Array("All", "pre"), Array("Shared", "pre"), Array("Mobile Users Container", "pre"), _
+                        Array("Mobile Users", "pre"), Array("Mobile Users", "post"), _
+                        Array("Mobile Users Explicit Proxy", "pre"), Array("Mobile Users Explicit Proxy", "post"), _
+                        Array("Mobile Users Container", "post"), _
+                        Array("Remote Networks", "pre"), Array("Remote Networks", "post"), _
+                        Array("Shared", "post"), Array("All", "post"))
+        If sel.Exists(CStr(x(0))) Then
+            If SingleRB(CStr(x(0))) Then
+                res.Add x
+            ElseIf (x(1) = "pre" And usePre) Or (x(1) = "post" And usePost) Then
+                res.Add x
+            End If
+        End If
+    Next
+    Set FetchOrder = res
+End Function
+
+' APIの1ルール → 値の配列（0=name, 1～NF=項目。配列はセル内改行区切り）
+Private Function RuleVals(ByVal item As Object) As Variant
+    Dim v() As String, i As Long, k As String, td As Object, tk As Variant
+    ReDim v(0 To NF)
+    v(0) = Nz(item, "name")
+    For i = 0 To NF - 1
+        k = mFK(i)
+        Select Case mFT(i)
+            Case "a": v(i + 1) = JoinLf(item, k)
+            Case "b": v(i + 1) = BoolTxt(item, k)
+            Case "s": v(i + 1) = Nz(item, k)
+            Case "g"
+                If item.Exists(k) Then
+                    If IsObject(item(k)) Then
+                        If TypeName(item(k)) <> "Collection" Then v(i + 1) = JoinLf(item(k), "group")
+                    End If
+                End If
+            Case "t"
+                If item.Exists("type") Then
+                    If IsObject(item("type")) Then
+                        Set td = item("type")
+                        If TypeName(td) = "Dictionary" Then
+                            For Each tk In td.Keys
+                                v(i + 1) = CStr(tk)
+                                If CStr(tk) = "ssl_inbound_inspection" Then
+                                    If Not IsObject(td(tk)) Then v(i + 2) = SafeStr(td(tk))
+                                End If
+                            Next
+                        End If
+                    End If
+                End If
+        End Select
+    Next
+    RuleVals = v
+End Function
+
+Private Function JoinLf(ByVal item As Object, ByVal key As String) As String
+    Dim t As Variant, r As String
+    If Not item.Exists(key) Then Exit Function
+    If Not IsObject(item(key)) Then JoinLf = SafeStr(item(key)): Exit Function
+    For Each t In item(key)
+        If Not IsObject(t) Then
+            If r <> "" Then r = r & vbLf
+            r = r & SafeStr(t)
+        End If
+    Next
+    JoinLf = r
+End Function
+
+Private Function BoolTxt(ByVal item As Object, ByVal key As String) As String
+    Dim x As Variant
+    If Not item.Exists(key) Then Exit Function
+    If IsObject(item(key)) Then Exit Function
+    x = item(key)
+    If VarType(x) = vbBoolean Then
+        BoolTxt = IIf(x, "true", "false")
+    Else
+        BoolTxt = LCase$(SafeStr(x))
+    End If
+End Function
+
+' ②-2／②-3 に書く（A=順番 B～D=スコープ E=folder F=position G=id H=name I～=項目 最後=取得時JSON、見出し行の folder/position は非表示列）
+Private Sub WriteGetSheet(ByVal groups As Collection)
+    Dim ws As Worksheet, g As Variant, item As Variant, r As Long, n As Long, v As Variant, a() As Variant, i As Long
+    Set ws = Worksheets(mGet)
+    With ws.Range(ws.Cells(FIRST, 1), ws.Cells(ws.Rows.Count, G_HF + 1))
+        .ClearContents
+        .ClearFormats
+        .FormatConditions.Delete
+    End With
+    r = FIRST
+    For Each g In groups
+        ws.Range(ws.Cells(r, 1), ws.Cells(r, G_HF + 1)).NumberFormat = "@"
+        ws.Cells(r, 1).Value = HDR
+        ws.Cells(r, G_SCOPE).Value = "■ " & g(2) & " ／ " & g(3).Count & " 件"
+        ws.Cells(r, G_HF).Value = g(0)
+        ws.Cells(r, G_HF + 1).Value = g(1)
+        PaintHeaderG ws, r
+        r = r + 1
+        n = 0
+        For Each item In g(3)
+            n = n + 1
+            v = RuleVals(item)
+            ReDim a(1 To 1, 1 To G_LAST)
+            a(1, 1) = n
+            a(1, G_SCOPE) = g(2)
+            a(1, G_FOLDER) = g(0)
+            a(1, G_FOLDER + 1) = g(1)
+            a(1, G_ID) = Nz(item, "id")
+            For i = 0 To NF
+                a(1, G_NAME + i) = v(i)
+            Next
+            a(1, G_LAST) = Left$(modInFetch.InJsonOf(item), 32000)
+            ws.Range(ws.Cells(r, 2), ws.Cells(r, G_LAST)).NumberFormat = "@"
+            ws.Range(ws.Cells(r, 1), ws.Cells(r, G_LAST)).Value = a
+            With ws.Range(ws.Cells(r, 1), ws.Cells(r, G_LAST))
+                .Font.Name = "Meiryo UI"
+                .Font.Size = 10
+                .WrapText = True
+                .VerticalAlignment = xlTop
+                .Borders.LineStyle = xlContinuous
+                .Borders.Color = &HBFBFBF
+            End With
+            If n = 1 Then ws.Cells(r, G_SCOPE).Font.Bold = True
+            IndentRow ws, r, G_SCOPE, CStr(g(0))
+            r = r + 1
+        Next
+    Next
+    ws.Range("B3").Value = Now
+End Sub
+
+Private Sub PaintHeaderG(ByVal ws As Worksheet, ByVal r As Long)
+    Dim f As String
+    f = SafeStr(ws.Cells(r, G_HF).Value)
+    With ws.Range(ws.Cells(r, 1), ws.Cells(r, G_LAST))
+        .Interior.Color = DepthColor(ScopeDepth(f))
+        .Font.Name = "Meiryo UI"
+        .Font.Size = 10
+        .Font.Bold = True
+        .Font.Color = vbWhite
+        .WrapText = False
+        .Borders.LineStyle = xlNone
+    End With
+    ws.Range(ws.Cells(r, G_HF), ws.Cells(r, G_HF + 1)).Font.Color = vbWhite
+    IndentRow ws, r, G_SCOPE, f
+    ws.Cells(r, G_SCOPE + ScopeLvl(f)).Font.Bold = True
+End Sub
+
+'==========================================================
+' 参照_ポリシー選択肢 の API 取得（タグ・アプリグループ・アプリフィルタ・リージョン・事前定義URL・自作App・証明書・復号プロファイル）
+'   アドレス等のオブジェクトの列は ② から作る（最後に BuildChoices）。ゾーンは取得したルールで使われているものを追加
+'   戻り値：失敗した種類の数
+'==========================================================
+Public Function FetchPolicyChoices(ByRef msg As String) As Long
+    Dim ng As Long, items As Collection, item As Variant, vals As Collection, scs As Collection, nm As String
+    Dim base As String, q As String, st As Long, m As String, custom As Object, ws2 As Worksheet, r As Long, lastR As Long
+    base = CfgOpt("CFG_OBJ_FOLDER")
+    If base = "" Then base = "Shared"
+    q = "folder=" & modInFetch.InEnc(base)
+    If Not ChoiceCol(CH_TAG, "/sse/config/v1/tags") Then ng = ng + 1
+    If Not ChoiceCol(CH_APPG, "/sse/config/v1/application-groups") Then ng = ng + 1
+    If Not ChoiceCol(CH_APPF, "/sse/config/v1/application-filters") Then ng = ng + 1
+    If Not ChoiceCol(CH_DECP, "/sse/config/v1/decryption-profiles", False) Then ng = ng + 1
+    If Not ChoiceCol(CH_CERT, "/sse/config/v1/certificates", False) Then ng = ng + 1
+    ' リージョン（スコープなし）
+    Prog "選択肢：リージョンを取得中…"
+    Set items = modInFetch.InGetAll(modInFetch.InApiBase() & "/sse/config/v1/regions", q, "選択肢取得（リージョン）", st, m)
+    If items Is Nothing Then
+        ng = ng + 1
+    Else
+        Set vals = New Collection
+        For Each item In items
+            If Nz(item, "name") <> "" Then vals.Add Nz(item, "name")
+        Next
+        WriteChoiceCol CH_REGION, vals
+    End If
+    ' 事前定義URLカテゴリ（カスタムURLカテゴリ＝②の一覧 は除く。403 は権限なしとして今の一覧のまま）
+    Set custom = CreateObject("Scripting.Dictionary")
+    Set ws2 = Worksheets(S2)
+    lastR = LastRow(ws2, OFF_URL + 2)
+    For r = FIRST To lastR
+        If SafeStr(ws2.Cells(r, OFF_URL + 2).Value) <> "" Then custom(SafeStr(ws2.Cells(r, OFF_URL + 2).Value)) = True
+    Next
+    Prog "選択肢：事前定義URLカテゴリを取得中…"
+    Set items = modInFetch.InGetAll(modInFetch.InApiBase() & "/sse/config/v1/url-filtering-categories", q, "選択肢取得（事前定義URL）", st, m)
+    If items Is Nothing Then
+        If st <> 403 Then ng = ng + 1
+    Else
+        Set vals = New Collection
+        For Each item In items
+            nm = Nz(item, "value")
+            If nm = "" Then nm = Nz(item, "name")
+            If nm <> "" And Not custom.Exists(nm) And InStr(LCase$(Nz(item, "type")), "custom") = 0 Then vals.Add nm
+        Next
+        If vals.Count > 0 Then WriteChoiceCol CH_URLP, vals
+    End If
+    ' 自作App（定義済み約11万件は読み飛ばす。オブジェクト取得folderのみ）
+    If CfgOpt("CFG_APP_FETCH") <> "しない" Then
+        If CustomApps(q, base, vals, scs) Then
+            WriteChoiceCol CH_APPC, vals
+            WriteChoiceCol CH_APPC + 1, scs
+            msg = msg & vbLf & "　自作アプリケーション：" & vals.Count & " 件"
+        Else
+            ng = ng + 1
+        End If
+    End If
+    AddUsedZones
+    BuildChoices
+    Worksheets(SH_CHO).Range("B3").Value = Now
+    msg = msg & vbLf & "　ポリシーの選択肢（タグ・リージョン・アプリ・証明書・復号プロファイル・ゾーン）" & IIf(ng > 0, "：" & ng & " 種類は失敗", "")
+    FetchPolicyChoices = ng
+End Function
+
+' 1種類を ○のスコープ等から取得して 名前列 と スコープ列（右隣）に書く。withScope=False なら名前列だけ
+Private Function ChoiceCol(ByVal col As Long, ByVal ep As String, Optional ByVal withScope As Boolean = True) As Boolean
+    Dim items As Collection, item As Variant, vals As New Collection, scs As New Collection, fd As String
+    Set items = modInFetch.InGetFolders(ep, "選択肢取得（" & Mid$(ep, InStrRev(ep, "/") + 1) & "）")
+    If items Is Nothing Then Exit Function
+    For Each item In items
+        If Nz(item, "name") <> "" Then
+            fd = Nz(item, "folder")
+            If fd = "" Then fd = Nz(item, "snippet")
+            vals.Add Nz(item, "name"): scs.Add fd
+        End If
+    Next
+    WriteChoiceCol col, vals
+    If withScope Then WriteChoiceCol col + 1, scs
+    ChoiceCol = True
+End Function
+
+Private Sub WriteChoiceCol(ByVal col As Long, ByVal vals As Collection)
+    Dim ws As Worksheet, a() As Variant, i As Long, n As Long
+    Set ws = Worksheets(SH_CHO)
+    ws.Range(ws.Cells(FIRST, col), ws.Cells(CHO_LAST, col)).ClearContents
+    n = vals.Count
+    If n = 0 Then Exit Sub
+    If n > CHO_LAST - FIRST + 1 Then n = CHO_LAST - FIRST + 1
+    ReDim a(1 To n, 1 To 1)
+    For i = 1 To n
+        a(i, 1) = vals(i)
+    Next
+    ws.Cells(FIRST, col).Resize(n, 1).NumberFormat = "@"
+    ws.Cells(FIRST, col).Resize(n, 1).Value = a
+End Sub
+
+Private Function CustomApps(ByVal q As String, ByVal folder As String, ByRef c As Collection, ByRef sc As Collection) As Boolean
+    Dim url As String, resText As String, res As Object, item As Variant, st As Long
+    Dim offset As Long, rawN As Long, lim As Long, total As Long, t0 As Single, fd As String
+    Set c = New Collection: Set sc = New Collection
+    lim = Val(CfgOpt("CFG_PAGE_LIMIT"))
+    If lim <= 0 Then lim = 200
+    t0 = Timer
+    Do
+        url = WithQuery(modInFetch.InApiBase() & "/sse/config/v1/applications", q & "&limit=" & lim & "&offset=" & offset)
+        If Not EnsureToken() Then Exit Function
+        st = HttpCall("GET", url, "", resText)
+        If st = 401 Then
+            If FetchToken() Then st = HttpCall("GET", url, "", resText)
+        End If
+        If st <> 200 Then
+            WriteLog "選択肢取得（自作App）", "", "GET", url, st, ErrSummary(resText)
+            Exit Function
+        End If
+        rawN = 0
+        Set res = ParseJsonSkipPredef(resText, rawN)
+        resText = ""
+        If Not res Is Nothing Then
+            If res.Exists("total") Then total = Val(SafeStr(res("total")))
+            If res.Exists("data") Then
+                If IsObject(res("data")) Then
+                    For Each item In res("data")
+                        If IsObject(item) Then
+                            If Nz(item, "id") <> "" And InStr(LCase$(Nz(item, "folder") & " " & Nz(item, "snippet")), "predefined") = 0 And Nz(item, "name") <> "" Then
+                                fd = Nz(item, "folder")
+                                If fd = "" Then fd = folder
+                                c.Add Nz(item, "name"): sc.Add fd
+                            End If
+                        End If
+                    Next
+                End If
+            End If
+        End If
+        offset = offset + lim
+        Prog "選択肢：applications を確認中 " & Format$(IIf(total > 0 And offset > total, total, offset), "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & _
+             " 件（自作App " & c.Count & " 件・経過 " & Format$(Timer - t0, "0") & " 秒）"
+        DoEvents
+        If rawN < lim Then Exit Do
+        If total > 0 And offset >= total Then Exit Do
+    Loop
+    WriteLog "選択肢取得（自作App）", "", "GET", WithQuery(modInFetch.InApiBase() & "/sse/config/v1/applications", q), 200, _
+             c.Count & " 件（定義済みを除く。確認 " & offset & " 件）"
+    CustomApps = True
+End Function
+
+' ②-2・②-3 のルールで使われているゾーンのうち選択肢に無いものを、使われている folder 付きで追加
+Private Sub AddUsedZones()
+    Dim wsG As Worksheet, wsC As Worksheet, known As Object, used As Object, lastR As Long, arr As Variant, i As Long
+    Dim fi As Variant, a As Variant, j As Long, z As String, f As String, r As Long, k As Variant, m As Variant
+    Set wsC = Worksheets(SH_CHO)
+    Set known = CreateObject("Scripting.Dictionary")
+    For r = FIRST To LastRow(wsC, CH_ZONE)
+        If Trim$(SafeStr(wsC.Cells(r, CH_ZONE).Value)) <> "" Then known(Trim$(SafeStr(wsC.Cells(r, CH_ZONE).Value))) = True
+    Next
+    Set used = CreateObject("Scripting.Dictionary")
+    For Each m In Array("sec", "dec")
+        SetMode CStr(m)
+        Set wsG = Worksheets(mGet)
+        lastR = UsedLast(wsG)
+        If lastR >= FIRST Then
+            arr = wsG.Range(wsG.Cells(FIRST, 1), wsG.Cells(lastR, G_LAST)).Value
+            For i = 1 To UBound(arr, 1)
+                f = SafeStr(arr(i, G_FOLDER))
+                If SafeStr(arr(i, 1)) <> HDR And f <> "" Then
+                    For Each fi In Array(FIdx("from"), FIdx("to"))
+                        a = SplitMembers(SafeStr(arr(i, G_NAME + fi)))
+                        For j = 0 To UBound(a)
+                            z = CStr(a(j))
+                            If LCase$(z) <> "any" And Not known.Exists(z) Then
+                                If Not used.Exists(z) Then used(z) = ""
+                                If InStr("," & used(z) & ",", "," & f & ",") = 0 Then used(z) = used(z) & IIf(used(z) = "", "", ",") & f
+                            End If
+                        Next
+                    Next
+                End If
+            Next
+        End If
+    Next
+    If used.Count = 0 Then Exit Sub
+    r = LastRow(wsC, CH_ZONE) + 1
+    If r < FIRST Then r = FIRST
+    For Each k In used.Keys
+        wsC.Range(wsC.Cells(r, CH_ZONE), wsC.Cells(r, CH_ZONE + 1)).NumberFormat = "@"
+        wsC.Cells(r, CH_ZONE).Value = k
+        wsC.Cells(r, CH_ZONE + 1).Value = used(k)
+        r = r + 1
+    Next
+    WriteLog "選択肢取得", "ゾーン", "", "", 0, used.Count & " 件を②-2・②-3のルールから追加（スコープ=使われているfolder。必要なら手で直してください）"
 End Sub
 
 '==========================================================
