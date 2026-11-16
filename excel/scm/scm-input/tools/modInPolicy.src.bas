@@ -1,7 +1,7 @@
 Attribute VB_Name = "modInPolicy"
 '==========================================================
 ' modInPolicy : 統合入力シートのセキュリティポリシー／復号ポリシー
-'   ②-2・②-3 = 既存ポリシー（既存ツールの「②SecRule_取得」「②DecRule_取得」を取込）
+'   ②-2・②-3 = 既存ポリシー（①の「既存情報をまとめて取得（API）」で GET した結果。列は既存ツールの「②SecRule_取得」「②DecRule_取得」と同じ）
 '   ⑫・⑬     = 入力（既存ツールの「③…_設定」と同じ列。操作：追加・変更・削除・移動・変更+移動）
 '   参照_ポリシー選択肢 = ダブルクリック選択の候補・入力チェックの基準（②既存データ＋③～⑪の入力から作る）
 '   スコープ  : ルールの folder から見えるのは自分＋上位（RN・SC・MUC→Shared、GP・EP→MUC・Shared）。All は参照のみ
@@ -39,9 +39,9 @@ Private Const OFF_ADRG As Long = 14
 Private Const OFF_SVC As Long = 26
 Private Const OFF_SVCG As Long = 40
 Private Const OFF_URL As Long = 47
-Private Const OFF_HIPP As Long = 125
-Private Const OFF_EDL As Long = 134
-Private Const OFF_PG As Long = 154
+Private Const OFF_HIPP As Long = 124
+Private Const OFF_EDL As Long = 133
+Private Const OFF_PG As Long = 153
 
 ' ⑦ カスタムURLカテゴリ（横長）
 Private Const U_C1 As Long = 2
@@ -239,91 +239,10 @@ Public Sub CheckPolicies()
 End Sub
 
 '==========================================================
-' 既存ツールから取込（modScmInput.ImportFromTools から呼ぶ）。戻り値=取り込んだシート数
-'==========================================================
-Public Function ImportPolicy(ByVal wbS As Workbook, ByRef msg As String) As Long
-    Dim n As Long
-    n = n + CopyGetSheet(wbS, "②SecRule_取得", "sec", msg)
-    n = n + CopyGetSheet(wbS, "②DecRule_取得", "dec", msg)
-    If HasSheet(wbS, "⑧SecRule_選択肢") Then
-        CopyChoiceCols wbS.Worksheets("⑧SecRule_選択肢"), Array(2, 3, 11, 18, 19, 20, 23, 24, 25, 26, 27, 28, 29, 30), _
-                       Array(2, 3, 11, 18, 19, 20, 23, 24, 25, 26, 27, 28, 29, 30)
-        msg = msg & vbLf & "　ポリシーの選択肢（ゾーン・タグ・リージョン・アプリ等）"
-        n = n + 1
-    End If
-    If HasSheet(wbS, "⑧DecRule_選択肢") Then
-        CopyChoiceCols wbS.Worksheets("⑧DecRule_選択肢"), Array(14), Array(CH_CERT)
-        MergeZones wbS.Worksheets("⑧DecRule_選択肢")
-        msg = msg & vbLf & "　復号ポリシーの選択肢（証明書・ゾーン）"
-        n = n + 1
-    End If
-    If HasSheet(wbS, "⑦DecProfile_一覧") Then
-        CopyChoiceCols wbS.Worksheets("⑦DecProfile_一覧"), Array(2), Array(CH_DECP)
-        msg = msg & vbLf & "　復号プロファイル"
-        n = n + 1
-    End If
-    ImportPolicy = n
-End Function
-
-Private Function CopyGetSheet(ByVal wbS As Workbook, ByVal srcName As String, ByVal m As String, ByRef msg As String) As Long
-    Dim wsS As Worksheet, wsD As Worksheet, lastR As Long, cnt As Long, r As Long
-    If Not HasSheet(wbS, srcName) Then Exit Function
-    SetMode m
-    Set wsS = wbS.Worksheets(srcName)
-    Set wsD = Worksheets(mGet)
-    With wsD.Range(wsD.Cells(FIRST, 1), wsD.Cells(wsD.Rows.Count, G_HF + 1))
-        .ClearContents
-        .ClearFormats
-    End With
-    lastR = UsedLast(wsS)
-    If lastR >= FIRST Then
-        wsS.Range(wsS.Cells(FIRST, 1), wsS.Cells(lastR, G_HF + 1)).Copy Destination:=wsD.Cells(FIRST, 1)
-        For r = FIRST To lastR
-            If SafeStr(wsS.Cells(r, 1).Value) <> HDR And SafeStr(wsS.Cells(r, G_NAME).Value) <> "" Then cnt = cnt + 1
-        Next
-    End If
-    wsD.Range("B3").Value = Now
-    msg = msg & vbLf & "　" & IIf(m = "dec", "復号ポリシー", "セキュリティポリシー") & "：" & cnt & " 件"
-    CopyGetSheet = 1
-End Function
-
-Private Sub CopyChoiceCols(ByVal wsS As Worksheet, ByVal srcCols As Variant, ByVal dstCols As Variant)
-    Dim wsC As Worksheet, i As Long, lastR As Long, sc As Long, dc As Long
-    Set wsC = Worksheets(SH_CHO)
-    For i = 0 To UBound(srcCols)
-        sc = srcCols(i): dc = dstCols(i)
-        lastR = LastRow(wsS, sc)
-        wsC.Range(wsC.Cells(FIRST, dc), wsC.Cells(CHO_LAST, dc)).ClearContents
-        If lastR >= FIRST Then
-            If lastR > CHO_LAST Then lastR = CHO_LAST
-            wsC.Range(wsC.Cells(FIRST, dc), wsC.Cells(lastR, dc)).NumberFormat = "@"
-            wsC.Range(wsC.Cells(FIRST, dc), wsC.Cells(lastR, dc)).Value = wsS.Range(wsS.Cells(FIRST, sc), wsS.Cells(lastR, sc)).Value
-        End If
-    Next
-End Sub
-
-' 復号ツールのゾーン（スコープ列なし）を、まだ無いものだけ追加
-Private Sub MergeZones(ByVal wsS As Worksheet)
-    Dim wsC As Worksheet, have As Object, r As Long, o As Long, nm As String
-    Set wsC = Worksheets(SH_CHO)
-    Set have = ColSet(wsC, CH_ZONE)
-    o = NextRow(wsC, CH_ZONE)
-    For r = FIRST To LastRow(wsS, 2)
-        nm = Trim$(SafeStr(wsS.Cells(r, 2).Value))
-        If nm <> "" And Not have.Exists(nm) Then
-            wsC.Cells(o, CH_ZONE).NumberFormat = "@"
-            wsC.Cells(o, CH_ZONE).Value = nm
-            have(nm) = True
-            o = o + 1
-        End If
-    Next
-End Sub
-
-'==========================================================
 ' 参照_ポリシー選択肢 を作り直す
 '   作り直す列：アドレス・アドレスグループ・EDL・サービス・サービスグループ・カスタムURL・HIPプロファイル・プロファイルグループ
 '     = ②既存データ（スコープ=コンテナ列の folder） ＋ ③～⑨の「登録」行（スコープ=①の設定先フォルダ）
-'   追記する列：ユーザー（⑪）、定義済みApp・自作App（⑩）。取込んだゾーン・タグ・リージョン等はそのまま
+'   追記する列：ユーザー（⑪）、定義済みApp・自作App（⑩）。取得したゾーン・タグ・リージョン等はそのまま
 '   ③～⑪の「削除」行は mDel に記録（ポリシーで使っているとNG）
 '==========================================================
 Public Sub BuildChoicesBtn()
@@ -1372,7 +1291,7 @@ Private Function BoolTxt(ByVal item As Object, ByVal key As String) As String
     End If
 End Function
 
-' ②-2／②-3 に書く（A=順番 B～D=スコープ E=folder F=position G=id H=name I～=項目 最後=取得時JSON、見出し行の folder/position は非表示列）
+' ②-2／②-3 に書く（A=順番 B～D=スコープ E=folder F=position G=id H=name I～=項目 最後=未使用（非表示）、見出し行の folder/position は非表示列）
 Private Sub WriteGetSheet(ByVal groups As Collection)
     Dim ws As Worksheet, g As Variant, item As Variant, r As Long, n As Long, v As Variant, a() As Variant, i As Long
     Set ws = Worksheets(mGet)
@@ -1403,7 +1322,6 @@ Private Sub WriteGetSheet(ByVal groups As Collection)
             For i = 0 To NF
                 a(1, G_NAME + i) = v(i)
             Next
-            a(1, G_LAST) = Left$(modInFetch.InJsonOf(item), 32000)
             ws.Range(ws.Cells(r, 2), ws.Cells(r, G_LAST)).NumberFormat = "@"
             ws.Range(ws.Cells(r, 1), ws.Cells(r, G_LAST)).Value = a
             With ws.Range(ws.Cells(r, 1), ws.Cells(r, G_LAST))
@@ -1834,14 +1752,6 @@ Private Function PSplit(ByVal s As String) As Variant
     If n < 0 Then Exit Function
     ReDim Preserve out(0 To n)
     PSplit = out
-End Function
-
-Private Function HasSheet(ByVal wb As Workbook, ByVal sh As String) As Boolean
-    Dim ws As Worksheet
-    On Error Resume Next
-    Set ws = wb.Worksheets(sh)
-    On Error GoTo 0
-    HasSheet = Not ws Is Nothing
 End Function
 
 ' 1～12列のうち一番下のデータ行（見出し行・ルール行のどちらかが入る列）
