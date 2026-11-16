@@ -28,6 +28,8 @@ SRC = {
     "svc": f"{PF}/scm-service/SCM_ServiceObject.xlsx",
     "hip": f"{PF}/scm-hip/SCM_HIP.xlsx",
     "edl": f"{PF}/scm-edl/SCM_EDL.xlsx",
+    "pol": f"{PF}/scm-policy/SCM_SecurityPolicy.xlsx",
+    "dec": f"{PF}/scm-decryption/SCM_DecryptionPolicy.xlsx",
 }
 SAMPLE = "--sample" in sys.argv
 OUT = f"{PF}/scm-input/" + ("SCM_入力シート_サンプル入り.xlsx" if SAMPLE else "SCM_入力シート.xlsx")
@@ -40,6 +42,7 @@ S3, S4, S5, S6 = "③アドレス", "④アドレスグループ", "⑤サービ
 S7, S8, S8B, S9 = "⑦カスタムURLカテゴリ", "⑧HIP一覧", "⑧-2HIPプロファイル", "⑨EDL"
 S10, S11 = "⑩アプリケーション", "⑪ユーザ・グループ"
 R1, R2 = "参照_HIP選択肢", "参照_HIPベンダー一覧"
+S2B, S2C, S12, S13, R3 = "②-2既存セキュリティポリシー", "②-3既存復号ポリシー", "⑫セキュリティポリシー", "⑬復号ポリシー", "参照_ポリシー選択肢"
 
 # ---------------------------------------------------------------- styles
 THIN = Side(style="thin", color="999999")
@@ -79,6 +82,8 @@ BLOCKS = [
     ("hip", "HIPオブジェクト", ("hip", "HipObj_既存一覧"), 66, 5000),
     ("hipp", "HIPプロファイル", ("hip", "HipProfile_既存一覧"), 8, 2000),
     ("edl", "EDL", ("edl", "EDL_既存一覧"), 19, 5000),
+    ("pg", "セキュリティプロファイルグループ", ("pol", "⑦ProfGroup_一覧"), 12, 2000),
+    ("prof", "セキュリティプロファイル", None, 4, 5000),
 ]
 OFF = {}
 col = 1
@@ -102,6 +107,8 @@ NAME_MAP = {
     "svc": {},
     "hip": {"CERT_NAMES": "HIP_CERT_NAMES", "CERT_TOP": "HIP_CERT_TOP"},
     "edl": {"CERT_NAMES": "EDL_CERT_NAMES", "PRE_NAMES": "EDL_PRE_NAMES"},
+    "pol": {"SEC_PROFGROUPS": "PROFGROUP_NAMES"},
+    "dec": {"DEC_PROFILES": "DEC_PROF_NAMES", "DEC_CERTS": "DEC_CERT_NAMES"},
 }
 
 CELL_RE = re.compile(r"^(\$?)([A-Z]{1,3})(\$?)(\d+)$")
@@ -206,7 +213,7 @@ def copy_cf(src_ws, dst_ws, own_off, names, texts=None):
 src_wb = {k: openpyxl.load_workbook(p) for k, p in SRC.items()}
 wb = openpyxl.Workbook()
 wb.remove(wb.active)
-for nm in (S1, S2, S3, S4, S5, S6, S7, S8, S8B, S9, S10, S11, R1, R2, "チェック結果"):
+for nm in (S1, S2, S2B, S2C, S3, S4, S5, S6, S7, S8, S8B, S9, S10, S11, S12, S13, R1, R2, R3, "チェック結果"):
     wb.create_sheet(nm)
 
 # ======================================================================
@@ -363,7 +370,7 @@ if not SAMPLE:
 ws2 = wb[S2]
 ws2["A1"] = "② 既存データ抽出（現在SCMに登録されている設定）"
 ws2["A1"].font = FT_TTL
-ws2["A2"] = ("担当者が既存の各ツール（SCM_AddressObject.xlsx 等）で取得した既存一覧を取り込みます（「既存ツールから取込」ボタン、または各ツールの既存一覧の8行目以降をそのまま貼り付け）。"
+ws2["A2"] = ("担当者が既存の各ツール（SCM_AddressObject.xlsx、SCM_SecurityPolicy.xlsx 等）で取得した既存一覧を取り込みます（「既存ツールから取込」ボタン、または各ツールの既存一覧の8行目以降をそのまま貼り付け）。"
              "③〜⑨の判定はこのシートと照合します。お客様は参照のみで、編集は不要です。ブロックは横に並んでいます（4行目のリンクで移動できます）。")
 ws2["A2"].alignment = WRAP
 ws2.merge_cells("A2:M2")
@@ -393,7 +400,8 @@ def block_header(k, title, ncols, headers=None, widths=None):
     ws2.cell(6, c1).fill = F_BLK
     ws2.merge_cells(start_row=6, start_column=c1, end_row=6, end_column=min(c2, c1 + 7))
     ws2.cell(5, c1).value = "件数"
-    ws2.cell(5, c1 + 1).value = f"=COUNTA({CL(off + 3)}8:{CL(off + 3)}{B_LAST[k]})" if k != "urlv" else f"=COUNTA({CL(off + 3)}8:{CL(off + 3)}{B_LAST[k]})"
+    nc_ = off + (2 if k == "pg" else 3)
+    ws2.cell(5, c1 + 1).value = f"=COUNTA({CL(nc_)}8:{CL(nc_)}{B_LAST[k]})"
     ws2.cell(5, c1 + 1).fill = F_CALC
     if headers:
         for i, h in enumerate(headers):
@@ -439,14 +447,17 @@ for k, title, src, ncols, last in BLOCKS:
             for r in range(8, last + 1):
                 d = ws2.cell(r, off + c)
                 d.value = tr.translate_formula(f"{CL(off + c)}{r}")
-        sample_rows = [r for r in range(8, sw.max_row + 1) if sw.cell(r, 3).value]
+        sample_rows = [r for r in range(8, sw.max_row + 1) if sw.cell(r, 2 if k == "pg" else 3).value]
         for r in range(8, (max(sample_rows) if sample_rows else 7) + 1):
             for c in range(1, ncols + 1):
                 s = sw.cell(r, c)
                 d = ws2.cell(r, off + c)
                 copy_style(s, d)
-                if c not in fcols:
+                if c not in fcols and not (k == "pg" and c == 1):
                     d.value = s.value if SAMPLE else None
+        if k == "pg":
+            for r in range(8, last + 1):
+                ws2.cell(r, off + 1).value = f'=IF({CL(off + 2)}{r}="","",ROW()-7)'
         if k == "hipp":
             ws2.cell(7, off + 8).value = "作業:⑧-2にあり"
         if k == "edl":
@@ -463,6 +474,16 @@ for k, title, src, ncols, last in BLOCKS:
             for r in range(8, last + 1):
                 ws2.cell(r, off + 1).value = f'=IF({CL(off + 2)}{r}="","",ROW()-7)'
                 ws2.cell(r, off + 5).value = f'=IF({CL(off + 2)}{r}="","",COUNTIFS(${nc}$8:${nc}${B_LAST["urlv"]},{CL(off + 2)}{r},${vc}$8:${vc}${B_LAST["urlv"]},"<>"))'
+        elif k == "prof":
+            block_header(k, title, ncols, ["No", "プロファイルの種類", "name", "備考"], [6, 22, 26, 30])
+            for r in range(8, last + 1):
+                ws2.cell(r, off + 1).value = f'=IF({CL(off + 3)}{r}="","",ROW()-7)'
+            if SAMPLE:
+                pr = [("ウイルス・WildFire", "AV-Strict"), ("スパイウェア", "AS-Strict"), ("脆弱性防御", "VP-Strict"),
+                      ("URLフィルタリング", "URL-Strict"), ("ファイルブロック", "FB-Strict"), ("DNSセキュリティ", "DNS-Strict")]
+                for i, (t, n) in enumerate(pr):
+                    ws2.cell(8 + i, off + 2).value, ws2.cell(8 + i, off + 3).value = t, n
+                    ws2.cell(8 + i, off + 4).value = "プロファイルグループから抽出"
         else:
             block_header(k, title, ncols, ["No", "name（カテゴリ）", "URL（1行1件）"], [6, 26, 40])
             for r in range(8, last + 1):
@@ -508,7 +529,8 @@ add_name("EDL_PRE_NAMES", f"OFFSET({q(S2)}!${pe}$8,0,0,MAX(1,COUNTA({q(S2)}!${pe
 add_name("OS_VALUES", f"OFFSET({q(R1)}!$B$5,0,0,MAX(1,COUNTA({q(R1)}!$B$5:$B$44)),1)")
 add_name("HIP_CERT_TOP", f"{q(R1)}!$D$5")
 add_name("HIP_CERT_NAMES", f"OFFSET({q(R1)}!$D$5,0,0,MAX(1,COUNTA({q(R1)}!$D$5:$D$1005)),1)")
-add_name("SH_GROUP_TYPES", '"ユーザ,グループ"')
+add_name("PROFGROUP_NAMES", blk_names("pg", 2))
+add_name("PROF_NAMES", blk_names("prof"))
 
 # ======================================================================
 # ⑦ カスタムURLカテゴリ（横長：1列1カテゴリ）
@@ -796,6 +818,171 @@ if SAMPLE:
             ws.cell(8 + i, 2 + j).value = v
 
 # ======================================================================
+# ②-2 / ②-3 既存ポリシー、⑫ / ⑬ 入力、参照_ポリシー選択肢
+#   既存ツール（scm-policy / scm-decryption）の ②取得・③設定・⑧選択肢 と同じ列並び
+# ======================================================================
+P_DEPTH = {"All": 0, "Shared": 1, "Remote Networks": 2, "Service Connections": 2, "Mobile Users Container": 2,
+           "Mobile Users": 3, "Mobile Users Explicit Proxy": 3}
+P_DCOL = {0: "404040", 1: "1F3864", 2: "2F5A97", 3: "4472C4"}
+P_FLOW = [("Shared", "pre"), ("Mobile Users Container", "pre"), ("Mobile Users", "pre"), ("Mobile Users Explicit Proxy", "pre"),
+          ("Mobile Users Container", "post"), ("Remote Networks", "pre"), ("Shared", "post")]
+P_LBL = {"Shared": "Prisma Access（Shared）", "Mobile Users": "GlobalProtect（Mobile Users）",
+         "Mobile Users Explicit Proxy": "Explicit Proxy（Mobile Users Explicit Proxy）"}
+
+
+def p_glabel(f, p):
+    lab = P_LBL.get(f, f)
+    if f in ("Mobile Users", "Mobile Users Explicit Proxy", "Remote Networks"):
+        return lab
+    return f"{lab} {'【Post】' if p == 'post' else '【Pre】'}"
+
+
+def copy_whole(sw, ws, names, max_row, cols=None):
+    for row in sw.iter_rows(min_row=1, max_row=max_row):
+        for c in row:
+            if cols and c.row >= 8 and c.column not in cols:
+                continue
+            d = ws.cell(c.row, c.column)
+            copy_style(c, d)
+            d.value = remap(c.value, 0, names) if isinstance(c.value, str) and c.value.startswith("=") else c.value
+    for m in sw.merged_cells.ranges:
+        if m.min_row <= 7:
+            ws.merge_cells(str(m))
+    for k, dim in sw.column_dimensions.items():
+        ws.column_dimensions[k].width = dim.width
+        if dim.hidden:
+            ws.column_dimensions[k].hidden = True
+    for r, dim in sw.row_dimensions.items():
+        if dim.height and r <= max_row:
+            ws.row_dimensions[r].height = dim.height
+    ws.freeze_panes = sw.freeze_panes
+    copy_dv(sw, ws, 0, names)
+
+
+POLS = [
+    # srcKey, 取得シート, 設定シート, 新 取得, 新 入力, NF, 表示名, ツール名
+    ("pol", "②SecRule_取得", "③SecRule_設定", S2B, S12, 18, "セキュリティポリシー", "SCM_SecurityPolicy.xlsx"),
+    ("dec", "②DecRule_取得", "③DecRule_設定", S2C, S13, 21, "復号ポリシー", "SCM_DecryptionPolicy.xlsx"),
+]
+for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
+    names = NAME_MAP[key]
+    s_last, s_hf = 11 + nf, 13 + nf
+    # ---- 既存（取得）
+    sw = src_wb[key][gsh]
+    ws = wb[ng]
+    copy_whole(sw, ws, names, sw.max_row if SAMPLE else 7)
+    ws["A1"] = f"{ng[:3]} 既存の{lbl}（現在SCMに設定されている内容）"
+    ws["A2"] = (f"担当者が既存ツール（{tool}）で取得した{lbl}を、「②既存データ抽出」の「既存ツールから取込」で取り込みます。"
+                f"スコープ（Prisma Access → Mobile Users Container → GlobalProtect・Explicit Proxy → Remote Networks）ごとに▼の見出し行があり、その下が評価順のルールです。"
+                f"「{ns}」の展開と入力チェックの基準です。お客様は参照のみで、編集は不要です。")
+    ws["D3"] = "（②既存データ抽出の「既存ツールから取込」で取り込みます）"
+    ws["H3"] = None
+    ws["H3"].fill = PatternFill()
+    ws["A4"] = None
+    ws["B4"] = None
+    ws.sheet_properties.tabColor = "70AD47"
+    # ---- 入力（設定）
+    sw = src_wb[key][ssh]
+    ws = wb[ns]
+    copy_whole(sw, ws, names, sw.max_row if SAMPLE else 7)
+    ws["A1"] = f"{ns[0]} {lbl}（追加・変更・削除・移動）"
+    ws["A2"] = (f"「既存ポリシーを展開」で②-{'2' if key == 'pol' else '3'}の表をこのシートに作り、黄色セルに記入します。変更＝操作「変更」を選んでセルを書き換え／削除＝操作「削除」／"
+                "追加＝追加したい位置の1つ上の行（スコープの先頭なら ▼の行）を選んで「選択行の下に追加行を挿入」→ name 等を記入／並べ替え＝行を切り取り→挿入して操作「移動」（内容も変えるなら「変更+移動」）。"
+                "ゾーン・アドレス・ユーザー・HIP・" + ("アプリケーション・" if key == "pol" else "") + "サービス・URLカテゴリ・タグはダブルクリック（または Ctrl+Shift+M）で、"
+                "そのスコープから見えるものだけをチェックボックスで選べます。「入力チェック」（①の「一括チェック」でも可）で C・D列に判定と理由を出します："
+                "③〜⑪で削除予定のものを使っている／ルールのスコープから見えないフォルダで定義されたものを使っている＝NG、②既存データにも③〜⑪の登録にも無い＝警告。"
+                "既存から変わったセルは橙色です。グローバル（All）は参照のみ、Service Connections には設定できません。")
+    for r in range(8, ws.max_row + 1):
+        if ws.cell(r, 1).value != "▼":
+            ws.cell(r, 3).value = None
+            ws.cell(r, 4).value = None
+            ws.cell(r, 3).fill = PatternFill("solid", fgColor="F2F2F2")
+    ws["F3"] = "▶ 既存ポリシーを展開（作り直し）"
+    ws["P3"] = None
+    ws["P3"].fill = PatternFill()
+    ws.row_dimensions[2].height = 96
+    if not SAMPLE:
+        for i, (f, p) in enumerate(P_FLOW):
+            r = 8 + i
+            lv = max(P_DEPTH[f] - 1, 0)
+            ws.cell(r, 1).value = "▼"
+            ws.cell(r, 5 + lv).value = f"■ {p_glabel(f, p)} ／ 0 件"
+            ws.cell(r, s_hf).value = f
+            ws.cell(r, s_hf + 1).value = p
+            for c in range(1, s_hf + 2):
+                cell = ws.cell(r, c)
+                cell.font = Font(bold=True, color="FFFFFF")
+                cell.number_format = "@"
+                if c <= s_last:
+                    cell.fill = PatternFill("solid", fgColor=P_DCOL[P_DEPTH[f]])
+    ws.sheet_properties.tabColor = "FFC000"
+
+# ---- 参照_ポリシー選択肢
+sw = src_wb["pol"]["⑧SecRule_選択肢"]
+ws = wb[R3]
+keep_cols = {1, 2, 3, 11, 18, 19, 20, 23, 24, 25, 26, 27, 28, 29, 30} if SAMPLE else {1, 18, 23, 24}
+copy_whole(sw, ws, {}, sw.max_row, keep_cols)
+if not SAMPLE:
+    for r in range(8, sw.max_row + 1):
+        if ws.cell(r, 23).value:
+            ws.cell(r, 23).value = None
+for r in range(7, 12):
+    ws.cell(r, 32).value = None
+for r in range(8, 308):
+    for c in (4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 21, 22):
+        ws.cell(r, c).value = None
+ws.unmerge_cells("A1:AD1")
+ws.unmerge_cells("A2:AD2")
+ws.merge_cells("A1:AI1")
+ws.merge_cells("A2:AI2")
+ws["A1"] = "参照_ポリシー選択肢（⑫⑬のダブルクリック選択の候補・入力チェックの基準）"
+ws["A2"] = ("アドレス・アドレスグループ・EDL・サービス・サービスグループ・カスタムURLカテゴリ・HIPプロファイル・プロファイルグループの列は、"
+            "「選択肢を作り直す」・⑫⑬の入力チェック・ダブルクリックのたびに、②既存データ（スコープ＝コンテナの folder）と③〜⑨の「登録」行（スコープ＝①の設定先フォルダ）から自動で作り直します。"
+            "ゾーン・タグ・リージョン・事前定義URLカテゴリ・アプリグループ・アプリフィルタ・証明書・復号プロファイルは、既存ツール（SCM_SecurityPolicy.xlsx／SCM_DecryptionPolicy.xlsx）から取り込みます（ゾーンとスコープは手で追記できます）。"
+            "ユーザー（⑪）とアプリケーション（⑩）は記入内容を追記します。スコープ列＝定義されている folder（空欄＝どこでも使える）。")
+ws.row_dimensions[2].height = 84
+ws["D3"] = "▶ 選択肢を作り直す（②と③～⑪から）"
+hs, hsc = sw.cell(7, 4), sw.cell(7, 5)
+for c, t, src in ((31, "証明書\n(復号 ssl_inbound_inspection)", hs), (32, "復号プロファイル", hs), (34, "プロファイルグループ", hs), (35, "スコープ", hsc)):
+    d = ws.cell(7, c)
+    copy_style(src, d)
+    d.value = t
+    ws.column_dimensions[CL(c)].width = 13 if t == "スコープ" else 24
+    lab = ws.cell(6, c)
+    copy_style(sw.cell(6, 4), lab)
+    lab.value = "自動" if c >= 34 else "取込"
+ws.column_dimensions["AG"].width = 3
+for c in (4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 21, 22):
+    copy_style(sw.cell(6, 4), ws.cell(6, c))
+    ws.cell(6, c).value = "自動"
+for c in (11, 18, 19, 20, 25, 26, 27, 28, 29, 30):
+    copy_style(sw.cell(6, 4), ws.cell(6, c))
+    ws.cell(6, c).value = "取込"
+notes = ["※ スコープ＝定義されている folder。ルールからは「自分の folder と上位の folder」（GlobalProtect・Explicit Proxy なら Mobile Users Container・Shared、Remote Networks・Mobile Users Container なら Shared）の定義だけが見えます。",
+         "※ ゾーンのスコープは手入力（空欄＝どのスコープでも使える。カンマ区切りで複数可）。",
+         "※ 事前定義URLカテゴリ・リージョン・定義済みApp-ID・ユーザーはどのスコープでも使えます。",
+         "※ EDL は種類が ip のものをアドレス、url のものをURLカテゴリの候補にします。",
+         "※ ③〜⑪で「削除」の行にしたものは候補に出さず、ポリシーで使っていると NG にします。"]
+for i, t in enumerate(notes):
+    ws.cell(7 + i, 37).value = t
+    ws.cell(7 + i, 37).font = Font(size=9, color="595959")
+if SAMPLE:
+    dsw = src_wb["dec"]["⑧DecRule_選択肢"]
+    for r in range(8, dsw.max_row + 1):
+        if dsw.cell(r, 14).value:
+            ws.cell(r, 31).value = dsw.cell(r, 14).value
+    psw = src_wb["dec"]["⑦DecProfile_一覧"]
+    for r in range(8, psw.max_row + 1):
+        if psw.cell(r, 2).value:
+            ws.cell(r, 32).value = psw.cell(r, 2).value
+for r in range(8, 308):
+    for c in (2, 3):
+        ws.cell(r, c).fill = F_IN
+ws.sheet_properties.tabColor = "A6A6A6"
+add_name("DEC_CERT_NAMES", f"OFFSET({q(R3)}!$AE$8,0,0,MAX(1,COUNTA({q(R3)}!$AE$8:$AE$10007)),1)")
+add_name("DEC_PROF_NAMES", f"OFFSET({q(R3)}!$AF$8,0,0,MAX(1,COUNTA({q(R3)}!$AF$8:$AF$10007)),1)")
+
+# ======================================================================
 # ① 基本情報
 # ======================================================================
 ws = wb[S1]
@@ -850,7 +1037,7 @@ for i, h in enumerate(hdr):
     c.alignment = CENTER
     c.border = BOX
 SUMS = [
-    (S2, "現在SCMに登録されている設定（担当者が取込。参照のみ）", None, None, None),
+    (S2, "現在SCMに登録されている設定（セキュリティプロファイルを含む。ポリシーは②-2・②-3。担当者が取込。参照のみ）", None, None, None),
     (S3, "アドレスオブジェクトの登録・変更・削除", "C8:C507", "P8:P507", None),
     (S4, "アドレスグループの登録・変更・削除（メンバーはダブルクリックで選択）", "C8:C507", "P8:P507", None),
     (S5, "サービスの登録・変更・削除", "C8:C507", "X8:X507", None),
@@ -861,6 +1048,8 @@ SUMS = [
     (S9, "EDL（外部動的リスト）の登録・変更・削除", "C8:C507", "AE8:AE507", None),
     (S10, "ポリシーで使うアプリケーションの一覧（手動更新）", "C8:C507", "H8:H507", None),
     (S11, "ポリシーで使うユーザ・グループの一覧（手動更新）", "D8:D507", "J8:J507", None),
+    (S12, "セキュリティポリシーの追加・変更・削除・移動（スコープごと。判定は「入力チェック」か「一括チェック」）", "B8:B3000", "C8:C3000", None),
+    (S13, "復号ポリシーの追加・変更・削除・移動（スコープごと。判定は「入力チェック」か「一括チェック」）", "B8:B3000", "C8:C3000", None),
 ]
 for i, (sh, desc, cnt, jd, _x) in enumerate(SUMS):
     r = 18 + i
@@ -876,7 +1065,10 @@ for i, (sh, desc, cnt, jd, _x) in enumerate(SUMS):
         ws.cell(r, 5).value = f'=COUNTIF({q(sh)}!{jd},"OK")'
         ws.cell(r, 6).value = f'=COUNTIF({q(sh)}!{jd},"警告")'
         ws.cell(r, 7).value = f'=COUNTIF({q(sh)}!{jd},"NG")'
-        ws.cell(r, 8).value = f'=IF(D{r}=0,"記入なし",IF(G{r}>0,"要修正（NGあり）",IF(F{r}>0,"要確認（警告あり）","OK")))'
+        if sh in (S12, S13):
+            ws.cell(r, 8).value = f'=IF(D{r}=0,"記入なし",IF(E{r}+F{r}+G{r}<D{r},"未チェック（入力チェックを押してください）",IF(G{r}>0,"要修正（NGあり）",IF(F{r}>0,"要確認（警告あり）","OK"))))'
+        else:
+            ws.cell(r, 8).value = f'=IF(D{r}=0,"記入なし",IF(G{r}>0,"要修正（NGあり）",IF(F{r}>0,"要確認（警告あり）","OK")))'
     else:
         ws.cell(r, 4).value = f'=IF({q(S2)}!B3="","",{q(S2)}!B3)'
         ws.cell(r, 4).number_format = "yyyy/mm/dd"
@@ -895,13 +1087,14 @@ for ci, L in ((4, "D"), (5, "E"), (6, "F"), (7, "G")):
     ws.cell(rT, ci).border = BOX
 ws.conditional_formatting.add(f"H18:H{rT - 1}", FormulaRule(formula=['LEFT($H18,3)="要修正"'], fill=PatternFill("solid", bgColor=NG_FILL, fgColor=NG_FILL)))
 ws.conditional_formatting.add(f"H18:H{rT - 1}", FormulaRule(formula=['LEFT($H18,3)="要確認"'], fill=PatternFill("solid", bgColor=WARN_FILL, fgColor=WARN_FILL)))
+ws.conditional_formatting.add(f"H18:H{rT - 1}", FormulaRule(formula=['LEFT($H18,5)="未チェック"'], fill=PatternFill("solid", bgColor=WARN_FILL, fgColor=WARN_FILL)))
 ws.conditional_formatting.add(f"H18:H{rT - 1}", FormulaRule(formula=['$H18="OK"'], fill=PatternFill("solid", bgColor=OK_FILL, fgColor=OK_FILL)))
-assert rT + 1 == 30, rT
+assert rT + 1 == 32, rT
 ws.cell(rT + 1, 2).value = "▶ 一括チェック"
 ws.cell(rT + 1, 2).fill = F_BTN
 ws.cell(rT + 1, 2).font = FT_B
 ws.cell(rT + 1, 2).alignment = CENTER
-ws.cell(rT + 1, 3).value = "（マクロ）関数では見られない項目（URLの書式、メンバーの重複、EDL例外リスト、HIP直接記述の参照先）も確認し、結果を「チェック結果」シートに一覧にします。"
+ws.cell(rT + 1, 3).value = "（マクロ）関数では見られない項目（URLの書式、メンバーの重複、EDL例外リスト、HIP直接記述の参照先、⑫⑬ポリシーのスコープと参照先）も確認し、結果を「チェック結果」シートに一覧にします。"
 ws.cell(rT + 1, 3).alignment = WRAP
 ws.merge_cells(start_row=rT + 1, start_column=3, end_row=rT + 1, end_column=8)
 ws.row_dimensions[rT + 1].height = 32
@@ -916,6 +1109,7 @@ howto = [
     "グループのメンバー欄などは、セルをダブルクリックするとチェックボックスの一覧から選べます（Ctrl+Shift+M でも開きます）。",
     "判定：OK（緑）＝問題なし、警告（黄）＝内容をご確認ください、NG（赤）＝修正が必要です。理由の列に内容が出ます。変更の行で既存と異なる項目は橙色になります。",
     "名前（name）は英数字・空白・ . _ - のみ使えます。大文字・小文字は区別されます。",
+    "セキュリティポリシー（⑫）・復号ポリシー（⑬）はスコープ（Prisma Access／Mobile Users Container／GlobalProtect／Explicit Proxy／Remote Networks）ごとの表です。使えるオブジェクトは、そのスコープと上位（GlobalProtect・Explicit Proxy なら Mobile Users Container と Shared、Remote Networks・Mobile Users Container なら Shared）で定義されたものだけです。",
     "パスワードなどの秘密情報はこのブックに書かず、別途お知らせください。",
 ]
 for i, t in enumerate(howto):

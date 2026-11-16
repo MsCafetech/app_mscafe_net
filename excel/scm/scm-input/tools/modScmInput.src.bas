@@ -40,6 +40,8 @@ Private Const OFF_URLV As Long = 53
 Private Const OFF_HIP As Long = 57
 Private Const OFF_HIPP As Long = 124
 Private Const OFF_EDL As Long = 133
+Private Const OFF_PG As Long = 153         ' セキュリティプロファイルグループ（B=name）
+Private Const OFF_PROF As Long = 166       ' セキュリティプロファイル（B=種類 C=name D=備考）
 Private Const EX_LAST As Long = 5000
 Private Const EXP_LAST As Long = 2000      ' HIPプロファイル
 Private Const URLV_LAST As Long = 30007    ' URL（1行1件）
@@ -85,7 +87,7 @@ Private mRes As Collection   ' Array(シート, 行, 列, 名前, 判定, 内容
 ' ボタン配置（初回のみ実行）
 '==========================================================
 Public Sub SetupButtons()
-    AddBtn S1, "B30", "一括チェック", "CheckAll"
+    AddBtn S1, "B32", "一括チェック", "CheckAll"
     AddBtn S2, "D3:F3", "既存ツールから取込", "ImportFromTools"
     AddBtn S2, "H3:J3", "既存データをクリア", "ClearExisting"
     AddBtn S3, "F3:G4", "変更行に既存値を読込", "LoadExistingAdr"
@@ -97,6 +99,7 @@ Public Sub SetupButtons()
     AddBtn S8, "F3:G4", "変更行に既存値を読込", "LoadExistingHip"
     AddBtn S8B, "F3:G4", "変更行に既存値を読込", "LoadExistingHipProfile"
     AddBtn S9, "F3:G4", "変更行に既存値を読込", "LoadExistingEdl"
+    modInPolicy.SetupPolicyButtons
     MsgBox "ボタンを配置しました。ブックを .xlsm で保存してください。", vbInformation
 End Sub
 
@@ -116,7 +119,7 @@ End Sub
 
 '==========================================================
 ' ② 既存ツールから取込
-'   各ツール（SCM_AddressObject.xlsx など）の「既存一覧」シートを読み、②の同じ並びのブロックへ値を写す。
+'   各ツール（SCM_AddressObject.xlsx、SCM_SecurityPolicy.xlsx など）の「既存一覧」シートを読み、②の同じ並びのブロックへ値を写す。
 '   複数のファイルを一度に選べます。見つかった既存一覧だけ上書きします（無いものはそのまま）。
 '==========================================================
 Public Sub ImportFromTools()
@@ -141,7 +144,12 @@ Public Sub ImportFromTools()
         n = n + ImportBlock(wbS, "EDL_既存一覧", OFF_EDL, "2-15", EX_LAST, "EDL", msg)
         ImportCandidates wbS
         n = n + ImportUrl(wbS, msg)
+        If ImportBlock(wbS, "⑦ProfGroup_一覧", OFF_PG, "2-12", EXP_LAST, "セキュリティプロファイルグループ", msg, 2) > 0 Then
+            n = n + 1
+            ImportProfiles msg
+        End If
         ImportHipCert wbS
+        n = n + modInPolicy.ImportPolicy(wbS, msg)
         If n = 0 Then msg = msg & vbLf & "　（既存一覧のシートが見つかりませんでした）"
         wbS.Close SaveChanges:=False
         Set wbS = Nothing
@@ -169,12 +177,13 @@ End Function
 
 ' 既存一覧（8行目～、C列=name）の指定列を②の同じ列へ。戻り値=1（取り込んだ）/0（シート無し）
 Private Function ImportBlock(ByVal wbS As Workbook, ByVal sh As String, ByVal off As Long, ByVal cols As String, _
-                             ByVal lastAllowed As Long, ByVal label As String, ByRef msg As String) As Long
+                             ByVal lastAllowed As Long, ByVal label As String, ByRef msg As String, _
+                             Optional ByVal nameCol As Long = 3) As Long
     Dim wsS As Worksheet, ws2 As Worksheet, lastR As Long, n As Long, part As Variant, a As Long, b As Long, c As Long
     If Not SheetExists(wbS, sh) Then Exit Function
     Set wsS = wbS.Worksheets(sh)
     Set ws2 = Worksheets(S2)
-    lastR = LastRow(wsS, 3)
+    lastR = LastRow(wsS, nameCol)
     n = lastR - EX_FIRST + 1
     If n < 0 Then n = 0
     If EX_FIRST + n - 1 > lastAllowed Then n = lastAllowed - EX_FIRST + 1
@@ -276,6 +285,32 @@ Private Function ImportUrl(ByVal wbS As Workbook, ByRef msg As String) As Long
     End If
 End Function
 
+' セキュリティプロファイル：プロファイルグループの各列（E～K）に入っている名前を種類ごとに1回ずつ書き出す
+'   （既存ツールに個別プロファイルの一覧は無いため。グループに入っていないプロファイルは手で追記）
+Private Sub ImportProfiles(ByRef msg As String)
+    Dim ws2 As Worksheet, kinds As Variant, r As Long, c As Long, o As Long, nm As String, seen As Object, lastR As Long
+    kinds = Array("ウイルス・WildFire", "スパイウェア", "脆弱性防御", "URLフィルタリング", "ファイルブロック", "DNSセキュリティ", "SaaSセキュリティ")
+    Set ws2 = Worksheets(S2)
+    Set seen = CreateObject("Scripting.Dictionary")
+    ws2.Range(ws2.Cells(EX_FIRST, OFF_PROF + 2), ws2.Cells(EX_LAST, OFF_PROF + 4)).ClearContents
+    lastR = LastRow(ws2, OFF_PG + 2)
+    o = EX_FIRST
+    For c = 0 To 6
+        For r = EX_FIRST To lastR
+            nm = Trim$(SafeStr(ws2.Cells(r, OFF_PG + 5 + c).Value))
+            If nm <> "" And Not seen.Exists(kinds(c) & "|" & nm) And o <= EX_LAST Then
+                seen.Add kinds(c) & "|" & nm, True
+                ws2.Cells(o, OFF_PROF + 2).Value = kinds(c)
+                ws2.Cells(o, OFF_PROF + 3).NumberFormat = "@"
+                ws2.Cells(o, OFF_PROF + 3).Value = nm
+                ws2.Cells(o, OFF_PROF + 4).Value = "プロファイルグループから抽出"
+                o = o + 1
+            End If
+        Next
+    Next
+    msg = msg & vbLf & "　セキュリティプロファイル（グループから抽出）：" & (o - EX_FIRST) & " 件"
+End Sub
+
 Private Function OneCell(ByVal v As Variant) As Variant
     Dim a(1 To 1, 1 To 1) As Variant
     a(1, 1) = v
@@ -297,6 +332,8 @@ Public Sub ClearExisting()
     ClearCols ws2, OFF_HIP, "2-66", EX_LAST
     ClearCols ws2, OFF_HIPP, "2-7", EXP_LAST
     ClearCols ws2, OFF_EDL, "2-15,17", EX_LAST
+    ClearCols ws2, OFF_PG, "2-12", EXP_LAST
+    ClearCols ws2, OFF_PROF, "2-4", EX_LAST
     ws2.Range("B3").ClearContents
     Application.ScreenUpdating = True
     MsgBox "消しました。", vbInformation
@@ -604,6 +641,10 @@ Public Sub CheckAll()
     CollectJudge S9, 31, 32
     CollectJudge S10, 8, 9
     CollectJudge S11, 10, 11
+    modInPolicy.CheckPolicies
+    For Each it In modInPolicy.PolicyResults()
+        mRes.Add it
+    Next
     For Each it In mRes
         If it(4) = "NG" Then ng = ng + 1 Else wn = wn + 1
     Next
@@ -1040,6 +1081,7 @@ Public Function TryPick(ByVal Target As Range) As Boolean
     Set mNames = CreateObject("Scripting.Dictionary")   ' バイナリ比較（大文字・小文字を区別）
     mExclude = ""
     mVendor = False
+    If modInPolicy.PolicyTryPick(Target) Then TryPick = True: Exit Function
     If Not PickerRule(Target.Worksheet, Target, ttl) Then Exit Function
     TryPick = True
     ShowPicker Target, ttl
