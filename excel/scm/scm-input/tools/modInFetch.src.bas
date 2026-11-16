@@ -26,11 +26,11 @@ Private Const OFF_ADRG As Long = 14
 Private Const OFF_SVC As Long = 26
 Private Const OFF_SVCG As Long = 40
 Private Const OFF_URL As Long = 47
-Private Const OFF_URLV As Long = 53
-Private Const OFF_HIP As Long = 57
-Private Const OFF_HIPP As Long = 124
-Private Const OFF_EDL As Long = 133
-Private Const OFF_PG As Long = 153
+Private Const OFF_URLV As Long = 54
+Private Const OFF_HIP As Long = 58
+Private Const OFF_HIPP As Long = 125
+Private Const OFF_EDL As Long = 134
+Private Const OFF_PG As Long = 154
 
 Private Const F_FIRST As Long = 6       ' HIPオブジェクト：F列(6)～BM列(65) が description と条件の各項目
 
@@ -230,7 +230,7 @@ Private Function FetchUrl(ByRef msg As String) As Long
     Dim items As Collection, item As Variant, a() As Variant, u() As Variant, i As Long, n As Long, x As Variant
     Set items = InGetFolders("/sse/config/v1/url-categories", "既存取得（URLカテゴリ）")
     If items Is Nothing Then FetchUrl = 1: msg = msg & vbLf & "　カスタムURLカテゴリ：失敗": Exit Function
-    a = NewRows(items.Count, 4)
+    a = NewRows(items.Count, 6)
     u = NewRows(URLV_LAST - EX_FIRST + 1, 3)
     For Each item In items
         i = i + 1
@@ -238,6 +238,7 @@ Private Function FetchUrl(ByRef msg As String) As Long
         a(i, 2) = Nz(item, "name")
         a(i, 3) = Nz(item, "type")
         a(i, 4) = Nz(item, "description")
+        a(i, 6) = ContainerOf(item)
         If item.Exists("list") Then
             If IsObject(item("list")) Then
                 For Each x In item("list")
@@ -250,7 +251,7 @@ Private Function FetchUrl(ByRef msg As String) As Long
             End If
         End If
     Next
-    PutBlock OFF_URL, "2-4", a, items.Count, EX_LAST
+    PutBlock OFF_URL, "2-4,6", a, items.Count, EX_LAST
     PutBlock OFF_URLV, "2-3", u, n, URLV_LAST
     msg = msg & vbLf & "　カスタムURLカテゴリ：" & items.Count & " 件（URL " & n & " 件）"
 End Function

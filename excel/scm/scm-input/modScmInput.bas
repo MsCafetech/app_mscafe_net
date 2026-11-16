@@ -35,12 +35,12 @@ Private Const OFF_ADRG As Long = 14
 Private Const OFF_SVC As Long = 26
 Private Const OFF_SVCG As Long = 40
 Private Const OFF_URL As Long = 47
-Private Const OFF_URLV As Long = 53
-Private Const OFF_HIP As Long = 57
-Private Const OFF_HIPP As Long = 124
-Private Const OFF_EDL As Long = 133
-Private Const OFF_PG As Long = 153         ' セキュリティプロファイルグループ（B=name）
-Private Const OFF_PROF As Long = 166       ' セキュリティプロファイル（B=種類 C=name D=備考）
+Private Const OFF_URLV As Long = 54
+Private Const OFF_HIP As Long = 58
+Private Const OFF_HIPP As Long = 125
+Private Const OFF_EDL As Long = 134
+Private Const OFF_PG As Long = 154         ' セキュリティプロファイルグループ（B=name）
+Private Const OFF_PROF As Long = 167       ' セキュリティプロファイル（B=種類 C=name D=備考）
 Private Const EX_LAST As Long = 5000
 Private Const EXP_LAST As Long = 2000      ' HIPプロファイル
 Private Const URLV_LAST As Long = 30007    ' URL（1行1件）
@@ -239,6 +239,7 @@ Private Function ImportUrl(ByVal wbS As Workbook, ByRef msg As String) As Long
     If SheetExists(wbS, "URLCat_既存一覧（リスト一覧）") Then
         Set wsL = wbS.Worksheets("URLCat_既存一覧（リスト一覧）")
         ws2.Range(ws2.Cells(EX_FIRST, OFF_URL + 2), ws2.Cells(EX_LAST, OFF_URL + 4)).ClearContents
+        ws2.Range(ws2.Cells(EX_FIRST, OFF_URL + 6), ws2.Cells(EX_LAST, OFF_URL + 6)).ClearContents
         lastR = LastRow(wsL, 3)
         o = EX_FIRST
         For r = EX_FIRST To lastR
@@ -247,6 +248,7 @@ Private Function ImportUrl(ByVal wbS As Workbook, ByRef msg As String) As Long
                 ws2.Cells(o, OFF_URL + 2).Value = nm
                 ws2.Cells(o, OFF_URL + 3).Value = SafeStr(wsL.Cells(r, 4).Value)
                 ws2.Cells(o, OFF_URL + 4).Value = SafeStr(wsL.Cells(r, 7).Value)
+                ws2.Cells(o, OFF_URL + 6).Value = SafeStr(wsL.Cells(r, 8).Value)
                 o = o + 1
             End If
         Next
@@ -327,7 +329,7 @@ Public Sub ClearExisting()
     ClearCols ws2, OFF_ADRG, "2-8,11", EX_LAST
     ClearCols ws2, OFF_SVC, "2-12", EX_LAST
     ClearCols ws2, OFF_SVCG, "2-6", EX_LAST
-    ClearCols ws2, OFF_URL, "2-4", EX_LAST
+    ClearCols ws2, OFF_URL, "2-4,6", EX_LAST
     ClearCols ws2, OFF_URLV, "2-3", URLV_LAST
     ClearCols ws2, OFF_HIP, "2-66", EX_LAST
     ClearCols ws2, OFF_HIPP, "2-7", EXP_LAST

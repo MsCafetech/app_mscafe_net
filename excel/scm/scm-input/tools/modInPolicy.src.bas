@@ -39,9 +39,9 @@ Private Const OFF_ADRG As Long = 14
 Private Const OFF_SVC As Long = 26
 Private Const OFF_SVCG As Long = 40
 Private Const OFF_URL As Long = 47
-Private Const OFF_HIPP As Long = 124
-Private Const OFF_EDL As Long = 133
-Private Const OFF_PG As Long = 153
+Private Const OFF_HIPP As Long = 125
+Private Const OFF_EDL As Long = 134
+Private Const OFF_PG As Long = 154
 
 ' ⑦ カスタムURLカテゴリ（横長）
 Private Const U_C1 As Long = 2
@@ -346,7 +346,7 @@ Public Sub BuildChoices()
     FillBlock CH_EDL, OFF_EDL, 19, 3, 4, CH_EDLTYPE, S9, cf, "edl"
     FillBlock CH_SVC, OFF_SVC, 13, 3, 0, 0, S5, cf, "svc"
     FillBlock CH_SVCG, OFF_SVCG, 6, 3, 0, 0, S6, cf, "svc"
-    FillBlock CH_URLC, OFF_URL, 5, 2, 0, 0, "", cf, "url"
+    FillBlock CH_URLC, OFF_URL, 6, 2, 0, 0, "", cf, "url"
     FillUrlInput cf
     FillBlock CH_HIP, OFF_HIPP, 8, 3, 0, 0, S8B, cf, "hip"
     FillBlock CH_PG, OFF_PG, 12, 2, 0, 0, "", cf, "pg"
