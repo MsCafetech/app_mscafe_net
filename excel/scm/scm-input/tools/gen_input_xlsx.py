@@ -867,6 +867,64 @@ def copy_whole(sw, ws, names, max_row, cols=None):
     copy_dv(sw, ws, 0, names)
 
 
+SINGLE_RB = ("Mobile Users", "Mobile Users Explicit Proxy", "Remote Networks", "Service Connections")
+
+
+def reorder_policy(ws, key, is_set):
+    """サンプルのポリシー表を評価順（P_FLOW / P_FLOW_DEC）に並べ替える。
+    Pre/Post なしの folder の post の行は pre（1つのルールベース）にまとめ、並びに無い空の見出しは消す"""
+    nf = 18 if key == "pol" else 21
+    hf = (13 + nf) if is_set else (11 + nf)
+    scope_c = 5 if is_set else 2
+    pos_c = 9 if is_set else 6
+    lastc = hf + 1
+    order = P_FLOW if key == "pol" else P_FLOW_DEC
+    cur, groups = None, {}
+    max_r = ws.max_row
+    for r in range(8, max_r + 1):
+        snap = [(ws.cell(r, c).value, copy(ws.cell(r, c)._style)) for c in range(1, lastc + 1)]
+        if ws.cell(r, 1).value == "▼":
+            f, pp = ws.cell(r, hf).value, ws.cell(r, hf + 1).value
+            if f in SINGLE_RB:
+                pp = "pre"
+            cur = (f, pp)
+            groups.setdefault(cur, {"head": snap, "rules": []})
+        elif cur and any(v is not None for v, _ in snap):
+            groups[cur]["rules"].append(snap)
+    for k in groups:
+        if k not in order and groups[k]["rules"]:
+            raise SystemExit(f"sample rules in unsupported scope {k}")
+    blank = copy(ws.cell(max_r + 50, 1)._style)
+    for r in range(8, max_r + 1):
+        for c in range(1, lastc + 1):
+            ws.cell(r, c).value = None
+            ws.cell(r, c)._style = copy(blank)
+    r = 8
+    for k in order:
+        f, pp = k
+        g = groups.get(k)
+        if g is None:
+            continue
+        for c, (v, st) in enumerate(g["head"], 1):
+            ws.cell(r, c).value = v
+            ws.cell(r, c)._style = st
+        for c in range(scope_c, scope_c + 3):
+            ws.cell(r, c).value = None
+        lv = max(P_DEPTH[f] - 1, 0)
+        ws.cell(r, scope_c + lv).value = f"■ {p_glabel(f, pp, key)} ／ {len(g['rules'])} 件"
+        ws.cell(r, scope_c + lv)._style = copy(ws.cell(r, 1)._style)
+        ws.cell(r, hf + 1).value = pp
+        r += 1
+        for i, rule in enumerate(g["rules"], 1):
+            for c, (v, st) in enumerate(rule, 1):
+                ws.cell(r, c).value = v
+                ws.cell(r, c)._style = st
+            ws.cell(r, 1).value = i
+            ws.cell(r, pos_c).value = pp
+            r += 1
+    return r - 1
+
+
 POLS = [
     # srcKey, 取得シート, 設定シート, 新 取得, 新 入力, NF, 表示名, ツール名
     ("pol", "②SecRule_取得", "③SecRule_設定", S2B, S12, 18, "セキュリティポリシー", "SCM_SecurityPolicy.xlsx"),
@@ -879,6 +937,8 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
     sw = src_wb[key][gsh]
     ws = wb[ng]
     copy_whole(sw, ws, names, sw.max_row if SAMPLE else 7)
+    if SAMPLE:
+        reorder_policy(ws, key, False)
     ws["A1"] = f"{ng[:3]} 既存の{lbl}（現在SCMに設定されている内容）"
     ws["A2"] = (f"担当者が①基本設定の「既存情報をまとめて取得（API）」で取得します（既存ツール（{tool}）で取得した{lbl}を「②既存データ抽出」の「既存ツールから取込」で取り込むこともできます）。"
                 f"スコープ（Prisma Access → Mobile Users Container → GlobalProtect・Explicit Proxy → Remote Networks）ごとに▼の見出し行があり、その下が評価順のルールです。"
@@ -893,6 +953,8 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
     sw = src_wb[key][ssh]
     ws = wb[ns]
     copy_whole(sw, ws, names, sw.max_row if SAMPLE else 7)
+    if SAMPLE:
+        reorder_policy(ws, key, True)
     ws["A1"] = f"{ns[0]} {lbl}（追加・変更・削除・移動）"
     ws["A2"] = (f"「既存ポリシーを展開」で②-{'2' if key == 'pol' else '3'}の表をこのシートに作り、黄色セルに記入します。変更＝操作「変更」を選んでセルを書き換え／削除＝操作「削除」／"
                 "追加＝追加したい位置の1つ上の行（スコープの先頭なら ▼の行）を選んで「選択行の下に追加行を挿入」→ name 等を記入／並べ替え＝行を切り取り→挿入して操作「移動」（内容も変えるなら「変更+移動」）。"
