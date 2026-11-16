@@ -411,7 +411,7 @@ Private Function FetchProfGroups(ByRef msg As String) As Long
         i = i + 1
         If i > UBound(a, 1) Then Exit For
         a(i, 2) = Nz(item, "name")
-        a(i, 3) = Nz(item, "folder")
+        a(i, 3) = FolderDisp(Nz(item, "folder"))
         If Nz(item, "id") = "" Or InStr(LCase$(Nz(item, "folder") & " " & Nz(item, "snippet")), "predefined") > 0 Then
             a(i, 4) = "定義済み"
         Else
@@ -487,7 +487,7 @@ End Function
 Public Function InFolders() As Collection
     Dim c As New Collection, d As Object, sc As Variant, base As String
     Set d = CreateObject("Scripting.Dictionary")
-    base = CfgOpt("CFG_OBJ_FOLDER")
+    base = FolderApi(CfgOpt("CFG_OBJ_FOLDER"))
     If base = "" Then base = "Shared"
     d(base) = True: c.Add base
     For Each sc In InSelScopes()

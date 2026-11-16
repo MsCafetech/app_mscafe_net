@@ -512,7 +512,7 @@ if SAMPLE:
     rv = 8
     for nm, ty, de, urls in cats:
         ws2.cell(r, ou + 2).value, ws2.cell(r, ou + 3).value, ws2.cell(r, ou + 4).value = nm, ty, de
-        ws2.cell(r, ou + 6).value = "folder=Shared"
+        ws2.cell(r, ou + 6).value = "folder=Prisma Access"
         r += 1
         for u in urls:
             ws2.cell(rv, ov + 2).value, ws2.cell(rv, ov + 3).value = nm, u
@@ -840,7 +840,7 @@ P_DEPTH = {"All": 0, "Shared": 1, "Remote Networks": 2, "Service Connections": 2
 P_DCOL = {0: "404040", 1: "1F3864", 2: "2F5A97", 3: "4472C4"}
 P_FLOW = [("Shared", "pre"), ("Mobile Users Container", "pre"), ("Mobile Users", "pre"), ("Mobile Users Explicit Proxy", "pre"),
           ("Mobile Users Container", "post"), ("Remote Networks", "pre"), ("Shared", "post")]
-P_LBL = {"Shared": "Prisma Access（Shared）", "Mobile Users": "GlobalProtect（Mobile Users）",
+P_LBL = {"Shared": "Prisma Access", "Mobile Users": "GlobalProtect（Mobile Users）",
          "Mobile Users Explicit Proxy": "Explicit Proxy（Mobile Users Explicit Proxy）"}
 
 
@@ -1045,7 +1045,7 @@ for c in (4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 21, 22):
 for c in (11, 18, 19, 20, 25, 26, 27, 28, 29, 30):
     copy_style(sw.cell(6, 4), ws.cell(6, c))
     ws.cell(6, c).value = "API取得"
-notes = ["※ スコープ＝定義されている folder。ルールからは「自分の folder と上位の folder」（GlobalProtect・Explicit Proxy なら Mobile Users Container・Shared、Remote Networks・Mobile Users Container なら Shared）の定義だけが見えます。",
+notes = ["※ スコープ＝定義されている folder。ルールからは「自分の folder と上位の folder」（GlobalProtect・Explicit Proxy なら Mobile Users Container・Prisma Access、Remote Networks・Mobile Users Container なら Prisma Access）の定義だけが見えます。",
          "※ ゾーンのスコープは手入力（空欄＝どのスコープでも使える。カンマ区切りで複数可）。",
          "※ 事前定義URLカテゴリ・リージョン・定義済みApp-ID・ユーザーはどのスコープでも使えます。",
          "※ EDL は種類が ip のものをアドレス、url のものをURLカテゴリの候補にします。",
@@ -1102,7 +1102,7 @@ ws["D10"] = "担当者が入力"
 ws["D11"] = "担当者が入力（お客様に渡す前に「接続情報を消去」）"
 ws["D12"] = "テナントサービスグループID（担当者が入力）"
 ws["A14"] = "取得の条件"
-ws["D16"] = "アドレス・サービス・HIP・EDL・プロファイル等を取得する基本の folder。このほか下の○のスコープからも取得し、定義folderをスコープとして記録。③～⑪で登録するものはこの folder に作る前提でチェック"
+ws["D16"] = "アドレス・サービス・HIP・EDL・プロファイル等を取得する基本の folder。このほか下の○のスコープからも取得し、定義folderをスコープとして記録。③～⑪で登録するものはこの folder に作る前提でチェック（Prisma Access は API では folder=Shared）"
 ws["A28"] = "※ このブックは取得（GET）だけを行います。登録・変更・削除・設定反映（Push）は、SCM の画面または各ツールで実施してください。"
 for r, lab, btn, txt in ((30, "既存情報の取得", "▶ 既存情報をまとめて取得（API）",
                           "②既存データ抽出（アドレス・グループ・サービス・URLカテゴリ・HIP・EDL・プロファイルグループ）、②-2・②-3 既存ポリシー、参照_ポリシー選択肢 を SCM の現在の内容で作り直します。"),
@@ -1247,7 +1247,7 @@ howto = [
     "グループのメンバー欄などは、セルをダブルクリックするとチェックボックスの一覧から選べます（Ctrl+Shift+M でも開きます）。",
     "判定：OK（緑）＝問題なし、警告（黄）＝内容をご確認ください、NG（赤）＝修正が必要です。理由の列に内容が出ます。変更の行で既存と異なる項目は橙色になります。",
     "名前（name）は英数字・空白・ . _ - のみ使えます。大文字・小文字は区別されます。",
-    "セキュリティポリシー（⑫）・復号ポリシー（⑬）はスコープ（Prisma Access／Mobile Users Container／GlobalProtect／Explicit Proxy／Remote Networks／Service Connections）ごとの表です。使えるオブジェクトは、そのスコープと上位（GlobalProtect・Explicit Proxy なら Mobile Users Container と Shared、Remote Networks・Service Connections・Mobile Users Container なら Shared）で定義されたものだけです。",
+    "セキュリティポリシー（⑫）・復号ポリシー（⑬）はスコープ（Prisma Access／Mobile Users Container／GlobalProtect／Explicit Proxy／Remote Networks／Service Connections）ごとの表です。使えるオブジェクトは、そのスコープと上位（GlobalProtect・Explicit Proxy なら Mobile Users Container と Prisma Access、Remote Networks・Service Connections・Mobile Users Container なら Prisma Access）で定義されたものだけです。",
     "①基本設定・②既存データ・②-2・②-3・実行ログは担当者用です（SCM から取得した現在の設定。お客様は記入不要です）。",
     "パスワードなどの秘密情報はこのブックに書かず、別途お知らせください。",
 ]
