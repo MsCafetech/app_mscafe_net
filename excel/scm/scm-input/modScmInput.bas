@@ -1,16 +1,15 @@
 Attribute VB_Name = "modScmInput"
 '==========================================================
 ' modScmInput : SCM 設定 入力シート（お客様記入用）
-'   API・JSON は使いません（入力とチェックのみ）。
-'   必要なもの : modScmInput（このモジュール） / clsPickerEvents / frmMemberPick
+'   入力とチェックが中心。API は既存情報の取得（GET）だけ（modInFetch）。JSON化・登録はしません。
+'   必要なもの : modScmCommon / modScmInput（このモジュール） / modInPolicy / modInFetch / clsPickerEvents / frmMemberPick
 '     frmMemberPick は空のユーザーフォームを挿入して frmMemberPick_コード.txt を貼り付け
 '     （または modPickerSetup.bas をインポートして CreatePickerForm を実行）
 '   ボタン : SetupButtons を1回実行すると各シートにボタンを配置
-'   ※ modScmCommon は不要です（このブックには入れないでください）
 '==========================================================
 Option Explicit
 
-Private Const S1 As String = "①基本情報"
+Private Const S1 As String = "記入状況"
 Private Const S2 As String = "②既存データ抽出"
 Private Const S3 As String = "③アドレス"
 Private Const S4 As String = "④アドレスグループ"
@@ -87,7 +86,7 @@ Private mRes As Collection   ' Array(シート, 行, 列, 名前, 判定, 内容)
 ' ボタン配置（初回のみ実行）
 '==========================================================
 Public Sub SetupButtons()
-    AddBtn S1, "B32", "一括チェック", "CheckAll"
+    AddBtn S1, "B20", "一括チェック", "CheckAll"
     AddBtn S2, "D3:F3", "既存ツールから取込", "ImportFromTools"
     AddBtn S2, "H3:J3", "既存データをクリア", "ClearExisting"
     AddBtn S3, "F3:G4", "変更行に既存値を読込", "LoadExistingAdr"
@@ -100,6 +99,7 @@ Public Sub SetupButtons()
     AddBtn S8B, "F3:G4", "変更行に既存値を読込", "LoadExistingHipProfile"
     AddBtn S9, "F3:G4", "変更行に既存値を読込", "LoadExistingEdl"
     modInPolicy.SetupPolicyButtons
+    modInFetch.SetupFetchButtons
     MsgBox "ボタンを配置しました。ブックを .xlsm で保存してください。", vbInformation
 End Sub
 
@@ -287,7 +287,7 @@ End Function
 
 ' セキュリティプロファイル：プロファイルグループの各列（E～K）に入っている名前を種類ごとに1回ずつ書き出す
 '   （既存ツールに個別プロファイルの一覧は無いため。グループに入っていないプロファイルは手で追記）
-Private Sub ImportProfiles(ByRef msg As String)
+Public Sub ImportProfiles(ByRef msg As String)
     Dim ws2 As Worksheet, kinds As Variant, r As Long, c As Long, o As Long, nm As String, seen As Object, lastR As Long
     kinds = Array("ウイルス・WildFire", "スパイウェア", "脆弱性防御", "URLフィルタリング", "ファイルブロック", "DNSセキュリティ", "SaaSセキュリティ")
     Set ws2 = Worksheets(S2)

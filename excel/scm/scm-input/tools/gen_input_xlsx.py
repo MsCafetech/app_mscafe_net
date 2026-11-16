@@ -4,7 +4,8 @@ SCM 統合入力シート（お客様記入用）ジェネレータ
   - 既存ツール（scm-excel / scm-service / scm-hip / scm-edl）の「登録変更削除」シートを
     数式・入力規則・条件付き書式ごと取り込み、参照先を新しいシートに付け替える
   - ② 既存データ抽出 は各ツールの「既存一覧」と同じ列並びのブロックを横に並べた1枚のシート
-  - ⑦ カスタムURLカテゴリ、⑩ アプリケーション、⑪ ユーザ/グループ、① 基本情報 は新規に作成
+  - ① 基本設定・実行ログ は既存ツール（SCM_SecurityPolicy.xlsx）と同じ（トークン取得・API取得（GETのみ）用）
+  - ⑦ カスタムURLカテゴリ、⑩ アプリケーション、⑪ ユーザ/グループ、記入状況 は新規に作成
 使い方: python3 gen_input_xlsx.py            -> SCM_入力シート.xlsx（空欄）
         python3 gen_input_xlsx.py --sample   -> SCM_入力シート_サンプル入り.xlsx
 """
@@ -37,7 +38,8 @@ for a in sys.argv[1:]:
     if a.startswith("--out="):
         OUT = a[6:]
 
-S1, S2 = "①基本情報", "②既存データ抽出"
+S1, S2 = "①基本設定", "②既存データ抽出"
+SS, SLOG = "記入状況", "実行ログ"
 S3, S4, S5, S6 = "③アドレス", "④アドレスグループ", "⑤サービス", "⑥サービスグループ"
 S7, S8, S8B, S9 = "⑦カスタムURLカテゴリ", "⑧HIP一覧", "⑧-2HIPプロファイル", "⑨EDL"
 S10, S11 = "⑩アプリケーション", "⑪ユーザ・グループ"
@@ -213,7 +215,7 @@ def copy_cf(src_ws, dst_ws, own_off, names, texts=None):
 src_wb = {k: openpyxl.load_workbook(p) for k, p in SRC.items()}
 wb = openpyxl.Workbook()
 wb.remove(wb.active)
-for nm in (S1, S2, S2B, S2C, S3, S4, S5, S6, S7, S8, S8B, S9, S10, S11, S12, S13, R1, R2, R3, "チェック結果"):
+for nm in (S1, SS, S2, S2B, S2C, S3, S4, S5, S6, S7, S8, S8B, S9, S10, S11, S12, S13, R1, R2, R3, "チェック結果", SLOG):
     wb.create_sheet(nm)
 
 # ======================================================================
@@ -370,12 +372,12 @@ if not SAMPLE:
 ws2 = wb[S2]
 ws2["A1"] = "② 既存データ抽出（現在SCMに登録されている設定）"
 ws2["A1"].font = FT_TTL
-ws2["A2"] = ("担当者が既存の各ツール（SCM_AddressObject.xlsx、SCM_SecurityPolicy.xlsx 等）で取得した既存一覧を取り込みます（「既存ツールから取込」ボタン、または各ツールの既存一覧の8行目以降をそのまま貼り付け）。"
+ws2["A2"] = ("担当者が①基本設定でトークンを取得し「SCMから取得（API）」で取得します（GET のみ）。既存の各ツール（SCM_AddressObject.xlsx、SCM_SecurityPolicy.xlsx 等）で取得した既存一覧の取込（「既存ツールから取込」）や、各ツールの既存一覧の8行目以降の貼り付けでも入れられます。"
              "③〜⑨の判定はこのシートと照合します。お客様は参照のみで、編集は不要です。ブロックは横に並んでいます（4行目のリンクで移動できます）。")
 ws2["A2"].alignment = WRAP
 ws2.merge_cells("A2:M2")
 ws2.row_dimensions[2].height = 48
-ws2["A3"] = "取込日時"
+ws2["A3"] = "取得日時"
 ws2["A3"].font = FT_B
 ws2["B3"].number_format = "yyyy/mm/dd hh:mm"
 ws2["B3"].fill = F_CALC
@@ -383,7 +385,9 @@ ws2["D3"] = "▶ 既存ツールから取込"
 ws2.merge_cells("D3:F3")
 ws2["H3"] = "▶ 既存データをクリア"
 ws2.merge_cells("H3:J3")
-for a in ("D3", "H3"):
+ws2["L3"] = "▶ SCMから取得（API）"
+ws2.merge_cells("L3:N3")
+for a in ("D3", "H3", "L3"):
     ws2[a].fill = F_BTN
     ws2[a].alignment = CENTER
     ws2[a].font = FT_B
@@ -830,9 +834,13 @@ P_LBL = {"Shared": "Prisma Access（Shared）", "Mobile Users": "GlobalProtect�
          "Mobile Users Explicit Proxy": "Explicit Proxy（Mobile Users Explicit Proxy）"}
 
 
-def p_glabel(f, p):
+_DEC_F = ["Shared", "Remote Networks", "Service Connections", "Mobile Users Container", "Mobile Users", "Mobile Users Explicit Proxy"]
+P_FLOW_DEC = [(f, "pre") for f in _DEC_F] + [(f, "post") for f in reversed(_DEC_F)]
+
+
+def p_glabel(f, p, key="pol"):
     lab = P_LBL.get(f, f)
-    if f in ("Mobile Users", "Mobile Users Explicit Proxy", "Remote Networks"):
+    if key == "pol" and f in ("Mobile Users", "Mobile Users Explicit Proxy", "Remote Networks"):
         return lab
     return f"{lab} {'【Post】' if p == 'post' else '【Pre】'}"
 
@@ -872,10 +880,10 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
     ws = wb[ng]
     copy_whole(sw, ws, names, sw.max_row if SAMPLE else 7)
     ws["A1"] = f"{ng[:3]} 既存の{lbl}（現在SCMに設定されている内容）"
-    ws["A2"] = (f"担当者が既存ツール（{tool}）で取得した{lbl}を、「②既存データ抽出」の「既存ツールから取込」で取り込みます。"
+    ws["A2"] = (f"担当者が①基本設定の「既存情報をまとめて取得（API）」で取得します（既存ツール（{tool}）で取得した{lbl}を「②既存データ抽出」の「既存ツールから取込」で取り込むこともできます）。"
                 f"スコープ（Prisma Access → Mobile Users Container → GlobalProtect・Explicit Proxy → Remote Networks）ごとに▼の見出し行があり、その下が評価順のルールです。"
                 f"「{ns}」の展開と入力チェックの基準です。お客様は参照のみで、編集は不要です。")
-    ws["D3"] = "（②既存データ抽出の「既存ツールから取込」で取り込みます）"
+    ws["D3"] = "（①の「既存情報をまとめて取得（API）」または②の「既存ツールから取込」で入ります）"
     ws["H3"] = None
     ws["H3"].fill = PatternFill()
     ws["A4"] = None
@@ -889,9 +897,9 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
     ws["A2"] = (f"「既存ポリシーを展開」で②-{'2' if key == 'pol' else '3'}の表をこのシートに作り、黄色セルに記入します。変更＝操作「変更」を選んでセルを書き換え／削除＝操作「削除」／"
                 "追加＝追加したい位置の1つ上の行（スコープの先頭なら ▼の行）を選んで「選択行の下に追加行を挿入」→ name 等を記入／並べ替え＝行を切り取り→挿入して操作「移動」（内容も変えるなら「変更+移動」）。"
                 "ゾーン・アドレス・ユーザー・HIP・" + ("アプリケーション・" if key == "pol" else "") + "サービス・URLカテゴリ・タグはダブルクリック（または Ctrl+Shift+M）で、"
-                "そのスコープから見えるものだけをチェックボックスで選べます。「入力チェック」（①の「一括チェック」でも可）で C・D列に判定と理由を出します："
+                "そのスコープから見えるものだけをチェックボックスで選べます。「入力チェック」（記入状況の「一括チェック」でも可）で C・D列に判定と理由を出します："
                 "③〜⑪で削除予定のものを使っている／ルールのスコープから見えないフォルダで定義されたものを使っている＝NG、②既存データにも③〜⑪の登録にも無い＝警告。"
-                "既存から変わったセルは橙色です。グローバル（All）は参照のみ、Service Connections には設定できません。")
+                "既存から変わったセルは橙色です。グローバル（All）は参照のみです。" + ("Service Connections には設定できません。" if key == "pol" else "復号ポリシーは Service Connections にも設定でき、どのスコープにも Pre・Post があります。"))
     for r in range(8, ws.max_row + 1):
         if ws.cell(r, 1).value != "▼":
             ws.cell(r, 3).value = None
@@ -902,11 +910,11 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
     ws["P3"].fill = PatternFill()
     ws.row_dimensions[2].height = 96
     if not SAMPLE:
-        for i, (f, p) in enumerate(P_FLOW):
+        for i, (f, p) in enumerate(P_FLOW if key == "pol" else P_FLOW_DEC):
             r = 8 + i
             lv = max(P_DEPTH[f] - 1, 0)
             ws.cell(r, 1).value = "▼"
-            ws.cell(r, 5 + lv).value = f"■ {p_glabel(f, p)} ／ 0 件"
+            ws.cell(r, 5 + lv).value = f"■ {p_glabel(f, p, key)} ／ 0 件"
             ws.cell(r, s_hf).value = f
             ws.cell(r, s_hf + 1).value = p
             for c in range(1, s_hf + 2):
@@ -937,8 +945,8 @@ ws.merge_cells("A1:AI1")
 ws.merge_cells("A2:AI2")
 ws["A1"] = "参照_ポリシー選択肢（⑫⑬のダブルクリック選択の候補・入力チェックの基準）"
 ws["A2"] = ("アドレス・アドレスグループ・EDL・サービス・サービスグループ・カスタムURLカテゴリ・HIPプロファイル・プロファイルグループの列は、"
-            "「選択肢を作り直す」・⑫⑬の入力チェック・ダブルクリックのたびに、②既存データ（スコープ＝コンテナの folder）と③〜⑨の「登録」行（スコープ＝①の設定先フォルダ）から自動で作り直します。"
-            "ゾーン・タグ・リージョン・事前定義URLカテゴリ・アプリグループ・アプリフィルタ・証明書・復号プロファイルは、既存ツール（SCM_SecurityPolicy.xlsx／SCM_DecryptionPolicy.xlsx）から取り込みます（ゾーンとスコープは手で追記できます）。"
+            "「選択肢を作り直す」・⑫⑬の入力チェック・ダブルクリックのたびに、②既存データ（スコープ＝コンテナの folder）と③〜⑨の「登録」行（スコープ＝①基本設定のオブジェクト取得folder）から自動で作り直します。"
+            "ゾーン・タグ・リージョン・事前定義URLカテゴリ・アプリグループ・アプリフィルタ・自作App・証明書・復号プロファイルは、①基本設定の「既存情報をまとめて取得（API）」か、既存ツール（SCM_SecurityPolicy.xlsx／SCM_DecryptionPolicy.xlsx）からの取込で入ります（ゾーンは取得したルールで使われているものを追加。ゾーンとスコープは手で追記できます）。"
             "ユーザー（⑪）とアプリケーション（⑩）は記入内容を追記します。スコープ列＝定義されている folder（空欄＝どこでも使える）。")
 ws.row_dimensions[2].height = 84
 ws["D3"] = "▶ 選択肢を作り直す（②と③～⑪から）"
@@ -983,10 +991,87 @@ add_name("DEC_CERT_NAMES", f"OFFSET({q(R3)}!$AE$8,0,0,MAX(1,COUNTA({q(R3)}!$AE$8
 add_name("DEC_PROF_NAMES", f"OFFSET({q(R3)}!$AF$8,0,0,MAX(1,COUNTA({q(R3)}!$AF$8:$AF$10007)),1)")
 
 # ======================================================================
-# ① 基本情報
+# ① 基本設定（既存ツール SCM_SecurityPolicy.xlsx の ①基本設定 と同じ。担当者がトークン取得・API取得に使う）
 # ======================================================================
+sw = src_wb["pol"]["①基本設定"]
 ws = wb[S1]
-ws["A1"] = "SCM（Prisma Access）設定 入力シート（お客様記入用）"
+for row in sw.iter_rows(min_row=1, max_row=sw.max_row):
+    for c in row:
+        d = ws.cell(c.row, c.column)
+        copy_style(c, d)
+        d.value = c.value
+for m in sw.merged_cells.ranges:
+    ws.merge_cells(str(m))
+for k, dim in sw.column_dimensions.items():
+    ws.column_dimensions[k].width = dim.width
+for r, dim in sw.row_dimensions.items():
+    if dim.height:
+        ws.row_dimensions[r].height = dim.height
+copy_dv(sw, ws, 0, {})
+for n, dn in src_wb["pol"].defined_names.items():
+    if n.startswith("CFG_"):
+        add_name(n, dn.attr_text)
+ws["A1"] = "① 基本設定（API接続先・認証情報・アクセストークン）※担当者用"
+ws["A2"] = ("担当者がトークンを取得し、「既存情報をまとめて取得（API）」で②・②-2・②-3・参照_ポリシー選択肢を作り直します（GET のみ。SCM の設定は変えません）。"
+            "client_secret を含むため、お客様にお渡しする前に「接続情報を消去」を押してください。お客様の記入は不要です。")
+ws.row_dimensions[2].height = 45
+ws["B7"] = "/sse/config/v1"
+ws["D7"] = "このブックでは種類ごとのエンドポイントを自動で使います（変更不要）"
+for a in ("B10", "B11", "B12"):
+    ws[a] = None
+ws["D10"] = "担当者が入力"
+ws["D11"] = "担当者が入力（お客様に渡す前に「接続情報を消去」）"
+ws["D12"] = "テナントサービスグループID（担当者が入力）"
+ws["A14"] = "取得の条件"
+ws["D16"] = "アドレス・サービス・HIP・EDL・プロファイル等を取得する基本の folder。このほか下の○のスコープからも取得し、定義folderをスコープとして記録。③～⑪で登録するものはこの folder に作る前提でチェック"
+ws["A28"] = "※ このブックは取得（GET）だけを行います。登録・変更・削除・設定反映（Push）は、SCM の画面または各ツールで実施してください。"
+for r, lab, btn, txt in ((30, "既存情報の取得", "▶ 既存情報をまとめて取得（API）",
+                          "②既存データ抽出（アドレス・グループ・サービス・URLカテゴリ・HIP・EDL・プロファイルグループ）、②-2・②-3 既存ポリシー、参照_ポリシー選択肢 を SCM の現在の内容で作り直します。"),
+                         (32, "接続情報の消去", "▶ 接続情報を消去（お客様に渡す前に）",
+                          "client_secret とアクセストークンを消します（client_id・TSG ID も消すか選べます）。消してから保存し、お客様にお渡しください。")):
+    ws.cell(r, 1).value = lab
+    ws.cell(r, 1).font = FT_B
+    ws.cell(r, 2).value = txt
+    ws.cell(r, 2).alignment = WRAP
+    ws.cell(r, 4).value = btn
+    ws.merge_cells(start_row=r, start_column=4, end_row=r, end_column=5)
+    copy_style(sw["D18"], ws.cell(r, 4))
+    ws.row_dimensions[r].height = 45
+ws["B40"] = "○"
+ws["D40"] = "オブジェクト・復号ポリシーは取得します（セキュリティポリシーは Service Connections に設定できないため取得しません）"
+ws["A36"] = "取得の対象スコープ：○を付けたものを上から順に取得し、スコープごとに表化（ポリシーの1行目にスコープ名を表示）"
+ws.freeze_panes = sw.freeze_panes
+ws.sheet_properties.tabColor = "C00000"
+if SAMPLE:
+    ws["B10"] = "dummy-sa@1234567890.iam.panserviceaccount.com"
+    ws["B12"] = "1234567890"
+
+# ---------------------------------------------------------------- 実行ログ（既存ツールの ⑥実行ログ と同じ）
+sw = src_wb["pol"]["⑥実行ログ"]
+ws = wb[SLOG]
+for row in sw.iter_rows(min_row=1, max_row=5):
+    for c in row:
+        d = ws.cell(c.row, c.column)
+        copy_style(c, d)
+        d.value = c.value
+for m in sw.merged_cells.ranges:
+    if m.min_row <= 5 and str(m) != "F3":
+        ws.merge_cells(str(m))
+for k, dim in sw.column_dimensions.items():
+    ws.column_dimensions[k].width = dim.width
+for r, dim in sw.row_dimensions.items():
+    if dim.height and r <= 5:
+        ws.row_dimensions[r].height = dim.height
+ws["A1"] = "実行ログ（API取得の結果）"
+ws["A2"] = "トークン取得・既存情報の取得（GET）の結果をVBAが追記します。HTTPステータス 200=成功、それ以外=失敗（レスポンス本文を記録）。"
+ws.freeze_panes = sw.freeze_panes
+ws.sheet_properties.tabColor = "A6A6A6"
+
+# ======================================================================
+# 記入状況（各シートの記入件数・判定の集計と一括チェック）
+# ======================================================================
+ws = wb[SS]
+ws["A1"] = "SCM（Prisma Access）設定 入力シート（お客様記入用）— 記入状況"
 ws["A1"].font = Font(bold=True, size=16, color="1F4E78")
 ws.merge_cells("A1:H1")
 ws["A2"] = ("このブックは、Strata Cloud Manager（Prisma Access）へ登録・変更・削除する設定内容をご記入いただくためのものです。"
@@ -1000,44 +1085,18 @@ ws.column_dimensions["C"].width = 44
 for c, w in zip("DEFGH", (12, 10, 10, 10, 30)):
     ws.column_dimensions[c].width = w
 
-ws["A4"] = "1. お客様情報"
+ws["A4"] = "1. 記入するシートと記入状況（判定は関数で自動集計）"
 ws["A4"].font = FT_B
-info = [("記入日", "CUST_DATE"), ("会社名", "CUST_COMPANY"), ("部署名", "CUST_DEPT"), ("ご担当者名", "CUST_PERSON"),
-        ("メールアドレス", "CUST_MAIL"), ("電話番号", "CUST_TEL"), ("対象環境（テナント名・TSG名など）", "CUST_TENANT"),
-        ("設定先フォルダ", "CUST_FOLDER"), ("反映希望日", "CUST_WANT"), ("備考・ご要望", "CUST_NOTE")]
-for i, (lbl, nm) in enumerate(info):
-    r = 5 + i
-    ws.cell(r, 2).value = lbl
-    ws.cell(r, 2).fill = F_SUB
-    ws.cell(r, 2).border = BOX
-    ws.cell(r, 2).font = FT_B
-    c = ws.cell(r, 3)
-    c.fill = F_IN
-    c.border = BOX
-    c.alignment = WRAP
-    ws.merge_cells(start_row=r, start_column=3, end_row=r, end_column=6)
-    add_name(nm, f"{q(S1)}!$C${r}")
-ws["C5"].number_format = "yyyy/mm/dd"
-ws["C13"].number_format = "yyyy/mm/dd"
-ws["C12"] = "Shared"
-dv = DataValidation(type="list", formula1='"Shared,Mobile Users,Remote Networks,Service Connections,Mobile Users Container,Mobile Users Explicit Proxy"', allow_blank=True)
-dv.add("C12")
-ws.add_data_validation(dv)
-ws["G12"] = "通常は Shared（全体共通）"
-ws.row_dimensions[14].height = 45
-
-ws["A16"] = "2. 記入するシートと記入状況（判定は関数で自動集計）"
-ws["A16"].font = FT_B
 hdr = ["No", "シート", "記入内容", "記入件数", "OK", "警告", "NG", "状態"]
 for i, h in enumerate(hdr):
-    c = ws.cell(17, 1 + i)
+    c = ws.cell(5, 1 + i)
     c.value = h
     c.font = FT_HEAD
     c.fill = F_HEAD
     c.alignment = CENTER
     c.border = BOX
 SUMS = [
-    (S2, "現在SCMに登録されている設定（セキュリティプロファイルを含む。ポリシーは②-2・②-3。担当者が取込。参照のみ）", None, None, None),
+    (S2, "現在SCMに登録されている設定（セキュリティプロファイルを含む。ポリシーは②-2・②-3。担当者がAPIで取得。参照のみ）", None, None, None),
     (S3, "アドレスオブジェクトの登録・変更・削除", "C8:C507", "P8:P507", None),
     (S4, "アドレスグループの登録・変更・削除（メンバーはダブルクリックで選択）", "C8:C507", "P8:P507", None),
     (S5, "サービスの登録・変更・削除", "C8:C507", "X8:X507", None),
@@ -1052,7 +1111,7 @@ SUMS = [
     (S13, "復号ポリシーの追加・変更・削除・移動（スコープごと。判定は「入力チェック」か「一括チェック」）", "B8:B3000", "C8:C3000", None),
 ]
 for i, (sh, desc, cnt, jd, _x) in enumerate(SUMS):
-    r = 18 + i
+    r = 6 + i
     ws.cell(r, 1).value = "⑧-2" if sh == S8B else sh[0]
     c = ws.cell(r, 2)
     c.value = sh
@@ -1072,24 +1131,24 @@ for i, (sh, desc, cnt, jd, _x) in enumerate(SUMS):
     else:
         ws.cell(r, 4).value = f'=IF({q(S2)}!B3="","",{q(S2)}!B3)'
         ws.cell(r, 4).number_format = "yyyy/mm/dd"
-        ws.cell(r, 8).value = "取込日時（D列）"
+        ws.cell(r, 8).value = "取得日時（D列）"
     for ci in range(1, 9):
         ws.cell(r, ci).border = BOX
         if ci >= 4:
             ws.cell(r, ci).fill = F_CALC
     ws.cell(r, 1).alignment = CENTER
-rT = 18 + len(SUMS)
+rT = 6 + len(SUMS)
 ws.cell(rT, 3).value = "合計"
 ws.cell(rT, 3).font = FT_B
 for ci, L in ((4, "D"), (5, "E"), (6, "F"), (7, "G")):
-    ws.cell(rT, ci).value = f"=SUM({L}19:{L}{rT - 1})"
+    ws.cell(rT, ci).value = f"=SUM({L}7:{L}{rT - 1})"
     ws.cell(rT, ci).font = FT_B
     ws.cell(rT, ci).border = BOX
-ws.conditional_formatting.add(f"H18:H{rT - 1}", FormulaRule(formula=['LEFT($H18,3)="要修正"'], fill=PatternFill("solid", bgColor=NG_FILL, fgColor=NG_FILL)))
-ws.conditional_formatting.add(f"H18:H{rT - 1}", FormulaRule(formula=['LEFT($H18,3)="要確認"'], fill=PatternFill("solid", bgColor=WARN_FILL, fgColor=WARN_FILL)))
-ws.conditional_formatting.add(f"H18:H{rT - 1}", FormulaRule(formula=['LEFT($H18,5)="未チェック"'], fill=PatternFill("solid", bgColor=WARN_FILL, fgColor=WARN_FILL)))
-ws.conditional_formatting.add(f"H18:H{rT - 1}", FormulaRule(formula=['$H18="OK"'], fill=PatternFill("solid", bgColor=OK_FILL, fgColor=OK_FILL)))
-assert rT + 1 == 32, rT
+ws.conditional_formatting.add(f"H6:H{rT - 1}", FormulaRule(formula=['LEFT($H6,3)="要修正"'], fill=PatternFill("solid", bgColor=NG_FILL, fgColor=NG_FILL)))
+ws.conditional_formatting.add(f"H6:H{rT - 1}", FormulaRule(formula=['LEFT($H6,3)="要確認"'], fill=PatternFill("solid", bgColor=WARN_FILL, fgColor=WARN_FILL)))
+ws.conditional_formatting.add(f"H6:H{rT - 1}", FormulaRule(formula=['LEFT($H6,5)="未チェック"'], fill=PatternFill("solid", bgColor=WARN_FILL, fgColor=WARN_FILL)))
+ws.conditional_formatting.add(f"H6:H{rT - 1}", FormulaRule(formula=['$H6="OK"'], fill=PatternFill("solid", bgColor=OK_FILL, fgColor=OK_FILL)))
+assert rT + 1 == 20, rT
 ws.cell(rT + 1, 2).value = "▶ 一括チェック"
 ws.cell(rT + 1, 2).fill = F_BTN
 ws.cell(rT + 1, 2).font = FT_B
@@ -1100,7 +1159,7 @@ ws.merge_cells(start_row=rT + 1, start_column=3, end_row=rT + 1, end_column=8)
 ws.row_dimensions[rT + 1].height = 32
 
 r0 = rT + 3
-ws.cell(r0, 1).value = "3. 記入のしかた"
+ws.cell(r0, 1).value = "2. 記入のしかた"
 ws.cell(r0, 1).font = FT_B
 howto = [
     "黄色のセルに記入します。灰色のセルは関数（自動）です。操作・種別などはプルダウンから選びます。",
@@ -1110,6 +1169,7 @@ howto = [
     "判定：OK（緑）＝問題なし、警告（黄）＝内容をご確認ください、NG（赤）＝修正が必要です。理由の列に内容が出ます。変更の行で既存と異なる項目は橙色になります。",
     "名前（name）は英数字・空白・ . _ - のみ使えます。大文字・小文字は区別されます。",
     "セキュリティポリシー（⑫）・復号ポリシー（⑬）はスコープ（Prisma Access／Mobile Users Container／GlobalProtect／Explicit Proxy／Remote Networks）ごとの表です。使えるオブジェクトは、そのスコープと上位（GlobalProtect・Explicit Proxy なら Mobile Users Container と Shared、Remote Networks・Mobile Users Container なら Shared）で定義されたものだけです。",
+    "①基本設定・②既存データ・②-2・②-3・実行ログは担当者用です（SCM から取得した現在の設定。お客様は記入不要です）。",
     "パスワードなどの秘密情報はこのブックに書かず、別途お知らせください。",
 ]
 for i, t in enumerate(howto):
@@ -1119,7 +1179,7 @@ for i, t in enumerate(howto):
     ws.merge_cells(start_row=r0 + 1 + i, start_column=2, end_row=r0 + 1 + i, end_column=8)
     ws.row_dimensions[r0 + 1 + i].height = 30
 r1 = r0 + 2 + len(howto)
-ws.cell(r1, 1).value = "4. 色の見方"
+ws.cell(r1, 1).value = "3. 色の見方"
 ws.cell(r1, 1).font = FT_B
 legend = [("記入欄", "FFF2CC"), ("関数（自動）", "F2F2F2"), ("OK", OK_FILL), ("警告", WARN_FILL), ("NG", NG_FILL), ("変更で既存と異なる項目", CHG_FILL), ("ボタンの位置", "F4B084")]
 for i, (t, rgb) in enumerate(legend):
@@ -1128,16 +1188,10 @@ for i, (t, rgb) in enumerate(legend):
     c.fill = PatternFill("solid", fgColor=rgb)
     c.border = BOX
 ws.sheet_properties.tabColor = "1F4E78"
-for i, (lbl, nm) in enumerate(info):
-    pass
-if SAMPLE:
-    ws["C5"] = "=DATE(2026,11,16)"
-    ws["C6"] = "サンプル株式会社"
-    ws["C8"] = "情報 太郎"
 
 # ---------------------------------------------------------------- チェック結果（VBAが作り直す）
 ws = wb["チェック結果"]
-ws["A1"] = "チェック結果（①基本情報の「一括チェック」で作り直します）"
+ws["A1"] = "チェック結果（記入状況の「一括チェック」で作り直します）"
 ws["A1"].font = FT_TTL
 for i, h in enumerate(["No", "シート", "セル（クリックで移動）", "名前", "判定", "内容"]):
     c = ws.cell(4, 1 + i)
