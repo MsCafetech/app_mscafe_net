@@ -834,8 +834,9 @@ P_LBL = {"Shared": "Prisma Access（Shared）", "Mobile Users": "GlobalProtect�
          "Mobile Users Explicit Proxy": "Explicit Proxy（Mobile Users Explicit Proxy）"}
 
 
-# 復号ポリシーもセキュリティポリシーと同じ評価順。Service Connections（Pre/Post なし）は復号ポリシーだけ
-P_FLOW_DEC = P_FLOW[:6] + [("Service Connections", "pre")] + P_FLOW[6:]
+# 復号ポリシーもセキュリティポリシーと同じ評価順（Remote Networks の次に Service Connections。どちらも Pre/Post なし）
+P_FLOW = P_FLOW[:6] + [("Service Connections", "pre")] + P_FLOW[6:]
+P_FLOW_DEC = P_FLOW
 
 
 def p_glabel(f, p, key="pol"):
@@ -941,7 +942,7 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
         reorder_policy(ws, key, False)
     ws["A1"] = f"{ng[:3]} 既存の{lbl}（現在SCMに設定されている内容）"
     ws["A2"] = (f"担当者が①基本設定の「既存情報をまとめて取得（API）」で取得します（既存ツール（{tool}）で取得した{lbl}を「②既存データ抽出」の「既存ツールから取込」で取り込むこともできます）。"
-                f"スコープ（Prisma Access → Mobile Users Container → GlobalProtect・Explicit Proxy → Remote Networks）ごとに▼の見出し行があり、その下が評価順のルールです。"
+                f"スコープ（Prisma Access → Mobile Users Container → GlobalProtect・Explicit Proxy → Remote Networks → Service Connections）ごとに▼の見出し行があり、その下が評価順のルールです。"
                 f"「{ns}」の展開と入力チェックの基準です。お客様は参照のみで、編集は不要です。")
     ws["D3"] = "（①の「既存情報をまとめて取得（API）」または②の「既存ツールから取込」で入ります）"
     ws["H3"] = None
@@ -961,7 +962,7 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
                 "ゾーン・アドレス・ユーザー・HIP・" + ("アプリケーション・" if key == "pol" else "") + "サービス・URLカテゴリ・タグはダブルクリック（または Ctrl+Shift+M）で、"
                 "そのスコープから見えるものだけをチェックボックスで選べます。「入力チェック」（記入状況の「一括チェック」でも可）で C・D列に判定と理由を出します："
                 "③〜⑪で削除予定のものを使っている／ルールのスコープから見えないフォルダで定義されたものを使っている＝NG、②既存データにも③〜⑪の登録にも無い＝警告。"
-                "既存から変わったセルは橙色です。グローバル（All）は参照のみです。" + ("Service Connections には設定できません。" if key == "pol" else "GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は Pre/Post なしです（並び順はセキュリティポリシーと同じ）。"))
+                "既存から変わったセルは橙色です。グローバル（All）は参照のみです。GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は Pre/Post なしです。")
     for r in range(8, ws.max_row + 1):
         if ws.cell(r, 1).value != "▼":
             ws.cell(r, 3).value = None
@@ -1100,7 +1101,7 @@ for r, lab, btn, txt in ((30, "既存情報の取得", "▶ 既存情報をま�
     copy_style(sw["D18"], ws.cell(r, 4))
     ws.row_dimensions[r].height = 45
 ws["B40"] = "○"
-ws["D40"] = "オブジェクト・復号ポリシーは取得します（セキュリティポリシーは Service Connections に設定できないため取得しません）"
+ws["D40"] = "サービスコネクション（オブジェクト・セキュリティポリシー・復号ポリシーを取得）"
 ws["A36"] = "取得の対象スコープ：○を付けたものを上から順に取得し、スコープごとに表化（ポリシーの1行目にスコープ名を表示）"
 ws.freeze_panes = sw.freeze_panes
 ws.sheet_properties.tabColor = "C00000"
@@ -1230,7 +1231,7 @@ howto = [
     "グループのメンバー欄などは、セルをダブルクリックするとチェックボックスの一覧から選べます（Ctrl+Shift+M でも開きます）。",
     "判定：OK（緑）＝問題なし、警告（黄）＝内容をご確認ください、NG（赤）＝修正が必要です。理由の列に内容が出ます。変更の行で既存と異なる項目は橙色になります。",
     "名前（name）は英数字・空白・ . _ - のみ使えます。大文字・小文字は区別されます。",
-    "セキュリティポリシー（⑫）・復号ポリシー（⑬）はスコープ（Prisma Access／Mobile Users Container／GlobalProtect／Explicit Proxy／Remote Networks）ごとの表です。使えるオブジェクトは、そのスコープと上位（GlobalProtect・Explicit Proxy なら Mobile Users Container と Shared、Remote Networks・Mobile Users Container なら Shared）で定義されたものだけです。",
+    "セキュリティポリシー（⑫）・復号ポリシー（⑬）はスコープ（Prisma Access／Mobile Users Container／GlobalProtect／Explicit Proxy／Remote Networks／Service Connections）ごとの表です。使えるオブジェクトは、そのスコープと上位（GlobalProtect・Explicit Proxy なら Mobile Users Container と Shared、Remote Networks・Service Connections・Mobile Users Container なら Shared）で定義されたものだけです。",
     "①基本設定・②既存データ・②-2・②-3・実行ログは担当者用です（SCM から取得した現在の設定。お客様は記入不要です）。",
     "パスワードなどの秘密情報はこのブックに書かず、別途お知らせください。",
 ]

@@ -7,7 +7,7 @@ Attribute VB_Name = "modInPolicy"
 '   スコープ  : ルールの folder から見えるのは自分＋上位（RN・SC・MUC→Shared、GP・EP→MUC・Shared）。All は参照のみ
 '   前提      : modScmInput・modInFetch・modScmCommon と同じブックに入れる（API は GET だけ。JSON化・登録はしません）
 '   並び順はセキュリティ・復号とも同じ（Global Pre → Prisma Access Pre → MUC Pre → GP → EP → MUC Post → RN → SC → Prisma Access Post → Global Post）
-'   GP・EP・RN・SC は Pre/Post なし。Service Connections は復号ポリシーだけ設定できる（セキュリティポリシーは対象外）
+'   GP・EP・RN・SC は Pre/Post なし
 '==========================================================
 Option Explicit
 
@@ -634,7 +634,6 @@ End Sub
 
 ' 設定できる folder・position（評価順。セキュリティ・復号とも同じ）。All は参照のみなので作らない
 '   GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は1つのルールベース（Pre/Post なし）
-'   Service Connections は復号ポリシーだけ（セキュリティポリシーは設定できない）
 Private Function FlowOrder() As Collection
     Dim c As New Collection
     c.Add Array("Shared", "pre")
@@ -643,7 +642,7 @@ Private Function FlowOrder() As Collection
     c.Add Array("Mobile Users Explicit Proxy", "pre")
     c.Add Array("Mobile Users Container", "post")
     c.Add Array("Remote Networks", "pre")
-    If mMode = "dec" Then c.Add Array("Service Connections", "pre")
+    c.Add Array("Service Connections", "pre")
     c.Add Array("Shared", "post")
     Set FlowOrder = c
 End Function
@@ -681,10 +680,6 @@ Private Sub InsertRuleRow()
     pos = SafeStr(ws.Cells(h, S_HF + 1).Value)
     If LCase$(folder) = "all" Then
         MsgBox "グローバル（All）のスコープには追加できません（参照のみ）。", vbExclamation
-        Exit Sub
-    End If
-    If LCase$(folder) = "service connections" And mMode <> "dec" Then
-        MsgBox "Service Connections にはセキュリティポリシーを設定できません。", vbExclamation
         Exit Sub
     End If
     Application.ScreenUpdating = False
@@ -762,7 +757,6 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
                     ngs = ngs & vbLf & "NG:操作はプルダウンから選択してください"
             End Select
             If LCase$(folder) = "all" And op <> "" Then ngs = ngs & vbLf & "NG:グローバル（All）のルールは操作できません（参照のみ）"
-            If LCase$(folder) = "service connections" And op <> "" And mMode <> "dec" Then ngs = ngs & vbLf & "NG:Service Connections にはセキュリティポリシーを設定できません"
             If id <> "" Then
                 If before.Exists(id) Then
                     b = before(id)
@@ -1223,7 +1217,6 @@ End Function
 ' その folder・position を取得するか
 Private Function NeedFetch(ByVal folder As String, ByVal pos As String) As Boolean
     Dim ps As Variant
-    If mMode <> "dec" And LCase$(folder) = "service connections" Then Exit Function
     If SingleRB(folder) Then NeedFetch = True: Exit Function
     For Each ps In Positions()
         If ps = pos Then NeedFetch = True

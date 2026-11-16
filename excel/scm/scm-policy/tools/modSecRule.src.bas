@@ -325,8 +325,8 @@ Private Function FetchRulesCore() As Long
 End Function
 
 ' 戻り値：Collection of Array(folder, position, 表示名, Collection of APIの要素)
-'   並び順は SCM の画面と同じ（FlowOrder 参照）。Service Connections はセキュリティポリシーを設定できないため取得しない
-'   GlobalProtect・Explicit Proxy・Remote Networks は Pre/Post の区別が無い1つのルールベース（API上は pre として扱う）
+'   並び順は SCM の画面と同じ（FlowOrder 参照）
+'   GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は Pre/Post の区別が無い1つのルールベース（API上は pre として扱う）
 '   子folderの応答に含まれる上位folderのルール（継承分）は、定義元のスコープにだけ出す
 '   folder=All（グローバル）のルールは「グローバル（All）」スコープとして一番外側に出す（参照のみ）
 Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) As Collection
@@ -394,8 +394,8 @@ End Function
 
 ' 並び順（SCM のセキュリティポリシー画面と同じ）: Collection of Array(folder, position)
 '   Global Pre → Prisma Access Pre → Mobile Users Container Pre → GlobalProtect → Explicit Proxy
-'   → Mobile Users Container Post → Remote Networks → Prisma Access Post → Global Post
-'   Pre/Post は基本設定で選んだものだけ。GlobalProtect・Explicit Proxy・Remote Networks は常に表示（post はルールがあるときだけ）
+'   → Mobile Users Container Post → Remote Networks → Service Connections → Prisma Access Post → Global Post
+'   Pre/Post は基本設定で選んだものだけ。GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は常に表示（post はルールがあるときだけ）
 Private Function FlowOrder(ByVal scopes As Collection) As Collection
     Dim res As New Collection, sel As Object, sc As Variant, usePre As Boolean, usePost As Boolean, ps As Variant, x As Variant
     For Each ps In Positions()
@@ -411,6 +411,7 @@ Private Function FlowOrder(ByVal scopes As Collection) As Collection
                         Array("Mobile Users Explicit Proxy", "pre"), Array("Mobile Users Explicit Proxy", "post"), _
                         Array("Mobile Users Container", "post"), _
                         Array("Remote Networks", "pre"), Array("Remote Networks", "post"), _
+                        Array("Service Connections", "pre"), Array("Service Connections", "post"), _
                         Array("Shared", "post"), Array("All", "post"))
         If sel.Exists(CStr(x(0))) Then
             If SingleRB(CStr(x(0))) Then
@@ -426,14 +427,13 @@ End Function
 ' Pre/Post の区別が無い（1つのルールベースの）folder
 Private Function SingleRB(ByVal folder As String) As Boolean
     Select Case LCase$(folder)
-        Case "mobile users", "mobile users explicit proxy", "remote networks": SingleRB = True
+        Case "mobile users", "mobile users explicit proxy", "remote networks", "service connections": SingleRB = True
     End Select
 End Function
 
-' その folder・position を取得するか（Service Connections はセキュリティポリシー対象外）
+ その folder・position を取得するか（1つのルールベースの folder は pre・post とも取得）
 Private Function NeedFetch(ByVal folder As String, ByVal pos As String) As Boolean
     Dim ps As Variant
-    If LCase$(folder) = "service connections" Then Exit Function
     If SingleRB(folder) Then NeedFetch = True: Exit Function
     For Each ps In Positions()
         If ps = pos Then NeedFetch = True
