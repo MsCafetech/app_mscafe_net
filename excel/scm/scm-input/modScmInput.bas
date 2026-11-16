@@ -106,8 +106,9 @@ End Sub
 Private Sub AddBtn(ByVal sh As String, ByVal addr As String, ByVal caption As String, ByVal macro As String)
     Dim ws As Worksheet, rng As Range, b As Object
     Set ws = Worksheets(sh)
-    Set rng = ws.Range(addr).MergeArea
-    If rng.Cells.Count = 1 Then Set rng = ws.Range(addr)
+    ' 結合セル1つを指定したときは結合範囲全体に置く（MergeArea は1セルの範囲にしか使えないため、複数セルの指定はそのまま）
+    Set rng = ws.Range(addr)
+    If rng.Cells.Count = 1 Then Set rng = rng.MergeArea
     On Error Resume Next
     ws.Buttons("btn_" & macro).Delete
     On Error GoTo 0
