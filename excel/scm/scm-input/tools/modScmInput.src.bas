@@ -39,7 +39,7 @@ Private Const OFF_URLV As Long = 54
 Private Const OFF_HIP As Long = 58
 Private Const OFF_HIPP As Long = 124
 Private Const OFF_EDL As Long = 133
-Private Const OFF_PG As Long = 153         ' セキュリティプロファイルグループ（B=name）
+Private Const OFF_PG As Long = 153         ' セキュリティプロファイルグループ（B=id C=name）
 Private Const OFF_PROF As Long = 166       ' セキュリティプロファイル（B=種類 C=name D=備考）
 Private Const EX_LAST As Long = 5000
 Private Const EXP_LAST As Long = 2000      ' HIPプロファイル
@@ -130,11 +130,11 @@ Public Sub ImportProfiles(ByRef msg As String)
     Set ws2 = Worksheets(S2)
     Set seen = CreateObject("Scripting.Dictionary")
     ws2.Range(ws2.Cells(EX_FIRST, OFF_PROF + 2), ws2.Cells(EX_LAST, OFF_PROF + 4)).ClearContents
-    lastR = LastRow(ws2, OFF_PG + 2)
+    lastR = LastRow(ws2, OFF_PG + 3)
     o = EX_FIRST
     For c = 0 To 6
         For r = EX_FIRST To lastR
-            nm = Trim$(SafeStr(ws2.Cells(r, OFF_PG + 5 + c).Value))
+            nm = Trim$(SafeStr(ws2.Cells(r, OFF_PG + 6 + c).Value))
             If nm <> "" And Not seen.Exists(kinds(c) & "|" & nm) And o <= EX_LAST Then
                 seen.Add kinds(c) & "|" & nm, True
                 ws2.Cells(o, OFF_PROF + 2).Value = kinds(c)

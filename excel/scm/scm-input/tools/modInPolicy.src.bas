@@ -268,7 +268,7 @@ Public Sub BuildChoices()
     FillBlock CH_URLC, OFF_URL, 6, 2, 0, 0, "", cf, "url"
     FillUrlInput cf
     FillBlock CH_HIP, OFF_HIPP, 8, 3, 0, 0, S8B, cf, "hip"
-    FillBlock CH_PG, OFF_PG, 12, 2, 0, 0, "", cf, "pg"
+    FillBlock CH_PG, OFF_PG, 12, 3, 0, 0, "", cf, "pg"
     AppendList CH_USER, S11, 4, "user"
     AppendApps cf
     Set mRef = BuildRefMap()
@@ -302,7 +302,7 @@ Private Sub FillBlock(ByVal ch As Long, ByVal off As Long, ByVal ncols As Long, 
         If nm <> "" And o <= CHO_LAST Then
             wsC.Cells(o, ch).NumberFormat = "@"
             wsC.Cells(o, ch).Value = nm
-            If contCol > 0 Then wsC.Cells(o, ch + 1).Value = NormFolder(ContFolder(SafeStr(ws2.Cells(r, contCol).Value)))
+            If contCol > 0 Then wsC.Cells(o, ch + 1).Value = FolderDisp(NormFolder(ContFolder(SafeStr(ws2.Cells(r, contCol).Value))))
             If chType > 0 Then wsC.Cells(o, chType).Value = SafeStr(ws2.Cells(r, off + typeCol).Value)
             seen(nm) = True
             o = o + 1
@@ -317,7 +317,7 @@ Private Sub FillBlock(ByVal ch As Long, ByVal off As Long, ByVal ncols As Long, 
             If op = "登録" And Not seen.Exists(nm) And o <= CHO_LAST Then
                 wsC.Cells(o, ch).NumberFormat = "@"
                 wsC.Cells(o, ch).Value = nm
-                wsC.Cells(o, ch + 1).Value = cf
+                wsC.Cells(o, ch + 1).Value = FolderDisp(cf)
                 If chType > 0 Then wsC.Cells(o, chType).Value = SafeStr(wsI.Cells(r, typeCol).Value)
                 seen(nm) = True
                 o = o + 1
@@ -611,7 +611,7 @@ Private Sub InsertRuleRow()
     End With
     ws.Cells(r, S_OP).Value = "追加"
     ws.Cells(r, S_SCOPE).Value = GroupLabel(folder, pos)
-    ws.Cells(r, S_FOLDER).Value = folder
+    ws.Cells(r, S_FOLDER).Value = FolderDisp(folder)
     ws.Cells(r, S_POS).Value = pos
     For Each k In Array("from", "source", "source_user", "to", "destination", "application", "category")
         If FIdx(CStr(k)) > 0 Then ws.Cells(r, S_NAME + FIdx(CStr(k))).Value = "any"
@@ -661,7 +661,7 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
             ngs = "": warns = "": bv = Empty
             ws.Range(ws.Cells(r, S_SCOPE), ws.Cells(r, S_POS)).NumberFormat = "@"
             ws.Cells(r, S_SCOPE).Value = g(2)
-            ws.Cells(r, S_FOLDER).Value = folder
+            ws.Cells(r, S_FOLDER).Value = FolderDisp(folder)
             ws.Cells(r, S_POS).Value = pos
             PaintBase ws, r
             IndentRow ws, r, S_SCOPE, folder
@@ -997,7 +997,7 @@ End Function
 Private Function ScopeLabel(ByVal folder As String) As String
     Select Case folder
         Case "All": ScopeLabel = "グローバル（All）※参照のみ"
-        Case "Shared": ScopeLabel = "Prisma Access（Shared）"
+        Case "Shared", "Prisma Access": ScopeLabel = FolderDisp("Shared")
         Case "Mobile Users": ScopeLabel = "GlobalProtect（Mobile Users）"
         Case "Mobile Users Explicit Proxy": ScopeLabel = "Explicit Proxy（Mobile Users Explicit Proxy）"
         Case Else: ScopeLabel = folder
@@ -1316,7 +1316,7 @@ Private Sub WriteGetSheet(ByVal groups As Collection)
             ReDim a(1 To 1, 1 To G_LAST)
             a(1, 1) = n
             a(1, G_SCOPE) = g(2)
-            a(1, G_FOLDER) = g(0)
+            a(1, G_FOLDER) = FolderDisp(CStr(g(0)))
             a(1, G_FOLDER + 1) = g(1)
             a(1, G_ID) = Nz(item, "id")
             For i = 0 To NF
@@ -1365,7 +1365,7 @@ End Sub
 Public Function FetchPolicyChoices(ByRef msg As String) As Long
     Dim ng As Long, items As Collection, item As Variant, vals As Collection, scs As Collection, nm As String
     Dim base As String, q As String, st As Long, m As String, custom As Object, ws2 As Worksheet, r As Long, lastR As Long
-    base = CfgOpt("CFG_OBJ_FOLDER")
+    base = FolderApi(CfgOpt("CFG_OBJ_FOLDER"))
     If base = "" Then base = "Shared"
     q = "folder=" & modInFetch.InEnc(base)
     If Not ChoiceCol(CH_TAG, "/sse/config/v1/tags") Then ng = ng + 1
@@ -1431,7 +1431,7 @@ Private Function ChoiceCol(ByVal col As Long, ByVal ep As String, Optional ByVal
         If Nz(item, "name") <> "" Then
             fd = Nz(item, "folder")
             If fd = "" Then fd = Nz(item, "snippet")
-            vals.Add Nz(item, "name"): scs.Add fd
+            vals.Add Nz(item, "name"): scs.Add FolderDisp(fd)
         End If
     Next
     WriteChoiceCol col, vals
@@ -1484,7 +1484,7 @@ Private Function CustomApps(ByVal q As String, ByVal folder As String, ByRef c A
                             If Nz(item, "id") <> "" And InStr(LCase$(Nz(item, "folder") & " " & Nz(item, "snippet")), "predefined") = 0 And Nz(item, "name") <> "" Then
                                 fd = Nz(item, "folder")
                                 If fd = "" Then fd = folder
-                                c.Add Nz(item, "name"): sc.Add fd
+                                c.Add Nz(item, "name"): sc.Add FolderDisp(fd)
                             End If
                         End If
                     Next

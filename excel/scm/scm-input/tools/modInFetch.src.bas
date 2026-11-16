@@ -124,10 +124,18 @@ Private Function FetchAdr(ByRef msg As String) As Long
         a(i, 8) = Nz(item, "description")
         a(i, 9) = JoinArr(item, "tag")
         a(i, 10) = ContainerOf(item)
-        a(i, 13) = Nz(item, "type")
+        ' type 列は API の type（常に "container" ＝保存場所の種類で意味がない）ではなく、アドレスの種類を出す
+        a(i, 13) = AdrKind(item)
     Next
     PutBlock OFF_ADR, "2-10,13", a, items.Count, EX_LAST
     msg = msg & vbLf & "　アドレス：" & items.Count & " 件"
+End Function
+
+Private Function AdrKind(ByVal item As Object) As String
+    Dim k As Variant
+    For Each k In Array("ip_netmask", "ip_range", "ip_wildcard", "fqdn")
+        If item.Exists(k) Then AdrKind = k: Exit Function
+    Next
 End Function
 
 Private Function FetchAdrGroup(ByRef msg As String) As Long
@@ -147,7 +155,12 @@ Private Function FetchAdrGroup(ByRef msg As String) As Long
         a(i, 6) = Nz(item, "description")
         a(i, 7) = JoinArr(item, "tag")
         a(i, 8) = ContainerOf(item)
-        a(i, 11) = Nz(item, "type")
+        ' type 列は API の type（常に "container"）ではなく、static / dynamic を出す
+        If item.Exists("static") Then
+            a(i, 11) = "static"
+        ElseIf item.Exists("dynamic") Then
+            a(i, 11) = "dynamic"
+        End If
     Next
     PutBlock OFF_ADRG, "2-8,11", a, items.Count, EX_LAST
     msg = msg & vbLf & "　アドレスグループ：" & items.Count & " 件"
@@ -400,7 +413,7 @@ Done:
     EdlValues = v
 End Function
 
-' セキュリティプロファイルグループ（B=name C=folder D=定義済み/カスタム E～K=各プロファイル L=id）→ セキュリティプロファイルも作り直す
+' セキュリティプロファイルグループ（B=id C=name D=folder E=定義済み/カスタム F～L=各プロファイル。id の位置は他のブロックと同じ）→ セキュリティプロファイルも作り直す
 Private Function FetchProfGroups(ByRef msg As String) As Long
     Dim items As Collection, item As Variant, a() As Variant, i As Long, k As Long, keys As Variant
     Set items = InGetFolders("/sse/config/v1/profile-groups", "既存取得（プロファイルグループ）")
@@ -410,17 +423,17 @@ Private Function FetchProfGroups(ByRef msg As String) As Long
     For Each item In items
         i = i + 1
         If i > UBound(a, 1) Then Exit For
-        a(i, 2) = Nz(item, "name")
-        a(i, 3) = Nz(item, "folder")
+        a(i, 2) = Nz(item, "id")
+        a(i, 3) = Nz(item, "name")
+        a(i, 4) = FolderDisp(Nz(item, "folder"))
         If Nz(item, "id") = "" Or InStr(LCase$(Nz(item, "folder") & " " & Nz(item, "snippet")), "predefined") > 0 Then
-            a(i, 4) = "定義済み"
+            a(i, 5) = "定義済み"
         Else
-            a(i, 4) = "カスタム"
+            a(i, 5) = "カスタム"
         End If
         For k = 0 To 6
-            a(i, 5 + k) = JoinLines(item, CStr(keys(k)))
+            a(i, 6 + k) = JoinLines(item, CStr(keys(k)))
         Next
-        a(i, 12) = Nz(item, "id")
     Next
     PutBlock OFF_PG, "2-12", a, items.Count, EXP_LAST
     msg = msg & vbLf & "　プロファイルグループ：" & items.Count & " 件"
@@ -487,7 +500,7 @@ End Function
 Public Function InFolders() As Collection
     Dim c As New Collection, d As Object, sc As Variant, base As String
     Set d = CreateObject("Scripting.Dictionary")
-    base = CfgOpt("CFG_OBJ_FOLDER")
+    base = FolderApi(CfgOpt("CFG_OBJ_FOLDER"))
     If base = "" Then base = "Shared"
     d(base) = True: c.Add base
     For Each sc In InSelScopes()
