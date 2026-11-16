@@ -28,9 +28,9 @@ Private Const OFF_SVCG As Long = 40
 Private Const OFF_URL As Long = 47
 Private Const OFF_URLV As Long = 54
 Private Const OFF_HIP As Long = 58
-Private Const OFF_HIPP As Long = 125
-Private Const OFF_EDL As Long = 134
-Private Const OFF_PG As Long = 154
+Private Const OFF_HIPP As Long = 124
+Private Const OFF_EDL As Long = 133
+Private Const OFF_PG As Long = 153
 
 Private Const F_FIRST As Long = 6       ' HIPオブジェクト：F列(6)～BM列(65) が description と条件の各項目
 
@@ -41,7 +41,7 @@ Public Sub SetupFetchButtons()
     FBtn SH_CFG, "D30:E30", "既存情報をまとめて取得（API）", "FetchExistingAll"
     FBtn SH_CFG, "D32:E32", "接続情報を消去（お客様に渡す前に）", "ClearCredentials"
     FBtn SH_CFG, "D18:E18", "トークン取得", "GetAccessToken"
-    FBtn S2, "L3:N3", "SCMから取得（API）", "FetchExistingAll"
+    FBtn S2, "D3:F3", "SCMから取得（API）", "FetchExistingAll"
     FBtn "実行ログ", "F3:G3", "ログクリア", "ClearLog"
 End Sub
 
@@ -256,13 +256,13 @@ Private Function FetchUrl(ByRef msg As String) As Long
     msg = msg & vbLf & "　カスタムURLカテゴリ：" & items.Count & " 件（URL " & n & " 件）"
 End Function
 
-' HIPオブジェクト（B=id C=name D=コンテナ E=mobile_device F～BM=項目 BN=JSON）。使われているベンダー・製品を参照_HIPベンダー一覧へ
+' HIPオブジェクト（B=id C=name D=コンテナ E=mobile_device F～BM=項目）。使われているベンダー・製品を参照_HIPベンダー一覧へ
 Private Function FetchHip(ByRef msg As String) As Long
-    Dim items As Collection, item As Variant, a() As Variant, i As Long, d As Object, keys As Variant, k As Long, js As String
+    Dim items As Collection, item As Variant, a() As Variant, i As Long, d As Object, keys As Variant, k As Long
     Set items = InGetFolders("/sse/config/v1/hip-objects", "既存取得（HIPオブジェクト）")
     If items Is Nothing Then FetchHip = 1: msg = msg & vbLf & "　HIPオブジェクト：失敗": Exit Function
     keys = HipKeys()
-    a = NewRows(items.Count, 66)
+    a = NewRows(items.Count, 65)
     For Each item In items
         i = i + 1
         If i > UBound(a, 1) Then Exit For
@@ -274,14 +274,8 @@ Private Function FetchHip(ByRef msg As String) As Long
         For k = 0 To UBound(keys)
             If d.Exists(keys(k)) Then a(i, F_FIRST + k) = d(keys(k))
         Next
-        js = InJsonOf(item)
-        If Len(js) > CELL_MAX Then
-            WriteLog "既存取得（HIPオブジェクト）", Nz(item, "name"), "", "", 0, "JSONがセルの上限を超えたため切り詰めました"
-            js = Left$(js, CELL_MAX)
-        End If
-        a(i, 66) = js
     Next
-    PutBlock OFF_HIP, "2-66", a, items.Count, EX_LAST
+    PutBlock OFF_HIP, "2-65", a, items.Count, EX_LAST
     MergeVendors items
     msg = msg & vbLf & "　HIPオブジェクト：" & items.Count & " 件"
 End Function

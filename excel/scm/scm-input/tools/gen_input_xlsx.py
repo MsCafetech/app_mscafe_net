@@ -81,7 +81,7 @@ BLOCKS = [
     ("svcg", "サービスグループ", ("svc", "SvcGroupObj_既存一覧"), 6, 5000),
     ("url", "カスタムURLカテゴリ（一覧）", None, 6, 5000),
     ("urlv", "カスタムURLカテゴリ（URL・1行1件）", None, 3, 30007),
-    ("hip", "HIPオブジェクト", ("hip", "HipObj_既存一覧"), 66, 5000),
+    ("hip", "HIPオブジェクト", ("hip", "HipObj_既存一覧"), 65, 5000),
     ("hipp", "HIPプロファイル", ("hip", "HipProfile_既存一覧"), 8, 2000),
     ("edl", "EDL", ("edl", "EDL_既存一覧"), 19, 5000),
     ("pg", "セキュリティプロファイルグループ", ("pol", "⑦ProfGroup_一覧"), 12, 2000),
@@ -94,8 +94,8 @@ for k, _t, _s, n, _l in BLOCKS:
     col += n + 1
 B_LAST = {k: l for k, _t, _s, _n, l in BLOCKS}
 # VBA（modScmInput / modInPolicy / modInFetch の OFF_xxx 定数）と同じであること
-assert OFF == {"adr": 0, "adrg": 14, "svc": 26, "svcg": 40, "url": 47, "urlv": 54, "hip": 58, "hipp": 125,
-               "edl": 134, "pg": 154, "prof": 167}, OFF
+assert OFF == {"adr": 0, "adrg": 14, "svc": 26, "svcg": 40, "url": 47, "urlv": 54, "hip": 58, "hipp": 124,
+               "edl": 133, "pg": 153, "prof": 166}, OFF
 
 SHEET_MAP = {
     "AdrObj_既存一覧": (S2, OFF["adr"]), "AdrGroupObj_既存一覧": (S2, OFF["adrg"]),
@@ -375,7 +375,7 @@ if not SAMPLE:
 ws2 = wb[S2]
 ws2["A1"] = "② 既存データ抽出（現在SCMに登録されている設定）"
 ws2["A1"].font = FT_TTL
-ws2["A2"] = ("担当者が①基本設定でトークンを取得し「SCMから取得（API）」で取得します（GET のみ）。既存の各ツール（SCM_AddressObject.xlsx、SCM_SecurityPolicy.xlsx 等）で取得した既存一覧の取込（「既存ツールから取込」）や、各ツールの既存一覧の8行目以降の貼り付けでも入れられます。"
+ws2["A2"] = ("担当者が①基本設定でトークンを取得し「SCMから取得（API）」で取得します（GET のみ）。（①の「既存情報をまとめて取得（API）」でも同じ内容を取得します）。"
              "③〜⑨の判定はこのシートと照合します。お客様は参照のみで、編集は不要です。ブロックは横に並んでいます（4行目のリンクで移動できます）。")
 ws2["A2"].alignment = WRAP
 ws2.merge_cells("A2:M2")
@@ -384,13 +384,11 @@ ws2["A3"] = "取得日時"
 ws2["A3"].font = FT_B
 ws2["B3"].number_format = "yyyy/mm/dd hh:mm"
 ws2["B3"].fill = F_CALC
-ws2["D3"] = "▶ 既存ツールから取込"
+ws2["D3"] = "▶ SCMから取得（API）"
 ws2.merge_cells("D3:F3")
 ws2["H3"] = "▶ 既存データをクリア"
 ws2.merge_cells("H3:J3")
-ws2["L3"] = "▶ SCMから取得（API）"
-ws2.merge_cells("L3:N3")
-for a in ("D3", "H3", "L3"):
+for a in ("D3", "H3"):
     ws2[a].fill = F_BTN
     ws2[a].alignment = CENTER
     ws2[a].font = FT_B
@@ -945,10 +943,16 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
     if SAMPLE:
         reorder_policy(ws, key, False)
     ws["A1"] = f"{ng[:3]} 既存の{lbl}（現在SCMに設定されている内容）"
-    ws["A2"] = (f"担当者が①基本設定の「既存情報をまとめて取得（API）」で取得します（既存ツール（{tool}）で取得した{lbl}を「②既存データ抽出」の「既存ツールから取込」で取り込むこともできます）。"
+    # 末尾の「取得時JSON」列は使わない（JSON化・登録をしないため）。列位置は VBA の G_LAST に合わせて残し、非表示
+    _jc = CL(9 + nf)
+    for _r in range(5, ws.max_row + 1):
+        if type(ws[f"{_jc}{_r}"]).__name__ != "MergedCell":
+            ws[f"{_jc}{_r}"].value = None
+    ws.column_dimensions[_jc].hidden = True
+    ws["A2"] = (f"担当者が①基本設定の「既存情報をまとめて取得（API）」で取得します。"
                 f"スコープ（Prisma Access → Mobile Users Container → GlobalProtect・Explicit Proxy → Remote Networks → Service Connections）ごとに▼の見出し行があり、その下が評価順のルールです。"
                 f"「{ns}」の展開と入力チェックの基準です。お客様は参照のみで、編集は不要です。")
-    ws["D3"] = "（①の「既存情報をまとめて取得（API）」または②の「既存ツールから取込」で入ります）"
+    ws["D3"] = "（①の「既存情報をまとめて取得（API）」で入ります）"
     ws["H3"] = None
     ws["H3"].fill = PatternFill()
     ws["A4"] = None
@@ -1013,7 +1017,7 @@ ws.merge_cells("A2:AI2")
 ws["A1"] = "参照_ポリシー選択肢（⑫⑬のダブルクリック選択の候補・入力チェックの基準）"
 ws["A2"] = ("アドレス・アドレスグループ・EDL・サービス・サービスグループ・カスタムURLカテゴリ・HIPプロファイル・プロファイルグループの列は、"
             "「選択肢を作り直す」・⑫⑬の入力チェック・ダブルクリックのたびに、②既存データ（スコープ＝コンテナの folder）と③〜⑨の「登録」行（スコープ＝①基本設定のオブジェクト取得folder）から自動で作り直します。"
-            "ゾーン・タグ・リージョン・事前定義URLカテゴリ・アプリグループ・アプリフィルタ・自作App・証明書・復号プロファイルは、①基本設定の「既存情報をまとめて取得（API）」か、既存ツール（SCM_SecurityPolicy.xlsx／SCM_DecryptionPolicy.xlsx）からの取込で入ります（ゾーンは取得したルールで使われているものを追加。ゾーンとスコープは手で追記できます）。"
+            "ゾーン・タグ・リージョン・事前定義URLカテゴリ・アプリグループ・アプリフィルタ・自作App・証明書・復号プロファイルは、①基本設定の「既存情報をまとめて取得（API）」で入ります（ゾーンは取得したルールで使われているものを追加。ゾーンとスコープは手で追記できます）。"
             "ユーザー（⑪）とアプリケーション（⑩）は記入内容を追記します。スコープ列＝定義されている folder（空欄＝どこでも使える）。")
 ws.row_dimensions[2].height = 84
 ws["D3"] = "▶ 選択肢を作り直す（②と③～⑪から）"
@@ -1025,14 +1029,14 @@ for c, t, src in ((31, "証明書\n(復号 ssl_inbound_inspection)", hs), (32, "
     ws.column_dimensions[CL(c)].width = 13 if t == "スコープ" else 24
     lab = ws.cell(6, c)
     copy_style(sw.cell(6, 4), lab)
-    lab.value = "自動" if c >= 34 else "取込"
+    lab.value = "自動" if c >= 34 else "API取得"
 ws.column_dimensions["AG"].width = 3
 for c in (4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 21, 22):
     copy_style(sw.cell(6, 4), ws.cell(6, c))
     ws.cell(6, c).value = "自動"
 for c in (11, 18, 19, 20, 25, 26, 27, 28, 29, 30):
     copy_style(sw.cell(6, 4), ws.cell(6, c))
-    ws.cell(6, c).value = "取込"
+    ws.cell(6, c).value = "API取得"
 notes = ["※ スコープ＝定義されている folder。ルールからは「自分の folder と上位の folder」（GlobalProtect・Explicit Proxy なら Mobile Users Container・Shared、Remote Networks・Mobile Users Container なら Shared）の定義だけが見えます。",
          "※ ゾーンのスコープは手入力（空欄＝どのスコープでも使える。カンマ区切りで複数可）。",
          "※ 事前定義URLカテゴリ・リージョン・定義済みApp-ID・ユーザーはどのスコープでも使えます。",

@@ -37,10 +37,10 @@ Private Const OFF_SVCG As Long = 40
 Private Const OFF_URL As Long = 47
 Private Const OFF_URLV As Long = 54
 Private Const OFF_HIP As Long = 58
-Private Const OFF_HIPP As Long = 125
-Private Const OFF_EDL As Long = 134
-Private Const OFF_PG As Long = 154         ' セキュリティプロファイルグループ（B=name）
-Private Const OFF_PROF As Long = 167       ' セキュリティプロファイル（B=種類 C=name D=備考）
+Private Const OFF_HIPP As Long = 124
+Private Const OFF_EDL As Long = 133
+Private Const OFF_PG As Long = 153         ' セキュリティプロファイルグループ（B=name）
+Private Const OFF_PROF As Long = 166       ' セキュリティプロファイル（B=種類 C=name D=備考）
 Private Const EX_LAST As Long = 5000
 Private Const EXP_LAST As Long = 2000      ' HIPプロファイル
 Private Const URLV_LAST As Long = 30007    ' URL（1行1件）
@@ -87,7 +87,11 @@ Private mRes As Collection   ' Array(シート, 行, 列, 名前, 判定, 内容
 '==========================================================
 Public Sub SetupButtons()
     AddBtn S1, "B20", "一括チェック", "CheckAll"
-    AddBtn S2, "D3:F3", "既存ツールから取込", "ImportFromTools"
+    ' 旧版のボタン（既存ツールから取込・右側の API 取得）が残っていれば消す
+    On Error Resume Next
+    Worksheets(S2).Buttons("btn_ImportFromTools").Delete
+    Worksheets(S2).Buttons("btn_FetchExistingAll_L3N3").Delete
+    On Error GoTo 0
     AddBtn S2, "H3:J3", "既存データをクリア", "ClearExisting"
     AddBtn S3, "F3:G4", "変更行に既存値を読込", "LoadExistingAdr"
     AddBtn S4, "F3:G4", "変更行に既存値を読込", "LoadExistingAdrGroup"
@@ -117,176 +121,6 @@ Private Sub AddBtn(ByVal sh As String, ByVal addr As String, ByVal caption As St
     b.Caption = caption
     b.OnAction = macro
 End Sub
-
-'==========================================================
-' ② 既存ツールから取込
-'   各ツール（SCM_AddressObject.xlsx、SCM_SecurityPolicy.xlsx など）の「既存一覧」シートを読み、②の同じ並びのブロックへ値を写す。
-'   複数のファイルを一度に選べます。見つかった既存一覧だけ上書きします（無いものはそのまま）。
-'==========================================================
-Public Sub ImportFromTools()
-    Dim files As Variant, f As Variant, wbS As Workbook, ws2 As Worksheet, msg As String, n As Long
-    files = Application.GetOpenFilename("Excel ブック (*.xlsx;*.xlsm),*.xlsx;*.xlsm", , _
-                                        "既存ツールのブックを選択（複数選択可）", , True)
-    If Not IsArray(files) Then Exit Sub
-    Set ws2 = Worksheets(S2)
-    Application.ScreenUpdating = False
-    Application.Calculation = xlCalculationManual
-    On Error GoTo EH
-    For Each f In files
-        Set wbS = Workbooks.Open(Filename:=CStr(f), ReadOnly:=True, UpdateLinks:=False)
-        msg = msg & vbLf & "■ " & wbS.Name
-        n = 0
-        n = n + ImportBlock(wbS, "AdrObj_既存一覧", OFF_ADR, "2-10,13", EX_LAST, "アドレス", msg)
-        n = n + ImportBlock(wbS, "AdrGroupObj_既存一覧", OFF_ADRG, "2-8,11", EX_LAST, "アドレスグループ", msg)
-        n = n + ImportBlock(wbS, "SvcObj_既存一覧", OFF_SVC, "2-12", EX_LAST, "サービス", msg)
-        n = n + ImportBlock(wbS, "SvcGroupObj_既存一覧", OFF_SVCG, "2-6", EX_LAST, "サービスグループ", msg)
-        n = n + ImportBlock(wbS, "HipObj_既存一覧", OFF_HIP, "2-66", EX_LAST, "HIPオブジェクト", msg)
-        n = n + ImportBlock(wbS, "HipProfile_既存一覧", OFF_HIPP, "2-7", EXP_LAST, "HIPプロファイル", msg)
-        n = n + ImportBlock(wbS, "EDL_既存一覧", OFF_EDL, "2-15", EX_LAST, "EDL", msg)
-        ImportCandidates wbS
-        n = n + ImportUrl(wbS, msg)
-        If ImportBlock(wbS, "⑦ProfGroup_一覧", OFF_PG, "2-12", EXP_LAST, "セキュリティプロファイルグループ", msg, 2) > 0 Then
-            n = n + 1
-            ImportProfiles msg
-        End If
-        ImportHipCert wbS
-        n = n + modInPolicy.ImportPolicy(wbS, msg)
-        If n = 0 Then msg = msg & vbLf & "　（既存一覧のシートが見つかりませんでした）"
-        wbS.Close SaveChanges:=False
-        Set wbS = Nothing
-    Next
-    ws2.Range("B3").Value = Now
-    Application.Calculation = xlCalculationAutomatic
-    Application.ScreenUpdating = True
-    ws2.Activate
-    MsgBox "既存データを取り込みました。" & msg, vbInformation
-    Exit Sub
-EH:
-    Application.Calculation = xlCalculationAutomatic
-    Application.ScreenUpdating = True
-    If Not wbS Is Nothing Then wbS.Close SaveChanges:=False
-    MsgBox "取込中にエラーが発生しました：" & Err.Description, vbExclamation
-End Sub
-
-Private Function SheetExists(ByVal wb As Workbook, ByVal sh As String) As Boolean
-    Dim ws As Worksheet
-    On Error Resume Next
-    Set ws = wb.Worksheets(sh)
-    On Error GoTo 0
-    SheetExists = Not ws Is Nothing
-End Function
-
-' 既存一覧（8行目～、C列=name）の指定列を②の同じ列へ。戻り値=1（取り込んだ）/0（シート無し）
-Private Function ImportBlock(ByVal wbS As Workbook, ByVal sh As String, ByVal off As Long, ByVal cols As String, _
-                             ByVal lastAllowed As Long, ByVal label As String, ByRef msg As String, _
-                             Optional ByVal nameCol As Long = 3) As Long
-    Dim wsS As Worksheet, ws2 As Worksheet, lastR As Long, n As Long, part As Variant, a As Long, b As Long, c As Long
-    If Not SheetExists(wbS, sh) Then Exit Function
-    Set wsS = wbS.Worksheets(sh)
-    Set ws2 = Worksheets(S2)
-    lastR = LastRow(wsS, nameCol)
-    n = lastR - EX_FIRST + 1
-    If n < 0 Then n = 0
-    If EX_FIRST + n - 1 > lastAllowed Then n = lastAllowed - EX_FIRST + 1
-    For Each part In Split(cols, ",")
-        a = CLng(Split(part, "-")(0))
-        If InStr(part, "-") > 0 Then b = CLng(Split(part, "-")(1)) Else b = a
-        For c = a To b
-            ws2.Range(ws2.Cells(EX_FIRST, off + c), ws2.Cells(lastAllowed, off + c)).ClearContents
-        Next
-        If n > 0 Then
-            ws2.Range(ws2.Cells(EX_FIRST, off + a), ws2.Cells(EX_FIRST + n - 1, off + b)).NumberFormat = "@"
-            ws2.Range(ws2.Cells(EX_FIRST, off + a), ws2.Cells(EX_FIRST + n - 1, off + b)).Value = _
-                wsS.Range(wsS.Cells(EX_FIRST, a), wsS.Cells(EX_FIRST + n - 1, b)).Value
-        End If
-    Next
-    msg = msg & vbLf & "　" & label & "：" & n & " 件"
-    ImportBlock = 1
-End Function
-
-' EDL：証明書プロファイル（Q列）・定義済みリスト（S列）の候補
-Private Sub ImportCandidates(ByVal wbS As Workbook)
-    Dim wsS As Worksheet, ws2 As Worksheet, c As Variant, lastR As Long
-    If Not SheetExists(wbS, "EDL_既存一覧") Then Exit Sub
-    Set wsS = wbS.Worksheets("EDL_既存一覧")
-    Set ws2 = Worksheets(S2)
-    For Each c In Array(17, 19)
-        lastR = LastRow(wsS, CLng(c))
-        If lastR >= EX_FIRST Then
-            ws2.Range(ws2.Cells(EX_FIRST, OFF_EDL + c), ws2.Cells(EX_LAST, OFF_EDL + c)).ClearContents
-            ws2.Range(ws2.Cells(EX_FIRST, OFF_EDL + c), ws2.Cells(lastR, OFF_EDL + c)).Value = _
-                wsS.Range(wsS.Cells(EX_FIRST, c), wsS.Cells(lastR, c)).Value
-        End If
-    Next
-End Sub
-
-' HIP：証明書プロファイル名（HIP_選択肢 D列）
-Private Sub ImportHipCert(ByVal wbS As Workbook)
-    Dim wsS As Worksheet, wsR As Worksheet, lastR As Long
-    If Not SheetExists(wbS, "HIP_選択肢") Then Exit Sub
-    Set wsS = wbS.Worksheets("HIP_選択肢")
-    Set wsR = Worksheets(R1)
-    lastR = LastRow(wsS, 4)
-    If lastR < 5 Then Exit Sub
-    wsR.Range("D5:D1005").ClearContents
-    wsR.Range(wsR.Cells(5, 4), wsR.Cells(lastR, 4)).Value = wsS.Range(wsS.Cells(5, 4), wsS.Cells(lastR, 4)).Value
-End Sub
-
-' URLカテゴリ：リスト一覧（C=name D=type G=description）と、リスト内容（横長：5行目=name、8行目～=値）
-Private Function ImportUrl(ByVal wbS As Workbook, ByRef msg As String) As Long
-    Dim wsL As Worksheet, wsC As Worksheet, ws2 As Worksheet, lastR As Long, r As Long, o As Long, c As Long
-    Dim lastC As Long, v As Variant, nm As String, outA() As Variant, cnt As Long, k As Long, x As String
-    Set ws2 = Worksheets(S2)
-    If SheetExists(wbS, "URLCat_既存一覧（リスト一覧）") Then
-        Set wsL = wbS.Worksheets("URLCat_既存一覧（リスト一覧）")
-        ws2.Range(ws2.Cells(EX_FIRST, OFF_URL + 2), ws2.Cells(EX_LAST, OFF_URL + 4)).ClearContents
-        ws2.Range(ws2.Cells(EX_FIRST, OFF_URL + 6), ws2.Cells(EX_LAST, OFF_URL + 6)).ClearContents
-        lastR = LastRow(wsL, 3)
-        o = EX_FIRST
-        For r = EX_FIRST To lastR
-            nm = SafeStr(wsL.Cells(r, 3).Value)
-            If nm <> "" Then
-                ws2.Cells(o, OFF_URL + 2).Value = nm
-                ws2.Cells(o, OFF_URL + 3).Value = SafeStr(wsL.Cells(r, 4).Value)
-                ws2.Cells(o, OFF_URL + 4).Value = SafeStr(wsL.Cells(r, 7).Value)
-                ws2.Cells(o, OFF_URL + 6).Value = SafeStr(wsL.Cells(r, 8).Value)
-                o = o + 1
-            End If
-        Next
-        msg = msg & vbLf & "　カスタムURLカテゴリ（一覧）：" & (o - EX_FIRST) & " 件"
-        ImportUrl = 1
-    End If
-    If SheetExists(wbS, "URLCat_既存一覧（リスト内容）") Then
-        Set wsC = wbS.Worksheets("URLCat_既存一覧（リスト内容）")
-        ws2.Range(ws2.Cells(EX_FIRST, OFF_URLV + 2), ws2.Cells(URLV_LAST, OFF_URLV + 3)).ClearContents
-        lastC = wsC.Cells(5, wsC.Columns.Count).End(xlToLeft).Column
-        ReDim outA(1 To URLV_LAST - EX_FIRST + 1, 1 To 2)
-        For c = 2 To lastC
-            nm = SafeStr(wsC.Cells(5, c).Value)
-            If nm <> "" Then
-                lastR = LastRow(wsC, c)
-                If lastR >= 8 Then
-                    v = wsC.Range(wsC.Cells(8, c), wsC.Cells(lastR, c)).Value
-                    If Not IsArray(v) Then v = OneCell(v)
-                    For k = 1 To UBound(v, 1)
-                        x = Trim$(SafeStr(v(k, 1)))
-                        If x <> "" And cnt < UBound(outA, 1) Then
-                            cnt = cnt + 1
-                            outA(cnt, 1) = nm
-                            outA(cnt, 2) = x
-                        End If
-                    Next
-                End If
-            End If
-        Next
-        If cnt > 0 Then
-            ws2.Range(ws2.Cells(EX_FIRST, OFF_URLV + 2), ws2.Cells(EX_FIRST + cnt - 1, OFF_URLV + 3)).NumberFormat = "@"
-            ws2.Range(ws2.Cells(EX_FIRST, OFF_URLV + 2), ws2.Cells(URLV_LAST, OFF_URLV + 3)).Value = outA
-        End If
-        msg = msg & vbLf & "　カスタムURLカテゴリ（URL）：" & cnt & " 件"
-        ImportUrl = 1
-    End If
-End Function
 
 ' セキュリティプロファイル：プロファイルグループの各列（E～K）に入っている名前を種類ごとに1回ずつ書き出す
 '   （既存ツールに個別プロファイルの一覧は無いため。グループに入っていないプロファイルは手で追記）
@@ -332,7 +166,7 @@ Public Sub ClearExisting()
     ClearCols ws2, OFF_SVCG, "2-6", EX_LAST
     ClearCols ws2, OFF_URL, "2-4,6", EX_LAST
     ClearCols ws2, OFF_URLV, "2-3", URLV_LAST
-    ClearCols ws2, OFF_HIP, "2-66", EX_LAST
+    ClearCols ws2, OFF_HIP, "2-65", EX_LAST
     ClearCols ws2, OFF_HIPP, "2-7", EXP_LAST
     ClearCols ws2, OFF_EDL, "2-15,17", EX_LAST
     ClearCols ws2, OFF_PG, "2-12", EXP_LAST
