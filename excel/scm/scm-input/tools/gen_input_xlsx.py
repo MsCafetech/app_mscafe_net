@@ -343,7 +343,7 @@ wb[S8B]["I7"].value = wb[S8B]["I7"].value  # そのまま
 # 参照シート（HIP_選択肢 / HIP_ベンダー一覧）
 # ======================================================================
 for new, sheet, a2 in (
-    (R1, "HIP_選択肢", "⑧HIP一覧のプルダウン候補と、1行1件の欄の書き方です。B列のOS値は参考の候補です（追加・修正できます）。D列の証明書プロファイル名は、分かる範囲で記入するか担当者が記入します。"),
+    (R1, "HIP_選択肢", "⑧HIP一覧のプルダウン候補と、1行1件の欄の書き方です。B列のOS値は参考の候補です（追加・修正できます）。D列の証明書プロファイル名は、担当者が①基本設定の「既存情報をまとめて取得（API）」で入れます（足りないものは手で追記できます）。"),
     (R2, "HIP_ベンダー一覧", "⑧HIP一覧のベンダー欄をダブルクリックすると、同じカテゴリの行がチェックリストで出ます。「ベンダーだけ」を選ぶと全製品、「ベンダー | 製品」を選ぶとその製品に限定します。"
                             "初期候補は代表的なものの参考値です。足りないものは行を追加してください（B列はプルダウン、製品は空欄可）。"),
 ):
@@ -362,6 +362,14 @@ for new, sheet, a2 in (
         if dim.height:
             ws.row_dimensions[r].height = dim.height
     copy_dv(sw, ws, 0, NAME_MAP["hip"])
+    # タイトル（元ツールのシート名のままなので、このブックのシート名に直す）
+    t = ws["A1"].value
+    if isinstance(t, str) and t.startswith(sheet):
+        ws["A1"] = new + t[len(sheet):]
+    for row in ws.iter_rows():
+        for c in row:
+            if isinstance(c.value, str) and not c.value.startswith("=") and ("HIP_ベンダー一覧" in c.value or "HIP_選択肢" in c.value):
+                c.value = c.value.replace("HIP_ベンダー一覧", R2).replace("HIP_選択肢", R1)
     ws["A2"] = a2
     ws.sheet_properties.tabColor = "A6A6A6"
 if not SAMPLE:
@@ -375,7 +383,7 @@ if not SAMPLE:
 ws2 = wb[S2]
 ws2["A1"] = "② 既存データ抽出（現在SCMに登録されている設定）"
 ws2["A1"].font = FT_TTL
-ws2["A2"] = ("担当者が①基本設定でトークンを取得し「SCMから取得（API）」で取得します（GET のみ）。（①の「既存情報をまとめて取得（API）」でも同じ内容を取得します）。"
+ws2["A2"] = ("担当者が①基本設定でトークンを取得し「SCMから取得（API）」で取得します（GET のみ。①の「既存情報をまとめて取得（API）」でも同じ内容を取得します）。"
              "③〜⑨の判定はこのシートと照合します。お客様は参照のみで、編集は不要です。ブロックは横に並んでいます（4行目のリンクで移動できます）。")
 ws2["A2"].alignment = WRAP
 ws2.merge_cells("A2:M2")
@@ -950,7 +958,7 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
             ws[f"{_jc}{_r}"].value = None
     ws.column_dimensions[_jc].hidden = True
     ws["A2"] = (f"担当者が①基本設定の「既存情報をまとめて取得（API）」で取得します。"
-                f"スコープ（Prisma Access → Mobile Users Container → GlobalProtect・Explicit Proxy → Remote Networks → Service Connections）ごとに▼の見出し行があり、その下が評価順のルールです。"
+                f"スコープごとに▼の見出し行があり、評価順（Prisma Access（Pre）→ Mobile Users Container（Pre）→ GlobalProtect → Explicit Proxy → Mobile Users Container（Post）→ Remote Networks → Service Connections → Prisma Access（Post））に並んでいます。GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は Pre/Post なしです。"
                 f"「{ns}」の展開と入力チェックの基準です。お客様は参照のみで、編集は不要です。")
     ws["D3"] = "（①の「既存情報をまとめて取得（API）」で入ります）"
     ws["H3"] = None
