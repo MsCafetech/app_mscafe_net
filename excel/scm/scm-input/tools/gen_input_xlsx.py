@@ -47,10 +47,10 @@ R1, R2 = "参照_HIP選択肢", "参照_HIPベンダー一覧"
 S2B, S2C, S12, S13, R3 = "②-2既存セキュリティポリシー", "②-3既存復号ポリシー", "⑫セキュリティポリシー", "⑬復号ポリシー", "参照_ポリシー選択肢"
 
 # ---------------------------------------------------------------- styles
-THIN = Side(style="thin", color="999999")
+THIN = Side(style="thin", color="BFBFBF")
 BOX = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 F_IN = PatternFill("solid", fgColor="FFF2CC")      # 入力欄（黄）
-F_HEAD = PatternFill("solid", fgColor="1F4E78")    # 見出し
+F_HEAD = PatternFill("solid", fgColor="2F5597")    # 見出し（各ツールの登録変更削除シートと同じ）
 F_SUB = PatternFill("solid", fgColor="DDEBF7")     # 補助見出し
 F_CALC = PatternFill("solid", fgColor="F2F2F2")    # 関数
 F_BTN = PatternFill("solid", fgColor="F4B084")     # ボタン位置
@@ -1302,6 +1302,45 @@ for c, w in zip("ABCDEF", (6, 22, 14, 30, 8, 90)):
     ws.column_dimensions[c].width = w
 ws["A5"] = "まだ実行していません（マクロ有効のブックで「一括チェック」を押してください）。"
 ws.sheet_properties.tabColor = "A6A6A6"
+
+# ---------------------------------------------------------------- 書式の統一
+# このブックで新しく作ったシートを、各ツールから写したシート（③〜⑨・⑫⑬）と同じ見た目にする
+#   1行目＝紺の帯に白字（Meiryo UI 14）、2行目＝説明（Meiryo UI 9 グレー）、本文＝Meiryo UI 10、
+#   見出し＝青（2F5597）に白字、入力欄（黄）は青字、「必須」は赤の札
+def unify_style(ws):
+    for c in list(ws._cells.values()):
+        f = c.font
+        if f.name in (None, "Calibri"):
+            sz = f.sz if f.sz and f.sz != 11 else 10
+            c.font = Font(name="Meiryo UI", size=sz, bold=f.b, italic=f.i, underline=f.u, color=copy(f.color))
+        fg = c.fill.fgColor.rgb if c.fill and c.fill.fill_type == "solid" else None
+        if fg in ("001F4E78", "FF1F4E78", "1F4E78"):
+            c.fill = PatternFill("solid", fgColor="2F5597")
+            c.font = Font(name="Meiryo UI", size=10, bold=True, color="FFFFFF")
+        elif fg in ("00FFF2CC", "FFFFF2CC", "FFF2CC") and (c.font.color is None or c.font.color.type != "rgb" or c.font.color.rgb in ("FF000000", "00000000")):
+            c.font = Font(name="Meiryo UI", size=10, bold=c.font.b, color="0000FF")
+        if c.row <= 7 and c.value == "必須":
+            c.font = Font(name="Meiryo UI", size=9, bold=True, color="FFFFFF")
+            c.fill = PatternFill("solid", fgColor="C00000")
+            c.alignment = Alignment(horizontal="center", vertical="center")
+    # 1行目（タイトル）：2行目の結合と同じ幅の紺帯
+    end = "F" if ws.title == "チェック結果" else "Q"
+    for m in ws.merged_cells.ranges:
+        if m.min_row == 2 and m.min_col == 1:
+            end = CL(m.max_col)
+    if not any(m.min_row <= 1 <= m.max_row for m in ws.merged_cells.ranges):
+        ws.merge_cells(f"A1:{end}1")
+    ws["A1"].font = Font(name="Meiryo UI", size=14, bold=True, color="FFFFFF")
+    ws["A1"].fill = PatternFill("solid", fgColor="1F3864")
+    ws["A1"].alignment = Alignment(vertical="center")
+    ws.row_dimensions[1].height = 26
+    if isinstance(ws["A2"].value, str) and ws["A2"].value and not ws["A2"].value.startswith("="):
+        ws["A2"].font = Font(name="Meiryo UI", size=9, color="595959")
+        ws["A2"].alignment = Alignment(wrap_text=True, vertical="center")
+
+
+for nm in (SS, S2, S7, S10, S11, "チェック結果"):
+    unify_style(wb[nm])
 
 # ---------------------------------------------------------------- 仕上げ
 for nm in wb.sheetnames:
