@@ -834,13 +834,13 @@ P_LBL = {"Shared": "Prisma Access（Shared）", "Mobile Users": "GlobalProtect�
          "Mobile Users Explicit Proxy": "Explicit Proxy（Mobile Users Explicit Proxy）"}
 
 
-_DEC_F = ["Shared", "Remote Networks", "Service Connections", "Mobile Users Container", "Mobile Users", "Mobile Users Explicit Proxy"]
-P_FLOW_DEC = [(f, "pre") for f in _DEC_F] + [(f, "post") for f in reversed(_DEC_F)]
+# 復号ポリシーもセキュリティポリシーと同じ評価順。Service Connections（Pre/Post なし）は復号ポリシーだけ
+P_FLOW_DEC = P_FLOW[:6] + [("Service Connections", "pre")] + P_FLOW[6:]
 
 
 def p_glabel(f, p, key="pol"):
     lab = P_LBL.get(f, f)
-    if key == "pol" and f in ("Mobile Users", "Mobile Users Explicit Proxy", "Remote Networks"):
+    if f in ("Mobile Users", "Mobile Users Explicit Proxy", "Remote Networks", "Service Connections"):
         return lab
     return f"{lab} {'【Post】' if p == 'post' else '【Pre】'}"
 
@@ -899,7 +899,7 @@ for key, gsh, ssh, ng, ns, nf, lbl, tool in POLS:
                 "ゾーン・アドレス・ユーザー・HIP・" + ("アプリケーション・" if key == "pol" else "") + "サービス・URLカテゴリ・タグはダブルクリック（または Ctrl+Shift+M）で、"
                 "そのスコープから見えるものだけをチェックボックスで選べます。「入力チェック」（記入状況の「一括チェック」でも可）で C・D列に判定と理由を出します："
                 "③〜⑪で削除予定のものを使っている／ルールのスコープから見えないフォルダで定義されたものを使っている＝NG、②既存データにも③〜⑪の登録にも無い＝警告。"
-                "既存から変わったセルは橙色です。グローバル（All）は参照のみです。" + ("Service Connections には設定できません。" if key == "pol" else "復号ポリシーは Service Connections にも設定でき、どのスコープにも Pre・Post があります。"))
+                "既存から変わったセルは橙色です。グローバル（All）は参照のみです。" + ("Service Connections には設定できません。" if key == "pol" else "GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は Pre/Post なしです（並び順はセキュリティポリシーと同じ）。"))
     for r in range(8, ws.max_row + 1):
         if ws.cell(r, 1).value != "▼":
             ws.cell(r, 3).value = None
