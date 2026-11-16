@@ -79,7 +79,7 @@ BLOCKS = [
     ("adrg", "アドレスグループ", ("adr", "AdrGroupObj_既存一覧"), 11, 5000),
     ("svc", "サービス", ("svc", "SvcObj_既存一覧"), 13, 5000),
     ("svcg", "サービスグループ", ("svc", "SvcGroupObj_既存一覧"), 6, 5000),
-    ("url", "カスタムURLカテゴリ（一覧）", None, 5, 5000),
+    ("url", "カスタムURLカテゴリ（一覧）", None, 6, 5000),
     ("urlv", "カスタムURLカテゴリ（URL・1行1件）", None, 3, 30007),
     ("hip", "HIPオブジェクト", ("hip", "HipObj_既存一覧"), 66, 5000),
     ("hipp", "HIPプロファイル", ("hip", "HipProfile_既存一覧"), 8, 2000),
@@ -93,6 +93,9 @@ for k, _t, _s, n, _l in BLOCKS:
     OFF[k] = col - 1
     col += n + 1
 B_LAST = {k: l for k, _t, _s, _n, l in BLOCKS}
+# VBA（modScmInput / modInPolicy / modInFetch の OFF_xxx 定数）と同じであること
+assert OFF == {"adr": 0, "adrg": 14, "svc": 26, "svcg": 40, "url": 47, "urlv": 54, "hip": 58, "hipp": 125,
+               "edl": 134, "pg": 154, "prof": 167}, OFF
 
 SHEET_MAP = {
     "AdrObj_既存一覧": (S2, OFF["adr"]), "AdrGroupObj_既存一覧": (S2, OFF["adrg"]),
@@ -473,7 +476,7 @@ for k, title, src, ncols, last in BLOCKS:
                     ws2.cell(r, off + 17).value = sw.cell(r, 17).value
     else:
         if k == "url":
-            block_header(k, title, ncols, ["No", "name", "type", "description", "URL件数(関数)"], [6, 26, 14, 30, 10])
+            block_header(k, title, ncols, ["No", "name", "type", "description", "URL件数(関数)", "コンテナ"], [6, 26, 14, 30, 10, 18])
             nc, vc = CL(OFF["urlv"] + 2), CL(OFF["urlv"] + 3)
             for r in range(8, last + 1):
                 ws2.cell(r, off + 1).value = f'=IF({CL(off + 2)}{r}="","",ROW()-7)'
@@ -503,6 +506,7 @@ if SAMPLE:
     rv = 8
     for nm, ty, de, urls in cats:
         ws2.cell(r, ou + 2).value, ws2.cell(r, ou + 3).value, ws2.cell(r, ou + 4).value = nm, ty, de
+        ws2.cell(r, ou + 6).value = "folder=Shared"
         r += 1
         for u in urls:
             ws2.cell(rv, ov + 2).value, ws2.cell(rv, ov + 3).value = nm, u
