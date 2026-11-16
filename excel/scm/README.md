@@ -13,6 +13,7 @@ Palo Alto Strata Cloud Manager（Prisma Access Configuration API）用の Excel 
 | scm-tag | タグ | SCM_Tag.xlsx | modTag.bas |
 | scm-hip | HIPオブジェクト／HIPプロファイル | SCM_HIP.xlsx | modHip.bas |
 | scm-edl | 外部動的リスト（EDL） | SCM_EDL.xlsx | modEdl.bas |
+| scm-input | 統合入力シート（お客様記入用。API・JSONなし、入力とチェックのみ） | SCM_入力シート.xlsx | modScmInput.bas（modScmCommon は不要） |
 | api-spec | 公式 OpenAPI 仕様（参照用） | | |
 
 ## 取り込み方

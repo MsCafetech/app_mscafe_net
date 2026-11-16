@@ -1,0 +1,287 @@
+'【frmMemberPick の作り方】.frm のインポートはエラーになるため、次の手順で作成してください（1回だけ）
+'  1) VBE で 挿入 → ユーザーフォーム
+'  2) プロパティウィンドウ(F4)の (オブジェクト名) を frmMemberPick に変更
+'  3) フォームをダブルクリックしてコード画面を開き、中身を全部消して frmMemberPick_コード.txt を貼り付け
+'  ※ フォームは空のままでOK（部品は実行時に自動で作られます）
+'  ※ マクロで作る場合: modPickerSetup.bas をインポートして CreatePickerForm を実行（「VBA プロジェクト オブジェクト モデルへのアクセスを信頼する」が必要）
+'  ※ 以前の手順で作った frmPicker / UserForm1 / UserForm2 は不要です。右クリック→「…の解放」（エクスポートは いいえ）で削除してください
+
+'==========================================================
+' frmMemberPick : チェックボックス一覧で複数選択（modScm / modHip などから呼び出し）
+'   コントロールは UserForm_Initialize で実行時に生成するため、
+'   .frx ファイルやVBAプロジェクトへのアクセス許可は不要です。
+'   空のユーザーフォーム frmMemberPick のコード画面に、このファイルの中身を全部貼り付けてください。
+'==========================================================
+Option Explicit
+
+Private WithEvents txtFind As MSForms.TextBox
+Private WithEvents chkOnly As MSForms.CheckBox
+Private WithEvents lst As MSForms.ListBox
+Private WithEvents btnAll As MSForms.CommandButton
+Private WithEvents btnNone As MSForms.CommandButton
+Private WithEvents btnVisOn As MSForms.CommandButton
+Private WithEvents btnVisOff As MSForms.CommandButton
+Private WithEvents btnOK As MSForms.CommandButton
+Private WithEvents btnCancel As MSForms.CommandButton
+Private lblCount As MSForms.Label
+
+Private mN As Long              ' 候補数
+Private mNames() As String
+Private mKinds() As String
+Private mLower() As String      ' 検索用（小文字化した name + 種別）
+Private mChecked() As Boolean
+Private mVis() As Long          ' 表示行 -> 候補番号
+Private mVisN As Long
+Private mOrig() As Long         ' 元の選択（元の順番を保つため）
+Private mOrigN As Long
+Private mSel As Long            ' 選択中件数
+Private mBusy As Boolean
+Private mSep As String
+
+Public Confirmed As Boolean
+Public Result As String
+Public ResultItems As Collection
+
+'----------------------------------------------------------
+' 画面の組み立て
+'----------------------------------------------------------
+Private Sub UserForm_Initialize()
+    Dim l As MSForms.Label
+    mBusy = True     ' 部品を作っている間はイベント処理をしない
+    Me.Width = 470
+    Me.Height = 500
+    Me.Font.Name = "Meiryo UI"
+    Me.Font.Size = 9
+
+    Set l = Me.Controls.Add("Forms.Label.1", "lblFind")
+    SetPos l, 8, 10, 40, 16: l.Caption = "検索"
+    Set txtFind = Me.Controls.Add("Forms.TextBox.1", "txtFind")
+    SetPos txtFind, 44, 6, 270, 20
+    txtFind.ControlTipText = "部分一致・大文字小文字を区別しない。スペース区切りで AND 検索"
+    Set chkOnly = Me.Controls.Add("Forms.CheckBox.1", "chkOnly")
+    SetPos chkOnly, 324, 7, 130, 18: chkOnly.Caption = "選択中のみ表示"
+
+    Set lst = Me.Controls.Add("Forms.ListBox.1", "lstItems")
+    SetPos lst, 8, 32, 446, 330
+    lst.MultiSelect = fmMultiSelectMulti
+    lst.ListStyle = fmListStyleOption
+    lst.ColumnCount = 2
+    lst.ColumnWidths = "270 pt;150 pt"
+    lst.IntegralHeight = False
+
+    Set lblCount = Me.Controls.Add("Forms.Label.1", "lblCount")
+    SetPos lblCount, 8, 368, 446, 16
+
+    Set btnAll = AddBtn("btnAll", "全件を選択", 8, 390, 108)
+    Set btnNone = AddBtn("btnNone", "全件を解除", 120, 390, 108)
+    Set btnVisOn = AddBtn("btnVisOn", "表示中を選択", 232, 390, 108)
+    Set btnVisOff = AddBtn("btnVisOff", "表示中を解除", 344, 390, 108)
+    Set btnOK = AddBtn("btnOK", "OK（セルに反映）", 232, 424, 108)
+    Set btnCancel = AddBtn("btnCancel", "キャンセル", 344, 424, 108)
+    btnCancel.Cancel = True   ' Esc で閉じる
+    mBusy = False
+End Sub
+
+Private Function AddBtn(ByVal nm As String, ByVal cap As String, ByVal x As Single, ByVal y As Single, ByVal w As Single) As MSForms.CommandButton
+    Dim b As MSForms.CommandButton
+    Set b = Me.Controls.Add("Forms.CommandButton.1", nm)
+    SetPos b, x, y, w, 26
+    b.Caption = cap
+    b.TakeFocusOnClick = False
+    Set AddBtn = b
+End Function
+
+Private Sub SetPos(ByVal c As Object, ByVal x As Single, ByVal y As Single, ByVal w As Single, ByVal h As Single)
+    c.Left = x: c.Top = y: c.Width = w: c.Height = h
+End Sub
+
+'----------------------------------------------------------
+' 候補と現在値を受け取る
+'   names : Dictionary（name -> 種別ラベル）, cur : 現在セルの値（分割済み）
+'----------------------------------------------------------
+Public Sub Setup(ByVal ttl As String, ByVal names As Object, ByVal cur As Collection, ByVal sep As String)
+    Dim k As Variant, i As Long, idx As Object, extra As Long
+    Me.Caption = ttl
+    mSep = sep
+    Set idx = CreateObject("Scripting.Dictionary")   ' 大文字・小文字を区別
+
+    ' 現在値のうち候補に無いものも一覧に残す（外せるように）
+    For Each k In cur
+        If Not names.Exists(k) And Not idx.Exists(k) Then idx.Add k, Empty: extra = extra + 1
+    Next
+    mN = names.Count + extra
+    ReDim mNames(0 To mN) As String
+    ReDim mKinds(0 To mN) As String
+    ReDim mLower(0 To mN) As String
+    ReDim mChecked(0 To mN) As Boolean
+    ReDim mVis(0 To mN) As Long
+    ReDim mOrig(0 To cur.Count) As Long
+    idx.RemoveAll
+
+    i = 0
+    For Each k In names.Keys
+        mNames(i) = k: mKinds(i) = names(k)
+        idx.Add k, i
+        i = i + 1
+    Next
+    For Each k In cur
+        If Not idx.Exists(k) Then
+            mNames(i) = k: mKinds(i) = "（一覧に無い）"
+            idx.Add k, i
+            i = i + 1
+        End If
+    Next
+    For i = 0 To mN - 1
+        mLower(i) = LCase$(mNames(i) & vbTab & mKinds(i))
+    Next
+
+    mOrigN = 0: mSel = 0
+    For Each k In cur
+        i = idx(k)
+        If Not mChecked(i) Then
+            mChecked(i) = True
+            mOrig(mOrigN) = i: mOrigN = mOrigN + 1
+            mSel = mSel + 1
+        End If
+    Next
+    Refill
+End Sub
+
+'----------------------------------------------------------
+' 絞り込み（候補は配列で一括設定するので1万件超でも即時）
+'----------------------------------------------------------
+Private Sub Refill()
+    Dim keys() As String, i As Long, j As Long, ok As Boolean, a() As Variant
+    keys = Split(LCase$(Trim$(Replace(txtFind.Text, "　", " "))), " ")
+    mVisN = 0
+    For i = 0 To mN - 1
+        ok = True
+        If chkOnly.Value Then ok = mChecked(i)
+        If ok Then
+            For j = LBound(keys) To UBound(keys)
+                If keys(j) <> "" Then
+                    If InStr(1, mLower(i), keys(j), vbBinaryCompare) = 0 Then ok = False: Exit For
+                End If
+            Next
+        End If
+        If ok Then mVis(mVisN) = i: mVisN = mVisN + 1
+    Next
+
+    mBusy = True
+    lst.Clear
+    If mVisN > 0 Then
+        ReDim a(0 To mVisN - 1, 0 To 1)
+        For i = 0 To mVisN - 1
+            a(i, 0) = mNames(mVis(i))
+            a(i, 1) = mKinds(mVis(i))
+        Next
+        lst.List = a
+        For i = 0 To mVisN - 1
+            If mChecked(mVis(i)) Then lst.Selected(i) = True
+        Next
+        lst.TopIndex = 0
+    End If
+    mBusy = False
+    UpdateCount
+End Sub
+
+Private Sub UpdateCount()
+    If lblCount Is Nothing Then Exit Sub
+    lblCount.Caption = "選択中 " & Format$(mSel, "#,##0") & " 件 ／ 表示 " & Format$(mVisN, "#,##0") & _
+                       " 件 ／ 候補 " & Format$(mN, "#,##0") & " 件"
+End Sub
+
+Private Sub SetVisible(ByVal on_ As Boolean)
+    Dim i As Long
+    For i = 0 To mVisN - 1
+        SetChecked mVis(i), on_
+    Next
+    Refill
+End Sub
+
+Private Sub SetChecked(ByVal i As Long, ByVal on_ As Boolean)
+    If mChecked(i) = on_ Then Exit Sub
+    mChecked(i) = on_
+    If on_ Then mSel = mSel + 1 Else mSel = mSel - 1
+End Sub
+
+'----------------------------------------------------------
+' イベント
+'----------------------------------------------------------
+Private Sub txtFind_Change()
+    Refill
+End Sub
+
+Private Sub chkOnly_Click()
+    Refill
+End Sub
+
+' クリック／スペースでの切り替えを選択状態に反映
+Private Sub lst_Change()
+    Dim r As Long
+    If mBusy Then Exit Sub
+    For r = 0 To mVisN - 1
+        SetChecked mVis(r), lst.Selected(r)
+    Next
+    UpdateCount
+End Sub
+
+Private Sub btnAll_Click()
+    Dim i As Long
+    For i = 0 To mN - 1: SetChecked i, True: Next
+    Refill
+End Sub
+
+Private Sub btnNone_Click()
+    Dim i As Long
+    For i = 0 To mN - 1: SetChecked i, False: Next
+    Refill
+End Sub
+
+Private Sub btnVisOn_Click()
+    SetVisible True
+End Sub
+
+Private Sub btnVisOff_Click()
+    SetVisible False
+End Sub
+
+Private Sub btnOK_Click()
+    Dim i As Long, done() As Boolean
+    Set ResultItems = New Collection
+    ReDim done(0 To mN) As Boolean
+    ' 元から選ばれていたものは元の順番、新しく選んだものは一覧の順番で後ろへ
+    For i = 0 To mOrigN - 1
+        If mChecked(mOrig(i)) Then ResultItems.Add mNames(mOrig(i)): done(mOrig(i)) = True
+    Next
+    For i = 0 To mN - 1
+        If mChecked(i) And Not done(i) Then ResultItems.Add mNames(i)
+    Next
+    Result = JoinItems(ResultItems, mSep)
+    Confirmed = True
+    Me.Hide
+End Sub
+
+Private Sub btnCancel_Click()
+    Confirmed = False
+    Me.Hide
+End Sub
+
+' ×ボタンでもフォームを破棄せず隠す（呼び出し側で Unload）
+Private Sub UserForm_QueryClose(Cancel As Integer, CloseMode As Integer)
+    If CloseMode = vbFormControlMenu Then
+        Cancel = True
+        Confirmed = False
+        Me.Hide
+    End If
+End Sub
+
+Private Function JoinItems(ByVal c As Collection, ByVal sep As String) As String
+    Dim a() As String, i As Long
+    If c.Count = 0 Then Exit Function
+    ReDim a(0 To c.Count - 1)
+    For i = 1 To c.Count
+        a(i - 1) = c(i)
+    Next
+    JoinItems = Join(a, sep)
+End Function
