@@ -259,10 +259,11 @@ Private Function SelScopes() As Collection
     Set SelScopes = c
 End Function
 
-' folder → 表示名（例：Prisma Access（Shared））
+' folder → 表示名（例：GlobalProtect（Mobile Users）。Shared は「Prisma Access」だけ）
 Private Function ScopeLabel(ByVal folder As String) As String
     Dim rng As Range, i As Long, l As String
     If LCase$(folder) = "all" Then ScopeLabel = "グローバル（All）※参照のみ": Exit Function
+    If FolderApi(folder) = "Shared" Then ScopeLabel = FolderDisp("Shared"): Exit Function
     Set rng = ThisWorkbook.Names("CFG_SCOPES").RefersToRange
     For i = 1 To rng.Rows.Count
         If Trim$(SafeStr(rng.Cells(i, 3).Value)) = folder Then
@@ -340,8 +341,9 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
     End If
     Set own = CreateObject("Scripting.Dictionary")
     Set allD = CreateObject("Scripting.Dictionary")
+    ' グローバル（All）のルールは pre・post のどちらで取得しても同じものが返るため、id で重複を除く（先に見つかった pre に出す）
+    Set seen = CreateObject("Scripting.Dictionary")
     For Each ps In Array("pre", "post")
-        Set seen = CreateObject("Scripting.Dictionary")
         Set allD(CStr(ps)) = New Collection
         For Each sc In scopes
           If NeedFetch(CStr(sc(1)), CStr(ps)) Then
@@ -383,7 +385,6 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
                 If allD(CStr(fo(1))).Count > 0 Then groups.Add Array("All", CStr(fo(1)), GroupLabel("All", CStr(fo(1))), allD(CStr(fo(1))))
             End If
         ElseIf own.Exists(key) Then
-            ' 1つのルールベースの folder の post は、ルールがあるときだけ表示（通常は空）
             If Not (SingleRB(CStr(fo(0))) And fo(1) = "post" And own(key).Count = 0) Then
                 groups.Add Array(CStr(fo(0)), CStr(fo(1)), GroupLabel(CStr(fo(0)), CStr(fo(1))), own(key))
             End If
@@ -395,7 +396,7 @@ End Function
 ' 並び順（SCM のセキュリティポリシー画面と同じ）: Collection of Array(folder, position)
 '   Global Pre → Prisma Access Pre → Mobile Users Container Pre → GlobalProtect → Explicit Proxy
 '   → Mobile Users Container Post → Remote Networks → Service Connections → Prisma Access Post → Global Post
-'   Pre/Post は基本設定で選んだものだけ。GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は常に表示（post はルールがあるときだけ）
+'   Pre/Post は基本設定で選んだものだけ。GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は常に表示（pre だけ。Post は無い）
 Private Function FlowOrder(ByVal scopes As Collection) As Collection
     Dim res As New Collection, sel As Object, sc As Variant, usePre As Boolean, usePost As Boolean, ps As Variant, x As Variant
     For Each ps In Positions()
@@ -407,11 +408,9 @@ Private Function FlowOrder(ByVal scopes As Collection) As Collection
         sel(CStr(sc(1))) = True
     Next
     For Each x In Array(Array("All", "pre"), Array("Shared", "pre"), Array("Mobile Users Container", "pre"), _
-                        Array("Mobile Users", "pre"), Array("Mobile Users", "post"), _
-                        Array("Mobile Users Explicit Proxy", "pre"), Array("Mobile Users Explicit Proxy", "post"), _
+                        Array("Mobile Users", "pre"), Array("Mobile Users Explicit Proxy", "pre"), _
                         Array("Mobile Users Container", "post"), _
-                        Array("Remote Networks", "pre"), Array("Remote Networks", "post"), _
-                        Array("Service Connections", "pre"), Array("Service Connections", "post"), _
+                        Array("Remote Networks", "pre"), Array("Service Connections", "pre"), _
                         Array("Shared", "post"), Array("All", "post"))
         If sel.Exists(CStr(x(0))) Then
             If SingleRB(CStr(x(0))) Then
@@ -431,10 +430,12 @@ Private Function SingleRB(ByVal folder As String) As Boolean
     End Select
 End Function
 
- その folder・position を取得するか（1つのルールベースの folder は pre・post とも取得）
+' その folder・position を取得するか
+'   1つのルールベースの folder（GlobalProtect・Explicit Proxy・Remote Networks・Service Connections）は pre だけ取得する
+'   （post で取得すると同じルールが返り、別スコープ扱いになるため。Post は使わない）
 Private Function NeedFetch(ByVal folder As String, ByVal pos As String) As Boolean
     Dim ps As Variant
-    If SingleRB(folder) Then NeedFetch = True: Exit Function
+    If SingleRB(folder) Then NeedFetch = (LCase$(pos) = "pre"): Exit Function
     For Each ps In Positions()
         If ps = pos Then NeedFetch = True
     Next
@@ -454,7 +455,7 @@ End Function
 ' 表示名＋【Pre】/【Post】（GlobalProtect・Explicit Proxy・Remote Networks は区別が無いので付けない）
 Private Function GroupLabel(ByVal folder As String, ByVal pos As String) As String
     If SingleRB(folder) Then
-        If LCase$(pos) = "post" Then GroupLabel = ScopeLabel(folder) & " 【Post】※通常は使いません" Else GroupLabel = ScopeLabel(folder)
+        GroupLabel = ScopeLabel(folder)
         Exit Function
     End If
     GroupLabel = ScopeLabel(folder) & " " & IIf(LCase$(pos) = "post", "【Post】", "【Pre】")
@@ -549,7 +550,7 @@ Private Sub WriteGetSheet(ByVal groups As Collection)
             ReDim a(1 To 1, 1 To G_LAST)
             a(1, G_SEQ) = n
             a(1, G_SCOPE) = g(2)
-            a(1, G_FOLDER) = g(0)
+            a(1, G_FOLDER) = FolderDisp(CStr(g(0)))
             a(1, G_POS) = g(1)
             a(1, G_ID) = Nz(item, "id")
             For i = 0 To NF
@@ -790,7 +791,7 @@ Public Sub InsertRuleRow()
     End With
     ws.Cells(r, S_OP).Value = "追加"
     ws.Cells(r, S_SCOPE).Value = GroupLabel(folder, pos)
-    ws.Cells(r, S_FOLDER).Value = folder
+    ws.Cells(r, S_FOLDER).Value = FolderDisp(folder)
     ws.Cells(r, S_POS).Value = pos
     For Each k In Array("from", "source", "source_user", "to", "destination", "application", "category")
         ws.Cells(r, S_NAME + FIdx(CStr(k))).Value = "any"
@@ -844,7 +845,7 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
             ngs = "": warns = "": bv = Empty
             ws.Range(ws.Cells(r, S_SCOPE), ws.Cells(r, S_POS)).NumberFormat = "@"
             ws.Cells(r, S_SCOPE).Value = g(2)
-            ws.Cells(r, S_FOLDER).Value = folder
+            ws.Cells(r, S_FOLDER).Value = FolderDisp(folder)
             ws.Cells(r, S_POS).Value = pos
             PaintBase ws, r, S_LAST, True
             IndentRow ws, r, S_SCOPE, S_NAME, folder
@@ -1822,7 +1823,7 @@ Private Function FetchProfiles() As Long
                 If k = "" Then k = "name:" & Nz(item, "name")
                 If Not seen.Exists(k) Then
                     seen(k) = True
-                    outRows.Add Array(Nz(item, "name"), IIf(Nz(item, "folder") = "", CStr(f), Nz(item, "folder")), _
+                    outRows.Add Array(Nz(item, "name"), FolderDisp(IIf(Nz(item, "folder") = "", CStr(f), Nz(item, "folder"))), _
                                    IIf(IsPredef(item), "定義済み", "カスタム"), _
                                    JoinLf(item, "virus_and_wildfire_analysis"), JoinLf(item, "spyware"), JoinLf(item, "vulnerability"), _
                                    JoinLf(item, "url_filtering"), JoinLf(item, "file_blocking"), JoinLf(item, "dns_security"), _
@@ -1913,7 +1914,7 @@ Private Function FetchChoices() As Long
     Dim stU As Long, msgU As String
     Dim q As String, folder As String, ng As Long, custom As Object, items As Collection, item As Variant
     Dim vals As Collection, scs As Collection, typs As Collection, nm As String, tk As Variant, t As String, folders As Collection, x As Variant
-    folder = CfgOpt("CFG_OBJ_FOLDER")
+    folder = FolderApi(CfgOpt("CFG_OBJ_FOLDER"))
     If folder = "" Then folder = "Shared"
     q = "folder=" & Enc(folder)
     Set folders = ObjFolders(folder)
@@ -2024,7 +2025,7 @@ Private Function ChoiceItems(ByVal ep As String, ByVal folders As Collection) As
                     If k = "" Then k = Nz(item, "name") & "|" & fd
                     If Not seen.Exists(k) Then
                         seen(k) = True
-                        c.Add Array(Nz(item, "name"), fd, item)
+                        c.Add Array(Nz(item, "name"), FolderDisp(fd), item)
                     End If
                 End If
             Next
@@ -2106,7 +2107,7 @@ Private Function CustomApps(ByVal q As String, ByVal folder As String, ByRef c A
                             If Not IsPredef(item) And Nz(item, "name") <> "" Then
                                 fd = Nz(item, "folder")
                                 If fd = "" Then fd = folder
-                                c.Add Nz(item, "name"): sc.Add fd
+                                c.Add Nz(item, "name"): sc.Add FolderDisp(fd)
                             End If
                         End If
                     Next
