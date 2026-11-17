@@ -1,5 +1,5 @@
 {
- "version": 8,
+ "version": 9,
  "openStages": 120,
  "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
@@ -531,7 +531,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 19000,
+    "silver": 62000,
+    "gold": 100000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -576,7 +581,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 32000,
+    "silver": 120000,
+    "gold": 200000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -621,7 +631,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 59000,
+    "gold": 95000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -666,7 +681,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 35000,
+    "silver": 150000,
+    "gold": 240000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -711,7 +731,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 57000,
+    "silver": 190000,
+    "gold": 300000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -756,7 +781,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 32000,
+    "silver": 110000,
+    "gold": 180000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -801,7 +831,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 8500,
+    "silver": 27000,
+    "gold": 44000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -846,7 +881,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 3100,
+    "silver": 10000,
+    "gold": 16000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -891,7 +931,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 28000,
+    "silver": 93000,
+    "gold": 150000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -986,7 +1031,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 87000,
+    "silver": 340000,
+    "gold": 550000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1031,7 +1081,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 37000,
+    "silver": 160000,
+    "gold": 260000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1076,7 +1131,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 17000,
+    "silver": 63000,
+    "gold": 100000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1121,7 +1181,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 66000,
+    "gold": 110000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1166,7 +1231,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 13000,
+    "silver": 56000,
+    "gold": 91000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1211,7 +1281,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6100,
+    "silver": 21000,
+    "gold": 34000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1256,7 +1331,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 54000,
+    "gold": 87000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1301,7 +1381,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 37000,
+    "gold": 60000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1346,7 +1431,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 7300,
+    "silver": 26000,
+    "gold": 42000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1391,7 +1481,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 47000,
+    "gold": 76000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1436,7 +1531,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 16000,
+    "silver": 51000,
+    "gold": 82000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1481,7 +1581,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6800,
+    "silver": 25000,
+    "gold": 41000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1526,7 +1631,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 10000,
+    "silver": 37000,
+    "gold": 60000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1571,7 +1681,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 28000,
+    "silver": 110000,
+    "gold": 170000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1616,7 +1731,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 28000,
+    "silver": 99000,
+    "gold": 160000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1661,7 +1781,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 27000,
+    "silver": 110000,
+    "gold": 180000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1706,7 +1831,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6300,
+    "silver": 20000,
+    "gold": 32000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1751,7 +1881,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 2400,
+    "silver": 7400,
+    "gold": 12000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1796,7 +1931,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 28000,
+    "silver": 93000,
+    "gold": 150000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1891,7 +2031,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 72000,
+    "silver": 230000,
+    "gold": 380000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1936,7 +2081,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 16000,
+    "silver": 54000,
+    "gold": 88000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -1981,7 +2131,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 26000,
+    "silver": 84000,
+    "gold": 130000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2026,7 +2181,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 7700,
+    "silver": 26000,
+    "gold": 42000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2071,7 +2231,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 42000,
+    "gold": 68000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2116,7 +2281,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 4200,
+    "silver": 13000,
+    "gold": 21000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2161,7 +2331,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 14000,
+    "silver": 43000,
+    "gold": 69000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2206,7 +2381,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6900,
+    "silver": 22000,
+    "gold": 36000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2251,7 +2431,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 1900,
+    "silver": 4900,
+    "gold": 7800,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2296,7 +2481,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 7100,
+    "silver": 26000,
+    "gold": 42000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2341,7 +2531,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6800,
+    "silver": 25000,
+    "gold": 41000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2386,7 +2581,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 22000,
+    "silver": 80000,
+    "gold": 130000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2431,7 +2631,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6500,
+    "silver": 26000,
+    "gold": 41000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2476,7 +2681,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 56000,
+    "gold": 89000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2521,7 +2731,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 49000,
+    "gold": 78000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2566,7 +2781,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 8600,
+    "silver": 33000,
+    "gold": 53000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2611,7 +2831,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6300,
+    "silver": 22000,
+    "gold": 36000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2656,7 +2881,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 1900,
+    "silver": 4400,
+    "gold": 7100,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2701,7 +2931,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 42000,
+    "gold": 68000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2796,7 +3031,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 35000,
+    "silver": 130000,
+    "gold": 210000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2841,7 +3081,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 17000,
+    "silver": 74000,
+    "gold": 120000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2886,7 +3131,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 20000,
+    "silver": 77000,
+    "gold": 120000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2931,7 +3181,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 38000,
+    "gold": 61000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2976,7 +3231,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 8700,
+    "silver": 36000,
+    "gold": 58000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3021,7 +3281,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 4800,
+    "silver": 20000,
+    "gold": 32000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3066,7 +3331,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 41000,
+    "gold": 65000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3111,7 +3381,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 16000,
+    "silver": 46000,
+    "gold": 74000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3156,7 +3431,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 1300,
+    "silver": 4100,
+    "gold": 6600,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3201,7 +3481,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6300,
+    "silver": 23000,
+    "gold": 37000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3246,7 +3531,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 5600,
+    "silver": 16000,
+    "gold": 26000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3291,7 +3581,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 8900,
+    "silver": 36000,
+    "gold": 58000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3336,7 +3631,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6500,
+    "silver": 27000,
+    "gold": 43000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3381,7 +3681,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 42000,
+    "gold": 67000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3426,7 +3731,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 26000,
+    "silver": 100000,
+    "gold": 160000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3471,7 +3781,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 9400,
+    "silver": 34000,
+    "gold": 54000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3516,7 +3831,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 3700,
+    "silver": 12000,
+    "gold": 19000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3561,7 +3881,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 1300,
+    "silver": 4000,
+    "gold": 6400,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3606,7 +3931,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 7100,
+    "silver": 24000,
+    "gold": 38000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3701,7 +4031,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 81000,
+    "silver": 380000,
+    "gold": 610000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3746,7 +4081,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 51000,
+    "silver": 150000,
+    "gold": 250000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3791,7 +4131,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 25000,
+    "silver": 80000,
+    "gold": 130000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3836,7 +4181,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 47000,
+    "gold": 75000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3881,7 +4231,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 42000,
+    "gold": 67000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3926,7 +4281,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 5400,
+    "silver": 18000,
+    "gold": 29000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3971,7 +4331,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 53000,
+    "gold": 85000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4016,7 +4381,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 23000,
+    "silver": 73000,
+    "gold": 120000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4061,7 +4431,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 5800,
+    "silver": 22000,
+    "gold": 35000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4106,7 +4481,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6700,
+    "silver": 28000,
+    "gold": 45000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4151,7 +4531,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 19000,
+    "silver": 62000,
+    "gold": 99000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4196,7 +4581,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 19000,
+    "silver": 61000,
+    "gold": 98000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4241,7 +4631,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 8900,
+    "silver": 38000,
+    "gold": 61000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4286,7 +4681,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 20000,
+    "silver": 84000,
+    "gold": 130000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4331,7 +4731,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 24000,
+    "silver": 81000,
+    "gold": 130000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4376,7 +4781,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 66000,
+    "gold": 110000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4421,7 +4831,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 3200,
+    "silver": 8600,
+    "gold": 14000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4466,7 +4881,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 1800,
+    "silver": 6900,
+    "gold": 11000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4511,7 +4931,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 17000,
+    "silver": 53000,
+    "gold": 85000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4606,7 +5031,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 110000,
+    "silver": 390000,
+    "gold": 630000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4651,7 +5081,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 14000,
+    "silver": 46000,
+    "gold": 74000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4696,7 +5131,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 53000,
+    "gold": 84000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4741,7 +5181,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 38000,
+    "gold": 60000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4786,7 +5231,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 44000,
+    "gold": 71000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4831,7 +5281,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 3100,
+    "silver": 8300,
+    "gold": 13000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4876,7 +5331,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 9400,
+    "silver": 31000,
+    "gold": 50000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4921,7 +5381,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 42000,
+    "gold": 67000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4966,7 +5431,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 4500,
+    "silver": 16000,
+    "gold": 25000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5011,7 +5481,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 5800,
+    "silver": 19000,
+    "gold": 31000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5056,7 +5531,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 6700,
+    "silver": 19000,
+    "gold": 30000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5101,7 +5581,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 23000,
+    "silver": 76000,
+    "gold": 120000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5146,7 +5631,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 44000,
+    "gold": 70000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5191,7 +5681,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 65000,
+    "gold": 100000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5236,7 +5731,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 49000,
+    "gold": 78000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5281,7 +5781,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 37000,
+    "gold": 59000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5326,7 +5831,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 7200,
+    "silver": 21000,
+    "gold": 34000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5371,7 +5881,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 1200,
+    "silver": 3500,
+    "gold": 5600,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5416,7 +5931,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 44000,
+    "gold": 71000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
