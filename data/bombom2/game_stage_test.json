@@ -1,5 +1,5 @@
 {
- "version": 5,
+ "version": 6,
  "openStages": 120,
  "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
@@ -7,8 +7,6 @@
    "id": "C1-ST01",
    "global": 1,
    "chapter": 1,
-   "name": "平原・基本",
-   "theme": "ボマーの特性",
    "size": [
     6,
     12
@@ -41,8 +39,6 @@
    "id": "C1-ST02",
    "global": 2,
    "chapter": 1,
-   "name": "平原・角落とし",
-   "theme": "金・銀の特性",
    "size": [
     6,
     12
@@ -75,8 +71,6 @@
    "id": "C1-ST03",
    "global": 3,
    "chapter": 1,
-   "name": "平原・中央空洞",
-   "theme": "火炎放射",
    "size": [
     6,
     12
@@ -109,8 +103,6 @@
    "id": "C1-ST04",
    "global": 4,
    "chapter": 1,
-   "name": "平原・縦回廊",
-   "theme": "火種",
    "size": [
     6,
     12
@@ -143,8 +135,6 @@
    "id": "C1-ST05",
    "global": 5,
    "chapter": 1,
-   "name": "平原・横回廊",
-   "theme": "ヘリコプター",
    "size": [
     6,
     12
@@ -177,8 +167,6 @@
    "id": "C1-ST06",
    "global": 6,
    "chapter": 1,
-   "name": "平原・二分割",
-   "theme": "時限爆弾",
    "size": [
     6,
     12
@@ -211,8 +199,6 @@
    "id": "C1-ST07",
    "global": 7,
    "chapter": 1,
-   "name": "平原・三島",
-   "theme": "巨大岩（ボス練習）",
    "size": [
     6,
     12
@@ -250,8 +236,6 @@
    "id": "C1-ST08",
    "global": 8,
    "chapter": 1,
-   "name": "平原・斜め帯",
-   "theme": "応用",
    "size": [
     6,
     12
@@ -284,8 +268,6 @@
    "id": "C1-ST09",
    "global": 9,
    "chapter": 1,
-   "name": "平原・左右対称",
-   "theme": "応用",
    "size": [
     6,
     12
@@ -318,8 +300,6 @@
    "id": "C1-ST10",
    "global": 10,
    "chapter": 1,
-   "name": "平原・上下対称",
-   "theme": "応用",
    "size": [
     6,
     12
@@ -352,8 +332,6 @@
    "id": "C1-ST11",
    "global": 11,
    "chapter": 1,
-   "name": "平原・十字",
-   "theme": "",
    "size": [
     6,
     12
@@ -386,8 +364,6 @@
    "id": "C1-ST12",
    "global": 12,
    "chapter": 1,
-   "name": "平原・リング",
-   "theme": "",
    "size": [
     6,
     12
@@ -420,8 +396,6 @@
    "id": "C1-ST13",
    "global": 13,
    "chapter": 1,
-   "name": "平原・ジグザグ",
-   "theme": "",
    "size": [
     6,
     12
@@ -454,8 +428,6 @@
    "id": "C1-ST14",
    "global": 14,
    "chapter": 1,
-   "name": "平原・外周",
-   "theme": "",
    "size": [
     6,
     12
@@ -488,8 +460,6 @@
    "id": "C1-ST15",
    "global": 15,
    "chapter": 1,
-   "name": "平原・中央広場",
-   "theme": "",
    "size": [
     6,
     12
@@ -522,8 +492,6 @@
    "id": "C1-ST16",
    "global": 16,
    "chapter": 1,
-   "name": "平原・分岐",
-   "theme": "",
    "size": [
     6,
     12
@@ -556,8 +524,6 @@
    "id": "C1-ST17",
    "global": 17,
    "chapter": 1,
-   "name": "平原・狭路",
-   "theme": "",
    "size": [
     6,
     12
@@ -590,8 +556,6 @@
    "id": "C1-ST18",
    "global": 18,
    "chapter": 1,
-   "name": "平原・多島",
-   "theme": "",
    "size": [
     6,
     12
@@ -624,8 +588,6 @@
    "id": "C1-ST19",
    "global": 19,
    "chapter": 1,
-   "name": "平原・複合",
-   "theme": "",
    "size": [
     6,
     12
@@ -658,8 +620,6 @@
    "id": "C1-ST20",
    "global": 20,
    "chapter": 1,
-   "name": "平原・章末",
-   "theme": "",
    "size": [
     6,
     12
@@ -697,8 +657,6 @@
    "id": "C2-ST01",
    "global": 21,
    "chapter": 2,
-   "name": "湖・基本",
-   "theme": "",
    "size": [
     6,
     12
@@ -731,8 +689,6 @@
    "id": "C2-ST02",
    "global": 22,
    "chapter": 2,
-   "name": "湖・角落とし",
-   "theme": "",
    "size": [
     6,
     12
@@ -765,8 +721,6 @@
    "id": "C2-ST03",
    "global": 23,
    "chapter": 2,
-   "name": "湖・中央空洞",
-   "theme": "",
    "size": [
     6,
     12
@@ -799,8 +753,6 @@
    "id": "C2-ST04",
    "global": 24,
    "chapter": 2,
-   "name": "湖・縦回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -833,8 +785,6 @@
    "id": "C2-ST05",
    "global": 25,
    "chapter": 2,
-   "name": "湖・横回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -867,8 +817,6 @@
    "id": "C2-ST06",
    "global": 26,
    "chapter": 2,
-   "name": "湖・二分割",
-   "theme": "",
    "size": [
     6,
     12
@@ -901,8 +849,6 @@
    "id": "C2-ST07",
    "global": 27,
    "chapter": 2,
-   "name": "湖・三島",
-   "theme": "",
    "size": [
     6,
     12
@@ -935,8 +881,6 @@
    "id": "C2-ST08",
    "global": 28,
    "chapter": 2,
-   "name": "湖・斜め帯",
-   "theme": "",
    "size": [
     6,
     12
@@ -969,8 +913,6 @@
    "id": "C2-ST09",
    "global": 29,
    "chapter": 2,
-   "name": "湖・左右対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -1003,8 +945,6 @@
    "id": "C2-ST10",
    "global": 30,
    "chapter": 2,
-   "name": "湖・上下対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -1037,8 +977,6 @@
    "id": "C2-ST11",
    "global": 31,
    "chapter": 2,
-   "name": "湖・十字",
-   "theme": "",
    "size": [
     6,
     12
@@ -1071,8 +1009,6 @@
    "id": "C2-ST12",
    "global": 32,
    "chapter": 2,
-   "name": "湖・リング",
-   "theme": "",
    "size": [
     6,
     12
@@ -1105,8 +1041,6 @@
    "id": "C2-ST13",
    "global": 33,
    "chapter": 2,
-   "name": "湖・ジグザグ",
-   "theme": "",
    "size": [
     6,
     12
@@ -1139,8 +1073,6 @@
    "id": "C2-ST14",
    "global": 34,
    "chapter": 2,
-   "name": "湖・外周",
-   "theme": "",
    "size": [
     6,
     12
@@ -1173,8 +1105,6 @@
    "id": "C2-ST15",
    "global": 35,
    "chapter": 2,
-   "name": "湖・中央広場",
-   "theme": "",
    "size": [
     6,
     12
@@ -1207,8 +1137,6 @@
    "id": "C2-ST16",
    "global": 36,
    "chapter": 2,
-   "name": "湖・分岐",
-   "theme": "",
    "size": [
     6,
     12
@@ -1241,8 +1169,6 @@
    "id": "C2-ST17",
    "global": 37,
    "chapter": 2,
-   "name": "湖・狭路",
-   "theme": "",
    "size": [
     6,
     12
@@ -1275,8 +1201,6 @@
    "id": "C2-ST18",
    "global": 38,
    "chapter": 2,
-   "name": "湖・多島",
-   "theme": "",
    "size": [
     6,
     12
@@ -1309,8 +1233,6 @@
    "id": "C2-ST19",
    "global": 39,
    "chapter": 2,
-   "name": "湖・複合",
-   "theme": "",
    "size": [
     6,
     12
@@ -1343,8 +1265,6 @@
    "id": "C2-ST20",
    "global": 40,
    "chapter": 2,
-   "name": "湖・章末",
-   "theme": "",
    "size": [
     6,
     12
@@ -1382,8 +1302,6 @@
    "id": "C3-ST01",
    "global": 41,
    "chapter": 3,
-   "name": "森林・基本",
-   "theme": "",
    "size": [
     6,
     12
@@ -1416,8 +1334,6 @@
    "id": "C3-ST02",
    "global": 42,
    "chapter": 3,
-   "name": "森林・角落とし",
-   "theme": "",
    "size": [
     6,
     12
@@ -1450,8 +1366,6 @@
    "id": "C3-ST03",
    "global": 43,
    "chapter": 3,
-   "name": "森林・中央空洞",
-   "theme": "",
    "size": [
     6,
     12
@@ -1484,8 +1398,6 @@
    "id": "C3-ST04",
    "global": 44,
    "chapter": 3,
-   "name": "森林・縦回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -1518,8 +1430,6 @@
    "id": "C3-ST05",
    "global": 45,
    "chapter": 3,
-   "name": "森林・横回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -1552,8 +1462,6 @@
    "id": "C3-ST06",
    "global": 46,
    "chapter": 3,
-   "name": "森林・二分割",
-   "theme": "",
    "size": [
     6,
     12
@@ -1586,8 +1494,6 @@
    "id": "C3-ST07",
    "global": 47,
    "chapter": 3,
-   "name": "森林・三島",
-   "theme": "",
    "size": [
     6,
     12
@@ -1620,8 +1526,6 @@
    "id": "C3-ST08",
    "global": 48,
    "chapter": 3,
-   "name": "森林・斜め帯",
-   "theme": "",
    "size": [
     6,
     12
@@ -1654,8 +1558,6 @@
    "id": "C3-ST09",
    "global": 49,
    "chapter": 3,
-   "name": "森林・左右対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -1688,8 +1590,6 @@
    "id": "C3-ST10",
    "global": 50,
    "chapter": 3,
-   "name": "森林・上下対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -1722,8 +1622,6 @@
    "id": "C3-ST11",
    "global": 51,
    "chapter": 3,
-   "name": "森林・十字",
-   "theme": "",
    "size": [
     6,
     12
@@ -1756,8 +1654,6 @@
    "id": "C3-ST12",
    "global": 52,
    "chapter": 3,
-   "name": "森林・リング",
-   "theme": "",
    "size": [
     6,
     12
@@ -1790,8 +1686,6 @@
    "id": "C3-ST13",
    "global": 53,
    "chapter": 3,
-   "name": "森林・ジグザグ",
-   "theme": "",
    "size": [
     6,
     12
@@ -1824,8 +1718,6 @@
    "id": "C3-ST14",
    "global": 54,
    "chapter": 3,
-   "name": "森林・外周",
-   "theme": "",
    "size": [
     6,
     12
@@ -1858,8 +1750,6 @@
    "id": "C3-ST15",
    "global": 55,
    "chapter": 3,
-   "name": "森林・中央広場",
-   "theme": "",
    "size": [
     6,
     12
@@ -1892,8 +1782,6 @@
    "id": "C3-ST16",
    "global": 56,
    "chapter": 3,
-   "name": "森林・分岐",
-   "theme": "",
    "size": [
     6,
     12
@@ -1926,8 +1814,6 @@
    "id": "C3-ST17",
    "global": 57,
    "chapter": 3,
-   "name": "森林・狭路",
-   "theme": "",
    "size": [
     6,
     12
@@ -1960,8 +1846,6 @@
    "id": "C3-ST18",
    "global": 58,
    "chapter": 3,
-   "name": "森林・多島",
-   "theme": "",
    "size": [
     6,
     12
@@ -1994,8 +1878,6 @@
    "id": "C3-ST19",
    "global": 59,
    "chapter": 3,
-   "name": "森林・複合",
-   "theme": "",
    "size": [
     6,
     12
@@ -2028,8 +1910,6 @@
    "id": "C3-ST20",
    "global": 60,
    "chapter": 3,
-   "name": "森林・章末",
-   "theme": "",
    "size": [
     6,
     12
@@ -2067,8 +1947,6 @@
    "id": "C4-ST01",
    "global": 61,
    "chapter": 4,
-   "name": "岩盤・基本",
-   "theme": "",
    "size": [
     6,
     12
@@ -2101,8 +1979,6 @@
    "id": "C4-ST02",
    "global": 62,
    "chapter": 4,
-   "name": "岩盤・角落とし",
-   "theme": "",
    "size": [
     6,
     12
@@ -2135,8 +2011,6 @@
    "id": "C4-ST03",
    "global": 63,
    "chapter": 4,
-   "name": "岩盤・中央空洞",
-   "theme": "",
    "size": [
     6,
     12
@@ -2169,8 +2043,6 @@
    "id": "C4-ST04",
    "global": 64,
    "chapter": 4,
-   "name": "岩盤・縦回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -2203,8 +2075,6 @@
    "id": "C4-ST05",
    "global": 65,
    "chapter": 4,
-   "name": "岩盤・横回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -2237,8 +2107,6 @@
    "id": "C4-ST06",
    "global": 66,
    "chapter": 4,
-   "name": "岩盤・二分割",
-   "theme": "",
    "size": [
     6,
     12
@@ -2271,8 +2139,6 @@
    "id": "C4-ST07",
    "global": 67,
    "chapter": 4,
-   "name": "岩盤・三島",
-   "theme": "",
    "size": [
     6,
     12
@@ -2305,8 +2171,6 @@
    "id": "C4-ST08",
    "global": 68,
    "chapter": 4,
-   "name": "岩盤・斜め帯",
-   "theme": "",
    "size": [
     6,
     12
@@ -2339,8 +2203,6 @@
    "id": "C4-ST09",
    "global": 69,
    "chapter": 4,
-   "name": "岩盤・左右対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -2373,8 +2235,6 @@
    "id": "C4-ST10",
    "global": 70,
    "chapter": 4,
-   "name": "岩盤・上下対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -2407,8 +2267,6 @@
    "id": "C4-ST11",
    "global": 71,
    "chapter": 4,
-   "name": "岩盤・十字",
-   "theme": "",
    "size": [
     6,
     12
@@ -2441,8 +2299,6 @@
    "id": "C4-ST12",
    "global": 72,
    "chapter": 4,
-   "name": "岩盤・リング",
-   "theme": "",
    "size": [
     6,
     12
@@ -2475,8 +2331,6 @@
    "id": "C4-ST13",
    "global": 73,
    "chapter": 4,
-   "name": "岩盤・ジグザグ",
-   "theme": "",
    "size": [
     6,
     12
@@ -2509,8 +2363,6 @@
    "id": "C4-ST14",
    "global": 74,
    "chapter": 4,
-   "name": "岩盤・外周",
-   "theme": "",
    "size": [
     6,
     12
@@ -2543,8 +2395,6 @@
    "id": "C4-ST15",
    "global": 75,
    "chapter": 4,
-   "name": "岩盤・中央広場",
-   "theme": "",
    "size": [
     6,
     12
@@ -2577,8 +2427,6 @@
    "id": "C4-ST16",
    "global": 76,
    "chapter": 4,
-   "name": "岩盤・分岐",
-   "theme": "",
    "size": [
     6,
     12
@@ -2611,8 +2459,6 @@
    "id": "C4-ST17",
    "global": 77,
    "chapter": 4,
-   "name": "岩盤・狭路",
-   "theme": "",
    "size": [
     6,
     12
@@ -2645,8 +2491,6 @@
    "id": "C4-ST18",
    "global": 78,
    "chapter": 4,
-   "name": "岩盤・多島",
-   "theme": "",
    "size": [
     6,
     12
@@ -2679,8 +2523,6 @@
    "id": "C4-ST19",
    "global": 79,
    "chapter": 4,
-   "name": "岩盤・複合",
-   "theme": "",
    "size": [
     6,
     12
@@ -2713,8 +2555,6 @@
    "id": "C4-ST20",
    "global": 80,
    "chapter": 4,
-   "name": "岩盤・章末",
-   "theme": "",
    "size": [
     6,
     12
@@ -2752,8 +2592,6 @@
    "id": "C5-ST01",
    "global": 81,
    "chapter": 5,
-   "name": "火山・基本",
-   "theme": "",
    "size": [
     6,
     12
@@ -2786,8 +2624,6 @@
    "id": "C5-ST02",
    "global": 82,
    "chapter": 5,
-   "name": "火山・角落とし",
-   "theme": "",
    "size": [
     6,
     12
@@ -2820,8 +2656,6 @@
    "id": "C5-ST03",
    "global": 83,
    "chapter": 5,
-   "name": "火山・中央空洞",
-   "theme": "",
    "size": [
     6,
     12
@@ -2854,8 +2688,6 @@
    "id": "C5-ST04",
    "global": 84,
    "chapter": 5,
-   "name": "火山・縦回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -2888,8 +2720,6 @@
    "id": "C5-ST05",
    "global": 85,
    "chapter": 5,
-   "name": "火山・横回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -2922,8 +2752,6 @@
    "id": "C5-ST06",
    "global": 86,
    "chapter": 5,
-   "name": "火山・二分割",
-   "theme": "",
    "size": [
     6,
     12
@@ -2956,8 +2784,6 @@
    "id": "C5-ST07",
    "global": 87,
    "chapter": 5,
-   "name": "火山・三島",
-   "theme": "",
    "size": [
     6,
     12
@@ -2990,8 +2816,6 @@
    "id": "C5-ST08",
    "global": 88,
    "chapter": 5,
-   "name": "火山・斜め帯",
-   "theme": "",
    "size": [
     6,
     12
@@ -3024,8 +2848,6 @@
    "id": "C5-ST09",
    "global": 89,
    "chapter": 5,
-   "name": "火山・左右対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -3058,8 +2880,6 @@
    "id": "C5-ST10",
    "global": 90,
    "chapter": 5,
-   "name": "火山・上下対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -3092,8 +2912,6 @@
    "id": "C5-ST11",
    "global": 91,
    "chapter": 5,
-   "name": "火山・十字",
-   "theme": "",
    "size": [
     6,
     12
@@ -3126,8 +2944,6 @@
    "id": "C5-ST12",
    "global": 92,
    "chapter": 5,
-   "name": "火山・リング",
-   "theme": "",
    "size": [
     6,
     12
@@ -3160,8 +2976,6 @@
    "id": "C5-ST13",
    "global": 93,
    "chapter": 5,
-   "name": "火山・ジグザグ",
-   "theme": "",
    "size": [
     6,
     12
@@ -3194,8 +3008,6 @@
    "id": "C5-ST14",
    "global": 94,
    "chapter": 5,
-   "name": "火山・外周",
-   "theme": "",
    "size": [
     6,
     12
@@ -3228,8 +3040,6 @@
    "id": "C5-ST15",
    "global": 95,
    "chapter": 5,
-   "name": "火山・中央広場",
-   "theme": "",
    "size": [
     6,
     12
@@ -3262,8 +3072,6 @@
    "id": "C5-ST16",
    "global": 96,
    "chapter": 5,
-   "name": "火山・分岐",
-   "theme": "",
    "size": [
     6,
     12
@@ -3296,8 +3104,6 @@
    "id": "C5-ST17",
    "global": 97,
    "chapter": 5,
-   "name": "火山・狭路",
-   "theme": "",
    "size": [
     6,
     12
@@ -3330,8 +3136,6 @@
    "id": "C5-ST18",
    "global": 98,
    "chapter": 5,
-   "name": "火山・多島",
-   "theme": "",
    "size": [
     6,
     12
@@ -3364,8 +3168,6 @@
    "id": "C5-ST19",
    "global": 99,
    "chapter": 5,
-   "name": "火山・複合",
-   "theme": "",
    "size": [
     6,
     12
@@ -3398,8 +3200,6 @@
    "id": "C5-ST20",
    "global": 100,
    "chapter": 5,
-   "name": "火山・章末",
-   "theme": "",
    "size": [
     6,
     12
@@ -3437,8 +3237,6 @@
    "id": "C6-ST01",
    "global": 101,
    "chapter": 6,
-   "name": "王国・基本",
-   "theme": "",
    "size": [
     6,
     12
@@ -3471,8 +3269,6 @@
    "id": "C6-ST02",
    "global": 102,
    "chapter": 6,
-   "name": "王国・角落とし",
-   "theme": "",
    "size": [
     6,
     12
@@ -3505,8 +3301,6 @@
    "id": "C6-ST03",
    "global": 103,
    "chapter": 6,
-   "name": "王国・中央空洞",
-   "theme": "",
    "size": [
     6,
     12
@@ -3539,8 +3333,6 @@
    "id": "C6-ST04",
    "global": 104,
    "chapter": 6,
-   "name": "王国・縦回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -3573,8 +3365,6 @@
    "id": "C6-ST05",
    "global": 105,
    "chapter": 6,
-   "name": "王国・横回廊",
-   "theme": "",
    "size": [
     6,
     12
@@ -3607,8 +3397,6 @@
    "id": "C6-ST06",
    "global": 106,
    "chapter": 6,
-   "name": "王国・二分割",
-   "theme": "",
    "size": [
     6,
     12
@@ -3641,8 +3429,6 @@
    "id": "C6-ST07",
    "global": 107,
    "chapter": 6,
-   "name": "王国・三島",
-   "theme": "",
    "size": [
     6,
     12
@@ -3675,8 +3461,6 @@
    "id": "C6-ST08",
    "global": 108,
    "chapter": 6,
-   "name": "王国・斜め帯",
-   "theme": "",
    "size": [
     6,
     12
@@ -3709,8 +3493,6 @@
    "id": "C6-ST09",
    "global": 109,
    "chapter": 6,
-   "name": "王国・左右対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -3743,8 +3525,6 @@
    "id": "C6-ST10",
    "global": 110,
    "chapter": 6,
-   "name": "王国・上下対称",
-   "theme": "",
    "size": [
     6,
     12
@@ -3777,8 +3557,6 @@
    "id": "C6-ST11",
    "global": 111,
    "chapter": 6,
-   "name": "王国・十字",
-   "theme": "",
    "size": [
     6,
     12
@@ -3811,8 +3589,6 @@
    "id": "C6-ST12",
    "global": 112,
    "chapter": 6,
-   "name": "王国・リング",
-   "theme": "",
    "size": [
     6,
     12
@@ -3845,8 +3621,6 @@
    "id": "C6-ST13",
    "global": 113,
    "chapter": 6,
-   "name": "王国・ジグザグ",
-   "theme": "",
    "size": [
     6,
     12
@@ -3879,8 +3653,6 @@
    "id": "C6-ST14",
    "global": 114,
    "chapter": 6,
-   "name": "王国・外周",
-   "theme": "",
    "size": [
     6,
     12
@@ -3913,8 +3685,6 @@
    "id": "C6-ST15",
    "global": 115,
    "chapter": 6,
-   "name": "王国・中央広場",
-   "theme": "",
    "size": [
     6,
     12
@@ -3947,8 +3717,6 @@
    "id": "C6-ST16",
    "global": 116,
    "chapter": 6,
-   "name": "王国・分岐",
-   "theme": "",
    "size": [
     6,
     12
@@ -3981,8 +3749,6 @@
    "id": "C6-ST17",
    "global": 117,
    "chapter": 6,
-   "name": "王国・狭路",
-   "theme": "",
    "size": [
     6,
     12
@@ -4015,8 +3781,6 @@
    "id": "C6-ST18",
    "global": 118,
    "chapter": 6,
-   "name": "王国・多島",
-   "theme": "",
    "size": [
     6,
     12
@@ -4049,8 +3813,6 @@
    "id": "C6-ST19",
    "global": 119,
    "chapter": 6,
-   "name": "王国・複合",
-   "theme": "",
    "size": [
     6,
     12
@@ -4083,8 +3845,6 @@
    "id": "C6-ST20",
    "global": 120,
    "chapter": 6,
-   "name": "王国・章末",
-   "theme": "",
    "size": [
     6,
     12
