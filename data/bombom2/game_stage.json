@@ -48,11 +48,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -105,11 +104,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -162,11 +160,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -219,11 +216,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -276,11 +272,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -333,11 +328,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -390,11 +384,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": 20,
@@ -447,11 +440,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -504,11 +496,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -561,11 +552,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -618,11 +608,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -675,11 +664,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -732,11 +720,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -789,11 +776,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -846,11 +832,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -903,11 +888,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -960,11 +944,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1017,11 +1000,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1074,11 +1056,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1131,11 +1112,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1188,11 +1168,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1245,11 +1224,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1302,11 +1280,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1359,11 +1336,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1416,11 +1392,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1473,11 +1448,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1530,11 +1504,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1587,11 +1560,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1644,11 +1616,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1701,11 +1672,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1758,11 +1728,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1815,11 +1784,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1872,11 +1840,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1929,11 +1896,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1986,11 +1952,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2043,11 +2008,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2100,11 +2064,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2157,11 +2120,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2214,11 +2176,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2271,11 +2232,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 10,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2328,11 +2288,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2385,11 +2344,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2442,11 +2400,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2499,11 +2456,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2556,11 +2512,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2613,11 +2568,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2670,11 +2624,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2727,11 +2680,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2784,11 +2736,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2841,11 +2792,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2898,11 +2848,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2955,11 +2904,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3012,11 +2960,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3069,11 +3016,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3126,11 +3072,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3183,11 +3128,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3240,11 +3184,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3297,11 +3240,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3354,11 +3296,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3411,11 +3352,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 10,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3468,11 +3408,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 0,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 100
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3525,11 +3464,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3582,11 +3520,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3639,11 +3576,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3696,11 +3632,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3753,11 +3688,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3810,11 +3744,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3867,11 +3800,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3924,11 +3856,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -3981,11 +3912,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4038,11 +3968,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4095,11 +4024,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4152,11 +4080,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4209,11 +4136,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4266,11 +4192,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4323,11 +4248,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4380,11 +4304,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4437,11 +4360,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4494,11 +4416,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4551,11 +4472,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 0,
-    "wood": 0,
-    "stone": 10,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4608,11 +4528,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4665,11 +4584,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4722,11 +4640,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4779,11 +4696,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4836,11 +4752,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4893,11 +4808,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -4950,11 +4864,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5007,11 +4920,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5064,11 +4976,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5121,11 +5032,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5178,11 +5088,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5235,11 +5144,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5292,11 +5200,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5349,11 +5256,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5406,11 +5312,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5463,11 +5368,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5520,11 +5424,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5577,11 +5480,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5634,11 +5536,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5691,11 +5592,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 40,
-    "water": 0,
-    "wood": 0,
-    "stone": 0,
-    "none": 60
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5748,11 +5648,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5805,11 +5704,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5862,11 +5760,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5919,11 +5816,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -5976,11 +5872,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6033,11 +5928,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6090,11 +5984,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6147,11 +6040,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6204,11 +6096,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6261,11 +6152,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6318,11 +6208,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6375,11 +6264,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6432,11 +6320,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6489,11 +6376,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6546,11 +6432,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6603,11 +6488,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6660,11 +6544,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6717,11 +6600,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6774,11 +6656,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -6831,11 +6712,10 @@
     "KU": 1.0
    },
    "majinRate": {
-    "fire": 30,
-    "water": 3.4,
-    "wood": 3.3,
-    "stone": 3.3,
-    "none": 60
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
    },
    "tutorialItem": null,
    "hitsOverride": null,
