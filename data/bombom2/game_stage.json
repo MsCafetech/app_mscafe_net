@@ -1,5 +1,5 @@
 {
- "version": 6,
+ "version": 7,
  "openStages": 10,
  "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
@@ -31,7 +31,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 40000,
+    "silver": 106000,
+    "gold": 156000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -76,7 +81,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 102000,
+    "silver": 178000,
+    "gold": 386000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -121,7 +131,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 58000,
+    "gold": 84000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -166,7 +181,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 14000,
+    "silver": 49000,
+    "gold": 76000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -211,7 +231,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 9000,
+    "silver": 44000,
+    "gold": 71000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -256,7 +281,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 58000,
+    "gold": 94000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -351,7 +381,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 26000,
+    "silver": 58000,
+    "gold": 84000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -396,7 +431,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 9000,
+    "silver": 40000,
+    "gold": 71000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -441,7 +481,12 @@
    "isBoss": false,
    "boss": null,
    "requiredHits": null,
-   "goals": null,
+   "goals": {
+    "bronze": 9000,
+    "silver": 44000,
+    "gold": 71000,
+    "provisional": true
+   },
    "bombRate": {
     "BL": 36,
     "GR": 20,
