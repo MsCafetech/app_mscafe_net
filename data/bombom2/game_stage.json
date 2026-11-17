@@ -1,5 +1,5 @@
 {
- "version": 10,
+ "version": 11,
  "openStages": 10,
  "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
@@ -917,8 +917,8 @@
     "......",
     ". .. .",
     ". .. .",
-    "......",
-    "......",
+    "..BB..",
+    "..BB..",
     ". .. .",
     ". .. .",
     "......",
@@ -926,17 +926,17 @@
     "......"
    ],
    "turns": 3,
-   "goalType": "score",
-   "goalTarget": null,
-   "isBoss": false,
-   "boss": null,
-   "requiredHits": null,
-   "goals": {
-    "bronze": 28000,
-    "silver": 93000,
-    "gold": 150000,
-    "provisional": true
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
    },
+   "requiredHits": 10,
+   "goals": null,
    "bombRate": {
     "BL": 36,
     "GR": 20,
