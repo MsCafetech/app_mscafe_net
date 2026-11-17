@@ -1,5 +1,5 @@
 {
- "version": 21,
+ "version": 22,
  "openStages": 10,
  "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
@@ -1309,10 +1309,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1368,10 +1368,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1427,10 +1427,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1486,10 +1486,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1545,10 +1545,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1604,10 +1604,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1663,10 +1663,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1722,10 +1722,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": 20,
@@ -1781,10 +1781,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1840,10 +1840,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1899,10 +1899,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1958,10 +1958,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2017,10 +2017,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2076,10 +2076,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2135,10 +2135,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2194,10 +2194,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2253,10 +2253,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": 30,
@@ -2312,10 +2312,10 @@
     "DO": 1
    },
    "majinRate": {
-    "WAM": 30,
+    "WAM": 10,
     "WOM": 0,
     "STM": 0,
-    "FRM": 10
+    "FRM": 5
    },
    "tutorialItem": null,
    "hitsOverride": 30,
