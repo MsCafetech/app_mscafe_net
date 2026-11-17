@@ -1,5 +1,5 @@
 {
- "version": 14,
+ "version": 17,
  "openStages": 10,
  "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
@@ -39,13 +39,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -153,13 +153,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -210,13 +210,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -267,13 +267,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -324,13 +324,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -381,13 +381,13 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 27,
+    "BL": 28,
     "GR": 22.25,
     "RE": 22.25,
     "PA": 12.25,
     "YE": 12.25,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -438,13 +438,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -495,13 +495,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -552,13 +552,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -609,13 +609,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -666,13 +666,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -723,13 +723,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -780,13 +780,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -837,13 +837,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -894,13 +894,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -951,13 +951,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -1008,13 +1008,13 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -1065,13 +1065,13 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -1122,13 +1122,13 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 37,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
+    "GO": 1,
+    "SI": 1,
     "KU": 1.0
    },
    "majinRate": {
@@ -1179,14 +1179,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -1236,14 +1238,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -1293,20 +1297,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1350,20 +1356,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1407,20 +1415,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1464,20 +1474,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1521,20 +1533,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1578,20 +1592,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1635,20 +1651,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1682,7 +1700,7 @@
    "goalType": "boss_hits",
    "goalTarget": 10,
    "isBoss": true,
-   "bossKind": "golem",
+   "bossKind": "golem_water",
    "boss": {
     "row": 5,
     "col": 2,
@@ -1692,23 +1710,25 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
-   "hitsOverride": null,
+   "hitsOverride": 20,
    "seedMult": 1.0,
    "rocks": 3,
    "layout": null
@@ -1749,20 +1769,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1806,20 +1828,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1863,20 +1887,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1920,20 +1946,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -1977,20 +2005,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2034,20 +2064,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2091,20 +2123,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2148,20 +2182,22 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
    "hitsOverride": null,
@@ -2205,23 +2241,25 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
-   "hitsOverride": null,
+   "hitsOverride": 30,
    "seedMult": 1.0,
    "rocks": 3,
    "layout": null
@@ -2262,23 +2300,25 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
-    "WAM": 10,
+    "WAM": 30,
     "WOM": 0,
     "STM": 0,
-    "FRM": 30
+    "FRM": 10
    },
    "tutorialItem": null,
-   "hitsOverride": null,
+   "hitsOverride": 50,
    "seedMult": 1.0,
    "rocks": 3,
    "layout": null
@@ -2319,14 +2359,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2376,14 +2418,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2433,14 +2477,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2490,14 +2536,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2547,14 +2595,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2604,14 +2654,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2661,14 +2713,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2718,14 +2772,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2775,14 +2831,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2832,14 +2890,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2889,14 +2949,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -2946,14 +3008,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3003,14 +3067,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3060,14 +3126,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3117,14 +3185,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3174,14 +3244,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3231,14 +3303,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3288,14 +3362,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3345,14 +3421,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3402,14 +3480,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3459,14 +3539,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3516,14 +3598,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3573,14 +3657,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3630,14 +3716,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3687,14 +3775,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3744,14 +3834,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3801,14 +3893,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3858,14 +3952,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3915,14 +4011,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -3972,14 +4070,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4029,14 +4129,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4086,14 +4188,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4143,14 +4247,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4200,14 +4306,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4257,14 +4365,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4314,14 +4424,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4371,14 +4483,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4428,14 +4542,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4485,14 +4601,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4542,14 +4660,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4599,14 +4719,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4656,14 +4778,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4713,14 +4837,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4770,14 +4896,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4827,14 +4955,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4884,14 +5014,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4941,14 +5073,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -4998,14 +5132,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5055,14 +5191,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5112,14 +5250,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5169,14 +5309,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5226,14 +5368,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5283,14 +5427,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5340,14 +5486,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5397,14 +5545,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5454,14 +5604,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5511,14 +5663,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5568,14 +5722,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5625,14 +5781,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5682,14 +5840,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 0,
@@ -5739,14 +5899,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -5796,14 +5958,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -5853,14 +6017,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -5910,14 +6076,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -5967,14 +6135,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6024,14 +6194,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6081,14 +6253,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6138,14 +6312,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6195,14 +6371,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6252,14 +6430,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6309,14 +6489,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6366,14 +6548,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6423,14 +6607,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6480,14 +6666,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6537,14 +6725,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6594,14 +6784,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6651,14 +6843,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6708,14 +6902,16 @@
     "provisional": true
    },
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6765,14 +6961,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
@@ -6822,14 +7020,16 @@
    "requiredHits": 10,
    "goals": null,
    "bombRate": {
-    "BL": 36,
+    "BL": 35,
     "GR": 20,
     "RE": 20,
     "PA": 10,
     "YE": 10,
-    "GO": 1.5,
-    "SI": 1.5,
-    "KU": 1.0
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
    },
    "majinRate": {
     "WAM": 3.4,
