@@ -1,5 +1,6 @@
 {
- "version": 2,
+ "version": 3,
+ "openStages": 10,
  "note": "全120ステージ。tools/build_stages.py で生成（mock/stages.js と同じ中身）。goals/goals9 は C1-ST01..10 のみの仮値",
  "stages": [
   {
