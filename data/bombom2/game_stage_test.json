@@ -1,7 +1,7 @@
 {
- "version": 4,
+ "version": 5,
  "openStages": 120,
- "note": "全120ステージ。tools/build_stages.py で生成（mock/stages.js と同じ中身）。goals/goals9 は C1-ST01..10 のみの仮値",
+ "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
   {
    "id": "C1-ST01",
@@ -9,28 +9,33 @@
    "chapter": 1,
    "name": "平原・基本",
    "theme": "ボマーの特性",
-   "map": "....................................................................................................",
    "size": [
     6,
     12
    ],
    "grid": "........................................................................",
-   "map9": "........................................................................",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 60000,
-    "silver": 190000,
-    "gold": 350000,
-    "provisional": true
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals9": {
-    "bronze": 40000,
-    "silver": 106000,
-    "gold": 156000,
-    "provisional": true
-   }
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST02",
@@ -38,32 +43,33 @@
    "chapter": 1,
    "name": "平原・角落とし",
    "theme": "金・銀の特性",
-   "map": "  ......   ........ ............................................................ ........   ......  ",
    "size": [
     6,
     12
    ],
    "grid": "  ..   .... ................................................ ....   ..  ",
-   "map9": "  ..   .... ................................................ ....   ..  ",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 130000,
-    "silver": 350000,
-    "gold": 600000,
-    "provisional": true
-   },
-   "goals9": {
-    "bronze": 102000,
-    "silver": 178000,
-    "gold": 386000,
-    "provisional": true
-   },
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
    "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
     "GO": 8,
-    "SI": 8
-   }
+    "SI": 8,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST03",
@@ -71,28 +77,33 @@
    "chapter": 1,
    "name": "平原・中央空洞",
    "theme": "火炎放射",
-   "map": ".................................    ......    ......    ......    .................................",
    "size": [
     6,
     12
    ],
    "grid": "....................  ....  ....  ....  ....  ....  ....................",
-   "map9": "....................  ....  ....  ....  ....  ....  ....................",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 18000,
-    "silver": 75000,
-    "gold": 125000,
-    "provisional": true
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals9": {
-    "bronze": 18000,
-    "silver": 58000,
-    "gold": 84000,
-    "provisional": true
-   }
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST04",
@@ -100,28 +111,33 @@
    "chapter": 1,
    "name": "平原・縦回廊",
    "theme": "火種",
-   "map": "....................... .. ...... .. ...... .. ...... .. ...... .. ...... .. .......................",
    "size": [
     6,
     12
    ],
    "grid": "............. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .............",
-   "map9": "............. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .............",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 15000,
-    "silver": 75000,
-    "gold": 120000,
-    "provisional": true
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals9": {
-    "bronze": 14000,
-    "silver": 49000,
-    "gold": 76000,
-    "provisional": true
-   }
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST05",
@@ -129,28 +145,33 @@
    "chapter": 1,
    "name": "平原・横回廊",
    "theme": "ヘリコプター",
-   "map": "................................      ........................      ................................",
    "size": [
     6,
     12
    ],
    "grid": "...................    ..............    ..............    .............",
-   "map9": "...................    ..............    ..............    .............",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 15000,
-    "silver": 78000,
-    "gold": 115000,
-    "provisional": true
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals9": {
-    "bronze": 9000,
-    "silver": 44000,
-    "gold": 71000,
-    "provisional": true
-   }
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST06",
@@ -158,28 +179,33 @@
    "chapter": 1,
    "name": "平原・二分割",
    "theme": "時限爆弾",
-   "map": ".... ......... ................... ......... ......... ......... ................... ......... .....",
    "size": [
     6,
     12
    ],
    "grid": "..  ....  ..........  ....  ....  ..........  ....  ....  ..........  ..",
-   "map9": "..  ....  ..........  ....  ....  ..........  ....  ....  ..........  ..",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 23000,
-    "silver": 110000,
-    "gold": 160000,
-    "provisional": true
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals9": {
-    "bronze": 18000,
-    "silver": 58000,
-    "gold": 94000,
-    "provisional": true
-   }
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST07",
@@ -187,41 +213,38 @@
    "chapter": 1,
    "name": "平原・三島",
    "theme": "巨大岩（ボス練習）",
-   "map": "...........  ....  .........................BB........BB...........................    .............",
    "size": [
     6,
     12
    ],
    "grid": "  ..    ..  ......................................BB....BB..............",
-   "map9": "  ..    ..  ....................BB....BB................................",
    "turns": 3,
    "goalType": "boss_hits",
    "goalTarget": 10,
+   "isBoss": true,
    "boss": {
     "row": 3,
     "col": 3,
     "height": 2,
     "width": 2
    },
-   "isBoss": true,
    "requiredHits": 10,
-   "hitsOverride": 20,
-   "seedMult": 1.5,
-   "rocks": 0,
+   "goals": null,
    "bombRate": {
     "BL": 27,
-    "RE": 22.25,
     "GR": 22.25,
+    "RE": 22.25,
     "PA": 12.25,
     "YE": 12.25,
     "GO": 1.5,
-    "SI": 1.5
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals": {
-    "bronze": null,
-    "silver": null,
-    "gold": null
-   }
+   "tutorialItem": null,
+   "hitsOverride": 20,
+   "seedMult": 1.5,
+   "rocks": 0,
+   "layout": null
   },
   {
    "id": "C1-ST08",
@@ -229,28 +252,33 @@
    "chapter": 1,
    "name": "平原・斜め帯",
    "theme": "応用",
-   "map": ".....     ......    .......   ........  .........  .........  ........   .......    ......     .....",
    "size": [
     6,
     12
    ],
    "grid": "...   ....  ....  ..... ........................ .....  ....  ....   ...",
-   "map9": "...   ....  ....  ..... ........................ .....  ....  ....   ...",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 35000,
-    "silver": 82000,
-    "gold": 125000,
-    "provisional": true
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals9": {
-    "bronze": 26000,
-    "silver": 58000,
-    "gold": 84000,
-    "provisional": true
-   }
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST09",
@@ -258,28 +286,33 @@
    "chapter": 1,
    "name": "平原・左右対称",
    "theme": "応用",
-   "map": "............ .... .... .... .............. .... .... .... .............. .... .... .... ............",
    "size": [
     6,
     12
    ],
    "grid": ". .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .",
-   "map9": ". .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 13000,
-    "silver": 85000,
-    "gold": 130000,
-    "provisional": true
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals9": {
-    "bronze": 9000,
-    "silver": 40000,
-    "gold": 71000,
-    "provisional": true
-   }
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST10",
@@ -287,28 +320,33 @@
    "chapter": 1,
    "name": "平原・上下対称",
    "theme": "応用",
-   "map": ".....................  .  .  ..........................................  .  .  .....................",
    "size": [
     6,
     12
    ],
    "grid": "......            ............            ............            ......",
-   "map9": "......            ............            ............            ......",
    "turns": 3,
    "goalType": "score",
+   "goalTarget": null,
    "isBoss": false,
-   "goals": {
-    "bronze": 15000,
-    "silver": 83000,
-    "gold": 120000,
-    "provisional": true
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
    },
-   "goals9": {
-    "bronze": 9000,
-    "silver": 44000,
-    "gold": 71000,
-    "provisional": true
-   }
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST11",
@@ -316,16 +354,33 @@
    "chapter": 1,
    "name": "平原・十字",
    "theme": "",
-   "map": "   ...      ...      ...   ...........................   ...      ...      ...   ",
    "size": [
     6,
     12
    ],
    "grid": "  ..    ..    ..    ..  ........................  ..    ..    ..    ..  ",
-   "map9": "  ..    ..    ..    ..  ........................  ..    ..    ..    ..  ",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST12",
@@ -333,16 +388,33 @@
    "chapter": 1,
    "name": "平原・リング",
    "theme": "",
-   "map": ".. ...........................   ......   ......   ..............................",
    "size": [
     6,
     12
    ],
    "grid": ". ........................  ....  ....  ....  ..........................",
-   "map9": ". ........................  ....  ....  ....  ..........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST13",
@@ -350,16 +422,33 @@
    "chapter": 1,
    "name": "平原・ジグザグ",
    "theme": "",
-   "map": ".. .... ............ .... ... .... ............ .... ............ .... ... .... .",
    "size": [
     6,
     12
    ],
    "grid": ". ..  ............. ..  . ..  ............. ..  ....... ..  . ..  . ..  ",
-   "map9": ". ..  ............. ..  . ..  ............. ..  ....... ..  . ..  . ..  ",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST14",
@@ -367,16 +456,33 @@
    "chapter": 1,
    "name": "平原・外周",
    "theme": "",
-   "map": ".... .........................   ......   ......   ..............................",
    "size": [
     6,
     12
    ],
    "grid": "..  ......................  ....  ....  ....  ..........................",
-   "map9": "..  ......................  ....  ....  ....  ..........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST15",
@@ -384,16 +490,33 @@
    "chapter": 1,
    "name": "平原・中央広場",
    "theme": "",
-   "map": ".................... ... ............................... ... ....................",
    "size": [
     6,
     12
    ],
    "grid": "................... .. .......................... .. ...................",
-   "map9": "................... .. .......................... .. ...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST16",
@@ -401,16 +524,33 @@
    "chapter": 1,
    "name": "平原・分岐",
    "theme": "",
-   "map": "..................... . ...... . ............... . ...... . .....................",
    "size": [
     6,
     12
    ],
    "grid": "....................  ....  ................  ....  ....................",
-   "map9": "....................  ....  ................  ....  ....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST17",
@@ -418,16 +558,33 @@
    "chapter": 1,
    "name": "平原・狭路",
    "theme": "",
-   "map": ".. .... ............ .... ... .... ... .... ... .... ... .... ... .... ..........",
    "size": [
     6,
     12
    ],
    "grid": ". ..  ............. ..  . ..  . ..  . ..  . ..  . ..  . ..  . ..  ......",
-   "map9": ". ..  ............. ..  . ..  . ..  . ..  . ..  . ..  . ..  . ..  ......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST18",
@@ -435,16 +592,33 @@
    "chapter": 1,
    "name": "平原・多島",
    "theme": "",
-   "map": "... . ...... . ............  .   .  ... . ...  .   .  ............ . ...... . ...",
    "size": [
     6,
     12
    ],
    "grid": "..  ....  ....  ........      ..  ....  ..      ........  ....  ....  ..",
-   "map9": "..  ....  ....  ........      ..  ....  ..      ........  ....  ....  ..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST19",
@@ -452,16 +626,33 @@
    "chapter": 1,
    "name": "平原・複合",
    "theme": "",
-   "map": ".................... ... .... ... ............. ... .... ... ....................",
    "size": [
     6,
     12
    ],
    "grid": "................... .. .. .. .............. .. .. .. ...................",
-   "map9": "................... .. .. .. .............. .. .. .. ...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C1-ST20",
@@ -469,24 +660,38 @@
    "chapter": 1,
    "name": "平原・章末",
    "theme": "",
-   "map": " ....... . ..... .............BB.......BB....................... ..... . ....... ",
    "size": [
     6,
     12
    ],
    "grid": " ....   ..    ..  ........BB....BB....................  ..    ..   .... ",
-   "map9": " ....   ..    ..  ........BB....BB....................  ..    ..   .... ",
    "turns": 3,
    "goalType": "boss_hits",
    "goalTarget": 10,
+   "isBoss": true,
    "boss": {
     "row": 3,
     "col": 3,
     "height": 2,
     "width": 2
    },
-   "isBoss": true,
-   "requiredHits": 10
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST01",
@@ -494,16 +699,33 @@
    "chapter": 2,
    "name": "湖・基本",
    "theme": "",
-   "map": "..........................................~......................................",
    "size": [
     6,
     12
    ],
    "grid": "..................................~.....~...............................",
-   "map9": "..................................~.....~...............................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST02",
@@ -511,16 +733,33 @@
    "chapter": 2,
    "name": "湖・角落とし",
    "theme": "",
-   "map": "~~.....~~~.~.....~.....~.......................................~.....~.~~~.....~~",
    "size": [
     6,
     12
    ],
    "grid": "~~..~~~~...~~~...~...~................................~...~~~...~~~~..~~",
-   "map9": "~~..~~~~...~~~...~...~................................~...~~~...~~~~..~~",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST03",
@@ -528,16 +767,33 @@
    "chapter": 2,
    "name": "湖・中央空洞",
    "theme": "",
-   "map": "................~....~........~~~......~~~......~~~.......~......................",
    "size": [
     6,
     12
    ],
    "grid": "..........~~....~~..~.....~~....~~....~~....~~....~~....................",
-   "map9": "..........~~....~~..~.....~~....~~....~~....~~....~~....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST04",
@@ -545,16 +801,33 @@
    "chapter": 2,
    "name": "湖・縦回廊",
    "theme": "",
-   "map": ".....................~~~~.....~.~......~.~......~.~......~.~.....................",
    "size": [
     6,
     12
    ],
    "grid": "....................~~~...~~....~~....~~....~~....~~....................",
-   "map9": "....................~~~...~~....~~....~~....~~....~~....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST05",
@@ -562,16 +835,33 @@
    "chapter": 2,
    "name": "湖・横回廊",
    "theme": "",
-   "map": "...........~................~~~~~~......~......~~~~~.............................",
    "size": [
     6,
     12
    ],
    "grid": ".......~.....~..........~~~~~...~~....~~...~~~~.........................",
-   "map9": ".......~.....~..........~~~~~...~~....~~...~~~~.........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST06",
@@ -579,16 +869,33 @@
    "chapter": 2,
    "name": "湖・二分割",
    "theme": "",
-   "map": "....~........~.....~..~........~~.......~........~........~........~~.......~....",
    "size": [
     6,
     12
    ],
    "grid": "..~~....~~....~~..~~~~....~~....~~....~~....~~....~~....~~....~~....~~..",
-   "map9": "..~~....~~....~~..~~~~....~~....~~....~~....~~....~~....~~....~~....~~..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST07",
@@ -596,16 +903,33 @@
    "chapter": 2,
    "name": "湖・三島",
    "theme": "",
-   "map": "..........~..........~~~......~~~......~~~......~~~......~~~.....................",
    "size": [
     6,
     12
    ],
    "grid": "......~~....~~......~~....~~....~~....~~....~~....~~....................",
-   "map9": "......~~....~~......~~....~~....~~....~~....~~....~~....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST08",
@@ -613,16 +937,33 @@
    "chapter": 2,
    "name": "湖・斜め帯",
    "theme": "",
-   "map": ".....~~~~.....~~~~.~....~~~.......~~........~~~.......~~~.~....~~~~.....~~~~~....",
    "size": [
     6,
     12
    ],
    "grid": "...~~~...~~~...~~~~~..~~....~~.....~.....~~~....~~~~..~~~...~~~...~~~~..",
-   "map9": "...~~~...~~~...~~~~~..~~....~~.....~.....~~~....~~~~..~~~...~~~...~~~~..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST09",
@@ -630,16 +971,33 @@
    "chapter": 2,
    "name": "湖・左右対称",
    "theme": "",
-   "map": "...........~...~....~...~.............~...~........~....~...~....~...~...........",
    "size": [
     6,
     12
    ],
    "grid": ".......~..~..~..~..~..~........~..~..~..~.....~..~..~..~..~..~..~.......",
-   "map9": ".......~..~..~..~..~..~........~..~..~..~.....~..~..~..~..~..~..~.......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST10",
@@ -647,16 +1005,33 @@
    "chapter": 2,
    "name": "湖・上下対称",
    "theme": "",
-   "map": "...................~~~~.~~.....................~...~...~~.~.~~...................",
    "size": [
     6,
     12
    ],
    "grid": "..................~~~~~~...................~..~.~~~~~~..................",
-   "map9": "..................~~~~~~...................~..~.~~~~~~..................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST11",
@@ -664,16 +1039,33 @@
    "chapter": 2,
    "name": "湖・十字",
    "theme": "",
-   "map": "~~~...~~~~~~...~~~~~~...~~~......~....................~~~...~~~~~~...~~~~~~...~~~",
    "size": [
     6,
     12
    ],
    "grid": "~~..~~~~..~~~~..~~~~..~~....~...................~~..~~~~..~~~~..~~~~..~~",
-   "map9": "~~..~~~~..~~~~..~~~~..~~....~...................~~..~~~~..~~~~..~~~~..~~",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST12",
@@ -681,16 +1073,33 @@
    "chapter": 2,
    "name": "湖・リング",
    "theme": "",
-   "map": "....~..............~..~.......~~~......~~~....~.~~~.......~......~..........~....",
    "size": [
     6,
     12
    ],
    "grid": "..~~..............~~~~....~~....~~....~~..~~~~....~~...~.....~......~~..",
-   "map9": "..~~..............~~~~....~~....~~....~~..~~~~....~~...~.....~......~~..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST13",
@@ -698,16 +1107,33 @@
    "chapter": 2,
    "name": "湖・ジグザグ",
    "theme": "",
-   "map": "..~....~............~....~...~....~............~~...~............~..~.~...~....~.",
    "size": [
     6,
     12
    ],
    "grid": ".~..~~.............~..~~.~..~~.............~~.~~.......~.~~~.~.~~~.~..~~",
-   "map9": ".~..~~.............~..~~.~..~~.............~~.~~.......~.~~~.~.~~~.~..~~",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST14",
@@ -715,16 +1141,33 @@
    "chapter": 2,
    "name": "湖・外周",
    "theme": "",
-   "map": "..............................~~~......~~~......~~~.............~................",
    "size": [
     6,
     12
    ],
    "grid": "..........................~~....~~....~~....~~........~~....~~..........",
-   "map9": "..........................~~....~~....~~....~~........~~....~~..........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST15",
@@ -732,16 +1175,33 @@
    "chapter": 2,
    "name": "湖・中央広場",
    "theme": "",
-   "map": "....................~...~...~...................~.......~...~~...................",
    "size": [
     6,
     12
    ],
    "grid": "...................~..~.~~..................~....~..~~..................",
-   "map9": "...................~..~.~~..................~....~..~~..................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST16",
@@ -749,16 +1209,33 @@
    "chapter": 2,
    "name": "湖・分岐",
    "theme": "",
-   "map": "............~........~.~......~.~...............~.~......~.~.....................",
    "size": [
     6,
     12
    ],
    "grid": "........~.....~.....~~....~~................~~....~~....................",
-   "map9": "........~.....~.....~~....~~................~~....~~....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST17",
@@ -766,16 +1243,33 @@
    "chapter": 2,
    "name": "湖・狭路",
    "theme": "",
-   "map": "..~....~............~....~...~....~...~....~...~....~...~....~...~.~..~..........",
    "size": [
     6,
     12
    ],
    "grid": ".~..~~.............~..~~.~..~~.~..~~.~..~~.~..~~.~..~~.~~~~~.~~~~~......",
-   "map9": ".~..~~.............~..~~.~..~~.~..~~.~..~~.~..~~.~..~~.~~~~~.~~~~~......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST18",
@@ -783,16 +1277,33 @@
    "chapter": 2,
    "name": "湖・多島",
    "theme": "",
-   "map": "...~~~......~.~.......~....~~.~~~.~~...~~~...~~.~~~.~~....~.......~.~......~~~...",
    "size": [
     6,
     12
    ],
    "grid": "..~~....~~....~~....~~..~~~~~~..~~....~~..~~~~~~..~~....~~....~~....~~..",
-   "map9": "..~~....~~....~~....~~..~~~~~~..~~....~~..~~~~~~..~~....~~....~~....~~..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST19",
@@ -800,16 +1311,33 @@
    "chapter": 2,
    "name": "湖・複合",
    "theme": "",
-   "map": "....................~...~....~...~.............~...~....~...~....................",
    "size": [
     6,
     12
    ],
    "grid": "...................~..~..~..~..............~..~..~..~...................",
-   "map9": "...................~..~..~..~..............~..~..~..~...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C2-ST20",
@@ -817,24 +1345,38 @@
    "chapter": 2,
    "name": "湖・章末",
    "theme": "",
-   "map": "....................~~~~~....~BB.~....~BB.~....~...~....~~~~~....................",
    "size": [
     6,
     12
    ],
    "grid": "...................~~~~..~BB~..~BB~..~..~..~..~..~~~~...................",
-   "map9": "...................~~~~..~BB~..~BB~..~..~..~..~..~~~~...................",
    "turns": 3,
    "goalType": "boss_hits",
    "goalTarget": 10,
+   "isBoss": true,
    "boss": {
     "row": 3,
     "col": 3,
     "height": 2,
     "width": 2
    },
-   "isBoss": true,
-   "requiredHits": 10
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST01",
@@ -842,16 +1384,33 @@
    "chapter": 3,
    "name": "森林・基本",
    "theme": "",
-   "map": "..........................................................T.........T............",
    "size": [
     6,
     12
    ],
    "grid": "..................................................TT.....T.....T........",
-   "map9": "..................................................TT.....T.....T........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST02",
@@ -859,16 +1418,33 @@
    "chapter": 3,
    "name": "森林・角落とし",
    "theme": "",
-   "map": "TT.....TTT.......T....T........T.................T.............T.......TTT.....TT",
    "size": [
     6,
     12
    ],
    "grid": "TT..TTT....TT....T..TT....TT................TT........T....TT....TTT..TT",
-   "map9": "TT..TTT....TT....T..TT....TT................TT........T....TT....TTT..TT",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST03",
@@ -876,16 +1452,33 @@
    "chapter": 3,
    "name": "森林・中央空洞",
    "theme": "",
-   "map": "..............................TTTT.....TTT......TTT..............................",
    "size": [
     6,
     12
    ],
    "grid": "..........................TTT...TT....TT....TT..........................",
-   "map9": "..........................TTT...TT....TT....TT..........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST04",
@@ -893,16 +1486,33 @@
    "chapter": 3,
    "name": "森林・縦回廊",
    "theme": "",
-   "map": ".....................T.TT...T.T.T......T.T......T.T.T....T.T.....................",
    "size": [
     6,
     12
    ],
    "grid": "....................TTT.TTTT....TT....TT....TTTT..TT....................",
-   "map9": "....................TTT.TTTT....TT....TT....TTTT..TT....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST05",
@@ -910,16 +1520,33 @@
    "chapter": 3,
    "name": "森林・横回廊",
    "theme": "",
-   "map": "................T...........TTTTTT.............TTTTT.............................",
    "size": [
     6,
     12
    ],
    "grid": "..........TT....TT......TTTTT..............TTTT.........................",
-   "map9": "..........TT....TT......TTTTT..............TTTT.........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST06",
@@ -927,16 +1554,33 @@
    "chapter": 3,
    "name": "森林・二分割",
    "theme": "",
-   "map": "....T........T..T..............T........T........T.T...............T........T....",
    "size": [
     6,
     12
    ],
    "grid": "..TT....TTTT..TTTT........TT....TT....TT....TTT.........TT....TT....TT..",
-   "map9": "..TT....TTTT..TTTT........TT....TT....TT....TTT.........TT....TT....TT..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST07",
@@ -944,16 +1588,33 @@
    "chapter": 3,
    "name": "森林・三島",
    "theme": "",
-   "map": ".....................TTT......TTTT.....TTT......TTT......TTT.....................",
    "size": [
     6,
     12
    ],
    "grid": "....................TT....TTT...TT....TT....TT....TT....................",
-   "map9": "....................TT....TTT...TT....TT....TT....TT....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST08",
@@ -961,16 +1622,33 @@
    "chapter": 3,
    "name": "森林・斜め帯",
    "theme": "",
-   "map": ".....TTTT.....TTTT......TTT......TTT....T...TTT.......TTT......TTTT.....TTTTT....",
    "size": [
     6,
     12
    ],
    "grid": "...TTT...TTT...TTT....TT....TT..TT.T..TT.TTT....TT....TTT...TTT...TTTT..",
-   "map9": "...TTT...TTT...TTT....TT....TT..TT.T..TT.TTT....TT....TTT...TTT...TTTT..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST09",
@@ -978,16 +1656,33 @@
    "chapter": 3,
    "name": "森林・左右対称",
    "theme": "",
-   "map": "...........T...T....TT..T.............T.T.T.............T...T....T.T.T...........",
    "size": [
     6,
     12
    ],
    "grid": ".......T..T..T..T..TT.T........TTTT..TTTT........T..T..TTTT..TTTT.......",
-   "map9": ".......T..T..T..T..TT.T........TTTT..TTTT........T..T..TTTT..TTTT.......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST10",
@@ -995,16 +1690,33 @@
    "chapter": 3,
    "name": "森林・上下対称",
    "theme": "",
-   "map": "...................TT.T.TT.............................TT.T.TT....T..............",
    "size": [
     6,
     12
    ],
    "grid": "..................TTTTTT........................TTTTTT..T.....T.........",
-   "map9": "..................TTTTTT........................TTTTTT..T.....T.........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST11",
@@ -1012,16 +1724,33 @@
    "chapter": 3,
    "name": "森林・十字",
    "theme": "",
-   "map": "TTT...TTTTTT...TTTTTT...TTT...T...........T...........TTT...TTTTTT...TTTTTT...TTT",
    "size": [
     6,
     12
    ],
    "grid": "TT..TTTT..TTTT..TTTT..TT..T.......T.....T.......TT..TTTT..TTTT..TTTT..TT",
-   "map9": "TT..TTTT..TTTT..TTTT..TT..T.......T.....T.......TT..TTTT..TTTT..TTTT..TT",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST12",
@@ -1029,16 +1758,33 @@
    "chapter": 3,
    "name": "森林・リング",
    "theme": "",
-   "map": "..............................TTT......TTT....T.TTT..............................",
    "size": [
     6,
     12
    ],
    "grid": "..........................TT....TT....TT..TTTT..........................",
-   "map9": "..........................TT....TT....TT..TTTT..........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST13",
@@ -1046,16 +1792,33 @@
    "chapter": 3,
    "name": "森林・ジグザグ",
    "theme": "",
-   "map": "..T....T............T....T...T...TT............T.T..T............T....T...T....T.",
    "size": [
     6,
     12
    ],
    "grid": ".T..TT.............T..TT.T..TT.............TTTTT.......T..TT.T..TT.T..TT",
-   "map9": ".T..TT.............T..TT.T..TT.............TTTTT.......T..TT.T..TT.T..TT",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST14",
@@ -1063,16 +1826,33 @@
    "chapter": 3,
    "name": "森林・外周",
    "theme": "",
-   "map": "....................T.........TTT......TTT......TTT.....T........................",
    "size": [
     6,
     12
    ],
    "grid": "...................T......TT....TT....TT....TT...T......................",
-   "map9": "...................T......TT....TT....TT....TT...T......................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST15",
@@ -1080,16 +1860,33 @@
    "chapter": 3,
    "name": "森林・中央広場",
    "theme": "",
-   "map": "..........T.........T...T................T..............T...T........T...........",
    "size": [
     6,
     12
    ],
    "grid": "......TT....TT.....T..T..........T.....T.........T..T.....T.....T.......",
-   "map9": "......TT....TT.....T..T..........T.....T.........T..T.....T.....T.......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST16",
@@ -1097,16 +1894,33 @@
    "chapter": 3,
    "name": "森林・分岐",
    "theme": "",
-   "map": "...........T.........T.T......T.T.T.............T.T......T.T........T............",
    "size": [
     6,
     12
    ],
    "grid": ".......T.....T......TT....TTTT..............TT....TT.....T.....T........",
-   "map9": ".......T.....T......TT....TTTT..............TT....TT.....T.....T........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST17",
@@ -1114,16 +1928,33 @@
    "chapter": 3,
    "name": "森林・狭路",
    "theme": "",
-   "map": "..T....T............T....T...T....T...T....T..TT....T...T....T...T....T..........",
    "size": [
     6,
     12
    ],
    "grid": ".T..TT.............T..TT.T..TT.T..TT.T..TTTT..TT.T..TT.T..TT.T..TT......",
-   "map9": ".T..TT.............T..TT.T..TT.T..TT.T..TTTT..TT.T..TT.T..TT.T..TT......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST18",
@@ -1131,16 +1962,33 @@
    "chapter": 3,
    "name": "森林・多島",
    "theme": "",
-   "map": "...T.T......T.T............TT.TTT.TT.T.T.T...TT.TTT.TT..TT........T.T......T.T...",
    "size": [
     6,
     12
    ],
    "grid": "..TT....TT....TT........TTTTTTTTTT..TTTT..TTTTTT.TT.....TT....TT....TT..",
-   "map9": "..TT....TT....TT........TTTTTTTTTT..TTTT..TTTTTT.TT.....TT....TT....TT..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST19",
@@ -1148,16 +1996,33 @@
    "chapter": 3,
    "name": "森林・複合",
    "theme": "",
-   "map": "....................T...T....TT..T.............T...T....T..TT....T...............",
    "size": [
     6,
     12
    ],
    "grid": "...................T..T..TT.T..............T..T..T.TT..T.....T..........",
-   "map9": "...................T..T..TT.T..............T..T..T.TT..T.....T..........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C3-ST20",
@@ -1165,24 +2030,38 @@
    "chapter": 3,
    "name": "森林・章末",
    "theme": "",
-   "map": "............T.......TTTTT....TBB.T....TBB.T....T...T....TTTTT.......T............",
    "size": [
     6,
     12
    ],
    "grid": "........T.....T....TTTT..TBBT..TBBT..T..T..T..T..TTTT....T.....T........",
-   "map9": "........T.....T....TTTT..TBBT..TBBT..T..T..T..T..TTTT....T.....T........",
    "turns": 3,
    "goalType": "boss_hits",
    "goalTarget": 10,
+   "isBoss": true,
    "boss": {
     "row": 3,
     "col": 3,
     "height": 2,
     "width": 2
    },
-   "isBoss": true,
-   "requiredHits": 10
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST01",
@@ -1190,16 +2069,33 @@
    "chapter": 4,
    "name": "岩盤・基本",
    "theme": "",
-   "map": "............................R...........R........................................",
    "size": [
     6,
     12
    ],
    "grid": "........................RR......RR....RR................................",
-   "map9": "........................RR......RR....RR................................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST02",
@@ -1207,16 +2103,33 @@
    "chapter": 4,
    "name": "岩盤・角落とし",
    "theme": "",
-   "map": "RR.....RRR.R.....R.............R.R...........................R.R.......RRR.....RR",
    "size": [
     6,
     12
    ],
    "grid": "RR..RRRR...RRR...R........RRR.......................RRR....RR....RRR..RR",
-   "map9": "RR..RRRR...RRR...R........RRR.......................RRR....RR....RRR..RR",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST03",
@@ -1224,16 +2137,33 @@
    "chapter": 4,
    "name": "岩盤・中央空洞",
    "theme": "",
-   "map": "..............................RRR......RRRR.....RRR.........R....................",
    "size": [
     6,
     12
    ],
    "grid": "..........................RR....RRR...RRR...RR......R...................",
-   "map9": "..........................RR....RRR...RRR...RR......R...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST04",
@@ -1241,16 +2171,33 @@
    "chapter": 4,
    "name": "岩盤・縦回廊",
    "theme": "",
-   "map": ".....................R.R......R.R......R.R......RRR......R.R........R.R..........",
    "size": [
     6,
     12
    ],
    "grid": "....................RR....RR....RR....RR....RR....RR.....RRR...RRR......",
-   "map9": "....................RR....RR....RR....RR....RR....RR.....RRR...RRR......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST05",
@@ -1258,16 +2205,33 @@
    "chapter": 4,
    "name": "岩盤・横回廊",
    "theme": "",
-   "map": "....................R........RRRRR.............RRRRR.......R....R................",
    "size": [
     6,
     12
    ],
    "grid": "...................R.....RRRR..............RRRR....R..RR....RR..........",
-   "map9": "...................R.....RRRR..............RRRR....R..RR....RR..........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST06",
@@ -1275,16 +2239,33 @@
    "chapter": 4,
    "name": "岩盤・二分割",
    "theme": "",
-   "map": "....R........R.......R.........R........R........R.................RR.......R....",
    "size": [
     6,
     12
    ],
    "grid": "..RR....RR....RR....R.....RR....RR....RR....RR..........RR....RR....RR..",
-   "map9": "..RR....RR....RR....R.....RR....RR....RR....RR..........RR....RR....RR..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST07",
@@ -1292,16 +2273,33 @@
    "chapter": 4,
    "name": "岩盤・三島",
    "theme": "",
-   "map": ".....................RRR......RRR.R....RRR......RRR......RRR.....................",
    "size": [
     6,
     12
    ],
    "grid": "....................RR....RRRR..RR....RR....RR....RR....................",
-   "map9": "....................RR....RRRR..RR....RR....RR....RR....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST08",
@@ -1309,16 +2307,33 @@
    "chapter": 4,
    "name": "岩盤・斜め帯",
    "theme": "",
-   "map": ".....RRRR.....RRRR......RRR.......RR......R.RRR.......RRR......RRRR.....RRRRR....",
    "size": [
     6,
     12
    ],
    "grid": "...RRR...RRR...RRR....RR....RR....RR....RRRR....RR....RRR...RRR...RRRR..",
-   "map9": "...RRR...RRR...RRR....RR....RR....RR....RRRR....RR....RRR...RRR...RRRR..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST09",
@@ -1326,16 +2341,33 @@
    "chapter": 4,
    "name": "岩盤・左右対称",
    "theme": "",
-   "map": "...........R...R....R.R.R.............RR..R......R......R...R....RR..R...........",
    "size": [
     6,
     12
    ],
    "grid": ".......R..R..R..R..RRRR........RR.R..RR.R...RR...R..R..RR.R..RR.R.......",
-   "map9": ".......R..R..R..R..RRRR........RR.R..RR.R...RR...R..R..RR.R..RR.R.......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST10",
@@ -1343,16 +2375,33 @@
    "chapter": 4,
    "name": "岩盤・上下対称",
    "theme": "",
-   "map": "...................RR.R.RR......R................R.....RR.R.RR...................",
    "size": [
     6,
     12
    ],
    "grid": "..................RRRRRR...R................RR..RRRRRR..................",
-   "map9": "..................RRRRRR...R................RR..RRRRRR..................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST11",
@@ -1360,16 +2409,33 @@
    "chapter": 4,
    "name": "岩盤・十字",
    "theme": "",
-   "map": "RRR...RRRRRR...RRRRRR...RRR.......R...R....R..........RRR...RRRRRR...RRRRRR...RRR",
    "size": [
     6,
     12
    ],
    "grid": "RR..RRRR..RRRR..RRRR..RR....RR.R..RR.R..RR......RR..RRRR..RRRR..RRRR..RR",
-   "map9": "RR..RRRR..RRRR..RRRR..RR....RR.R..RR.R..RR......RR..RRRR..RRRR..RRRR..RR",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST12",
@@ -1377,16 +2443,33 @@
    "chapter": 4,
    "name": "岩盤・リング",
    "theme": "",
-   "map": "..............R...............RRR......RRR......RRR..............RR..............",
    "size": [
     6,
     12
    ],
    "grid": ".........R.....R..........RR....RR....RR....RR.........RR....RR.........",
-   "map9": ".........R.....R..........RR....RR....RR....RR.........RR....RR.........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST13",
@@ -1394,16 +2477,33 @@
    "chapter": 4,
    "name": "岩盤・ジグザグ",
    "theme": "",
-   "map": "..R....R............R...RR...R..R.R............R....R..R.........RR...R...R....R.",
    "size": [
     6,
     12
    ],
    "grid": ".R..RR.............R..RR.R.RRR.............R..RRRR.....RR.RR.RR.RR.R..RR",
-   "map9": ".R..RR.............R..RR.R.RRR.............R..RRRR.....RR.RR.RR.RR.R..RR",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST14",
@@ -1411,16 +2511,33 @@
    "chapter": 4,
    "name": "岩盤・外周",
    "theme": "",
-   "map": "..........R...R...............RRR......RRR......RRR.........R....................",
    "size": [
     6,
     12
    ],
    "grid": "......RR.R..RR.R..........RR....RR....RR....RR......R...................",
-   "map9": "......RR.R..RR.R..........RR....RR....RR....RR......R...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST15",
@@ -1428,16 +2545,33 @@
    "chapter": 4,
    "name": "岩盤・中央広場",
    "theme": "",
-   "map": "...................RR...R....R....................R.....R...R....................",
    "size": [
     6,
     12
    ],
    "grid": "..................RR..R..R...................R...R..R...................",
-   "map9": "..................RR..R..R...................R...R..R...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST16",
@@ -1445,16 +2579,33 @@
    "chapter": 4,
    "name": "岩盤・分岐",
    "theme": "",
-   "map": "...............R.....R.R.....RR.R.......R.......R.R......R.R.....................",
    "size": [
     6,
     12
    ],
    "grid": "..........R.....R...RR...RRR....RR....RR....RR....RR....................",
-   "map9": "..........R.....R...RR...RRR....RR....RR....RR....RR....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST17",
@@ -1462,16 +2613,33 @@
    "chapter": 4,
    "name": "岩盤・狭路",
    "theme": "",
-   "map": "..R....R.......RR...R....R...R....R...R....R...R....R...R....R...R.R..R..........",
    "size": [
     6,
     12
    ],
    "grid": ".R..RR....RR....RR.R..RR.R..RR.R..RR.R..RR.R..RR.R..RR.RRRRR.RRRRR......",
-   "map9": ".R..RR....RR....RR.R..RR.R..RR.R..RR.R..RR.R..RR.R..RR.RRRRR.RRRRR......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST18",
@@ -1479,16 +2647,33 @@
    "chapter": 4,
    "name": "岩盤・多島",
    "theme": "",
-   "map": "...R.R......R.RR...........RR.RRR.RR.R.R.R...RR.RRR.RR.R..........R.R......R.R...",
    "size": [
     6,
     12
    ],
    "grid": "..RR....RRR...RRR.......RRRRRRRRRR..RRRR..RRRRRRRR......RR....RR....RR..",
-   "map9": "..RR....RRR...RRR.......RRRRRRRRRR..RRRR..RRRRRRRR......RR....RR....RR..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST19",
@@ -1496,16 +2681,33 @@
    "chapter": 4,
    "name": "岩盤・複合",
    "theme": "",
-   "map": "....................R.R.R....R...R.............R...R....R...R....R...R...........",
    "size": [
     6,
     12
    ],
    "grid": "...................RRRR..R..R..............R..R..R..R..R..R..R..R.......",
-   "map9": "...................RRRR..R..R..............R..R..R..R..R..R..R..R.......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C4-ST20",
@@ -1513,24 +2715,38 @@
    "chapter": 4,
    "name": "岩盤・章末",
    "theme": "",
-   "map": "....................RRRRR....RBB.R....RBB.R....R.R.R....RRRRR....................",
    "size": [
     6,
     12
    ],
    "grid": "...................RRRR..RBBR..RBBR..R..R..RRRR..RRRR...................",
-   "map9": "...................RRRR..RBBR..RBBR..R..R..RRRR..RRRR...................",
    "turns": 3,
    "goalType": "boss_hits",
    "goalTarget": 10,
+   "isBoss": true,
    "boss": {
     "row": 3,
     "col": 3,
     "height": 2,
     "width": 2
    },
-   "isBoss": true,
-   "requiredHits": 10
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST01",
@@ -1538,16 +2754,33 @@
    "chapter": 5,
    "name": "火山・基本",
    "theme": "",
-   "map": "..........................................^......................................",
    "size": [
     6,
     12
    ],
    "grid": "..................................^.....^...............................",
-   "map9": "..................................^.....^...............................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST02",
@@ -1555,16 +2788,33 @@
    "chapter": 5,
    "name": "火山・角落とし",
    "theme": "",
-   "map": "^^.....^^^.......^............................^................^^......^^^.....^^",
    "size": [
     6,
     12
    ],
    "grid": "^^..^^^....^^....^........................^^..........^^...^^^...^^^..^^",
-   "map9": "^^..^^^....^^....^........................^^..........^^...^^^...^^^..^^",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST03",
@@ -1572,16 +2822,33 @@
    "chapter": 5,
    "name": "火山・中央空洞",
    "theme": "",
-   "map": "........................^.....^^^......^^^......^^^..............................",
    "size": [
     6,
     12
    ],
    "grid": "......................^...^^....^^....^^....^^..........................",
-   "map9": "......................^...^^....^^....^^....^^..........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST04",
@@ -1589,16 +2856,33 @@
    "chapter": 5,
    "name": "火山・縦回廊",
    "theme": "",
-   "map": ".....................^.^.....^^.^....^.^.^......^.^......^.^.....................",
    "size": [
     6,
     12
    ],
    "grid": "....................^^...^^^..^^^^..^^^^....^^....^^....................",
-   "map9": "....................^^...^^^..^^^^..^^^^....^^....^^....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST05",
@@ -1606,16 +2890,33 @@
    "chapter": 5,
    "name": "火山・横回廊",
    "theme": "",
-   "map": ".............................^^^^^^..^.........^^^^^.............................",
    "size": [
     6,
     12
    ],
    "grid": ".........................^^^^^^^....^^.....^^^^.........................",
-   "map9": ".........................^^^^^^^....^^.....^^^^.........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST06",
@@ -1623,16 +2924,33 @@
    "chapter": 5,
    "name": "火山・二分割",
    "theme": "",
-   "map": "....^........^.................^........^........^........^........^........^....",
    "size": [
     6,
     12
    ],
    "grid": "..^^....^^....^^..........^^....^^....^^....^^....^^....^^....^^....^^..",
-   "map9": "..^^....^^....^^..........^^....^^....^^....^^....^^....^^....^^....^^..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST07",
@@ -1640,16 +2958,33 @@
    "chapter": 5,
    "name": "火山・三島",
    "theme": "",
-   "map": ".....................^^^......^^^......^^^......^^^......^^^.....................",
    "size": [
     6,
     12
    ],
    "grid": "....................^^....^^....^^....^^....^^....^^....................",
-   "map9": "....................^^....^^....^^....^^....^^....^^....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST08",
@@ -1657,16 +2992,33 @@
    "chapter": 5,
    "name": "火山・斜め帯",
    "theme": "",
-   "map": ".....^^^^.....^^^^......^^^.......^^........^^^.......^^^......^^^^.....^^^^^....",
    "size": [
     6,
     12
    ],
    "grid": "...^^^...^^^...^^^....^^....^^.....^.....^^^....^^....^^^...^^^...^^^^..",
-   "map9": "...^^^...^^^...^^^....^^....^^.....^.....^^^....^^....^^^...^^^...^^^^..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST09",
@@ -1674,16 +3026,33 @@
    "chapter": 5,
    "name": "火山・左右対称",
    "theme": "",
-   "map": "...........^...^....^...^.............^...^.............^...^....^...^...........",
    "size": [
     6,
     12
    ],
    "grid": ".......^..^..^..^..^..^........^..^..^..^........^..^..^..^..^..^.......",
-   "map9": ".......^..^..^..^..^..^........^..^..^..^........^..^..^..^..^..^.......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST10",
@@ -1691,16 +3060,33 @@
    "chapter": 5,
    "name": "火山・上下対称",
    "theme": "",
-   "map": "...................^^.^.^^..^..........................^^.^.^^...................",
    "size": [
     6,
     12
    ],
    "grid": "..................^^^^^^^^......................^^^^^^..................",
-   "map9": "..................^^^^^^^^......................^^^^^^..................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST11",
@@ -1708,16 +3094,33 @@
    "chapter": 5,
    "name": "火山・十字",
    "theme": "",
-   "map": "^^^...^^^^^^...^^^^^^...^^^...........................^^^...^^^^^^...^^^^^^...^^^",
    "size": [
     6,
     12
    ],
    "grid": "^^..^^^^..^^^^..^^^^..^^........................^^..^^^^..^^^^..^^^^..^^",
-   "map9": "^^..^^^^..^^^^..^^^^..^^........................^^..^^^^..^^^^..^^^^..^^",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST12",
@@ -1725,16 +3128,33 @@
    "chapter": 5,
    "name": "火山・リング",
    "theme": "",
-   "map": "................^.............^^^......^^^......^^^..............................",
    "size": [
     6,
     12
    ],
    "grid": "..........^^....^^........^^....^^....^^....^^..........................",
-   "map9": "..........^^....^^........^^....^^....^^....^^..........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST13",
@@ -1742,16 +3162,33 @@
    "chapter": 5,
    "name": "火山・ジグザグ",
    "theme": "",
-   "map": "..^....^............^....^...^....^............^....^......^.....^....^...^....^.",
    "size": [
     6,
     12
    ],
    "grid": ".^..^^.............^..^^.^..^^.............^..^^...^...^..^^.^..^^.^..^^",
-   "map9": ".^..^^.............^..^^.^..^^.............^..^^...^...^..^^.^..^^.^..^^",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST14",
@@ -1759,16 +3196,33 @@
    "chapter": 5,
    "name": "火山・外周",
    "theme": "",
-   "map": "..............................^^^......^^^......^^^..............^...............",
    "size": [
     6,
     12
    ],
    "grid": "..........................^^....^^....^^....^^.........^.....^..........",
-   "map9": "..........................^^....^^....^^....^^.........^.....^..........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST15",
@@ -1776,16 +3230,33 @@
    "chapter": 5,
    "name": "火山・中央広場",
    "theme": "",
-   "map": "....................^..^^.......................^.......^...^....................",
    "size": [
     6,
     12
    ],
    "grid": "...................^.^^.....................^....^..^...................",
-   "map9": "...................^.^^.....................^....^..^...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST16",
@@ -1793,16 +3264,33 @@
    "chapter": 5,
    "name": "火山・分岐",
    "theme": "",
-   "map": ".....................^.^......^.^^..............^^^......^.^.....................",
    "size": [
     6,
     12
    ],
    "grid": "....................^^....^^^...............^^....^^....................",
-   "map9": "....................^^....^^^...............^^....^^....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST17",
@@ -1810,16 +3298,33 @@
    "chapter": 5,
    "name": "火山・狭路",
    "theme": "",
-   "map": "..^....^............^.^..^...^....^...^....^...^....^...^....^...^....^..........",
    "size": [
     6,
     12
    ],
    "grid": ".^..^^.............^^^^^.^..^^.^..^^.^..^^.^..^^.^..^^.^..^^.^..^^......",
-   "map9": ".^..^^.............^^^^^.^..^^.^..^^.^..^^.^..^^.^..^^.^..^^.^..^^......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST18",
@@ -1827,16 +3332,33 @@
    "chapter": 5,
    "name": "火山・多島",
    "theme": "",
-   "map": "...^.^......^.^............^^.^^^.^^...^.^...^^.^^^.^^............^.^......^.^...",
    "size": [
     6,
     12
    ],
    "grid": "..^^....^^....^^........^^^^^^..^^....^^..^^^^^^........^^....^^....^^..",
-   "map9": "..^^....^^....^^........^^^^^^..^^....^^..^^^^^^........^^....^^....^^..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST19",
@@ -1844,16 +3366,33 @@
    "chapter": 5,
    "name": "火山・複合",
    "theme": "",
-   "map": "....................^...^....^...^.........^...^...^....^...^....................",
    "size": [
     6,
     12
    ],
    "grid": "...................^..^..^..^.....^^....^^.^..^..^..^...................",
-   "map9": "...................^..^..^..^.....^^....^^.^..^..^..^...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C5-ST20",
@@ -1861,24 +3400,38 @@
    "chapter": 5,
    "name": "火山・章末",
    "theme": "",
-   "map": "...................^^^^^^....^BB.^....^BB.^....^...^....^^^^^....................",
    "size": [
     6,
     12
    ],
    "grid": "..................^^^^^..^BB^..^BB^..^..^..^..^..^^^^...................",
-   "map9": "..................^^^^^..^BB^..^BB^..^..^..^..^..^^^^...................",
    "turns": 3,
    "goalType": "boss_hits",
    "goalTarget": 10,
+   "isBoss": true,
    "boss": {
     "row": 3,
     "col": 3,
     "height": 2,
     "width": 2
    },
-   "isBoss": true,
-   "requiredHits": 10
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST01",
@@ -1886,16 +3439,33 @@
    "chapter": 6,
    "name": "王国・基本",
    "theme": "",
-   "map": "..............#..................................................................",
    "size": [
     6,
     12
    ],
    "grid": ".........#.....#........................................................",
-   "map9": ".........#.....#........................................................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST02",
@@ -1903,16 +3473,33 @@
    "chapter": 6,
    "name": "王国・角落とし",
    "theme": "",
-   "map": "##.....###.......#....................#...#....#...............#...#...###.....##",
    "size": [
     6,
     12
    ],
    "grid": "##..###....##....#.............#..#..#..#..#..........#.##.##.##.###..##",
-   "map9": "##..###....##....#.............#..#..#..#..#..........#.##.##.##.###..##",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST03",
@@ -1920,16 +3507,33 @@
    "chapter": 6,
    "name": "王国・中央空洞",
    "theme": "",
-   "map": "........................#.....####.....####.....###.........#....................",
    "size": [
     6,
     12
    ],
    "grid": "......................#...###...###...###...##......#...................",
-   "map9": "......................#...###...###...###...##......#...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST04",
@@ -1937,16 +3541,33 @@
    "chapter": 6,
    "name": "王国・縦回廊",
    "theme": "",
-   "map": "..........#..........#.#......#.#......#.#......#.#......###.....................",
    "size": [
     6,
     12
    ],
    "grid": "......##....##......##....##....##....##....##....##....................",
-   "map9": "......##....##......##....##....##....##....##....##....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST05",
@@ -1954,16 +3575,33 @@
    "chapter": 6,
    "name": "王国・横回廊",
    "theme": "",
-   "map": "...........#.................#####.............#####.............................",
    "size": [
     6,
     12
    ],
    "grid": ".......#.....#...........####..............####.........................",
-   "map9": ".......#.....#...........####..............####.........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST06",
@@ -1971,16 +3609,33 @@
    "chapter": 6,
    "name": "王国・二分割",
    "theme": "",
-   "map": "....#........#..............#..#.......##........#...............#.#..#.....#....",
    "size": [
     6,
     12
    ],
    "grid": "..##....##....##........####....##....##....##.........#####.#####..##..",
-   "map9": "..##....##....##........####....##....##....##.........#####.#####..##..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST07",
@@ -1988,16 +3643,33 @@
    "chapter": 6,
    "name": "王国・三島",
    "theme": "",
-   "map": "..............#......###......###......####.....###......###.....................",
    "size": [
     6,
     12
    ],
    "grid": ".........#.....#....##....##....###...###...##....##....................",
-   "map9": ".........#.....#....##....##....###...###...##....##....................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST08",
@@ -2005,16 +3677,33 @@
    "chapter": 6,
    "name": "王国・斜め帯",
    "theme": "",
-   "map": ".....####.....####......###.....#.##......#.###.......###......####.....#####....",
    "size": [
     6,
     12
    ],
    "grid": "...###...###...###....##...###....##....####....##....###...###...####..",
-   "map9": "...###...###...###....##...###....##....####....##....###...###...####..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST09",
@@ -2022,16 +3711,33 @@
    "chapter": 6,
    "name": "王国・左右対称",
    "theme": "",
-   "map": "...........#...#....#..##.............#...#.............#...#....#...#...........",
    "size": [
     6,
     12
    ],
    "grid": ".......#..#..#..#..#.##........#..#..#..#........#..#..#..#..#..#.......",
-   "map9": ".......#..#..#..#..#.##........#..#..#..#........#..#..#..#..#..#.......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST10",
@@ -2039,16 +3745,33 @@
    "chapter": 6,
    "name": "王国・上下対称",
    "theme": "",
-   "map": "...................####.##...............#.........#...##.#.##...................",
    "size": [
     6,
     12
    ],
    "grid": "..................######.........#.....#......#.######..................",
-   "map9": "..................######.........#.....#......#.######..................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST11",
@@ -2056,16 +3779,33 @@
    "chapter": 6,
    "name": "王国・十字",
    "theme": "",
-   "map": "###...######...######...###..............##...........###...######...######...###",
    "size": [
     6,
     12
    ],
    "grid": "##..####..####..####..##.........##....##.......##..####..####..####..##",
-   "map9": "##..####..####..####..##.........##....##.......##..####..####..####..##",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST12",
@@ -2073,16 +3813,33 @@
    "chapter": 6,
    "name": "王国・リング",
    "theme": "",
-   "map": "..............................####.....####.....###..............................",
    "size": [
     6,
     12
    ],
    "grid": "..........................###...###...###...##..........................",
-   "map9": "..........................###...###...###...##..........................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST13",
@@ -2090,16 +3847,33 @@
    "chapter": 6,
    "name": "王国・ジグザグ",
    "theme": "",
-   "map": "..#....#............#....#...#....#............#....#............#.#..#...#....#.",
    "size": [
     6,
     12
    ],
    "grid": ".#..##.............#..##.#..##.............#..##.......#####.#####.#..##",
-   "map9": ".#..##.............#..##.#..##.............#..##.......#####.#####.#..##",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST14",
@@ -2107,16 +3881,33 @@
    "chapter": 6,
    "name": "王国・外周",
    "theme": "",
-   "map": "..........#...................###......###......###..............#...............",
    "size": [
     6,
     12
    ],
    "grid": "......##....##............##....##....##....##.........#.....#..........",
-   "map9": "......##....##............##....##....##....##.........#.....#..........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST15",
@@ -2124,16 +3915,33 @@
    "chapter": 6,
    "name": "王国・中央広場",
    "theme": "",
-   "map": "............#.......#...#......#.....#..................#...#....................",
    "size": [
     6,
     12
    ],
    "grid": "........#.....#....#..#...##..##....##...........#..#...................",
-   "map9": "........#.....#....#..#...##..##....##...........#..#...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST16",
@@ -2141,16 +3949,33 @@
    "chapter": 6,
    "name": "王国・分岐",
    "theme": "",
-   "map": "...........#.........#.#......#.#...............#.#......#.#....#................",
    "size": [
     6,
     12
    ],
    "grid": ".......#.....#......##....##................##....##..##....##..........",
-   "map9": ".......#.....#......##....##................##....##..##....##..........",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST17",
@@ -2158,16 +3983,33 @@
    "chapter": 6,
    "name": "王国・狭路",
    "theme": "",
-   "map": "..#....#............#....#...#....#..##....#...#....#...#....#...#....#..........",
    "size": [
     6,
     12
    ],
    "grid": ".#..##.............#..##.#..####..####..##.#..##.#..##.#..##.#..##......",
-   "map9": ".#..##.............#..##.#..####..####..##.#..##.#..##.#..##.#..##......",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST18",
@@ -2175,16 +4017,33 @@
    "chapter": 6,
    "name": "王国・多島",
    "theme": "",
-   "map": "...#.#......#.##...........##.###.##...#.#...##.###.##...#........###......#.#...",
    "size": [
     6,
     12
    ],
    "grid": "..##....###...###.......######..##....##..######..#.....##....##....##..",
-   "map9": "..##....###...###.......######..##....##..######..#.....##....##....##..",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST19",
@@ -2192,16 +4051,33 @@
    "chapter": 6,
    "name": "王国・複合",
    "theme": "",
-   "map": "....................#...##...#.#.#.............#...##...#...#....................",
    "size": [
     6,
     12
    ],
    "grid": "...................#..##.####..............#..##.#..#...................",
-   "map9": "...................#..##.####..............#..##.#..#...................",
    "turns": 3,
    "goalType": "score",
-   "isBoss": false
+   "goalTarget": null,
+   "isBoss": false,
+   "boss": null,
+   "requiredHits": null,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   },
   {
    "id": "C6-ST20",
@@ -2209,24 +4085,38 @@
    "chapter": 6,
    "name": "王国・章末",
    "theme": "",
-   "map": "##.....###.......#...#.#......BB.......BB.......#.#............#.......###.....##",
    "size": [
     6,
     12
    ],
    "grid": "##..###....##....#..##....BB....BB..........##........#....##....###..##",
-   "map9": "##..###....##....#..##....BB....BB..........##........#....##....###..##",
    "turns": 3,
    "goalType": "boss_hits",
    "goalTarget": 10,
+   "isBoss": true,
    "boss": {
     "row": 3,
     "col": 3,
     "height": 2,
     "width": 2
    },
-   "isBoss": true,
-   "requiredHits": 10
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 36,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1.5,
+    "SI": 1.5,
+    "KU": 1.0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
   }
  ]
 }
