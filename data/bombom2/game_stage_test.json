@@ -1,5 +1,5 @@
 {
- "version": 14,
+ "version": 15,
  "openStages": 120,
  "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
@@ -1081,7 +1081,7 @@
     "FRM": 0
    },
    "tutorialItem": null,
-   "hitsOverride": null,
+   "hitsOverride": 30,
    "seedMult": 1.0,
    "rocks": 3,
    "layout": null
@@ -1138,7 +1138,7 @@
     "FRM": 0
    },
    "tutorialItem": null,
-   "hitsOverride": null,
+   "hitsOverride": 50,
    "seedMult": 1.0,
    "rocks": 3,
    "layout": null
