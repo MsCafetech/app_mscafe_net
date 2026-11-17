@@ -1,5 +1,5 @@
 {
- "version": 9,
+ "version": 10,
  "openStages": 120,
  "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
  "stages": [
@@ -1467,8 +1467,8 @@
     "......",
     "~~~~~~",
     "......",
-    "......",
-    "......",
+    "..BB..",
+    "..BB..",
     ".~..~.",
     "~~~~~~",
     "......",
@@ -1476,17 +1476,17 @@
     "......"
    ],
    "turns": 3,
-   "goalType": "score",
-   "goalTarget": null,
-   "isBoss": false,
-   "boss": null,
-   "requiredHits": null,
-   "goals": {
-    "bronze": 15000,
-    "silver": 47000,
-    "gold": 76000,
-    "provisional": true
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
    },
+   "requiredHits": 10,
+   "goals": null,
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -2467,8 +2467,8 @@
     "......",
     "TTTTTT",
     "......",
-    "......",
-    "......",
+    "..BB..",
+    "..BB..",
     "......",
     "TTTTTT",
     "..T...",
@@ -2476,17 +2476,17 @@
     "......"
    ],
    "turns": 3,
-   "goalType": "score",
-   "goalTarget": null,
-   "isBoss": false,
-   "boss": null,
-   "requiredHits": null,
-   "goals": {
-    "bronze": 7100,
-    "silver": 26000,
-    "gold": 42000,
-    "provisional": true
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
    },
+   "requiredHits": 10,
+   "goals": null,
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -3467,8 +3467,8 @@
     "......",
     "RRRRRR",
     "...R..",
-    "......",
-    "......",
+    "..BB..",
+    "..BB..",
     "..RR..",
     "RRRRRR",
     "......",
@@ -3476,17 +3476,17 @@
     "......"
    ],
    "turns": 3,
-   "goalType": "score",
-   "goalTarget": null,
-   "isBoss": false,
-   "boss": null,
-   "requiredHits": null,
-   "goals": {
-    "bronze": 6300,
-    "silver": 23000,
-    "gold": 37000,
-    "provisional": true
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
    },
+   "requiredHits": 10,
+   "goals": null,
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -4467,8 +4467,8 @@
     "......",
     "^^^^^^",
     "^^....",
-    "......",
-    "......",
+    "..BB..",
+    "..BB..",
     "......",
     "^^^^^^",
     "......",
@@ -4476,17 +4476,17 @@
     "......"
    ],
    "turns": 3,
-   "goalType": "score",
-   "goalTarget": null,
-   "isBoss": false,
-   "boss": null,
-   "requiredHits": null,
-   "goals": {
-    "bronze": 6700,
-    "silver": 28000,
-    "gold": 45000,
-    "provisional": true
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
    },
+   "requiredHits": 10,
+   "goals": null,
    "bombRate": {
     "BL": 36,
     "GR": 20,
@@ -5467,8 +5467,8 @@
     "......",
     "######",
     "......",
-    "...#..",
-    "...#..",
+    ".BB#..",
+    ".BB#..",
     "....#.",
     "######",
     "......",
@@ -5476,17 +5476,17 @@
     "......"
    ],
    "turns": 3,
-   "goalType": "score",
-   "goalTarget": null,
-   "isBoss": false,
-   "boss": null,
-   "requiredHits": null,
-   "goals": {
-    "bronze": 5800,
-    "silver": 19000,
-    "gold": 31000,
-    "provisional": true
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "boss": {
+    "row": 5,
+    "col": 1,
+    "height": 2,
+    "width": 2
    },
+   "requiredHits": 10,
+   "goals": null,
    "bombRate": {
     "BL": 36,
     "GR": 20,
