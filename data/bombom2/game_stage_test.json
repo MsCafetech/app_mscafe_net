@@ -45,7 +45,7 @@
    "tutorialItem": null,
    "hitsOverride": null,
    "seedMult": 1.0,
-   "rocks": 3,
+   "rocks": 0,
    "layout": null
   },
   {
@@ -90,7 +90,7 @@
    "tutorialItem": null,
    "hitsOverride": null,
    "seedMult": 1.0,
-   "rocks": 3,
+   "rocks": 0,
    "layout": null
   },
   {
@@ -135,7 +135,7 @@
    "tutorialItem": null,
    "hitsOverride": null,
    "seedMult": 1.0,
-   "rocks": 3,
+   "rocks": 0,
    "layout": null
   },
   {
@@ -180,7 +180,7 @@
    "tutorialItem": null,
    "hitsOverride": null,
    "seedMult": 1.0,
-   "rocks": 3,
+   "rocks": 0,
    "layout": null
   },
   {
@@ -225,7 +225,7 @@
    "tutorialItem": null,
    "hitsOverride": null,
    "seedMult": 1.0,
-   "rocks": 3,
+   "rocks": 0,
    "layout": null
   },
   {
@@ -237,14 +237,14 @@
     12
    ],
    "grid": [
+    "......",
     "..  ..",
-    "..  ..",
+    "......",
     "......",
     "..  ..",
     "..  ..",
-    "..  ..",
     "......",
-    "..  ..",
+    "......",
     "..  ..",
     "..  ..",
     "......",
@@ -270,7 +270,7 @@
    "tutorialItem": null,
    "hitsOverride": null,
    "seedMult": 1.0,
-   "rocks": 3,
+   "rocks": 1,
    "layout": null
   },
   {
@@ -377,18 +377,18 @@
     12
    ],
    "grid": [
+    ".... .",
+    ".... .",
+    ".... .",
+    ".... .",
     ". .. .",
     ". .. .",
-    ". .. .",
-    ". .. .",
-    ". .. .",
-    ". .. .",
-    ". .. .",
-    ". .. .",
-    ". .. .",
-    ". .. .",
-    ". .. .",
-    ". .. ."
+    ". ....",
+    ". ....",
+    ". ....",
+    ". ....",
+    ". ....",
+    ".... ."
    ],
    "turns": 3,
    "goalType": "score",
@@ -423,15 +423,15 @@
    ],
    "grid": [
     "......",
-    "      ",
+    "......",
     "      ",
     "......",
     "......",
-    "      ",
+    "......",
     "      ",
     "......",
     "......",
-    "      ",
+    "......",
     "      ",
     "......"
    ],
