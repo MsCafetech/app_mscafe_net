@@ -1153,8 +1153,9 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
     url = modInFetch.InApiBase() & IIf(mMode = "dec", "/sse/config/v1/decryption-rules", "/sse/config/v1/security-rules")
     Set own = CreateObject("Scripting.Dictionary")
     Set allD = CreateObject("Scripting.Dictionary")
+    ' グローバル（All）のルールは pre・post のどちらで取得しても同じものが返るため、id で重複を除く（先に見つかった pre に出す）
+    Set seen = CreateObject("Scripting.Dictionary")
     For Each ps In Array("pre", "post")
-        Set seen = CreateObject("Scripting.Dictionary")
         Set allD(CStr(ps)) = New Collection
         For Each sc In scopes
             If NeedFetch(CStr(sc(1)), CStr(ps)) Then
