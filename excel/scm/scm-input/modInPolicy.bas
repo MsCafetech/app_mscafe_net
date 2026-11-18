@@ -268,7 +268,7 @@ Public Sub BuildChoices()
     FillBlock CH_URLC, OFF_URL, 6, 2, 0, 0, "", cf, "url"
     FillUrlInput cf
     FillBlock CH_HIP, OFF_HIPP, 8, 3, 0, 0, S8B, cf, "hip"
-    FillBlock CH_PG, OFF_PG, 12, 2, 0, 0, "", cf, "pg"
+    FillBlock CH_PG, OFF_PG, 12, 3, 0, 0, "", cf, "pg"
     AppendList CH_USER, S11, 4, "user"
     AppendApps cf
     Set mRef = BuildRefMap()
@@ -1012,7 +1012,7 @@ End Function
 
 Private Function GroupLabel(ByVal folder As String, ByVal pos As String) As String
     If SingleRB(folder) Then
-        If LCase$(pos) = "post" Then GroupLabel = ScopeLabel(folder) & " 【Post】※通常は使いません" Else GroupLabel = ScopeLabel(folder)
+        GroupLabel = ScopeLabel(folder)
         Exit Function
     End If
     GroupLabel = ScopeLabel(folder) & " " & IIf(LCase$(pos) = "post", "【Post】", "【Pre】")
@@ -1136,7 +1136,9 @@ End Function
 ' その folder・position を取得するか
 Private Function NeedFetch(ByVal folder As String, ByVal pos As String) As Boolean
     Dim ps As Variant
-    If SingleRB(folder) Then NeedFetch = True: Exit Function
+    ' Pre/Post なしのスコープ（GlobalProtect・Explicit Proxy・Remote Networks・Service Connections）は pre だけ取得する
+    '   （post で取得すると同じルールが返り、別スコープ扱いの NG になるため。Post は使わない）
+    If SingleRB(folder) Then NeedFetch = (LCase$(pos) = "pre"): Exit Function
     For Each ps In Positions()
         If ps = pos Then NeedFetch = True
     Next
@@ -1151,8 +1153,9 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
     url = modInFetch.InApiBase() & IIf(mMode = "dec", "/sse/config/v1/decryption-rules", "/sse/config/v1/security-rules")
     Set own = CreateObject("Scripting.Dictionary")
     Set allD = CreateObject("Scripting.Dictionary")
+    ' グローバル（All）のルールは pre・post のどちらで取得しても同じものが返るため、id で重複を除く（先に見つかった pre に出す）
+    Set seen = CreateObject("Scripting.Dictionary")
     For Each ps In Array("pre", "post")
-        Set seen = CreateObject("Scripting.Dictionary")
         Set allD(CStr(ps)) = New Collection
         For Each sc In scopes
             If NeedFetch(CStr(sc(1)), CStr(ps)) Then
@@ -1213,11 +1216,9 @@ Private Function FetchOrder(ByVal scopes As Collection) As Collection
         sel(CStr(sc(1))) = True
     Next
     For Each x In Array(Array("All", "pre"), Array("Shared", "pre"), Array("Mobile Users Container", "pre"), _
-                        Array("Mobile Users", "pre"), Array("Mobile Users", "post"), _
-                        Array("Mobile Users Explicit Proxy", "pre"), Array("Mobile Users Explicit Proxy", "post"), _
+                        Array("Mobile Users", "pre"), Array("Mobile Users Explicit Proxy", "pre"), _
                         Array("Mobile Users Container", "post"), _
-                        Array("Remote Networks", "pre"), Array("Remote Networks", "post"), _
-                        Array("Service Connections", "pre"), Array("Service Connections", "post"), _
+                        Array("Remote Networks", "pre"), Array("Service Connections", "pre"), _
                         Array("Shared", "post"), Array("All", "post"))
         If sel.Exists(CStr(x(0))) Then
             If SingleRB(CStr(x(0))) Then

@@ -47,10 +47,10 @@ R1, R2 = "参照_HIP選択肢", "参照_HIPベンダー一覧"
 S2B, S2C, S12, S13, R3 = "②-2既存セキュリティポリシー", "②-3既存復号ポリシー", "⑫セキュリティポリシー", "⑬復号ポリシー", "参照_ポリシー選択肢"
 
 # ---------------------------------------------------------------- styles
-THIN = Side(style="thin", color="999999")
+THIN = Side(style="thin", color="BFBFBF")
 BOX = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 F_IN = PatternFill("solid", fgColor="FFF2CC")      # 入力欄（黄）
-F_HEAD = PatternFill("solid", fgColor="1F4E78")    # 見出し
+F_HEAD = PatternFill("solid", fgColor="2F5597")    # 見出し（各ツールの登録変更削除シートと同じ）
 F_SUB = PatternFill("solid", fgColor="DDEBF7")     # 補助見出し
 F_CALC = PatternFill("solid", fgColor="F2F2F2")    # 関数
 F_BTN = PatternFill("solid", fgColor="F4B084")     # ボタン位置
@@ -413,7 +413,7 @@ def block_header(k, title, ncols, headers=None, widths=None):
     ws2.cell(6, c1).fill = F_BLK
     ws2.merge_cells(start_row=6, start_column=c1, end_row=6, end_column=min(c2, c1 + 7))
     ws2.cell(5, c1).value = "件数"
-    nc_ = off + (2 if k == "pg" else 3)
+    nc_ = off + 3
     ws2.cell(5, c1 + 1).value = f"=COUNTA({CL(nc_)}8:{CL(nc_)}{B_LAST[k]})"
     ws2.cell(5, c1 + 1).fill = F_CALC
     if headers:
@@ -469,8 +469,29 @@ for k, title, src, ncols, last in BLOCKS:
                 if c not in fcols and not (k == "pg" and c == 1):
                     d.value = s.value if SAMPLE else None
         if k == "pg":
+            # 元ツールは B=name … L=id。他のブロックと同じく B=id C=name に並べ替える（旧 L → B、旧 B～K → C～L）
+            wid = [ws2.column_dimensions[CL(off + c)].width for c in range(1, 13)]
+            for r in range(7, last + 1):
+                cells = [(ws2.cell(r, off + c).value, copy(ws2.cell(r, off + c)._style)) for c in range(1, 13)]
+                order = [cells[0], cells[11]] + cells[1:11]
+                for c, (v, st) in enumerate(order, 1):
+                    ws2.cell(r, off + c).value = v
+                    ws2.cell(r, off + c)._style = st
+            for c, w in enumerate([wid[0], wid[11] or 38] + wid[1:11], 1):
+                if w:
+                    ws2.column_dimensions[CL(off + c)].width = w
             for r in range(8, last + 1):
-                ws2.cell(r, off + 1).value = f'=IF({CL(off + 2)}{r}="","",ROW()-7)'
+                ws2.cell(r, off + 1).value = f'=IF({CL(off + 3)}{r}="","",ROW()-7)'
+        if k == "adr" and SAMPLE:
+            # type 列 = アドレスの種類（API の type は常に "container" のため）
+            for r in range(8, last + 1):
+                if ws2.cell(r, off + 3).value:
+                    ws2.cell(r, off + 13).value = next((h for c, h in ((4, "ip_netmask"), (5, "ip_range"), (6, "ip_wildcard"), (7, "fqdn"))
+                                                        if ws2.cell(r, off + c).value), None)
+        if k == "adrg" and SAMPLE:
+            for r in range(8, last + 1):
+                if ws2.cell(r, off + 3).value:
+                    ws2.cell(r, off + 11).value = "static" if ws2.cell(r, off + 4).value else ("dynamic" if ws2.cell(r, off + 5).value else None)
         if k == "hipp":
             ws2.cell(7, off + 8).value = "作業:⑧-2にあり"
         if k == "edl":
@@ -543,7 +564,7 @@ add_name("EDL_PRE_NAMES", f"OFFSET({q(S2)}!${pe}$8,0,0,MAX(1,COUNTA({q(S2)}!${pe
 add_name("OS_VALUES", f"OFFSET({q(R1)}!$B$5,0,0,MAX(1,COUNTA({q(R1)}!$B$5:$B$44)),1)")
 add_name("HIP_CERT_TOP", f"{q(R1)}!$D$5")
 add_name("HIP_CERT_NAMES", f"OFFSET({q(R1)}!$D$5,0,0,MAX(1,COUNTA({q(R1)}!$D$5:$D$1005)),1)")
-add_name("PROFGROUP_NAMES", blk_names("pg", 2))
+add_name("PROFGROUP_NAMES", blk_names("pg"))
 add_name("PROF_NAMES", blk_names("prof"))
 
 # ======================================================================
@@ -1281,6 +1302,45 @@ for c, w in zip("ABCDEF", (6, 22, 14, 30, 8, 90)):
     ws.column_dimensions[c].width = w
 ws["A5"] = "まだ実行していません（マクロ有効のブックで「一括チェック」を押してください）。"
 ws.sheet_properties.tabColor = "A6A6A6"
+
+# ---------------------------------------------------------------- 書式の統一
+# このブックで新しく作ったシートを、各ツールから写したシート（③〜⑨・⑫⑬）と同じ見た目にする
+#   1行目＝紺の帯に白字（Meiryo UI 14）、2行目＝説明（Meiryo UI 9 グレー）、本文＝Meiryo UI 10、
+#   見出し＝青（2F5597）に白字、入力欄（黄）は青字、「必須」は赤の札
+def unify_style(ws):
+    for c in list(ws._cells.values()):
+        f = c.font
+        if f.name in (None, "Calibri"):
+            sz = f.sz if f.sz and f.sz != 11 else 10
+            c.font = Font(name="Meiryo UI", size=sz, bold=f.b, italic=f.i, underline=f.u, color=copy(f.color))
+        fg = c.fill.fgColor.rgb if c.fill and c.fill.fill_type == "solid" else None
+        if fg in ("001F4E78", "FF1F4E78", "1F4E78"):
+            c.fill = PatternFill("solid", fgColor="2F5597")
+            c.font = Font(name="Meiryo UI", size=10, bold=True, color="FFFFFF")
+        elif fg in ("00FFF2CC", "FFFFF2CC", "FFF2CC") and (c.font.color is None or c.font.color.type != "rgb" or c.font.color.rgb in ("FF000000", "00000000")):
+            c.font = Font(name="Meiryo UI", size=10, bold=c.font.b, color="0000FF")
+        if c.row <= 7 and c.value == "必須":
+            c.font = Font(name="Meiryo UI", size=9, bold=True, color="FFFFFF")
+            c.fill = PatternFill("solid", fgColor="C00000")
+            c.alignment = Alignment(horizontal="center", vertical="center")
+    # 1行目（タイトル）：2行目の結合と同じ幅の紺帯
+    end = "F" if ws.title == "チェック結果" else "Q"
+    for m in ws.merged_cells.ranges:
+        if m.min_row == 2 and m.min_col == 1:
+            end = CL(m.max_col)
+    if not any(m.min_row <= 1 <= m.max_row for m in ws.merged_cells.ranges):
+        ws.merge_cells(f"A1:{end}1")
+    ws["A1"].font = Font(name="Meiryo UI", size=14, bold=True, color="FFFFFF")
+    ws["A1"].fill = PatternFill("solid", fgColor="1F3864")
+    ws["A1"].alignment = Alignment(vertical="center")
+    ws.row_dimensions[1].height = 26
+    if isinstance(ws["A2"].value, str) and ws["A2"].value and not ws["A2"].value.startswith("="):
+        ws["A2"].font = Font(name="Meiryo UI", size=9, color="595959")
+        ws["A2"].alignment = Alignment(wrap_text=True, vertical="center")
+
+
+for nm in (SS, S2, S7, S10, S11, "チェック結果"):
+    unify_style(wb[nm])
 
 # ---------------------------------------------------------------- 仕上げ
 for nm in wb.sheetnames:

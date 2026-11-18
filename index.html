@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 369,336 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 377,158 バイト）。</pre>';
   }
 });
 </script>
@@ -131,7 +131,7 @@ const ADMIN_ICON = 'data:image/jpeg;base64,' + [
   'BSoRQhKhFKFGajNFOSAgKURAERMkAREQBERAEQIgGaIiAIiIAiIgCZoiAKETJCBTmijJATmoUqEBOahMkVB//9k=',
 ].join('');
 const LEGAL_DATE = '2026年10月11日';
-const LEGAL_UPDATED = '2026年11月14日';
+const LEGAL_UPDATED = '2026年11月17日';
 const MAIL_R = '==QbvNmLslWYtdGQ5JXZ25SeuFWbukncyVWb';
 const TEAM = [
   { cls: 'pm',     role: 'PM',      name: 'M.A.C.Y', kind: 'human', desc: L('企画と優先順位を決める', 'Plans the menu and sets priorities') },
@@ -1224,8 +1224,8 @@ const APPS = [
         'Android 8.0 or later (portrait)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）',
         'Google Play (closed testing)')], [L('記録', 'Records'), L('進み具合・最高スコア・アイテムは、端末の中だけに保存します。', 'Progress, best scores and items are saved on the device only.')],
         [L('外部との通信', 'External connections'), L('広告の表示（Google AdMob）と、ステージなどのゲームデータの更新（GitHub）だけ。遊んだ記録は送りません。', 'Only to show ads (Google AdMob) and update game data such as stages (GitHub). Your play records are never sent.')], [L('言語', 'Languages'), L('日本語', 'Japanese')]],
-    note: L('クローズドテスト中のため、ステージ・得点・アイテムなどの内容は変わることがあります。進み具合やアイテムは端末の中に保存しているため、アンインストールすると消えます。',
-        'The app is in closed testing, so stages, scores, items and other details may change. Progress and items are saved on the device, so they are lost if you uninstall the app.'),
+    note: L('クローズドテスト中のため、ステージ・得点・アイテムなどの内容は変わることがあります。進み具合やアイテムは端末の中に保存しています（Android のバックアップが有効なら、機種変更のときに移せます）。',
+        'The app is in closed testing, so stages, scores, items and other details may change. Progress and items are saved on the device (if Android backup is on, they can move with you to a new device).'),
   },
   {
     id: 'furush', name: 'FuRUSH', icon: frIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_FR, test: TEST_URL_FR,
@@ -1738,11 +1738,14 @@ const LEGAL = [
     '本サイトは、文字のデザインのため Google Fonts から読み込みを行い、このとき IP アドレスやブラウザ情報などが Google に送信されます。',
     '本サイトのアクセスログ（IPアドレスなど）がホスティング側で記録され、約90日間保存します。アクセス解析ツールは使用していません。',
     'アプリで作成したマスク、チェック、ハイライト、落書き、栞、学習の履歴、設定は、端末内に保存し、店長には送信しません。取り込んだ PDF を店長が受け取ることもありません。',
-    'アプリ見守りは、VPN の仕組みを使って、アプリごとの通信の宛先・通信量・時刻を端末の中で記録します。記録は端末の中に25時間分だけ保存し、店長を含む外部へは送信しません。脅威リストと国データを取得するときは、配布元（urlhaus.abuse.ch、feodotracker.abuse.ch、www.spamhaus.org、download.db-ip.com）に接続します。このほかの通信は、広告の表示（Google AdMob）と、異常終了したときのクラッシュ報告（Firebase Crashlytics）だけです。',
+    'アプリ見守りは、VPN の仕組みを使って、アプリごとの通信の宛先・通信量・時刻を端末の中で記録します。記録は端末の中に25時間分だけ保存し、店長を含む外部へは送信しません。脅威リストと国データを取得するときは、配布元（urlhaus.abuse.ch、feodotracker.abuse.ch、raw.githubusercontent.com、www.spamhaus.org、download.db-ip.com）に接続します。このほかの通信は、広告の表示（Google AdMob）と、異常終了したときのクラッシュ報告（Firebase Crashlytics）だけです。',
+    'アプリ見守りの「回線の持ち主を調べる」を利用者が押して同意したときだけ、その通信先の IP アドレスを、インターネットの住所を管理する登録機関（APNIC・ARIN・RIPE NCC・LACNIC・AFRINIC の RDAP）に問い合わせ、どの登録機関に聞くかを決めるため IANA（data.iana.org）の一覧を取得します。送るのは調べる IP アドレスだけで、どのアプリの通信か・通信の中身・端末の情報は送りません。通信の仕組み上、登録機関には利用者の接続元 IP アドレスが届き、その取り扱いは各登録機関の方針に従います。結果は端末の中に30日間保存し、店長は受け取りません。同意はアプリのメニューからいつでも取り消せ、取り消すと保存した結果も削除します。',
     'アプリ見守りは、使っていない時間の通信を見分けるために各アプリの使用時間を、アプリ名を表示するために端末のアプリの一覧を参照します。これらも端末の外には送りません。',
     'タップる？は、タップの時刻と位置を端末の中で記録・分析し、結果を店長を含む外部へは送信しません。HOME のあいさつの読み上げには、端末の音声合成を使います。',
     'MP3変換は、利用者が選んだ動画を端末の中で読み込み、音声を取り出して変換します。動画、変換した音声、ファイル名を、店長を含む外部へ送信することはありません。試聴や変換の途中で作る一時ファイルはアプリの中に置き、使い終わると削除します。変換した音声は、利用者が選んだ保存先（音楽フォルダ、ダウンロードフォルダ、元の動画と同じフォルダ、指定したフォルダ）に保存します。フォルダを使うときは、Android のフォルダ選択で利用者が許可したフォルダにだけアクセスします。形式・音質・保存先などの設定は端末内に保存します。',
-    'BOMBOM は、ステージの進み具合・最高スコア・アイテムの所持数・設定を端末の中に保存し、店長を含む外部へは送信しません。BOMBOM の通信は、広告の表示（Google AdMob）と、ステージなどのゲームデータの更新のためのものです。ゲームデータは GitHub（GitHub, Inc.）の公開リポジトリから取得します（raw.githubusercontent.com）。アプリの起動時に更新の有無を確かめ、新しいデータがあればダウンロードします。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。',
+    'BOMBOM のプレイ履歴（ステージの記録、アイテム、ログインボーナスの受け取り、設定など）は、端末内に保存し、店長には送信しません。',
+    'BOMBOM は、アプリの起動時に、ステージ情報（ゲームのデータ）を GitHub（GitHub, Inc.）の公開リポジトリから取得することがあります（raw.githubusercontent.com）。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。取得できなかったときは、アプリに入っているデータで動きます。',
+    'BOMBOM のプレイ履歴は、端末の Android のバックアップ機能（Google のバックアップ）が有効な場合、利用者の Google アカウントのバックアップに含まれ、機種変更のときに新しい端末へ移せます。バックアップは Google が利用者のアカウントで管理するもので、店長は見ることも受け取ることもできません。バックアップに含めるのはプレイ履歴だけで、広告や Firebase のデータは含めません。',
     'MP3変換の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
     'アプリがサーバーと通信する際（出題データの取得など）、サーバー側でIPアドレスが記録されます。それ以外の個人を特定する情報は取得しません。',
@@ -1762,6 +1765,7 @@ const LEGAL = [
     `パーソナライズ広告は、無効にできます。Android では、端末の「設定」→「Google」→「広告」から、広告IDを削除またはリセットできます。iOS では、「設定」→「プライバシーとセキュリティ」→「トラッキング」で、アプリからのトラッキングを許可しないようにできます。Google の${A(L_ADCENTER, 'マイ アド センター')}でも設定できます。`,
     `Google 以外の第三者配信事業者による Cookie の利用は、${A(L_ABOUTADS, 'aboutads.info')}（欧州では ${A(L_YOURCHOICES, 'youronlinechoices.eu')}）から無効にできます。`,
     '欧州経済領域（EEA）、英国、スイスなど、法令で同意が必要な地域の利用者には、同意を確認したうえで広告を配信します。同意がない場合は、パーソナライズされていない広告を表示します。',
+    'BOMBOM では、画面の上部などにネイティブ広告を表示します。また、アイテムがなくなったときに利用者が選んだ場合だけ、動画などの広告（リワード広告・インタースティシャル広告）を表示し、見終わるとアイテムを受け取れます。',
     'タップる？では、AdMob を子ども向けとして扱う設定にし、パーソナライズ広告を表示せず、全年齢向け（G）の広告だけを表示します。',
     'MP3変換の広告は、画面の上の決まった枠に表示するネイティブ広告だけです。同意が必要な地域では、アプリのメニューの「プライバシー設定」から、広告に関する同意をいつでも変更できます。',
     '店長が AdMob から受け取るのは、表示回数や収益などの集計された数値だけで、利用者個人を特定できる情報は受け取りません。',
@@ -1778,7 +1782,8 @@ const LEGAL = [
   P('上記の目的の範囲を超えて利用することはありません。') +
   H('6. 保存期間と安全管理') +
   UL([
-    '端末内のデータは、アプリのデータ削除やアンインストールにより消去されます。店長は端末内のデータを確認・復元できません。',
+    '端末内のデータは、アプリのデータ削除やアンインストールにより消去されます。ただし、端末のバックアップ機能でバックアップされたデータ（BOMBOM のプレイ履歴）は、Google アカウントのバックアップに残ることがあり、再インストールや機種変更のときに戻ることがあります。店長は端末内のデータやバックアップを確認・復元できません。',
+    'BOMBOM のプレイ履歴は、アプリのメニュー →「設定」→「データ初期化」で消せます（サウンドなどの設定は残ります）。消したデータは元に戻せません。',
     'Google（AdMob・Firebase・フォーム・グループ）が取得した情報は、Google の定める期間保存されます。',
     'お問い合わせのメールは、対応のためにのみ利用し、対応が終わったあと不要になったものは削除します。',
     '店長は、取得した情報の漏えいや不正利用を防ぐため、合理的な範囲で安全管理に努めます。',
@@ -1787,12 +1792,13 @@ const LEGAL = [
   UL([
     '店長は、法令に基づく場合を除き、本人の同意なく、取得した個人情報を第三者に提供しません。また、個人情報を販売することはありません。',
     'ただし、前項までに記載した広告・外部サービスの事業者（Google LLC、GitHub, Inc.、脅威リスト・国データの配布元など）は、それぞれ自らのポリシーに従って情報を取得・利用します。',
+    'アプリ見守りの IP アドレスの照会は、利用者ご自身の操作と同意により端末から直接行うもので、店長が情報を提供するものではありません。',
     'これらの事業者は、米国など日本以外の国にサーバーを置いており、情報はそれらの国で保存・処理されることがあります。各事業者のポリシーで、保護の取り組みをご確認ください。',
   ]) +
   H('8. 利用者の選択と、開示・訂正・削除などの請求') +
   UL([
     '広告IDの削除・リセットやトラッキングの拒否は、第3項のとおり、端末の設定からいつでも行えます。',
-    'アプリの通信や記録を止めたいときは、アプリの利用をやめ、アンインストールしてください。端末内のデータも消去されます。',
+    'アプリの通信や記録を止めたいときは、アプリの利用をやめ、アンインストールしてください。端末内のデータも消去されます。Google アカウントのバックアップに残ったデータは、端末の設定や Google アカウントのバックアップの管理から削除できます。BOMBOM のプレイ履歴は、アンインストールの前にアプリの「データ初期化」で消すこともできます。',
     'テスターをやめたいときは、いつでも Google グループから退出できます。',
     '店長が保有する個人情報（主にお問い合わせの内容とテスターのメールアドレス）について、開示・訂正・利用停止・削除などをご希望の場合は、<a href="#contact">お問い合わせ</a>の「プライバシーに関する問い合わせ」からご連絡ください。ご本人であることを確認のうえ、法令に従い合理的な範囲で対応します。',
     '端末内のデータや、Google などの事業者が保有する情報は、店長の側では特定・削除できません。各事業者の窓口や設定をご利用ください。',
@@ -1815,11 +1821,14 @@ const LEGAL = [
     'This website loads fonts from Google Fonts. When it does, your IP address and browser information are sent to Google.',
     'The hosting provider records access logs for this website (such as IP addresses), which are kept for about 90 days. We do not use any web analytics tools.',
     'Masks, check marks, highlights, drawings, bookmarks, learning history and settings you create in the apps are stored on your device and are not sent to the Manager. The Manager never receives the PDFs you open in the apps.',
-    'App Monitor uses the Android VPN mechanism to record, on your device, the destination, amount and time of each app’s network traffic. The records are kept on the device for 25 hours only and are not sent outside the device, including to the Manager. The app connects to the distributors of threat lists and country data (urlhaus.abuse.ch, feodotracker.abuse.ch, www.spamhaus.org, download.db-ip.com) to download them. Its only other connections are for showing ads (Google AdMob) and sending crash reports when the app stops unexpectedly (Firebase Crashlytics).',
+    'App Monitor uses the Android VPN mechanism to record, on your device, the destination, amount and time of each app’s network traffic. The records are kept on the device for 25 hours only and are not sent outside the device, including to the Manager. The app connects to the distributors of threat lists and country data (urlhaus.abuse.ch, feodotracker.abuse.ch, raw.githubusercontent.com, www.spamhaus.org, download.db-ip.com) to download them. Its only other connections are for showing ads (Google AdMob) and sending crash reports when the app stops unexpectedly (Firebase Crashlytics).',
+    'Only when you tap “Look up the network owner” in App Monitor and agree, the app sends that destination’s IP addresses to the registries that manage internet addresses (the RDAP services of APNIC, ARIN, RIPE NCC, LACNIC and AFRINIC), and fetches the IANA list (data.iana.org) used to choose the registry. Only the IP addresses being looked up are sent; which app made the connection, its content and your device details are not. As with any request, the registry receives your public IP address and handles it under its own policy. Results are kept on the device for 30 days and are not received by the Manager. You can withdraw consent at any time from the app’s menu, which also deletes the saved results.',
     'App Monitor reads each app’s usage time to tell apart traffic while an app is not in use, and the list of installed apps to show app names. This information is not sent outside the device either.',
     'TaPru records and analyzes the time and position of your taps on your device and does not send the results outside the device, including to the Manager. The greeting on the HOME screen is read aloud using the device’s text-to-speech.',
     'MP3 Converter reads the video you choose on your device and extracts and converts its audio there. Videos, converted audio and file names are never sent outside the device, including to the Manager. Temporary files made during previews and conversion are kept inside the app and deleted when no longer needed. Converted audio is saved to the location you choose (the Music folder, the Downloads folder, the same folder as the video, or a folder you choose). When a folder is used, the app accesses only folders you have allowed through Android’s folder picker. Settings such as format, quality and save location are stored on your device.',
-    'BOMBOM saves your stage progress, best scores, items and settings on your device and does not send them outside the device, including to the Manager. BOMBOM connects to the network to show ads (Google AdMob) and to update game data such as stages. Game data is downloaded from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. The app checks for updates when it starts and downloads new data if there is any. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub.',
+    'BOMBOM’s play history (stage records, items, login bonus claims, settings, etc.) is stored on your device and is not sent to the Manager.',
+    'When BOMBOM starts, it may download stage information (game data) from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub. If the download fails, the app runs with the data built into it.',
+    'If Android’s backup feature (Google backup) is turned on for your device, BOMBOM’s play history is included in your Google Account backup and can be moved to a new device when you switch devices. The backup is managed by Google in your account; the Manager can neither view nor receive it. Only the play history is included in the backup, not ad or Firebase data.',
     'MP3 Converter connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
     'When an app communicates with a server (for example, to download question data), the server records your IP address. No other personally identifiable information is collected.',
@@ -1839,6 +1848,7 @@ const LEGAL = [
     `You can turn off personalized ads. On Android, delete or reset your advertising ID under Settings → Google → Ads. On iOS, turn off app tracking under Settings → Privacy &amp; Security → Tracking. You can also change your settings in Google’s ${A(L_ADCENTER, 'My Ad Center')}.`,
     `You can opt out of other third-party vendors’ use of cookies at ${A(L_ABOUTADS, 'aboutads.info')} (in Europe, ${A(L_YOURCHOICES, 'youronlinechoices.eu')}).`,
     'For users in regions where consent is required by law, such as the European Economic Area (EEA), the United Kingdom and Switzerland, ads are served after confirming consent. Without consent, only non-personalized ads are shown.',
+    'BOMBOM shows native ads, for example at the top of the screen. When you run out of items, and only if you choose to, it also shows video or full-screen ads (rewarded and interstitial ads); you receive items after watching.',
     'In TaPru, AdMob is configured to treat the app as child-directed: personalized ads are not shown, and only ads suitable for all ages (rated G) are shown.',
     'MP3 Converter shows only native ads in a fixed frame at the top of the screen. In regions where consent is required, you can change your ad consent at any time from “Privacy options” in the app’s menu.',
     'The Manager receives only aggregated figures from AdMob, such as impressions and revenue, and never receives information that identifies individual users.',
@@ -1855,7 +1865,8 @@ const LEGAL = [
   P('We do not use information beyond these purposes.') +
   H('6. Retention and security') +
   UL([
-    'Data on your device is erased when you clear the app’s data or uninstall the app. The Manager cannot view or restore data on your device.',
+    'Data on your device is erased when you clear the app’s data or uninstall the app. However, data backed up by your device’s backup feature (BOMBOM’s play history) may remain in your Google Account backup and may be restored when you reinstall the app or switch devices. The Manager cannot view or restore data on your device or in backups.',
+    'You can erase BOMBOM’s play history from the app’s Menu → Settings → “Reset data” (settings such as sound are kept). Erased data cannot be restored.',
     'Information collected by Google (AdMob, Firebase, Forms, Groups) is kept for the periods set by Google.',
     'Emails are used only to respond to you and are deleted when no longer needed.',
     'The Manager takes reasonable measures to prevent leakage or misuse of the information collected.',
@@ -1864,12 +1875,13 @@ const LEGAL = [
   UL([
     'The Manager does not provide personal information to third parties without your consent, except as required by law. The Manager does not sell personal information.',
     'However, the providers of the advertising and external services described above (Google LLC, GitHub, Inc., distributors of threat lists and country data, etc.) collect and use information under their own policies.',
+    'App Monitor’s IP lookups are made directly from your device by your own action and consent; the Manager does not provide your information to anyone.',
     'These providers have servers in countries outside Japan, such as the United States, and information may be stored and processed in those countries. Please see each provider’s policy for how they protect it.',
   ]) +
   H('8. Your choices and requests for disclosure, correction or deletion') +
   UL([
     'You can delete or reset your advertising ID or refuse tracking at any time in your device settings, as described in Section 3.',
-    'To stop an app’s communication and records, stop using the app and uninstall it. The data on your device will also be erased.',
+    'To stop an app’s communication and records, stop using the app and uninstall it. The data on your device will also be erased. Data remaining in your Google Account backup can be deleted from your device settings or your Google Account’s backup management. You can also erase BOMBOM’s play history with “Reset data” in the app before uninstalling.',
     'You can stop being a tester at any time by leaving the Google Group.',
     'To request disclosure, correction, suspension of use or deletion of personal information held by the Manager (mainly inquiry emails and testers’ email addresses), contact us through <a href="#contact">Contact</a> with the subject “Privacy inquiry”. After verifying your identity, we will respond to a reasonable extent in accordance with applicable law.',
     'The Manager cannot identify or delete data on your device or information held by providers such as Google. Please use each provider’s settings or contact point.',
@@ -1945,10 +1957,11 @@ const LEGAL = [
   H('2. 利用条件') +
   UL([
     'アプリは、オフラインでの利用を考えて作っています。主な機能は端末内で動作し、通信できない場所でも使えるよう設計しています。',
-    '一部、アプリで利用するデータの更新や広告の表示のために通信する場合があります。',
+    '一部、アプリで利用するデータの更新や広告の表示のために通信する場合があります（BOMBOM は、起動時にステージ情報の更新を確認します）。',
     '動作環境は、各アプリの紹介に記載しています。通信料などは利用者の負担です。',
     'アプリの入手・更新には、Google Play の利用規約が適用されます。iOS 版を App Store で提供する場合は、App Store の利用規約と Apple の標準使用許諾契約（' + A(L_APPLE_EULA, 'Licensed Application End User License Agreement') + '）も適用されます。',
     '利用料金：アプリは無料で利用できます。',
+    'BOMBOM のアイテムやログインボーナスは、ゲームの中だけで使える無料のものです。お金や他のものと交換したり、他の人に譲ったりすることはできません。アイテムには使用期限があり、期限が過ぎたものや、「データ初期化」で消したものは戻りません。',
     `英文翻訳機能には、Google の ML Kit を利用します。ML Kit の${A(L_MLKIT, '利用規約')}も適用されます。`,
   ]) +
   H('3. 未成年の方の利用') +
@@ -1958,6 +1971,7 @@ const LEGAL = [
     `${AD_APPS}では、無料で提供するために、Google AdMob による第三者の広告を表示します。広告の表示をなくす有料のオプションはありません。`,
     '広告の内容、広告からつながる商品・サービス・サイトは、広告主や配信事業者の責任で提供されるものです。それらの内容や、利用者と広告主との取引について、店長は責任を負いません。',
     '広告を不正にタップする、広告の表示を妨げるようにアプリを改変するなど、広告の配信を妨げる行為はご遠慮ください。',
+    '広告を見てアイテムを受け取る機能は、広告の在庫や通信の状態によって、広告が表示されず使えないことがあります。',
     '広告で取得される情報と、パーソナライズ広告を無効にする方法は、<a href="#privacy">プライバシーポリシー</a>の「3. 広告配信サービス」をご覧ください。',
   ]) +
   H('5. テスト版の提供') +
@@ -1971,6 +1985,7 @@ const LEGAL = [
     '出題データなどを、店長の許諾なく大量に取得・再配布する行為',
     'アプリの解析・改変・再配布（法令で認められる範囲を除きます）',
     '広告の不正なタップなど、広告配信を妨げる行為',
+    '自動化した操作などで、アプリの照会機能を本来の用途を超えて大量に使う行為',
     'その他、店長が不適切と判断する行為',
   ]) +
   H('7. 知的財産権') +
@@ -1979,11 +1994,13 @@ const LEGAL = [
   P('店長は、アプリや本サイトの内容を、機能の追加・変更・終了のため、利用者に通知することなく変更・停止することがあります。可能な限り、事前に本サイトなどでお知らせするよう努めます。') +
   H('9. 免責事項') +
   UL([
-    'アプリは、学習を助けるための道具です。内容の正確性、特定の目的への適合性、試験の結果などを保証するものではありません。',
+    '学習のためのアプリは、学習を助けるための道具です。内容の正確性、特定の目的への適合性、試験の結果などを保証するものではありません。',
     '端末内のデータは、端末の故障・初期化・アンインストールなどで失われることがあります。大切なデータは、ご自身でも控えを取っておいてください。',
+    'BOMBOM のバックアップと機種変更時の移行は、Android と Google の機能によるもので、端末の設定や状況によっては行われないことがあります。プレイ履歴が必ず復元されることは保証しません。「データ初期化」で消したプレイ履歴は、元に戻せません。',
     'アプリ見守りの危険度は、決めたルールに当てはめて機械的に判定した参考情報です。アプリが正常かどうかの最終的な判断は、利用者ご自身で行ってください。判定をもとに行ったアンインストールなどの操作の結果について、店長は責任を負いません。',
+    'アプリ見守りが表示する運営会社と回線の持ち主は、内蔵の一覧とインターネットの登録機関（RDAP）の登録情報による参考情報です。登録情報は古いことがあり、回線の持ち主とサービスの運営者が別のこともあります（クラウドや CDN など）。「個人向け回線」などの種類は名前からの推定です。店長はこれらの正確さと、これをもとに行った操作の結果について責任を負いません。照会の結果を、特定の人や会社への嫌がらせなど不正な目的に使わないでください。',
     'タップる？の計測結果・分析・称号は、遊びとして楽しむためのもので、医学的・科学的な評価ではありません。計測値は、端末の性能やタッチパネルによって変わることがあります。連打による指や手首の痛み、端末の故障・破損について、店長は責任を負いません。適度に休憩しながらお楽しみください。',
-    'BOMBOM はクローズドテスト中のゲームで、ステージ・得点・アイテムの内容は予告なく変わることがあります。進み具合やアイテムは端末の中だけに保存しているため、アンインストールや端末の変更で失われ、店長は復元できません。',
+    'BOMBOM はクローズドテスト中のゲームで、ステージ・得点・アイテムの内容は予告なく変わることがあります。進み具合やアイテムは端末の中に保存しているため、店長は復元できません。',
     'MP3変換は、端末の中で動画の音声を変換する道具です。すべての動画が変換できることや、変換後の音質を保証するものではありません。MP3・AAC は圧縮し直すため、元の音より少し劣化することがあります。変換した音声の利用について、店長は責任を負いません。長い動画の変換では、端末の発熱や電池の消費にご注意ください。',
     '外部のサービス（広告、ストアなど）や第三者のサイトの内容・動作について、店長は責任を負いません。',
   ]) +
@@ -2007,10 +2024,11 @@ const LEGAL = [
   H('2. Conditions of use') +
   UL([
     'The apps are designed for offline use. Their main features run on your device and work even where there is no network connection.',
-    'Some apps may connect to the network to update data used in the app or to show ads.',
+    'Some apps may connect to the network to update data used in the app or to show ads (BOMBOM checks for stage information updates at startup).',
     'System requirements are listed in each app’s description. You are responsible for any data charges.',
     'The Google Play Terms of Service apply to downloading and updating the apps. If iOS versions are offered on the App Store, the App Store Terms and Apple’s ' + A(L_APPLE_EULA, 'Licensed Application End User License Agreement') + ' also apply.',
     'Fees: The apps are free to use.',
+    'Items and login bonuses in BOMBOM are free and can be used only within the game. They cannot be exchanged for money or anything else, or transferred to others. Items have an expiration period, and expired items or items erased with “Reset data” cannot be restored.',
     `The English translation feature uses Google ML Kit. The ${A(L_MLKIT, 'ML Kit Terms of Service')} also apply.`,
   ]) +
   H('3. Use by minors') +
@@ -2020,6 +2038,7 @@ const LEGAL = [
     `To keep them free, ${AD_APPS_EN} show third-party ads served by Google AdMob. There is no paid option to remove ads.`,
     'Ads and the products, services and websites they lead to are provided under the responsibility of the advertisers and ad networks. The Manager is not responsible for their content or for any dealings between you and advertisers.',
     'Please do not interfere with ad delivery, for example by tapping ads fraudulently or modifying an app to block ads.',
+    'The feature that gives items for watching an ad may be unavailable when no ad can be shown, depending on ad inventory or network conditions.',
     'For what information ads collect and how to turn off personalized ads, see Section 3 “Advertising” of the <a href="#privacy">Privacy Policy</a>.',
   ]) +
   H('5. Test versions') +
@@ -2033,6 +2052,7 @@ const LEGAL = [
     'Collecting or redistributing question data or similar content in bulk without the Manager’s permission',
     'Reverse engineering, modifying or redistributing the apps (except as permitted by law)',
     'Interfering with ad delivery, such as fraudulent ad taps',
+    'Using the app’s lookup feature in bulk beyond its intended use, such as through automated operation',
     'Any other conduct the Manager considers inappropriate',
   ]) +
   H('7. Intellectual property') +
@@ -2041,11 +2061,13 @@ const LEGAL = [
   P('The Manager may change or suspend the apps or this website without notice to add, change or end features. Where possible, the Manager will try to announce changes in advance on this website.') +
   H('9. Disclaimers') +
   UL([
-    'The apps are tools to support learning. The Manager does not guarantee the accuracy of their content, their fitness for a particular purpose, or exam results.',
+    'The learning apps are tools to support learning. The Manager does not guarantee the accuracy of their content, their fitness for a particular purpose, or exam results.',
     'Data on your device may be lost due to device failure, reset or uninstallation. Please keep your own copies of important data.',
+    'BOMBOM’s backup and transfer to a new device rely on Android and Google features and may not take place depending on your device settings and circumstances. The Manager does not guarantee that play history will be restored. Play history erased with “Reset data” cannot be restored.',
     'The risk levels in App Monitor are reference information determined mechanically by fixed rules. You must make the final decision on whether an app is safe. The Manager is not responsible for the results of actions such as uninstalling an app based on these levels.',
+    'The operators and network owners shown in App Monitor are reference information from a built-in list and from internet registry (RDAP) records. Records may be out of date, and the network owner may differ from the service operator (for example, cloud and CDN providers). Types such as “home line” are guesses from names. The Manager is not responsible for their accuracy or for the results of actions taken based on them. Do not use lookup results for improper purposes such as harassing a person or company.',
     'TaPru’s measurements, analyses and titles are for fun and are not medical or scientific evaluations. Measured values may vary depending on device performance and touch screen. The Manager is not responsible for finger or wrist pain from rapid tapping, or for device failure or damage. Please take breaks as you play.',
-    'BOMBOM is a game in closed testing, and its stages, scores and items may change without notice. Progress and items are saved only on your device, so they are lost if you uninstall the app or change devices, and the Manager cannot restore them.',
+    'BOMBOM is a game in closed testing, and its stages, scores and items may change without notice. Progress and items are saved on your device, and the Manager cannot restore them.',
     'MP3 Converter is a tool that converts the audio of videos on your device. The Manager does not guarantee that every video can be converted or the quality of the converted audio. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original. The Manager is not responsible for how you use converted audio. When converting long videos, please watch out for device heat and battery use.',
     'The Manager is not responsible for the content or operation of external services (ads, app stores, etc.) or third-party websites.',
   ]) +

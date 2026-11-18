@@ -1,0 +1,7047 @@
+{
+ "version": 24,
+ "openStages": 120,
+ "note": "全120ステージ。tools/build_stages.py で生成。grid=盤面の地形（size=[幅,高さ]）。goals は C1-ST01..10 のみの仮値。bombRate は出現率（相対重み。KU は W1 のみ）、rocks は初期岩の数",
+ "stages": [
+  {
+   "id": "C1-ST01",
+   "global": 1,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 150000,
+    "silver": 590000,
+    "gold": 940000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 0,
+   "layout": null
+  },
+  {
+   "id": "C1-ST02",
+   "global": 2,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "  ..  ",
+    " .... ",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    " .... ",
+    "  ..  "
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 470000,
+    "silver": 1600000,
+    "gold": 2600000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 0,
+   "layout": null
+  },
+  {
+   "id": "C1-ST03",
+   "global": 3,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 80000,
+    "gold": 130000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 0,
+   "layout": null
+  },
+  {
+   "id": "C1-ST04",
+   "global": 4,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    ". .. .",
+    ". .. .",
+    ". .. .",
+    ". .. .",
+    ". .. .",
+    ". .. .",
+    ". .. .",
+    ". .. .",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 9200,
+    "silver": 28000,
+    "gold": 45000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 0,
+   "layout": null
+  },
+  {
+   "id": "C1-ST05",
+   "global": 5,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".    .",
+    "......",
+    "......",
+    ".    .",
+    "......",
+    "......",
+    ".    .",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 44000,
+    "gold": 71000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 0,
+   "layout": null
+  },
+  {
+   "id": "C1-ST06",
+   "global": 6,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "..  ..",
+    "......",
+    "......",
+    "..  ..",
+    "..  ..",
+    "......",
+    "......",
+    "..  ..",
+    "..  ..",
+    "......",
+    "..  .."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 37000,
+    "gold": 60000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 1,
+   "layout": null
+  },
+  {
+   "id": "C1-ST07",
+   "global": 7,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "  ..  ",
+    "  ..  ",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "golem",
+   "boss": {
+    "row": 3,
+    "col": 3,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": 20,
+   "seedMult": 1.5,
+   "rocks": 0,
+   "layout": null
+  },
+  {
+   "id": "C1-ST08",
+   "global": 8,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "...   ",
+    "....  ",
+    "....  ",
+    "..... ",
+    "......",
+    "......",
+    "......",
+    "......",
+    " .....",
+    "  ....",
+    "  ....",
+    "   ..."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 68000,
+    "silver": 210000,
+    "gold": 330000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST09",
+   "global": 9,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".... .",
+    ".... .",
+    ".... .",
+    ".... .",
+    ". .. .",
+    ". .. .",
+    ". ....",
+    ". ....",
+    ". ....",
+    ". ....",
+    ". ....",
+    ".... ."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 4000,
+    "silver": 13000,
+    "gold": 21000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST10",
+   "global": 10,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "      ",
+    "......",
+    "......",
+    "......",
+    "      ",
+    "......",
+    "......",
+    "......",
+    "      ",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 2800,
+    "silver": 9500,
+    "gold": 15000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST11",
+   "global": 11,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "  ..  ",
+    "  ..  ",
+    "  ..  ",
+    "  ..  ",
+    "......",
+    "......",
+    "......",
+    "......",
+    "  ..  ",
+    "  ..  ",
+    "  ..  ",
+    "  ..  "
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 19000,
+    "silver": 62000,
+    "gold": 100000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST12",
+   "global": 12,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ". ....",
+    "......",
+    "......",
+    "......",
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 32000,
+    "silver": 120000,
+    "gold": 200000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST13",
+   "global": 13,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ". ..  ",
+    "......",
+    "......",
+    ". ..  ",
+    ". ..  ",
+    "......",
+    "......",
+    ". ..  ",
+    "......",
+    ". ..  ",
+    ". ..  ",
+    ". ..  "
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 59000,
+    "gold": 95000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST14",
+   "global": 14,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..  ..",
+    "......",
+    "......",
+    "......",
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 35000,
+    "silver": 150000,
+    "gold": 240000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST15",
+   "global": 15,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ". .. .",
+    "......",
+    "......",
+    "......",
+    "......",
+    ". .. .",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 57000,
+    "silver": 190000,
+    "gold": 300000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST16",
+   "global": 16,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..  ..",
+    "..  ..",
+    "......",
+    "......",
+    "..  ..",
+    "..  ..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 32000,
+    "silver": 110000,
+    "gold": 180000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST17",
+   "global": 17,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ". ..  ",
+    "......",
+    "......",
+    ". ..  ",
+    ". ..  ",
+    ". ..  ",
+    ". ..  ",
+    ". ..  ",
+    ". ..  ",
+    ". ..  ",
+    ". ..  ",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 8500,
+    "silver": 27000,
+    "gold": 44000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST18",
+   "global": 18,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..  ..",
+    "..  ..",
+    "..  ..",
+    "......",
+    "      ",
+    "..  ..",
+    "..  ..",
+    "      ",
+    "......",
+    "..  ..",
+    "..  ..",
+    "..  .."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 3100,
+    "silver": 10000,
+    "gold": 16000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST19",
+   "global": 19,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ". .. .",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    ". .. .",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "golem",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C1-ST20",
+   "global": 20,
+   "chapter": 1,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    " .... ",
+    "  ..  ",
+    "......",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    "......",
+    "......",
+    "......",
+    "  ..  ",
+    " .... "
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "golem_meadow",
+   "boss": {
+    "row": 3,
+    "col": 3,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST01",
+   "global": 21,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "....~.",
+    "....~.",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 87000,
+    "silver": 340000,
+    "gold": 550000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST02",
+   "global": 22,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "~~..~~",
+    "~~...~",
+    "~~...~",
+    "...~..",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "~...~~",
+    "~...~~",
+    "~~..~~"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 37000,
+    "silver": 160000,
+    "gold": 260000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST03",
+   "global": 23,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "....~~",
+    "....~~",
+    "..~...",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 17000,
+    "silver": 63000,
+    "gold": 100000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST04",
+   "global": 24,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..~~~.",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 66000,
+    "gold": 110000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST05",
+   "global": 25,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".~....",
+    ".~....",
+    "......",
+    "~~~~~.",
+    "..~~..",
+    "..~~..",
+    ".~~~~.",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 13000,
+    "silver": 56000,
+    "gold": 91000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST06",
+   "global": 26,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "~~~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6100,
+    "silver": 21000,
+    "gold": 34000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST07",
+   "global": 27,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "~~....",
+    "~~....",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 54000,
+    "gold": 87000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST08",
+   "global": 28,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "...~~~",
+    "...~~~",
+    "...~~~",
+    "~~..~~",
+    "....~~",
+    ".....~",
+    ".....~",
+    "~~....",
+    "~~~~..",
+    "~~~...",
+    "~~~...",
+    "~~~~.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 37000,
+    "gold": 60000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST09",
+   "global": 29,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".~..~.",
+    ".~..~.",
+    ".~..~.",
+    "......",
+    ".~..~.",
+    ".~..~.",
+    "....~.",
+    ".~..~.",
+    ".~..~.",
+    ".~..~.",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 7300,
+    "silver": 26000,
+    "gold": 42000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST10",
+   "global": 30,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "~~~~~~",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    "~~~~~~",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "golem_water",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": 20,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST11",
+   "global": 31,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "~~..~~",
+    "~~..~~",
+    "~~..~~",
+    "~~..~~",
+    "....~.",
+    "......",
+    "......",
+    "......",
+    "~~..~~",
+    "~~..~~",
+    "~~..~~",
+    "~~..~~"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 16000,
+    "silver": 51000,
+    "gold": 82000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST12",
+   "global": 32,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..~~..",
+    "......",
+    "......",
+    "~~~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "~~~~..",
+    "..~~..",
+    ".~....",
+    ".~....",
+    "..~~.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6800,
+    "silver": 25000,
+    "gold": 41000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST13",
+   "global": 33,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".~..~~",
+    "......",
+    "......",
+    ".~..~~",
+    ".~..~~",
+    "......",
+    "......",
+    ".~~.~~",
+    "......",
+    ".~.~~~",
+    ".~.~~~",
+    ".~..~~"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 10000,
+    "silver": 37000,
+    "gold": 60000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST14",
+   "global": 34,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "......",
+    "~~....",
+    "~~....",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 28000,
+    "silver": 110000,
+    "gold": 170000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST15",
+   "global": 35,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".~..~.",
+    "~~....",
+    "......",
+    "......",
+    "..~...",
+    ".~..~~",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 28000,
+    "silver": 99000,
+    "gold": 160000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST16",
+   "global": 36,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "..~...",
+    "..~...",
+    "..~~..",
+    "..~~..",
+    "......",
+    "......",
+    "..~~..",
+    "..~~..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 27000,
+    "silver": 110000,
+    "gold": 180000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST17",
+   "global": 37,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".~..~~",
+    "......",
+    "......",
+    ".~..~~",
+    ".~..~~",
+    ".~..~~",
+    ".~..~~",
+    ".~..~~",
+    ".~..~~",
+    ".~~~~~",
+    ".~~~~~",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6300,
+    "silver": 20000,
+    "gold": 32000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST18",
+   "global": 38,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "~~~~~~",
+    "..~~..",
+    "..~~..",
+    "~~~~~~",
+    "..~~..",
+    "..~~..",
+    "..~~..",
+    "..~~.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 2400,
+    "silver": 7400,
+    "gold": 12000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST19",
+   "global": 39,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".~..~.",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    ".~..~.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C2-ST20",
+   "global": 40,
+   "chapter": 2,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    ".~..~.",
+    ".~~~~.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin_angry",
+   "boss": {
+    "row": 3,
+    "col": 3,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 29,
+    "GR": 22,
+    "RE": 22,
+    "PA": 11,
+    "YE": 11,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 10,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 5
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST01",
+   "global": 41,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "..TT..",
+    "...T..",
+    "...T..",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 72000,
+    "silver": 230000,
+    "gold": 380000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST02",
+   "global": 42,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "TT..TT",
+    "T....T",
+    "T....T",
+    "..TT..",
+    "..TT..",
+    "......",
+    "......",
+    "..TT..",
+    "......",
+    "T....T",
+    "T....T",
+    "TT..TT"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 16000,
+    "silver": 54000,
+    "gold": 88000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST03",
+   "global": 43,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "..TTT.",
+    "..TT..",
+    "..TT..",
+    "..TT..",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 26000,
+    "silver": 84000,
+    "gold": 130000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST04",
+   "global": 44,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..TTT.",
+    "TTTT..",
+    "..TT..",
+    "..TT..",
+    "..TTTT",
+    "..TT..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 7700,
+    "silver": 26000,
+    "gold": 42000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST05",
+   "global": 45,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "....TT",
+    "....TT",
+    "......",
+    "TTTTT.",
+    "......",
+    "......",
+    ".TTTT.",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 42000,
+    "gold": 68000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST06",
+   "global": 46,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..TT..",
+    "..TTTT",
+    "..TTTT",
+    "......",
+    "..TT..",
+    "..TT..",
+    "..TT..",
+    "..TTT.",
+    "......",
+    "..TT..",
+    "..TT..",
+    "..TT.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 4200,
+    "silver": 13000,
+    "gold": 21000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST07",
+   "global": 47,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..TT..",
+    "..TTT.",
+    "..TT..",
+    "..TT..",
+    "..TT..",
+    "..TT..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 14000,
+    "silver": 43000,
+    "gold": 69000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST08",
+   "global": 48,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "...TTT",
+    "...TTT",
+    "...TTT",
+    "....TT",
+    "....TT",
+    "..TT.T",
+    "..TT.T",
+    "TT....",
+    "TT....",
+    "TTT...",
+    "TTT...",
+    "TTTT.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6900,
+    "silver": 22000,
+    "gold": 36000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST09",
+   "global": 49,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".T..T.",
+    ".T..T.",
+    ".TT.T.",
+    "......",
+    ".TTTT.",
+    ".TTTT.",
+    "......",
+    ".T..T.",
+    ".TTTT.",
+    ".TTTT.",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 1900,
+    "silver": 4900,
+    "gold": 7800,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST10",
+   "global": 50,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "TTTTTT",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    "TTTTTT",
+    "..T...",
+    "..T...",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "golem",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 20,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST11",
+   "global": 51,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "TT..TT",
+    "TT..TT",
+    "TT..TT",
+    "TT..TT",
+    "..T...",
+    "....T.",
+    "....T.",
+    "......",
+    "TT..TT",
+    "TT..TT",
+    "TT..TT",
+    "TT..TT"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6800,
+    "silver": 25000,
+    "gold": 41000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST12",
+   "global": 52,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "..TT..",
+    "..TT..",
+    "..TT..",
+    "TTTT..",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 22000,
+    "silver": 80000,
+    "gold": 130000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST13",
+   "global": 53,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".T..TT",
+    "......",
+    "......",
+    ".T..TT",
+    ".T..TT",
+    "......",
+    "......",
+    ".TTTTT",
+    "......",
+    ".T..TT",
+    ".T..TT",
+    ".T..TT"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6500,
+    "silver": 26000,
+    "gold": 41000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST14",
+   "global": 54,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".T....",
+    "..TT..",
+    "..TT..",
+    "..TT..",
+    "..TT..",
+    ".T....",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 56000,
+    "gold": 89000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST15",
+   "global": 55,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "TT....",
+    "TT....",
+    ".T..T.",
+    "......",
+    "...T..",
+    "...T..",
+    "......",
+    ".T..T.",
+    "....T.",
+    "....T.",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 49000,
+    "gold": 78000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST16",
+   "global": 56,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".T....",
+    ".T....",
+    "..TT..",
+    "..TTTT",
+    "......",
+    "......",
+    "..TT..",
+    "..TT..",
+    "...T..",
+    "...T..",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 8600,
+    "silver": 33000,
+    "gold": 53000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST17",
+   "global": 57,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".T..TT",
+    "......",
+    "......",
+    ".T..TT",
+    ".T..TT",
+    ".T..TT",
+    ".T..TT",
+    "TT..TT",
+    ".T..TT",
+    ".T..TT",
+    ".T..TT",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6300,
+    "silver": 22000,
+    "gold": 36000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST18",
+   "global": 58,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..TT..",
+    "..TT..",
+    "..TT..",
+    "......",
+    "TTTTTT",
+    "TTTT..",
+    "TTTT..",
+    "TTTTTT",
+    ".TT...",
+    "..TT..",
+    "..TT..",
+    "..TT.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 1900,
+    "silver": 4400,
+    "gold": 7100,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST19",
+   "global": 59,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".T..T.",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    ".T.TT.",
+    ".T....",
+    ".T....",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C3-ST20",
+   "global": 60,
+   "chapter": 3,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "..T...",
+    "..T...",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    ".T..T.",
+    ".TTTT.",
+    "...T..",
+    "...T..",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin_angry",
+   "boss": {
+    "row": 3,
+    "col": 3,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 10,
+    "STM": 0,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST01",
+   "global": 61,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "RR....",
+    "..RR..",
+    "..RR..",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 35000,
+    "silver": 130000,
+    "gold": 210000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 0
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST02",
+   "global": 62,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "RR..RR",
+    "RR...R",
+    "RR...R",
+    "......",
+    "..RRR.",
+    "......",
+    "......",
+    "......",
+    "....RR",
+    "R....R",
+    "R....R",
+    "RR..RR"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 17000,
+    "silver": 74000,
+    "gold": 120000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST03",
+   "global": 63,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "..RR..",
+    "..RRR.",
+    "..RRR.",
+    "..RR..",
+    "....R.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 20000,
+    "silver": 77000,
+    "gold": 120000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST04",
+   "global": 64,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "...RRR",
+    "...RRR",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 38000,
+    "gold": 61000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST05",
+   "global": 65,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".R....",
+    ".RRRR.",
+    "......",
+    "......",
+    ".RRRR.",
+    "...R..",
+    "RR....",
+    "RR....",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 8700,
+    "silver": 36000,
+    "gold": 58000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST06",
+   "global": 66,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..R...",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "......",
+    "..RR..",
+    "..RR..",
+    "..RR.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 4800,
+    "silver": 20000,
+    "gold": 32000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST07",
+   "global": 67,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..RR..",
+    "..RRRR",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 41000,
+    "gold": 65000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST08",
+   "global": 68,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "...RRR",
+    "...RRR",
+    "...RRR",
+    "....RR",
+    "....RR",
+    "....RR",
+    "....RR",
+    "RR....",
+    "RR....",
+    "RRR...",
+    "RRR...",
+    "RRRR.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 16000,
+    "silver": 46000,
+    "gold": 74000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST09",
+   "global": 69,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".R..R.",
+    ".R..R.",
+    ".RRRR.",
+    "......",
+    ".RR.R.",
+    ".RR.R.",
+    "..RR..",
+    ".R..R.",
+    ".RR.R.",
+    ".RR.R.",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 1300,
+    "silver": 4100,
+    "gold": 6600,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST10",
+   "global": 70,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "RRRRRR",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    "RRRRRR",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "golem",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 20,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST11",
+   "global": 71,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "RR..RR",
+    "RR..RR",
+    "RR..RR",
+    "RR..RR",
+    "....RR",
+    ".R..RR",
+    ".R..RR",
+    "......",
+    "RR..RR",
+    "RR..RR",
+    "RR..RR",
+    "RR..RR"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 5600,
+    "silver": 16000,
+    "gold": 26000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST12",
+   "global": 72,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "...R..",
+    "...R..",
+    "......",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "......",
+    ".RR...",
+    ".RR...",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 8900,
+    "silver": 36000,
+    "gold": 58000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST13",
+   "global": 73,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".R..RR",
+    "......",
+    "......",
+    ".R..RR",
+    ".R.RRR",
+    "......",
+    "......",
+    ".R..RR",
+    "RR....",
+    ".RR.RR",
+    ".RR.RR",
+    ".R..RR"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6500,
+    "silver": 27000,
+    "gold": 43000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST14",
+   "global": 74,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "RR.R..",
+    "RR.R..",
+    "......",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "....R.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 42000,
+    "gold": 67000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST15",
+   "global": 75,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "RR..R.",
+    ".R....",
+    "......",
+    "......",
+    "...R..",
+    ".R..R.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 26000,
+    "silver": 100000,
+    "gold": 160000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST16",
+   "global": 76,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "....R.",
+    "....R.",
+    "..RR..",
+    ".RRR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "..RR..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 9400,
+    "silver": 34000,
+    "gold": 54000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST17",
+   "global": 77,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".R..RR",
+    "....RR",
+    "....RR",
+    ".R..RR",
+    ".R..RR",
+    ".R..RR",
+    ".R..RR",
+    ".R..RR",
+    ".R..RR",
+    ".RRRRR",
+    ".RRRRR",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 3700,
+    "silver": 12000,
+    "gold": 19000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST18",
+   "global": 78,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..RR..",
+    "..RRR.",
+    "..RRR.",
+    "......",
+    "RRRRRR",
+    "RRRR..",
+    "RRRR..",
+    "RRRRRR",
+    "RR....",
+    "..RR..",
+    "..RR..",
+    "..RR.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 1300,
+    "silver": 4000,
+    "gold": 6400,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST19",
+   "global": 79,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".RRRR.",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    ".R..R.",
+    ".R..R.",
+    ".R..R.",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C4-ST20",
+   "global": 80,
+   "chapter": 4,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    ".RRRR.",
+    ".RRRR.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin_angry",
+   "boss": {
+    "row": 3,
+    "col": 3,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 10,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST01",
+   "global": 81,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "....^.",
+    "....^.",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 81000,
+    "silver": 380000,
+    "gold": 610000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST02",
+   "global": 82,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "^^..^^",
+    "^....^",
+    "^....^",
+    "......",
+    "......",
+    "......",
+    "......",
+    "^^....",
+    "......",
+    "^^...^",
+    "^^...^",
+    "^^..^^"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 51000,
+    "silver": 150000,
+    "gold": 250000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST03",
+   "global": 83,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "....^.",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 25000,
+    "silver": 80000,
+    "gold": 130000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST04",
+   "global": 84,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..^^..",
+    ".^^^..",
+    "^^^^..",
+    "^^^^..",
+    "..^^..",
+    "..^^..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 47000,
+    "gold": 75000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST05",
+   "global": 85,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    ".^^^^^",
+    "^^....",
+    "^^....",
+    ".^^^^.",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 42000,
+    "gold": 67000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST06",
+   "global": 86,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "......",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 5400,
+    "silver": 18000,
+    "gold": 29000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST07",
+   "global": 87,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 53000,
+    "gold": 85000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST08",
+   "global": 88,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "...^^^",
+    "...^^^",
+    "...^^^",
+    "....^^",
+    "....^^",
+    ".....^",
+    ".....^",
+    "^^....",
+    "^^....",
+    "^^^...",
+    "^^^...",
+    "^^^^.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 23000,
+    "silver": 73000,
+    "gold": 120000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST09",
+   "global": 89,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".^..^.",
+    ".^..^.",
+    ".^..^.",
+    "......",
+    ".^..^.",
+    ".^..^.",
+    "......",
+    ".^..^.",
+    ".^..^.",
+    ".^..^.",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 5800,
+    "silver": 22000,
+    "gold": 35000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST10",
+   "global": 90,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "^^^^^^",
+    "^.....",
+    "..BB..",
+    "..BB..",
+    "......",
+    "^^^^^^",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "golem",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": 20,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST11",
+   "global": 91,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "^^..^^",
+    "^^..^^",
+    "^^..^^",
+    "^^..^^",
+    "......",
+    "......",
+    "......",
+    "......",
+    "^^..^^",
+    "^^..^^",
+    "^^..^^",
+    "^^..^^"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 19000,
+    "silver": 62000,
+    "gold": 99000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST12",
+   "global": 92,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "....^^",
+    "....^^",
+    "......",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 19000,
+    "silver": 61000,
+    "gold": 98000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST13",
+   "global": 93,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".^..^^",
+    "......",
+    "......",
+    ".^..^^",
+    ".^..^^",
+    "......",
+    "......",
+    ".^..^^",
+    "...^..",
+    ".^..^^",
+    ".^..^^",
+    ".^..^^"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 8900,
+    "silver": 38000,
+    "gold": 61000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST14",
+   "global": 94,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "......",
+    ".^....",
+    ".^....",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 20000,
+    "silver": 84000,
+    "gold": 130000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST15",
+   "global": 95,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".^.^^.",
+    "......",
+    "......",
+    "......",
+    "..^...",
+    ".^..^.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 24000,
+    "silver": 81000,
+    "gold": 130000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST16",
+   "global": 96,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "..^^..",
+    "..^^^.",
+    "......",
+    "......",
+    "..^^..",
+    "..^^..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 66000,
+    "gold": 110000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST17",
+   "global": 97,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".^..^^",
+    "......",
+    "......",
+    ".^^^^^",
+    ".^..^^",
+    ".^..^^",
+    ".^..^^",
+    ".^..^^",
+    ".^..^^",
+    ".^..^^",
+    ".^..^^",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 3200,
+    "silver": 8600,
+    "gold": 14000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST18",
+   "global": 98,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..^^..",
+    "..^^..",
+    "..^^..",
+    "......",
+    "^^^^^^",
+    "..^^..",
+    "..^^..",
+    "^^^^^^",
+    "......",
+    "..^^..",
+    "..^^..",
+    "..^^.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 1800,
+    "silver": 6900,
+    "gold": 11000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST19",
+   "global": 99,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".^..^.",
+    "......",
+    "..BB.^",
+    "..BB.^",
+    "......",
+    ".^..^.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C5-ST20",
+   "global": 100,
+   "chapter": 5,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "^.....",
+    "..BB..",
+    "..BB..",
+    "......",
+    ".^..^.",
+    ".^^^^.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin_angry",
+   "boss": {
+    "row": 3,
+    "col": 3,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 0,
+    "WOM": 0,
+    "STM": 0,
+    "FRM": 40
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST01",
+   "global": 101,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "...#..",
+    "...#..",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 110000,
+    "silver": 390000,
+    "gold": 630000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST02",
+   "global": 102,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "##..##",
+    "#....#",
+    "#....#",
+    "......",
+    "......",
+    ".#..#.",
+    ".#..#.",
+    ".#....",
+    "......",
+    "#.##.#",
+    "#.##.#",
+    "##..##"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 14000,
+    "silver": 46000,
+    "gold": 74000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST03",
+   "global": 103,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "....#.",
+    "..###.",
+    "..###.",
+    "..###.",
+    "..##..",
+    "....#.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 18000,
+    "silver": 53000,
+    "gold": 84000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST04",
+   "global": 104,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "##....",
+    "##....",
+    "..##..",
+    "..##..",
+    "..##..",
+    "..##..",
+    "..##..",
+    "..##..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 38000,
+    "gold": 60000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST05",
+   "global": 105,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".#....",
+    ".#....",
+    "......",
+    ".####.",
+    "......",
+    "......",
+    ".####.",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 44000,
+    "gold": 71000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST06",
+   "global": 106,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..##..",
+    "..##..",
+    "..##..",
+    "......",
+    "####..",
+    "..##..",
+    "..##..",
+    "..##..",
+    "......",
+    ".#####",
+    ".#####",
+    "..##.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 3100,
+    "silver": 8300,
+    "gold": 13000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST07",
+   "global": 107,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "...#..",
+    "...#..",
+    "..##..",
+    "..##..",
+    "..###.",
+    "..###.",
+    "..##..",
+    "..##..",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 9400,
+    "silver": 31000,
+    "gold": 50000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST08",
+   "global": 108,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "...###",
+    "...###",
+    "...###",
+    "....##",
+    "...###",
+    "....##",
+    "....##",
+    "##....",
+    "##....",
+    "###...",
+    "###...",
+    "####.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 42000,
+    "gold": 67000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST09",
+   "global": 109,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".#..#.",
+    ".#..#.",
+    ".#.##.",
+    "......",
+    ".#..#.",
+    ".#..#.",
+    "......",
+    ".#..#.",
+    ".#..#.",
+    ".#..#.",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 4500,
+    "silver": 16000,
+    "gold": 25000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST10",
+   "global": 110,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "######",
+    "......",
+    ".BB...",
+    ".BB...",
+    "....#.",
+    "######",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "golem",
+   "boss": {
+    "row": 5,
+    "col": 1,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 20,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST11",
+   "global": 111,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "##..##",
+    "##..##",
+    "##..##",
+    "##..##",
+    "......",
+    "...##.",
+    "...##.",
+    "......",
+    "##..##",
+    "##..##",
+    "##..##",
+    "##..##"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 6700,
+    "silver": 19000,
+    "gold": 30000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST12",
+   "global": 112,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    "......",
+    "..###.",
+    "..###.",
+    "..###.",
+    "..##..",
+    "......",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 23000,
+    "silver": 76000,
+    "gold": 120000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST13",
+   "global": 113,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".#..##",
+    "......",
+    "......",
+    ".#..##",
+    ".#..##",
+    "......",
+    "......",
+    ".#..##",
+    "......",
+    ".#####",
+    ".#####",
+    ".#..##"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 11000,
+    "silver": 44000,
+    "gold": 70000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST14",
+   "global": 114,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "##....",
+    "##....",
+    "......",
+    "..##..",
+    "..##..",
+    "..##..",
+    "..##..",
+    "......",
+    ".#....",
+    ".#....",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 15000,
+    "silver": 65000,
+    "gold": 100000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST15",
+   "global": 115,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "..#...",
+    "..#...",
+    ".#..#.",
+    "..##..",
+    "##....",
+    "##....",
+    "......",
+    ".#..#.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 49000,
+    "gold": 78000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST16",
+   "global": 116,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    ".#....",
+    ".#....",
+    "..##..",
+    "..##..",
+    "......",
+    "......",
+    "..##..",
+    "..##..",
+    "##....",
+    "##....",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 12000,
+    "silver": 37000,
+    "gold": 59000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST17",
+   "global": 117,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    ".#..##",
+    "......",
+    "......",
+    ".#..##",
+    ".#..##",
+    "##..##",
+    "##..##",
+    ".#..##",
+    ".#..##",
+    ".#..##",
+    ".#..##",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 7200,
+    "silver": 21000,
+    "gold": 34000,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST18",
+   "global": 118,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "..##..",
+    "..###.",
+    "..###.",
+    "......",
+    "######",
+    "..##..",
+    "..##..",
+    "######",
+    "..#...",
+    "..##..",
+    "..##..",
+    "..##.."
+   ],
+   "turns": 3,
+   "goalType": "score",
+   "goalTarget": null,
+   "isBoss": false,
+   "bossKind": null,
+   "boss": null,
+   "requiredHits": null,
+   "goals": {
+    "bronze": 1200,
+    "silver": 3500,
+    "gold": 5600,
+    "provisional": true
+   },
+   "bombRate": {
+    "BL": 35,
+    "GR": 20,
+    "RE": 20,
+    "PA": 10,
+    "YE": 10,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": null,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST19",
+   "global": 119,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "......",
+    "......",
+    "......",
+    ".#..##",
+    "......",
+    "..BB..",
+    "..BB..",
+    ".....#",
+    ".#..#.",
+    "......",
+    "......",
+    "......"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin",
+   "boss": {
+    "row": 5,
+    "col": 2,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  },
+  {
+   "id": "C6-ST20",
+   "global": 120,
+   "chapter": 6,
+   "size": [
+    6,
+    12
+   ],
+   "grid": [
+    "##..##",
+    "#....#",
+    "#....#",
+    "......",
+    "..BB..",
+    "..BB..",
+    "......",
+    "..##..",
+    "......",
+    "#....#",
+    "#....#",
+    "##..##"
+   ],
+   "turns": 3,
+   "goalType": "boss_hits",
+   "goalTarget": 10,
+   "isBoss": true,
+   "bossKind": "majin_angry",
+   "boss": {
+    "row": 3,
+    "col": 3,
+    "height": 2,
+    "width": 2
+   },
+   "requiredHits": 10,
+   "goals": null,
+   "bombRate": {
+    "BL": 28,
+    "GR": 21.5,
+    "RE": 21.5,
+    "PA": 12,
+    "YE": 12,
+    "GO": 1,
+    "SI": 1,
+    "KU": 1.0,
+    "BU": 1,
+    "DO": 1
+   },
+   "majinRate": {
+    "WAM": 3.4,
+    "WOM": 3.3,
+    "STM": 3.3,
+    "FRM": 30
+   },
+   "tutorialItem": null,
+   "hitsOverride": 30,
+   "seedMult": 1.0,
+   "rocks": 3,
+   "layout": null
+  }
+ ]
+}

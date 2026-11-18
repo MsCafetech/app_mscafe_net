@@ -39,7 +39,7 @@ Private Const OFF_URLV As Long = 54
 Private Const OFF_HIP As Long = 58
 Private Const OFF_HIPP As Long = 124
 Private Const OFF_EDL As Long = 133
-Private Const OFF_PG As Long = 153         ' セキュリティプロファイルグループ（B=name）
+Private Const OFF_PG As Long = 153         ' セキュリティプロファイルグループ（B=id C=name）
 Private Const OFF_PROF As Long = 166       ' セキュリティプロファイル（B=種類 C=name D=備考）
 Private Const EX_LAST As Long = 5000
 Private Const EXP_LAST As Long = 2000      ' HIPプロファイル
@@ -130,11 +130,11 @@ Public Sub ImportProfiles(ByRef msg As String)
     Set ws2 = Worksheets(S2)
     Set seen = CreateObject("Scripting.Dictionary")
     ws2.Range(ws2.Cells(EX_FIRST, OFF_PROF + 2), ws2.Cells(EX_LAST, OFF_PROF + 4)).ClearContents
-    lastR = LastRow(ws2, OFF_PG + 2)
+    lastR = LastRow(ws2, OFF_PG + 3)
     o = EX_FIRST
     For c = 0 To 6
         For r = EX_FIRST To lastR
-            nm = Trim$(SafeStr(ws2.Cells(r, OFF_PG + 5 + c).Value))
+            nm = Trim$(SafeStr(ws2.Cells(r, OFF_PG + 6 + c).Value))
             If nm <> "" And Not seen.Exists(kinds(c) & "|" & nm) And o <= EX_LAST Then
                 seen.Add kinds(c) & "|" & nm, True
                 ws2.Cells(o, OFF_PROF + 2).Value = kinds(c)
@@ -836,9 +836,18 @@ Private Sub WriteResult()
         ws.Name = SH_RES
     End If
     ws.Cells.Clear
-    ws.Range("A1").Value = "チェック結果（「一括チェック」で作り直します）"
-    ws.Range("A1").Font.Bold = True
-    ws.Range("A1").Font.Size = 14
+    ws.Cells.Font.Name = "Meiryo UI"
+    ws.Cells.Font.Size = 10
+    ws.Range("A1").Value = "チェック結果（記入状況の「一括チェック」で作り直します）"
+    With ws.Range("A1:F1")
+        .Interior.Color = RGB(31, 56, 100)
+    End With
+    With ws.Range("A1")
+        .Font.Bold = True
+        .Font.Size = 14
+        .Font.Color = vbWhite
+    End With
+    ws.Rows(1).RowHeight = 26
     ws.Range("A2").Value = "実行日時"
     ws.Range("B2").Value = Now
     ws.Range("B2").NumberFormat = "yyyy/mm/dd hh:mm"
@@ -846,7 +855,7 @@ Private Sub WriteResult()
     With ws.Range("A4:F4")
         .Font.Bold = True
         .Font.Color = vbWhite
-        .Interior.Color = RGB(31, 78, 120)
+        .Interior.Color = RGB(47, 85, 151)
     End With
     r = 5
     If mRes.Count > 0 Then
