@@ -341,8 +341,9 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
     End If
     Set own = CreateObject("Scripting.Dictionary")
     Set allD = CreateObject("Scripting.Dictionary")
+    ' グローバル（All）のルールは pre・post のどちらで取得しても同じものが返るため、id で重複を除く（先に見つかった pre に出す）
+    Set seen = CreateObject("Scripting.Dictionary")
     For Each ps In Array("pre", "post")
-        Set seen = CreateObject("Scripting.Dictionary")
         Set allD(CStr(ps)) = New Collection
         For Each sc In scopes
           If NeedFetch(CStr(sc(1)), CStr(ps)) Then
@@ -384,7 +385,6 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
                 If allD(CStr(fo(1))).Count > 0 Then groups.Add Array("All", CStr(fo(1)), GroupLabel("All", CStr(fo(1))), allD(CStr(fo(1))))
             End If
         ElseIf own.Exists(key) Then
-            ' 1つのルールベースの folder の post は、ルールがあるときだけ表示（通常は空）
             If Not (SingleRB(CStr(fo(0))) And fo(1) = "post" And own(key).Count = 0) Then
                 groups.Add Array(CStr(fo(0)), CStr(fo(1)), GroupLabel(CStr(fo(0)), CStr(fo(1))), own(key))
             End If
@@ -396,7 +396,7 @@ End Function
 ' 並び順（SCM のセキュリティポリシー画面と同じ）: Collection of Array(folder, position)
 '   Global Pre → Prisma Access Pre → Mobile Users Container Pre → GlobalProtect → Explicit Proxy
 '   → Mobile Users Container Post → Remote Networks → Service Connections → Prisma Access Post → Global Post
-'   Pre/Post は基本設定で選んだものだけ。GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は常に表示（post はルールがあるときだけ）
+'   Pre/Post は基本設定で選んだものだけ。GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は常に表示（pre だけ。Post は無い）
 Private Function FlowOrder(ByVal scopes As Collection) As Collection
     Dim res As New Collection, sel As Object, sc As Variant, usePre As Boolean, usePost As Boolean, ps As Variant, x As Variant
     For Each ps In Positions()
@@ -408,11 +408,9 @@ Private Function FlowOrder(ByVal scopes As Collection) As Collection
         sel(CStr(sc(1))) = True
     Next
     For Each x In Array(Array("All", "pre"), Array("Shared", "pre"), Array("Mobile Users Container", "pre"), _
-                        Array("Mobile Users", "pre"), Array("Mobile Users", "post"), _
-                        Array("Mobile Users Explicit Proxy", "pre"), Array("Mobile Users Explicit Proxy", "post"), _
+                        Array("Mobile Users", "pre"), Array("Mobile Users Explicit Proxy", "pre"), _
                         Array("Mobile Users Container", "post"), _
-                        Array("Remote Networks", "pre"), Array("Remote Networks", "post"), _
-                        Array("Service Connections", "pre"), Array("Service Connections", "post"), _
+                        Array("Remote Networks", "pre"), Array("Service Connections", "pre"), _
                         Array("Shared", "post"), Array("All", "post"))
         If sel.Exists(CStr(x(0))) Then
             If SingleRB(CStr(x(0))) Then
@@ -432,10 +430,12 @@ Private Function SingleRB(ByVal folder As String) As Boolean
     End Select
 End Function
 
- その folder・position を取得するか（1つのルールベースの folder は pre・post とも取得）
+' その folder・position を取得するか
+'   1つのルールベースの folder（GlobalProtect・Explicit Proxy・Remote Networks・Service Connections）は pre だけ取得する
+'   （post で取得すると同じルールが返り、別スコープ扱いになるため。Post は使わない）
 Private Function NeedFetch(ByVal folder As String, ByVal pos As String) As Boolean
     Dim ps As Variant
-    If SingleRB(folder) Then NeedFetch = True: Exit Function
+    If SingleRB(folder) Then NeedFetch = (LCase$(pos) = "pre"): Exit Function
     For Each ps In Positions()
         If ps = pos Then NeedFetch = True
     Next
@@ -455,7 +455,7 @@ End Function
 ' 表示名＋【Pre】/【Post】（GlobalProtect・Explicit Proxy・Remote Networks は区別が無いので付けない）
 Private Function GroupLabel(ByVal folder As String, ByVal pos As String) As String
     If SingleRB(folder) Then
-        If LCase$(pos) = "post" Then GroupLabel = ScopeLabel(folder) & " 【Post】※通常は使いません" Else GroupLabel = ScopeLabel(folder)
+        GroupLabel = ScopeLabel(folder)
         Exit Function
     End If
     GroupLabel = ScopeLabel(folder) & " " & IIf(LCase$(pos) = "post", "【Post】", "【Pre】")

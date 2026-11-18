@@ -328,7 +328,8 @@ Private Function FetchRulesCore() As Long
 End Function
 
 ' 戻り値：Collection of Array(folder, position, 表示名, Collection of APIの要素)
-'   並び順は Pre をすべて（親→子）→ Post をすべて（子→親）。FlowOrder 参照
+'   並び順はセキュリティポリシーと同じ評価順（FlowOrder 参照）
+'   GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は Pre/Post の区別が無い1つのルールベース（pre だけ取得）
 '   子folderの応答に含まれる上位folderのルール（継承分）は、定義元のスコープにだけ出す
 '   folder=All（グローバル）のルールは「グローバル（All）」スコープとして一番外側に出す（参照のみ）
 Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) As Collection
@@ -342,10 +343,12 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
     End If
     Set own = CreateObject("Scripting.Dictionary")
     Set allD = CreateObject("Scripting.Dictionary")
-    For Each ps In Positions()
-        Set seen = CreateObject("Scripting.Dictionary")
+    ' グローバル（All）のルールは pre・post のどちらで取得しても同じものが返るため、id で重複を除く（先に見つかった pre に出す）
+    Set seen = CreateObject("Scripting.Dictionary")
+    For Each ps In Array("pre", "post")
         Set allD(CStr(ps)) = New Collection
         For Each sc In scopes
+          If NeedFetch(CStr(sc(1)), CStr(ps)) Then
             Prog opLabel & "：" & sc(0) & "（" & ps & "）を取得中…"
             q = "folder=" & Enc(CStr(sc(1))) & "&position=" & ps
             Set items = GetAll(BaseUrl(), q, opLabel, st, msg)
@@ -373,6 +376,7 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
                 WriteLog opLabel, CStr(sc(0)) & "／" & ps, "GET", WithQuery(BaseUrl(), q), 200, _
                          "定義 " & c.Count & " 件（上位folderから継承 " & inh & " 件は定義元のスコープに表示）"
             End If
+          End If
         Next
     Next
     ' 評価順に並べる
@@ -389,32 +393,50 @@ Private Function FetchRuleGroups(ByVal opLabel As String, ByRef failN As Long) A
     Set FetchRuleGroups = groups
 End Function
 
-' 並び順：Pre をすべて（親→子）、続けて Post をすべて（子→親＝評価順）: Collection of Array(folder, position)
-'   例）All Pre → Shared Pre → RN Pre → SC Pre → MUC Pre → GP Pre → EP Pre
-'       → EP Post → GP Post → MUC Post → SC Post → RN Post → Shared Post → All Post（基本設定で選んだ position だけ）
+' 並び順（セキュリティポリシーと同じ評価順）: Collection of Array(folder, position)
+'   Global Pre → Prisma Access Pre → Mobile Users Container Pre → GlobalProtect → Explicit Proxy
+'   → Mobile Users Container Post → Remote Networks → Service Connections → Prisma Access Post → Global Post
+'   Pre/Post は基本設定で選んだものだけ。GlobalProtect・Explicit Proxy・Remote Networks・Service Connections は常に表示（pre だけ）
 Private Function FlowOrder(ByVal scopes As Collection) As Collection
-    Dim res As New Collection, fs() As String, n As Long, i As Long, sc As Variant, usePre As Boolean, usePost As Boolean, ps As Variant
+    Dim res As New Collection, sel As Object, sc As Variant, usePre As Boolean, usePost As Boolean, ps As Variant, x As Variant
     For Each ps In Positions()
         If ps = "pre" Then usePre = True Else usePost = True
     Next
-    ReDim fs(0 To scopes.Count)
-    fs(0) = "All"
-    n = 0
+    Set sel = CreateObject("Scripting.Dictionary")
+    sel("All") = True
     For Each sc In scopes
-        n = n + 1
-        fs(n) = CStr(sc(1))
+        sel(CStr(sc(1))) = True
     Next
-    If usePre Then
-        For i = 0 To n
-            res.Add Array(fs(i), "pre")
-        Next
-    End If
-    If usePost Then
-        For i = n To 0 Step -1
-            res.Add Array(fs(i), "post")
-        Next
-    End If
+    For Each x In Array(Array("All", "pre"), Array("Shared", "pre"), Array("Mobile Users Container", "pre"), _
+                        Array("Mobile Users", "pre"), Array("Mobile Users Explicit Proxy", "pre"), _
+                        Array("Mobile Users Container", "post"), _
+                        Array("Remote Networks", "pre"), Array("Service Connections", "pre"), _
+                        Array("Shared", "post"), Array("All", "post"))
+        If sel.Exists(CStr(x(0))) Then
+            If SingleRB(CStr(x(0))) Then
+                res.Add x
+            ElseIf (x(1) = "pre" And usePre) Or (x(1) = "post" And usePost) Then
+                res.Add x
+            End If
+        End If
+    Next
     Set FlowOrder = res
+End Function
+
+' Pre/Post の区別が無い1つのルールベースの folder
+Private Function SingleRB(ByVal folder As String) As Boolean
+    Select Case LCase$(folder)
+        Case "mobile users", "mobile users explicit proxy", "remote networks", "service connections": SingleRB = True
+    End Select
+End Function
+
+' その folder・position を取得するか（1つのルールベースの folder は pre だけ）
+Private Function NeedFetch(ByVal folder As String, ByVal pos As String) As Boolean
+    Dim ps As Variant
+    If SingleRB(folder) Then NeedFetch = (LCase$(pos) = "pre"): Exit Function
+    For Each ps In Positions()
+        If ps = pos Then NeedFetch = True
+    Next
 End Function
 
 ' スコープの階層（段のずらし幅）: All=0 / Prisma Access=1 / RN・SC・MUC=2 / GlobalProtect・Explicit Proxy=3
@@ -430,6 +452,7 @@ End Function
 
 ' 表示名＋【Pre】/【Post】
 Private Function GroupLabel(ByVal folder As String, ByVal pos As String) As String
+    If SingleRB(folder) Then GroupLabel = ScopeLabel(folder): Exit Function
     GroupLabel = ScopeLabel(folder) & " " & IIf(LCase$(pos) = "post", "【Post】", "【Pre】")
 End Function
 
