@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 377,158 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 380,033 バイト）。</pre>';
   }
 });
 </script>
@@ -56,6 +56,7 @@ const SITE = {
   lead: L('アプリを紹介する喫茶店です。気になるアプリを開いて、ゆっくりご覧ください。', 'Welcome to a caf\u00E9 that serves apps. Open any app that catches your eye and take your time.'),
 };
 const NEWS = [
+  { date: '2026/11/19', tag: L('PDF暗記マーカー', 'PDF Memorization Marker'), text: L('Android 版を Google Play でリリースしました。閲覧中に流せる BGM などを加えています。', 'The Android version is now released on Google Play, with new features such as background music while you study.') },
   { date: '2026/11/14', tag: 'BOMBOM', text: L('新しいゲーム「BOMBOM」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new game “BOMBOM”. We are looking for testers.') },
   { date: '2026/11/10', tag: L('MP3変換', 'MP3 Converter'), text: L('新しいアプリ「MP3変換」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new app “MP3 Converter”. We are looking for testers.') },
   { date: '2026/11/04', tag: L('タップる？', 'TaPru'), text: L('新しいゲーム「タップる？」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new game “TaPru”. We are looking for testers.') },
@@ -75,7 +76,7 @@ const BUG_FORM_AM = 'https://forms.gle/7fReguSQ3ut8kDpGA';
 const BUG_FORM_TP = '';
 const BUG_FORM_M2A = '';
 const BUG_FORM_BB = '';
-const TEST_URL_PDF = 'https://play.google.com/store/apps/details?id=net.mscafe.pdfmasking';
+const STORE_URL_PDF = '';
 const TEST_URL_MT = '';
 const TEST_URL_FR = 'https://play.google.com/store/apps/details?id=net.mscafe.furush';
 const TEST_URL_AM = 'https://play.google.com/store/apps/details?id=net.mscafe.appmonitor';
@@ -131,7 +132,7 @@ const ADMIN_ICON = 'data:image/jpeg;base64,' + [
   'BSoRQhKhFKFGajNFOSAgKURAERMkAREQBERAEQIgGaIiAIiIAiIgCZoiAKETJCBTmijJATmoUqEBOahMkVB//9k=',
 ].join('');
 const LEGAL_DATE = '2026年10月11日';
-const LEGAL_UPDATED = '2026年11月17日';
+const LEGAL_UPDATED = '2026年11月19日';
 const MAIL_R = '==QbvNmLslWYtdGQ5JXZ25SeuFWbukncyVWb';
 const TEAM = [
   { cls: 'pm',     role: 'PM',      name: 'M.A.C.Y', kind: 'human', desc: L('企画と優先順位を決める', 'Plans the menu and sets priorities') },
@@ -958,6 +959,10 @@ ${[['128', 22, 0], ['192', 73, 1], ['256', 124, 0], ['320', 175, 0]].map(([t, x,
   cache: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('サーバーのデータを端末に保存', 'Data from the server is saved on the device')}"><path class="f-paper" d="M44 74a16 16 0 0 1 6-30 22 22 0 0 1 42 4 14 14 0 0 1-2 26z"/><text class="t" x="68" y="64" text-anchor="middle">${
       L('データ', 'Data')}</text><path class="s-ink" d="M100 62h34M126 54l8 8-8 8"/><rect class="f-paper" x="148" y="26" width="52" height="92" rx="9"/><rect class="f-mask" x="156" y="40" width="36" height="14" rx="3"/><rect class="f-line" x="156" y="64" width="30" height="4" rx="2"/><rect class="f-line" x="156" y="74" width="22" height="4" rx="2"/><text class="t" x="68" y="130" text-anchor="middle">${L('サーバー',
       'Server')}</text><text class="t" x="174" y="136" text-anchor="middle">${L('端末に保存', 'Saved on device')}</text></svg>`,
+  bgm: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('PDFを見ながらBGMを流す', 'Background music while viewing a PDF')}">
+    <rect class="f-paper" x="28" y="18" width="92" height="116" rx="5"/>${lines(38, 32, 72, 6, 14, 41)}<rect class="f-mask" x="48" y="88" width="52" height="12" rx="3"/>
+    <path class="s-mask" d="M158 98V46l46-10v52"/><ellipse class="f-mask" cx="150" cy="98" rx="10" ry="8"/><ellipse class="f-mask" cx="196" cy="88" rx="10" ry="8"/>
+    <text class="t" x="180" y="128" text-anchor="middle">${L('BGM ON', 'Music on')}</text></svg>`,
   speak: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('単語の読み上げと詳細', 'Word read-aloud and details')}">
     <rect class="f-paper" x="30" y="34" width="120" height="82" rx="10"/><text class="t-jp" x="46" y="66">resilient</text>
     <rect class="f-line" x="46" y="80" width="60" height="5" rx="2.5"/><rect class="f-line" x="46" y="92" width="44" height="5" rx="2.5"/>
@@ -1255,11 +1260,11 @@ const APPS = [
     note: L('クローズドテスト中のため、内容は変わることがあります。デモの問題は例で、実際のアプリとは異なります。', 'The app is in closed testing, so details may change. The demo questions are only examples and differ from the real app.'),
   },
   {
-    id: 'pdf-marker', name: L('PDF暗記マーカー', 'PDF Memorization Marker'), icon: pdfIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_PDF, test: TEST_URL_PDF,
+    id: 'pdf-marker', name: L('PDF暗記マーカー', 'PDF Memorization Marker'), icon: pdfIcon, status: L('リリース ／ Android版', 'Released / Android'), bug: BUG_FORM_PDF,
     one: L('問題集PDFの答えをマスクして、タップで確かめる暗記アプリ。現役東大生監修。', 'A study app that masks the answers in your workbook PDFs so you can check them with a tap. Supervised by a current University of Tokyo student.'),
     headline: L('<span class="nb"><span class="hl">答え</span>を隠して、</span><span class="nb">タップで確かめる。</span>', '<span class="nb">Hide the <span class="hl">answers</span>,</span> <span class="nb">check with a tap.</span>'),
     lead: L('お手持ちの問題集PDFが、そのまま自分専用の暗記帳になります。答えにマスクをかけてタップで見え隠れ。ハイライト・書き込み・チェック・栞から、見直したいページだけの印刷まで、勉強に要るものをひとつのアプリにそろえました。紙の問題集も、写真から PDF にできます。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。', 'The workbook PDFs you already have become your own flashcard books. Mask the answers and show or hide them with a tap. From highlights, handwriting, checks and bookmarks to printing just the pages you want to review, everything you need for studying is in one app. Paper workbooks can be turned into PDFs from photos, too. The screens on this site differ in detail from the real app.'),
-    os: L('対応OS　Android 8.0 以上 ／ iOS（未開発）　　料金　無料（広告あり）', 'OS: Android 8.0 or later / iOS (not developed yet)　　Price: Free (with ads)'), store: { label: L('クローズドテスト中', 'In closed testing'), url: '' },
+    os: L('対応OS　Android 8.0 以上 ／ iOS（未開発）　　料金　無料（広告あり）', 'OS: Android 8.0 or later / iOS (not developed yet)　　Price: Free (with ads)'), store: { label: L('Google Play で公開（リンクは近日掲載）', 'On Google Play (link coming soon)'), url: STORE_URL_PDF },
     demo: pdfDemo, init: initPdf,
     features: [
       [ILL.mask, L('答えをマスクで隠す', 'Hide answers with masks'), L('マスキングモードで、隠したい所を指でなぞるとマスクができます。色はコーラル・ネイビー・ブルー・ミント・ピンクの5色。まとめて削除もできます。', 'In masking mode, trace over what you want to hide to make a mask. Choose from five colors: coral, navy, blue, mint and pink. You can also delete masks all at once.')],
@@ -1270,9 +1275,9 @@ const APPS = [
       [ILL.bookmark, L('栞で続きから', 'Pick up where you left off'), L('今のページに栞を挟めます（1つのPDFに1つ）。次に開いたとき、「栞から再開」か「最初から」を選べます。一覧にも栞のページが出ます。', 'Put a bookmark in the current page (one per PDF). Next time, choose “Resume from bookmark” or “From the start”. The list also shows the bookmarked page.')],
       [ILL.print, L('チェックしたページを印刷', 'Print checked pages'), L('すべてのページか、赤・青・黄のチェックがあるページを選んで印刷できます。マスク・チェック・ハイライト・落書きを含めるか、カラー／白黒、用紙サイズ（A3・B4・A4・B5・A5）も選べます。', 'Print all pages, or only the pages with red, blue or yellow checks. You can choose whether to include masks, checks, highlights and doodles, color or black and white, and paper size (A3, B4, A4, B5 or A5).')],
       [ILL.photo, L('写真から問題集を作る', 'Make a workbook from photos'), L('紙の問題集を撮影するか、ギャラリーから選んで、A4のページにしていきます（最大25ページ）。保存すると Download フォルダに PDF ができ、一覧にも追加されます。', 'Take photos of a paper workbook or pick them from your gallery to make A4 pages (up to 25). When you save, a PDF is created in the Download folder and added to the list.')],
-      [ILL.swipe, L('スワイプとピンチで見やすく', 'Swipe and pinch'), L('左右のスワイプで1ページずつ切り替え。下のスライダーなら、離れたページへもすぐ移れます（動かしている間は行き先のページの見本が出ます）。ピンチで最大3倍まで拡大し、拡大中は指で動かせます。', 'Swipe left or right to turn pages one at a time. The slider at the bottom takes you straight to pages far away, showing a preview of where you will land while you drag. Pinch to zoom up to 3×, and drag while zoomed.')],
+      [ILL.swipe, L('スワイプとピンチで見やすく', 'Swipe and pinch'), L('左右のスワイプで1ページずつ切り替え。下のスライダーなら、離れたページへもすぐ移れます（動かしている間は行き先のページの見本が出ます）。ピンチで最大5倍まで拡大し、拡大中は指で動かせます。マスクはPDF上の座標で記録するので、拡大や画面の回転をしてもズレません。', 'Swipe left or right to turn pages one at a time. The slider at the bottom takes you straight to pages far away, showing a preview of where you will land while you drag. Pinch to zoom up to 5×, and drag while zoomed. Masks are saved by their position in the PDF, so they stay put when you zoom or rotate.')],
       [ILL.translate, L('英文を簡易翻訳', 'Quick English translation'), L('簡易翻訳モードで、訳したい英文の範囲を指でなぞると日本語訳が出ます。読み取りも翻訳も端末内で行うので、最初に翻訳データをダウンロードすれば、オフラインでも使えます。簡易的な翻訳のため、誤訳がある場合があります。', 'In quick translation mode, trace over English text to see a Japanese translation. Reading and translation happen on the device, so after downloading the translation data once, it works offline. As a simple translation, it may contain mistakes.')],
-      [ILL.coord, L('拡大してもズレないマスク', 'Masks that stay put when zoomed'), L('マスクは画面上の位置ではなく、PDF上の座標で記録します。拡大縮小や画面の回転をしても、同じ場所に残ります。', 'Masks are saved by their position in the PDF, not on the screen, so they stay in place when you zoom or rotate.')],
+      [ILL.bgm, L('BGMを流しながら勉強', 'Study with background music'), L('ホームの歯車（オプション）でサウンドをONにすると、PDFを見ている間BGMが繰り返し流れます。曲はデフォルトのジャズか、端末にある好きな曲（MP3・M4A・WAV など）を1曲選べます。最初はOFFなので、教室や図書館でもいきなり鳴りません。閲覧画面のメニューからもON/OFFできます。', 'Turn on Sound in Options (the gear on Home) and music loops while you view a PDF. Use the default jazz track or pick one song of your own (MP3, M4A, WAV and more). Sound is off at first, so it never starts playing suddenly in class or the library. You can also switch it on or off from the menu on the PDF screen.')],
       [ILL.layers, L('元のPDFは書き換えない', 'Your original PDF stays untouched'), L('マスク・チェック・ハイライト・落書きは、PDFの上に重ねて表示するだけ。元のファイルには手を加えません。記録はPDFごとに保存され、メニューから種類ごとにまとめて消すこともできます。', 'Masks, checks, highlights and doodles are only shown on top of the PDF. The original file is never changed. Records are saved for each PDF, and you can clear each kind all at once from the menu.')],
     ],
     steps: [
@@ -1280,7 +1285,7 @@ const APPS = [
       [L('答えにマスクをかける', 'Mask the answers'), L('マスキングモードで、答えの上を指でなぞってマスクを作ります。あとから移動やサイズ変更、色の変更もできます。', 'In masking mode, trace over the answers to make masks. You can move, resize and recolor them later.')],
       [L('タップして確かめる', 'Tap to check'), L('マスクをタップして答えを確認。できた問題、間違えた問題をチェックで残せます。', 'Tap a mask to check the answer. Mark questions you got right or wrong with checks.'), `<div class="marks"><span>${badge('ok')}${L('長押し', 'Long press')}</span><span>${badge('ng')}${L('ダブルタップ', 'Double tap')}</span><span>${badge('warn')}${L('上スワイプ', 'Swipe up')}</span></div>`],
     ],
-    info: [[L('アプリ名', 'App name'), L('PDF暗記マーカー', 'PDF Memorization Marker')], [L('監修', 'Supervised by'), L('現役東大生', 'A current University of Tokyo student')], [L('対応OS', 'OS'), L('Android 8.0 以上 ／ iOS（未開発）', 'Android 8.0 or later / iOS (not developed yet)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（クローズドテスト中）', 'Google Play (closed testing)')], [L('保存', 'Storage'), L('マスク・チェック・ハイライト・落書き・栞はPDFごとに記録します。PDFファイルのコピーは作りません。',
+    info: [[L('アプリ名', 'App name'), L('PDF暗記マーカー', 'PDF Memorization Marker')], [L('監修', 'Supervised by'), L('現役東大生', 'A current University of Tokyo student')], [L('対応OS', 'OS'), L('Android 8.0 以上 ／ iOS（未開発）', 'Android 8.0 or later / iOS (not developed yet)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（Android版）', 'Google Play (Android)')], [L('サウンド', 'Sound'), L('閲覧中のBGM（最初はOFF）。デフォルトの曲か、好きな曲を1曲選べます。', 'Background music while viewing (off at first). Use the default song or pick one of your own.')], [L('保存', 'Storage'), L('マスク・チェック・ハイライト・落書き・栞はPDFごとに記録します。PDFファイルのコピーは作りません。',
         'Masks, checks, highlights, doodles and bookmarks are saved for each PDF. No copies of PDF files are made.')], [L('操作説明', 'How-to'), L('初回に動く絵で説明します。PDFを開いた画面のメニュー（\u2630）から、いつでも見直せます。', 'Animated guides are shown the first time. You can see them again any time from the menu (\u2630) on the PDF screen.')]],
   },
   {
@@ -1747,6 +1752,7 @@ const LEGAL = [
     'BOMBOM は、アプリの起動時に、ステージ情報（ゲームのデータ）を GitHub（GitHub, Inc.）の公開リポジトリから取得することがあります（raw.githubusercontent.com）。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。取得できなかったときは、アプリに入っているデータで動きます。',
     'BOMBOM のプレイ履歴は、端末の Android のバックアップ機能（Google のバックアップ）が有効な場合、利用者の Google アカウントのバックアップに含まれ、機種変更のときに新しい端末へ移せます。バックアップは Google が利用者のアカウントで管理するもので、店長は見ることも受け取ることもできません。バックアップに含めるのはプレイ履歴だけで、広告や Firebase のデータは含めません。',
     'MP3変換の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
+    'PDF暗記マーカーの BGM は、端末の中で再生します。利用者が選んだ曲は、Android のファイル選択で選んだファイルだけを読み込み、曲の場所とファイル名を設定として端末内に保存します。曲を店長を含む外部へ送信することはありません。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
     'アプリがサーバーと通信する際（出題データの取得など）、サーバー側でIPアドレスが記録されます。それ以外の個人を特定する情報は取得しません。',
     'FuRUSH は、問題のデータを GitHub（GitHub, Inc.）の公開リポジトリから取得します（raw.githubusercontent.com）。アプリの起動時に更新の有無を確かめ、モードを開いたときにデータをダウンロードします。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。',
@@ -1830,6 +1836,7 @@ const LEGAL = [
     'When BOMBOM starts, it may download stage information (game data) from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub. If the download fails, the app runs with the data built into it.',
     'If Android’s backup feature (Google backup) is turned on for your device, BOMBOM’s play history is included in your Google Account backup and can be moved to a new device when you switch devices. The backup is managed by Google in your account; the Manager can neither view nor receive it. Only the play history is included in the backup, not ad or Firebase data.',
     'MP3 Converter connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
+    'Background music in PDF Memorization Marker is played on your device. For a song you choose, the app reads only the file you pick with the Android file picker, and saves its location and file name as a setting on your device. The song is never sent to anyone, including the Manager.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
     'When an app communicates with a server (for example, to download question data), the server records your IP address. No other personally identifiable information is collected.',
     'FuRUSH downloads its question data from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. It checks for updates when the app starts and downloads data when you open a mode. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub.',
@@ -1915,6 +1922,7 @@ const LEGAL = [
     `これらは店長が改変せず、LGPL の条件に従って、置き換えのできるライブラリとして組み込んでいます。ソースコードは各プロジェクトの公開ページから入手でき、ライセンスの全文は ${A(L_LGPL21, 'GNU LGPL 2.1')}・${A(L_LGPL3, 'GNU LGPL 3.0')} でご覧いただけます。FFmpegKit の audio 版に含まれるそのほかの音声ライブラリも、それぞれのライセンスに従って利用しています。アプリのメニューの「アプリについて」にも、使用しているソフトウェアを表示しています。`,
     'アプリの出題データは、店長が用意したものです。第三者の権利を侵害しないよう配慮します。',
     '利用者が取り込む PDF の著作権は、それぞれの権利者に帰属します。権利者の許諾なく取り込んだり、印刷・配布したりしないでください。',
+    'PDF暗記マーカーのデフォルトの BGM「Midnight Study - Cool Jazz Trio」は、店長が用意した曲です。アプリの外で使ったり、取り出して配布したりしないでください。利用者が選んで流す曲の著作権は、それぞれの権利者に帰属します。',
     'MP3変換で変換する動画と、変換した音声の著作権は、それぞれの権利者に帰属します。変換は、ご自身で撮影した動画など、使ってよい動画に限ってください。権利者の許諾なく、変換した音声を配布・公開しないでください。コピー防止（DRM）などの技術的な保護を外して変換することもしないでください。',
   ]) +
   H('6. 権利に関する申し立て') +
@@ -1943,6 +1951,7 @@ const LEGAL = [
     ` The Manager has not modified them, and they are included as replaceable libraries under the terms of the LGPL. Their source code is available from each project’s website, and the full license texts are at ${A(L_LGPL21, 'GNU LGPL 2.1')} and ${A(L_LGPL3, 'GNU LGPL 3.0')}. The other audio libraries included in the audio edition of FFmpegKit are also used under their respective licenses. The software used is also listed under “About” in the app’s menu.`,
     'The question data in the apps is prepared by the Manager, with care not to infringe the rights of others.',
     'The copyright of PDFs you open in the apps belongs to their respective owners. Please do not import, print or distribute them without the owner’s permission.',
+    'The default background music in PDF Memorization Marker, “Midnight Study - Cool Jazz Trio”, was provided by the Manager. Please do not use it outside the app or extract and distribute it. The copyright of songs you choose to play belongs to their respective owners.',
     'The copyright of videos you convert with MP3 Converter, and of the converted audio, belongs to their respective owners. Please convert only videos you are allowed to use, such as ones you filmed yourself. Do not distribute or publish converted audio without the owner’s permission, and do not remove copy protection (DRM) or other technical protection measures to convert a video.',
   ]) +
   H('6. Rights claims') +
@@ -2209,7 +2218,7 @@ const initNews = () => {
   addEventListener('keydown', e => { if (e.key === 'Escape' && !bub.hidden) { toggle(false); btn.focus(); } }, SIG);
 };
 const bugEl = () => `<div class="bugs"><p class="tester-h">${L('不具合報告', 'Bug reports')}</p><p class="tester-p">${L('お出ししたアプリに不具合がありましたら、こちらからお知らせください。Google フォームが開きます。', 'If something is wrong with an app we served, please let us know here. A Google Form opens.')}</p>
-${RECRUIT().map(a => `<div class="bug-row"><b>${a.name}</b>${a.bug
+${APPS.filter(a => a.tester !== undefined || a.bug).map(a => `<div class="bug-row"><b>${a.name}</b>${a.bug
   ? `<a class="btn btn-main" href="${a.bug}" target="_blank" rel="noopener">${L('不具合を報告する', 'Report a bug')}</a>`
   : L('<span class="btn btn-off">フォーム準備中</span>', '<span class="btn btn-off">Form coming soon</span>')}</div>`).join('\n')}
 </div>`;
