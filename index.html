@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 380,033 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 381,424 バイト）。</pre>';
   }
 });
 </script>
@@ -76,7 +76,7 @@ const BUG_FORM_AM = 'https://forms.gle/7fReguSQ3ut8kDpGA';
 const BUG_FORM_TP = '';
 const BUG_FORM_M2A = '';
 const BUG_FORM_BB = '';
-const STORE_URL_PDF = '';
+const STORE_URL_PDF = 'https://play.google.com/store/apps/details?id=net.mscafe.pdfmasking';
 const TEST_URL_MT = '';
 const TEST_URL_FR = 'https://play.google.com/store/apps/details?id=net.mscafe.furush';
 const TEST_URL_AM = 'https://play.google.com/store/apps/details?id=net.mscafe.appmonitor';
@@ -232,6 +232,7 @@ h2{font:900 clamp(26px,4vw,38px)/1.3 var(--f-display);text-wrap:balance}
 .cta{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
 .btn{display:inline-flex;align-items:center;font:700 15px/1 var(--f-body);padding:14px 22px;border-radius:12px;text-decoration:none;border:2px solid transparent}
 .btn-main{background:var(--mask);color:var(--mask-ink)}
+.btn-store{gap:10px;padding:10px 20px 10px 16px}.btn-store .and{width:28px;height:28px;fill:currentColor;flex:none}.btn-store span{display:grid;gap:3px}.btn-store small{font:500 11px/1 var(--f-body);opacity:.8}
 .btn-off{border:2px dashed var(--line);color:var(--muted)}
 .tester{margin-top:22px;padding:16px 18px;border:1.5px dashed var(--mask);border-radius:16px;background:var(--tint);display:grid;gap:8px;justify-items:start}
 .tester-h{font:900 16px/1.4 var(--f-display)}
@@ -1913,6 +1914,7 @@ const LEGAL = [
   H('5. 第三者の権利の尊重') +
   UL([
     'Android、Google Play、AdMob、Firebase などは Google LLC の商標です。その他の会社名・製品名は、各社の商標または登録商標です。',
+    'インストールボタンの Android ロボットは、Google が作成および提供している作品から複製または変更したものであり、クリエイティブ・コモンズ表示 3.0 ライセンスに記載された条件に従って使用しています。',
     'アプリには、Android（Google）の公式ライブラリなど、第三者のソフトウェアを利用しています。それらは各ライセンスの条件に従って利用しています。',
     'アプリ見守りの国データは、DB-IP Lite（db-ip.com、CC BY 4.0）を利用しています。脅威リストは、URLhaus・HaGeZi・Feodo Tracker・Spamhaus DROP の各配布元の条件に従って利用します。',
     `ML Kit の利用にあたっては、${A(L_MLKIT, 'ML Kit の利用規約')}に従います。`,
@@ -1922,7 +1924,7 @@ const LEGAL = [
     `これらは店長が改変せず、LGPL の条件に従って、置き換えのできるライブラリとして組み込んでいます。ソースコードは各プロジェクトの公開ページから入手でき、ライセンスの全文は ${A(L_LGPL21, 'GNU LGPL 2.1')}・${A(L_LGPL3, 'GNU LGPL 3.0')} でご覧いただけます。FFmpegKit の audio 版に含まれるそのほかの音声ライブラリも、それぞれのライセンスに従って利用しています。アプリのメニューの「アプリについて」にも、使用しているソフトウェアを表示しています。`,
     'アプリの出題データは、店長が用意したものです。第三者の権利を侵害しないよう配慮します。',
     '利用者が取り込む PDF の著作権は、それぞれの権利者に帰属します。権利者の許諾なく取り込んだり、印刷・配布したりしないでください。',
-    'PDF暗記マーカーのデフォルトの BGM「Midnight Study - Cool Jazz Trio」は、店長が用意した曲です。アプリの外で使ったり、取り出して配布したりしないでください。利用者が選んで流す曲の著作権は、それぞれの権利者に帰属します。',
+    'PDF暗記マーカーのデフォルトの BGM「Midnight Study - Cool Jazz Trio」は、店長が Flow Music（生成AI）で作成した音源で、著作権は店長に帰属します。アプリの外で使ったり、取り出して配布したりしないでください。利用者が選んで流す曲の著作権は、それぞれの権利者に帰属します。',
     'MP3変換で変換する動画と、変換した音声の著作権は、それぞれの権利者に帰属します。変換は、ご自身で撮影した動画など、使ってよい動画に限ってください。権利者の許諾なく、変換した音声を配布・公開しないでください。コピー防止（DRM）などの技術的な保護を外して変換することもしないでください。',
   ]) +
   H('6. 権利に関する申し立て') +
@@ -1942,6 +1944,7 @@ const LEGAL = [
   H('5. Respect for third-party rights') +
   UL([
     'Android, Google Play, AdMob, Firebase and related marks are trademarks of Google LLC. Other company and product names are trademarks or registered trademarks of their respective owners.',
+    'The Android robot on the install button is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.',
     'The apps use third-party software, such as official Android (Google) libraries, under the terms of their respective licenses.',
     'Country data in App Monitor is from DB-IP Lite (db-ip.com, CC BY 4.0). Threat lists are used under the terms of their distributors: URLhaus, HaGeZi, Feodo Tracker and Spamhaus DROP.',
     `ML Kit is used in accordance with the ${A(L_MLKIT, 'ML Kit Terms of Service')}.`,
@@ -1951,7 +1954,7 @@ const LEGAL = [
     ` The Manager has not modified them, and they are included as replaceable libraries under the terms of the LGPL. Their source code is available from each project’s website, and the full license texts are at ${A(L_LGPL21, 'GNU LGPL 2.1')} and ${A(L_LGPL3, 'GNU LGPL 3.0')}. The other audio libraries included in the audio edition of FFmpegKit are also used under their respective licenses. The software used is also listed under “About” in the app’s menu.`,
     'The question data in the apps is prepared by the Manager, with care not to infringe the rights of others.',
     'The copyright of PDFs you open in the apps belongs to their respective owners. Please do not import, print or distribute them without the owner’s permission.',
-    'The default background music in PDF Memorization Marker, “Midnight Study - Cool Jazz Trio”, was provided by the Manager. Please do not use it outside the app or extract and distribute it. The copyright of songs you choose to play belongs to their respective owners.',
+    'The default background music in PDF Memorization Marker, “Midnight Study - Cool Jazz Trio”, was created by the Manager with Flow Music (generative AI), and its copyright belongs to the Manager. Please do not use it outside the app or extract and distribute it. The copyright of songs you choose to play belongs to their respective owners.',
     'The copyright of videos you convert with MP3 Converter, and of the converted audio, belongs to their respective owners. Please convert only videos you are allowed to use, such as ones you filmed yourself. Do not distribute or publish converted audio without the owner’s permission, and do not remove copy protection (DRM) or other technical protection measures to convert a video.',
   ]) +
   H('6. Rights claims') +
@@ -2166,7 +2169,8 @@ const initMail = () => {
   try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawMail, SIG); } catch (e) {  }
 };
 const langSw = cls => `<div class="lang-sw ${cls}" role="group" aria-label="表示する言語 / Language"><button type="button" data-lang="ja" lang="ja" aria-pressed="${LANG === 'ja'}">日本語</button><button type="button" data-lang="en" lang="en" aria-pressed="${LANG === 'en'}">English</button></div>`;
-const storeEl = s => s.url ? `<a class="btn btn-main" href="${s.url}" target="_blank" rel="noopener">${L('Google Play で入手', 'Get it on Google Play')}</a>` : `<span class="btn btn-off">${s.label}</span>`;
+const ANDROID_MARK = `<svg class="and" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22A11.4 11.4 0 0 0 12 8.1c-1.78 0-3.46.38-4.92 1.04L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>`;
+const storeEl = s => s.url ? `<a class="btn btn-main btn-store" href="${s.url}" target="_blank" rel="noopener">${ANDROID_MARK}<span>${L('Google Play でインストール', 'Install on Google Play')}<small>${L('Android版', 'Android')}</small></span></a>` : `<span class="btn btn-off">${s.label}</span>`;
 const testerEl = url => `<div class="tester"><p class="tester-h">${L('テスター募集中（すべてのアプリが対象）', 'Testers wanted (for all apps)')}</p><p class="tester-p">${L('公開前・開発中のアプリを先に試して、使い心地や不具合を教えてくださる方を募集しています。', 'We are looking for people who will try our apps before release and tell us how they feel and what goes wrong.')}</p><ul class="tester-l">
 <li>${L('Google Play で使っている Google アカウントで、Google グループにご自身で参加してください。グループに参加したアカウントが、クローズドテストの対象になります。', 'Join the Google Group yourself with the Google account you use on Google Play. Accounts that join the group can take part in closed testing.')}</li>
 <li>${L('参加したあとは、下の「クローズドテストのリンク」から、試したいアプリをインストールしてください。', 'After joining, install the apps you want to try from “Closed testing links” below.')}</li>
