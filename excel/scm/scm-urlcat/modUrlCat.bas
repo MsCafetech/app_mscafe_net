@@ -33,12 +33,12 @@ Private Const LR_DESC As Long = 5       '   E description
 Private Const LR_CNT As Long = 6        '   F 件数（既存）
 Private Const LR_JUDGE As Long = 7      '   G 判定（VBA）
 Private Const LR_MSG As Long = 8        '   H 理由（VBA）
-Private Const LR_SPARE As Long = 200    '   新しいリスト用に書式を用意しておく空き行数
+Private Const LR_SPARE As Long = 2000   '   新しいリスト用に書式を用意しておく空き行数（1000件単位の追加に対応）
 Private Const WV_NAME As Long = 5       ' 横長シート（既存一覧・登録更新のリスト内容） name行
 Private Const WV_TYPE As Long = 6       '   type行
 Private Const WV_CNT As Long = 7        '   件数行（関数）
 Private Const WV_FIRST As Long = 8      '   値の開始行
-Private Const WV_SPARE As Long = 30     '   登録更新（リスト内容）で新しいリスト用に書式を用意しておく空き列数
+Private Const WV_SPARE As Long = 1500   '   登録更新（リスト内容）で新しいリスト用に書式を用意しておく空き列数（1000件単位の追加に対応）
 Private Const DL_FIRST As Long = 8      ' 差分チェック（リスト一覧） データ開始行
 Private Const DL_COLS As Long = 13      '   A～M
 Private Const DL_RES As Long = 13       '   M 実行結果
@@ -108,10 +108,10 @@ Public Sub FetchExisting()
                   vbOKCancel + vbExclamation) <> vbOK Then Exit Sub
     End If
     If Not EnsureToken() Then Exit Sub
-    Application.ScreenUpdating = False
+    BeginFast     ' 画面更新・自動計算を止める（1000件単位でも速く）
     Set items = FetchAllItems("既存取得")
     If items Is Nothing Then
-        Application.ScreenUpdating = True
+        EndFast
         Exit Sub
     End If
     Set meta = MetaFromItems(items)
@@ -153,7 +153,7 @@ Public Sub FetchExisting()
     Next
     msg = "URLリスト " & items.Count & " 件、リスト内容 " & nUrl & " 件" & vbLf & _
           "既存一覧（リスト一覧・リスト内容）と登録更新（リスト一覧・リスト内容）を作り直しました。"
-    Application.ScreenUpdating = True
+    EndFast
     WriteLog "既存取得", "", "GET", WithQuery(BaseUrl(), ContainerQuery()), 200, Replace(msg, vbLf, " / ")
     MsgBox "取得しました。" & vbLf & msg, vbInformation
 End Sub
@@ -1553,7 +1553,9 @@ Public Sub ExecuteAll()
     End If
     If MsgBox(n & " 件をSCMへ実行します（元に戻せません）。よろしいですか？", vbOKCancel + vbExclamation) <> vbOK Then Exit Sub
     If Not EnsureToken() Then Exit Sub
+    BeginFast
     For r = JS_FIRST To JS_FIRST + n - 1
+        Prog "API実行中 " & (r - JS_FIRST + 1) & " / " & n
         st = HttpCall(CStr(ws.Cells(r, 4).Value), CStr(ws.Cells(r, 5).Value), GetBody(ws, r), resText)
         ws.Cells(r, 8).Value = st
         If st >= 200 And st < 300 Then ok = ok + 1 Else ng = ng + 1
@@ -1562,6 +1564,7 @@ Public Sub ExecuteAll()
     ' 実行後のSCMの状態を取得し、JSON_CURLのとおりになったかを確認
     nChk = BuildDiffCore()
     Worksheets(SH_DLIST).Activate
+    EndFast
     MsgBox "成功 " & ok & " 件／失敗 " & ng & " 件" & vbLf & _
            "反映結果を差分チェック（リスト一覧）のM列「実行結果」に出力しました。" & _
            IIf(nChk > 0, vbLf & "要確認（赤）が " & nChk & " 件あります。", "") & vbLf & _
@@ -1629,8 +1632,10 @@ Public Sub BuildDiffCheck()
     Dim n As Long
     If Not CheckContainer() Then Exit Sub
     If Not EnsureToken() Then Exit Sub
+    BeginFast
     n = BuildDiffCore()
     If n >= 0 Then
+        EndFast
         MsgBox "差分を確認しました。要確認 " & n & " 件（リスト）。" & IIf(n > 0, vbLf & "差分チェック（リスト一覧）のM列の赤と実行ログを確認してください。", ""), _
                IIf(n > 0, vbExclamation, vbInformation)
     End If
@@ -1758,9 +1763,14 @@ Private Function FetchAllItems(ByVal opLabel As String) As Collection
             c.Add item
             cnt = cnt + 1
         Next
-        offset = offset + PAGE_LIMIT
-        If res.Exists("total") Then total = res("total") Else total = 0
-        If cnt < PAGE_LIMIT Or offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る（2026-11-19）
+        offset = offset + cnt
+        If res.Exists("total") Then total = Val(CStr(res("total"))) Else total = 0
+        If cnt = 0 Then Exit Do
+        If total > 0 And offset >= total Then Exit Do
+        If offset >= 1000000 Then Exit Do
+        Prog "取得中 " & Format$(offset, "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & " 件"
     Loop
     Set FetchAllItems = c
 End Function

@@ -26,7 +26,7 @@ Private Const R2 As String = "参照_HIPベンダー一覧"
 Private Const SH_RES As String = "チェック結果"
 
 Private Const IN_FIRST As Long = 8      ' ③～⑪ データ開始行
-Private Const IN_LAST As Long = 507     ' ③～⑪ データ最終行
+Private Const IN_LAST As Long = 2007    ' ③～⑪ データ最終行（2,000行。2026-11-19 に 500行から拡大）
 Private Const EX_FIRST As Long = 8      ' ② データ開始行
 
 ' ② 既存データ抽出：ブロックの開始位置（列のずれ。ブロック内の列番号 + OFF_xxx = シートの列番号）
@@ -45,9 +45,9 @@ Private Const EX_LAST As Long = 5000
 Private Const EXP_LAST As Long = 2000      ' HIPプロファイル
 Private Const URLV_LAST As Long = 30007    ' URL（1行1件）
 
-' ⑦ カスタムURLカテゴリ（横長：B列～AY列が1列1カテゴリ）
+' ⑦ カスタムURLカテゴリ（横長：B列から右へ1列1カテゴリ、最大1,500列）
 Private Const U_C1 As Long = 2
-Private Const U_C2 As Long = 51
+Private Const U_C2 As Long = 1501      ' 1,500カテゴリ（2026-11-19 に 50列から拡大）
 Private Const U_OP As Long = 6
 Private Const U_NAME As Long = 7
 Private Const U_TYPE As Long = 8
@@ -554,8 +554,9 @@ Private Sub CheckUrlSheet()
     End If
     ws.Range(ws.Cells(U_FIRST, U_C1), ws.Cells(U_LAST, U_C2)).Interior.Pattern = xlNone
     ws.Range(ws.Cells(U_VBA, U_C1), ws.Cells(U_VBA, U_C2)).ClearContents
-    v = ws.Range(ws.Cells(U_FIRST, U_C1), ws.Cells(U_LAST, U_C2)).Value
-    For c = U_C1 To U_C2
+    ' 記入のある最後の列までを1列ずつ読む（1,500列×3,000行を一度に読むとメモリが足りなくなるため）
+    For c = U_C1 To UrlLastCol(ws)
+        v = ws.Range(ws.Cells(U_FIRST, c), ws.Cells(U_LAST, c)).Value
         nm = Trim$(SafeStr(ws.Cells(U_NAME, c).Value))
         op = SafeStr(ws.Cells(U_OP, c).Value)
         isCm = (SafeStr(ws.Cells(U_TYPE, c).Value) = "Category Match")
@@ -565,7 +566,7 @@ Private Sub CheckUrlSheet()
         ngCells = "": wnCells = "": firstNg = ""
         If op <> "削除" Then
             For r = 1 To UBound(v, 1)
-                e = Trim$(SafeStr(v(r, c - U_C1 + 1)))
+                e = Trim$(SafeStr(v(r, 1)))
                 If e <> "" Then
                     cnt = cnt + 1
                     msg = EntryCheck(e, isCm)
@@ -615,6 +616,24 @@ Private Sub CheckUrlSheet()
         End If
     Next
 End Sub
+
+' ⑦で記入のある最後の列（6～9行目・URL欄のどこかに値がある列）。無ければ U_C1 - 1
+Private Function UrlLastCol(ByVal ws As Worksheet) As Long
+    Dim r As Long, c As Long, f As Range
+    UrlLastCol = U_C1 - 1
+    For r = U_OP To U_DESC
+        c = ws.Cells(r, U_C2).End(xlToLeft).Column
+        If Not IsEmpty(ws.Cells(r, U_C2).Value) Then c = U_C2
+        If c > UrlLastCol Then UrlLastCol = c
+    Next
+    Set f = ws.Range(ws.Cells(U_FIRST, U_C1), ws.Cells(U_LAST, U_C2)).Find(What:="*", LookIn:=xlValues, _
+            SearchOrder:=xlByColumns, SearchDirection:=xlPrevious)
+    If Not f Is Nothing Then
+        If f.Column > UrlLastCol Then UrlLastCol = f.Column
+    End If
+    If UrlLastCol > U_C2 Then UrlLastCol = U_C2
+    If UrlLastCol < U_C1 - 1 Then UrlLastCol = U_C1 - 1
+End Function
 
 Private Function EntryCheck(ByVal e As String, ByVal isCm As Boolean) As String
     Dim i As Long, cd As Long
