@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 381,424 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 381,676 バイト）。</pre>';
   }
 });
 </script>
@@ -1918,7 +1918,7 @@ const LEGAL = [
     'アプリには、Android（Google）の公式ライブラリなど、第三者のソフトウェアを利用しています。それらは各ライセンスの条件に従って利用しています。',
     'アプリ見守りの国データは、DB-IP Lite（db-ip.com、CC BY 4.0）を利用しています。脅威リストは、URLhaus・HaGeZi・Feodo Tracker・Spamhaus DROP の各配布元の条件に従って利用します。',
     `ML Kit の利用にあたっては、${A(L_MLKIT, 'ML Kit の利用規約')}に従います。`,
-    'BOMBOM の文字には、Dela Gothic One・Kaisei Decol・M PLUS 1p・M PLUS Rounded 1c・Russo One（SIL Open Font License 1.1）と Luckiest Guy（Apache License 2.0）の一部を利用しています。BOMBOM のキャラクターや背景の絵、音楽の制作には、生成AIを利用しています。',
+    'BOMBOM の文字には、Dela Gothic One・Kaisei Decol・M PLUS 1p・M PLUS Rounded 1c・Russo One（SIL Open Font License 1.1）と Luckiest Guy（Apache License 2.0）の一部を利用しています。BOMBOM のキャラクターや背景の絵の制作には、生成AIを利用しています。BOMBOM の音楽などの音源は、店長が Flow Music（生成AI）で作成したもので、著作権は店長に帰属します。',
     'タップる？のロゴの文字には、M PLUS Rounded 1c（SIL Open Font License 1.1）の一部を利用しています。',
     `MP3変換は、音声の変換に ${A(L_FFMPEG, 'FFmpeg')}（LGPL 2.1 以降）と ${A(L_FFMPEGKIT, 'FFmpegKit')}（LGPL 3.0。アプリに組み込んでいるのは、その後継として公開されている com.antonkarpenko:ffmpeg-kit-audio 2.2.3 で、FFmpeg 8.1 を含みます）を、MP3 の作成に ${A(L_LAME, 'LAME')}（LGPL）を利用しています。` +
     `これらは店長が改変せず、LGPL の条件に従って、置き換えのできるライブラリとして組み込んでいます。ソースコードは各プロジェクトの公開ページから入手でき、ライセンスの全文は ${A(L_LGPL21, 'GNU LGPL 2.1')}・${A(L_LGPL3, 'GNU LGPL 3.0')} でご覧いただけます。FFmpegKit の audio 版に含まれるそのほかの音声ライブラリも、それぞれのライセンスに従って利用しています。アプリのメニューの「アプリについて」にも、使用しているソフトウェアを表示しています。`,
@@ -1948,7 +1948,7 @@ const LEGAL = [
     'The apps use third-party software, such as official Android (Google) libraries, under the terms of their respective licenses.',
     'Country data in App Monitor is from DB-IP Lite (db-ip.com, CC BY 4.0). Threat lists are used under the terms of their distributors: URLhaus, HaGeZi, Feodo Tracker and Spamhaus DROP.',
     `ML Kit is used in accordance with the ${A(L_MLKIT, 'ML Kit Terms of Service')}.`,
-    'BOMBOM uses parts of the Dela Gothic One, Kaisei Decol, M PLUS 1p, M PLUS Rounded 1c and Russo One fonts (SIL Open Font License 1.1) and the Luckiest Guy font (Apache License 2.0). Generative AI is used in creating BOMBOM’s character and background art and its music.',
+    'BOMBOM uses parts of the Dela Gothic One, Kaisei Decol, M PLUS 1p, M PLUS Rounded 1c and Russo One fonts (SIL Open Font License 1.1) and the Luckiest Guy font (Apache License 2.0). Generative AI is used in creating BOMBOM’s character and background art. BOMBOM’s music and other audio were created by the Manager with Flow Music (generative AI), and their copyright belongs to the Manager.',
     'The TaPru logo uses part of the M PLUS Rounded 1c font (SIL Open Font License 1.1).',
     `MP3 Converter uses ${A(L_FFMPEG, 'FFmpeg')} (LGPL 2.1 or later) and ${A(L_FFMPEGKIT, 'FFmpegKit')} (LGPL 3.0; the app includes com.antonkarpenko:ffmpeg-kit-audio 2.2.3, a successor release that contains FFmpeg 8.1) for audio conversion, and ${A(L_LAME, 'LAME')} (LGPL) for creating MP3 files.` +
     ` The Manager has not modified them, and they are included as replaceable libraries under the terms of the LGPL. Their source code is available from each project’s website, and the full license texts are at ${A(L_LGPL21, 'GNU LGPL 2.1')} and ${A(L_LGPL3, 'GNU LGPL 3.0')}. The other audio libraries included in the audio edition of FFmpegKit are also used under their respective licenses. The software used is also listed under “About” in the app’s menu.`,
