@@ -29,7 +29,7 @@ Private Const S11 As String = "⑪ユーザ・グループ"
 
 Private Const FIRST As Long = 8
 Private Const IN_FIRST As Long = 8
-Private Const IN_LAST As Long = 507
+Private Const IN_LAST As Long = 2007    ' ③～⑪ データ最終行（2,000行）
 Private Const CHO_LAST As Long = 10007
 Private Const HDR As String = "▼"
 
@@ -45,7 +45,7 @@ Private Const OFF_PG As Long = 153
 
 ' ⑦ カスタムURLカテゴリ（横長）
 Private Const U_C1 As Long = 2
-Private Const U_C2 As Long = 51
+Private Const U_C2 As Long = 1501      ' ⑦ 1,500カテゴリ
 Private Const U_OP As Long = 6
 Private Const U_NAME As Long = 7
 
@@ -97,6 +97,7 @@ Private Const C_NG As Long = &HCEC7FF
 Private Const C_CHG As Long = &HADCBF8
 
 Private Const CELL_MAX As Long = 32767
+Private Const LIST_MAX As Long = 20     ' 入力チェックの理由欄に名前を並べる上限（超えた分は件数だけ表示）
 
 ' モード（sec / dec）
 Private mMode As String
@@ -728,7 +729,7 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
                 judge = ""
             End If
             ws.Cells(r, S_JUDGE).Value = judge
-            ws.Cells(r, S_REASON).Value = Mid$(ngs & warns, 2)
+            ws.Cells(r, S_REASON).Value = Left$(Mid$(ngs & warns, 2), 32000)     ' セル上限（32,767文字）を超えないように
             Select Case judge
                 Case "NG"
                     ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_REASON)).Interior.Color = C_NG
@@ -906,6 +907,7 @@ End Sub
 ' 参照チェック：③～⑪で削除予定でないか、選択肢にあるか、ルールの folder から見えるか
 Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns As String) As String
     Dim i As Long, grp As String, a As Variant, j As Long, nm As String, s As String, unk As String, sc As String, dsh As String
+    Dim unkN As Long, ngN As Long
     If mRef Is Nothing Then BuildChoices
     For i = 0 To NF - 1
         Select Case mFK(i)
@@ -921,7 +923,7 @@ Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns A
         End Select
         If grp <> "" Then
             a = PSplit(CStr(v(i + 1)))
-            unk = ""
+            unk = "": unkN = 0: ngN = 0
             For j = 0 To UBound(a)
                 nm = CStr(a(j))
                 dsh = DelSheet(grp, nm)
@@ -932,16 +934,19 @@ Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns A
                 ElseIf dsh <> "" Then
                     s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & dsh & " で削除予定です"
                 ElseIf Not mRef.Exists(grp & "|" & nm) Then
-                    unk = unk & "、" & nm
+                    unkN = unkN + 1
+                    If unkN <= LIST_MAX Then unk = unk & "、" & nm      ' 理由欄が長くなりすぎないよう先頭だけ表示
                 Else
                     sc = mRef(grp & "|" & nm)
                     If sc <> "*" And Not ScopeAllowed(sc, folder) Then
-                        s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & sc & " の定義のため、" & ScopeLabel(folder) & " のルールでは使えません"
+                        ngN = ngN + 1
+                        If ngN = LIST_MAX + 1 Then s = s & vbLf & "NG:" & mFL(i) & " ほかにもスコープ外の値があります（先頭 " & LIST_MAX & " 件のみ表示）"
+                        If ngN <= LIST_MAX Then s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & sc & " の定義のため、" & ScopeLabel(folder) & " のルールでは使えません"
                     End If
                 End If
             Next
             If unk <> "" Then
-                warns = warns & vbLf & "警告:" & mFL(i) & " の「" & Mid$(unk, 2) & "」が②既存データにも③～⑪の登録にもありません" & UnkHint(grp)
+                warns = warns & vbLf & "警告:" & mFL(i) & " の「" & Mid$(unk, 2) & IIf(unkN > LIST_MAX, "」ほか " & (unkN - LIST_MAX) & " 件（計 " & unkN & " 件）", "」") & "が②既存データにも③～⑪の登録にもありません" & UnkHint(grp)
             End If
         End If
     Next
@@ -1492,12 +1497,15 @@ Private Function CustomApps(ByVal q As String, ByVal folder As String, ByRef c A
                 End If
             End If
         End If
-        offset = offset + lim
+        ' SCM が limit より少なく返すことがあるため、返ってきた件数で offset を進める
+        offset = offset + rawN
         Prog "選択肢：applications を確認中 " & Format$(IIf(total > 0 And offset > total, total, offset), "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & _
              " 件（自作App " & c.Count & " 件・経過 " & Format$(Timer - t0, "0") & " 秒）"
         DoEvents
-        If rawN < lim Then Exit Do
-        If total > 0 And offset >= total Then Exit Do
+        If rawN = 0 Then Exit Do
+        If total > 0 Then
+            If offset >= total Then Exit Do
+        End If
     Loop
     WriteLog "選択肢取得（自作App）", "", "GET", WithQuery(modInFetch.InApiBase() & "/sse/config/v1/applications", q), 200, _
              c.Count & " 件（定義済みを除く。確認 " & offset & " 件）"

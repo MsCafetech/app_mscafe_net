@@ -92,6 +92,7 @@ Private Const EP_PROF As String = "/sse/config/v1/profile-groups"
 ' ---- メンバー選択画面 用 ----
 Private Const PICK_KEY As String = "^+m"            ' Ctrl+Shift+M
 Private Const CELL_MAX As Long = 32767
+Private Const LIST_MAX As Long = 20     ' 入力チェックの理由欄に名前を並べる上限（超えた分は件数だけ表示）
 Private Const SH_OVERFLOW As String = "ピッカー_選択結果"
 
 Private mEvents As clsPickerEvents
@@ -500,6 +501,7 @@ Private Function GetAll(ByVal url0 As String, ByVal q As String, ByVal opLabel A
                         ByRef st As Long, ByRef resMsg As String) As Collection
     Dim url As String, resText As String, res As Object, item As Variant
     Dim offset As Long, cnt As Long, total As Long, lim As Long, items As New Collection
+    Dim pages As Long, firstId As String, prevFirst As String
     lim = PageLimit()
     Do
         url = WithQuery(url0, q & "&limit=" & lim & "&offset=" & offset)
@@ -522,14 +524,23 @@ Private Function GetAll(ByVal url0 As String, ByVal q As String, ByVal opLabel A
                     For Each item In res("data")
                         items.Add item
                         cnt = cnt + 1
+                        If cnt = 1 And TypeName(item) = "Dictionary" Then firstId = Nz(item, "id")
                     Next
                 End If
             End If
             If res.Exists("total") Then total = Val(SafeStr(res("total")))
         End If
-        offset = offset + lim
-        If cnt < lim Then Exit Do
-        If total > 0 And offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る
+        offset = offset + cnt
+        pages = pages + 1
+        If cnt = 0 Then Exit Do
+        If total > 0 Then
+            If offset >= total Then Exit Do
+        End If
+        If firstId <> "" And firstId = prevFirst Then Exit Do     ' offset が効かず同じページが返る場合の保険
+        prevFirst = firstId: firstId = ""
+        If pages >= 100000 Then Exit Do
         Prog opLabel & " 取得中 " & items.Count & " / " & total & " 件"
     Loop
     Set GetAll = items
@@ -916,7 +927,7 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
                 judge = ""
             End If
             ws.Cells(r, S_JUDGE).Value = judge
-            ws.Cells(r, S_REASON).Value = Mid$(ngs & warns, 2)
+            ws.Cells(r, S_REASON).Value = Left$(Mid$(ngs & warns, 2), 32000)     ' セル上限（32,767文字）を超えないように
             Select Case judge
                 Case "NG": ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_REASON)).Interior.Color = DIFF_NG: ng = ng + 1
                 Case "警告": ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_REASON)).Interior.Color = C_WARN
@@ -1060,6 +1071,7 @@ End Sub
 ' 追加・変更する行の参照チェック（ゾーン・オブジェクトが⑧にあるか、ルールの folder から見えるか）
 Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns As String) As String
     Dim i As Long, grp As String, a As Variant, j As Long, nm As String, s As String, unk As String, sc As String
+    Dim unkN As Long, ngN As Long
     InitF
     If mRef Is Nothing Then Set mRef = BuildRefMap()
     For i = 0 To NF - 1
@@ -1075,23 +1087,26 @@ Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns A
         End Select
         If grp <> "" Then
             a = SplitMembers(CStr(v(i + 1)))
-            unk = ""
+            unk = "": unkN = 0: ngN = 0
             For j = 0 To UBound(a)
                 nm = CStr(a(j))
                 If LCase$(nm) = "any" Then
                 ElseIf grp = "svc" And (nm = "application-default" Or nm = "service-http" Or nm = "service-https") Then
                 ElseIf grp = "addr" And IsIpLike(nm) Then
                 ElseIf Not mRef.Exists(grp & "|" & nm) Then
-                    unk = unk & "、" & nm
+                    unkN = unkN + 1
+                    If unkN <= LIST_MAX Then unk = unk & "、" & nm      ' 理由欄が長くなりすぎないよう先頭だけ表示
                 Else
                     sc = mRef(grp & "|" & nm)
                     If sc <> "*" And Not ScopeAllowed(sc, folder) Then
-                        s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & sc & " の定義のため、" & ScopeLabel(folder) & " のルールでは使えません"
+                        ngN = ngN + 1
+                        If ngN = LIST_MAX + 1 Then s = s & vbLf & "NG:" & mFL(i) & " ほかにもスコープ外の値があります（先頭 " & LIST_MAX & " 件のみ表示）"
+                        If ngN <= LIST_MAX Then s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & sc & " の定義のため、" & ScopeLabel(folder) & " のルールでは使えません"
                     End If
                 End If
             Next
             If unk <> "" Then
-                warns = warns & vbLf & "警告:" & mFL(i) & " の「" & Mid$(unk, 2) & "」が⑧選択肢にありません" & _
+                warns = warns & vbLf & "警告:" & mFL(i) & " の「" & Mid$(unk, 2) & IIf(unkN > LIST_MAX, "」ほか " & (unkN - LIST_MAX) & " 件（計 " & unkN & " 件）", "」") & "が⑧選択肢にありません" & _
                         IIf(grp = "app", "（定義済みApp-IDなら問題ありません）", IIf(grp = "zone", "（⑧にゾーンとスコープを追記してください）", ""))
             End If
         End If
@@ -2114,12 +2129,15 @@ Private Function CustomApps(ByVal q As String, ByVal folder As String, ByRef c A
                 End If
             End If
         End If
-        offset = offset + lim
+        ' SCM が limit より少なく返すことがあるため、返ってきた件数で offset を進める
+        offset = offset + rawN
         Prog "選択肢：applications を確認中 " & Format$(IIf(total > 0 And offset > total, total, offset), "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & _
              " 件（自作App " & c.Count & " 件・経過 " & Format$(Timer - t0, "0") & " 秒。Esc で中止）"
         DoEvents
-        If rawN < lim Then Exit Do
-        If total > 0 And offset >= total Then Exit Do
+        If rawN = 0 Then Exit Do
+        If total > 0 Then
+            If offset >= total Then Exit Do
+        End If
     Loop
     WriteLog "選択肢取得", "自作App", "GET", WithQuery(ApiBase() & "/sse/config/v1/applications", q), 200, _
              c.Count & " 件（定義済みを除く。確認 " & offset & " 件・" & Format$(Timer - t0, "0") & " 秒）"
