@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MsCafe.tech</title>
-<meta name="description" content="MsCafe.tech は、M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店です。タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー の紹介と、プライバシーポリシー・利用規約・お問い合わせを掲載しています。">
+<meta name="description" content="MsCafe.tech は、M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店です。タップる？、BOMBOM、RAY、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー の紹介と、プライバシーポリシー・利用規約・お問い合わせを掲載しています。">
 <meta name="theme-color" content="#0A2622">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MsCafe.tech">
 <meta property="og:title" content="MsCafe.tech｜アプリを紹介する喫茶店">
-<meta property="og:description" content="M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店。タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー を紹介しています。">
+<meta property="og:description" content="M.A.C.Y が店長をつとめる、アプリを紹介する喫茶店。タップる？、BOMBOM、RAY、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー を紹介しています。">
 <meta property="og:locale" content="ja_JP">
 </head>
 <body>
@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 379,878 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 414,191 バイト）。</pre>';
   }
 });
 </script>
@@ -56,6 +56,7 @@ const SITE = {
   lead: L('アプリを紹介する喫茶店です。気になるアプリを開いて、ゆっくりご覧ください。', 'Welcome to a caf\u00E9 that serves apps. Open any app that catches your eye and take your time.'),
 };
 const NEWS = [
+  { date: '2026/11/19', tag: 'RAY', text: L('新しいゲーム「RAY」を仕込み中です。指でなぞって放つビームで、押し寄せるゾンビの群れを薙ぎ払う、縦画面の防衛ゲームです。', 'We are brewing a new game, “RAY”: a portrait defense game where you swipe to fire a beam and sweep away hordes of zombies.') },
   { date: '2026/11/19', tag: L('PDF暗記マーカー', 'PDF Memorization Marker'), text: L('Android 版を Google Play でリリースしました。閲覧中に流せる BGM などを加えています。', 'The Android version is now released on Google Play, with new features such as background music while you study.') },
   { date: '2026/11/14', tag: 'BOMBOM', text: L('新しいゲーム「BOMBOM」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new game “BOMBOM”. We are looking for testers.') },
   { date: '2026/11/10', tag: L('MP3変換', 'MP3 Converter'), text: L('新しいアプリ「MP3変換」のクローズドテストを始めました。テスターを募集しています。', 'Closed testing has started for our new app “MP3 Converter”. We are looking for testers.') },
@@ -310,6 +311,15 @@ h2{font:900 clamp(26px,4vw,38px)/1.3 var(--f-display);text-wrap:balance}
 .bbd-legend span{display:inline-flex;align-items:center;gap:5px}.bbd-legend i{width:11px;height:11px;border-radius:50%}
 .bbd-again{cursor:pointer}.bbd-again[hidden]{display:none}
 @media (prefers-reduced-motion: reduce){.bbd-c.x i{animation:none;opacity:.2}}
+.rayd{position:relative;width:min(300px,100%);aspect-ratio:9/15;border-radius:22px;overflow:hidden;background:#0B0F18;box-shadow:0 26px 50px -22px rgba(0,0,0,.6);touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;cursor:crosshair}
+.rayd-cv{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+.rayd-hud{position:absolute;left:10px;right:10px;top:8px;display:flex;justify-content:space-between;pointer-events:none;font:900 11px/1.2 var(--f-display);color:#FFE6B0;letter-spacing:.04em}
+.rayd-hud b{display:block;font:700 16px/1.1 var(--f-mono);color:#FFB347;text-shadow:0 0 8px rgba(255,140,40,.75)}
+.rayd-hud span:last-child{text-align:right}
+.rayd-start{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);appearance:none;border:2px solid #7FF3FF;border-radius:999px;padding:12px 30px;background:rgba(10,30,50,.75);color:#E8FDFF;font:900 18px/1 var(--f-display);letter-spacing:.08em;box-shadow:0 0 18px rgba(58,215,255,.55);cursor:pointer}
+.rayd-start[hidden]{display:none}
+.rayd-big{position:absolute;left:0;right:0;top:34%;text-align:center;pointer-events:none;font:900 28px/1.25 var(--f-display);color:#B8F8FF;text-shadow:0 0 14px #3AD7FF,0 2px 0 #0B3550;white-space:pre-line}
+.rayd-big.s{font-size:15px}
 .tpd{width:min(440px,100%);max-width:100%;min-width:0;aspect-ratio:2/1;display:grid;grid-template-columns:minmax(0,34%) minmax(0,1fr);gap:8px;padding:10px;border-radius:24px;background:#070B1F;color:#E8EEFF;box-shadow:0 26px 50px -22px rgba(0,0,0,.5)}
 .tpd-info{display:grid;align-content:center;gap:1px;padding:8px 10px;border-radius:14px;background:#0E1534;min-width:0}
 .tpd-k{font-size:10.5px;color:#8C97C4}
@@ -795,7 +805,40 @@ const M2A_ICON = 'data:image/webp;base64,' + [
   '+D32l13NIPhfXR2jBYYqzjfnJ+O/Bq9JLPssVBrBQXyAO4G8p9Qz4F2IxMW01MNhgtczJM1OdRsDtf3DGwpcGAS5XDQlUE7Wei74TECaqvKPJ+YLv1SbaEC1ya13WvxKeM1t7WppDVq/nyoiBr7/imShRcB6RjYZyFYDmZPMN2TXrC5yKfx106PoLFgEHAyzxGUvZkbts0Fn6z5Hmxc8OMhWY5gnhyO8zBv3+qrYHn7B0bvWHgILGXlm5DJj9CBUPQtqW/zN2rUZtIgHYF9+R0AcO2cNQe3c0+b7ysxiTrBYn8/lawInbW4nRfpEYMW5gqHthL36K+4Y11aTnqcxU0XdS3MpziRM4dG9R6/cc2psbZWsch+PGshggMvxbPNTdvxzvRfONryZz62LdgsKamew4h1WRRt81c576FY1wHRg4bCelQNHcvwuh9HKWhZ1Gcu+UxSYpVuQTOpQ3294k7aFXzOpoUCGrdJuPtmCd5vKcgtlahIGuPSiX2oc8ls3RAczF9bvYfkfN3vdG+KFiM2d//pMEagAAAAFBmAAAAAAAA==',
 ].join('');
 const m2aIcon = (s = 48) => `<img src="${M2A_ICON}" width="${s}" height="${s}" alt="${L('MP3変換のアイコン', 'MP3 Converter icon')}" style="display:block;border-radius:22%">`;
+const RAY_ICON = 'data:image/webp;base64,' + [
+  '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',
+].join('');
+const rayIcon = (s = 48) => `<img src="${RAY_ICON}" width="${s}" height="${s}" alt="${L('RAY のアイコン', 'RAY icon')}" style="display:block;border-radius:22%">`;
 const ILL = {
+  rayTrail: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('ビームの軌跡が重なるほど強くなる', 'The more beam trails overlap, the stronger they get')}"><rect x="10" y="8" width="220" height="134" rx="14" fill="#0F1420"/>
+    <path d="M30 104C70 40 110 40 150 92" fill="none" stroke="#3AD7FF" stroke-opacity=".55" stroke-width="16" stroke-linecap="round"/><path d="M80 30C100 80 140 100 210 60" fill="none" stroke="#6A6CFF" stroke-opacity=".6" stroke-width="16" stroke-linecap="round"/>
+    <path d="M40 60C90 90 150 70 200 110" fill="none" stroke="#C04BFF" stroke-opacity=".6" stroke-width="16" stroke-linecap="round"/><circle cx="118" cy="74" r="9" fill="#FFC8F0"/>
+    <text x="120" y="132" text-anchor="middle" style="font:700 11px sans-serif;fill:#E8FDFF">${L('1層 → 2層 → 3層', '1 layer → 2 → 3')}</text></svg>`,
+  rayWave: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('WAVE ごとに敵が倍に増える', 'Enemies double every wave')}"><rect x="10" y="8" width="220" height="134" rx="14" fill="#0F1420"/>
+    ${[[1, 1], [2, 2], [3, 4], [4, 8]].map(([w, n], i) => `<text x="${42 + i * 52}" y="34" text-anchor="middle" style="font:900 12px sans-serif;fill:#FFB347">W${w}</text>${Array.from({ length: n }, (_, j) => `<ellipse cx="${30 + i * 52 + (j % 2) * 22}" cy="${54 + Math.floor(j / 2) * 18}" rx="7" ry="8" fill="#7FA36A"/>`).join('')}`).join('')}
+    <text x="120" y="132" text-anchor="middle" style="font:700 11px sans-serif;fill:#E8FDFF">${L('10 → 20 → 40 … W8 は 1,280体', '10 → 20 → 40 … 1,280 in W8')}</text></svg>`,
+  rayEnemy: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('いろいろなゾンビとボス', 'Many kinds of zombies and bosses')}"><rect x="10" y="8" width="220" height="134" rx="14" fill="#0F1420"/>
+    ${[[36, 9, 12, '#7FA36A'], [66, 11, 14, '#8FB07A'], [98, 13, 8, '#A08060'], [132, 15, 17, '#6E8F5C'], [164, 9, 13, '#D7E0E8']].map(([x, rx, ry, c]) => `<ellipse cx="${x}" cy="${78 - ry}" rx="${rx}" ry="${ry}" fill="${c}"/><circle cx="${x - 3}" cy="${72 - ry * 1.3}" r="1.8" fill="#FF4D4D"/><circle cx="${x + 3}" cy="${72 - ry * 1.3}" r="1.8" fill="#FF4D4D"/>`).join('')}
+    <ellipse cx="204" cy="62" rx="20" ry="26" fill="#5C7A4C"/><circle cx="197" cy="50" r="3" fill="#FF4D4D"/><circle cx="211" cy="50" r="3" fill="#FF4D4D"/><text x="204" y="104" text-anchor="middle" style="font:900 10px sans-serif;fill:#FFB347">BOSS</text>
+    <text x="120" y="132" text-anchor="middle" style="font:700 11px sans-serif;fill:#E8FDFF">${L('敵9種 ＋ ボス5体', '9 enemy types + 5 bosses')}</text></svg>`,
+  rayEnergy: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('エネルギーとフェンス', 'Energy and the fence')}"><rect x="10" y="8" width="220" height="134" rx="14" fill="#0F1420"/>
+    <path d="M20 62h200M20 78h200" stroke="#8C96A8" stroke-width="2"/>${Array.from({ length: 12 }, (_, i) => `<path d="M${26 + i * 17} 56v28" stroke="#8C96A8" stroke-width="2"/>`).join('')}
+    ${[54, 90, 130, 170].map(x => `<ellipse cx="${x}" cy="44" rx="8" ry="10" fill="#7FA36A"/>`).join('')}<text x="120" y="30" text-anchor="middle" style="font:900 11px sans-serif;fill:#FF8A8A">FENCE HP 5,000</text>
+    <rect x="40" y="100" width="160" height="12" rx="6" fill="#1E2A3A"/><rect x="40" y="100" width="108" height="12" rx="6" fill="#3AD7FF"/>
+    <text x="120" y="132" text-anchor="middle" style="font:700 11px sans-serif;fill:#E8FDFF">${L('撃つと1秒で空、離すと2秒で満タン', 'Empty in 1 s of fire, full 2 s after you stop')}</text></svg>`,
+  rayItem: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('爆弾・エネルギー無限・鈍足・ダブルビーム', 'Bomb, infinite energy, slow and double beam')}"><rect x="10" y="8" width="220" height="134" rx="14" fill="#0F1420"/>
+    ${[['\uD83D\uDCA3', L('爆弾', 'Bomb')], ['\u26A1', L('無限', 'Infinite')], ['\uD83D\uDC22', L('鈍足', 'Slow')], ['\u270C', L('ダブル', 'Double')]].map(([e, t], i) => `<rect x="${22 + i * 52}" y="34" width="44" height="50" rx="8" fill="#1E2A3A" stroke="#4A5A70"/><text x="${44 + i * 52}" y="64" text-anchor="middle" style="font-size:20px">${e}</text><text x="${44 + i * 52}" y="100" text-anchor="middle" style="font:700 10px sans-serif;fill:#E8FDFF">${t}</text>`).join('')}
+    <text x="120" y="130" text-anchor="middle" style="font:700 11px sans-serif;fill:#E8FDFF">${L('倒した敵が落として、砲台へ飛んでくる', 'Dropped by enemies, flown to the cannon')}</text></svg>`,
+  rayWeapon: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('累計撃破数で解放する6種類のビーム', 'Six beams unlocked by total kills')}"><rect x="10" y="8" width="220" height="134" rx="14" fill="#0F1420"/>
+    ${[[4, '#3AD7FF'], [12, '#3AD7FF'], [2, '#FFC8F0'], [4, '#7CFFB0'], [8, '#FF6A6A']].map(([w, c], i) => `<path d="M${36 + i * 34} 104L${48 + i * 34} 30" stroke="${c}" stroke-width="${w}" stroke-linecap="round" stroke-opacity=".85"/>`).join('')}<circle cx="210" cy="62" r="14" fill="none" stroke="#3AD7FF" stroke-width="4"/>
+    <text x="120" y="132" text-anchor="middle" style="font:700 11px sans-serif;fill:#E8FDFF">${L('0 / 150 / 500 / 1,500 / 4,000 / 10,000 体', '0 / 150 / 500 / 1,500 / 4,000 / 10,000 kills')}</text></svg>`,
   bbColor: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('色ごとに爆炎の向きが違うボム', 'Bombs whose blasts go different ways by color')}">${[['#3D8BFF', 34, ''], ['#FF4D4D', 80, 'M80 42v-14M80 98v14'],
       ['#35C759', 126, 'M106 70h-12M146 70h12'], ['#FFC933', 172, 'M160 58l-8-8M184 58l8-8M160 82l-8 8M184 82l8 8'], ['#A55BFF', 214, 'M214 50v-10M214 90v10M200 70h-6M228 70h6']].map(([c, x, d]) => `${bbB(x, 70, c, 11)}${d ? `<path d="${d}" stroke="${c}" stroke-width="4" stroke-linecap="round" fill="none"/>` : ''}`).join('')}<text class="t" x="120" y="138" text-anchor="middle">${L('青・赤・緑・黄・紫', 'Blue, red, green, yellow, purple')}</text></svg>`,
   bbChain: () => `<svg class="ill" viewBox="0 0 240 150" role="img" aria-label="${L('爆炎が燃え移ってコンボが増える', 'The blast spreads and the combo grows')}">${[[40, '#35C759'], [90, '#A55BFF'], [140, '#FF4D4D'], [190, '#35C759']].map(([x, c], i) => `${bbB(x, 74, c, 13)}<text class="t" x="${x}" y="112" text-anchor="middle">${i + 1}</text>`).join('')}<path d="M56 74h16M106 74h16M156 74h16" stroke="#FF8A1F" stroke-width="5" stroke-linecap="round"/>
@@ -1098,6 +1141,20 @@ const bbDemo = () => `<div class="demo">
   <button type="button" class="btn btn-main bbd-again" hidden>${L('もう一度', 'Play again')}</button>
   <p class="demo-note">${L('ボムをタップすると着火します。3ターンの合計スコアを競います。デモはウェーブ1だけの簡略版で、アプリではこのあと火種やアイテムで次のウェーブが続きます。', 'Tap a bomb to light it. Your score is the total of 3 turns. This demo is a simplified version with wave 1 only; in the app, fire and items keep the next waves going.')}</p>
 </div>`;
+const RAY_W = 360, RAY_H = 600, RAY_FENCE = 500, RAY_CELL = 6, RAY_TRAIL = 2.5, RAY_MULT = 1.5, RAY_LAYERS = 6, RAY_GAP = 0.12, RAY_R = 13, RAY_DMG = 10, RAY_FENCE_HP = 300;
+const RAY_WAVES = [10, 20, 40];
+const RAY_EN = [[40, 30, 9, 12, '#7FA36A', 5], [70, 24, 11, 14, '#8FB07A', 8], [45, 58, 12, 8, '#A08060', 5], [220, 15, 16, 18, '#6E8F5C', 16]];
+const RAY_TC = ['#3AD7FF', '#6A6CFF', '#C04BFF', '#FFC8F0'];
+const rayDemo = () => `<div class="demo">
+  <div class="rayd" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
+    <canvas class="rayd-cv" aria-hidden="true"></canvas>
+    <div class="rayd-hud"><span>SCORE<b class="rayd-score">000000</b></span><span>WAVE<b class="rayd-wave">001</b></span></div>
+    <span class="rayd-big" aria-live="polite"></span>
+    <button type="button" class="rayd-start">START</button>
+  </div>
+  <p class="demo-note">${L('START を押したら、画面をなぞってビームを照射。軌跡を重ねるほど強くなります（水色 → 青紫 → 赤紫 → 桃色）。撃ち続けるとエネルギーが切れるので、指を離して充電を。デモは WAVE 3 までの簡略版です。',
+      'Press START, then swipe to fire the beam. The more its trails overlap, the stronger they get (cyan → blue-violet → magenta → pink). Firing drains energy, so lift your finger to recharge. This demo is a simplified version up to wave 3.')}</p>
+</div>`;
 const M2A_DUR = 204000;
 const m2aDemo = () => `<div class="demo">
   <div class="phone" role="group" aria-label="${L('操作デモ', 'Interactive demo')}">
@@ -1225,6 +1282,49 @@ const APPS = [
         [L('外部との通信', 'External connections'), L('広告の表示（Google AdMob）と、ステージなどのゲームデータの更新（GitHub）だけ。遊んだ記録は送りません。', 'Only to show ads (Google AdMob) and update game data such as stages (GitHub). Your play records are never sent.')], [L('言語', 'Languages'), L('日本語', 'Japanese')]],
     note: L('クローズドテスト中のため、ステージ・得点・アイテムなどの内容は変わることがあります。進み具合やアイテムは端末の中に保存しています（Android のバックアップが有効なら、機種変更のときに移せます）。',
         'The app is in closed testing, so stages, scores, items and other details may change. Progress and items are saved on the device (if Android backup is on, they can move with you to a new device).'),
+  },
+  {
+    id: 'ray', name: 'RAY', genre: L('ゲーム', 'Game'), icon: rayIcon, status: L('開発中', 'In development'),
+    one: L('指でなぞって放つビームの軌跡を重ねて、押し寄せるゾンビの群れを薙ぎ払う、縦画面の防衛ゲーム。', 'A portrait defense game: swipe to fire a beam, overlap its trails and sweep away the hordes of zombies.'),
+    headline: L('<span class="nb">なぞって、重ねて、</span><span class="nb"><span class="hl">薙ぎ払え</span>。</span>', '<span class="nb">Swipe, overlap,</span> <span class="nb"><span class="hl">sweep</span> them away.</span>'),
+    lead: L('一杯のコーヒーでは晴れないモヤモヤも、ビームでまとめて薙ぎ払いましょう。廃墟の街の道路を、ゾンビの群れがフェンスへ押し寄せてきます。'
+        + '画面の下の砲台から、指でなぞった所へビームを照射。ビームの軌跡はしばらく残り、同じ場所に重ねるほどダメージが大きくなります。'
+        + 'WAVE ごとに倍々に増えるゾンビを倒しきり、フェンスを守り抜いてください。ただいま Android 版を仕込み中です。本サイトでの画面と、実際に動作させたときの画面は細部が異なります。',
+        'Whatever a cup of coffee cannot clear away, sweep it away with a beam. Hordes of zombies come down the roads of a ruined city toward your fence. '
+        + 'Swipe the screen to fire the beam from the cannon at the bottom. Its trail stays for a moment, and the more you overlap it in the same place, the more damage it does. '
+        + 'Wipe out the zombies, which double with every wave, and hold the fence. The Android version is now in the works. The screens on this site differ in detail from the real app.'),
+    os: L('対応OS　Android 8.0 以上　　料金　無料（広告あり）', 'OS: Android 8.0 or later　　Price: Free (with ads)'), store: { label: L('開発中', 'In development'), url: '' },
+    demo: rayDemo, init: initRay,
+    features: [
+      [ILL.rayTrail, L('軌跡を重ねるほど強く', 'Overlap the trails for more power'), L('ビームの軌跡はしばらく残り、その上を通ったゾンビにもダメージを与えます。同じ所に止めたままではダメージは増えません。'
+          + 'いったん離れてからなぞり直すと新しい層になり、重なった層の数だけ掛け算で強くなります。重なるほど、水色 → 青紫 → 赤紫 → 白っぽい桃色と色が変わります。', 'The beam’s trail stays for a moment and also hurts zombies that walk through it. Holding the beam still does not add damage. '
+          + 'Move away and sweep back, and it becomes a new layer; each layer multiplies the damage. As layers pile up, the color shifts from cyan to blue-violet, magenta and whitish pink.')],
+      [ILL.rayWave, L('倍々に増える WAVE', 'Waves that keep doubling'), L('WAVE 1 は10体、WAVE 2 は20体……と倍々に増え、WAVE 8 では1,280体が押し寄せます。WAVE 9 はボス戦。'
+          + 'WAVE 10 からは、強くなったゾンビで最初から繰り返す、終わりのないエンドレス設計です。', 'Wave 1 has 10 zombies, wave 2 has 20, and so on, doubling until 1,280 rush in on wave 8. Wave 9 is a boss battle. '
+          + 'From wave 10 it starts over with stronger zombies, and it never ends.')],
+      [ILL.rayEnemy, L('9種類の敵と5体のボス', '9 enemy types and 5 bosses'), L('雑魚・でっかい蚊・普通・毒吐き・犬・太い・看護婦・ギャル・スライムの9種類。毒吐きは途中で止まって遠くから毒を吐き、看護婦は周りの仲間を回復します。'
+          + 'ボスはマッチョ・でかスライム・合体・ケルベロス・タコの5体です。', 'Nine types: weaklings, giant mosquitoes, regulars, poison spitters, dogs, fatties, nurses, party girls and slimes. Spitters stop partway and attack from afar; nurses heal those around them. '
+          + 'The five bosses: a macho zombie, a giant slime, a fused zombie, Cerberus and an octopus zombie.')],
+      [ILL.rayEnergy, L('エネルギーとフェンス', 'Energy and the fence'), L('ビームは撃ち続けると1秒でエネルギーが空になり、指を離すと2秒で満タンに戻ります。'
+          + 'フェンスの HP は5,000。ゾンビが集まるほど一気に削られ、0 になると GAME OVER です。', 'Firing nonstop empties the energy in 1 second, and lifting your finger refills it in 2. '
+          + 'The fence has 5,000 HP. The more zombies crowd it, the faster it falls, and at 0 the game is over.')],
+      [ILL.rayItem, L('4つのアイテム', 'Four items'), L('周りを吹き飛ばす爆弾・エネルギー無限・ゾンビ鈍足・ダブルビームの4種類。倒したゾンビが落とし、砲台へ飛んできて画面の下のアイテムボックスに入ります。'
+          + '拾っただけでは発動せず、好きなときにタップして使います。', 'A bomb that blows zombies back, infinite energy, slow zombies and a double beam. Defeated zombies drop them, and they fly to the cannon and into the item boxes at the bottom. '
+          + 'They do not go off when picked up; tap one to use it when you like.')],
+      [ILL.rayWeapon, L('6種類のビーム', 'Six beams'), L('累計撃破数で、標準・ワイド・細い高火力・省エネ・超高火力・円形軌道のビームが順に解放されます。一度解放した武器と累計撃破数は減りません。',
+          'As your total kills grow, you unlock the standard, wide, needle, eco, ultra and orbit beams in turn. Unlocked weapons and your total kills never go down.')],
+    ],
+    steps: [
+      [L('ビームを選んでプレイ', 'Choose a beam and play'), L('HOME で解放ずみのビームを選び、「プレイ」を押します。', 'On HOME, choose an unlocked beam and press PLAY.')],
+      [L('なぞってビーム', 'Swipe to fire'), L('画面をなぞると、砲台から指の位置へビームが走ります。軌跡を重ねて、群れをまとめて倒しましょう。', 'Swipe the screen and the beam runs from the cannon to your finger. Overlap the trails to take out whole hordes.')],
+      [L('フェンスを守り抜く', 'Hold the fence'), L('全滅させれば WAVE クリア。フェンスが壊れたら GAME OVER で、到達した WAVE と撃破数が記録されます。', 'Wipe them all out to clear the wave. When the fence breaks, the game is over, and your wave and kills are recorded.')],
+    ],
+    info: [[L('アプリ名', 'App name'), 'RAY'], [L('ジャンル', 'Genre'), L('ゲーム（防衛）', 'Game (defense)')], [L('対応OS', 'OS'), L('Android 8.0 以上（縦画面）',
+        'Android 8.0 or later (portrait)')], [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play（準備中）',
+        'Google Play (in preparation)')], [L('記録', 'Records'), L('累計撃破数・最高 WAVE・選んだビームは、端末の中だけに保存します。', 'Total kills, best wave and your chosen beam are saved on the device only.')],
+        [L('外部との通信', 'External connections'), L('広告の表示（Google AdMob）だけ。遊んだ記録は送りません。', 'Only to show ads (Google AdMob). Your play records are never sent.')], [L('言語', 'Languages'), L('日本語・English', 'Japanese, English')]],
+    note: L('開発中のため、敵・WAVE・ビーム・アイテムなどの内容は変わることがあります。画面の点滅や大量の敵が出る場面があります。長く遊ぶときは、適度に休憩してください。',
+        'The game is in development, so enemies, waves, beams, items and other details may change. Some scenes flash or show huge numbers of enemies. Take breaks when you play for a long time.'),
   },
   {
     id: 'furush', name: 'FuRUSH', icon: frIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, test: TEST_URL_FR,
@@ -1579,6 +1679,157 @@ function initM2a(root) {
   $('.m2d-again', root).addEventListener('click', () => show(0));
   draw();
 }
+function initRay(root) {
+  const wrap = $('.rayd', root), cv = $('.rayd-cv', root), start = $('.rayd-start', root), big = $('.rayd-big', root), elS = $('.rayd-score', root), elW = $('.rayd-wave', root);
+  const c = cv.getContext('2d'), COLS = RAY_W / RAY_CELL, ROWS = RAY_H / RAY_CELL, CX = RAY_W / 2, CY = RAY_H - 30;
+  const roadL = y => 70 - 58 * Math.max(0, Math.min(1, y / RAY_FENCE)), roadR = y => RAY_W - roadL(y);
+  let state = 'idle', raf = 0, last = 0, now = 0, en = [], queue = [], wave = 0, score = 0, fence = RAY_FENCE_HP, shake = 0, energy = 1, lock = false, fire = false;
+  let tip = null, prev = null, msgUntil = 0, nextAt = 0;
+  const cells = new Map();
+  const pad = (n, d) => String(Math.min(n, 10 ** d - 1)).padStart(d, '0');
+  const say = (t, small, sec) => { big.textContent = t; big.classList.toggle('s', !!small); msgUntil = sec ? now + sec : 0; };
+  const hud = () => { elS.textContent = pad(score, 6); elW.textContent = pad(Math.max(1, wave), 3); };
+  const touch = (x, y) => {
+    const c0 = Math.max(0, Math.floor((x - RAY_R) / RAY_CELL)), c1 = Math.min(COLS - 1, Math.floor((x + RAY_R) / RAY_CELL));
+    const r0 = Math.max(0, Math.floor((y - RAY_R) / RAY_CELL)), r1 = Math.min(ROWS - 1, Math.floor((y + RAY_R) / RAY_CELL));
+    for (let r = r0; r <= r1; r++) for (let q = c0; q <= c1; q++) {
+      const dx = (q + .5) * RAY_CELL - x, dy = (r + .5) * RAY_CELL - y;
+      if (dx * dx + dy * dy > RAY_R * RAY_R) continue;
+      const k = r * COLS + q, a = cells.get(k) || [];
+      if (a.length && now - a[a.length - 1] <= RAY_GAP) a[a.length - 1] = now; else { a.push(now); if (a.length > RAY_LAYERS) a.shift(); }
+      cells.set(k, a);
+    }
+  };
+  const value = n => (RAY_MULT ** n - 1) / (RAY_MULT - 1);
+  const reset = () => {
+    en = []; queue = []; wave = 0; score = 0; fence = RAY_FENCE_HP; energy = 1; lock = false; fire = false; tip = prev = null; nextAt = 0; cells.clear(); hud();
+  };
+  const nextWave = () => {
+    wave++; hud(); say('WAVE ' + wave, false, 1.2);
+    const n = RAY_WAVES[wave - 1], span = 3 + n * .12;
+    for (let i = 0; i < n; i++) {
+      const r = Math.random(), t = wave === 1 ? (r < .7 ? 0 : 1) : wave === 2 ? (r < .45 ? 0 : r < .75 ? 1 : 2) : (r < .35 ? 0 : r < .6 ? 1 : r < .85 ? 2 : 3);
+      queue.push({ at: now + 1 + Math.random() * span, t });
+    }
+    queue.sort((a, b) => a.at - b.at);
+  };
+  const begin = () => { reset(); state = 'play'; start.hidden = true; nextWave(); kick(); };
+  const end = clear => {
+    state = 'done'; fire = false;
+    say(clear ? L('DEMO CLEAR!\nアプリでは、この先も\nWAVE が続きます', 'DEMO CLEAR!\nIn the app, the waves\nkeep coming') : L('GAME OVER\nWAVE ' + wave + ' まで到達', 'GAME OVER\nReached wave ' + wave), true);
+    start.textContent = L('もう一度', 'Again'); start.hidden = false;
+  };
+  const step = dt => {
+    const shooting = fire && !lock && tip;
+    if (shooting) { energy -= dt; if (energy <= 0) { energy = 0; lock = true; } } else energy = Math.min(1, energy + dt / 2);
+    if (shooting) {
+      const p = prev || tip, d = Math.hypot(tip.x - p.x, tip.y - p.y), n = Math.max(1, Math.ceil(d / 3));
+      for (let i = 1; i <= n; i++) touch(p.x + (tip.x - p.x) * i / n, p.y + (tip.y - p.y) * i / n);
+    }
+    prev = shooting ? tip : null;
+    for (const [k, a] of cells) { while (a.length && now - a[0] > RAY_TRAIL) a.shift(); if (!a.length) cells.delete(k); }
+    while (queue.length && queue[0].at <= now) {
+      const t = queue.shift().t, s = RAY_EN[t];
+      en.push({ t, hp: s[0], max: s[0], u: .06 + Math.random() * .88, y: -20, cd: Math.random(), hit: -1, wob: Math.random() * 6 });
+    }
+    for (const e of en) {
+      const s = RAY_EN[e.t], sc = 1 + .1 * Math.max(0, e.y / RAY_FENCE), ry = s[3] * sc, rx = s[2] * sc;
+      if (e.y + ry < RAY_FENCE - 4) e.y += s[1] * dt;
+      else if ((e.cd -= dt) <= 0) { e.cd = 1.2; fence -= s[5]; shake = .25; }
+      const x = roadL(e.y) + e.u * (roadR(e.y) - roadL(e.y));
+      e.x = x; e.rx = rx; e.ry = ry;
+      let sum = 0;
+      const c0 = Math.max(0, Math.floor((x - rx) / RAY_CELL)), c1 = Math.min(COLS - 1, Math.floor((x + rx) / RAY_CELL));
+      const r0 = Math.max(0, Math.floor((e.y - ry) / RAY_CELL)), r1 = Math.min(ROWS - 1, Math.floor((e.y + ry) / RAY_CELL));
+      for (let r = r0; r <= r1; r++) for (let q = c0; q <= c1; q++) {
+        const a = cells.get(r * COLS + q);
+        if (!a) continue;
+        const dx = ((q + .5) * RAY_CELL - x) / rx, dy = ((r + .5) * RAY_CELL - e.y) / ry;
+        if (dx * dx + dy * dy <= 1) sum += value(a.length);
+      }
+      if (sum) { e.hp -= sum * RAY_DMG * dt; e.hit = now; }
+    }
+    en = en.filter(e => { if (e.hp > 0) return true; score += Math.ceil(e.max / 10); return false; });
+    shake = Math.max(0, shake - dt);
+    hud();
+    if (fence <= 0) { fence = 0; end(false); return; }
+    if (!queue.length && !en.length) {
+      if (!nextAt) { nextAt = now + 1.4; say('CLEAR!', false, 1.2); }
+      else if (now >= nextAt) { nextAt = 0; if (wave >= RAY_WAVES.length) end(true); else nextWave(); }
+    }
+  };
+  const fit = () => {
+    const b = wrap.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2), w = Math.round(b.width * dpr), h = Math.round(b.height * dpr);
+    if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+    const k = b.width ? b.width / RAY_W * dpr : 1;
+    c.setTransform(k, 0, 0, k, 0, 0);
+  };
+  const draw = () => {
+    fit();
+    c.fillStyle = '#0B0F18'; c.fillRect(0, 0, RAY_W, RAY_H);
+    c.fillStyle = '#1A1F2B'; [[0, 40, 50, 120], [20, 150, 42, 90], [300, 30, 60, 140], [318, 170, 42, 110]].forEach(([x, y, w, h]) => c.fillRect(x, y, w, h));
+    c.fillStyle = '#232936'; c.beginPath(); c.moveTo(roadL(0), 0); c.lineTo(roadR(0), 0); c.lineTo(roadR(RAY_FENCE), RAY_FENCE); c.lineTo(roadL(RAY_FENCE), RAY_FENCE); c.fill();
+    c.strokeStyle = 'rgba(255,230,160,.25)'; c.lineWidth = 3; c.setLineDash([16, 18]); c.beginPath(); c.moveTo(CX, 0); c.lineTo(CX, RAY_FENCE); c.stroke(); c.setLineDash([]);
+    c.globalCompositeOperation = 'lighter';
+    for (const [k, a] of cells) {
+      const fade = 1 - (now - a[a.length - 1]) / RAY_TRAIL;
+      c.globalAlpha = Math.max(0, fade) * .5; c.fillStyle = RAY_TC[Math.min(a.length, 4) - 1];
+      c.fillRect((k % COLS) * RAY_CELL, Math.floor(k / COLS) * RAY_CELL, RAY_CELL, RAY_CELL);
+    }
+    c.globalAlpha = 1; c.globalCompositeOperation = 'source-over';
+    for (const e of en) {
+      const s = RAY_EN[e.t], x = e.x + Math.sin(now * 3 + e.wob) * 1.5;
+      c.fillStyle = e.hit >= 0 && now - e.hit < .08 ? '#F4FFF0' : s[4];
+      c.beginPath(); c.ellipse(x, e.y, e.rx, e.ry, 0, 0, 6.283); c.fill();
+      c.fillStyle = '#FF4D4D'; c.beginPath(); c.arc(x - e.rx * .35, e.y - e.ry * .45, 1.8, 0, 6.283); c.arc(x + e.rx * .35, e.y - e.ry * .45, 1.8, 0, 6.283); c.fill();
+      if (e.hp < e.max) { c.fillStyle = 'rgba(0,0,0,.5)'; c.fillRect(x - 10, e.y - e.ry - 6, 20, 3); c.fillStyle = '#FF6A6A'; c.fillRect(x - 10, e.y - e.ry - 6, 20 * e.hp / e.max, 3); }
+    }
+    const fx = shake ? Math.sin(now * 80) * 3 : 0, fr = fence / RAY_FENCE_HP;
+    c.strokeStyle = fr > .66 ? '#8C96A8' : fr > .33 ? '#B49A6A' : '#C0665A'; c.lineWidth = 2;
+    c.beginPath(); c.moveTo(fx, RAY_FENCE); c.lineTo(RAY_W + fx, RAY_FENCE); c.moveTo(fx, RAY_FENCE + 14); c.lineTo(RAY_W + fx, RAY_FENCE + 14);
+    for (let x = 6; x < RAY_W; x += 18) { c.moveTo(x + fx, RAY_FENCE - 6); c.lineTo(x + fx, RAY_FENCE + 18); }
+    c.stroke();
+    c.fillStyle = '#151A24'; c.fillRect(0, RAY_FENCE + 20, RAY_W, RAY_H - RAY_FENCE - 20);
+    c.fillStyle = '#1E2A3A'; c.fillRect(30, RAY_H - 14, RAY_W - 60, 7);
+    c.fillStyle = lock ? '#FF8A5A' : '#3AD7FF'; c.fillRect(30, RAY_H - 14, (RAY_W - 60) * energy, 7);
+    c.fillStyle = '#FF8A8A'; c.font = '700 11px sans-serif'; c.textAlign = 'left'; c.fillText(`FENCE ${Math.ceil(fence)}`, 10, RAY_FENCE + 36);
+    if (lock) { c.fillStyle = '#FF8A5A'; c.textAlign = 'right'; c.fillText(L('充電中', 'RECHARGE'), RAY_W - 10, RAY_FENCE + 36); }
+    if (state === 'play' && fire && !lock && tip) {
+      c.lineCap = 'round';
+      c.strokeStyle = 'rgba(58,215,255,.35)'; c.lineWidth = 12; c.beginPath(); c.moveTo(CX, CY); c.lineTo(tip.x, tip.y); c.stroke();
+      c.strokeStyle = '#FFFFFF'; c.lineWidth = 3; c.beginPath(); c.moveTo(CX, CY); c.lineTo(tip.x, tip.y); c.stroke();
+      c.fillStyle = 'rgba(200,250,255,.9)'; c.beginPath(); c.arc(tip.x, tip.y, 5, 0, 6.283); c.fill();
+    }
+    c.fillStyle = '#8C96A8'; c.beginPath(); c.moveTo(CX - 22, CY + 12); c.lineTo(CX - 12, CY - 6); c.lineTo(CX + 12, CY - 6); c.lineTo(CX + 22, CY + 12); c.fill();
+    c.fillStyle = '#C8F8FF'; c.beginPath(); c.arc(CX, CY - 6, 4, 0, 6.283); c.fill();
+  };
+  const loop = t => {
+    raf = 0;
+    if (!root.isConnected) return;
+    const dt = Math.min(.05, Math.max(0, (t - last) / 1000)); last = t; now += dt;
+    if (state === 'play' && !document.hidden) step(dt);
+    if (msgUntil && now >= msgUntil) { msgUntil = 0; if (state === 'play') say(''); }
+    draw();
+    if (state === 'play' || cells.size) raf = requestAnimationFrame(loop);
+  };
+  const kick = () => { if (!raf) { last = performance.now(); raf = requestAnimationFrame(loop); } };
+  const aim = ev => {
+    const b = wrap.getBoundingClientRect(), k = RAY_W / b.width;
+    tip = { x: Math.max(0, Math.min(RAY_W, (ev.clientX - b.left) * k)), y: Math.max(0, Math.min(RAY_FENCE - 4, (ev.clientY - b.top) * k)) };
+  };
+  wrap.addEventListener('pointerdown', ev => {
+    if (state !== 'play' || ev.target === start) return;
+    ev.preventDefault(); fire = true; prev = null; aim(ev);
+    try { wrap.setPointerCapture(ev.pointerId); } catch (e) { }
+  });
+  wrap.addEventListener('pointermove', ev => { if (fire) aim(ev); });
+  const up = () => { fire = false; lock = false; tip = prev = null; };
+  wrap.addEventListener('pointerup', up);
+  wrap.addEventListener('pointercancel', up);
+  start.addEventListener('click', begin);
+  if ('ResizeObserver' in window) new ResizeObserver(() => { if (!raf) draw(); }).observe(wrap);
+  hud(); draw();
+}
 function initTp(root) {
   const area = $('.tpd-area', root), cv = $('.tpd-cv', root), start = $('.tpd-start', root), big = $('.tpd-big', root), res = $('.tpd-res', root);
   const elT = $('.tpd-time', root), elN = $('.tpd-n', root), elR = $('.tpd-r', root), elLv = $('.tpd-lv', root);
@@ -1705,12 +1956,12 @@ const dateLine = `<p class="dm">制定：${LEGAL_DATE}　最終更新：${LEGAL_
 const dateLineEn = `<p class="dm">Established: ${enDate(LEGAL_DATE)} / Last updated: ${enDate(LEGAL_UPDATED)}</p>`;
 const MAILBOX = `<div class="mailbox"><canvas class="mail" aria-label="メールアドレス（スパム対策のため画像で表示しています）" role="img"></canvas><small>スパム対策のため、アドレスは画像で表示しています。お手数ですが、画像を見ながら入力してください。</small></div>`;
 const MAILBOX_EN = `<div class="mailbox"><canvas class="mail" aria-label="Email address (shown as an image to prevent spam)" role="img"></canvas><small>To prevent spam, the address is shown as an image. Please type it in by looking at the image.</small></div>`;
-const AD_APPS = 'タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り';
+const AD_APPS = 'タップる？、BOMBOM、RAY、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り';
 const NOAD_APPS = 'マルチ翻訳PDFビューワー';
-const AD_APPS_EN = 'タップる？ (TaPru), BOMBOM, FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter) and アプリ見守り (App Monitor)';
+const AD_APPS_EN = 'タップる？ (TaPru), BOMBOM, RAY, FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter) and アプリ見守り (App Monitor)';
 const NOAD_APPS_EN = 'マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
-const ALL_APPS = 'タップる？、BOMBOM、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー';
-const ALL_APPS_EN = 'タップる？ (TaPru), BOMBOM, FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter), アプリ見守り (App Monitor) and マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
+const ALL_APPS = 'タップる？、BOMBOM、RAY、FuRUSH、PDF暗記マーカー、MP3変換、アプリ見守り、マルチ翻訳PDFビューワー';
+const ALL_APPS_EN = 'タップる？ (TaPru), BOMBOM, RAY, FuRUSH, PDF暗記マーカー (PDF Memorization Marker), MP3変換 (MP3 Converter), アプリ見守り (App Monitor) and マルチ翻訳PDFビューワー (Multi-Translation PDF Viewer)';
 const L_GOOGLE_PARTNER = 'https://policies.google.com/technologies/partner-sites';
 const L_GOOGLE_ADS = 'https://policies.google.com/technologies/ads';
 const L_GOOGLE_PRIV = 'https://policies.google.com/privacy';
@@ -1746,6 +1997,8 @@ const LEGAL = [
     'BOMBOM は、アプリの起動時に、ステージ情報（ゲームのデータ）を GitHub（GitHub, Inc.）の公開リポジトリから取得することがあります（raw.githubusercontent.com）。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。取得できなかったときは、アプリに入っているデータで動きます。',
     'BOMBOM のプレイ履歴は、端末の Android のバックアップ機能（Google のバックアップ）が有効な場合、利用者の Google アカウントのバックアップに含まれ、機種変更のときに新しい端末へ移せます。バックアップは Google が利用者のアカウントで管理するもので、店長は見ることも受け取ることもできません。バックアップに含めるのはプレイ履歴だけで、広告や Firebase のデータは含めません。',
     'MP3変換の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
+    'RAY の記録（累計撃破数、最高 WAVE、選んだビーム）は、端末内に保存し、店長には送信しません。端末の Android のバックアップ機能（Google のバックアップ）が有効な場合は、利用者の Google アカウントのバックアップに含まれ、機種変更のときに新しい端末へ移せます。バックアップは Google が利用者のアカウントで管理するもので、店長は見ることも受け取ることもできません。',
+    'RAY の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
     'PDF暗記マーカーの BGM は、端末の中で再生します。利用者が選んだ曲は、Android のファイル選択で選んだファイルだけを読み込み、曲の場所とファイル名を設定として端末内に保存します。曲を店長を含む外部へ送信することはありません。',
     '「写真から問題集を作る」で撮影・選択した写真は、端末内で PDF にして、端末の Download フォルダに保存します。写真や作成した PDF を店長が受け取ることはありません。',
     'アプリがサーバーと通信する際（出題データの取得など）、サーバー側でIPアドレスが記録されます。それ以外の個人を特定する情報は取得しません。',
@@ -1767,6 +2020,7 @@ const LEGAL = [
     'BOMBOM では、画面の上部などにネイティブ広告を表示します。また、アイテムがなくなったときに利用者が選んだ場合だけ、動画などの広告（リワード広告・インタースティシャル広告）を表示し、見終わるとアイテムを受け取れます。',
     'タップる？では、AdMob を子ども向けとして扱う設定にし、パーソナライズ広告を表示せず、全年齢向け（G）の広告だけを表示します。',
     'MP3変換の広告は、画面の上の決まった枠に表示するネイティブ広告だけです。同意が必要な地域では、アプリのメニューの「プライバシー設定」から、広告に関する同意をいつでも変更できます。',
+    'RAY の広告は、HOME の画面の下と、ゲーム中の画面の上の決まった枠に表示するネイティブ広告です。今後、利用者が選んだ場合だけ動画などの広告（リワード広告）を表示し、見終わるとアイテムを受け取れるようにする予定です。',
     '店長が AdMob から受け取るのは、表示回数や収益などの集計された数値だけで、利用者個人を特定できる情報は受け取りません。',
     `Google による情報の取り扱いは、${A(L_GOOGLE_PARTNER, 'Google のサイトまたはアプリを利用するときの Google によるデータの使用')}、${A(L_GOOGLE_ADS, 'Google の広告に関するポリシー')}、${A(L_GOOGLE_PRIV, 'Google プライバシーポリシー')}をご覧ください。`,
   ]) +
@@ -1781,7 +2035,7 @@ const LEGAL = [
   P('上記の目的の範囲を超えて利用することはありません。') +
   H('6. 保存期間と安全管理') +
   UL([
-    '端末内のデータは、アプリのデータ削除やアンインストールにより消去されます。ただし、端末のバックアップ機能でバックアップされたデータ（BOMBOM のプレイ履歴）は、Google アカウントのバックアップに残ることがあり、再インストールや機種変更のときに戻ることがあります。店長は端末内のデータやバックアップを確認・復元できません。',
+    '端末内のデータは、アプリのデータ削除やアンインストールにより消去されます。ただし、端末のバックアップ機能でバックアップされたデータ（BOMBOM・RAY のプレイ履歴）は、Google アカウントのバックアップに残ることがあり、再インストールや機種変更のときに戻ることがあります。店長は端末内のデータやバックアップを確認・復元できません。',
     'BOMBOM のプレイ履歴は、アプリのメニュー →「設定」→「データ初期化」で消せます（サウンドなどの設定は残ります）。消したデータは元に戻せません。',
     'Google（AdMob・Firebase・グループ）が取得した情報は、Google の定める期間保存されます。',
     'お問い合わせのメールは、対応のためにのみ利用し、対応が終わったあと不要になったものは削除します。',
@@ -1829,6 +2083,8 @@ const LEGAL = [
     'When BOMBOM starts, it may download stage information (game data) from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub. If the download fails, the app runs with the data built into it.',
     'If Android’s backup feature (Google backup) is turned on for your device, BOMBOM’s play history is included in your Google Account backup and can be moved to a new device when you switch devices. The backup is managed by Google in your account; the Manager can neither view nor receive it. Only the play history is included in the backup, not ad or Firebase data.',
     'MP3 Converter connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
+    'RAY’s records (total kills, best wave and the beam you chose) are stored on your device and are not sent to the Manager. If Android’s backup feature (Google backup) is turned on for your device, they are included in your Google Account backup and can be moved to a new device when you switch devices. The backup is managed by Google in your account; the Manager can neither see nor receive it.',
+    'RAY connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
     'Background music in PDF Memorization Marker is played on your device. For a song you choose, the app reads only the file you pick with the Android file picker, and saves its location and file name as a setting on your device. The song is never sent to anyone, including the Manager.',
     'Photos you take or select with “Make a workbook from photos” are converted to a PDF on your device and saved in the device’s Download folder. The Manager never receives the photos or the PDF.',
     'When an app communicates with a server (for example, to download question data), the server records your IP address. No other personally identifiable information is collected.',
@@ -1850,6 +2106,7 @@ const LEGAL = [
     'BOMBOM shows native ads, for example at the top of the screen. When you run out of items, and only if you choose to, it also shows video or full-screen ads (rewarded and interstitial ads); you receive items after watching.',
     'In TaPru, AdMob is configured to treat the app as child-directed: personalized ads are not shown, and only ads suitable for all ages (rated G) are shown.',
     'MP3 Converter shows only native ads in a fixed frame at the top of the screen. In regions where consent is required, you can change your ad consent at any time from “Privacy options” in the app’s menu.',
+    'RAY shows native ads in fixed frames at the bottom of the HOME screen and at the top of the screen during play. We plan to add video ads (rewarded ads) that are shown only if you choose to, and give you items after watching.',
     'The Manager receives only aggregated figures from AdMob, such as impressions and revenue, and never receives information that identifies individual users.',
     `For how Google uses information, see ${A(L_GOOGLE_PARTNER, 'How Google uses information from sites or apps that use our services')}, ${A(L_GOOGLE_ADS, 'Google Advertising')} and the ${A(L_GOOGLE_PRIV, 'Google Privacy Policy')}.`,
   ]) +
@@ -1864,7 +2121,7 @@ const LEGAL = [
   P('We do not use information beyond these purposes.') +
   H('6. Retention and security') +
   UL([
-    'Data on your device is erased when you clear the app’s data or uninstall the app. However, data backed up by your device’s backup feature (BOMBOM’s play history) may remain in your Google Account backup and may be restored when you reinstall the app or switch devices. The Manager cannot view or restore data on your device or in backups.',
+    'Data on your device is erased when you clear the app’s data or uninstall the app. However, data backed up by your device’s backup feature (BOMBOM’s and RAY’s play history) may remain in your Google Account backup and may be restored when you reinstall the app or switch devices. The Manager cannot view or restore data on your device or in backups.',
     'You can erase BOMBOM’s play history from the app’s Menu → Settings → “Reset data” (settings such as sound are kept). Erased data cannot be restored.',
     'Information collected by Google (AdMob, Firebase, Groups) is kept for the periods set by Google.',
     'Emails are used only to respond to you and are deleted when no longer needed.',
@@ -1911,6 +2168,7 @@ const LEGAL = [
     `ML Kit の利用にあたっては、${A(L_MLKIT, 'ML Kit の利用規約')}に従います。`,
     'BOMBOM の文字には、Dela Gothic One・Kaisei Decol・M PLUS 1p・M PLUS Rounded 1c・Russo One（SIL Open Font License 1.1）と Luckiest Guy（Apache License 2.0）の一部を利用しています。BOMBOM のキャラクターや背景の絵の制作には、生成AIを利用しています。BOMBOM の音楽などの音源は、店長が Flow Music（生成AI）で作成したもので、著作権は店長に帰属します。',
     'タップる？のロゴの文字には、M PLUS Rounded 1c（SIL Open Font License 1.1）の一部を利用しています。',
+    'RAY の背景や画面の部品の絵の制作には、生成AIを利用しています。RAY の BGM は、店長が Flow Music（生成AI）で作成したもので、著作権は店長に帰属します。',
     `MP3変換は、音声の変換に ${A(L_FFMPEG, 'FFmpeg')}（LGPL 2.1 以降）と ${A(L_FFMPEGKIT, 'FFmpegKit')}（LGPL 3.0。アプリに組み込んでいるのは、その後継として公開されている com.antonkarpenko:ffmpeg-kit-audio 2.2.3 で、FFmpeg 8.1 を含みます）を、MP3 の作成に ${A(L_LAME, 'LAME')}（LGPL）を利用しています。` +
     `これらは店長が改変せず、LGPL の条件に従って、置き換えのできるライブラリとして組み込んでいます。ソースコードは各プロジェクトの公開ページから入手でき、ライセンスの全文は ${A(L_LGPL21, 'GNU LGPL 2.1')}・${A(L_LGPL3, 'GNU LGPL 3.0')} でご覧いただけます。FFmpegKit の audio 版に含まれるそのほかの音声ライブラリも、それぞれのライセンスに従って利用しています。アプリのメニューの「アプリについて」にも、使用しているソフトウェアを表示しています。`,
     'アプリの出題データは、店長が用意したものです。第三者の権利を侵害しないよう配慮します。',
@@ -1941,6 +2199,7 @@ const LEGAL = [
     `ML Kit is used in accordance with the ${A(L_MLKIT, 'ML Kit Terms of Service')}.`,
     'BOMBOM uses parts of the Dela Gothic One, Kaisei Decol, M PLUS 1p, M PLUS Rounded 1c and Russo One fonts (SIL Open Font License 1.1) and the Luckiest Guy font (Apache License 2.0). Generative AI is used in creating BOMBOM’s character and background art. BOMBOM’s music and other audio were created by the Manager with Flow Music (generative AI), and their copyright belongs to the Manager.',
     'The TaPru logo uses part of the M PLUS Rounded 1c font (SIL Open Font License 1.1).',
+    'Generative AI is used in creating RAY’s background and on-screen artwork. RAY’s BGM was made by the Manager with Flow Music (generative AI), and its copyright belongs to the Manager.',
     `MP3 Converter uses ${A(L_FFMPEG, 'FFmpeg')} (LGPL 2.1 or later) and ${A(L_FFMPEGKIT, 'FFmpegKit')} (LGPL 3.0; the app includes com.antonkarpenko:ffmpeg-kit-audio 2.2.3, a successor release that contains FFmpeg 8.1) for audio conversion, and ${A(L_LAME, 'LAME')} (LGPL) for creating MP3 files.` +
     ` The Manager has not modified them, and they are included as replaceable libraries under the terms of the LGPL. Their source code is available from each project’s website, and the full license texts are at ${A(L_LGPL21, 'GNU LGPL 2.1')} and ${A(L_LGPL3, 'GNU LGPL 3.0')}. The other audio libraries included in the audio edition of FFmpegKit are also used under their respective licenses. The software used is also listed under “About” in the app’s menu.`,
     'The question data in the apps is prepared by the Manager, with care not to infringe the rights of others.',
@@ -2004,6 +2263,7 @@ const LEGAL = [
     'アプリ見守りが表示する運営会社と回線の持ち主は、内蔵の一覧とインターネットの登録機関（RDAP）の登録情報による参考情報です。登録情報は古いことがあり、回線の持ち主とサービスの運営者が別のこともあります（クラウドや CDN など）。「個人向け回線」などの種類は名前からの推定です。店長はこれらの正確さと、これをもとに行った操作の結果について責任を負いません。照会の結果を、特定の人や会社への嫌がらせなど不正な目的に使わないでください。',
     'タップる？の計測結果・分析・称号は、遊びとして楽しむためのもので、医学的・科学的な評価ではありません。計測値は、端末の性能やタッチパネルによって変わることがあります。連打による指や手首の痛み、端末の故障・破損について、店長は責任を負いません。適度に休憩しながらお楽しみください。',
     'BOMBOM はクローズドテスト中のゲームで、ステージ・得点・アイテムの内容は予告なく変わることがあります。進み具合やアイテムは端末の中に保存しているため、店長は復元できません。',
+    'RAY は開発中のゲームで、敵・WAVE・ビーム・アイテムの内容は予告なく変わることがあります。記録は端末の中に保存しているため、店長は復元できません。画面の点滅や大量の敵が出る場面があります。長時間のプレイは避け、適度に休憩してください。',
     'MP3変換は、端末の中で動画の音声を変換する道具です。すべての動画が変換できることや、変換後の音質を保証するものではありません。MP3・AAC は圧縮し直すため、元の音より少し劣化することがあります。変換した音声の利用について、店長は責任を負いません。長い動画の変換では、端末の発熱や電池の消費にご注意ください。',
     '外部のサービス（広告、ストアなど）や第三者のサイトの内容・動作について、店長は責任を負いません。',
   ]) +
@@ -2071,6 +2331,7 @@ const LEGAL = [
     'The operators and network owners shown in App Monitor are reference information from a built-in list and from internet registry (RDAP) records. Records may be out of date, and the network owner may differ from the service operator (for example, cloud and CDN providers). Types such as “home line” are guesses from names. The Manager is not responsible for their accuracy or for the results of actions taken based on them. Do not use lookup results for improper purposes such as harassing a person or company.',
     'TaPru’s measurements, analyses and titles are for fun and are not medical or scientific evaluations. Measured values may vary depending on device performance and touch screen. The Manager is not responsible for finger or wrist pain from rapid tapping, or for device failure or damage. Please take breaks as you play.',
     'BOMBOM is a game in closed testing, and its stages, scores and items may change without notice. Progress and items are saved on your device, and the Manager cannot restore them.',
+    'RAY is a game in development, and its enemies, waves, beams and items may change without notice. Records are saved on your device, and the Manager cannot restore them. Some scenes flash or show huge numbers of enemies. Avoid playing for long periods and take breaks.',
     'MP3 Converter is a tool that converts the audio of videos on your device. The Manager does not guarantee that every video can be converted or the quality of the converted audio. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original. The Manager is not responsible for how you use converted audio. When converting long videos, please watch out for device heat and battery use.',
     'The Manager is not responsible for the content or operation of external services (ads, app stores, etc.) or third-party websites.',
   ]) +
