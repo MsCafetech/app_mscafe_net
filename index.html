@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 381,676 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 379,878 バイト）。</pre>';
   }
 });
 </script>
@@ -69,13 +69,6 @@ const NEWS = [
 const NEWS_LINES = 5;
 const TESTER_FORM_URL = 'https://groups.google.com/g/mscafemobiletester';
 const TESTER_GROUP = 'mscafemobiletester@googlegroups.com';
-const BUG_FORM_PDF = 'https://forms.gle/qD1Hyj36brexTcek9';
-const BUG_FORM_MT = '';
-const BUG_FORM_FR = '';
-const BUG_FORM_AM = 'https://forms.gle/7fReguSQ3ut8kDpGA';
-const BUG_FORM_TP = '';
-const BUG_FORM_M2A = '';
-const BUG_FORM_BB = '';
 const STORE_URL_PDF = 'https://play.google.com/store/apps/details?id=net.mscafe.pdfmasking';
 const TEST_URL_MT = '';
 const TEST_URL_FR = 'https://play.google.com/store/apps/details?id=net.mscafe.furush';
@@ -1155,7 +1148,7 @@ const mtDemo = () => `<div class="demo">
 </div>`;
 const APPS = [
   {
-    id: 'tapru', name: L('タップる？', 'TaPru'), genre: L('ゲーム', 'Game'), icon: tpIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_TP, test: TEST_URL_TP,
+    id: 'tapru', name: L('タップる？', 'TaPru'), genre: L('ゲーム', 'Game'), icon: tpIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, test: TEST_URL_TP,
     one: L('30秒間ひたすら連打して、速さ・持久力・リズム・位置のブレを分析し、50種類の称号で診断するミニゲーム。', 'A mini game: tap as fast as you can for 30 seconds, then see your speed, stamina, rhythm and drift, and get one of 50 titles.'),
     headline: L('<span class="nb">30秒、</span><span class="nb">ひたすら<span class="hl">連打</span>。</span>', '<span class="nb">30 seconds.</span> <span class="nb">Just <span class="hl">tap</span>.</span>'),
     lead: L('喫茶店のテーブルゲームのように、ひと息つきながら遊べるゲームです。3・2・1 の合図のあと30秒間、画面をひたすらタップ。タップのたびに爆発や雷撃、刀などのエフェクトが効果音つきではじけ、終わると速さ・持久力・リズム・位置のブレの分析と、50種類の称号診断。リプレイで、いまの30秒を見返すこともできます。縦でも横でも遊べて、日本語と英語に対応。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
@@ -1184,7 +1177,7 @@ const APPS = [
     note: L('クローズドテスト中のため、内容は変わることがあります。計測結果は遊びとして楽しむためのもので、医学的・科学的な評価ではありません。連打のしすぎにご注意いただき、適度に休憩しながらお楽しみください。', 'The app is in closed testing, so details may change. The results are just for fun and are not a medical or scientific assessment. Please do not overdo the tapping, and take breaks as you play.'),
   },
   {
-    id: 'bombom', name: 'BOMBOM', genre: L('ゲーム', 'Game'), icon: bbIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_BB, test: TEST_URL_BB,
+    id: 'bombom', name: 'BOMBOM', genre: L('ゲーム', 'Game'), icon: bbIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, test: TEST_URL_BB,
     one: L('カラフルなボムに着火して、誘爆の連鎖でハイスコアを狙う爆発パズルゲーム。', 'An explosive puzzle game: light a colorful bomb and chain the blasts for a high score.'),
     headline: L('<span class="nb">ひとつの火で、</span><span class="nb"><span class="hl">大連鎖</span>。</span>', '<span class="nb">One spark,</span> <span class="nb">a <span class="hl">huge chain</span>.</span>'),
     lead: L('マッチ一本で、テーブルいっぱいの大騒ぎ。盤面のボムをひとつタップして着火すると、爆炎がとなりのボムへ燃え移り、次々に誘爆します。'
@@ -1234,7 +1227,7 @@ const APPS = [
         'The app is in closed testing, so stages, scores, items and other details may change. Progress and items are saved on the device (if Android backup is on, they can move with you to a new device).'),
   },
   {
-    id: 'furush', name: 'FuRUSH', icon: frIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_FR, test: TEST_URL_FR,
+    id: 'furush', name: 'FuRUSH', icon: frIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, test: TEST_URL_FR,
     one: L('答えが一瞬だけ出るフラッシュカードで、年号や化学式を考える前に答えが出るまで刻む暗記アプリ。', 'A memorization app with flashcards that show the answer for just an instant, drilling dates and chemical formulas until the answer comes before you think.'),
     headline: L('<span class="nb">脳に刻め。</span><span class="nb"><span class="hl">脊髄</span>に刻め。</span>', '<span class="nb">Carve it into your brain.</span> <span class="nb">Into your <span class="hl">spine</span>.</span>'),
     lead: L('こんなレベルは、知識じゃない。年号・化学式・山手線・国旗・地図などを、答えが一瞬だけ出るフラッシュカードで、考える前に答えが出るまで繰り返します。THINK LESS. KNOW INSTANTLY. ただいま Android 版のクローズドテスト中です。モードは全部で14、いまは社会の略語・日本地図・日本の地形・化学式の4つが使えます（ほかは仕込み中）。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
@@ -1261,7 +1254,7 @@ const APPS = [
     note: L('クローズドテスト中のため、内容は変わることがあります。デモの問題は例で、実際のアプリとは異なります。', 'The app is in closed testing, so details may change. The demo questions are only examples and differ from the real app.'),
   },
   {
-    id: 'pdf-marker', name: L('PDF暗記マーカー', 'PDF Memorization Marker'), icon: pdfIcon, status: L('リリース ／ Android版', 'Released / Android'), bug: BUG_FORM_PDF,
+    id: 'pdf-marker', name: L('PDF暗記マーカー', 'PDF Memorization Marker'), icon: pdfIcon, status: L('リリース ／ Android版', 'Released / Android'),
     one: L('問題集PDFの答えをマスクして、タップで確かめる暗記アプリ。現役東大生監修。', 'A study app that masks the answers in your workbook PDFs so you can check them with a tap. Supervised by a current University of Tokyo student.'),
     headline: L('<span class="nb"><span class="hl">答え</span>を隠して、</span><span class="nb">タップで確かめる。</span>', '<span class="nb">Hide the <span class="hl">answers</span>,</span> <span class="nb">check with a tap.</span>'),
     lead: L('お手持ちの問題集PDFが、そのまま自分専用の暗記帳になります。答えにマスクをかけてタップで見え隠れ。ハイライト・書き込み・チェック・栞から、見直したいページだけの印刷まで、勉強に要るものをひとつのアプリにそろえました。紙の問題集も、写真から PDF にできます。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。', 'The workbook PDFs you already have become your own flashcard books. Mask the answers and show or hide them with a tap. From highlights, handwriting, checks and bookmarks to printing just the pages you want to review, everything you need for studying is in one app. Paper workbooks can be turned into PDFs from photos, too. The screens on this site differ in detail from the real app.'),
@@ -1290,7 +1283,7 @@ const APPS = [
         'Masks, checks, highlights, doodles and bookmarks are saved for each PDF. No copies of PDF files are made.')], [L('操作説明', 'How-to'), L('初回に動く絵で説明します。PDFを開いた画面のメニュー（\u2630）から、いつでも見直せます。', 'Animated guides are shown the first time. You can see them again any time from the menu (\u2630) on the PDF screen.')]],
   },
   {
-    id: 'mp3-convert', name: L('MP3変換', 'MP3 Converter'), icon: m2aIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_M2A, test: TEST_URL_M2A,
+    id: 'mp3-convert', name: L('MP3変換', 'MP3 Converter'), icon: m2aIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, test: TEST_URL_M2A,
     one: L('動画から音声だけを取り出して、MP3・AAC(M4A)・WAV に変換する Android アプリ。広告はあっても邪魔にならず、広告を見ながら手軽に変換。', 'An Android app that takes just the audio from a video and converts it to MP3, AAC (M4A) or WAV. The ads stay out of your way, so you can convert with ease while they sit quietly on screen.'),
     headline: L('<span class="nb">動画の音だけ、</span><span class="nb"><span class="hl">手軽に</span>MP3に。</span>', '<span class="nb">Just the sound,</span> <span class="nb"><span class="hl">easily</span> to MP3.</span>'),
     lead: L('コーヒーを一杯淹れるくらいの手軽さで、動画から音声だけを取り出します。動画を選んで、形式と音質を決めて、ボタンをひとつ押すだけ。MP3・AAC(M4A)・WAV に変換できます。広告は画面の上の決まった枠にだけ出して、操作の邪魔をしません。広告を眺めながら、手軽に変換できます。変換は端末の中だけで行い、動画や音声をサーバーへ送りません。ただいまクローズドテスト中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
@@ -1319,7 +1312,7 @@ const APPS = [
         'The app is in closed testing, so details may change. Please convert only videos you are allowed to use, such as ones you filmed yourself. Copy-protected (DRM) or damaged videos and some formats (such as WMV, FLV and TS) may not convert. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original.'),
   },
   {
-    id: 'app-monitor', name: L('アプリ見守り', 'App Monitor'), icon: amIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, bug: BUG_FORM_AM, test: TEST_URL_AM,
+    id: 'app-monitor', name: L('アプリ見守り', 'App Monitor'), icon: amIcon, status: L('クローズドテスト中 ／ テスター募集中', 'In closed testing / Testers wanted'), tester: TESTER_FORM_URL, test: TEST_URL_AM,
     one: L('不正な通信をするアプリを見つけて、アンインストールをすすめる Android の警告アプリ。', 'An Android alert app that finds apps with suspicious network traffic and recommends uninstalling them.'),
     headline: L('<span class="nb">怪しいアプリに、</span><span class="nb"><span class="hl">気づける</span>。</span>', '<span class="nb">Spot the</span> <span class="nb"><span class="hl">suspicious</span> apps.</span>'),
     lead: L('スマホのアプリが、知らないうちに怪しい通信をしていないか。店長が店内を見回るように、アプリごとの通信を端末の中で記録して、Bot 化や不正利用の兆候を見つけたら警告します。不正な通信をするアプリは、アンインストールを検討してください。記録は端末の中だけに保存し、外部へは送りません。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
@@ -1348,7 +1341,7 @@ const APPS = [
         'Risk levels are reference information rated mechanically by fixed rules. Please make the final decision yourself. On networks with a firewall, such as at work or school, traffic may be blocked or altered, which can cause false alarms. Before use, set “Private DNS” in Settings to “Automatic” or “Off”. It cannot be used at the same time as other VPN apps. Traffic with devices on your home LAN, such as printers and TVs, is not monitored.'),
   },
   {
-    id: 'mt-pdf', name: L('マルチ翻訳PDFビューワー', 'Multi-Translation PDF Viewer'), icon: mtIcon, status: L('開発中', 'In development'), bug: BUG_FORM_MT, test: TEST_URL_MT,
+    id: 'mt-pdf', name: L('マルチ翻訳PDFビューワー', 'Multi-Translation PDF Viewer'), icon: mtIcon, status: L('開発中', 'In development'), test: TEST_URL_MT,
     one: L('論文や技術文書のPDFを、枠で囲んで日本語に訳せるPDFビューワー。現役東大生立案・監修。', 'A PDF viewer that translates any part of a paper or technical document into Japanese when you draw a frame around it. Planned and supervised by a current University of Tokyo student.'),
     headline: L('<span class="nb">読めない所を、</span><span class="nb"><span class="hl">囲む</span>だけ。</span>', '<span class="nb">Can’t read it?</span> <span class="nb">Just <span class="hl">frame</span> it.</span>'),
     lead: L('海外の論文や資料も、コーヒー片手にゆっくり読めるように。英語・中国語・韓国語・ドイツ語・フランス語のPDFを、指でなぞって囲んだ所だけ日本語に訳すビューワーを仕込み中です。翻訳は端末の中で行うので、文章を外に送りません。まだまだ開発中のため、ここでご紹介している機能は予定を含み、変わることがあります。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。', 'So you can read papers and documents from abroad slowly, with a coffee in hand. We are still brewing a viewer that translates just the part of an English, Chinese, Korean, German or French PDF you trace a frame around into Japanese. Translation runs on the device, so your text is never sent anywhere. The app is still in development, so the features described here include plans and may change. The screens on this site differ in detail from the real app.'),
@@ -1759,7 +1752,6 @@ const LEGAL = [
     'FuRUSH は、問題のデータを GitHub（GitHub, Inc.）の公開リポジトリから取得します（raw.githubusercontent.com）。アプリの起動時に更新の有無を確かめ、モードを開いたときにデータをダウンロードします。このとき、IP アドレスと、アプリの通信に必要な情報（端末の種類を含む場合があります）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。',
     'アプリによっては、不具合の調査とアプリの改善のため、Google の Firebase（Crashlytics / Analytics）を利用します。クラッシュ情報、端末情報（機種・OSなど）、アプリの利用状況、アプリのインスタンスIDが Google に送信されます。',
     `広告を表示するアプリ（${AD_APPS}）では、広告配信のため、Google AdMob が広告IDなどを取得します（次項参照）。`,
-    '不具合報告は、Google フォームで受け付けます。フォームに入力された内容は Google に送信され、不具合の調査・修正にのみ利用します。',
     'テスターの募集は、Google グループ（mscafemobiletester@googlegroups.com）への参加で受け付けます。参加に使った Google アカウントのメールアドレスは、グループの管理者である店長に表示され、テストのご案内・ご連絡にのみ利用し、それ以外の目的には利用しません。グループの情報の取り扱いは、Google のプライバシーポリシーに従います。',
     `英文翻訳機能は、Google の ML Kit（端末内で処理する文字の読み取りとオンデバイス翻訳）を利用します。読み取る画像や翻訳する文章が外部に送信されることはありません。ただし、翻訳に使う言語データは、初回などに Google のサーバーからダウンロードされる場合があります。ML Kit については、${A(L_MLKIT, 'ML Kit の利用規約')}もご覧ください。`,
     'お問い合わせのメールをいただいた場合は、メールアドレスとメールの内容を受け取ります。',
@@ -1791,7 +1783,7 @@ const LEGAL = [
   UL([
     '端末内のデータは、アプリのデータ削除やアンインストールにより消去されます。ただし、端末のバックアップ機能でバックアップされたデータ（BOMBOM のプレイ履歴）は、Google アカウントのバックアップに残ることがあり、再インストールや機種変更のときに戻ることがあります。店長は端末内のデータやバックアップを確認・復元できません。',
     'BOMBOM のプレイ履歴は、アプリのメニュー →「設定」→「データ初期化」で消せます（サウンドなどの設定は残ります）。消したデータは元に戻せません。',
-    'Google（AdMob・Firebase・フォーム・グループ）が取得した情報は、Google の定める期間保存されます。',
+    'Google（AdMob・Firebase・グループ）が取得した情報は、Google の定める期間保存されます。',
     'お問い合わせのメールは、対応のためにのみ利用し、対応が終わったあと不要になったものは削除します。',
     '店長は、取得した情報の漏えいや不正利用を防ぐため、合理的な範囲で安全管理に努めます。',
   ]) +
@@ -1843,7 +1835,6 @@ const LEGAL = [
     'FuRUSH downloads its question data from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com. It checks for updates when the app starts and downloads data when you open a mode. At that time, your IP address and the information needed for the connection (which may include the device type) are sent to GitHub. The Manager does not receive this information from GitHub.',
     'Some apps use Google Firebase (Crashlytics / Analytics) to investigate bugs and improve the apps. Crash information, device information (model, OS, etc.), app usage and the app instance ID are sent to Google.',
     `In the apps that show ads (${AD_APPS_EN}), Google AdMob collects the advertising ID and other information to serve ads (see Section 3).`,
-    'Bug reports are accepted through Google Forms. What you enter is sent to Google and used only to investigate and fix bugs.',
     'Testers are recruited by joining a Google Group (mscafemobiletester@googlegroups.com). The email address of the Google Account you join with is visible to the Manager as the group administrator and is used only to send you information about tests. Google handles group information under the Google Privacy Policy.',
     `The English translation feature uses Google ML Kit (on-device text recognition and on-device translation). The images it reads and the text it translates are never sent outside the device. However, language data for translation may be downloaded from Google’s servers, for example on first use. See also the ${A(L_MLKIT, 'ML Kit Terms of Service')}.`,
     'If you email us, we receive your email address and the content of your message.',
@@ -1875,7 +1866,7 @@ const LEGAL = [
   UL([
     'Data on your device is erased when you clear the app’s data or uninstall the app. However, data backed up by your device’s backup feature (BOMBOM’s play history) may remain in your Google Account backup and may be restored when you reinstall the app or switch devices. The Manager cannot view or restore data on your device or in backups.',
     'You can erase BOMBOM’s play history from the app’s Menu → Settings → “Reset data” (settings such as sound are kept). Erased data cannot be restored.',
-    'Information collected by Google (AdMob, Firebase, Forms, Groups) is kept for the periods set by Google.',
+    'Information collected by Google (AdMob, Firebase, Groups) is kept for the periods set by Google.',
     'Emails are used only to respond to you and are deleted when no longer needed.',
     'The Manager takes reasonable measures to prevent leakage or misuse of the information collected.',
   ]) +
@@ -2128,7 +2119,6 @@ const ICONS = {
   copy: '<circle cx="12" cy="12" r="9"/><path d="M14.8 9.4a3.6 3.6 0 100 5.2"/>',
   doc: '<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>',
   test: '<path d="M9 3h6M10 3v6l-5 9a2 2 0 001.8 3h10.4a2 2 0 001.8-3l-5-9V3"/><path d="M7.5 15h9"/>',
-  bug: '<rect x="7" y="8" width="10" height="12" rx="5"/><path d="M9 8a3 3 0 016 0M12 11v9M3.5 13H7M17 13h3.5M4.5 8.5L7.5 10M19.5 8.5L16.5 10M4.5 19l3-2M19.5 19l-3-2"/>',
   mail: '<rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/>',
 };
 const docIcon = k => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[k]}</svg>`;
@@ -2176,7 +2166,7 @@ const testerEl = url => `<div class="tester"><p class="tester-h">${L('テスタ�
 <li>${L('参加したあとは、下の「クローズドテストのリンク」から、試したいアプリをインストールしてください。', 'After joining, install the apps you want to try from “Closed testing links” below.')}</li>
 <li><b>${L('参加の条件：', 'Conditions: ')}</b>${L('インストールしたあと14日間は、アプリを削除しないでください。また、1日1回くらいはアプリを起動してください（Google Play で公開するための条件です）。', 'Please keep the app installed for 14 days after installing it, and open it about once a day (this is required for release on Google Play).')}</li>
 <li>${L('グループに参加したメールアドレスは、テストのご案内・ご連絡以外の目的には利用しません。やめたいときは、いつでもグループから退出できます。', 'The email address you join the group with is used only for test announcements and contact. You can leave the group at any time.')}</li>
-<li>${L('不具合を見つけたときは、下の「不具合報告」から、アプリごとのフォームでお知らせください。', 'If you find a bug, please let us know with the form for each app under “Bug reports” below.')}</li>
+<li>${L('不具合を見つけたときは、Google Play のテスター向けフィードバックなどからお知らせください。', 'If you find a bug, please let us know through the tester feedback on Google Play or a similar channel.')}</li>
 </ul>
 ${url
   ? `<a class="btn btn-main" href="${url}" target="_blank" rel="noopener">${L('Google グループに参加する', 'Join the Google Group')}</a><p class="tester-n">${L('Google グループのページが開きます。「グループに参加」を押してください。グループのアドレス：', 'The Google Group page opens. Press “Join group”. Group address: ')}${TESTER_GROUP}</p>`
@@ -2221,11 +2211,6 @@ const initNews = () => {
   $('.bubble-x', bub).addEventListener('click', () => { toggle(false); btn.focus(); });
   addEventListener('keydown', e => { if (e.key === 'Escape' && !bub.hidden) { toggle(false); btn.focus(); } }, SIG);
 };
-const bugEl = () => `<div class="bugs"><p class="tester-h">${L('不具合報告', 'Bug reports')}</p><p class="tester-p">${L('お出ししたアプリに不具合がありましたら、こちらからお知らせください。Google フォームが開きます。', 'If something is wrong with an app we served, please let us know here. A Google Form opens.')}</p>
-${APPS.filter(a => a.tester !== undefined || a.bug).map(a => `<div class="bug-row"><b>${a.name}</b>${a.bug
-  ? `<a class="btn btn-main" href="${a.bug}" target="_blank" rel="noopener">${L('不具合を報告する', 'Report a bug')}</a>`
-  : L('<span class="btn btn-off">フォーム準備中</span>', '<span class="btn btn-off">Form coming soon</span>')}</div>`).join('\n')}
-</div>`;
 const panel = a => `<div class="pn">
   ${a.flag ? `<div class="pn-flag" role="note"><b>\u26A0 ${a.flag[0]}</b><span>${a.flag[1]}</span></div>` : ''}
   <div class="pn-top">
@@ -2281,7 +2266,6 @@ const render = () => {
     <div class="recruit-apps">${RECRUIT().map(a => `<a class="ra" href="#${a.id}" data-open="${a.id}">${a.icon(36)}<span><b>${a.name}</b><small>${a.status}</small></span></a>`).join('')}</div>
     <div class="accs boxes">
       ${boxItem('closed-test', 'test', L('クローズドテストの募集', 'Join closed testing'), L('参加のしかたと条件、アプリごとのクローズドテストのリンク', 'How to join, conditions, and closed testing links for each app'), testerEl(TESTER_FORM_URL) + testEl())}
-      ${boxItem('bug-report', 'bug', L('不具合報告', 'Bug reports'), L('アプリごとの不具合報告フォーム', 'Bug report forms for each app'), bugEl())}
     </div>
   </section>
   <section class="sec wrap" id="team">
