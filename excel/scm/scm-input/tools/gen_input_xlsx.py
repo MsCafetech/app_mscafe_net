@@ -571,7 +571,7 @@ add_name("PROF_NAMES", blk_names("prof"))
 # ⑦ カスタムURLカテゴリ（横長：1列1カテゴリ）
 # ======================================================================
 ws = wb[S7]
-NCAT = 50
+NCAT = 1500     # 2026-11-19：50 → 1,500カテゴリ（VBA の U_C2 = 1 + NCAT と合わせる）
 C1, C2 = 2, 1 + NCAT
 U_OP, U_NAME, U_TYPE, U_DESC, U_EX, U_CNT, U_JUDGE, U_REASON, U_VBA, U_LBL, U_FIRST, U_LAST = 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 3015
 ws["A1"] = "⑦ カスタムURLカテゴリ（登録・変更・削除）：1列1カテゴリ、URLは1セル1件"
@@ -1341,6 +1341,77 @@ def unify_style(ws):
 
 for nm in (SS, S2, S7, S10, S11, "チェック結果"):
     unify_style(wb[nm])
+
+# ======================================================================
+# 件数枠の拡大（2026-11-19）：③〜⑪ を ROW_LAST 行目まで（元ツールの登録シートは 507 行目まで）
+#   1) 全シートの数式・入力規則・条件付き書式・名前で「n:507」の範囲（開始行 6〜16）を ROW_LAST まで広げる
+#   2) ③〜⑪ の 507 行目（書式・数式）を ROW_LAST 行目まで複写（相対参照は行に合わせてずらす）
+#   VBA の IN_LAST（modScmInput / modInPolicy）と合わせること
+# ======================================================================
+from openpyxl.formula.translate import Translator
+from openpyxl.worksheet.cell_range import CellRange
+OLD_LAST, ROW_LAST = 507, 2007
+ROW_SHEETS = [S3, S4, S5, S6, S8, S8B, S9, S10, S11]
+RNG_RE = re.compile(r"(\$?[A-Z]{1,3}\$?)([0-9]{1,2}):(\$?[A-Z]{1,3}\$?)507(?![0-9])")
+
+
+def widen(f):
+    if not isinstance(f, str) or "507" not in f:
+        return f
+    return RNG_RE.sub(lambda m: f"{m.group(1)}{m.group(2)}:{m.group(3)}{ROW_LAST}" if 6 <= int(m.group(2)) <= 16 else m.group(0), f)
+
+
+def widen_sqref(sq):
+    out = []
+    for r in str(sq).split():
+        cr = CellRange(r)
+        if cr.max_row == OLD_LAST and 6 <= cr.min_row <= 16:
+            cr = CellRange(min_col=cr.min_col, min_row=cr.min_row, max_col=cr.max_col, max_row=ROW_LAST)
+        out.append(cr.coord)
+    return " ".join(out)
+
+
+for w in wb.worksheets:
+    for row in w.iter_rows():
+        for c in row:
+            if isinstance(c.value, str) and c.value.startswith("="):
+                c.value = widen(c.value)
+    for dv in w.data_validations.dataValidation:
+        dv.formula1 = widen(dv.formula1)
+        dv.sqref = openpyxl.worksheet.cell_range.MultiCellRange(widen_sqref(dv.sqref))
+    cfs = []
+    for cf in w.conditional_formatting:
+        rules = []
+        for r in cf.rules:
+            if r.formula:
+                r.formula = [widen(x) for x in r.formula]
+            rules.append(r)
+        cfs.append((widen_sqref(cf.sqref), rules))
+    if any(sq != str(cf.sqref) for (sq, _), cf in zip(cfs, w.conditional_formatting)):
+        from openpyxl.formatting.formatting import ConditionalFormattingList
+        w.conditional_formatting = ConditionalFormattingList()
+        for sq, rules in cfs:
+            for r in rules:
+                w.conditional_formatting.add(sq, r)
+for nm_, dn in list(wb.defined_names.items()):
+    dn.attr_text = widen(dn.attr_text)
+
+for nm_ in ROW_SHEETS:
+    w = wb[nm_]
+    mc = w.max_column
+    tmpl = [w.cell(OLD_LAST, ci) for ci in range(1, mc + 1)]
+    for r in range(OLD_LAST + 1, ROW_LAST + 1):
+        for ci, s_ in enumerate(tmpl, start=1):
+            d = w.cell(r, ci)
+            if s_.has_style:
+                d._style = copy(s_._style)
+            v = s_.value
+            if isinstance(v, str) and v.startswith("="):
+                d.value = Translator(v, origin=s_.coordinate).translate_formula(f"{CL(ci)}{r}")
+    h = w.row_dimensions[OLD_LAST].height
+    if h:
+        for r in range(OLD_LAST + 1, ROW_LAST + 1):
+            w.row_dimensions[r].height = h
 
 # ---------------------------------------------------------------- 仕上げ
 for nm in wb.sheetnames:

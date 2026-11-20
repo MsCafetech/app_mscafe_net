@@ -495,6 +495,7 @@ Private Function GetAll(ByVal url0 As String, ByVal q As String, ByVal opLabel A
                         ByRef st As Long, ByRef resMsg As String) As Collection
     Dim url As String, resText As String, res As Object, item As Variant
     Dim offset As Long, cnt As Long, total As Long, lim As Long, items As New Collection
+    Dim pages As Long, firstId As String, prevFirst As String
     lim = PageLimit()
     Do
         url = WithQuery(url0, q & "&limit=" & lim & "&offset=" & offset)
@@ -517,14 +518,23 @@ Private Function GetAll(ByVal url0 As String, ByVal q As String, ByVal opLabel A
                     For Each item In res("data")
                         items.Add item
                         cnt = cnt + 1
+                        If cnt = 1 And TypeName(item) = "Dictionary" Then firstId = Nz(item, "id")
                     Next
                 End If
             End If
             If res.Exists("total") Then total = Val(SafeStr(res("total")))
         End If
-        offset = offset + lim
-        If cnt < lim Then Exit Do
-        If total > 0 And offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る
+        offset = offset + cnt
+        pages = pages + 1
+        If cnt = 0 Then Exit Do
+        If total > 0 Then
+            If offset >= total Then Exit Do
+        End If
+        If firstId <> "" And firstId = prevFirst Then Exit Do     ' offset が効かず同じページが返る場合の保険
+        prevFirst = firstId: firstId = ""
+        If pages >= 100000 Then Exit Do
         Prog opLabel & " 取得中 " & items.Count & " / " & total & " 件"
     Loop
     Set GetAll = items
@@ -910,7 +920,7 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
                 judge = ""
             End If
             ws.Cells(r, S_JUDGE).Value = judge
-            ws.Cells(r, S_REASON).Value = Mid$(ngs & warns, 2)
+            ws.Cells(r, S_REASON).Value = Left$(Mid$(ngs & warns, 2), 32000)     ' セル上限（32,767文字）を超えないように
             Select Case judge
                 Case "NG": ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_REASON)).Interior.Color = DIFF_NG: ng = ng + 1
                 Case "警告": ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_REASON)).Interior.Color = C_WARN
