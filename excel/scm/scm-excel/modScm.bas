@@ -21,7 +21,7 @@ Private Const SH_LOG As String = "実行ログ"
 
 Private Const EX_FIRST As Long = 8      ' 既存一覧 データ開始行
 Private Const IN_FIRST As Long = 8      ' 登録変更削除 データ開始行
-Private Const IN_LAST As Long = 507     ' 登録変更削除 データ最終行
+Private Const IN_LAST As Long = 2007    ' 登録変更削除 データ最終行（2000行。xlsx の入力規則・関数の範囲と合わせる）
 Private Const JS_FIRST As Long = 10     ' JSON_CURL データ開始行
 Private Const LOG_FIRST As Long = 6     ' 実行ログ データ開始行
 Private Const PAGE_LIMIT As Long = 200
@@ -67,7 +67,7 @@ Public Sub FetchExisting()
     If Not CheckContainer() Then Exit Sub
     If Not EnsureToken() Then Exit Sub
     Set ws = Worksheets(SH_EXIST)
-    Application.ScreenUpdating = False
+    BeginFast     ' 画面更新・自動計算を止める（1000件単位でも速く）
     ws.Range(ws.Cells(EX_FIRST, 1), ws.Cells(ws.Rows.Count, 13)).Clear
     r = EX_FIRST
     offset = 0
@@ -76,7 +76,7 @@ Public Sub FetchExisting()
         st = HttpCall("GET", url, "", resText)
         If st <> 200 Then
             WriteLog "既存取得", "", "GET", url, st, ErrSummary(resText)
-            Application.ScreenUpdating = True
+            EndFast
             MsgBox "既存情報の取得に失敗しました（HTTP " & st & "）。", vbExclamation
             Exit Sub
         End If
@@ -100,15 +100,20 @@ Public Sub FetchExisting()
             r = r + 1
             cnt = cnt + 1
         Next
-        offset = offset + PAGE_LIMIT
-        If res.Exists("total") Then total = res("total") Else total = 0
-        If cnt < PAGE_LIMIT Or offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る（2026-11-19）
+        offset = offset + cnt
+        If res.Exists("total") Then total = Val(CStr(res("total"))) Else total = 0
+        If cnt = 0 Then Exit Do
+        If total > 0 And offset >= total Then Exit Do
+        If offset >= 1000000 Then Exit Do
+        Prog "取得中 " & Format$(offset, "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & " 件"
     Loop
     If r > EX_FIRST Then
         ws.Range(ws.Cells(EX_FIRST, 1), ws.Cells(r - 1, 13)).Borders.LineStyle = xlContinuous
     End If
     Range("EX_FETCHED_AT").Value = Now
-    Application.ScreenUpdating = True
+    EndFast
     WriteLog "既存取得", "", "GET", WithQuery(BaseUrl(), ContainerQuery()), 200, (r - EX_FIRST) & "件取得"
     MsgBox (r - EX_FIRST) & " 件取得しました。", vbInformation
 End Sub
@@ -318,7 +323,9 @@ Public Sub ExecuteAll()
     End If
     If MsgBox(n & " 件をSCMへ実行します（元に戻せません）。よろしいですか？", vbOKCancel + vbExclamation) <> vbOK Then Exit Sub
     If Not EnsureToken() Then Exit Sub
+    BeginFast
     For r = JS_FIRST To JS_FIRST + n - 1
+        Prog "API実行中 " & (r - JS_FIRST + 1) & " / " & n
         st = HttpCall(CStr(ws.Cells(r, 4).Value), CStr(ws.Cells(r, 5).Value), CStr(ws.Cells(r, 6).Value), resText)
         ws.Cells(r, 8).Value = st
         If st >= 200 And st < 300 Then ok = ok + 1 Else ng = ng + 1
@@ -327,6 +334,7 @@ Public Sub ExecuteAll()
     ' 実行後のSCMの状態を取得し、②⑥既存一覧と比較して⑧差分確認に出力
     BuildDiffCore
     Worksheets(SH_DIFF).Activate
+    EndFast
     MsgBox "成功 " & ok & " 件／失敗 " & ng & " 件" & vbLf & _
            "AdrObj_差分確認 と AdrGroupObj_差分確認 に、現在の設定一覧と既存一覧（実行前）からの変化を出力しました。内容を確認してから、SCMの画面でPushしてください。", vbInformation
 End Sub
@@ -358,7 +366,7 @@ Public Sub FetchExistingGroup()
     If Not CheckContainer() Then Exit Sub
     If Not EnsureToken() Then Exit Sub
     Set ws = Worksheets(SH_EXISTG)
-    Application.ScreenUpdating = False
+    BeginFast     ' 画面更新・自動計算を止める（1000件単位でも速く）
     ws.Range(ws.Cells(EX_FIRST, 1), ws.Cells(ws.Rows.Count, 11)).Clear
     r = EX_FIRST
     offset = 0
@@ -367,7 +375,7 @@ Public Sub FetchExistingGroup()
         st = HttpCall("GET", url, "", resText)
         If st <> 200 Then
             WriteLog "既存Group取得", "", "GET", url, st, ErrSummary(resText)
-            Application.ScreenUpdating = True
+            EndFast
             MsgBox "既存Groupの取得に失敗しました（HTTP " & st & "）。", vbExclamation
             Exit Sub
         End If
@@ -389,15 +397,20 @@ Public Sub FetchExistingGroup()
             r = r + 1
             cnt = cnt + 1
         Next
-        offset = offset + PAGE_LIMIT
-        If res.Exists("total") Then total = res("total") Else total = 0
-        If cnt < PAGE_LIMIT Or offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る（2026-11-19）
+        offset = offset + cnt
+        If res.Exists("total") Then total = Val(CStr(res("total"))) Else total = 0
+        If cnt = 0 Then Exit Do
+        If total > 0 And offset >= total Then Exit Do
+        If offset >= 1000000 Then Exit Do
+        Prog "取得中 " & Format$(offset, "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & " 件"
     Loop
     If r > EX_FIRST Then
         ws.Range(ws.Cells(EX_FIRST, 1), ws.Cells(r - 1, 11)).Borders.LineStyle = xlContinuous
     End If
     Range("EXG_FETCHED_AT").Value = Now
-    Application.ScreenUpdating = True
+    EndFast
     WriteLog "既存Group取得", "", "GET", WithQuery(GroupUrl(), ContainerQuery()), 200, (r - EX_FIRST) & "件取得"
     MsgBox (r - EX_FIRST) & " 件取得しました。", vbInformation
 End Sub
@@ -486,8 +499,10 @@ End Function
 Public Sub BuildDiffCheck()
     If Not CheckContainer() Then Exit Sub
     If Not EnsureToken() Then Exit Sub
+    BeginFast
     If BuildDiffCore() Then
         Worksheets(SH_DIFF).Activate
+        EndFast
         MsgBox "差分を作成しました。", vbInformation
     End If
 End Sub
@@ -681,9 +696,14 @@ Private Function ApiToDict(ByVal baseU As String, ByVal objKind As String, ByVal
             d(objKind & "|" & Nz(item, "name")) = Array(typ, v, Nz(item, "description"), JoinTags(item))
             cnt = cnt + 1
         Next
-        offset = offset + PAGE_LIMIT
-        If res.Exists("total") Then total = res("total") Else total = 0
-        If cnt < PAGE_LIMIT Or offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る（2026-11-19）
+        offset = offset + cnt
+        If res.Exists("total") Then total = Val(CStr(res("total"))) Else total = 0
+        If cnt = 0 Then Exit Do
+        If total > 0 And offset >= total Then Exit Do
+        If offset >= 1000000 Then Exit Do
+        Prog "取得中 " & Format$(offset, "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & " 件"
     Loop
     ApiToDict = True
 End Function
@@ -760,7 +780,7 @@ End Function
 Private Function PickerRule(ByVal ws As Worksheet, ByVal c As Range, ByRef ttl As String) As Boolean
     Select Case ws.Name
         Case "AdrGroupObj_登録変更削除"
-            If c.Column <> 5 Or c.Row < 8 Or c.Row > 507 Then Exit Function
+            If c.Column <> 5 Or c.Row < IN_FIRST Or c.Row > IN_LAST Then Exit Function
             If LCase$(Trim$(SafeStr(ws.Cells(c.Row, 4).Value))) = "dynamic" Then Exit Function
             ' 候補 = ②既存一覧 + ③で登録予定（O列のメンバー確認と同じ範囲）
             mExclude = SafeStr(ws.Cells(c.Row, 3).Value)

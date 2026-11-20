@@ -21,7 +21,7 @@ Private Const SH_LOG As String = "実行ログ"
 
 Private Const EX_FIRST As Long = 8      ' 既存一覧 データ開始行
 Private Const IN_FIRST As Long = 8      ' 登録変更削除 データ開始行
-Private Const IN_LAST As Long = 507     ' 登録変更削除 データ最終行
+Private Const IN_LAST As Long = 2007    ' 登録変更削除 データ最終行（2000行。xlsx の入力規則・関数の範囲と合わせる）
 Private Const IN_JUDGE As Long = 39     ' ③ 判定列(AM)
 Private Const ING_JUDGE As Long = 10    ' ⑦ 判定列(J)
 Private Const REF_FIRST As Long = 8     ' AppRef データ開始行
@@ -118,11 +118,11 @@ Public Sub FetchExisting()
     For Each item In apps
         If IsPredefined(item) Then pre.Add Nz(item, "name") Else custom.Add item
     Next
-    Application.ScreenUpdating = False
+    BeginFast     ' 画面更新・自動計算を止める（1000件単位でも速く）
     WriteExistApp custom
     WriteExistGroup grps
     RefreshRef flts, pre
-    Application.ScreenUpdating = True
+    EndFast
     MsgBox "Application " & custom.Count & " 件、ApplicationGroup " & grps.Count & " 件、フィルタ " & flts.Count & " 件を取得しました。" & _
            IIf(pre.Count > 0, vbLf & "定義済みApp-ID " & pre.Count & " 件をAppRefシートに反映しました。", ""), vbInformation
 End Sub
@@ -863,7 +863,9 @@ Public Sub ExecuteAll()
     End If
     If MsgBox(n & " 件をSCMへ実行します（元に戻せません）。よろしいですか？", vbOKCancel + vbExclamation) <> vbOK Then Exit Sub
     If Not EnsureToken() Then Exit Sub
+    BeginFast
     For r = JS_FIRST To JS_FIRST + n - 1
+        Prog "API実行中 " & (r - JS_FIRST + 1) & " / " & n
         st = HttpCall(CStr(ws.Cells(r, 4).Value), CStr(ws.Cells(r, 5).Value), CStr(ws.Cells(r, 6).Value), resText)
         ws.Cells(r, 8).Value = st
         If st >= 200 And st < 300 Then ok = ok + 1 Else ng = ng + 1
@@ -872,6 +874,7 @@ Public Sub ExecuteAll()
     ' 実行後のSCMの状態を取得し、②⑥既存一覧と比較して⑧⑨差分確認に出力
     BuildDiffCore
     Worksheets(SH_DIFF).Activate
+    EndFast
     MsgBox "成功 " & ok & " 件／失敗 " & ng & " 件" & vbLf & _
            "AppObj_差分確認 と AppGroupObj_差分確認 に、現在の設定一覧と既存一覧（実行前）からの変化を出力しました。内容を確認してから、SCMの画面でPushしてください。", vbInformation
 End Sub
@@ -903,8 +906,10 @@ End Sub
 Public Sub BuildDiffCheck()
     If Not CheckContainer() Then Exit Sub
     If Not EnsureToken() Then Exit Sub
+    BeginFast
     If BuildDiffCore() Then
         Worksheets(SH_DIFF).Activate
+        EndFast
         MsgBox "差分を作成しました。", vbInformation
     End If
 End Sub
@@ -1152,9 +1157,14 @@ Private Function FetchAllItems(ByVal baseU As String, ByVal opLabel As String, B
             items.Add item
             cnt = cnt + 1
         Next
-        offset = offset + PAGE_LIMIT
-        If res.Exists("total") Then total = res("total") Else total = 0
-        If cnt < PAGE_LIMIT Or offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る（2026-11-19）
+        offset = offset + cnt
+        If res.Exists("total") Then total = Val(CStr(res("total"))) Else total = 0
+        If cnt = 0 Then Exit Do
+        If total > 0 And offset >= total Then Exit Do
+        If offset >= 1000000 Then Exit Do
+        Prog "取得中 " & Format$(offset, "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & " 件"
     Loop
     If logOk Then WriteLog opLabel, "", "GET", WithQuery(baseU, ContainerQuery()), 200, items.Count & "件取得"
     Set FetchAllItems = items
