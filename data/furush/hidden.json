@@ -1,0 +1,22 @@
+{
+ "schemaVersion": 2,
+ "updatedAt": "2026-11-15",
+ "modes": [
+  {
+   "id": "himitsu",
+   "title": "隠しフラッシュ",
+   "catch": "隠しモードのときだけ出るモード（サンプル3枚）",
+   "version": 1,
+   "count": 3,
+   "parts": [
+    {
+     "no": 0,
+     "file": "himitsu000.zip",
+     "sha256": "cd10b183cefb66fbe8cbc68c7b0c5db1340235541024a2741d1a8fa80bf9fa73",
+     "size": 733
+    }
+   ],
+   "enabled": true
+  }
+ ]
+}
