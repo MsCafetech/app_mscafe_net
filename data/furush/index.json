@@ -46,7 +46,7 @@
      "size": 5237
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "sekaishi",
@@ -92,7 +92,7 @@
      "size": 9707
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "kagaku",
@@ -124,7 +124,7 @@
      "size": 1166824
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "yamanote",
@@ -140,7 +140,7 @@
      "size": 664788
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "kokki",
@@ -162,7 +162,7 @@
      "size": 527010
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "todofuken",
@@ -200,7 +200,7 @@
      "size": 3588472
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "chikei",
@@ -244,7 +244,7 @@
      "size": 178446
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "ryakusho",
@@ -276,7 +276,7 @@
      "size": 151713
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "butsuri",
@@ -292,7 +292,7 @@
      "size": 400847
     }
    ],
-   "enabled": false
+   "enabled": true
   },
   {
    "id": "katsuyou",
@@ -314,7 +314,7 @@
      "size": 3603
     }
    ],
-   "enabled": false
+   "enabled": true
   }
  ]
 }
