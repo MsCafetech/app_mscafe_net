@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-24",
   "language": "ja",
-  "question_count": 4,
+  "question_count": 7,
   "questions": [
     {
       "id": "20261124-001",
@@ -113,6 +113,92 @@
         {
           "name": "共同通信",
           "url": "https://kumanichi.com/articles/2060929"
+        }
+      ]
+    },
+    {
+      "id": "20261124-005",
+      "news_date": "2026-11-23",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "愛知県の鳥インフルエンザ",
+      "news_summary": "11月23日、愛知県豊橋市の約8万羽の採卵鶏（さいらんけい）を飼う農場で鳥インフルエンザが疑われる事例が確認され、国と県が感染拡大を防ぐ対策を始めました。",
+      "question": "11月23日、愛知県豊橋市の約8万羽の採卵鶏（さいらんけい）を飼う農場で鳥インフルエンザが疑われる事例が確認され、国と県が感染拡大を防ぐ対策を始めました。\n\n愛知県の県庁所在地はどこですか。",
+      "choices": [
+        "岐阜市",
+        "名古屋市",
+        "静岡市",
+        "津市"
+      ],
+      "correct_index": 1,
+      "explanation": "名古屋市です。豊橋市は愛知県の東部にあり、農業も盛んです。",
+      "keywords": [
+        "愛知県",
+        "養鶏",
+        "鳥インフルエンザ"
+      ],
+      "sources": [
+        {
+          "name": "農林水産省",
+          "url": "https://www.maff.go.jp/j/press/syouan/douei/261123.html"
+        }
+      ]
+    },
+    {
+      "id": "20261124-006",
+      "news_date": "2026-11-23",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "COP31の閉幕",
+      "news_summary": "トルコで開かれた国連の気候変動会議COP31では、化石燃料をめぐる意見の違いから、最終的な合意に至りませんでした。国連は11月23日に結果を伝えました。",
+      "question": "トルコで開かれた国連の気候変動会議COP31では、化石燃料をめぐる意見の違いから、最終的な合意に至りませんでした。国連は11月23日に結果を伝えました。\n\n次のうち化石燃料はどれですか。",
+      "choices": [
+        "風力",
+        "太陽光",
+        "石炭",
+        "地熱"
+      ],
+      "correct_index": 2,
+      "explanation": "石炭です。石油や天然ガスも化石燃料で、燃焼すると二酸化炭素が発生します。",
+      "keywords": [
+        "COP31",
+        "化石燃料",
+        "温暖化"
+      ],
+      "sources": [
+        {
+          "name": "国際連合",
+          "url": "https://www.un.org/en/desa/cop31-ends-without-climate-pact-as-un-chief-warns-there-is-no-ambiguity-in-science"
+        }
+      ]
+    },
+    {
+      "id": "20261124-007",
+      "news_date": "2026-11-18",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "冬の気象への注意",
+      "news_summary": "11月18日、気象庁は冬に向けた大雪や乾燥への備えを呼びかけました。冬型の気圧配置が続くと、太平洋側では空気が乾燥しやすくなります。",
+      "question": "11月18日、気象庁は冬に向けた大雪や乾燥への備えを呼びかけました。冬型の気圧配置が続くと、太平洋側では空気が乾燥しやすくなります。\n\n日本海側に冬の雪をもたらす季節風は主にどの方向から吹きますか。",
+      "choices": [
+        "南東",
+        "南西",
+        "北東",
+        "北西"
+      ],
+      "correct_index": 3,
+      "explanation": "北西です。大陸からの冷たい風が日本海で水分を取り込み、山地で雪を降らせます。",
+      "keywords": [
+        "季節風",
+        "冬型の気圧配置"
+      ],
+      "sources": [
+        {
+          "name": "気象庁",
+          "url": "https://www.jma.go.jp/jma/kishou/tyoukan/2026/dg_20261118.html"
         }
       ]
     }
