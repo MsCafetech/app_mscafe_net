@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "language": "ja",
+  "question_count": 10,
+  "questions": [
+    {
+      "id": "20261124-001",
+      "news_date": "2026-11-22",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とヨーロッパの探査機が水星に到着",
+      "news_summary": "日本とヨーロッパが協力して送り出した探査機が、2026年11月22日（日本時間）に水星の周りを回り始めました。約8年かけて到着し、水星の表面や磁石のような性質を調べる計画です。",
+      "question": "日本とヨーロッパの探査機が到着した惑星はどれですか？",
+      "choices": [
+        "金星",
+        "水星",
+        "火星",
+        "木星"
+      ],
+      "correct_index": 1,
+      "explanation": "水星です。水星は太陽に最も近い惑星です。太陽の強い引力や熱の影響を受けるため、探査機を水星の周りに入れるには、速度や進む方向を細かく調整する技術が必要です。",
+      "keywords": [
+        "水星",
+        "探査機",
+        "JAXA"
+      ],
+      "sources": [
+        {
+          "name": "時事通信",
+          "url": "https://jen.jiji.com/japan/society/2026112300171/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-002",
+      "news_date": "2026-11-23",
+      "category": "history_culture",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "首里城の正殿が再び公開",
+      "news_summary": "沖縄県那覇市にある首里城では、2019年の火事で失われた中心の建物が再建され、2026年11月23日に一般公開が始まりました。昔の建物の姿を取り戻すことで、地域の歴史を学ぶことができます。",
+      "question": "再建された正殿（せいでん）が公開された城はどれですか？",
+      "choices": [
+        "首里城",
+        "姫路城",
+        "松本城",
+        "熊本城"
+      ],
+      "correct_index": 0,
+      "explanation": "首里城です。首里城はかつて琉球王国（りゅうきゅうおうこく）の政治や文化の中心でした。琉球王国は中国や日本などとの貿易を通して、独自の文化を育ててきました。",
+      "keywords": [
+        "首里城",
+        "沖縄",
+        "琉球王国"
+      ],
+      "sources": [
+        {
+          "name": "時事通信",
+          "url": "https://jen.jiji.com/japan/society/2026112300262/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-003",
+      "news_date": "2026-11-23",
+      "category": "society",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "愛知県の農場で鳥インフルエンザを確認",
+      "news_summary": "2026年11月23日、愛知県豊橋市の農場で鳥インフルエンザの感染が確認されました。卵を産むニワトリを育てている農場で、病気がほかの農場に広がらないように対策が進められます。",
+      "question": "鳥インフルエンザが確認された豊橋市は何県にありますか？",
+      "choices": [
+        "静岡県",
+        "三重県",
+        "岐阜県",
+        "愛知県"
+      ],
+      "correct_index": 3,
+      "explanation": "愛知県です。豊橋市は愛知県の東部にあります。愛知県は自動車などの工業が盛んなだけでなく、野菜や花の栽培、家畜を育てる畜産（ちくさん）などの農業も行われています。",
+      "keywords": [
+        "豊橋",
+        "愛知",
+        "鳥インフルエンザ"
+      ],
+      "sources": [
+        {
+          "name": "時事通信・nippon.com",
+          "url": "https://www.nippon.com/en/articles/-/57849"
+        }
+      ]
+    },
+    {
+      "id": "20261124-004",
+      "news_date": "2026-11-22",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "気候変動の国際会議で合意まとまらず",
+      "news_summary": "トルコで開かれた国連の気候変動会議COP31は、2026年11月22日に全体の合意文書を採択できずに終わりました。石炭や石油などの利用を減らす方法について、参加国の意見がまとまりませんでした。",
+      "question": "COP31で話し合われた主な問題は何ですか？",
+      "choices": [
+        "海賊対策",
+        "国際郵便",
+        "気候変動",
+        "文化財の輸送"
+      ],
+      "correct_index": 2,
+      "explanation": "気候変動です。世界の国々は、地球の気温上昇を抑えるために協力しています。ただし、国によって使うエネルギーや産業の仕組みが違うため、対策の進め方について意見が分かれることがあります。",
+      "keywords": [
+        "COP31",
+        "気候変動",
+        "国連"
+      ],
+      "sources": [
+        {
+          "name": "NEWS DAILY",
+          "url": "https://newsdaily.jp/brief-2026-11-23/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-005",
+      "news_date": "2026-11-23",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "中国の都市で乗り物の製造業が発展",
+      "news_summary": "2026年11月23日、中国の山東省にある萊西市で、自動車や船、低い空を飛ぶ乗り物に関わる産業を育てていることが報じられました。工場や部品を作る会社が協力して製造業を発展させています。",
+      "question": "萊西市がある国はどこですか？",
+      "choices": [
+        "中国",
+        "インド",
+        "タイ",
+        "韓国"
+      ],
+      "correct_index": 0,
+      "explanation": "中国です。山東省は中国の東部にあり、海に面しています。製造業では、完成品を作る工場だけでなく、部品を作る会社や製品を運ぶ会社など、多くの仕事がつながっています。",
+      "keywords": [
+        "中国",
+        "山東省",
+        "製造業"
+      ],
+      "sources": [
+        {
+          "name": "人民網",
+          "url": "https://j.people.com.cn/n3/2026/1123/c94638-20522174.html"
+        }
+      ]
+    },
+    {
+      "id": "20261124-006",
+      "news_date": "2026-11-22",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "核兵器の被害を受けた国への支援を提案",
+      "news_summary": "2026年11月22日、核兵器の使用や実験による被害を受けた国と、支援できる国を結び付ける情報の仕組みが提案されたと報じられました。提案したのは核兵器をなくすために活動する国際団体ICANです。",
+      "question": "支援の仕組みを提案した国際団体はどれですか？",
+      "choices": [
+        "FIFA",
+        "ICAN",
+        "IOC",
+        "OPEC"
+      ],
+      "correct_index": 1,
+      "explanation": "ICANです。核兵器をなくすことを目指す国際的な活動の集まりで、2017年にノーベル平和賞を受けました。核兵器の被害を受けた人々を支えることも、国際協力の重要な課題です。",
+      "keywords": [
+        "ICAN",
+        "核兵器",
+        "国際協力"
+      ],
+      "sources": [
+        {
+          "name": "共同通信",
+          "url": "https://asiaaquaculture.online/articles/-/92295"
+        }
+      ]
+    },
+    {
+      "id": "20261124-007",
+      "news_date": "2026-11-23",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "茨城県の市で放射性廃棄物の説明会",
+      "news_summary": "2026年11月23日、茨城県常陸大宮市で、原子力発電に伴う放射性廃棄物の最終処分場を選ぶための調査について住民への説明会が開かれました。まず土地の性質などを資料で調べる段階です。",
+      "question": "最終処分場を選ぶための最初の調査では何を調べますか？",
+      "choices": [
+        "観光客の人数",
+        "学校の成績",
+        "土地の地質などの資料",
+        "商店の売上"
+      ],
+      "correct_index": 2,
+      "explanation": "土地の地質などの資料です。地質（ちしつ）とは、土地をつくる岩石や地層の性質です。長期間にわたり安全に廃棄物を管理できる場所かどうかを考えるため、段階を追って調査します。",
+      "keywords": [
+        "地質",
+        "原子力",
+        "常陸大宮"
+      ],
+      "sources": [
+        {
+          "name": "時事通信",
+          "url": "https://jen.jiji.com/latestnews/?category=japan&date=2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "20261124-008",
+      "news_date": "2026-11-22",
+      "category": "space",
+      "difficulty": 1,
+      "question_type": "related_knowledge",
+      "news_title": "水星の探査が進む",
+      "news_summary": "2026年11月22日、日本とヨーロッパの探査機が水星の周りを回り始めました。水星は地球とは違う環境を持つ惑星です。探査によって太陽系の惑星がどのようにできたかを考える手がかりが得られます。",
+      "question": "太陽系で太陽に最も近い惑星はどれですか？",
+      "choices": [
+        "地球",
+        "火星",
+        "金星",
+        "水星"
+      ],
+      "correct_index": 3,
+      "explanation": "水星です。太陽に近い順に水星、金星、地球、火星と並びます。惑星は太陽の周りを回る天体で、自分で光を出す太陽とは異なり、太陽の光を反射して見えます。",
+      "keywords": [
+        "太陽系",
+        "惑星",
+        "水星"
+      ],
+      "sources": [
+        {
+          "name": "ロイター",
+          "url": "https://www.reuters.com/science/spacecraft-begins-orbit-mercury-with-glitch-reported-2026-11-22/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-009",
+      "news_date": "2026-11-22",
+      "category": "environment",
+      "difficulty": 1,
+      "question_type": "related_knowledge",
+      "news_title": "国際会議で化石燃料が議題に",
+      "news_summary": "2026年11月22日に終わったCOP31では、化石燃料の利用を減らすことについて意見が分かれました。化石燃料は電気を作ったり、乗り物を動かしたりするために広く使われているエネルギー資源です。",
+      "question": "次のうち化石燃料ではないものはどれですか？",
+      "choices": [
+        "石炭",
+        "太陽光",
+        "石油",
+        "天然ガス"
+      ],
+      "correct_index": 1,
+      "explanation": "太陽光です。石炭、石油、天然ガスは昔の生き物などに由来する化石燃料です。燃やすと二酸化炭素が出ます。太陽光発電は光のエネルギーを電気に変える方法で、燃料を燃やす必要がありません。",
+      "keywords": [
+        "化石燃料",
+        "太陽光",
+        "二酸化炭素"
+      ],
+      "sources": [
+        {
+          "name": "NEWS DAILY",
+          "url": "https://newsdaily.jp/brief-2026-11-23/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-010",
+      "news_date": "2026-11-23",
+      "category": "geography",
+      "difficulty": 1,
+      "question_type": "related_knowledge",
+      "news_title": "首里城の公開で沖縄の歴史に注目",
+      "news_summary": "2026年11月23日、火事から再建された首里城の正殿が公開されました。首里城は沖縄県の県庁所在地にあり、琉球王国の歴史を伝える大切な建物です。地域の地理と歴史を合わせて学ぶことができます。",
+      "question": "沖縄県の県庁所在地はどこですか？",
+      "choices": [
+        "那覇市",
+        "石垣市",
+        "名護市",
+        "宮古島市"
+      ],
+      "correct_index": 0,
+      "explanation": "那覇市です。県庁所在地とは、県の行政の中心となる県庁が置かれている市のことです。那覇市は沖縄本島の南部にあり、空港や港を通じて県内外の人や物が行き来しています。",
+      "keywords": [
+        "那覇",
+        "沖縄",
+        "県庁所在地"
+      ],
+      "sources": [
+        {
+          "name": "時事通信",
+          "url": "https://jen.jiji.com/japan/society/2026112300262/"
+        }
+      ]
+    }
+  ]
+}
