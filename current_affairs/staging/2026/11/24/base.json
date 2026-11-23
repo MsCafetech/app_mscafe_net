@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-24",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 12,
   "questions": [
     {
       "id": "20261124-001",
@@ -68,6 +68,293 @@
         {
           "name": "NHK番組表掲載情報",
           "url": "https://www.sf-dream.com/cgi/radiobangumi/nhk/index.php/program/270/g1/2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "20261124-003",
+      "news_date": "2026-11-23",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "COP31の閉幕",
+      "news_summary": "国連の気候変動会議COP31は、化石燃料をめぐる意見の違いから合意文書をまとめられず閉幕しました。",
+      "question": "国連の気候変動会議COP31は、化石燃料をめぐる意見の違いから合意文書をまとめられず閉幕しました。\n\n化石燃料に当てはまるものはどれですか。",
+      "choices": [
+        "太陽光",
+        "風力",
+        "石炭",
+        "地熱"
+      ],
+      "correct_index": 2,
+      "explanation": "石炭（せきたん）は化石燃料です。燃やすと二酸化炭素が発生します。",
+      "keywords": [
+        "COP31",
+        "化石燃料",
+        "温暖化"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（熊本日日新聞）",
+          "url": "https://www.kumanichi.com/news/zenkoku/science?page=3"
+        }
+      ]
+    },
+    {
+      "id": "20261124-004",
+      "news_date": "2026-11-23",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "核兵器被害への支援提案",
+      "news_summary": "核兵器廃絶国際キャンペーン（ICAN）は、核兵器の被害を受けた国と支援できる国を結ぶ仕組みを提案しました。",
+      "question": "核兵器廃絶国際キャンペーン（ICAN）は、核兵器の被害を受けた国と支援できる国を結ぶ仕組みを提案しました。\n\n日本で1945年に原子爆弾が投下された都市の組み合わせはどれですか。",
+      "choices": [
+        "広島と長崎",
+        "東京と大阪",
+        "京都と奈良",
+        "仙台と札幌"
+      ],
+      "correct_index": 0,
+      "explanation": "広島と長崎です。核兵器（かくへいき）の被害を伝えることは平和を考える上で重要です。",
+      "keywords": [
+        "ICAN",
+        "核兵器",
+        "平和"
+      ],
+      "sources": [
+        {
+          "name": "共同通信",
+          "url": "https://japanseafood.store/articles/-/92295"
+        }
+      ]
+    },
+    {
+      "id": "20261124-005",
+      "news_date": "2026-11-23",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "沖縄の基地負担をめぐる協議",
+      "news_summary": "政府は沖縄県の米軍基地の負担を減らすため、地元自治体と年内に協議する方針を示しました。",
+      "question": "政府は沖縄県の米軍基地の負担を減らすため、地元自治体と年内に協議する方針を示しました。\n\n沖縄がアメリカの統治から日本に復帰した年はいつですか。",
+      "choices": [
+        "1945年",
+        "1964年",
+        "1972年",
+        "1989年"
+      ],
+      "correct_index": 2,
+      "explanation": "1972年です。沖縄（おきなわ）は第二次世界大戦後、アメリカの統治下に置かれていました。",
+      "keywords": [
+        "沖縄返還",
+        "米軍基地"
+      ],
+      "sources": [
+        {
+          "name": "共同通信",
+          "url": "https://japanseafood.store/articles/-/92295"
+        }
+      ]
+    },
+    {
+      "id": "20261124-006",
+      "news_date": "2026-11-23",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "たまごっち発売30周年",
+      "news_summary": "日本で生まれた電子ペット玩具が発売30周年を迎え、国内外で長く親しまれています。",
+      "question": "日本で生まれた電子ペット玩具が発売30周年を迎え、国内外で長く親しまれています。\n\n2026年に発売30周年なら、発売年は何年ですか。",
+      "choices": [
+        "1986年",
+        "1996年",
+        "2006年",
+        "2016年"
+      ],
+      "correct_index": 1,
+      "explanation": "2026から30を引くと1996年です。日本の玩具（がんぐ）文化は海外にも広がっています。",
+      "keywords": [
+        "玩具産業",
+        "輸出",
+        "1996年"
+      ],
+      "sources": [
+        {
+          "name": "The Japan Times",
+          "url": "https://www.japantimes.co.jp/latest-news/podcast/deep-dive/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-007",
+      "news_date": "2026-11-23",
+      "category": "energy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "福島の水素ステーション",
+      "news_summary": "福島県では水素を燃料として供給する施設の運営費用が課題になっています。",
+      "question": "福島県では水素を燃料として供給する施設の運営費用が課題になっています。\n\n水素と酸素が反応してできる物質は何ですか。",
+      "choices": [
+        "食塩",
+        "二酸化炭素",
+        "鉄",
+        "水"
+      ],
+      "correct_index": 3,
+      "explanation": "水です。水素（すいそ）を使う燃料電池は酸素との反応で電気を取り出します。",
+      "keywords": [
+        "水素",
+        "燃料電池"
+      ],
+      "sources": [
+        {
+          "name": "The Japan Times",
+          "url": "https://www.japantimes.co.jp/latest-news/podcast/deep-dive/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-008",
+      "news_date": "2026-11-23",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "タイの河川汚染対策",
+      "news_summary": "タイは北部の川のヒ素汚染に対処するため、中国やミャンマーとの協力を進める方針です。",
+      "question": "タイは北部の川のヒ素汚染に対処するため、中国やミャンマーとの協力を進める方針です。\n\nタイが位置する地域はどこですか。",
+      "choices": [
+        "東南アジア",
+        "北ヨーロッパ",
+        "南アメリカ",
+        "北アフリカ"
+      ],
+      "correct_index": 0,
+      "explanation": "東南アジアです。国境を越える川の汚染（おせん）には国同士の協力が必要です。",
+      "keywords": [
+        "タイ",
+        "河川汚染",
+        "東南アジア"
+      ],
+      "sources": [
+        {
+          "name": "The Japan Times",
+          "url": "https://www.japantimes.co.jp/latest-news/podcast/deep-dive/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-009",
+      "news_date": "2026-11-23",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "中国の子育てと高齢者支援",
+      "news_summary": "中国は2030年に向けて高齢者や子育て家庭への支援を強める目標を示しました。人口減少が背景にあります。",
+      "question": "中国は2030年に向けて高齢者や子育て家庭への支援を強める目標を示しました。人口減少が背景にあります。\n\n子どもの数が減り、高齢者の割合が増える現象は何ですか。",
+      "choices": [
+        "都市化",
+        "少子高齢化",
+        "国際化",
+        "工業化"
+      ],
+      "correct_index": 1,
+      "explanation": "少子高齢化（しょうしこうれいか）です。社会保障や働く人の数にも影響します。",
+      "keywords": [
+        "人口減少",
+        "少子高齢化"
+      ],
+      "sources": [
+        {
+          "name": "The Japan Times",
+          "url": "https://www.japantimes.co.jp/latest-news/podcast/deep-dive/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-010",
+      "news_date": "2026-11-23",
+      "category": "transport",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "広島のバス路線見直し",
+      "news_summary": "広島では利用者の減少などを受け、行政とバス事業者が協力して路線を見直す取り組みを進めています。",
+      "question": "広島では利用者の減少などを受け、行政とバス事業者が協力して路線を見直す取り組みを進めています。\n\n広島県が属する地方はどこですか。",
+      "choices": [
+        "四国地方",
+        "近畿地方",
+        "中国地方",
+        "中部地方"
+      ],
+      "correct_index": 2,
+      "explanation": "中国地方です。公共交通（こうきょうこうつう）は地域の人々の移動を支えます。",
+      "keywords": [
+        "広島県",
+        "公共交通",
+        "中国地方"
+      ],
+      "sources": [
+        {
+          "name": "The Japan Times",
+          "url": "https://www.japantimes.co.jp/latest-news/podcast/deep-dive/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-011",
+      "news_date": "2026-11-21",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "火星の海の消失時期の研究",
+      "news_summary": "火星にかつて存在した海が約32億年前に失われた可能性を示す研究が報じられました。",
+      "question": "火星にかつて存在した海が約32億年前に失われた可能性を示す研究が報じられました。\n\n火星の表面が赤っぽく見える主な理由は何ですか。",
+      "choices": [
+        "氷が赤いから",
+        "植物が多いから",
+        "太陽が赤いから",
+        "酸化鉄があるから"
+      ],
+      "correct_index": 3,
+      "explanation": "酸化鉄（さんかてつ）があるためです。鉄が酸素と結びついた物質が赤っぽい色を示します。",
+      "keywords": [
+        "火星",
+        "酸化鉄",
+        "惑星"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（熊本日日新聞）",
+          "url": "https://www.kumanichi.com/news/zenkoku/science?page=3"
+        }
+      ]
+    },
+    {
+      "id": "20261124-012",
+      "news_date": "2026-11-22",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "融雪剤とアリの食性",
+      "news_summary": "雪の多い地域で使う融雪剤がアリの食べ物の選び方に影響する可能性が報じられました。",
+      "question": "雪の多い地域で使う融雪剤がアリの食べ物の選び方に影響する可能性が報じられました。\n\n道路で使う塩類の凍結防止剤が水に溶けると、水の凍る温度は一般にどうなりますか。",
+      "choices": [
+        "低くなる",
+        "高くなる",
+        "必ず100度になる",
+        "変わらない"
+      ],
+      "correct_index": 0,
+      "explanation": "低くなります。塩類が水に溶けると凍結（とうけつ）しにくくなります。",
+      "keywords": [
+        "融雪剤",
+        "凝固点",
+        "生態系"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（熊本日日新聞）",
+          "url": "https://www.kumanichi.com/news/zenkoku/science?page=3"
         }
       ]
     }
