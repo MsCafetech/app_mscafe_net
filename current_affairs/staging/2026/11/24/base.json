@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20261124-001",
+      "news_date": "2026-11-21",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日欧共同探査機が惑星に到着",
+      "news_summary": "日本とヨーロッパの共同探査計画ベピコロンボは、2018年の打ち上げから約8年を経て、2026年11月21日に水星の周回軌道に入りました。今後は二つの探査機が別々の軌道から表面や磁場を調べる予定です。",
+      "question": "2026年11月21日、日本とヨーロッパが協力して開発した探査機（たんさき）が、約8年の旅を経て太陽系のある惑星を回る軌道（きどう）に入りました。今後、二つの探査機で表面や磁場を調べる予定です。\n\nこの惑星はどれでしょう？",
+      "choices": [
+        "金星",
+        "水星",
+        "火星",
+        "木星"
+      ],
+      "correct_index": 1,
+      "explanation": "水星は太陽に最も近く、太陽系の八つの惑星の中で最も小さい惑星です。今回の計画では日本とヨーロッパがそれぞれ探査機を担当しています。異なる高さから観測することで、惑星の表面や周囲の環境を詳しく調べます。",
+      "keywords": [
+        "水星",
+        "太陽系",
+        "ベピコロンボ"
+      ],
+      "sources": [
+        {
+          "name": "ESA",
+          "url": "https://www.esa.int/articles/about-us/directorates/science/bepicolombo/latest-updates-bepicolombo-s-arrival-at-mercury"
+        },
+        {
+          "name": "Eos",
+          "url": "https://eos.org/research-and-developments/bepicolombo-arrives-at-mercury"
+        },
+        {
+          "name": "AP通信",
+          "url": "https://abcnews.com/Technology/wireStory/mercury-gets-visitor-years-pair-spacecraft-loop-orbit-138351997"
+        }
+      ]
+    }
+  ]
+}
