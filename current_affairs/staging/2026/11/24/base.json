@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "language": "ja",
+  "question_count": 4,
+  "questions": [
+    {
+      "id": "20261124-001",
+      "news_date": "2026-11-23",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "首里城正殿の公開",
+      "news_summary": "火災で失われた首里城の正殿が再建され、11月23日に一般公開が始まりました。",
+      "question": "火災で失われた首里城の正殿が再建され、11月23日に一般公開が始まりました。\n\n首里城はかつて何という王国の中心でしたか。",
+      "choices": [
+        "琉球王国",
+        "大和政権",
+        "渤海",
+        "高麗"
+      ],
+      "correct_index": 0,
+      "explanation": "琉球王国です。中国や日本、東南アジアとの交易を通じて独自の文化を育みました。",
+      "keywords": [
+        "首里城",
+        "琉球王国"
+      ],
+      "sources": [
+        {
+          "name": "首里城公園",
+          "url": "https://oki-park.jp/shurijo/information/detail/11539"
+        }
+      ]
+    },
+    {
+      "id": "20261124-002",
+      "news_date": "2026-11-22",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日欧探査機の軌道投入",
+      "news_summary": "日本と欧州の共同探査機が11月22日（日本時間）、目的の惑星を回る軌道に入りました。表面や磁場を調べる計画です。",
+      "question": "日本と欧州の共同探査機が11月22日（日本時間）、目的の惑星を回る軌道に入りました。表面や磁場を調べる計画です。\n\nこの惑星はどれですか。",
+      "choices": [
+        "金星",
+        "水星",
+        "火星",
+        "木星"
+      ],
+      "correct_index": 1,
+      "explanation": "水星です。太陽に最も近く、日本の探査機みおは磁場などを観測します。",
+      "keywords": [
+        "水星",
+        "ベピコロンボ"
+      ],
+      "sources": [
+        {
+          "name": "MediaDogs",
+          "url": "https://mediadogs.jp/2026/11/23/mio-mercury-orbit-insertion/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-003",
+      "news_date": "2026-11-23",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "核のごみの処分地調査",
+      "news_summary": "茨城県常陸大宮市で11月23日、原子力発電で生じる高レベル放射性廃棄物の処分地選びについて住民説明会が開かれました。",
+      "question": "茨城県常陸大宮市で11月23日、原子力発電で生じる高レベル放射性廃棄物の処分地選びについて住民説明会が開かれました。\n\n地下深くに埋めて管理する処分方法を何といいますか。",
+      "choices": [
+        "海洋投棄",
+        "焼却処分",
+        "地層処分",
+        "堆肥化"
+      ],
+      "correct_index": 2,
+      "explanation": "地層処分です。処分地選びには段階的な調査があり、説明会の開催だけで処分地が決まるわけではありません。",
+      "keywords": [
+        "原子力",
+        "地層処分"
+      ],
+      "sources": [
+        {
+          "name": "共同通信",
+          "url": "https://news.livedoor.com/article/detail/32881339/"
+        }
+      ]
+    },
+    {
+      "id": "20261124-004",
+      "news_date": "2026-11-22",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "北朝鮮の外交方針",
+      "news_summary": "北朝鮮の指導者は11月22日、各国の大使を迎える式典で、友好的な国との協力を強める方針を示しました。",
+      "question": "北朝鮮の指導者は11月22日、各国の大使を迎える式典で、友好的な国との協力を強める方針を示しました。\n\n北朝鮮が位置する半島はどれですか。",
+      "choices": [
+        "イベリア半島",
+        "インドシナ半島",
+        "アラビア半島",
+        "朝鮮半島"
+      ],
+      "correct_index": 3,
+      "explanation": "朝鮮半島です。半島の北側に北朝鮮、南側に韓国があります。",
+      "keywords": [
+        "朝鮮半島",
+        "外交"
+      ],
+      "sources": [
+        {
+          "name": "共同通信",
+          "url": "https://kumanichi.com/articles/2060929"
+        }
+      ]
+    }
+  ]
+}
