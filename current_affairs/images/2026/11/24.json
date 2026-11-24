@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 10,
-  "related_count": 10,
-  "image_count": 21,
+  "related_count": 12,
+  "image_count": 23,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -108,6 +108,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。既存の地図。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-002-R03",
+          "images": [
+            {
+              "id": "20261124-002-R03-I01",
+              "type": "historical",
+              "title": "琉球の紅型衣装",
+              "caption": "琉球王国時代の沖縄で育まれた、鮮やかな模様の染め物「紅型」の衣装。交易が文化を豊かにしたことを学ぶ資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Bingata_kimono_Okinawa.png/960px-Bingata_kimono_Okinawa.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bingata_kimono_Okinawa.png",
+              "credit": "Unknown Ryukyu artisans / Museum photograph",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "パブリックドメインとして公開。出典・作者の表示を推奨。歴史資料。"
             }
           ]
         }
@@ -239,6 +257,24 @@
               "license": "Public Domain (NASA)",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
               "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。衛星による観測資料。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-003-R01",
+          "images": [
+            {
+              "id": "20261124-003-R01-I01",
+              "type": "diagram",
+              "title": "地球のエネルギー収支と温室効果",
+              "caption": "太陽から届くエネルギーと地球から出る熱の流れを示すNASAの図。温室効果の仕組みを学ぶ資料。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Diagram_showing_the_Earth%27s_energy_budget%2C_which_includes_the_greenhouse_effect_%28NASA%29.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Diagram_showing_the_Earth%27s_energy_budget,_which_includes_the_greenhouse_effect_(NASA).png",
+              "credit": "NASA / Robert Simmon",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。既存の図解。"
             }
           ]
         }
