@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 10,
-  "related_count": 16,
-  "image_count": 27,
+  "related_count": 18,
+  "image_count": 29,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -448,7 +448,44 @@
           "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。2015年撮影の資料写真。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261124-010-R01",
+          "images": [
+            {
+              "id": "20261124-010-R01-I01",
+              "type": "map",
+              "title": "大西洋の位置",
+              "caption": "北アメリカ・ヨーロッパ・アフリカの間に広がる大西洋を示した地図。ニューヨークが大西洋側にあることを学ぶ資料。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Atlantic_Ocean_-_en_with_natural_borders.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Atlantic_Ocean_-_en_with_natural_borders.png",
+              "credit": "Janitoalevic",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0として公開。商用利用、複製、改変が可能。出典表示を推奨。既存の地図。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-010-R03",
+          "images": [
+            {
+              "id": "20261124-010-R03-I01",
+              "type": "satellite",
+              "title": "宇宙から見たニューヨーク",
+              "caption": "国際宇宙ステーションから見たニューヨーク周辺。川・湾・海に囲まれたニューヨークの地形を学ぶ観測資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/ISS025-E-5861_-_View_of_New_York.jpg/960px-ISS025-E-5861_-_View_of_New_York.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:ISS025-E-5861_-_View_of_New_York.jpg",
+              "credit": "NASA / Earth Science and Remote Sensing Unit",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。国際宇宙ステーションからの観測資料。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261124-004",
