@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 10,
-  "related_count": 7,
-  "image_count": 18,
+  "related_count": 10,
+  "image_count": 21,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -130,7 +130,44 @@
           "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。元画像を切り出したカラー合成画像であり、今回の探査による写真ではない。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261124-006-R01",
+          "images": [
+            {
+              "id": "20261124-006-R01-I01",
+              "type": "diagram",
+              "title": "太陽系の惑星の並び",
+              "caption": "太陽から近い順に並ぶ太陽系の天体を示したNASAの図。水星が太陽に最も近いことを学ぶ資料。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Solar_System_graphic_by_NASA_%28long%29.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Solar_System_graphic_by_NASA_(long).png",
+              "credit": "NASA",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。既存の図解。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-006-R03",
+          "images": [
+            {
+              "id": "20261124-006-R03-I01",
+              "type": "illustration",
+              "title": "ベピコロンボ探査機の模型",
+              "caption": "日本と欧州が協力する水星探査計画「ベピコロンボ」の探査機模型。二つの探査機で水星を調べる計画を学ぶ資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/BepiColombo_spacecraft_model.png/960px-BepiColombo_spacecraft_model.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:BepiColombo_spacecraft_model.png",
+              "credit": "NASA",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。探査機模型の資料画像。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261124-009",
@@ -243,7 +280,26 @@
           "usage_notes": "CC0として公開。商用利用、複製、改変が可能。出典表示を推奨。資料写真。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261124-007-R01",
+          "images": [
+            {
+              "id": "20261124-007-R01-I01",
+              "type": "photo",
+              "title": "インフルエンザAウイルスの電子顕微鏡写真",
+              "caption": "電子顕微鏡で撮影されたインフルエンザAウイルス。鳥インフルエンザの原因となるウイルスを学ぶための資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Influenza_A_-_late_passage.jpg/960px-Influenza_A_-_late_passage.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Influenza_A_-_late_passage.jpg",
+              "credit": "CDC / Dr. Erskine Palmer",
+              "license": "Public Domain (U.S. CDC)",
+              "license_url": "https://www.cdc.gov/other/agencies/other-agency-materials.html",
+              "usage_notes": "米国CDC提供のパブリックドメイン資料。CDCの推奨・後援を示唆しない。電子顕微鏡写真。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261124-008",
