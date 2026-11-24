@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 2,
-  "related_count": 3,
-  "image_count": 5,
+  "related_count": 5,
+  "image_count": 7,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -95,6 +95,42 @@
               "license": "Public domain",
               "license_url": "https://www.usa.gov/government-copyright",
               "usage_notes": "米空軍提供のパブリックドメイン画像。撮影者名とWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-002-R02",
+          "images": [
+            {
+              "id": "20261125-002-R02-I01",
+              "type": "satellite",
+              "title": "NASA-ISROレーダー衛星が撮影したメーン州の島",
+              "caption": "衛星観測画像：電波を使うレーダー衛星が撮影した地表の画像。雲がある日や夜でも地表を観測できる仕組みの例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/NASA-ISRO_Radar_Satellite_Captures_First_Image_of_Mount_Desert_Island_%28PIA26616%29.jpeg/1280px-NASA-ISRO_Radar_Satellite_Captures_First_Image_of_Mount_Desert_Island_%28PIA26616%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:NASA-ISRO_Radar_Satellite_Captures_First_Image_of_Mount_Desert_Island_(PIA26616).jpeg",
+              "credit": "NASA/JPL-Caltech",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA/JPL-Caltech提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-002-R04",
+          "images": [
+            {
+              "id": "20261125-002-R04-I01",
+              "type": "satellite",
+              "title": "エルベ川の洪水前後を比べた衛星画像",
+              "caption": "衛星観測画像：洪水の前と後の地表を比べた資料。衛星画像は、広い地域で水につかった場所を確かめる手がかりになります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA_Elbe_flood_2002_before_after.jpg/1280px-NASA_Elbe_flood_2002_before_after.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:NASA_Elbe_flood_2002_before_after.jpg",
+              "credit": "NASA",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         }
