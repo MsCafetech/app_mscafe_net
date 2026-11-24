@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 5,
+  "questions": [
+    {
+      "question_id": "20261124-001",
+      "related": [
+        {
+          "id": "20261124-001-R01",
+          "relation_type": "question",
+          "title": "二院制が採用された歴史",
+          "description": "日本では、明治時代に作られた大日本帝国憲法のもとでも、衆議院と貴族院という二つの議院が置かれていました。ただし、貴族院には皇族や華族などの議員がいて、現在のようにすべての議員を国民が選ぶ仕組みではありませんでした。第二次世界大戦後、政治の中心を国民に置く国民主権の考え方が重視され、議会の仕組みも見直されました。1946年に示された連合国軍総司令部（GHQ）の憲法草案では、一つの議院だけを置く案も考えられていました。しかし、日本側は、二つの議院があれば政治を慎重に進め、急な方針変更を抑えられると説明しました。こうした話し合いを経て、日本国憲法は衆議院と参議院による二院制を採用しました。現在の両院は、どちらも国民の選挙で選ばれた議員から成ります。",
+          "relationship": "国会の二院制と政府に対するチェック機能を問う問題の背景知識",
+          "keywords": [
+            "二院制",
+            "貴族院",
+            "国民主権"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館・新しい二院制議会",
+              "url": "https://www.ndl.go.jp/constitution/ronten/04ronten.html"
+            },
+            {
+              "name": "衆議院・日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261124-001-R02",
+          "relation_type": "question",
+          "title": "衆議院と参議院で異なる任期",
+          "description": "衆議院議員の任期は原則4年で、衆議院が解散すると満了前でも議員の地位を失います。一方、参議院議員の任期は6年で、3年ごとに半数ずつ選挙を行い、参議院そのものの解散はありません。この違いには、国民の新しい意見を政治に反映しやすくするとともに、長い期間をかけて政策を考える役割も持たせる意味があります。例えば、急に社会の関心が変わったとき、衆議院では解散・総選挙によって議員が大きく入れ替わることがあります。しかし参議院では、一度の選挙で全議員が交代するわけではありません。また、選挙に立候補できる年齢も異なり、衆議院は満25歳以上、参議院は満30歳以上です。二つの議院の違いを比べると、同じ国会でも役割や制度が少しずつ異なることが分かります。",
+          "relationship": "国会の二院制と政府に対するチェック機能を問う問題の背景知識",
+          "keywords": [
+            "任期",
+            "解散",
+            "半数改選"
+          ],
+          "sources": [
+            {
+              "name": "衆議院・国会の構成",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kousei.htm"
+            },
+            {
+              "name": "衆議院・日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261124-001-R03",
+          "relation_type": "question",
+          "title": "衆議院の優越とは何か",
+          "description": "法律や国の予算は、原則として衆議院と参議院で話し合って決めます。しかし、二つの議院で意見が違ったままでは、国の重要な仕事が進まなくなることがあります。そこで日本国憲法は、特定の場合に衆議院の決定を優先する仕組みを設けました。これを「衆議院の優越（ゆうえつ）」と呼びます。例えば予算は、必ず先に衆議院へ提出されます。参議院が異なる決定をし、両院協議会でも意見がまとまらなければ、衆議院の決定が国会の決定になります。法律案の場合は扱いが異なり、参議院と意見が分かれても、衆議院で出席議員の3分の2以上が再び賛成すれば成立します。このように、予算と法律案では条件が違います。国民の意見を幅広く取り入れることと、政治を前に進めることの両立を目指した制度です。",
+          "relationship": "国会の二院制と政府に対するチェック機能を問う問題の背景知識",
+          "keywords": [
+            "衆議院の優越",
+            "予算",
+            "法律"
+          ],
+          "sources": [
+            {
+              "name": "衆議院・国会の権限",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kengen2.htm"
+            },
+            {
+              "name": "衆議院・日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261124-001-R04",
+          "relation_type": "question",
+          "title": "国政調査権と国会の監視の仕事",
+          "description": "国会の仕事は法律を作ることだけではありません。政府が税金をどのように使っているか、政策が適切に進んでいるかを確かめることも大切です。日本国憲法第62条は、衆議院と参議院のそれぞれに「国政調査権（こくせいちょうさけん）」を認めています。国会は必要な資料や記録を提出するよう求めたり、関係者に出席して証言するよう求めたりできます。例えば、行政の取り組みについて疑問が生まれたとき、担当大臣に説明を求め、問題点を調べることがあります。国会には本会議だけでなく、分野ごとに詳しく話し合う委員会も置かれています。こうした調査や審議があることで、政府の説明が国民に伝わり、政治の判断を確かめる手がかりになります。選挙で代表を選ぶだけでなく、その後の政治を監視することも民主主義に欠かせません。",
+          "relationship": "国会の二院制と政府に対するチェック機能を問う問題の背景知識",
+          "keywords": [
+            "国政調査権",
+            "委員会",
+            "民主主義"
+          ],
+          "sources": [
+            {
+              "name": "衆議院・国会の権限",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kengen2.htm"
+            },
+            {
+              "name": "衆議院・国会の構成",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kousei.htm"
+            },
+            {
+              "name": "衆議院・日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261124-001-R05",
+          "relation_type": "question",
+          "title": "内閣不信任と参議院の緊急集会",
+          "description": "国会と内閣の関係を理解するうえで重要なのが、衆議院の内閣不信任決議です。衆議院で内閣不信任決議案が可決された場合、内閣は10日以内に衆議院を解散しなければ、総辞職する必要があります。これは、国会の信頼を失った内閣が、そのまま政治を続けることを防ぐ仕組みです。この権限は参議院にはありません。一方、参議院には別の重要な役割があります。衆議院が解散されると参議院も原則として閉会しますが、国に緊急の必要がある場合、内閣の求めによって参議院の「緊急集会」を開くことができます。その集会で決めたことは臨時の措置であり、次の国会が開かれてから10日以内に衆議院の同意を得られなければ効力を失います。両院に違う権限を持たせることで、政治の責任と緊急時の対応の両方を支えています。",
+          "relationship": "国会の二院制と政府に対するチェック機能を問う問題の背景知識",
+          "keywords": [
+            "内閣不信任",
+            "総辞職",
+            "緊急集会"
+          ],
+          "sources": [
+            {
+              "name": "衆議院・国会の権限",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kengen2.htm"
+            },
+            {
+              "name": "衆議院・日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
