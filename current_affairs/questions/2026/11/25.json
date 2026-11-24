@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 5,
+  "question_count": 6,
   "questions": [
     {
       "id": "20261125-001",
@@ -143,6 +143,35 @@
         {
           "name": "YUKU NEWS",
           "url": "https://yuku.co.jp/news/20261124110800-c1967551/"
+        }
+      ]
+    },
+    {
+      "id": "20261125-006",
+      "news_date": "2026-11-17",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "日本・中国・韓国（かんこく）の大気汚染（たいきおせん）対策",
+      "news_summary": "日本、中国、韓国が大気汚染対策について協力することを確認しました。",
+      "question": "2026年11月17日、前日から開かれていた日本、中国、韓国の環境政策の話し合いが終わりました。三か国は空気をきれいにするための対策などについて、今後も協力することを確認しました。\n\n中国大陸と朝鮮半島（ちょうせんはんとう）の間にある海はどれですか。",
+      "choices": [
+        "日本海",
+        "黄海",
+        "南シナ海",
+        "オホーツク海"
+      ],
+      "correct_index": 1,
+      "explanation": "黄海は中国大陸と朝鮮半島の間にあります。日本海は朝鮮半島の東側にあります。空気中のよごれは風によって国境をこえて運ばれることがあるため、近くの国どうしで観測結果や対策について情報を交換することが大切です。",
+      "keywords": [
+        "大気汚染",
+        "黄海",
+        "朝鮮半島"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05866.html"
         }
       ]
     }
