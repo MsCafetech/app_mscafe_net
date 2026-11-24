@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 10,
-  "related_count": 5,
-  "image_count": 15,
+  "related_count": 7,
+  "image_count": 18,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -23,7 +23,39 @@
           "usage_notes": "撮影者によりパブリックドメインとして公開。出典・作者の表示を推奨。2025年撮影の資料写真。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261124-001-R02",
+          "images": [
+            {
+              "id": "20261124-001-R02-I01",
+              "type": "photo",
+              "title": "参議院の本会議場",
+              "caption": "国会議事堂にある参議院の本会議場。衆議院とは別に参議院が置かれている二院制を知るための資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Chamber_of_the_House_of_Councillors_P5200850.jpg/960px-Chamber_of_the_House_of_Councillors_P5200850.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Councillors_P5200850.jpg",
+              "credit": "Kestrel",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。資料写真。"
+            },
+            {
+              "id": "20261124-001-R02-I02",
+              "type": "photo",
+              "title": "衆議院の本会議場",
+              "caption": "国会議事堂にある衆議院の本会議場。参議院の本会議場と比べ、二つの議院があることを理解するための資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chamber_of_the_House_of_Representatives_of_Japan.jpg/960px-Chamber_of_the_House_of_Representatives_of_Japan.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Representatives_of_Japan.jpg",
+              "credit": "Kimtaro",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者名、出典URL、CC BY 3.0ライセンスを表示。資料写真。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261124-002",
@@ -58,6 +90,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者名、出典URL、ライセンスURLを表示。画像の加工を明記し、改変物には同一または互換ライセンスを適用。火災前の資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-002-R04",
+          "images": [
+            {
+              "id": "20261124-002-R04-I01",
+              "type": "map",
+              "title": "沖縄県の地図",
+              "caption": "日本の南西部に広がる沖縄県を示した地図。琉球王国があった地域が現在の沖縄県につながることを学ぶ資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Map_of_Okinawa_Prefecture_Ja.svg/960px-Map_of_Okinawa_Prefecture_Ja.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_Okinawa_Prefecture_Ja.svg",
+              "credit": "Lincun",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。既存の地図。"
             }
           ]
         }
