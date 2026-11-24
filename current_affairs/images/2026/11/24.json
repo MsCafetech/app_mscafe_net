@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 10,
-  "related_count": 12,
-  "image_count": 23,
+  "related_count": 14,
+  "image_count": 25,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -204,7 +204,26 @@
           "usage_notes": "商用利用、複製、改変が可能。撮影者・掲載元の表示を推奨。2020年撮影の資料写真。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261124-009-R02",
+          "images": [
+            {
+              "id": "20261124-009-R02-I01",
+              "type": "diagram",
+              "title": "東アジアの前線と気団",
+              "caption": "東アジアで暖かい空気と冷たい空気が接する前線の模式図。前線と雨の関係を学ぶ資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/East_asian_baiu-front_and_air_masses.png/960px-East_asian_baiu-front_and_air_masses.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:East_asian_baiu-front_and_air_masses.png",
+              "credit": "Wikimedia Commons contributor",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "パブリックドメインとして公開。出典表示を推奨。既存の模式図。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261124-003",
@@ -297,7 +316,26 @@
           "usage_notes": "作者・出典・CC BY 4.0ライセンスを表示。2024年の選挙啓発用資料写真。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261124-005-R03",
+          "images": [
+            {
+              "id": "20261124-005-R03-I01",
+              "type": "photo",
+              "title": "電子投票機の操作装置",
+              "caption": "電子投票機の操作装置。日本で使われる機種ではなく、投票所に置く電子投票とインターネット投票の違いを考えるための資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Contr_Unit_of_Electronic_Voting_Machine.jpg/960px-Contr_Unit_of_Electronic_Voting_Machine.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Contr_Unit_of_Electronic_Voting_Machine.jpg",
+              "credit": "Shagil Kannur",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。日本の投票機ではない資料写真。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261124-007",
