@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 2,
-  "related_count": 1,
-  "image_count": 3,
+  "related_count": 3,
+  "image_count": 5,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -41,6 +41,24 @@
               "usage_notes": "CC BY-SA 3.0。作者名「Z22」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-001-R02",
+          "images": [
+            {
+              "id": "20261125-001-R02-I01",
+              "type": "map",
+              "title": "プレートテクトニクスの地図",
+              "caption": "資料地図：地球の表面をおおうプレートと、その境目を示した図。プレートが動く境目の近くでは地震が起こりやすくなります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Plate_tectonics_map.gif/1280px-Plate_tectonics_map.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Plate_tectonics_map.gif",
+              "credit": "NASA/Goddard Space Flight Center",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASAゴダード宇宙飛行センター提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
         }
       ]
     },
@@ -61,7 +79,26 @@
           "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-002-R03",
+          "images": [
+            {
+              "id": "20261125-002-R03-I01",
+              "type": "photo",
+              "title": "気象衛星GOES-Uの搬入",
+              "caption": "資料写真：気象を観測するための人工衛星GOES-U。ひまわりと同じように、雲の動きなどを続けて観測する気象衛星の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_%288208855%29.jpg/1280px-9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_%288208855%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_(8208855).jpg",
+              "credit": "U.S. Air Force photo by Staff Sgt. Marco Gomez",
+              "license": "Public domain",
+              "license_url": "https://www.usa.gov/government-copyright",
+              "usage_notes": "米空軍提供のパブリックドメイン画像。撮影者名とWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
