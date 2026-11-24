@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-23",
+  "language": "ja",
+  "question_count": 3,
+  "related_count": 0,
+  "image_count": 3,
+  "questions": [
+    {
+      "question_id": "20261123-001",
+      "images": [
+        {
+          "id": "20261123-001-I01",
+          "type": "photo",
+          "title": "オンカロ処分施設を訪問するIAEA職員",
+          "caption": "資料写真：フィンランドのオンカロで、地下処分施設を視察する様子。放射性廃棄物を長い期間安全に管理する方法は、世界でも検討されています。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Yukiya_Amano_%28IAEA%29_visits_Onkalo_%282012%29_01.jpg/1280px-Yukiya_Amano_%28IAEA%29_visits_Onkalo_%282012%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yukiya_Amano_(IAEA)_visits_Onkalo_(2012)_01.jpg",
+          "credit": "IAEA Imagebank",
+          "license": "CC BY-SA 2.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "usage_notes": "CC BY-SA 2.0。提供者「IAEA Imagebank」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261123-002",
+      "images": [
+        {
+          "id": "20261123-002-I01",
+          "type": "photo",
+          "title": "中国・深セン市の福田区の景観",
+          "caption": "資料写真：APECの会議が開かれた中国・深セン市の中心部。アジア太平洋地域では、国や地域をこえた経済協力が話し合われます。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/The_panorama_of_Futian_Shenzhen.jpg/1280px-The_panorama_of_Futian_Shenzhen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_panorama_of_Futian_Shenzhen.jpg",
+          "credit": "Charlie fong",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "CC BY-SA 4.0。作者名「Charlie fong」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261123-003",
+      "images": [
+        {
+          "id": "20261123-003-I01",
+          "type": "photo",
+          "title": "フィリピン・マニラ中心部の景観",
+          "caption": "資料写真：日本とASEANの首脳会議が開かれたフィリピン・マニラの街並み。東南アジアの国々は、経済や防災などで協力しています。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Downtown_Manila_Panorama_View%2C_Aug_2024.jpg/1280px-Downtown_Manila_Panorama_View%2C_Aug_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Downtown_Manila_Panorama_View,_Aug_2024.jpg",
+          "credit": "Ralff Nestor Nacor",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "CC BY-SA 4.0。作者名「Ralff Nestor Nacor」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}
