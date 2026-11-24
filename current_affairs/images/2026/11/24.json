@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 10,
-  "related_count": 18,
-  "image_count": 29,
+  "related_count": 19,
+  "image_count": 30,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -126,6 +126,24 @@
               "license": "Public Domain",
               "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
               "usage_notes": "パブリックドメインとして公開。出典・作者の表示を推奨。歴史資料。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-002-R02",
+          "images": [
+            {
+              "id": "20261124-002-R02-I01",
+              "type": "photo",
+              "title": "那覇港の旅客ターミナル",
+              "caption": "沖縄県那覇市の港にある旅客ターミナル。海上交易で栄えた那覇が港町として担った役割を考える資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Naha_Port_terminal_Okinawa_JAPAN.jpg/960px-Naha_Port_terminal_Okinawa_JAPAN.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Naha_Port_terminal_Okinawa_JAPAN.jpg",
+              "credit": "Rsa",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。資料写真。"
             }
           ]
         }
