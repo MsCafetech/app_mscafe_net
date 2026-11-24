@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-24",
   "language": "ja",
-  "question_count": 9,
-  "related_count": 1,
-  "image_count": 10,
+  "question_count": 10,
+  "related_count": 2,
+  "image_count": 12,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -195,6 +195,44 @@
         }
       ],
       "related": []
+    },
+    {
+      "question_id": "20261124-004",
+      "images": [
+        {
+          "id": "20261124-004-I01",
+          "type": "photo",
+          "title": "研究室で扱うiPS細胞",
+          "caption": "研究室で培養されるiPS細胞。今回の東北大学の研究で作られた細胞ではない資料写真。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+          "credit": "CSIRO",
+          "license": "CC BY 3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/",
+          "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。今回の研究で作られた細胞ではない資料写真。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261124-004-R03",
+          "images": [
+            {
+              "id": "20261124-004-R03-I01",
+              "type": "photo",
+              "title": "研究室で扱うiPS細胞",
+              "caption": "研究室で培養されるiPS細胞。iPS細胞が研究で扱われる様子を示す資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+              "credit": "CSIRO",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。iPS細胞の一般的な資料写真。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
