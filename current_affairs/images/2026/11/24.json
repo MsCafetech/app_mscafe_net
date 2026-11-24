@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "language": "ja",
+  "question_count": 4,
+  "related_count": 1,
+  "image_count": 5,
+  "questions": [
+    {
+      "question_id": "20261124-001",
+      "images": [
+        {
+          "id": "20261124-001-I01",
+          "type": "photo",
+          "title": "国会議事堂",
+          "caption": "東京都にある国会議事堂。2025年撮影の資料写真。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/National_Diet_Building%28in_2025%29.jpg/960px-National_Diet_Building%28in_2025%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_Building(in_2025).jpg",
+          "credit": "緑さん",
+          "license": "Public Domain (PD-self)",
+          "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+          "usage_notes": "撮影者によりパブリックドメインとして公開。出典・作者の表示を推奨。2025年撮影の資料写真。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261124-002",
+      "images": [
+        {
+          "id": "20261124-002-I01",
+          "type": "photo",
+          "title": "首里城正殿（火災前）",
+          "caption": "2007年に撮影された首里城正殿。2019年の火災や2026年の復元後の姿ではない資料写真。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Shuri_castle.jpg/960px-Shuri_castle.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Shuri_castle.jpg",
+          "credit": "Martinbayo",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者名、出典URL、ライセンスURLを表示。画像の加工を明記し、改変物には同一または互換ライセンスを適用。火災前の資料写真。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261124-002-R01",
+          "images": [
+            {
+              "id": "20261124-002-R01-I01",
+              "type": "photo",
+              "title": "首里城正殿（火災前）",
+              "caption": "2007年に撮影された首里城正殿。2019年の火災や2026年の復元後の姿ではない資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Shuri_castle.jpg/960px-Shuri_castle.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Shuri_castle.jpg",
+              "credit": "Martinbayo",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。画像の加工を明記し、改変物には同一または互換ライセンスを適用。火災前の資料写真。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261124-006",
+      "images": [
+        {
+          "id": "20261124-006-I01",
+          "type": "satellite",
+          "title": "水星の探査画像",
+          "caption": "NASAの探査機メッセンジャーが2008年に撮影した水星の観測画像。今回の探査機が撮影した画像ではない。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg",
+          "credit": "NASA / MESSENGER",
+          "license": "Public Domain (NASA)",
+          "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。元画像を切り出したカラー合成画像であり、今回の探査による写真ではない。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261124-009",
+      "images": [
+        {
+          "id": "20261124-009-I01",
+          "type": "photo",
+          "title": "積乱雲",
+          "caption": "2020年に東京から撮影された大きく発達した積乱雲。今回の天気予報に対応した当日の写真ではない資料写真。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/08-30-2020_Cumululonimbus_cloud.jpg/960px-08-30-2020_Cumululonimbus_cloud.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:08-30-2020_Cumululonimbus_cloud.jpg",
+          "credit": "Shellparakeet",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "商用利用、複製、改変が可能。撮影者・掲載元の表示を推奨。2020年撮影の資料写真。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}
