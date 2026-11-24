@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 10,
-  "related_count": 2,
-  "image_count": 12,
+  "related_count": 5,
+  "image_count": 15,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -118,7 +118,44 @@
           "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。1972年撮影の資料写真。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261124-003-R04",
+          "images": [
+            {
+              "id": "20261124-003-R04-I01",
+              "type": "photo",
+              "title": "太陽光パネル",
+              "caption": "太陽の光を電気に変える太陽光パネル。再生可能エネルギーを学ぶための資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Cleaning_solar_panels_%281053%29.jpg/960px-Cleaning_solar_panels_%281053%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Cleaning_solar_panels_(1053).jpg",
+              "credit": "Oliver Rudkin",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者名、出典URL、CC BY 2.0ライセンスを表示。資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-003-R05",
+          "images": [
+            {
+              "id": "20261124-003-R05-I01",
+              "type": "satellite",
+              "title": "ブータンの氷河湖",
+              "caption": "NASAの衛星画像に写るブータンの氷河と氷河湖。温暖化が氷や水に与える影響を考えるための観測資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Glacial_lakes%2C_Bhutan.jpg/960px-Glacial_lakes%2C_Bhutan.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Glacial_lakes,_Bhutan.jpg",
+              "credit": "NASA",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。衛星による観測資料。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261124-005",
@@ -229,6 +266,24 @@
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
               "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。iPS細胞の一般的な資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-004-R01",
+          "images": [
+            {
+              "id": "20261124-004-R01-I01",
+              "type": "diagram",
+              "title": "人の目の断面図",
+              "caption": "光が角膜や水晶体を通り、網膜へ届く目の断面図。網膜から脳へ情報が伝わる仕組みを学ぶ資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Schematic_diagram_of_the_human_eye_multilingual.svg/960px-Schematic_diagram_of_the_human_eye_multilingual.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Schematic_diagram_of_the_human_eye_multilingual.svg",
+              "credit": "Rhcastilhos / Jakov",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "パブリックドメインとして公開。出典・作者の表示を推奨。既存の模式図。"
             }
           ]
         }
