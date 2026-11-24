@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 2,
-  "related_count": 6,
-  "image_count": 8,
+  "related_count": 7,
+  "image_count": 9,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -75,6 +75,24 @@
               "license": "Public domain",
               "license_url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
               "usage_notes": "米国地質調査所（USGS）提供のパブリックドメイン資料。USGSおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-001-R05",
+          "images": [
+            {
+              "id": "20261125-001-R05-I01",
+              "type": "photo",
+              "title": "学校で行う地震訓練",
+              "caption": "資料写真：児童が地震を想定した訓練をしている様子。ふだんから安全な行動を練習しておくことが、地震の時の落ち着いた行動につながります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Students_practice_earthquake_drill._%2810726996365%29.jpg/1280px-Students_practice_earthquake_drill._%2810726996365%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Students_practice_earthquake_drill._(10726996365).jpg",
+              "credit": "Department of Foreign Affairs and Trade",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "CC BY 4.0。提供者「Department of Foreign Affairs and Trade」とライセンスを表示。"
             }
           ]
         }
