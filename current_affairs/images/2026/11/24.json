@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-24",
   "language": "ja",
-  "question_count": 4,
+  "question_count": 9,
   "related_count": 1,
-  "image_count": 5,
+  "image_count": 10,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -97,6 +97,101 @@
           "license": "CC0 1.0",
           "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
           "usage_notes": "商用利用、複製、改変が可能。撮影者・掲載元の表示を推奨。2020年撮影の資料写真。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261124-003",
+      "images": [
+        {
+          "id": "20261124-003-I01",
+          "type": "satellite",
+          "title": "アポロ17号から見た地球",
+          "caption": "1972年にアポロ17号の乗組員が撮影した地球。気候変動が世界共通の課題であることを考える資料写真。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg",
+          "credit": "NASA / Apollo 17 crew",
+          "license": "Public Domain (NASA)",
+          "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。1972年撮影の資料写真。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261124-005",
+      "images": [
+        {
+          "id": "20261124-005-I01",
+          "type": "photo",
+          "title": "日本の投票参加呼びかけ",
+          "caption": "総務省による投票参加を呼びかける広報写真。今回の電子投票条例の写真ではない資料写真。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Hikaru_Takahashi_2024_Japan_General_Election_Voting_Awareness.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hikaru_Takahashi_2024_Japan_General_Election_Voting_Awareness.jpg",
+          "credit": "総務省",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "作者・出典・CC BY 4.0ライセンスを表示。2024年の選挙啓発用資料写真。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261124-007",
+      "images": [
+        {
+          "id": "20261124-007-I01",
+          "type": "photo",
+          "title": "養鶏場の鶏",
+          "caption": "養鶏場で飼育される鶏。鳥インフルエンザの感染拡大防止を学ぶための資料写真であり、今回の発生農場ではない。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Chickens_at_Parafield_Poultry_Farm%28GN12787%29.jpg/960px-Chickens_at_Parafield_Poultry_Farm%28GN12787%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Chickens_at_Parafield_Poultry_Farm(GN12787).jpg",
+          "credit": "State Government Photographer",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "CC0として公開。商用利用、複製、改変が可能。出典表示を推奨。資料写真。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261124-008",
+      "images": [
+        {
+          "id": "20261124-008-I01",
+          "type": "photo",
+          "title": "日本の水田と稲の天日干し",
+          "caption": "日本の水田で収穫後の稲を干す様子。作付面積を学ぶための資料写真であり、2026年産の集計写真ではない。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Paddy_field_-_rice_drying%2C_Japan_001.jpg/960px-Paddy_field_-_rice_drying%2C_Japan_001.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Paddy_field_-_rice_drying,_Japan_001.jpg",
+          "credit": "Kropsoq",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。資料写真。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261124-010",
+      "images": [
+        {
+          "id": "20261124-010-I01",
+          "type": "photo",
+          "title": "ニューヨークの都市景観",
+          "caption": "ニューヨーク市のロングアイランド・シティを写した2015年の写真。東海岸の都市を学ぶための資料写真。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Long_Island_City_New_York_May_2015_panorama_3.jpg/960px-Long_Island_City_New_York_May_2015_panorama_3.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_May_2015_panorama_3.jpg",
+          "credit": "King of Hearts",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。2015年撮影の資料写真。"
         }
       ],
       "related": []
