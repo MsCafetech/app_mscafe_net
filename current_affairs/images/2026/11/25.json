@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-25",
+  "language": "ja",
+  "question_count": 2,
+  "related_count": 1,
+  "image_count": 3,
+  "questions": [
+    {
+      "question_id": "20261125-001",
+      "images": [
+        {
+          "id": "20261125-001-I01",
+          "type": "photo",
+          "title": "今村明恒による地震計",
+          "caption": "資料写真：地震の揺れを観測する地震計。地震そのものの大きさや、場所ごとの揺れを調べるために使われます。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Seismometer_by_Akitsune_Imamura.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Seismometer_by_Akitsune_Imamura.jpg",
+          "credit": "科学知識普及会",
+          "license": "Public domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と提供者を出典として表示。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261125-001-R01",
+          "images": [
+            {
+              "id": "20261125-001-R01-I01",
+              "type": "photo",
+              "title": "ウェストン天文台の地震記録",
+              "caption": "資料写真：地震計が紙に記録した地面の揺れの線。地震の情報は観測した記録をもとに発表されます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Seismogram_at_Weston_Observatory.JPG/1280px-Seismogram_at_Weston_Observatory.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Seismogram_at_Weston_Observatory.JPG",
+              "credit": "Z22",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「Z22」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-002",
+      "images": [
+        {
+          "id": "20261125-002-I01",
+          "type": "photo",
+          "title": "地球資源技術衛星（ERTS）",
+          "caption": "資料写真：地球の周りを回り、地表や雲などを観測する人工衛星。広い地域の様子を調べる地球観測に使われます。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Earth_Resources_Technology_Satellite_%28ERTS%29_-_GPN-2003-00022.jpg/1280px-Earth_Resources_Technology_Satellite_%28ERTS%29_-_GPN-2003-00022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Earth_Resources_Technology_Satellite_(ERTS)_-_GPN-2003-00022.jpg",
+          "credit": "NASA",
+          "license": "Public domain",
+          "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}
