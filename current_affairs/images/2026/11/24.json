@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 10,
-  "related_count": 14,
-  "image_count": 25,
+  "related_count": 15,
+  "image_count": 26,
   "questions": [
     {
       "question_id": "20261124-001",
@@ -182,6 +182,24 @@
               "license": "Public Domain (NASA)",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
               "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。探査機模型の資料画像。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-006-R02",
+          "images": [
+            {
+              "id": "20261124-006-R02-I01",
+              "type": "satellite",
+              "title": "赤外線で見た水星",
+              "caption": "赤外線で観測した水星の表面。太陽に近く大気がほとんどない水星の環境を学ぶための観測資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/First_mid-infrared_light_observations_of_Mercury_ESA504690.png/960px-First_mid-infrared_light_observations_of_Mercury_ESA504690.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:First_mid-infrared_light_observations_of_Mercury_ESA504690.png",
+              "credit": "European Space Agency",
+              "license": "CC BY-SA 3.0 IGO",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+              "usage_notes": "提供元・出典URL・ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。赤外線観測資料。"
             }
           ]
         }
