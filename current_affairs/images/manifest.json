@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-26T06:41:33.352+09:00",
+  "last_updated": "2026-11-26T06:42:37.526+09:00",
   "language": "ja",
   "total_questions": 24,
   "total_related": 62,
   "total_images": 87,
-  "total_files": 5,
+  "total_files": 6,
   "files": [
     {
       "date": "2026-11-25",
@@ -18,18 +18,18 @@
     {
       "date": "2026-11-24",
       "path": "2026/11/24.json",
-      "question_count": 8,
-      "related_count": 33,
-      "image_count": 41,
-      "revision": 15
+      "question_count": 6,
+      "related_count": 28,
+      "image_count": 34,
+      "revision": 16
     },
     {
       "date": "2026-11-23",
       "path": "2026/11/23.json",
-      "question_count": 10,
-      "related_count": 14,
-      "image_count": 25,
-      "revision": 3
+      "question_count": 11,
+      "related_count": 15,
+      "image_count": 27,
+      "revision": 4
     },
     {
       "date": "2026-11-22",
@@ -46,6 +46,14 @@
       "question_count": 1,
       "related_count": 1,
       "image_count": 2
+    },
+    {
+      "date": "2026-11-17",
+      "path": "2026/11/17.json",
+      "revision": 1,
+      "question_count": 1,
+      "related_count": 4,
+      "image_count": 5
     }
   ]
 }

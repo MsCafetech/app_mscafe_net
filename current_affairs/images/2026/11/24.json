@@ -2,48 +2,10 @@
   "schema_version": 1,
   "date": "2026-11-24",
   "language": "ja",
-  "question_count": 8,
-  "related_count": 33,
-  "image_count": 41,
+  "question_count": 6,
+  "related_count": 28,
+  "image_count": 34,
   "questions": [
-    {
-      "question_id": "20261124-009",
-      "images": [
-        {
-          "id": "20261124-009-I01",
-          "type": "photo",
-          "title": "積乱雲",
-          "caption": "2020年に東京から撮影された大きく発達した積乱雲。今回の天気予報に対応した当日の写真ではない資料写真。",
-          "is_reference": true,
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/08-30-2020_Cumululonimbus_cloud.jpg/960px-08-30-2020_Cumululonimbus_cloud.jpg",
-          "source_url": "https://commons.wikimedia.org/wiki/File:08-30-2020_Cumululonimbus_cloud.jpg",
-          "credit": "Shellparakeet",
-          "license": "CC0 1.0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "usage_notes": "商用利用、複製、改変が可能。撮影者・掲載元の表示を推奨。2020年撮影の資料写真。"
-        }
-      ],
-      "related": [
-        {
-          "related_id": "20261124-009-R02",
-          "images": [
-            {
-              "id": "20261124-009-R02-I01",
-              "type": "diagram",
-              "title": "東アジアの前線と気団",
-              "caption": "東アジアで暖かい空気と冷たい空気が接する前線の模式図。前線と雨の関係を学ぶ資料。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/East_asian_baiu-front_and_air_masses.png/960px-East_asian_baiu-front_and_air_masses.png",
-              "source_url": "https://commons.wikimedia.org/wiki/File:East_asian_baiu-front_and_air_masses.png",
-              "credit": "Wikimedia Commons contributor",
-              "license": "Public Domain",
-              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
-              "usage_notes": "パブリックドメインとして公開。出典表示を推奨。既存の模式図。"
-            }
-          ]
-        }
-      ]
-    },
     {
       "question_id": "20261124-011",
       "images": [
@@ -461,98 +423,6 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "CC BY-SA 3.0。作者名「OSeveno」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "question_id": "20261124-014",
-      "images": [
-        {
-          "id": "20261124-014-I01",
-          "type": "satellite",
-          "title": "東アジア上空に広がる黄砂",
-          "caption": "衛星観測画像：東アジア上空に広がる黄砂のようす。国をこえて広がる大気の問題では、近隣の国や地域が協力して対策を考えることが大切です。",
-          "is_reference": true,
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Asian_Dust%2C_NASA_aerospace_photography.jpg/1280px-Asian_Dust%2C_NASA_aerospace_photography.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Asian_Dust,_NASA_aerospace_photography.jpg",
-          "credit": "NASA/Goddard Space Flight Center and ORBIMAGE",
-          "license": "Public domain",
-          "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-          "usage_notes": "NASAゴダード宇宙飛行センターなど提供のパブリックドメイン画像。提供元とWikimedia Commonsの掲載元を出典として表示。"
-        }
-      ],
-      "related": [
-        {
-          "related_id": "20261124-014-R01",
-          "images": [
-            {
-              "id": "20261124-014-R01-I01",
-              "type": "map",
-              "title": "黄海の位置",
-              "caption": "資料地図：中国大陸と朝鮮半島の間にある黄海を示した図。風に乗って運ばれる大気のよごれを考えるときにも、周りの国や海の位置を知ることが役立ちます。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Yellow_Sea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Yellow_Sea.jpg",
-              "credit": "U.S. Central Intelligence Agency",
-              "license": "Public domain",
-              "license_url": "https://www.usa.gov/government-copyright",
-              "usage_notes": "米国中央情報局（CIA）提供のパブリックドメイン資料。CIAおよびWikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-014-R02",
-          "images": [
-            {
-              "id": "20261124-014-R02-I01",
-              "type": "map",
-              "title": "世界の年間平均PM2.5分布",
-              "caption": "資料地図：衛星データなどから推定した世界のPM2.5の年間平均分布。とても小さな粒子状物質の量は、地域や季節によって異なります。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Global_Annual_Average_PM2.5_Grids_from_MODIS_and_MISR_Aerosol_Optical_Depth_%28AOD%29%2C_2010_Global_%2811673054346%29.jpg/1280px-Global_Annual_Average_PM2.5_Grids_from_MODIS_and_MISR_Aerosol_Optical_Depth_%28AOD%29%2C_2010_Global_%2811673054346%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Global_Annual_Average_PM2.5_Grids_from_MODIS_and_MISR_Aerosol_Optical_Depth_(AOD),_2010_Global_(11673054346).jpg",
-              "credit": "SEDACMaps",
-              "license": "CC BY 2.0",
-              "license_url": "https://creativecommons.org/licenses/by/2.0/",
-              "usage_notes": "CC BY 2.0。作者名「SEDACMaps」とライセンスを表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-014-R04",
-          "images": [
-            {
-              "id": "20261124-014-R04-I01",
-              "type": "satellite",
-              "title": "東アジアをおおう黄砂",
-              "caption": "衛星観測画像：東アジアに広がる黄砂のようす。乾いた地域で舞い上がった細かな土ぼこりが、風に乗って遠くまで運ばれます。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Asia_dust_2000-04-07.jpg/1280px-Asia_dust_2000-04-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Asia_dust_2000-04-07.jpg",
-              "credit": "NASA",
-              "license": "Public domain",
-              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-014-R05",
-          "images": [
-            {
-              "id": "20261124-014-R05-I01",
-              "type": "diagram",
-              "title": "地球観測衛星のネットワーク",
-              "caption": "資料図：地球を観測する人工衛星の一例。広い地域の観測データを共有すると、空気のよごれがどのように広がるかを調べる手がかりになります。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Committee_on_Earth_Observation_Satellites_%28CEOS%29_-_Fleet_%28SVS5508_-_ceos_fleet_12_white_4k_60fps_00001_print%29.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Committee_on_Earth_Observation_Satellites_(CEOS)_-_Fleet_(SVS5508_-_ceos_fleet_12_white_4k_60fps_00001_print).jpg",
-              "credit": "NASA Scientific Visualization Studio / USRA・Kel Elkins",
-              "license": "Public domain",
-              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         }

@@ -9,7 +9,23 @@
       "new_date": "2026-11-24",
       "reason": "news_date verified against official source",
       "source": "https://www.maff.go.jp/hokkaido/anzen/seikatsu/shouhisyacorner/261124.html"
+    },
+    {
+      "old_id": "20261124-009",
+      "new_id": "20261123-018",
+      "old_date": "2026-11-24",
+      "new_date": "2026-11-23",
+      "reason": "event date verified against source",
+      "source": "https://news.livedoor.com/article/detail/32881183/"
+    },
+    {
+      "old_id": "20261124-014",
+      "new_id": "20261117-002",
+      "old_date": "2026-11-24",
+      "new_date": "2026-11-17",
+      "reason": "event date verified against source",
+      "source": "https://www.env.go.jp/press/press_05866.html"
     }
   ],
-  "last_updated": "2026-11-26T06:41:33.352+09:00"
+  "last_updated": "2026-11-26T06:42:37.526+09:00"
 }
