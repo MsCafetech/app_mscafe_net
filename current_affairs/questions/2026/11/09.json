@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20261109-001",
+      "news_date": "2026-11-09",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とベトナムの首脳（しゅのう）会談",
+      "news_summary": "両国は重要な鉱物資源やエネルギー分野で協力を進めることを確認した。",
+      "question": "2026年11月9日、日本とベトナムの首脳が東京で会談し、レアアースと呼ばれる重要な鉱物（こうぶつ）資源や電力の分野などで協力を進めることを確認しました。資源やエネルギーを安定して確保するための取り組みです。\n\nベトナムの首都はどこですか。",
+      "choices": [
+        "バンコク",
+        "ハノイ",
+        "マニラ",
+        "プノンペン"
+      ],
+      "correct_index": 1,
+      "explanation": "ベトナムの首都は北部にあるハノイです。ベトナムは東南アジアのインドシナ半島東部にあり、中国、ラオス、カンボジアと国境を接しています。南部のホーチミン市も商業や工業が盛んな大都市です。",
+      "keywords": [
+        "ベトナム",
+        "ハノイ",
+        "資源"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/s_sa/sea1/vn/pageit_000001_00016.html"
+        }
+      ]
+    }
+  ]
+}
