@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-16",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260616-001",
+      "news_date": "2026-06-16",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本銀行が政策金利を引き上げ",
+      "news_summary": "日本銀行は政策金利を0.75％程度から1.0％程度に引き上げることを決めました。",
+      "question": "2026年6月16日、日本銀行は政策金利を0.75％程度から1.0％程度に引き上げることを決めました。物価が上がりすぎることを防ぐねらいがあります。\n\n金利を引き上げると、一般にどのような効果が期待されますか？",
+      "choices": [
+        "お金を借りやすくなり、物価の上昇（じょうしょう）を速める",
+        "お金を借りる費用が増え、物価の上昇をおさえる",
+        "消費税が自動的に下がる",
+        "日本の紙幣（しへい）が使えなくなる"
+      ],
+      "correct_index": 1,
+      "explanation": "金利が上がると、お金を借りたときに支払う利息が増えるため、企業や家庭がお金を借りて使う動きが弱まることがあります。日本銀行は、景気や物価の状態に応じて金利などを調整し、物価の安定を目指しています。",
+      "keywords": [
+        "日本銀行",
+        "政策金利",
+        "金融政策",
+        "物価"
+      ],
+      "sources": [
+        {
+          "name": "日本銀行",
+          "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk260617a.pdf"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2735531?display=1"
+        }
+      ]
+    }
+  ]
+}
