@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-23",
   "language": "ja",
-  "question_count": 4,
-  "related_count": 6,
+  "question_count": 5,
+  "related_count": 7,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -142,6 +142,29 @@
             {
               "name": "日本銀行「消費者物価指数／消費者物価」",
               "url": "https://www.boj.or.jp/about/education/oshiete/glossary/economy/e02.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261123-005",
+      "related": [
+        {
+          "id": "20261123-005-R01",
+          "relation_type": "question",
+          "title": "光の届かない深海の食物連鎖",
+          "description": "海の深い場所には太陽の光が届かず、植物のように光合成をして養分を作ることはできません。しかし、海底からメタンなどを含む水がわき出す場所では、細菌（さいきん）などが化学反応から得たエネルギーを使って有機物を作ります。この仕組みを化学合成といいます。こうした微生物が食物連鎖（れんさ）を支えることで、二枚貝やカニなども生活できます。日本近海の南海トラフでも、このような環境に多くの種類の生物がすむことが調査で分かっています。",
+          "relationship": "深海にすむ二枚貝と、その生活を支える環境について学ぶ。",
+          "keywords": [
+            "化学合成",
+            "深海",
+            "南海トラフ"
+          ],
+          "sources": [
+            {
+              "name": "海洋研究開発機構",
+              "url": "https://www.jamstec.go.jp/j/about/press_release/20260309/"
             }
           ]
         }
