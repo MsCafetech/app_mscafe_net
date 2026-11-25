@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-21",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260521-001",
+      "news_date": "2026-05-21",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "民事裁判の手続きがデジタル化",
+      "news_summary": "改正民事訴訟法（かいせいみんじそしょうほう）が全面的に施行（しこう）された。",
+      "question": "2026年5月21日、改正民事訴訟法が全面的に施行され、民事裁判の訴（うった）えや書類のやり取りをオンラインで行えるようになりました。裁判を利用する人の負担を減らすことにつながる制度の変更です。\n\n民事裁判で主に取りあつかうのはどのような問題ですか？",
+      "choices": [
+        "国会で法律を作る問題",
+        "国の予算を決める問題",
+        "個人や会社の間のお金や契約（けいやく）などの争い",
+        "選挙で議員を選ぶ問題"
+      ],
+      "correct_index": 2,
+      "explanation": "民事裁判では、代金の支払いや契約、土地の所有などをめぐる争いについて、裁判所が法律に基づいて判断します。犯罪について刑罰（けいばつ）を科すかどうかを判断する刑事裁判（けいじさいばん）とは区別されます。",
+      "keywords": [
+        "民事裁判",
+        "民事訴訟法",
+        "裁判所"
+      ],
+      "sources": [
+        {
+          "name": "裁判所",
+          "url": "https://www.courts.go.jp/saiban/minjidejitaruka/minso_gaiyou/index.html"
+        }
+      ]
+    }
+  ]
+}
