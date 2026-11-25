@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 9,
-  "image_count": 19,
+  "related_count": 11,
+  "image_count": 21,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -225,7 +225,44 @@
           "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と提供者を出典として表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-003-R01",
+          "images": [
+            {
+              "id": "20261125-003-R01-I01",
+              "type": "historical",
+              "title": "チンギス・ハンの肖像",
+              "caption": "歴史資料：モンゴル帝国を築いたチンギス・ハンを描いた肖像。部族をまとめて1206年に国を建てた人物として知られます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Genghis_Khan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Genghis_Khan.jpg",
+              "credit": "元代の宮廷画家（作者不詳）",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者情報を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-003-R02",
+          "images": [
+            {
+              "id": "20261125-003-R02-I01",
+              "type": "photo",
+              "title": "モンゴルの牧畜生活",
+              "caption": "資料写真：モンゴルで家畜の世話をする人びとの様子。草原の季節に合わせて移動する遊牧のくらしは、モンゴルの歴史と深く結び付いています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Mongolia_Herding_Life3.JPG/1280px-Mongolia_Herding_Life3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Mongolia_Herding_Life3.JPG",
+              "credit": "Taylor Weidman / The Vanishing Cultures Project",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「Taylor Weidman / The Vanishing Cultures Project」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-004",
