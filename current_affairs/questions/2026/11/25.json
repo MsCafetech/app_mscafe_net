@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 10,
+  "question_count": 7,
   "questions": [
     {
       "id": "20261125-001",
@@ -87,62 +87,6 @@
         {
           "name": "モンツァメ通信社",
           "url": "https://montsame.mn/jp/article/Y5GdcnvMlnhJPYlL1DNJq"
-        }
-      ]
-    },
-    {
-      "id": "20261125-004",
-      "news_date": "2026-11-24",
-      "category": "science",
-      "difficulty": 2,
-      "question_type": "related_knowledge",
-      "news_title": "電気をためる施設",
-      "news_summary": "静岡県富士市で電気をためる設備の設置が進んでいます。",
-      "question": "2026年11月24日、日本の電池会社は静岡県富士市で電気をためる設備を設置したと発表しました。太陽光発電などで作る電気の量は天気によって変わるため、電気を安定して使う工夫が必要です。\n\nこの設備で電気エネルギーを化学エネルギーに変えてためるものはどれですか。",
-      "choices": [
-        "発電機",
-        "変圧器（へんあつき）",
-        "蓄電池（ちくでんち）",
-        "電動機"
-      ],
-      "correct_index": 2,
-      "explanation": "蓄電池は充電（じゅうでん）すると電気エネルギーを化学エネルギーとしてため、必要なときに電気を取り出せます。太陽光発電で昼間に作った電気を夜に使うなど、発電量と使用量の差を調整するためにも役立ちます。",
-      "keywords": [
-        "蓄電池",
-        "太陽光発電"
-      ],
-      "sources": [
-        {
-          "name": "YUKU NEWS",
-          "url": "https://yuku.co.jp/news/20261124105440-6692af4e/"
-        }
-      ]
-    },
-    {
-      "id": "20261125-005",
-      "news_date": "2026-11-24",
-      "category": "economy",
-      "difficulty": 2,
-      "question_type": "related_knowledge",
-      "news_title": "日本企業のシンガポール事業",
-      "news_summary": "日本の企業がシンガポールの店舗事業を手放す方針を発表しました。",
-      "question": "2026年11月20日、日本のドラッグストア大手のツルハホールディングスは、シンガポールで店舗を運営する会社の株式を現地企業に売る方針を発表しました。日本企業は海外でも事業を行っています。\n\nシンガポールが位置する地域はどこですか。",
-      "choices": [
-        "南アジア",
-        "中央アジア",
-        "西アジア",
-        "東南アジア"
-      ],
-      "correct_index": 3,
-      "explanation": "シンガポールは東南アジアのマレー半島の南端付近にある国です。マラッカ海峡（かいきょう）に近く、インド洋と太平洋を結ぶ海上交通の重要な場所にあります。貿易や金融などが発達し、日本とも経済的なつながりがあります。",
-      "keywords": [
-        "シンガポール",
-        "東南アジア"
-      ],
-      "sources": [
-        {
-          "name": "YUKU NEWS",
-          "url": "https://yuku.co.jp/news/20261124110800-c1967551/"
         }
       ]
     },
@@ -238,39 +182,6 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/press/release/press3_000751.html"
-        }
-      ]
-    },
-    {
-      "id": "20261125-009",
-      "news_date": "2026-11-24",
-      "difficulty": 2,
-      "question_type": "related_knowledge",
-      "category": "science",
-      "news_title": "クマの出没（しゅつぼつ）で休校した学校が再開",
-      "news_summary": "群馬県前橋市でクマの出没により休校していた学校が授業を再開しました。",
-      "question": "2026年11月24日、群馬県前橋市でクマが人の住む地域に現れたため休校していた学校が、授業を再開しました。安全を守りながら野生動物と共に暮らす（くらす）ための対策が課題です。\n\n本州に自然に分布しているクマはどれですか。",
-      "choices": [
-        "ヒグマ",
-        "ツキノワグマ",
-        "ホッキョクグマ",
-        "マレーグマ"
-      ],
-      "correct_index": 1,
-      "explanation": "日本の野生のクマは、北海道に分布するヒグマと、本州や四国の一部に分布するツキノワグマです。ツキノワグマは木の実や昆虫（こんちゅう）などを食べる雑食性（ざっしょくせい）の動物で、冬には冬眠（とうみん）します。",
-      "keywords": [
-        "ツキノワグマ",
-        "野生動物",
-        "本州"
-      ],
-      "sources": [
-        {
-          "name": "FNNプライムオンライン",
-          "url": "https://www.fnn.jp/articles/-/1158306"
-        },
-        {
-          "name": "環境省",
-          "url": "https://www.env.go.jp/nature/nationalparks/about/bear/"
         }
       ]
     },
