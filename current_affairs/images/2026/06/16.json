@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-16",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260616-001",
+      "images": [
+        {
+          "id": "20260616-001-I01",
+          "type": "photo",
+          "title": "日本銀行本店",
+          "caption": "資料写真：東京都にある日本銀行本店。政策金利を決める中央銀行です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Bank_of_Japan_headquarters_in_Tokyo%2C_Japan.jpg/960px-Bank_of_Japan_headquarters_in_Tokyo%2C_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_headquarters_in_Tokyo,_Japan.jpg",
+          "credit": "Fg2",
+          "license": "Public Domain",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

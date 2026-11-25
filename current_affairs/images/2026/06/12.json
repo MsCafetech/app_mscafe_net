@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-12",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260612-001",
+      "images": [
+        {
+          "id": "20260612-001-I01",
+          "type": "photo",
+          "title": "H3ロケットの打ち上げ",
+          "caption": "資料写真：2025年2月のH3ロケット打ち上げ。2026年6月の6号機とは別の機体です。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/H3_rocket_launch.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:H3_rocket_launch.jpg",
+          "credit": "U.S. Air Force / Senior Airman Jacob Wood（切り抜き：RickyCourtney）",
+          "license": "Public Domain (US Air Force)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Air_Force",
+          "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。 元画像は切り抜き済み。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

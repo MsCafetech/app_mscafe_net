@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-03",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260603-001",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20260603-001-R01",
+          "images": [
+            {
+              "id": "20260603-001-R01-I01",
+              "type": "chart",
+              "title": "日本の人口ピラミッド（2026年推計）",
+              "caption": "資料画像：国連の人口データに基づく2026年の日本の年齢別人口。左の青が男性、右の赤が女性です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Japan_population_pyramid_2026.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japan_population_pyramid_2026.png",
+              "credit": "Mishomp（データ：国連人口部）",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

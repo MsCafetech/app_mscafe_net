@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-23",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260623-001",
+      "images": [
+        {
+          "id": "20260623-001-I01",
+          "type": "photo",
+          "title": "慰霊の日の献花",
+          "caption": "2026年6月23日、沖縄県糸満市の平和祈念公園で行われた慰霊の日の関連行事で、平和の礎に花を供える様子です。沖縄県主催の式典とは別の行事です。",
+          "is_reference": false,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Okinawa_Memorial_Day_81st_Anniversary_Ceremony_at_Peace_Memorial_Park_%289769210%29.jpg/960px-Okinawa_Memorial_Day_81st_Anniversary_Ceremony_at_Peace_Memorial_Park_%289769210%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Okinawa_Memorial_Day_81st_Anniversary_Ceremony_at_Peace_Memorial_Park_(9769210).jpg",
+          "credit": "U.S. Marine Corps / Lance Cpl. Anastasia Dausilio",
+          "license": "Public Domain (US Marine Corps)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Marines",
+          "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

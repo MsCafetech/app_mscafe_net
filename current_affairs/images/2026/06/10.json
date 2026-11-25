@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-10",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260610-001",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20260610-001-R01",
+          "images": [
+            {
+              "id": "20260610-001-R01-I01",
+              "type": "satellite",
+              "title": "1997年のエルニーニョの発達",
+              "caption": "資料画像：1997年3月から8月の海面水温の平年差。赤色の部分は平年より水温が高い海域を示します。2026年の観測ではありません。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sea_surface_temperature_anomalies_from_March_to_August_1997_showing_evolution_of_major_El_Nino_%282268-446%29.jpg/960px-Sea_surface_temperature_anomalies_from_March_to_August_1997_showing_evolution_of_major_El_Nino_%282268-446%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Sea_surface_temperature_anomalies_from_March_to_August_1997_showing_evolution_of_major_El_Nino_(2268-446).jpg",
+              "credit": "NOAA",
+              "license": "Public Domain (NOAA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NOAA",
+              "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

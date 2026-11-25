@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-17",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260617-001",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20260617-001-R01",
+          "images": [
+            {
+              "id": "20260617-001-R01-I01",
+              "type": "historical",
+              "title": "第1回主要国首脳会議（1975年）",
+              "caption": "歴史写真：1975年11月15日にフランスのランブイエで開かれた第1回主要国首脳会議。当時は6か国が参加しました。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Photograph_of_President_Gerald_R._Ford_Meeting_with_Foreign_Heads_of_State_in_the_Salle_des_Marbres_in_the_Chateau_de_Rambouillet_at_the_International_Economic_Summit_Conference_in_Rambouillet%2C_France_-_NARA_-_7518995.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Photograph_of_President_Gerald_R._Ford_Meeting_with_Foreign_Heads_of_State_in_the_Salle_des_Marbres_in_the_Chateau_de_Rambouillet_at_the_International_Economic_Summit_Conference_in_Rambouillet,_France_-_NARA_-_7518995.jpg",
+              "credit": "White House Photographic Office / U.S. National Archives (NARA 7518995)",
+              "license": "Public Domain (US Government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+              "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-11",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "image_count": 2,
+  "questions": [
+    {
+      "question_id": "20260611-001",
+      "images": [
+        {
+          "id": "20260611-001-I01",
+          "type": "photo",
+          "title": "サグラダ・ファミリア",
+          "caption": "資料写真：2023年8月にグエル公園から撮影された建設中のサグラダ・ファミリア。2026年の式典当日の写真ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sagrada_Fam%C3%ADlia%2C_Barcelona.jpg/960px-Sagrada_Fam%C3%ADlia%2C_Barcelona.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sagrada_Família,_Barcelona.jpg",
+          "credit": "Julian Lupyan",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20260611-001-R01",
+          "images": [
+            {
+              "id": "20260611-001-R01-I01",
+              "type": "photo",
+              "title": "グエル公園のモザイク",
+              "caption": "資料写真：ガウディが設計したグエル公園の装飾。色の異なるタイルを組み合わせた模様です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Park_Guell.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Park_Guell.jpg",
+              "credit": "Valérie et Agnès",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示し、変更があれば明記。提供元の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

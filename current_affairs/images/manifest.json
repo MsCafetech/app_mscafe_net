@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-26T07:47:53.337+09:00",
+  "last_updated": "2026-11-26T07:52:11.225+09:00",
   "language": "ja",
-  "total_questions": 61,
-  "total_related": 79,
-  "total_images": 136,
-  "total_files": 29,
+  "total_questions": 70,
+  "total_related": 85,
+  "total_images": 147,
+  "total_files": 37,
   "files": [
     {
       "date": "2026-11-25",
@@ -160,6 +160,70 @@
       "revision": 1
     },
     {
+      "date": "2026-06-30",
+      "path": "2026/06/30.json",
+      "question_count": 2,
+      "related_count": 2,
+      "image_count": 3,
+      "revision": 1
+    },
+    {
+      "date": "2026-06-23",
+      "path": "2026/06/23.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-06-17",
+      "path": "2026/06/17.json",
+      "question_count": 1,
+      "related_count": 1,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-06-16",
+      "path": "2026/06/16.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-06-12",
+      "path": "2026/06/12.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-06-11",
+      "path": "2026/06/11.json",
+      "question_count": 1,
+      "related_count": 1,
+      "image_count": 2,
+      "revision": 1
+    },
+    {
+      "date": "2026-06-10",
+      "path": "2026/06/10.json",
+      "question_count": 1,
+      "related_count": 1,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-06-03",
+      "path": "2026/06/03.json",
+      "question_count": 1,
+      "related_count": 1,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
       "date": "2026-05-01",
       "path": "2026/05/01.json",
       "question_count": 1,
@@ -240,5 +304,5 @@
       "revision": 2
     }
   ],
-  "total_relateds": 79
+  "total_relateds": 85
 }
