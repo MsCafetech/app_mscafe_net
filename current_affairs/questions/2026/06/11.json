@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-11",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260611-001",
+      "news_date": "2026-06-10",
+      "category": "history_culture",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "サグラダ・ファミリアの主塔（しゅとう）の完成を祝う式典",
+      "news_summary": "建築家ガウディの死から100年の日に最も高い塔の完成を祝う式典が行われた。",
+      "question": "2026年6月10日（現地時間）、建築家アントニ・ガウディが亡くなって100年となる日に、サグラダ・ファミリアの最も高い塔（とう）の完成を祝う式典が開かれました。長い年月をかけて建設されている教会で、建物全体はまだ建設中です。\n\nこの教会があるバルセロナは、どの国の都市ですか？",
+      "choices": [
+        "イタリア",
+        "スペイン",
+        "フランス",
+        "ポルトガル"
+      ],
+      "correct_index": 1,
+      "explanation": "バルセロナはスペインの北東部にあり、地中海に面しています。ガウディが設計にたずさわったサグラダ・ファミリアでは、生き物や自然の形を取り入れた建築を見ることができます。建物の一部はガウディの作品群として世界遺産に登録されています。",
+      "keywords": [
+        "サグラダ・ファミリア",
+        "ガウディ",
+        "スペイン"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_international/articles/000511622.html"
+        },
+        {
+          "name": "バチカン・ニュース",
+          "url": "https://www.vaticannews.va/ja/pope/news/2026-06/leone-xiv-spagna-barcellona-messa-sagrada-familia.html"
+        }
+      ]
+    }
+  ]
+}

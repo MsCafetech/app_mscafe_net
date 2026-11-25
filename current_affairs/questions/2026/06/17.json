@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-17",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260617-001",
+      "news_date": "2026-06-17",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "フランスでG7エビアン・サミット",
+      "news_summary": "G7の会議で日本の総理大臣などが世界経済の課題を話し合った。",
+      "question": "2026年6月17日、フランスのエビアンで開かれたG7サミットで、日本を含む各国の代表が世界経済の安定や協力について話し合いました。G7は主要7か国の集まりで、国際社会の課題について意見を交わします。\n\n次のうちG7のメンバー国はどこですか？",
+      "choices": [
+        "インド",
+        "オーストラリア",
+        "ブラジル",
+        "カナダ"
+      ],
+      "correct_index": 3,
+      "explanation": "G7のメンバーは日本、アメリカ、カナダ、イギリス、フランス、ドイツ、イタリアの7か国です。欧州連合（おうしゅうれんごう、EU）も会議に参加します。各国の指導者が経済や平和、環境などの課題について話し合い、協力の方向を考えます。",
+      "keywords": [
+        "G7",
+        "サミット",
+        "国際協力"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/ecm/epc/pageit_000001_00004.html"
+        }
+      ]
+    }
+  ]
+}
