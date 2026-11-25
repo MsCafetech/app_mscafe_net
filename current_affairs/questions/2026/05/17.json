@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-17",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260517-001",
+      "news_date": "2026-05-17",
+      "category": "international",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "エボラ出血熱でWHOが緊急事態（きんきゅうじたい）を宣言",
+      "news_summary": "コンゴ民主共和国とウガンダのエボラ出血熱流行についてWHOが判断した。",
+      "question": "2026年5月17日、世界保健機関（WHO）は、コンゴ民主共和国とウガンダでのエボラ出血熱の流行が国際的な公衆衛生（こうしゅうえいせい）上の緊急事態に当たると発表しました。病気の広がりを防ぐため、各国の協力が重要です。\n\nコンゴ民主共和国とウガンダがある大陸はどれですか？",
+      "choices": [
+        "南アメリカ大陸",
+        "オーストラリア大陸",
+        "ユーラシア大陸",
+        "アフリカ大陸"
+      ],
+      "correct_index": 3,
+      "explanation": "コンゴ民主共和国とウガンダはアフリカ大陸にあります。アフリカ大陸には赤道が通り、熱帯林や草原などさまざまな自然環境があります。世界保健機関は、感染症（かんせんしょう）対策など世界の人々の健康を守るために活動する国連の専門機関です。",
+      "keywords": [
+        "WHO",
+        "エボラ出血熱",
+        "アフリカ"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.anzen.mofa.go.jp/info/pchazardspecificinfo_2026T054.html"
+        }
+      ]
+    }
+  ]
+}

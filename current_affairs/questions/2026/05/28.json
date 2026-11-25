@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-28",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260528-001",
+      "news_date": "2026-05-28",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日・フィリピン首脳会談（しゅのうかいだん）で協力強化",
+      "news_summary": "日本とフィリピンが経済や防災などの協力を深めることで一致した。",
+      "question": "2026年5月28日、日本とフィリピンの首脳が東京で会談し、両国の協力関係をさらに強化することを確認しました。日本はフィリピンの交通や防災などの整備を支える政府開発援助（せいふかいはつえんじょ）にも取り組んでいます。\n\n政府開発援助を表すアルファベット3文字はどれですか？",
+      "choices": [
+        "WTO",
+        "WHO",
+        "ODA",
+        "GDP"
+      ],
+      "correct_index": 2,
+      "explanation": "ODAは政府開発援助のことで、国や政府の関係機関が開発途上国（かいはつとじょうこく）の経済や社会の発展を支える取り組みです。道路や水道の整備、人材の育成などが含まれます。WTOは世界貿易機関、WHOは世界保健機関です。",
+      "keywords": [
+        "政府開発援助",
+        "ODA",
+        "フィリピン"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/s_sa/sea2/ph/pageit_000001_00019.html"
+        }
+      ]
+    }
+  ]
+}
