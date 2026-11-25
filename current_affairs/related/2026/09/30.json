@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-30",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20260930-001",
+      "related": [
+        {
+          "id": "20260930-001-R01",
+          "relation_type": "question",
+          "title": "食虫植物が虫を捕まえる理由",
+          "description": "食虫植物は虫を食べますが、動物とは違い、太陽の光を使って光合成を行い、自分で養分を作ります。モウセンゴケなどが育つ湿地（しっち）には、植物の成長に必要な養分が少ない場所があります。そこで、虫の体から不足する養分を補います。モウセンゴケは葉にあるねばねばした液で虫を捕まえます。ハエトリグサは葉を閉じ、ウツボカズラは袋のような葉に虫を落として捕まえます。虫の捕まえ方は種類によって違いますが、養分の少ない環境で生きるための工夫という点では共通しています。",
+          "relationship": "食虫植物の栄養の取り方と生育環境を学ぶ。",
+          "keywords": [
+            "食虫植物",
+            "光合成",
+            "湿地"
+          ],
+          "sources": [
+            {
+              "name": "岡山理科大学",
+              "url": "https://www1.ous.ac.jp/garden/hada/ecologicaldic/s/syokucyuu/syokucyuu.htm"
+            },
+            {
+              "name": "国民公園協会 新宿御苑",
+              "url": "https://fng.or.jp/shinjuku/2022/08/04/20220804/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "question_count": 1,
+  "related_count": 1
+}
