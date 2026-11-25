@@ -94,9 +94,28 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261117-100",
+      "images": [
+        {
+          "id": "20261117-100-I01",
+          "type": "photo",
+          "title": "フィリピン・マニラ中心部の景観",
+          "caption": "資料写真：日本とASEANの首脳会議が開かれたフィリピン・マニラの街並み。東南アジアの国々は、経済や防災などで協力しています。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Downtown_Manila_Panorama_View%2C_Aug_2024.jpg/1280px-Downtown_Manila_Panorama_View%2C_Aug_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Downtown_Manila_Panorama_View,_Aug_2024.jpg",
+          "credit": "Ralff Nestor Nacor",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "CC BY-SA 4.0。作者名「Ralff Nestor Nacor」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": []
     }
   ],
-  "question_count": 1,
+  "question_count": 2,
   "related_count": 4,
-  "image_count": 5
+  "image_count": 6
 }

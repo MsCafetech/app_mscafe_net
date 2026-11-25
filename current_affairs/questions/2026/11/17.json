@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-17",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20261117-001",
@@ -59,6 +59,35 @@
         {
           "name": "環境省",
           "url": "https://www.env.go.jp/press/press_05866.html"
+        }
+      ]
+    },
+    {
+      "id": "20261117-100",
+      "news_date": "2026-11-17",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とASEANの協力",
+      "news_summary": "日本とASEANの会議がフィリピンで開かれ、経済協力に関する共同声明がまとめられた。",
+      "question": "2026年11月17日、フィリピンのマニラで日本とASEANの首脳（しゅのう）会議が開かれました。経済の安定や防災など、地域の共通課題に協力して取り組むことが話し合われました。\n\nASEANが結成された地域の国として正しいものはどれですか。",
+      "choices": [
+        "インドネシア",
+        "インド",
+        "メキシコ",
+        "エジプト"
+      ],
+      "correct_index": 0,
+      "explanation": "ASEANは東南アジア諸国連合のことです。1967年にインドネシア、マレーシア、フィリピン、シンガポール、タイの5か国で結成されました。地域の平和や経済の発展を目指して協力しています。",
+      "keywords": [
+        "ASEAN",
+        "東南アジア諸国連合",
+        "国際協力"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/a_o/rp/pageit_000001_00010.html"
         }
       ]
     }

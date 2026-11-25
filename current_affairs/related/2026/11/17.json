@@ -114,8 +114,31 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261117-100",
+      "related": [
+        {
+          "id": "20261117-100-R01",
+          "relation_type": "question",
+          "title": "ASEAN共同体への歩み",
+          "description": "東南アジア諸国連合（ASEAN）は、地域の国々が協力するために1967年に作られました。活動は次第に広がり、1992年にはASEAN自由貿易地域（AFTA）が作られました。国と国の間で物を売り買いしやすくすることで、地域全体の経済発展を進めようとしたのです。さらに2015年にはASEAN共同体が発足しました。国々が一つの国になるのではなく、それぞれの国を保ちながら協力を深める取り組みです。東南アジアの経済や国際関係を学ぶ上で大切な動きです。",
+          "relationship": "ASEANの地域協力の歴史。",
+          "keywords": [
+            "ASEAN",
+            "自由貿易地域",
+            "ASEAN共同体"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/area/asean/page25_001325.html"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "question_count": 1,
-  "related_count": 5
+  "question_count": 2,
+  "related_count": 6
 }

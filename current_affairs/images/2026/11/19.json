@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261119-100",
+      "images": [
+        {
+          "id": "20261119-100-I01",
+          "type": "photo",
+          "title": "中国・深セン市の福田区の景観",
+          "caption": "資料写真：APECの会議が開かれた中国・深セン市の中心部。アジア太平洋地域では、国や地域をこえた経済協力が話し合われます。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/The_panorama_of_Futian_Shenzhen.jpg/1280px-The_panorama_of_Futian_Shenzhen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_panorama_of_Futian_Shenzhen.jpg",
+          "credit": "Charlie fong",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "CC BY-SA 4.0。作者名「Charlie fong」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1
+}

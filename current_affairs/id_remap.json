@@ -25,7 +25,47 @@
       "new_date": "2026-11-17",
       "reason": "event date verified against source",
       "source": "https://www.env.go.jp/press/press_05866.html"
+    },
+    {
+      "old_id": "20261123-002",
+      "new_id": "20261119-100",
+      "old_date": "2026-11-23",
+      "new_date": "2026-11-19",
+      "reason": "news/event date checked against source",
+      "source": "https://www.mofa.go.jp/mofaj/ecm/apec/pageit_000001_03339.html"
+    },
+    {
+      "old_id": "20261123-003",
+      "new_id": "20261117-100",
+      "old_date": "2026-11-23",
+      "new_date": "2026-11-17",
+      "reason": "news/event date checked against source",
+      "source": "https://www.mofa.go.jp/mofaj/a_o/rp/pageit_000001_00010.html"
+    },
+    {
+      "old_id": "20261123-004",
+      "new_id": "20261120-100",
+      "old_date": "2026-11-23",
+      "new_date": "2026-11-20",
+      "reason": "news/event date checked against source",
+      "source": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
+    },
+    {
+      "old_id": "20261123-005",
+      "new_id": "20261119-101",
+      "old_date": "2026-11-23",
+      "new_date": "2026-11-19",
+      "reason": "news/event date checked against source",
+      "source": "https://www.kyoto-u.ac.jp/ja/research-news/2026-11-19-0"
+    },
+    {
+      "old_id": "20261123-010",
+      "new_id": "20261120-101",
+      "old_date": "2026-11-23",
+      "new_date": "2026-11-20",
+      "reason": "news/event date checked against source",
+      "source": "https://newsdig.tbs.co.jp/articles/-/3102955?display=1"
     }
   ],
-  "last_updated": "2026-11-26T06:42:37.526+09:00"
+  "last_updated": "2026-11-26T06:44:08.649+09:00"
 }

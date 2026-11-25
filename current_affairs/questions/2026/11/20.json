@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 4,
+  "question_count": 6,
   "questions": [
     {
       "id": "20261120-001",
@@ -120,6 +120,69 @@
         {
           "name": "農林水産省",
           "url": "https://www.maff.go.jp/j/press/nousan/s_taisaku/261120.html"
+        }
+      ]
+    },
+    {
+      "id": "20261120-100",
+      "news_date": "2026-11-20",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "10月の消費者物価指数を発表",
+      "news_summary": "全国の消費者物価指数は前年同月より2.3％上がった。",
+      "question": "2026年11月20日、総務省は10月の全国の消費者物価指数が前年の同じ月に比べて2.3％上がったと発表しました。物の値段の変化は、人々の生活や家計に関係します。\n\n物やサービスの価格が全体として上がり続けることを何といいますか。",
+      "choices": [
+        "デフレーション",
+        "インフレーション",
+        "円高",
+        "円安"
+      ],
+      "correct_index": 1,
+      "explanation": "インフレーションは、物やサービスの価格が全体として上がり続ける現象（げんしょう）です。反対に価格が下がり続けることをデフレーションといいます。消費者物価指数は、家庭が買う物やサービスの価格の変化を表す指標（しひょう）です。",
+      "keywords": [
+        "消費者物価指数",
+        "インフレーション",
+        "物価"
+      ],
+      "sources": [
+        {
+          "name": "総務省統計局",
+          "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
+        },
+        {
+          "name": "政府統計の総合窓口",
+          "url": "https://www.e-stat.go.jp/release-calendar/detail/00200573/202611200830"
+        }
+      ]
+    },
+    {
+      "id": "20261120-101",
+      "news_date": "2026-11-20",
+      "category": "international",
+      "difficulty": 3,
+      "question_type": "current_affairs",
+      "news_title": "国連事務総長の後任選びが難航（なんこう）",
+      "news_summary": "国連の安全保障理事会で次の事務総長を選ぶための非公式投票が行われたが、候補を一本化できなかった。",
+      "question": "2026年11月20日、国際連合の安全保障理事会で、年末に任期を終える事務総長の後任を選ぶための9回目の非公式投票が行われました。常任理事国の意見が一致せず、候補を一人にしぼることができませんでした。\n\n国連安全保障理事会の常任理事国は何か国ですか。",
+      "choices": [
+        "3か国",
+        "5か国",
+        "10か国",
+        "15か国"
+      ],
+      "correct_index": 1,
+      "explanation": "安全保障理事会の常任理事国は、アメリカ、イギリス、フランス、中国、ロシアの5か国です。ほかに10か国の非常任理事国があります。常任理事国は重要な決定に対して拒否権（きょひけん）を持ちます。",
+      "keywords": [
+        "国際連合",
+        "安全保障理事会",
+        "常任理事国",
+        "拒否権"
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3102955?display=1"
         }
       ]
     }
