@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 2,
-  "related_count": 6,
+  "question_count": 3,
+  "related_count": 9,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -148,6 +148,80 @@
             {
               "name": "気象庁「地震・津波・火山を知る」",
               "url": "https://www.jma.go.jp/jma/kishou/know/svd/text/chapter_1.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261120-003",
+      "related": [
+        {
+          "id": "20261120-003-R01",
+          "relation_type": "answer",
+          "title": "種子島宇宙センターと鹿児島県",
+          "description": "種子島宇宙センターは、鹿児島県の南にある種子島の東南端、海岸線に面してつくられた日本最大のロケット発射場です。人工衛星をロケットに載せる準備、機体の組み立てや点検、打ち上げ、打ち上げ後の追跡までを行う設備があります。種子島は鉄砲伝来の地としても知られますが、現在は日本の宇宙開発を支える重要な場所でもあります。地図帳では、鹿児島県の本土の南に屋久島・種子島があること、種子島が太平洋に面していることも一緒に確かめると、位置関係を覚えやすくなります。",
+          "relationship": "正解の鹿児島県と種子島宇宙センターの位置を、日本の宇宙開発における役割とともに学ぶ。",
+          "keywords": [
+            "種子島宇宙センター",
+            "鹿児島県",
+            "種子島",
+            "ロケット発射場"
+          ],
+          "sources": [
+            {
+              "name": "JAXA「種子島宇宙センター」",
+              "url": "https://www.jaxa.jp/about/centers/tnsc/index_j.html"
+            },
+            {
+              "name": "JAXA宇宙教育センター「いろいろなロケット！」",
+              "url": "https://edu.jaxa.jp/contents/other/rocket/"
+            }
+          ]
+        },
+        {
+          "id": "20261120-003-R02",
+          "relation_type": "question",
+          "title": "ロケット発射場の場所を選ぶ理由",
+          "description": "ロケットの発射場は、ただ広ければよいわけではありません。東向きに打ち上げると地球の自転による速さを利用でき、必要な燃料を減らせることがあります。また、打ち上げ中に万一機体や部品が落下しても人や建物への危険を小さくできるよう、進行方向に広い海があり、人口が密集していない場所が望まれます。種子島宇宙センターはこうした条件を考えて選ばれました。宇宙開発では、速く飛ばす工夫だけでなく、周囲の人々の安全を守る場所選びと打ち上げの管理も大切です。",
+          "relationship": "種子島がH3ロケットの打ち上げ地となっている背景を、地球の自転と安全確保の観点から説明する。",
+          "keywords": [
+            "地球の自転",
+            "東向き",
+            "安全管理",
+            "ロケット発射場"
+          ],
+          "sources": [
+            {
+              "name": "JAXA「ロケットの発射場は、どうやって決めるのでしょうか」",
+              "url": "https://humans-in-space.jaxa.jp/faq/detail/000677.html"
+            },
+            {
+              "name": "JAXA「人工衛星を打ち上げる方向は？」",
+              "url": "https://www.satnavi.jaxa.jp/ja/satellite-knowledge/whats-eosatellite/launch-direction/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261120-003-R03",
+          "relation_type": "question",
+          "title": "H3ロケットと宇宙輸送",
+          "description": "H3ロケットは、日本が人工衛星や探査機を宇宙へ運ぶための新しい基幹ロケットです。ロケットを自分たちで打ち上げられる力は、気象観測、通信、位置情報、防災、科学探査などに必要な衛星を必要な時期に宇宙へ送ることにつながります。JAXAはH3の開発や性能向上を進め、打ち上げは段階的に民間企業が担う方針です。国の研究機関と企業が役割を分けることで、打ち上げの経験を積み重ね、安定した宇宙輸送サービスを目指します。",
+          "relationship": "H3ロケットの打ち上げを民間へ段階的に移行するニュースを、日本の宇宙輸送と衛星利用の意義から理解する。",
+          "keywords": [
+            "H3ロケット",
+            "宇宙輸送",
+            "人工衛星",
+            "民間移行"
+          ],
+          "sources": [
+            {
+              "name": "JAXA「H3ロケットの民間による打上げへの段階的移行」",
+              "url": "https://www.jaxa.jp/press/2026/11/20261120-1_j.html"
+            },
+            {
+              "name": "JAXA「H3ロケット」",
+              "url": "https://www.jaxa.jp/projects/rockets/h3/index_j.html"
             }
           ]
         }
