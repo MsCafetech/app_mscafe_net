@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 30,
-  "image_count": 40,
+  "related_count": 32,
+  "image_count": 42,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -555,6 +555,24 @@
               "usage_notes": "CC BY 3.0。原著作権者Ground Truth Trekkingおよび派生版作者Osado、ライセンスを表示する。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-007-R03",
+          "images": [
+            {
+              "id": "20261125-007-R03-I01",
+              "type": "photo",
+              "title": "水俣病歴史考証館",
+              "caption": "資料写真：熊本県水俣市にある水俣病歴史考証館。公害がなぜ起きたのかを学び、同じ問題をくり返さないために考える場所です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Minamata_Disease_Museum_20230226_02.jpg/1280px-Minamata_Disease_Museum_20230226_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Disease_Museum_20230226_02.jpg",
+              "credit": "先従隗始",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+            }
+          ]
         }
       ]
     },
@@ -591,6 +609,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-010-R03",
+          "images": [
+            {
+              "id": "20261125-010-R03-I01",
+              "type": "photo",
+              "title": "ご飯・汁物・おかずのある和食の定食",
+              "caption": "資料写真：ご飯、汁物、主菜や副菜を組み合わせた和食の定食。一汁三菜の考え方では、主食・汁物・おかずをそろえて食事を整えます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Japanese_set_meal_with_tonkatsu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_set_meal_with_tonkatsu.jpg",
+              "credit": "Betsylavolette",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "CC BY-SA 4.0。作者名「Betsylavolette」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
             }
           ]
         }
