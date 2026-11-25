@@ -33,7 +33,7 @@
       ]
     },
     {
-      "id": "20261125-001",
+      "id": "20261124-011",
       "news_date": "2026-11-24",
       "category": "science",
       "difficulty": 2,
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "id": "20261125-002",
+      "id": "20261124-012",
       "news_date": "2026-11-24",
       "category": "space",
       "difficulty": 2,
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "id": "20261125-003",
+      "id": "20261124-013",
       "news_date": "2026-11-24",
       "category": "history_culture",
       "difficulty": 2,
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "id": "20261125-006",
+      "id": "20261124-014",
       "news_date": "2026-11-17",
       "category": "environment",
       "difficulty": 2,
@@ -148,7 +148,7 @@
       ]
     },
     {
-      "id": "20261125-007",
+      "id": "20261124-015",
       "news_date": "2026-11-24",
       "category": "environment",
       "difficulty": 2,
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "id": "20261125-008",
+      "id": "20261124-016",
       "news_date": "2026-11-24",
       "difficulty": 2,
       "question_type": "related_knowledge",
