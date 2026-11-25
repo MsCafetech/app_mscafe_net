@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-01",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260901-001",
+      "news_date": "2026-09-01",
+      "category": "society",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "生活道路の法定速度が時速30キロに",
+      "news_summary": "生活道路における自動車の法定速度が引き下げられた。",
+      "question": "2026年9月1日、中央線などがない生活道路の自動車の法定速度が、原則として時速60キロから30キロに引き下げられました。歩行者や自転車が利用する道路の安全を高めることが目的です。\n\n自動車が時速30キロで同じ速さのまま1分間進むと、何メートル進みますか？",
+      "choices": [
+        "50メートル",
+        "300メートル",
+        "500メートル",
+        "3000メートル"
+      ],
+      "correct_index": 2,
+      "explanation": "時速30キロは1時間で30000メートル進む速さです。1時間は60分なので、30000を60で割ると500メートルになります。自動車の速度をおさえることで、危険に気づいたときに止まるまでの距離（きょり）を短くすることにもつながります。",
+      "keywords": [
+        "生活道路",
+        "法定速度",
+        "交通安全"
+      ],
+      "sources": [
+        {
+          "name": "警察庁",
+          "url": "https://www.npa.go.jp/bureau/traffic/seikatsudouro/seikatsudoro.html"
+        }
+      ]
+    }
+  ]
+}
