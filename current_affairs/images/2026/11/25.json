@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 8,
+  "question_count": 10,
   "related_count": 7,
-  "image_count": 15,
+  "image_count": 17,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -282,6 +282,44 @@
           "license": "CC0",
           "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
           "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-007",
+      "images": [
+        {
+          "id": "20261125-007-I01",
+          "type": "photo",
+          "title": "水俣病資料館",
+          "caption": "資料写真：熊本県水俣市にある水俣病資料館。メチル水銀による健康被害と、環境を守る取り組みについて学ぶための施設です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Minamata_Disease_Museum_20230226_02.jpg/1280px-Minamata_Disease_Museum_20230226_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Disease_Museum_20230226_02.jpg",
+          "credit": "先従隗始",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-010",
+      "images": [
+        {
+          "id": "20261125-010-I01",
+          "type": "photo",
+          "title": "日本の食事",
+          "caption": "資料写真：ご飯、汁物、おかずを組み合わせた日本の食事の一例。季節の食材や食事の習わしを大切にする和食文化を考える手がかりになります。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Japanese_Meal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Meal.jpg",
+          "credit": "Nome92",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "CC BY-SA 3.0。作者名「Nome92」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
         }
       ],
       "related": []
