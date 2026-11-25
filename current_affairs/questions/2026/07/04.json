@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-04",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260704-001",
+      "news_date": "2026-07-04",
+      "category": "history_culture",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "アメリカ独立250周年",
+      "news_summary": "アメリカが独立宣言の採択から250周年を迎えた。",
+      "question": "2026年7月4日、アメリカは独立宣言（どくりつせんげん）から250周年を迎えました。1776年に北アメリカの13の植民地（しょくみんち）が独立を宣言したことを記念する日です。\n\nこれらの植民地を支配していた国はどこですか？",
+      "choices": [
+        "フランス",
+        "スペイン",
+        "イギリス",
+        "ポルトガル"
+      ],
+      "correct_index": 2,
+      "explanation": "1776年7月4日、北アメリカの13の植民地はイギリスからの独立を宣言しました。独立宣言には、人間は平等であり、自由や幸福を求める権利を持つという考え方が示されています。7月4日は現在もアメリカの独立記念日です。",
+      "keywords": [
+        "アメリカ",
+        "独立宣言",
+        "イギリス",
+        "建国250周年"
+      ],
+      "sources": [
+        {
+          "name": "米国国立公文書館",
+          "url": "https://www.archives.gov/freedom250"
+        },
+        {
+          "name": "米国国立公文書館",
+          "url": "https://www.archives.gov/milestone-documents/declaration-of-independence"
+        },
+        {
+          "name": "米国ホワイトハウス",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/07/250th-anniversary-of-the-adoption-of-the-declaration-of-independence/"
+        }
+      ]
+    }
+  ]
+}
