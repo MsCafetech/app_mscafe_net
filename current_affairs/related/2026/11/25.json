@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 9,
-  "related_count": 32,
+  "question_count": 12,
+  "related_count": 40,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -704,6 +704,165 @@
             {
               "name": "ESA「Hera Frequently Asked Questions」",
               "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-frequently-asked-questions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-020",
+      "related": [
+        {
+          "id": "20261125-020-R01",
+          "relation_type": "question",
+          "title": "SNSの年齢制限と事業者の責任",
+          "description": "オーストラリアでは2025年12月10日から、対象となるSNSの運営会社に、16歳未満の人がアカウントを作ったり持ち続けたりしないよう、合理的な対策を取る義務が課されました。子ども本人や保護者を罰する制度ではなく、運営会社に責任を求める点が特徴です。また、すべてのインターネットサービスがこの年齢制限の対象になるわけではありません。子どもが情報を得たり友達と交流したりできることと、危険から守られることの両方を考えて、サービスの安全性を高める取り組みが進められています。",
+          "relationship": "SNSの利用者だけでなく運営会社にも安全対策を求める制度を理解する。",
+          "keywords": [
+            "SNS",
+            "年齢制限",
+            "事業者の責任"
+          ],
+          "sources": [
+            {
+              "name": "オーストラリア eSafety Commissioner「Social media age restrictions」",
+              "url": "https://www.esafety.gov.au/about-us/industry-regulation/social-media-age-restrictions"
+            }
+          ]
+        },
+        {
+          "id": "20261125-020-R02",
+          "relation_type": "question",
+          "title": "ネット上のいじめを防ぐ仕組み",
+          "description": "インターネット上のいじめは、SNSの投稿だけでなく、ゲームのチャットなどでも起こることがあります。オーストラリアのオンライン安全を担当する機関は、被害にあった子どもや保護者などから相談を受け付けています。困ったときは、信頼できる大人に相談し、どのようなことが起こったかを確認できる記録を残して、サービスの運営会社に知らせることが大切です。相手からの連絡を止める機能も役立ちます。個人の注意だけでは解決できない問題に、会社や公的機関が対応する仕組みが必要です。",
+          "relationship": "新しい安全対策法案の背景にあるネット上の被害と相談制度を学ぶ。",
+          "keywords": [
+            "ネットいじめ",
+            "相談窓口",
+            "オンライン安全"
+          ],
+          "sources": [
+            {
+              "name": "オーストラリア eSafety Commissioner「Report cyberbullying」",
+              "url": "https://www.esafety.gov.au/key-topics/cyberbullying/report-cyberbullying"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-021",
+      "related": [
+        {
+          "id": "20261125-021-R01",
+          "relation_type": "question",
+          "title": "スペインの自治州と自治の仕組み",
+          "description": "カタルーニャはスペインの自治州の一つです。自治州には、地域の事情に合わせて政治を行う仕組みがあります。カタルーニャの自治憲章（じちけんしょう）は、住民の権利や自治州の議会、政府などの役割、国との関係を定めています。教育や文化、保健などの分野では、自治州が一定の権限を持っています。ただし、自治州が自ら地域の政治を行うことと、独立して別の国になることは同じではありません。どのように国と地域の権限を分けるかを知ることは、地方自治や独立をめぐる議論を理解する手がかりになります。",
+          "relationship": "独立運動の背景にある自治州の制度を理解する。",
+          "keywords": [
+            "自治州",
+            "自治憲章",
+            "地方自治"
+          ],
+          "sources": [
+            {
+              "name": "カタルーニャ自治州政府「Self-government」",
+              "url": "https://web.gencat.cat/en/generalitat/qui-som/autogovern"
+            }
+          ]
+        },
+        {
+          "id": "20261125-021-R02",
+          "relation_type": "question",
+          "title": "カタルーニャ語と地域の文化",
+          "description": "カタルーニャでは、スペイン語とともにカタルーニャ語が公用語として認められています。公用語とは、行政などの公的な場で使うことが認められている言語です。カタルーニャ語はこの地域だけでなく、バレアレス諸島などでも使われ、スペインの隣にある小国アンドラでは唯一の公用語です。同じ言語を使う人々が複数の国や地域に暮らすこともあれば、一つの国の中で複数の言語が使われることもあります。地図の国境と、人々の言語や文化の広がりは、必ずしも一致しないことが分かります。",
+          "relationship": "カタルーニャの独自の言語と文化の地理的広がりを理解する。",
+          "keywords": [
+            "カタルーニャ語",
+            "公用語",
+            "アンドラ"
+          ],
+          "sources": [
+            {
+              "name": "カタルーニャ自治州政府「Legal framework」",
+              "url": "https://llengua.gencat.cat/en/el-catala/marc-legal/"
+            }
+          ]
+        },
+        {
+          "id": "20261125-021-R03",
+          "relation_type": "question",
+          "title": "カタルーニャ自治州の議会",
+          "description": "カタルーニャには、住民が選んだ議員によって構成される自治州の議会があります。議会では自治州の権限の範囲で法律を作り、自治州政府が使う予算を承認し、政府の活動を確認します。議員は選挙で選ばれるため、住民のさまざまな考えを政治に反映する場でもあります。国全体の議会と地域の議会は、それぞれ異なる範囲の仕事を担当します。日本でも地方議会が地域の予算や条例を審議しますが、国によって地方の権限は異なります。両者の制度を比べると、地方自治の特徴を考えやすくなります。",
+          "relationship": "州首相や州議会の役割を地方政治の制度から学ぶ。",
+          "keywords": [
+            "州議会",
+            "予算",
+            "地方政治"
+          ],
+          "sources": [
+            {
+              "name": "カタルーニャ自治州政府「The Parliament」",
+              "url": "https://web.gencat.cat/en/generalitat/qui-som/institucions-generalitat/parlament"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-022",
+      "related": [
+        {
+          "id": "20261125-022-R01",
+          "relation_type": "question",
+          "title": "要介護認定と介護サービス",
+          "description": "介護保険のサービスを受けるには、原則として市町村に申請し、介護や支援がどの程度必要かについて認定を受けます。これを要介護（ようかいご）認定や要支援認定といいます。年齢だけで必要な介護の程度が決まるのではなく、食事や入浴などの日常生活でどれほど助けが必要かといった状態をもとに判断します。専門家による審査を経て市町村が認定する仕組みです。人によって必要な支援は異なるため、一人一人の状態を調べてサービスにつなげることが、社会全体で介護を支えるうえで重要になります。",
+          "relationship": "介護保険料によって支えられるサービスを受けるための仕組みを学ぶ。",
+          "keywords": [
+            "要介護認定",
+            "要支援",
+            "市町村"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省「要介護認定の概要」",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo4.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-022-R02",
+          "relation_type": "answer",
+          "title": "65歳以上と40歳から64歳の違い",
+          "description": "介護保険では、65歳以上の人と、40歳から64歳までの医療保険に加入している人を異なる区分に分けています。65歳以上の人は、介護や支援が必要と認定されれば、その原因にかかわらずサービスを利用できる仕組みです。一方、40歳から64歳までの人は、加齢に関係する法律で定められた特定の病気によって介護などが必要になった場合が対象です。このため、保険に加入して費用を負担する年齢と、どのような条件でサービスを利用できるかは区別して理解することが大切です。",
+          "relationship": "正解の40歳という加入年齢と、介護サービスの利用条件を区別する。",
+          "keywords": [
+            "介護保険",
+            "被保険者",
+            "特定疾病"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省「要介護認定の概要」",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo4.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-022-R03",
+          "relation_type": "question",
+          "title": "地域包括支援センターの役割",
+          "description": "高齢者が住み慣れた地域で暮らし続けるためには、介護だけでなく、健康や生活について相談できる場所が必要です。市町村が設置する地域包括支援センターには、地域の高齢者を幅広く支える役割があります。介護についての相談を受けたり、介護が必要になるのを防ぐための支援を行ったり、高齢者の権利を守る取り組みを進めたりします。必要な支援を行うために、地域のさまざまな関係者とも協力します。家族だけで高齢者の生活を支えるのではなく、地域全体で支える仕組みの一つです。",
+          "relationship": "介護保険制度と地域で高齢者の生活を支える仕組みの関係を学ぶ。",
+          "keywords": [
+            "地域包括支援センター",
+            "介護予防",
+            "地域福祉"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省「地域包括ケアシステム」",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/chiiki-houkatsu/index.html"
             }
           ]
         }
