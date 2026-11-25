@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 543,828 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 543,672 バイト）。</pre>';
   }
 });
 </script>
@@ -58,8 +58,8 @@ const SITE = {
 const NEWS = [
   { date: '2026/11/25', tag: L('タップる？', 'TaPru'), text: L('Android 版を Google Play でリリースしました。クローズドテストにご協力いただいたテスターの皆さま、ありがとうございました。',
       'The Android version is now released on Google Play. Many thanks to all the testers who joined the closed test.') },
-  { date: '2026/11/25', tag: L('時事Q', 'JijiQ'), text: L('新しいアプリ「時事Q」を仕込み中です。毎日のニュースから出題する、小学4\u301C6年生の日々の学習向けの時事問題アプリです。',
-      'We are brewing a new app, “JijiQ”: a current-affairs quiz app built from each day’s news, for everyday learning by 4th to 6th graders.') },
+  { date: '2026/11/25', tag: L('時事Q', 'JijiQ'), text: L('新しいアプリ「時事Q」を仕込み中です。毎日のニュースから出題する、学生の日々の学習向けの時事問題アプリです。',
+      'We are brewing a new app, “JijiQ”: a current-affairs quiz app built from each day’s news, for students’ everyday learning.') },
   { date: '2026/11/25', tag: 'RAY', text: L('ゾンビが17種類・ボスが6体に増え、投げ物や充電装置の故障などの邪魔ギミックと、敵の強さの選択が加わりました。紹介を更新しました。',
       'Now with 17 zombie types and 6 bosses, hazards such as thrown objects and a broken charger, and a choice of enemy strength. We have updated its introduction.') },
   { date: '2026/11/19', tag: 'RAY', text: L('新しいゲーム「RAY」を仕込み中です。指でなぞって放つビームで、押し寄せるゾンビの群れを薙ぎ払う、縦画面の防衛ゲームです。', 'We are brewing a new game, “RAY”: a portrait defense game where you swipe to fire a beam and sweep away hordes of zombies.') },
@@ -1596,12 +1596,12 @@ const APPS = [
   },
   {
     id: 'jijiq', name: L('時事Q', 'JijiQ'), icon: jqIcon, status: L('開発中', 'In development'),
-    one: L('毎日のニュースから出題する4択クイズ。背景と関連知識まで学べる、小学4\u301C6年生の日々の学習向け時事問題アプリ。', 'A four-choice quiz made from each day’s news. A current-affairs app for everyday learning by 4th to 6th graders, with background and related knowledge.'),
+    one: L('毎日のニュースから出題する4択クイズ。背景と関連知識まで学べる、学生の日々の学習向け時事問題アプリ。', 'A four-choice quiz made from each day’s news. A current-affairs app for students’ everyday learning, with background and related knowledge.'),
     headline: L('<span class="nb">今朝のニュースで、</span><span class="nb"><span class="hl">一問</span>。</span>', '<span class="nb">This morning’s news,</span> <span class="nb">in <span class="hl">one question</span>.</span>'),
-    lead: L('モーニングのお供に、今日の一問はいかがですか。時事Q は、小学4\u301C6年生の日々の学習向けの時事問題アプリです。毎日のニュースから作った問題を、ニュースの背景を読んでから4択で解き、'
+    lead: L('モーニングのお供に、今日の一問はいかがですか。時事Q は、学生の日々の学習向けの時事問題アプリです。毎日のニュースから作った問題を、ニュースの背景を読んでから4択で解き、'
         + '解説と関連知識で、ひとつの答えをまわりの知識へとつなげていきます。朝、登校前の数分で取り組めます。Android と iOS に対応予定で、スマホにもタブレットにも合わせた画面です。'
         + 'ただいま仕込み中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-        'How about a question of the day with your morning set? JijiQ is a current-affairs quiz app for everyday learning by 4th to 6th graders. Read the background of a news story, answer a four-choice question made from it, '
+        'How about a question of the day with your morning set? JijiQ is a current-affairs quiz app for students’ everyday learning. Read the background of a news story, answer a four-choice question made from it, '
         + 'and then connect that one answer to the knowledge around it through the explanation and related knowledge. It takes just a few minutes before school. Android and iOS versions are planned, with screens made for both phones and tablets. '
         + 'The app is in Japanese and is now in the works. The screens on this site differ in detail from the real app.'),
     os: L('対応OS　Android 8.0 以上 ／ iOS 15.0 以上（予定）　　料金　無料（広告あり）', 'OS: Android 8.0 or later / iOS 15.0 or later (planned)　　Price: Free (with ads)'), store: { label: L('開発中', 'In development'), url: '' },
@@ -1629,7 +1629,7 @@ const APPS = [
       [L('読んで答える', 'Read and answer'), L('ニュースの背景を読んで、4つの選択肢から答えを選び、「回答する」。', 'Read the background of the news, choose one of four answers and press “Answer”.')],
       [L('関連知識で広げる', 'Go further'), L('正解と解説を読んだら「関連知識を学ぶ」。終わったら「次の問題へ」。', 'After the answer and explanation, press “Learn related knowledge”. Then go on to the next question.')],
     ],
-    info: [[L('アプリ名', 'App name'), L('時事Q', '時事Q (JijiQ)')], [L('対象', 'For'), L('小学4\u301C6年生（日々の学習向け）', '4th to 6th graders (for everyday learning)')],
+    info: [[L('アプリ名', 'App name'), L('時事Q', '時事Q (JijiQ)')], [L('対象', 'For'), L('学生（日々の学習向け）', 'Students (for everyday learning)')],
         [L('対応OS', 'OS'), L('Android 8.0 以上 ／ iOS 15.0 以上（予定）。スマホ・タブレット、縦・横', 'Android 8.0 or later / iOS 15.0 or later (planned). Phones and tablets, portrait or landscape')],
         [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play・App Store（準備中）', 'Google Play and the App Store (in preparation)')],
         [L('問題', 'Questions'), L('毎日更新（1日10問まで、直近1年分）', 'Updated daily (up to 10 a day; the last year is kept)')],
@@ -2399,7 +2399,7 @@ const LEGAL = [
     '欧州経済領域（EEA）、英国、スイスなど、法令で同意が必要な地域の利用者には、同意を確認したうえで広告を配信します。同意がない場合は、パーソナライズされていない広告を表示します。',
     'BOMBOM では、画面の上部などにネイティブ広告を表示します。また、アイテムがなくなったときに利用者が選んだ場合だけ、動画などの広告（リワード広告・インタースティシャル広告）を表示し、見終わるとアイテムを受け取れます。',
     'タップる？では、AdMob を子ども向けとして扱う設定にし、パーソナライズ広告を表示せず、全年齢向け（G）の広告だけを表示します。',
-    '時事Q は小学生向けのため、AdMob を子ども向けとして扱い、同意できる年齢に達していない利用者として扱う設定にして、パーソナライズ広告を表示せず、全年齢向け（G）の広告だけを表示します。Android 版は広告 ID を使う権限を外しています。広告は、画面の上（横向きではヘッダーの右端）の決まった枠に表示するネイティブ広告だけです。',
+    '時事Q では、AdMob を子ども向けとして扱い、同意できる年齢に達していない利用者として扱う設定にして、パーソナライズ広告を表示せず、全年齢向け（G）の広告だけを表示します。Android 版は広告 ID を使う権限を外しています。広告は、画面の上（横向きではヘッダーの右端）の決まった枠に表示するネイティブ広告だけです。',
     'MP3変換の広告は、画面の上の決まった枠に表示するネイティブ広告だけです。同意が必要な地域では、アプリのメニューの「プライバシー設定」から、広告に関する同意をいつでも変更できます。',
     'RAY の広告は、HOME とゲーム中の画面の上の決まった枠に表示するネイティブ広告です。今後、利用者が選んだ場合だけ動画などの広告（リワード広告）を表示し、見終わるとアイテムを受け取れるようにする予定です。',
     '店長が AdMob から受け取るのは、表示回数や収益などの集計された数値だけで、利用者個人を特定できる情報は受け取りません。',
@@ -2495,7 +2495,7 @@ const LEGAL = [
     'For users in regions where consent is required by law, such as the European Economic Area (EEA), the United Kingdom and Switzerland, ads are served after confirming consent. Without consent, only non-personalized ads are shown.',
     'BOMBOM shows native ads, for example at the top of the screen. When you run out of items, and only if you choose to, it also shows video or full-screen ads (rewarded and interstitial ads); you receive items after watching.',
     'In TaPru, AdMob is configured to treat the app as child-directed: personalized ads are not shown, and only ads suitable for all ages (rated G) are shown.',
-    'Because JijiQ is for elementary school children, AdMob is configured to treat the app as child-directed and its users as under the age of consent: personalized ads are not shown, and only ads suitable for all ages (rated G) are shown. The Android version does not have the permission to use the advertising ID. Ads are only native ads in a fixed frame at the top of the screen (at the right end of the header in landscape).',
+    'In JijiQ, AdMob is configured to treat the app as child-directed and its users as under the age of consent: personalized ads are not shown, and only ads suitable for all ages (rated G) are shown. The Android version does not have the permission to use the advertising ID. Ads are only native ads in a fixed frame at the top of the screen (at the right end of the header in landscape).',
     'MP3 Converter shows only native ads in a fixed frame at the top of the screen. In regions where consent is required, you can change your ad consent at any time from “Privacy options” in the app’s menu.',
     'RAY shows native ads in fixed frames at the top of the HOME screen and of the screen during play. We plan to add video ads (rewarded ads) that are shown only if you choose to, and give you items after watching.',
     'The Manager receives only aggregated figures from AdMob, such as impressions and revenue, and never receives information that identifies individual users.',
