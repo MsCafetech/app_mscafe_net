@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-16",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260916-001",
+      "news_date": "2026-09-16",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "男女平等の国際調査で日本117位",
+      "news_summary": "世界経済フォーラムが男女平等に関する2026年の報告書を公表した。",
+      "question": "2026年9月16日、世界経済フォーラムは、男女の間の差を調べるジェンダー・ギャップ指数を発表しました。日本は145の国や地域の中で117位でした。男女が同じように学び、働き、政治に参加できる社会づくりが課題となっています。\n\n男女平等を目指すことは、国連のSDGsの何番目の目標ですか？",
+      "choices": [
+        "目標2",
+        "目標5",
+        "目標9",
+        "目標14"
+      ],
+      "correct_index": 1,
+      "explanation": "SDGsは持続可能な開発目標のことで、2015年に国連で採択（さいたく）された17の目標です。目標5はジェンダー平等の実現を目指しています。性別によって学ぶ機会や仕事、政治参加などが制限されない社会をつくることが大切です。",
+      "keywords": [
+        "ジェンダー平等",
+        "SDGs",
+        "世界経済フォーラム"
+      ],
+      "sources": [
+        {
+          "name": "世界経済フォーラム",
+          "url": "https://jp.weforum.org/media/twenty-years-of-progress-on-gender-parity-now-fragile-wef-report-finds"
+        },
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_international/articles/000533785.html"
+        }
+      ]
+    }
+  ]
+}
