@@ -4,7 +4,7 @@
   "language": "ja",
   "question_count": 3,
   "related_count": 3,
-  "image_count": 4,
+  "image_count": 6,
   "questions": [
     {
       "question_id": "20260630-001",
@@ -46,7 +46,21 @@
     },
     {
       "question_id": "20260630-002",
-      "images": [],
+      "images": [
+        {
+          "id": "20260630-002-I01",
+          "type": "photo",
+          "title": "自然共生サイト・渉成園",
+          "caption": "資料写真：京都市の渉成園（しょうせいえん）の入口。2024年度前期に自然共生サイトとして認定された庭園です。写真は2023年4月撮影。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Shoseien_Kyoto_Japan01-r.jpg/960px-Shoseien_Kyoto_Japan01-r.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Shoseien_Kyoto_Japan01-r.jpg",
+          "credit": "Oilstreet",
+          "license": "CC BY 2.5",
+          "license_url": "https://creativecommons.org/licenses/by/2.5/",
+          "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示し、変更内容があれば明記する。提供者の推奨を示唆しない。 認定情報：京都市 https://www.city.kyoto.lg.jp/kankyo/page/0000334800.html"
+        }
+      ],
       "related": [
         {
           "related_id": "20260630-002-R01",
@@ -70,7 +84,21 @@
     },
     {
       "question_id": "20260630-003",
-      "images": [],
+      "images": [
+        {
+          "id": "20260630-003-I01",
+          "type": "photo",
+          "title": "横浜港のコンテナ船",
+          "caption": "資料写真：2011年に横浜港で撮影されたコンテナ船。外国との貿易を支える海上輸送の例です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/YM_Earth_%28ship%2C_2003%29_001.jpg/960px-YM_Earth_%28ship%2C_2003%29_001.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:YM_Earth_(ship,_2003)_001.jpg",
+          "credit": "Kabacchi",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示し、変更内容があれば明記する。提供者の推奨を示唆しない。"
+        }
+      ],
       "related": [
         {
           "related_id": "20260630-003-R01",

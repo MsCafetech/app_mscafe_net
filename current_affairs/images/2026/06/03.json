@@ -4,11 +4,25 @@
   "language": "ja",
   "question_count": 1,
   "related_count": 1,
-  "image_count": 1,
+  "image_count": 2,
   "questions": [
     {
       "question_id": "20260603-001",
-      "images": [],
+      "images": [
+        {
+          "id": "20260603-001-I01",
+          "type": "photo",
+          "title": "ベビーカー",
+          "caption": "資料写真：2021年に日本で撮影されたベビーカー。子育てに使われる道具の一例です。出生数の調査を撮影したものではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/BabyCarriage_20210711_130332.jpg/960px-BabyCarriage_20210711_130332.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:BabyCarriage_20210711_130332.jpg",
+          "credit": "Ka23 13",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示し、変更内容があれば明記する。提供者の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用する。"
+        }
+      ],
       "related": [
         {
           "related_id": "20260603-001-R01",

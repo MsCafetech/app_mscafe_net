@@ -4,11 +4,25 @@
   "language": "ja",
   "question_count": 2,
   "related_count": 2,
-  "image_count": 3,
+  "image_count": 4,
   "questions": [
     {
       "question_id": "20260610-001",
-      "images": [],
+      "images": [
+        {
+          "id": "20260610-001-I01",
+          "type": "photo",
+          "title": "太平洋の海洋観測ブイ",
+          "caption": "資料写真：太平洋の赤道付近に浮かぶ海洋観測用ブイ。海の状態を観測するための設備です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/NOAA_buoy_%28Wea04312_9627120059%29.jpg/960px-NOAA_buoy_%28Wea04312_9627120059%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:NOAA_buoy_(Wea04312_9627120059).jpg",
+          "credit": "Lt. Cmdr. Matthew Wingate, NOAA Corps / NOAA Photo Library",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示し、変更内容があれば明記する。提供者の推奨を示唆しない。"
+        }
+      ],
       "related": [
         {
           "related_id": "20260610-001-R01",
