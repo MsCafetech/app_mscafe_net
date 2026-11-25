@@ -301,44 +301,6 @@
       ]
     },
     {
-      "question_id": "20261125-004",
-      "images": [
-        {
-          "id": "20261125-004-I01",
-          "type": "photo",
-          "title": "大規模な蓄電池システム",
-          "caption": "資料写真：電気をためて、必要な時に使えるようにする大規模な蓄電池設備。太陽光や風力による発電と組み合わせて利用されます。",
-          "is_reference": true,
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Desert_Sunlight_Battery_Energy_Storage_System_%2852945816430%29.jpg/1280px-Desert_Sunlight_Battery_Energy_Storage_System_%2852945816430%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Desert_Sunlight_Battery_Energy_Storage_System_(52945816430).jpg",
-          "credit": "Bureau of Land Management",
-          "license": "Public domain",
-          "license_url": "https://www.usa.gov/government-copyright",
-          "usage_notes": "米国土地管理局提供のパブリックドメイン画像。提供元およびWikimedia Commonsの掲載元を出典として表示。"
-        }
-      ],
-      "related": []
-    },
-    {
-      "question_id": "20261125-005",
-      "images": [
-        {
-          "id": "20261125-005-I01",
-          "type": "photo",
-          "title": "シンガポールのスカイライン",
-          "caption": "資料写真：東南アジアの都市国家シンガポールの街並み。日本企業も進出し、地域の経済やサービスを支えています。",
-          "is_reference": true,
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Singapore_Skyline_Panorama_%2854146978992%29.jpg/1280px-Singapore_Skyline_Panorama_%2854146978992%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Singapore_Skyline_Panorama_(54146978992).jpg",
-          "credit": "Mustang Joe",
-          "license": "CC0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
-        }
-      ],
-      "related": []
-    },
-    {
       "question_id": "20261125-008",
       "images": [
         {
@@ -377,25 +339,6 @@
       "related": []
     },
     {
-      "question_id": "20261125-009",
-      "images": [
-        {
-          "id": "20261125-009-I01",
-          "type": "photo",
-          "title": "三重県多度の森林",
-          "caption": "資料写真：野生動物がくらす森林の環境。人の生活圏に近い場所でのクマの出没については、安全を確かめながら対応する必要があります。",
-          "is_reference": true,
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Forest_and_Pyrus_calleryana_in_Tado.jpg/1280px-Forest_and_Pyrus_calleryana_in_Tado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Forest_and_Pyrus_calleryana_in_Tado.jpg",
-          "credit": "Alpsdake",
-          "license": "CC0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
-        }
-      ],
-      "related": []
-    },
-    {
       "question_id": "20261125-007",
       "images": [
         {
@@ -429,6 +372,63 @@
           "license": "CC BY-SA 3.0",
           "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
           "usage_notes": "CC BY-SA 3.0。作者名「Nome92」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-011",
+      "images": [
+        {
+          "id": "20261125-011-I01",
+          "type": "photo",
+          "title": "国会議事堂",
+          "caption": "資料写真：国の大切な仕事を行う国会議事堂。副首都の検討では、大きな災害が起きても国の仕事を続けられるしくみがテーマになります。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
+          "credit": "Ayumu Ozaki",
+          "license": "Public domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-012",
+      "images": [
+        {
+          "id": "20261125-012-I01",
+          "type": "photo",
+          "title": "宇宙から見た国際宇宙ステーション",
+          "caption": "資料写真：地球の周りを回る宇宙ステーションの一例。宇宙飛行士が長期間滞在し、科学実験を行う場所として使われます。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/STS-134_International_Space_Station_after_undocking.jpg/1280px-STS-134_International_Space_Station_after_undocking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:STS-134_International_Space_Station_after_undocking.jpg",
+          "credit": "NASA",
+          "license": "Public domain",
+          "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-013",
+      "images": [
+        {
+          "id": "20261125-013-I01",
+          "type": "map",
+          "title": "ソロモン諸島とオセアニア",
+          "caption": "資料地図：太平洋にあるソロモン諸島と、周辺のオセアニア地域を示した図。島国どうしや周辺国の協力は、地域の安全と深く関わります。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Solomon_Islands_and_Oceania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Solomon_Islands_and_Oceania.jpg",
+          "credit": "U.S. Central Intelligence Agency",
+          "license": "Public domain",
+          "license_url": "https://www.usa.gov/government-copyright",
+          "usage_notes": "米国中央情報局（CIA）提供のパブリックドメイン資料。CIAおよびWikimedia Commonsの掲載元を出典として表示。"
         }
       ],
       "related": []
