@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-23",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260523-001",
+      "news_date": "2026-05-23",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "核兵器不拡散条約（かくへいきふかくさんじょうやく）の会議が閉会",
+      "news_summary": "NPT運用検討会議が成果文書に合意できずに閉会した。",
+      "question": "2026年5月23日（日本時間）、ニューヨークで開かれていた核兵器不拡散条約の運用検討会議が、成果文書について全ての参加国の合意を得られないまま閉会したことを、外務省が発表しました。\n\n核兵器不拡散条約を表すアルファベットの略称（りゃくしょう）は何ですか？",
+      "choices": [
+        "FTA",
+        "NPT",
+        "WHO",
+        "WTO"
+      ],
+      "correct_index": 1,
+      "explanation": "NPTは核兵器を持つ国を増やさないこと、核兵器を減らすこと、原子力を平和のために利用することを三つの柱とする国際条約です。1970年に効力を持ち、日本も参加しています。原則として5年ごとに条約の運用を検討する会議が開かれます。",
+      "keywords": [
+        "NPT",
+        "核兵器不拡散条約",
+        "核軍縮（かくぐんしゅく）"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/danwa/pageit_000001_02977.html"
+        }
+      ]
+    }
+  ]
+}

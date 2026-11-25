@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-20",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260520-001",
@@ -30,6 +30,39 @@
         {
           "name": "東北大学",
           "url": "https://www.tohoku.ac.jp/japanese/2026/05/press20260520-03-daphnia.html"
+        }
+      ]
+    },
+    {
+      "id": "20260520-002",
+      "news_date": "2026-05-20",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "北海道で約6600万年前の小惑星（しょうわくせい）衝突（しょうとつ）の証拠（しょうこ）を発見",
+      "news_summary": "東北大学などが北海道東部で白亜紀末の環境変化を示す地層の発見を発表した。",
+      "question": "2026年5月20日、東北大学などは、北海道東部で約6600万年前の小惑星の衝突の影響（えいきょう）を示す地層を確認したと発表しました。世界の生物や環境が大きく変化した時代を知る手がかりとなります。\n\n地層に残った、この時代に栄えていた恐竜（きょうりゅう）などの生物の体や生活のあとを何といいますか？",
+      "choices": [
+        "化石",
+        "火山灰",
+        "鉱石",
+        "地下水"
+      ],
+      "correct_index": 0,
+      "explanation": "化石とは、昔の生物の体や足あとなどが地層に残ったものです。化石の種類や地層に含まれる物質を調べると、当時の環境や地層ができた時代を知る手がかりになります。約6600万年前には小惑星の衝突にともない、多くの生物が絶滅（ぜつめつ）しました。",
+      "keywords": [
+        "化石",
+        "地層",
+        "小惑星"
+      ],
+      "sources": [
+        {
+          "name": "東北大学",
+          "url": "https://www.tohoku.ac.jp/japanese/2026/05/press20260519-01-kpg.html"
+        },
+        {
+          "name": "海洋研究開発機構",
+          "url": "https://www.jamstec.go.jp/j/about/press_release/20260520/"
         }
       ]
     }

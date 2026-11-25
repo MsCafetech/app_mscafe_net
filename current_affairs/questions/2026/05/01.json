@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-01",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260501-001",
+      "news_date": "2026-05-01",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "水俣病（みなまたびょう）の公式確認から70年",
+      "news_summary": "熊本県水俣市で水俣病の公式確認70年の記念式典が開かれた。",
+      "question": "2026年5月1日、熊本県水俣市で、水俣病の公式確認から70年となる日に、亡くなった人々をしのぶ式典が開かれました。公害による健康被害を防ぐため、教訓を次の世代に伝えることが大切です。\n\n水俣病の原因となった物質は何ですか？",
+      "choices": [
+        "カドミウム",
+        "メチル水銀",
+        "二酸化硫黄（にさんかいおう）",
+        "一酸化炭素"
+      ],
+      "correct_index": 1,
+      "explanation": "水俣病は、工場の排水（はいすい）に含まれていたメチル水銀が魚などの体にたまり、それを食べた人が神経の病気になる公害病です。1956年に公式確認されました。イタイイタイ病、新潟（にいがた）水俣病、四日市ぜんそくと合わせて四大公害病と呼ばれます。",
+      "keywords": [
+        "水俣病",
+        "四大公害病",
+        "メチル水銀"
+      ],
+      "sources": [
+        {
+          "name": "熊本放送（TBS NEWS DIG）",
+          "url": "https://newsdig.tbs.co.jp/articles/-/2638859?display=1"
+        },
+        {
+          "name": "国立水俣病総合研究センター",
+          "url": "https://nimd.env.go.jp/archives/faq/"
+        }
+      ]
+    }
+  ]
+}

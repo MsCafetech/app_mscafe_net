@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-26T07:05:00+09:00",
+  "last_updated": "2026-11-26T07:08:03.533+09:00",
   "language": "ja",
-  "total_questions": 180,
-  "total_files": 104,
+  "total_questions": 186,
+  "total_files": 109,
   "files": [
     {
       "date": "2026-11-26",
@@ -492,10 +492,28 @@
       "revision": 2
     },
     {
+      "date": "2026-05-26",
+      "path": "questions/2026/05/26.json",
+      "question_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-05-25",
+      "path": "questions/2026/05/25.json",
+      "question_count": 1,
+      "revision": 1
+    },
+    {
       "date": "2026-05-24",
       "path": "questions/2026/05/24.json",
       "question_count": 1,
       "revision": 2
+    },
+    {
+      "date": "2026-05-23",
+      "path": "questions/2026/05/23.json",
+      "question_count": 1,
+      "revision": 1
     },
     {
       "date": "2026-05-21",
@@ -506,8 +524,14 @@
     {
       "date": "2026-05-20",
       "path": "questions/2026/05/20.json",
+      "question_count": 2,
+      "revision": 3
+    },
+    {
+      "date": "2026-05-18",
+      "path": "questions/2026/05/18.json",
       "question_count": 1,
-      "revision": 2
+      "revision": 1
     },
     {
       "date": "2026-05-17",
@@ -526,6 +550,12 @@
       "path": "questions/2026/05/04.json",
       "question_count": 1,
       "revision": 2
+    },
+    {
+      "date": "2026-05-01",
+      "path": "questions/2026/05/01.json",
+      "question_count": 1,
+      "revision": 1
     },
     {
       "date": "2026-04-30",
