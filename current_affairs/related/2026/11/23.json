@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-23",
   "language": "ja",
-  "question_count": 3,
-  "related_count": 3,
+  "question_count": 4,
+  "related_count": 6,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -68,6 +68,80 @@
             {
               "name": "外務省",
               "url": "https://www.mofa.go.jp/mofaj/area/asean/page25_001325.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261123-004",
+      "related": [
+        {
+          "id": "20261123-004-R01",
+          "relation_type": "answer",
+          "title": "インフレーションとは何か",
+          "description": "インフレーションとは、物やサービスの値段が全体として上がり、お金で買える量が少なくなる状態です。例えば、同じ金額で買える食べ物や日用品が以前より少なくなると、家計は物価が上がったと感じます。ただし、一つの商品だけの値上がりではなく、多くの品目の平均的な動きを見ることが大切です。値上がりには、原材料費や輸送費、需要と供給、為替など様々な理由が関わります。ニュースでは、何の価格が、どの期間に、どれくらい変わったかを確かめましょう。",
+          "relationship": "正解のインフレーションを、物価上昇が生活に及ぼす影響から理解する知識。",
+          "keywords": [
+            "インフレーション",
+            "物価",
+            "家計",
+            "価格"
+          ],
+          "sources": [
+            {
+              "name": "総務省統計局「消費者物価指数（CPI）」",
+              "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
+            },
+            {
+              "name": "日本銀行「2％の物価安定の目標」",
+              "url": "https://www.boj.or.jp/mopo/outline/target.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261123-004-R02",
+          "relation_type": "question",
+          "title": "消費者物価指数（CPI）の仕組み",
+          "description": "消費者物価指数（CPI）は、家庭が日常生活で買う商品やサービスの価格が、平均してどう変わったかを表す数字です。統計局は、食料、服、電気・ガス、交通、教育などを入れた「買い物かご」を考え、同じ中身を買うためのお金の変化を指数で示します。各品目は、家庭がどれくらいお金を使うかに応じて重みを付けて計算されます。そのため、CPIは一つの店や一つの商品ではなく、暮らし全体に近い物価の動きを知る目安になります。",
+          "relationship": "10月の消費者物価指数の発表を理解するための、CPIの基本知識。",
+          "keywords": [
+            "CPI",
+            "消費者物価指数",
+            "統計",
+            "買い物かご"
+          ],
+          "sources": [
+            {
+              "name": "総務省統計局「消費者物価指数に関するFAQ」",
+              "url": "https://www.stat.go.jp/library/faq/faq17/faq17a03.html"
+            },
+            {
+              "name": "総務省統計局「消費者物価指数（CPI）」",
+              "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
+            }
+          ]
+        },
+        {
+          "id": "20261123-004-R03",
+          "relation_type": "question",
+          "title": "物価上昇率の見方",
+          "description": "物価のニュースでは、「前年同月比」がよく使われます。これは、今年の同じ月の価格を、1年前の同じ月と比べて、何パーセント変わったかを見る方法です。季節によって値段が変わりやすい野菜や果物もあるため、生鮮食品を除いた指数など、目的に合わせた数字も公表されます。総合指数だけを見るのではなく、食料、エネルギー、サービスのどこが変化したのかを確かめると、値上がりの背景を考えやすくなります。数字の比べ方を知ることが、経済ニュースを正しく読む第一歩です。",
+          "relationship": "CPI発表の数値を、前年同月比や品目別の変化から読み取る知識。",
+          "keywords": [
+            "前年同月比",
+            "生鮮食品",
+            "エネルギー",
+            "物価上昇率"
+          ],
+          "sources": [
+            {
+              "name": "総務省統計局「消費者物価指数（CPI）」",
+              "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
+            },
+            {
+              "name": "日本銀行「消費者物価指数／消費者物価」",
+              "url": "https://www.boj.or.jp/about/education/oshiete/glossary/economy/e02.htm"
             }
           ]
         }
