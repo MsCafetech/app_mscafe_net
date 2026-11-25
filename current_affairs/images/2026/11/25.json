@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 24,
-  "image_count": 34,
+  "related_count": 25,
+  "image_count": 35,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -614,7 +614,26 @@
           "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-012-R02",
+          "images": [
+            {
+              "id": "20261125-012-R02-I01",
+              "type": "diagram",
+              "title": "宇宙ステーションのモジュール構成",
+              "caption": "資料図：宇宙ステーションは、役割の異なる部分（モジュール）をロケットで運び、宇宙でつないでつくられます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/ISS_configuration_2019-08.png/1280px-ISS_configuration_2019-08.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:ISS_configuration_2019-08.png",
+              "credit": "NASA and various contributors",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供を含むパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-013",
