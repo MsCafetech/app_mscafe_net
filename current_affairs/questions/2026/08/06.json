@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-06",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260806-001",
+      "news_date": "2026-08-06",
+      "category": "history_culture",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "広島で被爆（ひばく）81年の平和記念式典",
+      "news_summary": "広島市で平和記念式典が開かれ、市長が核兵器の廃絶を求めました。",
+      "question": "2026年8月6日、広島市で平和記念式典が開かれました。市長は平和宣言で核兵器（かくへいき）のない世界を目指すよう呼びかけました。\n\n広島に原子爆弾（げんしばくだん）が投下されたのは何年ですか？",
+      "choices": [
+        "1937年",
+        "1941年",
+        "1945年",
+        "1951年"
+      ],
+      "correct_index": 2,
+      "explanation": "1945年8月6日に広島、同じ年の8月9日に長崎に原子爆弾が投下されました。日本は同年8月15日に降伏（こうふく）を国民に伝えました。広島では毎年8月6日に平和記念式典を開き、戦争の被害を伝え、世界の平和を願っています。",
+      "keywords": [
+        "広島",
+        "平和記念式典",
+        "第二次世界大戦",
+        "原爆"
+      ],
+      "sources": [
+        {
+          "name": "広島市",
+          "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/1036662/1003065/1015114"
+        },
+        {
+          "name": "首相官邸",
+          "url": "https://www.kantei.go.jp/jp/105/actions/202608/06hiroshima.html"
+        }
+      ]
+    }
+  ]
+}

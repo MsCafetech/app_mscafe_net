@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-31",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260531-001",
+      "news_date": "2026-05-31",
+      "category": "environment",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "石川県で本州初のトキ放鳥（ほうちょう）",
+      "news_summary": "羽咋市（はくいし）でトキを自然に放す式典が開かれた。",
+      "question": "2026年5月31日、石川県羽咋市で、本州で初めてトキを自然に放す取り組みが行われました。トキが野生で生活できる環境を整え、生息する地域を広げることが目的です。\n\n石川県の北部から日本海に突き出ている半島はどれですか？",
+      "choices": [
+        "能登半島（のとはんとう）",
+        "紀伊半島（きいはんとう）",
+        "房総半島（ぼうそうはんとう）",
+        "知床半島（しれとこはんとう）"
+      ],
+      "correct_index": 0,
+      "explanation": "能登半島は石川県の北部を中心に日本海に突き出した半島です。トキは田や水辺などで小さな生き物を食べます。野生への復帰を進めるには、鳥を放すだけでなく、食べ物が得られる水辺や安心して生活できる森林を守ることも重要です。",
+      "keywords": [
+        "トキ",
+        "能登半島",
+        "野生復帰"
+      ],
+      "sources": [
+        {
+          "name": "石川県",
+          "url": "https://www.pref.ishikawa.lg.jp/sizen/toki/houcyoushikiten_2026k.html"
+        }
+      ]
+    }
+  ]
+}

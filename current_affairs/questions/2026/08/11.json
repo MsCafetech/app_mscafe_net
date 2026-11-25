@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-11",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20260811-001",
+      "news_date": "2026-08-11",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "H3ロケットで人工衛星（じんこうえいせい）みちびき7号機の打ち上げ成功",
+      "news_summary": "JAXAがH3ロケット9号機でみちびき7号機を打ち上げました。",
+      "question": "2026年8月11日、宇宙航空研究開発機構（うちゅうこうくうけんきゅうかいはつきこう、JAXA）は、種子島宇宙センターからH3ロケット9号機を打ち上げ、みちびき7号機を予定の軌道（きどう）に乗せることに成功しました。\n\nみちびきの主な役割は何ですか？",
+      "choices": [
+        "海底の石油を直接採取する",
+        "地上の位置や正確な時刻を知るための情報を送る",
+        "月の岩石を地球に持ち帰る",
+        "太陽の光を地上に集めて発電する"
+      ],
+      "correct_index": 1,
+      "explanation": "みちびきは日本の衛星測位（えいせいそくい）システムを構成する人工衛星です。衛星から送られる電波を利用して位置や時刻を知ることができます。カーナビやスマートフォン、農業機械の自動運転など、さまざまな分野で役立つ技術です。",
+      "keywords": [
+        "H3ロケット",
+        "みちびき",
+        "JAXA",
+        "衛星測位"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/08/20260811-1_j.html"
+        },
+        {
+          "name": "内閣府",
+          "url": "https://qzss.go.jp/info/information/qzs-7_260811.html"
+        },
+        {
+          "name": "Science Portal",
+          "url": "https://scienceportal.jst.go.jp/newsflash/20260812_n01/"
+        }
+      ]
+    },
+    {
+      "id": "20260811-002",
+      "news_date": "2026-08-11",
+      "category": "society",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "山の日10周年、岐阜県（ぎふけん）で記念全国大会",
+      "news_summary": "山の日の記念全国大会が岐阜県高山市で開催された。",
+      "question": "2026年8月11日、岐阜県高山市で第10回「山の日」記念全国大会の式典が開かれました。山の日は2016年から国民の祝日となり、2026年で10年を迎えました。\n\n山の日は、何に感謝することを目的とした祝日ですか？",
+      "choices": [
+        "海から受けるめぐみ",
+        "山から受けるめぐみ",
+        "働く人々の努力",
+        "長い歴史を持つ文化"
+      ],
+      "correct_index": 1,
+      "explanation": "山の日は、山に親しみ、山のめぐみに感謝するための祝日です。森林は雨水をたくわえたり、さまざまな生物のすみかになったりします。日本には山地が多く、山の自然を大切にすることは、私たちの生活を守ることにもつながります。",
+      "keywords": [
+        "山の日",
+        "国民の祝日",
+        "岐阜県",
+        "森林"
+      ],
+      "sources": [
+        {
+          "name": "第10回山の日記念全国大会実行委員会",
+          "url": "https://yamanohi-gifu-2026.pref.gifu.lg.jp/"
+        },
+        {
+          "name": "内閣府",
+          "url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html"
+        },
+        {
+          "name": "文部科学省",
+          "url": "https://www.mext.go.jp/joho-hiroba/sp/archive/2026entrance.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-20",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260720-001",
+      "news_date": "2026-07-20",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "海の日30周年、海のめぐみを祝う記念行事",
+      "news_summary": "海の日記念行事2026が東京国際クルーズターミナルで開催された。",
+      "question": "2026年7月20日、祝日となって30年を迎えた「海の日」を記念する行事が東京都で開かれました。日本は海に囲まれ、広い海域を持つ国です。\n\n日本が水産資源などを利用する権利を持つ排他的経済水域（はいたてきけいざいすいいき）は、原則として基線から何海里までの範囲（はんい）ですか？",
+      "choices": [
+        "12海里",
+        "24海里",
+        "100海里",
+        "200海里"
+      ],
+      "correct_index": 3,
+      "explanation": "排他的経済水域は、原則として領海の幅を測る基線から200海里までの海域のうち、領海を除いた部分です。沿岸（えんがん）の国には魚や海底資源などを調査し、利用し、管理する権利があります。日本のような海に囲まれた国にとって重要な海域です。",
+      "keywords": [
+        "海の日30周年",
+        "排他的経済水域",
+        "EEZ",
+        "海洋資源"
+      ],
+      "sources": [
+        {
+          "name": "内閣府",
+          "url": "https://www.cao.go.jp/press/new_wave/20260717_01.html"
+        },
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kaiji01_hh_000594.html"
+        },
+        {
+          "name": "マイナビニュース",
+          "url": "https://news.mynavi.jp/article/20260724-4735730/"
+        }
+      ]
+    }
+  ]
+}

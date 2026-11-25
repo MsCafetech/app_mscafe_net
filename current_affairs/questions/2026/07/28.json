@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-28",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260728-001",
+      "news_date": "2026-07-28",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "熊本県で最大震度（しんど）7の地震",
+      "news_summary": "熊本県熊本地方で地震が発生し、最大震度7を観測しました。",
+      "question": "2026年7月28日、熊本県熊本地方で地震が発生し、宇城市などで最大震度7を観測しました。地震の情報には震度とマグニチュードが使われます。\n\n震度が表しているものは何ですか？",
+      "choices": [
+        "地震が起きた場所の深さ",
+        "地震そのものの規模（きぼ）",
+        "ある場所でのゆれの強さ",
+        "地震が続いた時間"
+      ],
+      "correct_index": 2,
+      "explanation": "震度は、ある場所で地面がどのくらい強くゆれたかを表します。一方、マグニチュードは地震そのものの規模を表します。同じ地震でも、地震が発生した場所からの距離（きょり）や地面の性質などによって、観測される震度は異（こと）なります。",
+      "keywords": [
+        "熊本地震",
+        "震度",
+        "マグニチュード",
+        "防災"
+      ],
+      "sources": [
+        {
+          "name": "気象庁",
+          "url": "https://ds.data.jma.go.jp/svd/eqev/data/gaikyo/monthly/202607/202607tokushuu_1_1.pdf"
+        }
+      ]
+    }
+  ]
+}
