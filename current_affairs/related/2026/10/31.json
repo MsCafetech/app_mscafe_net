@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-31",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261031-001",
+      "related": [
+        {
+          "id": "20261031-001-R01",
+          "relation_type": "question",
+          "title": "海底トンネルの構造と排水",
+          "description": "青函（せいかん）トンネルは全長53.85キロメートルですが、そのうち海の下を通る部分は23.3キロメートルです。海峡（かいきょう）の最もせまい場所を直線で結ぶのではなく、水深の浅い場所を選んで造られました。海底からトンネルまでには少なくとも100メートルの地層があります。それでも地下水がわき出るため、トンネルの低い場所に水を集め、ポンプで地上へ送り出しています。海底トンネルでは、列車が通る道を造るだけでなく、水を取り除く設備を維持（いじ）することも安全な運行に欠かせません。",
+          "relationship": "第2青函トンネル構想の背景となる既存トンネルの建設技術と安全対策。",
+          "keywords": [
+            "青函トンネル",
+            "海底トンネル",
+            "地下水",
+            "排水"
+          ],
+          "sources": [
+            {
+              "name": "JR北海道 青函トンネルの構造",
+              "url": "https://www.jrhokkaido.co.jp/network/seikan/02.html"
+            },
+            {
+              "name": "鉄道・運輸機構 青函トンネル",
+              "url": "https://www.jrtt.go.jp/construction/outline/seikan-tunnel.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "question_count": 1,
+  "related_count": 1
+}
