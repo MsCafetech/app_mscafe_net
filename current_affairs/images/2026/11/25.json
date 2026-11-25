@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 7,
-  "image_count": 17,
+  "related_count": 9,
+  "image_count": 19,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -95,6 +95,24 @@
               "usage_notes": "CC BY 4.0。提供者「Department of Foreign Affairs and Trade」とライセンスを表示。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-001-R04",
+          "images": [
+            {
+              "id": "20261125-001-R04-I01",
+              "type": "photo",
+              "title": "スマートフォンの緊急地震速報",
+              "caption": "資料写真：スマートフォンに表示された緊急地震速報の例。地震が起きたときは、公式の情報を確かめ、安全な行動につなげることが大切です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Earthquake-Early-Warning-on-Smartphone_01.jpg/1280px-Earthquake-Early-Warning-on-Smartphone_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Earthquake-Early-Warning-on-Smartphone_01.jpg",
+              "credit": "RuinDig/Yuki Uchida",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "CC BY 4.0。作者名「RuinDig/Yuki Uchida」とライセンスを表示。"
+            }
+          ]
         }
       ]
     },
@@ -163,6 +181,24 @@
               "is_reference": true,
               "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA_Elbe_flood_2002_before_after.jpg/1280px-NASA_Elbe_flood_2002_before_after.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
               "source_url": "https://commons.wikimedia.org/wiki/File:NASA_Elbe_flood_2002_before_after.jpg",
+              "credit": "NASA",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-002-R01",
+          "images": [
+            {
+              "id": "20261125-002-R01-I01",
+              "type": "photo",
+              "title": "地球資源技術衛星（ERTS）",
+              "caption": "資料写真：地球の周りを回り、地表や雲などを観測する人工衛星。地球観測衛星は広い地域をくり返し調べ、防災や環境の研究に役立ちます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Earth_Resources_Technology_Satellite_%28ERTS%29_-_GPN-2003-00022.jpg/1280px-Earth_Resources_Technology_Satellite_%28ERTS%29_-_GPN-2003-00022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Earth_Resources_Technology_Satellite_(ERTS)_-_GPN-2003-00022.jpg",
               "credit": "NASA",
               "license": "Public domain",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
