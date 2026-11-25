@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-15",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260915-001",
@@ -30,6 +30,35 @@
         {
           "name": "農林水産省",
           "url": "https://www.maff.go.jp/j/press/yusyutu_kokusai/chiiki/260915.html"
+        }
+      ]
+    },
+    {
+      "id": "20260915-002",
+      "news_date": "2026-09-15",
+      "category": "society",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "100歳（ひゃくさい）以上の人口が初めて10万人を超える",
+      "news_summary": "厚生労働省が100歳以上の人口が10万7677人に達したと発表した。",
+      "question": "2026年9月15日、厚生労働省は、9月1日時点の全国の100歳以上の人が10万7677人になったと発表しました。初めて10万人を超え、長生きする人が増えていることが分かりました。\n\n日本の人口について、高齢化率（こうれいかりつ）を計算するとき、何才以上の人の割合を使いますか？",
+      "choices": [
+        "65才以上",
+        "60才以上",
+        "70才以上",
+        "75才以上"
+      ],
+      "correct_index": 0,
+      "explanation": "高齢化率とは、総人口にしめる65才以上の人口の割合のことです。長生きする人が増えることや、生まれる子どもの数が減ることなどにより、この割合は高くなります。医療や介護（かいご）、年金などの制度を考える上で大切な指標です。",
+      "keywords": [
+        "高齢化率",
+        "人口",
+        "社会保障"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000533434.html"
         }
       ]
     }

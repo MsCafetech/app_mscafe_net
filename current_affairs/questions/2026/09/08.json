@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-08",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260908-001",
@@ -30,6 +30,35 @@
         {
           "name": "国土交通省",
           "url": "https://www.mlit.go.jp/report/press/mizukokudo04_hh_000322.html"
+        }
+      ]
+    },
+    {
+      "id": "20260908-002",
+      "news_date": "2026-09-08",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国際学力調査で日本が加盟国の中で全3分野1位",
+      "news_summary": "PISAの結果が公表され、日本はOECD加盟国の中で科学・読解・数学の全3分野で首位となった。",
+      "question": "2026年9月8日、国際的な学力調査PISAの結果が発表され、日本は科学、読解、数学の3分野すべてで経済協力開発機構（OECD）の加盟国の中で1位となりました。学んだ知識を生活の中で活用する力などを調べる調査です。\n\nPISAが主な対象としている年れいは何才ですか？",
+      "choices": [
+        "10才",
+        "12才",
+        "15才",
+        "18才"
+      ],
+      "correct_index": 2,
+      "explanation": "PISAは主に15才の生徒を対象に、約3年ごとに行われる学力調査です。単に知識を覚えているかではなく、実生活の問題を解決するために知識や技能を使えるかを調べます。2025年の調査には91の国と地域が参加しました。",
+      "keywords": [
+        "PISA",
+        "OECD",
+        "国際学力調査"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000531936.html"
         }
       ]
     }

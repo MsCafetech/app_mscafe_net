@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-02",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260902-001",
@@ -35,6 +35,35 @@
         {
           "name": "気象庁",
           "url": "https://www.jma.go.jp/jma/press/kako08.html"
+        }
+      ]
+    },
+    {
+      "id": "20260902-002",
+      "news_date": "2026-09-02",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連が世界の気温の上昇（じょうしょう）について警告",
+      "news_summary": "国連環境計画は産業革命前からの世界の気温上昇が数年以内に1.5度を超える見通しを示した。",
+      "question": "2026年9月2日、国連環境計画（UNEP）は、産業革命前と比べた世界の気温の上昇が、数年以内に1.5度を超える可能性が高いと発表しました。気候変動の影響（えいきょう）を小さくするため、温室効果ガスを減らす必要があるとしています。\n\n世界の気温の上昇を1.5度におさえる努力をするという目標を定めた、2015年採択（さいたく）の国際的な取り決めは何ですか？",
+      "choices": [
+        "京都議定書",
+        "パリ協定",
+        "ラムサール条約",
+        "ワシントン条約"
+      ],
+      "correct_index": 1,
+      "explanation": "パリ協定は2015年に採択された地球温暖化対策の国際的な取り決めです。世界の気温の上昇を産業革命前に比べて2度より十分低く保ち、1.5度におさえる努力をすることを目標としています。各国が温室効果ガスの排出（はいしゅつ）を減らす取り組みを進めています。",
+      "keywords": [
+        "パリ協定",
+        "地球温暖化",
+        "UNEP"
+      ],
+      "sources": [
+        {
+          "name": "国連環境計画（UNEP）",
+          "url": "https://www.unep.org/en/news-and-stories/press-release/unep-world-set-cross-15degc-global-warming-can-still-limit-adapt-and"
         }
       ]
     }
