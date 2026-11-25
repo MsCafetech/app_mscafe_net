@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 26,
-  "image_count": 36,
+  "related_count": 28,
+  "image_count": 38,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -537,6 +537,24 @@
               "usage_notes": "CC BY-SA 4.0。作者名「M.Bitton」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-007-R01",
+          "images": [
+            {
+              "id": "20261125-007-R01-I01",
+              "type": "diagram",
+              "title": "水銀が食物連鎖でたまるしくみ",
+              "caption": "資料図：水中の水銀は、小さな生き物から魚へと食べられる過程でたまりやすくなります。魚介類を通して人の体に入る経路を考える資料です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/MercuryFoodChain-02.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:MercuryFoodChain-02.png",
+              "credit": "Ground Truth Trekking; derivative work by Osado",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "CC BY 3.0。原著作権者Ground Truth Trekkingおよび派生版作者Osado、ライセンスを表示する。"
+            }
+          ]
         }
       ]
     },
@@ -649,6 +667,24 @@
               "license": "Public domain",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
               "usage_notes": "NASA提供を含むパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-012-R05",
+          "images": [
+            {
+              "id": "20261125-012-R05-I01",
+              "type": "diagram",
+              "title": "国際宇宙ステーションの水再生システム",
+              "caption": "資料図：宇宙ステーションでは、水を回収してきれいにし、できるだけ再利用します。宇宙で長く暮らすための生命維持の工夫です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/ISS_Water_Recovery_System.svg/1280px-ISS_Water_Recovery_System.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:ISS_Water_Recovery_System.svg",
+              "credit": "NASA",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         }
