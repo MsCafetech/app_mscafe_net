@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-17",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260717-001",
@@ -30,6 +30,40 @@
         {
           "name": "衆議院",
           "url": "https://www.shugiin.go.jp/internet/itdb_housei.nsf/html/housei/22120260717061.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260717-002",
+      "news_date": "2026-07-17",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "皇族（こうぞく）の身分に関する法律の改正が成立",
+      "news_summary": "皇族数の確保を目的とした皇室典範等の改正法が成立した。",
+      "question": "2026年7月17日、皇族の人数を確保するため、皇室（こうしつ）に関する法律の改正が国会で成立しました。女性皇族が結婚後も皇族の身分を保てるようにすることなどが盛り込まれました。\n\n皇族の身分や天皇の位を受けつぐ順序などを定めている法律は何ですか？",
+      "choices": [
+        "国会法",
+        "皇室典範（こうしつてんぱん）",
+        "地方自治法",
+        "公職選挙法"
+      ],
+      "correct_index": 1,
+      "explanation": "皇室典範は皇位の継承（けいしょう）や皇族の身分などについて定めた法律です。現在の皇室典範は1947年に制定されました。2026年の改正法は7月10日に衆議院で、7月17日に参議院で可決され、成立しました。",
+      "keywords": [
+        "皇室典範",
+        "皇族",
+        "国会",
+        "法律"
+      ],
+      "sources": [
+        {
+          "name": "衆議院「法律案等審査経過概要 皇室典範等の一部を改正する法律案」",
+          "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/gianrireki/221_221_kakuho_64.htm"
+        },
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_politics/articles/000519863.html"
         }
       ]
     }
