@@ -2,41 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 5,
+  "question_count": 4,
   "questions": [
-    {
-      "id": "20261125-010",
-      "news_date": "2026-11-24",
-      "difficulty": 2,
-      "question_type": "related_knowledge",
-      "category": "history_culture",
-      "news_title": "和食の日と日本の食文化",
-      "news_summary": "11月24日の和食の日に合わせ、北海道農政事務所が食文化を伝える展示を企画しました。",
-      "question": "2026年11月24日、和食の日に合わせ、北海道農政事務所では日本の食文化を伝える展示の開始が予定されました。地域の料理や食の伝統を次の世代に伝える取り組みです。\n\n2013年に和食を無形文化遺産（むけいぶんかいさん）に登録した国際機関はどれですか。",
-      "choices": [
-        "WHO（世界保健機関）",
-        "FAO（国際連合食糧農業機関）",
-        "ILO（国際労働機関）",
-        "ユネスコ（国際連合教育科学文化機関）"
-      ],
-      "correct_index": 3,
-      "explanation": "ユネスコは教育や科学、文化を通して国際協力を進める機関です。和食は2013年に無形文化遺産に登録されました。料理だけでなく、季節の食材を大切にすることや、正月などの年中行事に関わる食の習わしも含みます。",
-      "keywords": [
-        "和食",
-        "ユネスコ",
-        "無形文化遺産（むけいぶんかいさん）"
-      ],
-      "sources": [
-        {
-          "name": "北海道農政事務所",
-          "url": "https://www.maff.go.jp/hokkaido/anzen/seikatsu/shouhisyacorner/261124.html"
-        },
-        {
-          "name": "農林水産省",
-          "url": "https://www.maff.go.jp/j/keikaku/syokubunka/ich/"
-        }
-      ]
-    },
     {
       "id": "20261125-011",
       "news_date": "2026-11-25",

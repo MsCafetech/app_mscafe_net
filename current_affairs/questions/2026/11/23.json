@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-23",
   "language": "ja",
-  "question_count": 17,
+  "question_count": 11,
   "questions": [
     {
       "id": "20261123-001",
@@ -34,159 +34,6 @@
         {
           "name": "原子力発電環境整備機構",
           "url": "https://www.numo.or.jp/topics/202626102015.html"
-        }
-      ]
-    },
-    {
-      "id": "20261123-002",
-      "news_date": "2026-11-19",
-      "category": "economy",
-      "difficulty": 2,
-      "question_type": "current_affairs",
-      "news_title": "APEC首脳（しゅのう）会議",
-      "news_summary": "中国でAPECの会議が開かれ、地域の経済協力について話し合われた。",
-      "question": "2026年11月19日、中国の深センでAPECの会議が開かれ、日本などが貿易やデジタル技術を通じた経済協力について話し合いました。国や地域をこえた経済活動を進めるための会議です。\n\nAPECの日本語での名称はどれですか。",
-      "choices": [
-        "アフリカ連合",
-        "北大西洋条約機構（きこう）",
-        "アジア太平洋経済協力",
-        "世界保健機関"
-      ],
-      "correct_index": 2,
-      "explanation": "APECはアジア太平洋経済協力のことです。1989年に始まり、日本やアメリカ、中国など21の国・地域が参加しています。貿易や投資を進め、太平洋周辺の経済の発展につなげることを目指しています。",
-      "keywords": [
-        "APEC",
-        "貿易",
-        "経済協力"
-      ],
-      "sources": [
-        {
-          "name": "外務省",
-          "url": "https://www.mofa.go.jp/mofaj/ecm/apec/pageit_000001_03339.html"
-        }
-      ]
-    },
-    {
-      "id": "20261123-003",
-      "news_date": "2026-11-17",
-      "category": "international",
-      "difficulty": 2,
-      "question_type": "current_affairs",
-      "news_title": "日本とASEANの協力",
-      "news_summary": "日本とASEANの会議がフィリピンで開かれ、経済協力に関する共同声明がまとめられた。",
-      "question": "2026年11月17日、フィリピンのマニラで日本とASEANの首脳（しゅのう）会議が開かれました。経済の安定や防災など、地域の共通課題に協力して取り組むことが話し合われました。\n\nASEANが結成された地域の国として正しいものはどれですか。",
-      "choices": [
-        "インドネシア",
-        "インド",
-        "メキシコ",
-        "エジプト"
-      ],
-      "correct_index": 0,
-      "explanation": "ASEANは東南アジア諸国連合のことです。1967年にインドネシア、マレーシア、フィリピン、シンガポール、タイの5か国で結成されました。地域の平和や経済の発展を目指して協力しています。",
-      "keywords": [
-        "ASEAN",
-        "東南アジア諸国連合",
-        "国際協力"
-      ],
-      "sources": [
-        {
-          "name": "外務省",
-          "url": "https://www.mofa.go.jp/mofaj/a_o/rp/pageit_000001_00010.html"
-        }
-      ]
-    },
-    {
-      "id": "20261123-004",
-      "news_date": "2026-11-20",
-      "category": "economy",
-      "difficulty": 2,
-      "question_type": "current_affairs",
-      "news_title": "10月の消費者物価指数を発表",
-      "news_summary": "全国の消費者物価指数は前年同月より2.3％上がった。",
-      "question": "2026年11月20日、総務省は10月の全国の消費者物価指数が前年の同じ月に比べて2.3％上がったと発表しました。物の値段の変化は、人々の生活や家計に関係します。\n\n物やサービスの価格が全体として上がり続けることを何といいますか。",
-      "choices": [
-        "デフレーション",
-        "インフレーション",
-        "円高",
-        "円安"
-      ],
-      "correct_index": 1,
-      "explanation": "インフレーションは、物やサービスの価格が全体として上がり続ける現象（げんしょう）です。反対に価格が下がり続けることをデフレーションといいます。消費者物価指数は、家庭が買う物やサービスの価格の変化を表す指標（しひょう）です。",
-      "keywords": [
-        "消費者物価指数",
-        "インフレーション",
-        "物価"
-      ],
-      "sources": [
-        {
-          "name": "総務省統計局",
-          "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
-        },
-        {
-          "name": "政府統計の総合窓口",
-          "url": "https://www.e-stat.go.jp/release-calendar/detail/00200573/202611200830"
-        }
-      ]
-    },
-    {
-      "id": "20261123-005",
-      "news_date": "2026-11-19",
-      "category": "science",
-      "difficulty": 2,
-      "question_type": "current_affairs",
-      "news_title": "深海のウニの体内から新種の二枚貝",
-      "news_summary": "京都大学などがオーストラリア南方の深海で見つかった新種の二枚貝について発表した。",
-      "question": "2026年11月19日、京都大学などの研究グループは、水深約4000～5000メートルの深海にすむウニの食道から、新種の二枚貝が見つかったと発表しました。長年分からなかった貝の正体が明らかになり、深海の生物の多様性を知る手がかりとなりました。\n\n二枚貝の仲間はどれですか。",
-      "choices": [
-        "サザエ",
-        "アワビ",
-        "アサリ",
-        "タコ"
-      ],
-      "correct_index": 2,
-      "explanation": "アサリは二枚の貝がらを持つ二枚貝です。ハマグリやシジミも同じ仲間です。サザエやアワビは巻き貝の仲間で、タコは外側に貝がらを持ちません。これらはすべて軟体動物（なんたいどうぶつ）の仲間に分けられます。",
-      "keywords": [
-        "深海",
-        "二枚貝",
-        "軟体動物"
-      ],
-      "sources": [
-        {
-          "name": "京都大学",
-          "url": "https://www.kyoto-u.ac.jp/ja/research-news/2026-11-19-0"
-        }
-      ]
-    },
-    {
-      "id": "20261123-006",
-      "news_date": "2026-11-19",
-      "category": "international",
-      "difficulty": 2,
-      "question_type": "current_affairs",
-      "news_title": "ロヒンギャ問題で国際司法裁判所が判決",
-      "news_summary": "国際司法裁判所がロヒンギャに対するミャンマーの国家責任を認める判決を出した。",
-      "question": "2026年11月19日、国際司法裁判所は、ミャンマーで少数民族ロヒンギャに対して行われた重大な人権侵害（じんけんしんがい）について、ミャンマーの国家責任を認める判決を出しました。国際社会で人権を守るための重要な判断です。\n\n国際司法裁判所は、どの国際機関の主要な機関ですか。",
-      "choices": [
-        "世界貿易機関",
-        "国際通貨基金",
-        "世界保健機関",
-        "国際連合"
-      ],
-      "correct_index": 3,
-      "explanation": "国際司法裁判所（ICJ）は国際連合の主要な機関の一つで、国家間の法律上の争いを解決する役割があります。国際連合には、世界の平和と安全を守るための安全保障理事会や、加盟国が話し合う総会などの機関もあります。",
-      "keywords": [
-        "国際司法裁判所",
-        "国際連合",
-        "人権"
-      ],
-      "sources": [
-        {
-          "name": "共同通信（熊本日日新聞）",
-          "url": "https://www.kumanichi.com/articles/2059850"
-        },
-        {
-          "name": "ヒューマン・ライツ・ウォッチ",
-          "url": "https://www.hrw.org/ja/news/2026/11/19/world-court-finds-myanmar-committed-rohingya-genocide"
         }
       ]
     },
@@ -274,36 +121,6 @@
         {
           "name": "インド政府報道情報局",
           "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2340389&lang=1&reg=3"
-        }
-      ]
-    },
-    {
-      "id": "20261123-010",
-      "news_date": "2026-11-20",
-      "category": "international",
-      "difficulty": 3,
-      "question_type": "current_affairs",
-      "news_title": "国連事務総長の後任選びが難航（なんこう）",
-      "news_summary": "国連の安全保障理事会で次の事務総長を選ぶための非公式投票が行われたが、候補を一本化できなかった。",
-      "question": "2026年11月20日、国際連合の安全保障理事会で、年末に任期を終える事務総長の後任を選ぶための9回目の非公式投票が行われました。常任理事国の意見が一致せず、候補を一人にしぼることができませんでした。\n\n国連安全保障理事会の常任理事国は何か国ですか。",
-      "choices": [
-        "3か国",
-        "5か国",
-        "10か国",
-        "15か国"
-      ],
-      "correct_index": 1,
-      "explanation": "安全保障理事会の常任理事国は、アメリカ、イギリス、フランス、中国、ロシアの5か国です。ほかに10か国の非常任理事国があります。常任理事国は重要な決定に対して拒否権（きょひけん）を持ちます。",
-      "keywords": [
-        "国際連合",
-        "安全保障理事会",
-        "常任理事国",
-        "拒否権"
-      ],
-      "sources": [
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3102955?display=1"
         }
       ]
     },

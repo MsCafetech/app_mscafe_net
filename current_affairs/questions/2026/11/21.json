@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-21",
   "language": "ja",
-  "question_count": 4,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261121-001",
@@ -73,72 +73,6 @@
         {
           "name": "宮内庁",
           "url": "https://www.kunaicho.go.jp/learn/institution/seido/seido01.html"
-        }
-      ]
-    },
-    {
-      "id": "20261121-003",
-      "news_date": "2026-11-20",
-      "category": "economy",
-      "difficulty": 2,
-      "question_type": "current_affairs",
-      "news_title": "日経平均株価が大幅に下落",
-      "news_summary": "東京株式市場の日経平均株価が前日より3007円56銭下がった。",
-      "question": "2026年11月20日、東京株式市場では日経平均株価が前日より約5％下がりました。アメリカの株式市場での値下がりが日本にも広がり、人工知能（AI）や半導体に関係する会社の株式などが売られました。\n\n日経平均株価は主に何の動きを示す指標（しひょう）ですか。",
-      "choices": [
-        "日本の代表的な企業の株価",
-        "日本の家庭が買う商品の価格",
-        "日本から海外への輸出額",
-        "日本で働く人の平均給料"
-      ],
-      "correct_index": 0,
-      "explanation": "日経平均株価は、東京証券取引所（とうきょうしょうけんとりひきじょ）に上場する代表的な225社の株価をもとに計算する指標です。株式は会社が資金を集めるために発行するもので、その価格は買いたい人と売りたい人の動きによって変化します。",
-      "keywords": [
-        "日経平均株価",
-        "株式市場",
-        "半導体"
-      ],
-      "sources": [
-        {
-          "name": "共同通信（熊本日日新聞）",
-          "url": "https://kumanichi.com/articles/2060148"
-        },
-        {
-          "name": "日本経済新聞社",
-          "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261120&idx=nk225"
-        }
-      ]
-    },
-    {
-      "id": "20261121-004",
-      "news_date": "2026-11-20",
-      "category": "society",
-      "difficulty": 2,
-      "question_type": "current_affairs",
-      "news_title": "季節性インフルエンザの報告数が増加",
-      "news_summary": "厚生労働省が11月9日から15日までの発生状況を発表し、前の週より報告数が増えた。",
-      "question": "2026年11月20日、厚生労働省（こうせいろうどうしょう）は11月9日から15日までのインフルエンザの発生状況（はっせいじょうきょう）を発表しました。決められた医療機関（いりょうきかん）からの報告によると、全国で前の週より患者（かんじゃ）が増えました。\n\nインフルエンザの予防接種（よぼうせっしゅ）でワクチンを使う主な目的は何ですか。",
-      "choices": [
-        "体内の水分を増やすこと",
-        "体温を常に低く保つこと",
-        "病気になった後の熱を直接下げること",
-        "体の免疫（めんえき）の働きを利用し、発病や重症化（じゅうしょうか）の危険を減らすこと"
-      ],
-      "correct_index": 3,
-      "explanation": "ワクチンは体の免疫の仕組みを利用して、病原体に対する備えを作ります。インフルエンザのワクチンは発病の可能性や重症化の危険を減らすために役立ちます。予防には、手洗いや部屋の空気の入れかえなども大切です。",
-      "keywords": [
-        "インフルエンザ",
-        "ワクチン",
-        "免疫"
-      ],
-      "sources": [
-        {
-          "name": "CBnews",
-          "url": "https://www.cbnews.jp/news/entry/20261120173048"
-        },
-        {
-          "name": "厚生労働省",
-          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/infulenza/index.html"
         }
       ]
     }
