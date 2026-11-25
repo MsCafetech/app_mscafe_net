@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-05",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260905-001",
@@ -30,6 +30,40 @@
         {
           "name": "AFPBB News",
           "url": "https://www.afpbb.com/articles/-/3651548"
+        }
+      ]
+    },
+    {
+      "id": "20260905-002",
+      "news_date": "2026-09-05",
+      "question_type": "current_affairs",
+      "category": "history_culture",
+      "difficulty": 2,
+      "news_title": "寛永行幸（かんえいぎょうこう）400年記念式典",
+      "news_summary": "京都で寛永行幸から400年の節目を記念する式典が開催された。",
+      "question": "2026年9月5日、京都で寛永行幸400年の記念式典が開かれました。1626年、江戸幕府（えどばくふ）の三代将軍である徳川家光（とくがわいえみつ）が天皇を二条城に迎え、能楽などでもてなした出来事を記念するものです。\n\n徳川家光の時代に進められ、大名が江戸と自分の領地を行き来するよう定めた制度は何ですか？",
+      "choices": [
+        "参勤交代（さんきんこうたい）",
+        "廃藩置県（はいはんちけん）",
+        "太閤検地（たいこうけんち）",
+        "地租改正（ちそかいせい）"
+      ],
+      "correct_index": 0,
+      "explanation": "参勤交代は、大名が一定の期間を江戸で過ごし、その後自分の領地に戻る制度です。家光の時代の1635年に武家諸法度（ぶけしょはっと）で定められました。大名が江戸に向かうために利用する街道や宿場町の発達にもつながりました。",
+      "keywords": [
+        "寛永行幸",
+        "二条城",
+        "徳川家光",
+        "参勤交代"
+      ],
+      "sources": [
+        {
+          "name": "京都府",
+          "url": "https://www.pref.kyoto.jp/kaneigyoko/kinenshikitenkoenkai.html"
+        },
+        {
+          "name": "京都府",
+          "url": "https://www.pref.kyoto.jp/bunkachoiten/news/kanei.html"
         }
       ]
     }
