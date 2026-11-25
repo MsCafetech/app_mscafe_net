@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-16",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260416-001",
+      "news_date": "2026-04-16",
+      "category": "geography",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "柏崎刈羽（かしわざきかりわ）原子力発電所6号機が営業運転を再開",
+      "news_summary": "東京電力の柏崎刈羽原子力発電所6号機が営業運転を再開した。",
+      "question": "2026年4月16日、東京電力の柏崎刈羽原子力発電所6号機が営業運転を再開しました。日本の電力の安定供給と原子力発電の安全確保について考える上で重要な出来事です。\n\n柏崎刈羽原子力発電所は何県にありますか？",
+      "choices": [
+        "石川県",
+        "新潟県",
+        "福井県",
+        "富山県"
+      ],
+      "correct_index": 1,
+      "explanation": "柏崎刈羽原子力発電所は新潟県の柏崎市と刈羽村にまたがり、日本海に面しています。新潟県は米の生産がさかんな地域でもあります。原子力発電所を運転するには、事故を防ぐ安全対策や周辺地域の防災体制を整えることが大切です。",
+      "keywords": [
+        "柏崎刈羽原子力発電所",
+        "新潟県",
+        "電力"
+      ],
+      "sources": [
+        {
+          "name": "柏崎市",
+          "url": "https://www.city.kashiwazaki.lg.jp/soshikiichiran/sogokikakubu/genkihasshinka/1/24/2026release/202604/48811.html"
+        }
+      ]
+    }
+  ]
+}

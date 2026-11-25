@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-28",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260428-001",
+      "news_date": "2026-04-28",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "UAEがOPECからの脱退（だったい）を発表",
+      "news_summary": "アラブ首長国連邦（れんぽう）が5月1日にOPECなどを離れると発表した。",
+      "question": "2026年4月28日、アラブ首長国連邦（UAE）は5月1日付でOPECとOPECプラスから脱退すると発表しました。世界の石油の生産や価格に関わる重要な動きです。\n\nOPECの日本語での名称はどれですか？",
+      "choices": [
+        "石油輸出国機構（せきゆゆしゅつこくきこう）",
+        "世界貿易機関",
+        "国際原子力機関",
+        "経済協力開発機構"
+      ],
+      "correct_index": 0,
+      "explanation": "OPECは石油を輸出する国々が石油政策について協力するための組織（そしき）で、1960年に設立されました。本部はオーストリアのウィーンにあります。日本は石油の多くを海外から輸入しているため、世界の石油供給の変化は国内の生活にも関係します。",
+      "keywords": [
+        "OPEC",
+        "石油輸出国機構",
+        "UAE"
+      ],
+      "sources": [
+        {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/markets/commodities/uae-says-it-quits-opec-opec-statement-2026-04-28/"
+        }
+      ]
+    }
+  ]
+}
