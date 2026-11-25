@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-26T08:00:16.651+09:00",
+  "last_updated": "2026-11-26T08:01:41.346+09:00",
   "language": "ja",
-  "total_questions": 91,
-  "total_related": 221,
-  "total_files": 36,
+  "total_questions": 93,
+  "total_related": 223,
+  "total_files": 38,
   "files": [
     {
       "date": "2026-11-25",
@@ -170,6 +170,20 @@
     {
       "date": "2026-11-01",
       "path": "2026/11/01.json",
+      "question_count": 1,
+      "related_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-09-29",
+      "path": "2026/09/29.json",
+      "question_count": 1,
+      "related_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-09-25",
+      "path": "2026/09/25.json",
       "question_count": 1,
       "related_count": 1,
       "revision": 1
