@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 3,
-  "related_count": 15,
+  "question_count": 9,
+  "related_count": 32,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -348,6 +348,362 @@
             {
               "name": "外務省「ソロモン諸島基礎データ」",
               "url": "https://www.mofa.go.jp/mofaj/area/solomon/data.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-014",
+      "related": [
+        {
+          "id": "20261125-014-R01",
+          "relation_type": "question",
+          "title": "安全保障と外交の関係",
+          "description": "安全保障（あんぜんほしょう）とは、国民の命や暮らし、国の領土などを守るための取り組みです。防衛だけでなく、外国との話し合いや協力によって争いを防ぐ外交も重要です。日本の国家安全保障戦略は、経済や技術、情報などの幅広い分野も対象としています。例えば、外国との貿易や重要な物資の確保も、人々の生活の安定に関係します。国の安全を考えるときには、自衛隊の活動だけでなく、国際関係や経済の仕組みにも目を向けることが大切です。",
+          "relationship": "三文書の見直しの背景にある安全保障の広い意味を理解する。",
+          "keywords": [
+            "安全保障",
+            "外交",
+            "国際協力"
+          ],
+          "sources": [
+            {
+              "name": "防衛省「令和8年版防衛白書 第II部ダイジェスト」",
+              "url": "https://www.mod.go.jp/j/press/wp/wp2026/html/nd200000.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-014-R02",
+          "relation_type": "question",
+          "title": "防衛政策の変化と防衛大綱",
+          "description": "日本では1976年から、自衛隊をどのように整備し、維持するかを示す防衛計画の大綱（たいこう）が作られてきました。2022年12月には、それに代わる国家防衛戦略が決まりました。国際情勢や技術が変化すると、国が安全を守るために必要と考える対策も変わります。そこで、政府はそれまでの方針を点検し、新しい目標や取り組み方を考えます。このように、長期的な政策は一度決めれば終わりというものではなく、社会の変化に合わせて見直されることがあります。",
+          "relationship": "三文書の成立に至る政策の歴史と見直しの理由を理解する。",
+          "keywords": [
+            "防衛大綱",
+            "国家防衛戦略",
+            "政策"
+          ],
+          "sources": [
+            {
+              "name": "防衛省「国家防衛戦略の概要」",
+              "url": "https://www.mod.go.jp/j/press/wp/wp2026/html/n220200000.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-014-R03",
+          "relation_type": "question",
+          "title": "防衛産業とものづくり",
+          "description": "自衛隊が使う装備品を長く使い続けるには、製造する会社だけでなく、部品を供給する会社や点検・修理を行う人々の協力も必要です。開発から製造、整備、使い終えた後の処理までの流れをライフサイクルといいます。2023年には、防衛産業の生産を支えるための防衛生産基盤強化法が施行されました。部品の供給が途切れたり、技術を持つ企業が事業を続けられなくなったりすると、必要な設備を維持することも難しくなるため、産業の基盤が重視されています。",
+          "relationship": "国内の装備品生産が見直しの対象となる理由を知る。",
+          "keywords": [
+            "防衛産業",
+            "部品供給",
+            "生産基盤"
+          ],
+          "sources": [
+            {
+              "name": "防衛省「防衛生産基盤強化法と基本方針」",
+              "url": "https://www.mod.go.jp/j/press/wp/wp2026/html/n420101000.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-015",
+      "related": [
+        {
+          "id": "20261125-015-R01",
+          "relation_type": "question",
+          "title": "ライチョウの季節に合わせた羽の色",
+          "description": "ライチョウはキジの仲間で、日本では本州中部の高い山などにすんでいます。夏の羽には黒や茶色、白の模様がありますが、冬には尾を除いてほぼ白くなります。岩や草が多い季節と、雪におおわれる季節で体の色が変わることは、周りの風景に溶け込み、敵に見つかりにくくするのに役立ちます。このように、生物の体の特徴がすむ環境に合っていることを適応（てきおう）といいます。ライチョウの羽の変化は、高山で生きる動物の工夫を学ぶよい例です。",
+          "relationship": "乗鞍岳にすむライチョウの高山環境への適応を理解する。",
+          "keywords": [
+            "ライチョウ",
+            "保護色",
+            "適応"
+          ],
+          "sources": [
+            {
+              "name": "環境省「ライチョウ」",
+              "url": "https://www.env.go.jp/nature/kisho/hogozoushoku/raicho.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-015-R02",
+          "relation_type": "question",
+          "title": "高山帯の植物と食物連鎖",
+          "description": "ライチョウは主に山の高いところに生える植物の芽や種子を食べ、春から夏には昆虫も食べます。高山帯（こうざんたい）では、低い気温や強い風などに耐えられる植物が生えています。環境省は、ニホンジカなどが高山に入り、植物を食べてしまうことで、ライチョウのすむ環境が悪くなるおそれを指摘しています。鳥だけを守ろうとしても、食べ物や巣を作る場所がなくなれば生きていけません。生物を守るには、周りの植物やほかの動物とのつながりにも注意が必要です。",
+          "relationship": "ライチョウが減少する背景を生態系のつながりから考える。",
+          "keywords": [
+            "高山帯",
+            "食物連鎖",
+            "生息環境"
+          ],
+          "sources": [
+            {
+              "name": "環境省「ライチョウ」",
+              "url": "https://www.env.go.jp/nature/kisho/hogozoushoku/raicho.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-015-R03",
+          "relation_type": "question",
+          "title": "野生復帰と生息地の保全",
+          "description": "絶滅（ぜつめつ）のおそれがある動物を守る方法には、自然の中ですめる場所を整えることや、人が管理する環境で繁殖させて野生に戻すことがあります。ライチョウの保護では、中央アルプスで個体数を回復させる事業が行われ、放鳥した後も生きているかどうかを調べています。また、新潟県の火打山では、ライチョウの生活に適した高山植物の回復を目指す作業も続いています。放鳥するだけでなく、長く生きて子孫を残せる環境を維持することが大切です。",
+          "relationship": "ライチョウの個体数を回復させる保護活動を学ぶ。",
+          "keywords": [
+            "野生復帰",
+            "保護増殖",
+            "生息地"
+          ],
+          "sources": [
+            {
+              "name": "環境省「令和4年度ライチョウ保護増殖事業」",
+              "url": "https://chubu.env.go.jp/shinetsu/pre_2022/post_239.html"
+            },
+            {
+              "name": "環境省「火打山におけるライチョウ生息地環境改善事業の成果」",
+              "url": "https://chubu.env.go.jp/shinetsu/pre_2025/press_00015.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-016",
+      "related": [
+        {
+          "id": "20261125-016-R01",
+          "relation_type": "question",
+          "title": "税関と輸入の手続き",
+          "description": "外国から日本に品物を運び込むときには、港や空港などにある税関（ぜいかん）で手続きをします。輸入する人は、品物の種類や数量、価格などを届け出ます。税関は書類を調べ、必要に応じて実物も確認し、関税や消費税などを徴収します。また、法律で輸入が禁止されている品物が入ってこないようにする仕事もあります。さらに、輸出入の数量や金額は貿易統計を作るための資料になります。税関は税金を集めるだけでなく、安全な貿易と社会の暮らしを支える機関です。",
+          "relationship": "関税が実際に徴収される貿易の仕組みを学ぶ。",
+          "keywords": [
+            "税関",
+            "通関",
+            "貿易統計"
+          ],
+          "sources": [
+            {
+              "name": "ジェトロ「輸入通関の目的と手続きの流れ」",
+              "url": "https://www.jetro.go.jp/world/qa/04A-010137.html"
+            },
+            {
+              "name": "財務省「わが国の関税制度の概要」",
+              "url": "https://www.mof.go.jp/policy/customs_tariff/summary/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-016-R02",
+          "relation_type": "question",
+          "title": "関税率と国際的な約束",
+          "description": "関税の割合である関税率は、すべての輸入品で同じとは限りません。品物の種類や、それがどの国で作られたかなどによって変わることがあります。世界貿易機関（WTO）の協定では、加盟国が品物ごとに一定の関税率を超えないことなどを約束しています。また、国や地域どうしが自由貿易協定を結び、特定の品物の関税を下げたりなくしたりする場合もあります。国際貿易では、それぞれの国の法律だけでなく、相手国との約束が重要な役割を果たしているのです。",
+          "relationship": "国ごとに異なる関税案を国際貿易のルールから理解する。",
+          "keywords": [
+            "関税率",
+            "WTO",
+            "自由貿易協定"
+          ],
+          "sources": [
+            {
+              "name": "税関「税率決定までの流れ」",
+              "url": "https://www.customs.go.jp/tariff/mikata/mikata2_ex.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261125-016-R03",
+          "relation_type": "answer",
+          "title": "関税と国内産業の保護",
+          "description": "関税には国の収入を得る働きのほか、国内の産業を守る働きがあります。例えば、外国で安く作られた商品に関税がかかると、輸入する会社の負担が増えるため、国内の商品との価格差が小さくなる場合があります。その一方で、外国から材料や商品を買う会社の費用が増え、消費者が支払う価格が上がることも考えられます。税金を上げる政策がすべての人に同じ利益をもたらすわけではありません。生産者、輸入業者、消費者それぞれへの影響を考えることが大切です。",
+          "relationship": "正解の関税が経済活動に与える影響を理解する。",
+          "keywords": [
+            "関税",
+            "国内産業",
+            "消費者"
+          ],
+          "sources": [
+            {
+              "name": "財務省「わが国の関税制度の概要」",
+              "url": "https://www.mof.go.jp/policy/customs_tariff/summary/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-017",
+      "related": [
+        {
+          "id": "20261125-017-R01",
+          "relation_type": "question",
+          "title": "EUの単一市場と四つの自由",
+          "description": "ヨーロッパ連合（EU）は、加盟国の間で商品、サービス、人、資本が自由に移動できる単一市場を発展させてきました。資本とは、事業などに使われるお金や財産のことです。国ごとに異なる決まりが多いと、会社は外国に商品を売るたびに手続きや費用が必要になります。共通の仕組みを整えることで、会社はより広い市場で活動し、人々も多くの商品から選べるようになります。自動車のようにさまざまな国で部品を作り、販売する産業では、国境を越えた取引が特に重要です。",
+          "relationship": "EU域内の産業政策を単一市場の仕組みから理解する。",
+          "keywords": [
+            "EU",
+            "単一市場",
+            "四つの自由"
+          ],
+          "sources": [
+            {
+              "name": "欧州委員会「Single market」",
+              "url": "https://commission.europa.eu/topics/single-market_en"
+            }
+          ]
+        },
+        {
+          "id": "20261125-017-R02",
+          "relation_type": "question",
+          "title": "日本とEUの経済連携協定",
+          "description": "日本とヨーロッパ連合（EU）の経済連携協定（EPA）は、2019年2月1日に発効しました。経済連携協定は、国や地域どうしが貿易や経済活動を行いやすくするための取り決めです。関税などの貿易の障壁（しょうへき）を減らすことで、海外の商品を買ったり、自国の製品を外国に売ったりする機会を広げます。欧州委員会の資料では、協定発効後に日本とEUの間の商品やサービスの取引が増えています。自動車の政策を考える際にも、両者の経済的なつながりが重要です。",
+          "relationship": "電気自動車をめぐる日本とEUの経済関係を学ぶ。",
+          "keywords": [
+            "日EU・EPA",
+            "貿易",
+            "経済連携"
+          ],
+          "sources": [
+            {
+              "name": "欧州委員会「EU-Japan Economic Partnership Agreement」",
+              "url": "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/japan/eu-japan-agreement/factsheets-and-guides/factsheet-eu-japan-economic-partnership-agreement-epa_en?prefLang=ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-018",
+      "related": [
+        {
+          "id": "20261125-018-R01",
+          "relation_type": "question",
+          "title": "個人消費支出物価指数の見方",
+          "description": "個人消費支出物価指数（PCE物価指数）は、アメリカの人々が購入する商品やサービスの価格がどのように変わったかを表す指標です。食べ物や衣服などの品物だけでなく、さまざまなサービスへの支出も対象になります。前年の同じ月に比べて指数が3.8％高いということは、対象となる価格全体が上がっていることを表します。ただし、すべての商品が同じ割合で値上がりしたという意味ではありません。物価の変化を調べることで、家計や経済の動きを知る手がかりになります。",
+          "relationship": "ニュースの物価指数が何を表しているか理解する。",
+          "keywords": [
+            "PCE物価指数",
+            "個人消費",
+            "前年同月比"
+          ],
+          "sources": [
+            {
+              "name": "米国経済分析局「Personal Consumption Expenditures Price Index」",
+              "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index/"
+            }
+          ]
+        },
+        {
+          "id": "20261125-018-R02",
+          "relation_type": "question",
+          "title": "食品とエネルギーを除く物価指数",
+          "description": "アメリカでは、通常のPCE物価指数に加え、食品とエネルギーの価格を除いたコアPCE物価指数も発表されています。食品やエネルギーの価格は、天候や国際情勢などによって短い期間に大きく変動することがあります。その影響を除くことで、物価が長く上がり続けているのか、それとも一時的な変動が大きいのかを考える手がかりになります。ただし、食品やエネルギーが生活に重要でないという意味ではありません。目的に応じて二つの指標を使い分けることが大切です。",
+          "relationship": "物価上昇の背景を統計の見方から考える。",
+          "keywords": [
+            "コアPCE",
+            "食品",
+            "エネルギー"
+          ],
+          "sources": [
+            {
+              "name": "米国経済分析局「PCE Price Index Excluding Food and Energy」",
+              "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy"
+            }
+          ]
+        },
+        {
+          "id": "20261125-018-R03",
+          "relation_type": "answer",
+          "title": "中央銀行の金利政策と雇用",
+          "description": "アメリカの中央銀行制度である連邦準備制度は、物価を安定させることと、できるだけ多くの人が仕事に就けるようにすることを目指します。金利を引き上げると、お金を借りる費用が高くなり、家計や会社が買い物や投資を控える場合があります。すると商品の需要が弱まり、物価上昇を抑える働きが期待されます。一方、経済活動が弱くなり、働く人の雇用にも影響することがあります。中央銀行は物価と雇用の両方を見ながら政策を判断し、効果が現れるまでには時間もかかります。",
+          "relationship": "正解のFRBが物価と雇用に果たす役割を理解する。",
+          "keywords": [
+            "中央銀行",
+            "金利",
+            "雇用"
+          ],
+          "sources": [
+            {
+              "name": "FRB「How does the Federal Reserve affect inflation and employment?」",
+              "url": "https://www.federalreserve.gov/faqs/money_12856.htm"
+            },
+            {
+              "name": "FRB「Inflation (PCE)」",
+              "url": "https://www.federalreserve.gov/economy-at-a-glance-inflation-pce.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-019",
+      "related": [
+        {
+          "id": "20261125-019-R01",
+          "relation_type": "question",
+          "title": "二つの小惑星が作る連星系",
+          "description": "小惑星（しょうわくせい）には、一つの天体の周りを別の小さな天体が回っているものがあります。ディディモスとディモルフォスは、そのような二つの小惑星の組です。小さいディモルフォスは、大きいディディモスの引力によって、その周りを回っています。2022年のDARTの実験では、小さい方の小惑星に探査機を衝突させ、その公転周期（こうてんしゅうき）が変化したかを調べました。二つの天体の動きを観測することによって、衝突が軌道に与えた影響を確かめられます。",
+          "relationship": "実験の対象となった小惑星の構造を学ぶ。",
+          "keywords": [
+            "ディディモス",
+            "ディモルフォス",
+            "公転周期"
+          ],
+          "sources": [
+            {
+              "name": "ESA「Hera Frequently Asked Questions」",
+              "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-frequently-asked-questions"
+            },
+            {
+              "name": "NASA「Planetary Defense - DART」",
+              "url": "https://science.nasa.gov/planetary-defense-dart/"
+            }
+          ]
+        },
+        {
+          "id": "20261125-019-R02",
+          "relation_type": "question",
+          "title": "DARTによる軌道変更と観測",
+          "description": "NASAのDARTは、地球防衛の技術を確かめるために行われた探査計画です。2022年に探査機がディモルフォスに衝突した後、世界各地の望遠鏡で小惑星の動きが調べられました。NASAの発表では、大きい小惑星の周りを一周する時間が約11時間55分から約11時間23分に短くなりました。この変化は、人間が意図的に天体の運動を変えられることを示しています。ただし、どのような天体でも同じように軌道を変えられるとは限らないため、天体の性質を調べる必要があります。",
+          "relationship": "地球防衛実験の成果を観測データから理解する。",
+          "keywords": [
+            "DART",
+            "軌道変更",
+            "天体観測"
+          ],
+          "sources": [
+            {
+              "name": "NASA「Planetary Defense - DART」",
+              "url": "https://science.nasa.gov/planetary-defense-dart/"
+            }
+          ]
+        },
+        {
+          "id": "20261125-019-R03",
+          "relation_type": "question",
+          "title": "ヘラが衝突後の小惑星を調べる理由",
+          "description": "DARTの衝突で小惑星の動きが変わったことは地球から観測できましたが、衝突によって表面がどのように変化したのかを詳しく知るには、近くから調べる必要があります。ヨーロッパ宇宙機関の探査機ヘラは、小惑星に近づいて、表面の形や構造などを観測します。2026年11月25日の発表では、ディモルフォスに大きなくぼみができたことが報告されました。衝突前後の変化を調べることは、将来別の小惑星の軌道を変える方法を検討するときにも役立ちます。",
+          "relationship": "ヘラの観測の目的と国際的な地球防衛研究のつながりを学ぶ。",
+          "keywords": [
+            "ヘラ",
+            "クレーター",
+            "地球防衛"
+          ],
+          "sources": [
+            {
+              "name": "ESA「Hera reveals stadium-sized asteroid crater from spacecraft impact」",
+              "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-reveals-stadium-sized-asteroid-crater-left-after-spacecraft-impact"
+            },
+            {
+              "name": "ESA「Hera Frequently Asked Questions」",
+              "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/hera-frequently-asked-questions"
             }
           ]
         }
