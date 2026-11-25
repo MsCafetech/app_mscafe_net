@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 17,
-  "image_count": 27,
+  "related_count": 19,
+  "image_count": 29,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -406,6 +406,42 @@
               "license": "CC BY 2.0",
               "license_url": "https://creativecommons.org/licenses/by/2.0/",
               "usage_notes": "CC BY 2.0。作者名「SEDACMaps」とライセンスを表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-006-R04",
+          "images": [
+            {
+              "id": "20261125-006-R04-I01",
+              "type": "satellite",
+              "title": "東アジアをおおう黄砂",
+              "caption": "衛星観測画像：東アジアに広がる黄砂のようす。乾いた地域で舞い上がった細かな土ぼこりが、風に乗って遠くまで運ばれます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Asia_dust_2000-04-07.jpg/1280px-Asia_dust_2000-04-07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Asia_dust_2000-04-07.jpg",
+              "credit": "NASA",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-006-R05",
+          "images": [
+            {
+              "id": "20261125-006-R05-I01",
+              "type": "diagram",
+              "title": "地球観測衛星のネットワーク",
+              "caption": "資料図：地球を観測する人工衛星の一例。広い地域の観測データを共有すると、空気のよごれがどのように広がるかを調べる手がかりになります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Committee_on_Earth_Observation_Satellites_%28CEOS%29_-_Fleet_%28SVS5508_-_ceos_fleet_12_white_4k_60fps_00001_print%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Committee_on_Earth_Observation_Satellites_(CEOS)_-_Fleet_(SVS5508_-_ceos_fleet_12_white_4k_60fps_00001_print).jpg",
+              "credit": "NASA Scientific Visualization Studio / USRA・Kel Elkins",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         }
