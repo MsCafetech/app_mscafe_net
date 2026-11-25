@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-29",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 1,
   "questions": [
     {
       "id": "20260529-001",
@@ -30,36 +30,6 @@
         {
           "name": "テレビ朝日",
           "url": "https://news.tv-asahi.co.jp/news_economy/articles/000508569.html"
-        }
-      ]
-    },
-    {
-      "id": "20260529-002",
-      "news_date": "2026-05-29",
-      "category": "geography",
-      "difficulty": 1,
-      "question_type": "current_affairs",
-      "news_title": "つくば市の人口が水戸市を上回る",
-      "news_summary": "2025年国勢調査の速報でつくば市が人口で水戸市を上回ったことが明らかになった。",
-      "question": "2026年5月29日、総務省が発表した2025年国勢調査の速報によると、つくば市の人口が水戸市を上回り、茨城県（いばらきけん）で最も人口が多い市になったことが分かりました。\n\n茨城県の県庁所在地はどこですか？",
-      "choices": [
-        "水戸市",
-        "つくば市",
-        "日立市",
-        "土浦市"
-      ],
-      "correct_index": 0,
-      "explanation": "茨城県の県庁所在地は水戸市です。都道府県の行政の中心となる場所と、その都道府県で最も人口の多い市は必ずしも同じではありません。つくば市は研究機関が集まる筑波（つくば）研究学園都市としても知られています。",
-      "keywords": [
-        "茨城県",
-        "水戸市",
-        "つくば市",
-        "県庁所在地"
-      ],
-      "sources": [
-        {
-          "name": "NEWSつくば",
-          "url": "https://newstsukuba.jp/61091/29/05/"
         }
       ]
     }
