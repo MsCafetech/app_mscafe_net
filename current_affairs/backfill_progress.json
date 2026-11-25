@@ -7,15 +7,17 @@
   ],
   "published_question_counts": {
     "2026-11-23": 6,
-    "2026-04-01": 10
+    "2026-04-01": 10,
+    "2026-04-02": 1
   },
   "new_question_counts": {
     "2026-11-23": 3,
-    "2026-04-01": 10
+    "2026-04-01": 10,
+    "2026-04-02": 1
   },
   "zero_question_dates": [],
   "next_date": "2026-04-02",
-  "last_updated": "2026-11-25T09:38:51+09:00",
+  "last_updated": "2026-11-25T10:45:07+09:00",
   "completed": false,
   "partial_dates": {
     "2026-11-23": {
@@ -24,6 +26,14 @@
       "commit_ids": [
         "c25611805dca4a7cbbed670317bf9448ebc30f57",
         "fa921d4502bb18822073398a0910a7c2d25f82bf"
+      ]
+    },
+    "2026-04-02": {
+      "status": "partial",
+      "reason": "アルテミスIIの本文確認・正式公開済み。その他の主要巡回先の調査が未完了。",
+      "commit_ids": [
+        "3e039a14e74d514dc3bc32e2cfab0b4edf4511d2",
+        "53a50ebca863d106f69931cfd25b1095c7895aed"
       ]
     }
   },
