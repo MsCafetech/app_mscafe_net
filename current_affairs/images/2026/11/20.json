@@ -2,10 +2,34 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 2,
-  "related_count": 2,
-  "image_count": 4,
+  "question_count": 3,
+  "related_count": 3,
+  "image_count": 5,
   "questions": [
+    {
+      "question_id": "20261120-001",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261120-001-R03",
+          "images": [
+            {
+              "id": "20261120-001-R03-I01",
+              "type": "photo",
+              "title": "太平洋クロマグロ",
+              "caption": "資料写真：葛西臨海公園で撮影された太平洋クロマグロ。広い海を回遊する魚の資源を守るには国際的な協力が重要です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Pacific_bluefin_tuna.jpg/960px-Pacific_bluefin_tuna.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Pacific_bluefin_tuna.jpg",
+              "credit": "aes256（色調整：Togabi）",
+              "license": "CC BY 2.1 JP",
+              "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+              "usage_notes": "撮影者・出典・ライセンスリンクを表示し、変更を明記。提供者の推奨を示唆しない。 元画像は色調整済み。"
+            }
+          ]
+        }
+      ]
+    },
     {
       "question_id": "20261120-003",
       "images": [

@@ -3,8 +3,8 @@
   "date": "2026-11-21",
   "language": "ja",
   "question_count": 1,
-  "related_count": 0,
-  "image_count": 1,
+  "related_count": 1,
+  "image_count": 2,
   "questions": [
     {
       "question_id": "20261121-001",
@@ -23,7 +23,26 @@
           "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261121-001-R01",
+          "images": [
+            {
+              "id": "20261121-001-R01-I01",
+              "type": "photo",
+              "title": "キラウエア火山の溶岩湖",
+              "caption": "資料写真：ハワイのキラウエア火山の溶岩湖を上空から撮影したもの。地下のマグマが地表に出ると溶岩と呼ばれます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Lava_Lake.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Lava_Lake.jpg",
+              "credit": "U.S. Geological Survey (USGS)",
+              "license": "Public Domain (USGS)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-USGS",
+              "usage_notes": "出典・提供元を表示。提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

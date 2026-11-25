@@ -2,10 +2,58 @@
   "schema_version": 1,
   "date": "2026-11-22",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 3,
-  "image_count": 4,
+  "question_count": 3,
+  "related_count": 5,
+  "image_count": 6,
   "questions": [
+    {
+      "question_id": "20261122-001",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261122-001-R03",
+          "images": [
+            {
+              "id": "20261122-001-R03-I01",
+              "type": "photo",
+              "title": "道路の除雪車",
+              "caption": "資料写真：北海道の千歳駅前で撮影された除雪車。前方の大きな板で道路の雪を押しのけることができます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Snowplow-Car.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Snowplow-Car.JPG",
+              "credit": "Cassiopeia sweet",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+              "usage_notes": "出典・提供元を表示。提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261122-003",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261122-003-R01",
+          "images": [
+            {
+              "id": "20261122-003-R01-I01",
+              "type": "photo",
+              "title": "塩化ナトリウムの結晶",
+              "caption": "資料写真：塩化ナトリウムの結晶。食塩の主な成分で、結晶は立方体に近い形になります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Sodium_chloride_-_crystals.jpg/960px-Sodium_chloride_-_crystals.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Sodium_chloride_-_crystals.jpg",
+              "credit": "Cristian V.",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "撮影者・出典・ライセンスリンクを表示し、変更を明記。提供者の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        }
+      ]
+    },
     {
       "question_id": "20261122-008",
       "images": [

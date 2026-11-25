@@ -21,9 +21,57 @@
         }
       ],
       "related": []
+    },
+    {
+      "question_id": "20261119-101",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261119-101-R01",
+          "images": [
+            {
+              "id": "20261119-101-R01-I01",
+              "type": "photo",
+              "title": "深海の熱水噴出孔にすむチューブワーム",
+              "caption": "資料写真：太平洋の深海の熱水噴出孔にすむチューブワーム。体内の細菌が化学物質から栄養を作り、光が届かない環境で生きています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Nur04507.jpg/960px-Nur04507.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nur04507.jpg",
+              "credit": "NOAA OAR/National Undersea Research Program (NURP)",
+              "license": "Public Domain (NOAA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NOAA",
+              "usage_notes": "出典・提供元を表示。提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261119-102",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261119-102-R01",
+          "images": [
+            {
+              "id": "20261119-102-R01-I01",
+              "type": "photo",
+              "title": "国際司法裁判所のある平和宮",
+              "caption": "資料写真：オランダのハーグにある平和宮。国際司法裁判所（ICJ）が置かれている建物です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Peace_Palace_The_Hague.jpg/960px-Peace_Palace_The_Hague.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Peace_Palace_The_Hague.jpg",
+              "credit": "Iamthestig",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "撮影者・出典・ライセンスリンクを表示し、変更を明記。提供者の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "question_count": 1,
-  "related_count": 0,
-  "image_count": 1
+  "question_count": 3,
+  "related_count": 2,
+  "image_count": 3
 }
