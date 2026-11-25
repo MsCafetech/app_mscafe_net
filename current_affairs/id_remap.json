@@ -105,7 +105,31 @@
       "new_date": "2026-11-20",
       "reason": "news/event date checked against source",
       "source": "https://news.tv-asahi.co.jp/news_international/articles/000549551.html"
+    },
+    {
+      "old_id": "20261121-003",
+      "new_id": "20261120-103",
+      "old_date": "2026-11-21",
+      "new_date": "2026-11-20",
+      "reason": "news/event date checked against source",
+      "source": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261120&idx=nk225"
+    },
+    {
+      "old_id": "20261121-004",
+      "new_id": "20261120-104",
+      "old_date": "2026-11-21",
+      "new_date": "2026-11-20",
+      "reason": "news/event date checked against source",
+      "source": "https://www.cbnews.jp/news/entry/20261120173048"
+    },
+    {
+      "old_id": "20261123-006",
+      "new_id": "20261119-102",
+      "old_date": "2026-11-23",
+      "new_date": "2026-11-19",
+      "reason": "news/event date checked against source",
+      "source": "https://www.kumanichi.com/articles/2059850"
     }
   ],
-  "last_updated": "2026-11-26T06:46:06.241+09:00"
+  "last_updated": "2026-11-26T06:47:51.906+09:00"
 }

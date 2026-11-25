@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-23",
   "language": "ja",
-  "question_count": 13,
-  "related_count": 47,
+  "question_count": 12,
+  "related_count": 44,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -22,81 +22,6 @@
             {
               "name": "原子力発電環境整備機構",
               "url": "https://www.numo.or.jp/q_and_a/100009.html"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "question_id": "20261123-006",
-      "related": [
-        {
-          "id": "20261123-006-R01",
-          "relation_type": "answer",
-          "title": "国際連合の主要機関と国際司法裁判所",
-          "description": "国際連合（国連）は、第二次世界大戦後の1945年に、戦争を防ぎ国どうしが協力するためにつくられた国際機関です。主要機関には、全加盟国が集まる総会、平和と安全を扱う安全保障理事会、国際司法裁判所などがあります。国際司法裁判所はオランダのハーグにあり、国どうしが国際法をどう解釈・適用するかを争う事件を扱います。国連の中心的な仕組みを知ると、ニュースの国際問題を整理しやすくなり、世界の平和を考える土台にもなります。",
-          "relationship": "正解の国際連合の主要機関である国際司法裁判所の役割を深める知識です。",
-          "keywords": [
-            "国際連合",
-            "国際司法裁判所",
-            "主要機関",
-            "ハーグ"
-          ],
-          "sources": [
-            {
-              "name": "国際連合憲章 第14章：国際司法裁判所",
-              "url": "https://www.un.org/en/about-us/un-charter/chapter-14"
-            },
-            {
-              "name": "国際連合：主要機関",
-              "url": "https://www.un.org/en/about-us/main-bodies?sfnsn=mo"
-            }
-          ]
-        },
-        {
-          "id": "20261123-006-R02",
-          "relation_type": "question",
-          "title": "ICJとICCの違い",
-          "description": "国際司法裁判所（ICJ）と国際刑事裁判所（ICC）は名前が似ていますが、役割が異なります。ICJは国連の主要機関で、国家どうしの法律上の争いを国際法に基づいて解決し、国連機関などからの依頼には意見も示します。一方、ICCは戦争犯罪などを行ったと疑われる個人を裁く独立した裁判所です。『国を相手にするICJ』『個人を相手にするICC』と比べると、国際社会が人権を守る二つの仕組みを混同しにくくなります。",
-          "relationship": "ロヒンギャ問題で判断を示した国際司法裁判所と、似た名称の国際刑事裁判所を区別するための知識です。",
-          "keywords": [
-            "ICJ",
-            "ICC",
-            "国家間紛争",
-            "国際刑事裁判所"
-          ],
-          "sources": [
-            {
-              "name": "国連文書研究ガイド：国際司法裁判所",
-              "url": "https://research.un.org/en/docs/icj/introduction"
-            },
-            {
-              "name": "国際連合憲章 第14章：国際司法裁判所",
-              "url": "https://www.un.org/en/about-us/un-charter/chapter-14"
-            }
-          ]
-        },
-        {
-          "id": "20261123-006-R03",
-          "relation_type": "question",
-          "title": "ロヒンギャと人権・避難民の問題",
-          "description": "ロヒンギャはミャンマーのラカイン州に多く暮らしてきたイスラム教徒の少数民族です。2017年には暴力や迫害を逃れ、多くの人が隣国バングラデシュへ避難しました。人権は、国籍や民族、宗教の違いにかかわらず、誰もが尊重されるべき基本的な権利です。国境をこえる避難民の問題では、食料・住まい・教育を支える人道支援と、なぜ危険が起きたのかを国際社会が確かめ、再発を防ぐ取組が大切になります。安心して故郷で暮らせる条件を考えることも重要です。",
-          "relationship": "問題の背景にあるロヒンギャの人権状況と、国際社会の支援・再発防止の必要性に関する知識です。",
-          "keywords": [
-            "ロヒンギャ",
-            "ミャンマー",
-            "人権",
-            "避難民",
-            "バングラデシュ"
-          ],
-          "sources": [
-            {
-              "name": "国連人権高等弁務官事務所：ミャンマーのロヒンギャ等の人権状況",
-              "url": "https://bangkok.ohchr.org/reports/situation-human-rights-rohingya-muslims-and-other-minorities-myanmar"
-            },
-            {
-              "name": "国際司法裁判所：ガンビア対ミャンマー仮保全措置",
-              "url": "https://api.icj-cij.org/sites/default/files/case-related/178/178-20200123-PRE-01-00-EN.pdf"
             }
           ]
         }

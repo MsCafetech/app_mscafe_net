@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 7,
-  "related_count": 23,
+  "question_count": 9,
+  "related_count": 25,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -561,6 +561,52 @@
             {
               "name": "衆議院：日本国憲法",
               "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261120-103",
+      "related": [
+        {
+          "id": "20261120-103-R01",
+          "relation_type": "question",
+          "title": "証券取引所の役割",
+          "description": "株式会社が株式を発行して集めたお金は、事業を進めるために使われます。一方、株主がお金を必要とするときには、持っている株式を別の人に売ることができます。売りたい人と買いたい人の注文を集め、決められたルールで取引を成立させる場所が証券（しょうけん）取引所です。取引所の基準を満たし、そこで株式を売買できるようになることを上場といいます。日本には東京のほか、札幌（さっぽろ）、名古屋、福岡にも証券取引所があります。取引所は会社と投資家を結び付ける役割を果たしています。",
+          "relationship": "日経平均株価の背景となる株式市場の仕組みを学ぶ。",
+          "keywords": [
+            "証券取引所",
+            "上場",
+            "株式会社"
+          ],
+          "sources": [
+            {
+              "name": "日本取引所グループ",
+              "url": "https://www.jpx.co.jp/tse-school/learn/03.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261120-104",
+      "related": [
+        {
+          "id": "20261120-104-R01",
+          "relation_type": "question",
+          "title": "インフルエンザと学校の出席停止",
+          "description": "インフルエンザにかかると、熱が下がった後でも鼻やのどからウイルスが出て、周りの人に病気をうつすことがあります。そのため、学校では感染（かんせん）の広がりを防ぐために出席停止の期間が定められています。小学生の場合、原則として発症（はっしょう）した後5日が過ぎ、さらに熱が下がった後2日が過ぎるまで登校できません。医師が感染のおそれがないと判断した場合には例外もあります。これは病気になった本人の体を休ませるだけでなく、集団で生活する学校でほかの児童を守るための仕組みです。",
+          "relationship": "インフルエンザの流行を防ぐ社会制度を学ぶ。",
+          "keywords": [
+            "学校保健安全法",
+            "出席停止",
+            "感染症"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/infulenza/QA2024.html"
             }
           ]
         }
