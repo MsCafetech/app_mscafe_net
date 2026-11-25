@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 25,
-  "image_count": 35,
+  "related_count": 26,
+  "image_count": 36,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -595,7 +595,26 @@
           "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者名を出典として表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-011-R05",
+          "images": [
+            {
+              "id": "20261125-011-R05-I01",
+              "type": "satellite",
+              "title": "国際宇宙ステーションから見た首都圏の夜",
+              "caption": "観測写真：夜の首都圏に広がる明かり。人や仕事、交通が大都市圏に集まる様子を考える資料の一つです。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Night_in_the_Greater_Tokyo_Area_ISS054.jpg/1280px-Night_in_the_Greater_Tokyo_Area_ISS054.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Night_in_the_Greater_Tokyo_Area_ISS054.jpg",
+              "credit": "NASA Johnson Space Center / Image Science and Analysis Laboratory",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-012",
