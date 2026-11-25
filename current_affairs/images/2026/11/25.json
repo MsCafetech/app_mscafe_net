@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 15,
-  "image_count": 25,
+  "related_count": 17,
+  "image_count": 27,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -205,6 +205,24 @@
               "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-002-R05",
+          "images": [
+            {
+              "id": "20261125-002-R05-I01",
+              "type": "diagram",
+              "title": "地球観測衛星のネットワーク",
+              "caption": "資料図：地球を観測する人工衛星の一例。観測データは、天気・災害・農業・環境の変化を調べ、社会で役立てられます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Committee_on_Earth_Observation_Satellites_%28CEOS%29_-_Fleet_%28SVS5508_-_ceos_fleet_12_white_4k_60fps_00001_print%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Committee_on_Earth_Observation_Satellites_(CEOS)_-_Fleet_(SVS5508_-_ceos_fleet_12_white_4k_60fps_00001_print).jpg",
+              "credit": "NASA Scientific Visualization Studio / USRA・Kel Elkins",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
         }
       ]
     },
@@ -295,6 +313,24 @@
               "license": "CC0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-003-R05",
+          "images": [
+            {
+              "id": "20261125-003-R05-I01",
+              "type": "photo",
+              "title": "カラコルムの都市模型",
+              "caption": "資料写真：モンゴル帝国の都カラコルムを再現した模型。さまざまな地域の人や文化が集まり、交流した都市として知られます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Karakorum_Modell_1.jpg/1280px-Karakorum_Modell_1.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Karakorum_Modell_1.jpg",
+              "credit": "Brücke-Osteuropa",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者情報を出典として表示。"
             }
           ]
         }
