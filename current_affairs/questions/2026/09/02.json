@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-02",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260902-001",
+      "news_date": "2026-09-02",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "人工衛星（じんこうえいせい）いぶきGWのデータを気象庁が利用開始",
+      "news_summary": "気象庁がいぶきGWに搭載された観測装置のデータの利用を開始しました。",
+      "question": "2026年9月2日、気象庁は人工衛星「いぶきGW」に取り付けられた観測装置AMSR3のデータの利用を開始しました。宇宙から地球を観測する技術は、気象の把握（はあく）に役立ちます。\n\n人工衛星を使った気象観測の利点はどれですか？",
+      "choices": [
+        "海上を含む広い範囲（はんい）を観測できる",
+        "台風の発生を完全に止められる",
+        "地球上の雨を自由に降らせられる",
+        "地上の観測が一切必要なくなる"
+      ],
+      "correct_index": 0,
+      "explanation": "人工衛星を使うと、地上の観測所が少ない海上を含め、広い地域の気象に関する情報を集めることができます。地上の観測やコンピューターによる計算と組み合わせることで、天気予報や防災に役立てられます。",
+      "keywords": [
+        "いぶきGW",
+        "人工衛星",
+        "気象庁",
+        "JAXA"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/"
+        },
+        {
+          "name": "気象庁",
+          "url": "https://www.jma.go.jp/jma/press/kako08.html"
+        }
+      ]
+    }
+  ]
+}
