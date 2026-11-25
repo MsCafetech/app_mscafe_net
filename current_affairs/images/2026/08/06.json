@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-06",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260806-001",
+      "images": [
+        {
+          "id": "20260806-001-I01",
+          "type": "photo",
+          "title": "原爆ドーム",
+          "caption": "資料写真：2024年8月に撮影された広島の原爆ドーム。被爆の歴史を伝える建物です。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Atomic_Bomb_Dome-152313975.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Atomic_Bomb_Dome-152313975.jpg",
+          "credit": "Immanuelle",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示。変更があれば明記し、提供者の推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

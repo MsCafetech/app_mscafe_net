@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-11",
+  "language": "ja",
+  "question_count": 2,
+  "related_count": 0,
+  "image_count": 2,
+  "questions": [
+    {
+      "question_id": "20260811-001",
+      "images": [
+        {
+          "id": "20260811-001-I01",
+          "type": "photo",
+          "title": "H3ロケットの打ち上げ",
+          "caption": "資料写真：2025年2月に種子島宇宙センターから打ち上げられたH3ロケット5号機。2026年8月の9号機とは別の打ち上げです。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/H3_rocket_launch.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:H3_rocket_launch.jpg",
+          "credit": "U.S. Air Force / Senior Airman Jacob Wood（切り抜き：RickyCourtney）",
+          "license": "Public Domain (US Air Force)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Air_Force",
+          "usage_notes": "出典・提供元を表示。提供元の推奨を示唆しない。 元画像から切り抜き済み。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20260811-002",
+      "images": [
+        {
+          "id": "20260811-002-I01",
+          "type": "photo",
+          "title": "上高地から見た穂高岳",
+          "caption": "資料写真：上高地の梓川から望む穂高岳。山や森林、川がつながる自然の風景です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Kamikochi_and_Mount_Hotaka_1999-05-22.jpg/960px-Kamikochi_and_Mount_Hotaka_1999-05-22.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kamikochi_and_Mount_Hotaka_1999-05-22.jpg",
+          "credit": "Alpsdake",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "出典・提供元を表示。提供元の推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

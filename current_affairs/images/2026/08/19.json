@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-19",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260819-001",
+      "images": [
+        {
+          "id": "20260819-001-I01",
+          "type": "photo",
+          "title": "国際刑事裁判所の建物",
+          "caption": "資料写真：2026年5月撮影。オランダのハーグにある国際刑事裁判所の建物です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/The_Hague_International_Criminal_Court_building_seen_from_Maurits_Kiekpad.jpg/960px-The_Hague_International_Criminal_Court_building_seen_from_Maurits_Kiekpad.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_Hague_International_Criminal_Court_building_seen_from_Maurits_Kiekpad.jpg",
+          "credit": "Ymblanter",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示。変更があれば明記し、提供者の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

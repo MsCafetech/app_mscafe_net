@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-13",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260813-002",
+      "images": [
+        {
+          "id": "20260813-002-I01",
+          "type": "photo",
+          "title": "皆既日食と太陽のコロナ",
+          "caption": "資料写真：2024年4月8日にカナダで観測された皆既日食。太陽の外側のコロナが見えています。複数の露出で撮った写真を合成した画像です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/2024_Total_Solar_Eclipse_Corona.jpg/960px-2024_Total_Solar_Eclipse_Corona.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2024_Total_Solar_Eclipse_Corona.jpg",
+          "credit": "Brucewaters",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示。変更があれば明記し、提供者の推奨を示唆しない。 元画像は18枚の露出合成。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}
