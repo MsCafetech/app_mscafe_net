@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 13,
-  "image_count": 23,
+  "related_count": 15,
+  "image_count": 25,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -336,7 +336,44 @@
           "usage_notes": "NASAゴダード宇宙飛行センターなど提供のパブリックドメイン画像。提供元とWikimedia Commonsの掲載元を出典として表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-006-R01",
+          "images": [
+            {
+              "id": "20261125-006-R01-I01",
+              "type": "map",
+              "title": "黄海の位置",
+              "caption": "資料地図：中国大陸と朝鮮半島の間にある黄海を示した図。風に乗って運ばれる大気のよごれを考えるときにも、周りの国や海の位置を知ることが役立ちます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Yellow_Sea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Yellow_Sea.jpg",
+              "credit": "U.S. Central Intelligence Agency",
+              "license": "Public domain",
+              "license_url": "https://www.usa.gov/government-copyright",
+              "usage_notes": "米国中央情報局（CIA）提供のパブリックドメイン資料。CIAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-006-R02",
+          "images": [
+            {
+              "id": "20261125-006-R02-I01",
+              "type": "map",
+              "title": "世界の年間平均PM2.5分布",
+              "caption": "資料地図：衛星データなどから推定した世界のPM2.5の年間平均分布。とても小さな粒子状物質の量は、地域や季節によって異なります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Global_Annual_Average_PM2.5_Grids_from_MODIS_and_MISR_Aerosol_Optical_Depth_%28AOD%29%2C_2010_Global_%2811673054346%29.jpg/1280px-Global_Annual_Average_PM2.5_Grids_from_MODIS_and_MISR_Aerosol_Optical_Depth_%28AOD%29%2C_2010_Global_%2811673054346%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Global_Annual_Average_PM2.5_Grids_from_MODIS_and_MISR_Aerosol_Optical_Depth_(AOD),_2010_Global_(11673054346).jpg",
+              "credit": "SEDACMaps",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "CC BY 2.0。作者名「SEDACMaps」とライセンスを表示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-007",
