@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 34,
-  "image_count": 44,
+  "related_count": 36,
+  "image_count": 46,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -759,6 +759,24 @@
               "usage_notes": "CC BY-SA 4.0。作者名「Shujianyang」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-012-R03",
+          "images": [
+            {
+              "id": "20261125-012-R03-I01",
+              "type": "photo",
+              "title": "微小重力科学実験用グローブボックス",
+              "caption": "資料写真：宇宙ステーション内で微小重力の実験を行うための装置。手袋が付いた箱の中で、試料を安全に扱いながら実験できます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/ISS-18_Microgravity_Sciences_Glovebox.jpg/1280px-ISS-18_Microgravity_Sciences_Glovebox.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:ISS-18_Microgravity_Sciences_Glovebox.jpg",
+              "credit": "NASA",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
         }
       ]
     },
@@ -813,6 +831,24 @@
               "license": "Public domain",
               "license_url": "https://www.usa.gov/government-copyright",
               "usage_notes": "米海軍提供のパブリックドメイン資料。米海軍およびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-013-R01",
+          "images": [
+            {
+              "id": "20261125-013-R01-I01",
+              "type": "satellite",
+              "title": "国際宇宙ステーションから見たソロモン諸島",
+              "caption": "観測写真：宇宙から見た太平洋のソロモン諸島。多くの島が広い海に点在している島国の地理を考える資料です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/ISS074-E-913318_-_View_of_the_Solomon_Islands.jpg/1280px-ISS074-E-913318_-_View_of_the_Solomon_Islands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:ISS074-E-913318_-_View_of_the_Solomon_Islands.jpg",
+              "credit": "NASA Johnson Space Center / Earth Science and Remote Sensing Unit",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         }
