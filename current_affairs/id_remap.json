@@ -89,7 +89,23 @@
       "new_date": "2026-11-16",
       "reason": "news/event date checked against source",
       "source": "https://www.jst.go.jp/pr/announce/20261116-2/index.html"
+    },
+    {
+      "old_id": "20261122-005",
+      "new_id": "20261118-100",
+      "old_date": "2026-11-22",
+      "new_date": "2026-11-18",
+      "reason": "news/event date checked against source",
+      "source": "https://news.tv-asahi.co.jp/news_economy/articles/000548669.html"
+    },
+    {
+      "old_id": "20261122-007",
+      "new_id": "20261120-102",
+      "old_date": "2026-11-22",
+      "new_date": "2026-11-20",
+      "reason": "news/event date checked against source",
+      "source": "https://news.tv-asahi.co.jp/news_international/articles/000549551.html"
     }
   ],
-  "last_updated": "2026-11-26T06:45:42.640+09:00"
+  "last_updated": "2026-11-26T06:46:06.241+09:00"
 }

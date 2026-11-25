@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-18",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261118-001",
@@ -30,6 +30,35 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3094658?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20261118-100",
+      "news_date": "2026-11-18",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "10月の貿易収支は6か月連続の赤字",
+      "news_summary": "財務省の10月貿易統計速報で貿易収支が4765億円の赤字だった。",
+      "question": "2026年11月18日、財務省は10月の貿易統計の速報を発表しました。輸出額と輸入額はいずれも増えましたが、貿易収支は4765億円の赤字となりました。エネルギー価格の高止まりなどが輸入額を増やす要因となっています。\n\n貿易収支が赤字になるのは、どのような場合ですか。",
+      "choices": [
+        "輸出額が輸入額より多い場合",
+        "輸出額と輸入額が同じ場合",
+        "輸出額と輸入額がともに増えた場合",
+        "輸入額が輸出額より多い場合"
+      ],
+      "correct_index": 3,
+      "explanation": "貿易収支は輸出額から輸入額を引いて求めます。輸入額が輸出額より多いと赤字、反対に輸出額が輸入額より多いと黒字になります。日本は原油などの資源を海外から多く輸入するため、資源価格の変化が貿易収支に関係します。",
+      "keywords": [
+        "貿易収支",
+        "輸出",
+        "輸入"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000548669.html"
         }
       ]
     }

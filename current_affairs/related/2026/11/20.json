@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 6,
-  "related_count": 20,
+  "question_count": 7,
+  "related_count": 23,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -486,6 +486,81 @@
             {
               "name": "国際連合憲章 第15章：事務局",
               "url": "https://www.un.org/en/about-us/un-charter/chapter-15"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261120-102",
+      "related": [
+        {
+          "id": "20261120-102-R01",
+          "relation_type": "answer",
+          "title": "集会の自由と民主政治",
+          "description": "集会の自由とは、人々が集まって意見を伝えたり、情報を交換したりする自由です。日本国憲法第21条は、集会・結社・言論・出版など、表現の自由を保障しています。集会は、一人では届きにくい考えを多くの人で社会に示す方法の一つです。選挙で代表者を選ぶだけでなく、集会、署名、意見書、地域での話合いなどを通して、市民が政策について考えを伝えることは、民主主義を支える大切な働きです。相手の意見にも耳を傾け、対話する姿勢も重要です。",
+          "relationship": "正解の集会の自由を、憲法第21条と民主政治における市民の役割から理解する知識です。",
+          "keywords": [
+            "集会の自由",
+            "日本国憲法",
+            "表現の自由",
+            "民主政治"
+          ],
+          "sources": [
+            {
+              "name": "衆議院：日本国憲法",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            },
+            {
+              "name": "衆議院法務委員会：集会の自由の意義",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_kaigiroku.nsf/html/kaigiroku/000419620180418009.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261120-102-R02",
+          "relation_type": "answer",
+          "title": "表現の自由に含まれるもの",
+          "description": "表現の自由は、自分の考えや気持ちを外に表す自由です。話すこと、文章を書くこと、絵や音楽で表すこと、集会を開くことなど、さまざまな方法が含まれます。憲法がこの自由を大切にするのは、多様な意見が社会で共有され、政治や暮らしの問題を話し合えるようにするためです。一方で、自由には他人の権利や安全を傷つけないよう配慮する責任も伴います。根拠の確かな情報を確かめ、違う考えの人を攻撃せずに意見を述べることが求められます。",
+          "relationship": "集会の自由が、より広い表現の自由の一部であることを理解する知識です。",
+          "keywords": [
+            "表現の自由",
+            "言論",
+            "出版",
+            "基本的人権"
+          ],
+          "sources": [
+            {
+              "name": "衆議院：日本国憲法",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            },
+            {
+              "name": "内閣答弁書：表現の自由に関する説明",
+              "url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b164024.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261120-102-R03",
+          "relation_type": "question",
+          "title": "デモと社会への意見表明",
+          "description": "デモは、社会や政治についての意見や要望を、多くの人が集まって示す活動です。教育費や住まい、環境など、生活に関わる課題を行政や社会に伝える手段になります。民主主義では多数決だけでなく、少数の意見も表明され、話し合いに生かされることが大切です。集会を行う人は、法律や地域のルールを守り、通行する人の安全にも配慮する必要があります。ニュースでデモを見たら、何を求め、どのような社会課題が背景にあるのかを考えてみましょう。",
+          "relationship": "教育や住まいへの支出を求めるデモのニュースから、市民が意見を表す方法と民主政治を考える知識です。",
+          "keywords": [
+            "デモ",
+            "市民",
+            "社会課題",
+            "意見表明",
+            "民主主義"
+          ],
+          "sources": [
+            {
+              "name": "衆議院法務委員会：集会の自由の意義",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_kaigiroku.nsf/html/kaigiroku/000419620180418009.htm"
+            },
+            {
+              "name": "衆議院：日本国憲法",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
             }
           ]
         }
