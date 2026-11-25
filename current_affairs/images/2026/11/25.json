@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 6,
+  "question_count": 8,
   "related_count": 7,
-  "image_count": 13,
+  "image_count": 15,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -244,6 +244,44 @@
           "license": "CC BY-SA 3.0",
           "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
           "usage_notes": "CC BY-SA 3.0。作者名「OSeveno」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-006",
+      "images": [
+        {
+          "id": "20261125-006-I01",
+          "type": "satellite",
+          "title": "東アジア上空に広がる黄砂",
+          "caption": "衛星観測画像：東アジア上空に広がる黄砂のようす。国をこえて広がる大気の問題では、近隣の国や地域が協力して対策を考えることが大切です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Asian_Dust%2C_NASA_aerospace_photography.jpg/1280px-Asian_Dust%2C_NASA_aerospace_photography.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Asian_Dust,_NASA_aerospace_photography.jpg",
+          "credit": "NASA/Goddard Space Flight Center and ORBIMAGE",
+          "license": "Public domain",
+          "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "usage_notes": "NASAゴダード宇宙飛行センターなど提供のパブリックドメイン画像。提供元とWikimedia Commonsの掲載元を出典として表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-009",
+      "images": [
+        {
+          "id": "20261125-009-I01",
+          "type": "photo",
+          "title": "三重県多度の森林",
+          "caption": "資料写真：野生動物がくらす森林の環境。人の生活圏に近い場所でのクマの出没については、安全を確かめながら対応する必要があります。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Forest_and_Pyrus_calleryana_in_Tado.jpg/1280px-Forest_and_Pyrus_calleryana_in_Tado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Forest_and_Pyrus_calleryana_in_Tado.jpg",
+          "credit": "Alpsdake",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
         }
       ],
       "related": []
