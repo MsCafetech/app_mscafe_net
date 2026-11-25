@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-12",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260512-001",
+      "news_date": "2026-05-12",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "中東情勢（ちゅうとうじょうせい）の影響で食品の包装を白黒に",
+      "news_summary": "カルビーが石油由来の原料の供給への影響を受け、一部商品の包装を白黒に変更すると発表した。",
+      "question": "2026年5月12日、食品会社のカルビーは、一部のおかしの包装を白黒の2色に変更すると発表しました。中東情勢の影響で、印刷用インクなどに関わるナフサの供給が不安定になったことが背景にあります。\n\nナフサは主に何をもとに作られる石油化学原料ですか？",
+      "choices": [
+        "石炭",
+        "鉄鉱石",
+        "原油",
+        "石灰石"
+      ],
+      "correct_index": 2,
+      "explanation": "ナフサは原油を精製（せいせい）して得られる石油製品の一種です。プラスチックや印刷用インクに関わる化学製品など、身の回りの製品を作る原料になります。石油は燃料としてだけでなく、さまざまな工業製品の原料としても重要です。",
+      "keywords": [
+        "ナフサ",
+        "原油",
+        "石油化学工業"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000504607.html"
+        },
+        {
+          "name": "衆議院 国土交通委員会会議録",
+          "url": "https://www.shugiin.go.jp/internet/itdb_kaigiroku.nsf/html/kaigiroku/009922120260415005.htm"
+        }
+      ]
+    }
+  ]
+}
