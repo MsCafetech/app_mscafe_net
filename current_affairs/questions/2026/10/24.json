@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-10-24",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261024-001",
@@ -30,6 +30,39 @@
         {
           "name": "日本パラリンピック委員会",
           "url": "https://www.parasports.or.jp/paralympic/jpc/aichi-nagoyapara2026/"
+        }
+      ]
+    },
+    {
+      "id": "20261024-002",
+      "news_date": "2026-10-24",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "改正皇室典範（かいせいこうしつてんぱん）が施行（しこう）",
+      "news_summary": "皇族の身分に関する決まりを見直した改正皇室典範が施行された。",
+      "question": "2026年10月24日、改正皇室典範が施行されました。皇族（こうぞく）の人数を確保するため、女性皇族が結婚後も原則として皇族の身分を保つなどの仕組みが設けられました。\n\n日本国憲法（にほんこくけんぽう）第2条では、天皇の位はどのように受けつがれると定められていますか？",
+      "choices": [
+        "国民の直接選挙で選ばれる",
+        "内閣（ないかく）が自由に決める",
+        "世襲（せしゅう）によって受けつがれる",
+        "最高裁判所が決める"
+      ],
+      "correct_index": 2,
+      "explanation": "日本国憲法第2条は、天皇の位である皇位（こうい）が世襲であることと、皇室典範の定めに従って受けつがれることを定めています。世襲とは、地位などを家系の中で受けつぐことです。皇室典範は、皇室の制度に関する法律です。",
+      "keywords": [
+        "皇室典範",
+        "日本国憲法",
+        "皇位継承（こういけいしょう）"
+      ],
+      "sources": [
+        {
+          "name": "共同通信・神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/zenkoku/compact/202610/0020959533.shtml"
+        },
+        {
+          "name": "e-Gov法令検索",
+          "url": "https://laws.e-gov.go.jp/law/321CONSTITUTION?occasion_date=20260520"
         }
       ]
     }
