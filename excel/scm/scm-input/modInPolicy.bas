@@ -1532,7 +1532,7 @@ Private Sub AddUsedZones()
                 f = SafeStr(arr(i, G_FOLDER))
                 If SafeStr(arr(i, 1)) <> HDR And f <> "" Then
                     For Each fi In Array(FIdx("from"), FIdx("to"))
-                        a = SplitMembers(SafeStr(arr(i, G_NAME + fi)))
+                        a = PSplit(SafeStr(arr(i, G_NAME + fi)))
                         For j = 0 To UBound(a)
                             z = CStr(a(j))
                             If LCase$(z) <> "any" And Not known.Exists(z) Then
@@ -1745,22 +1745,47 @@ End Sub
 '==========================================================
 ' セル内改行・カンマ区切り → 配列（空は UBound=-1）
 Private Function PSplit(ByVal s As String) As Variant
-    Dim parts() As String, i As Long, n As Long, out() As String, t As String
-    PSplit = Split("")
-    parts = Split(Replace(Replace(s, vbCr, ""), vbLf, ","), ",")
-    If UBound(parts) < 0 Then Exit Function
-    ReDim out(0 To UBound(parts))
+    PSplit = SplitVals(s)     ' DN（CN=…,OU=…）は1件のまま
+End Function
+
+' 複数値の分割（カンマ・セル内改行）。DN（CN=…,OU=…,DC=…）の途中のカンマでは分けない
+'   同じ行でカンマの後が OU= / DC= / O= / L= / ST= / C= / STREET= で始まり、直前の値が「=」を含むときは、1つの値として続ける
+'   例：CN=xxxx,OU=xxxx,DC=xxx,DC=local → 1件 ／ CN=a,OU=x,CN=b,OU=y → 2件
+Private Function SplitVals(ByVal s As String) As Variant
+    Dim lines() As String, parts() As String, res() As String, i As Long, j As Long, n As Long, t As String, lineTop As Long
+    SplitVals = Split("")
+    If Len(s) = 0 Then Exit Function
+    ReDim res(0 To Len(s))
     n = -1
-    For i = 0 To UBound(parts)
-        t = Trim$(parts(i))
-        If t <> "" Then
-            n = n + 1
-            out(n) = t
-        End If
+    lines = Split(Replace(s, vbCr, ""), vbLf)
+    For i = 0 To UBound(lines)
+        lineTop = n + 1
+        parts = Split(lines(i), ",")
+        For j = 0 To UBound(parts)
+            t = Trim$(parts(j))
+            If t <> "" Then
+                If n >= lineTop And IsDnPart(t) And InStr(res(n), "=") > 0 Then
+                    res(n) = res(n) & "," & t
+                Else
+                    n = n + 1
+                    res(n) = t
+                End If
+            End If
+        Next
     Next
     If n < 0 Then Exit Function
-    ReDim Preserve out(0 To n)
-    PSplit = out
+    ReDim Preserve res(0 To n)
+    SplitVals = res
+End Function
+
+' DN の2番目以降の要素（OU= など）か
+Private Function IsDnPart(ByVal t As String) As Boolean
+    Dim p As Long
+    p = InStr(t, "=")
+    If p < 2 Then Exit Function
+    Select Case UCase$(Trim$(Left$(t, p - 1)))
+        Case "OU", "DC", "O", "L", "ST", "C", "STREET": IsDnPart = True
+    End Select
 End Function
 
 ' 1～12列のうち一番下のデータ行（見出し行・ルール行のどちらかが入る列）

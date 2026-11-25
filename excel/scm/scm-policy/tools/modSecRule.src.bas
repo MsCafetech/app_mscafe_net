@@ -165,7 +165,7 @@ Private Function Cmp(ByVal i As Long, ByVal s As String) As String
     InitF
     If i = 0 Then Cmp = Trim$(s): Exit Function
     Select Case mFT(i - 1)
-        Case "a", "g": Cmp = Join(SplitMembers(s), vbLf)
+        Case "a", "g": Cmp = Join(SplitVals(s), vbLf)
         Case "b": If LCase$(Trim$(s)) = "true" Then Cmp = "true"
         Case Else
             If mFK(i - 1) = "description" Then Cmp = s Else Cmp = Trim$(s)
@@ -958,7 +958,7 @@ Private Function ContentNg(ByVal v As Variant, ByRef warns As String) As String
         k = mFK(i)
         Select Case mFT(i)
             Case "a"
-                a = SplitMembers(CStr(v(i + 1)))
+                a = SplitVals(CStr(v(i + 1)))
                 Select Case k
                     Case "from", "source", "source_user", "to", "destination", "application", "service", "category"
                         If UBound(a) < 0 Then s = s & vbLf & "NG:" & mFL(i) & " は必須です（指定しないときは any）"
@@ -980,7 +980,7 @@ Private Function ContentNg(ByVal v As Variant, ByRef warns As String) As String
         Case "": s = s & vbLf & "NG:アクション（allow / deny / drop 等）を選択してください"
         Case Else: s = s & vbLf & "NG:アクションは allow / deny / drop / reset-client / reset-server / reset-both のいずれかです"
     End Select
-    a = SplitMembers(CStr(v(FIdx("profile_setting"))))
+    a = SplitVals(CStr(v(FIdx("profile_setting"))))
     If UBound(a) >= 0 Then
         If UBound(a) > 0 Then s = s & vbLf & "NG:プロファイルグループは1つだけ指定してください"
         Set profs = ProfileNames()
@@ -1086,7 +1086,7 @@ Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns A
             Case Else: grp = ""
         End Select
         If grp <> "" Then
-            a = SplitMembers(CStr(v(i + 1)))
+            a = SplitVals(CStr(v(i + 1)))
             unk = "": unkN = 0: ngN = 0
             For j = 0 To UBound(a)
                 nm = CStr(a(j))
@@ -1254,13 +1254,13 @@ Private Function BuildBody(ByVal v As Variant) As String
         s = CStr(v(i + 1))
         Select Case mFT(i)
             Case "a"
-                If UBound(SplitMembers(s)) >= 0 Then js = js & ",""" & k & """:" & JsonArr(s)
+                If UBound(SplitVals(s)) >= 0 Then js = js & ",""" & k & """:" & JsonArr(s)
             Case "b"
                 Select Case LCase$(Trim$(s))
                     Case "true", "false": js = js & ",""" & k & """:" & LCase$(Trim$(s))
                 End Select
             Case "g"
-                If UBound(SplitMembers(s)) >= 0 Then js = js & ",""" & k & """:{""group"":" & JsonArr(s) & "}"
+                If UBound(SplitVals(s)) >= 0 Then js = js & ",""" & k & """:{""group"":" & JsonArr(s) & "}"
             Case "s"
                 If k = "description" Then
                     If s <> "" Then js = js & ",""" & k & """:" & JsonStr(s)
@@ -1274,7 +1274,7 @@ End Function
 
 Private Function JsonArr(ByVal s As String) As String
     Dim a As Variant, i As Long, r As String
-    a = SplitMembers(s)
+    a = SplitVals(s)
     For i = 0 To UBound(a)
         If r <> "" Then r = r & ","
         r = r & JsonStr(CStr(a(i)))
@@ -2068,7 +2068,7 @@ Private Sub AddUsedZones()
         f = SafeStr(arr(i, G_FOLDER))
         If SafeStr(arr(i, 1)) <> HDR And f <> "" Then
             For Each fi In Array(FIdx("from"), FIdx("to"))
-                a = SplitMembers(SafeStr(arr(i, G_NAME + fi)))
+                a = SplitVals(SafeStr(arr(i, G_NAME + fi)))
                 For j = 0 To UBound(a)
                     z = CStr(a(j))
                     If LCase$(z) <> "any" And Not known.Exists(z) Then
@@ -2318,7 +2318,7 @@ Private Sub AddUsed(ByVal sh As String, ByVal col As Long, ByVal kind As String,
     If Not ReadCols(sh, col, FIRST, G_FOLDER, ws, v, fv) Then Exit Sub
     For i = 1 To UBound(v, 1)
         If ScopeAllowed(SafeStr(fv(i, 1)), folder) Then
-            a = SplitMembers(SafeStr(v(i, 1)))
+            a = SplitVals(SafeStr(v(i, 1)))
             For j = 0 To UBound(a)
                 nm = CStr(a(j))
                 If nm <> "" And Not mNames.Exists(nm) Then mNames.Add nm, kind
@@ -2417,13 +2417,52 @@ End Sub
 
 ' カンマ・セル内改行のどちらの区切りにも対応
 Public Function SplitItems(ByVal s As String) As Collection
-    Dim c As New Collection, parts() As String, i As Long, t As String
-    parts = Split(Replace(Replace(s, vbCr, ""), vbLf, ","), ",")
-    For i = LBound(parts) To UBound(parts)
-        t = Trim$(parts(i))
-        If t <> "" Then c.Add t
+    Dim c As New Collection, a As Variant, i As Long
+    a = SplitVals(s)      ' DN（CN=…,OU=…）は1件のまま
+    For i = 0 To UBound(a)
+        c.Add CStr(a(i))
     Next
     Set SplitItems = c
+End Function
+
+' 複数値の分割（カンマ・セル内改行）。DN（CN=…,OU=…,DC=…）の途中のカンマでは分けない
+'   同じ行でカンマの後が OU= / DC= / O= / L= / ST= / C= / STREET= で始まり、直前の値が「=」を含むときは、1つの値として続ける
+'   例：CN=xxxx,OU=xxxx,DC=xxx,DC=local → 1件 ／ CN=a,OU=x,CN=b,OU=y → 2件
+Private Function SplitVals(ByVal s As String) As Variant
+    Dim lines() As String, parts() As String, res() As String, i As Long, j As Long, n As Long, t As String, lineTop As Long
+    SplitVals = Split("")
+    If Len(s) = 0 Then Exit Function
+    ReDim res(0 To Len(s))
+    n = -1
+    lines = Split(Replace(s, vbCr, ""), vbLf)
+    For i = 0 To UBound(lines)
+        lineTop = n + 1
+        parts = Split(lines(i), ",")
+        For j = 0 To UBound(parts)
+            t = Trim$(parts(j))
+            If t <> "" Then
+                If n >= lineTop And IsDnPart(t) And InStr(res(n), "=") > 0 Then
+                    res(n) = res(n) & "," & t
+                Else
+                    n = n + 1
+                    res(n) = t
+                End If
+            End If
+        Next
+    Next
+    If n < 0 Then Exit Function
+    ReDim Preserve res(0 To n)
+    SplitVals = res
+End Function
+
+' DN の2番目以降の要素（OU= など）か
+Private Function IsDnPart(ByVal t As String) As Boolean
+    Dim p As Long
+    p = InStr(t, "=")
+    If p < 2 Then Exit Function
+    Select Case UCase$(Trim$(Left$(t, p - 1)))
+        Case "OU", "DC", "O", "L", "ST", "C", "STREET": IsDnPart = True
+    End Select
 End Function
 
 Private Function SafeStr(ByVal v As Variant) As String
