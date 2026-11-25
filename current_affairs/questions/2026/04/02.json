@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-02",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260402-001",
@@ -34,6 +34,35 @@
         {
           "name": "ライブドアニュース（sorae）",
           "url": "https://news.livedoor.com/article/detail/30890736/"
+        }
+      ]
+    },
+    {
+      "id": "20260402-002",
+      "news_date": "2026-04-02",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "ホルムズ海峡（かいきょう）の安全をめぐる国際会議",
+      "news_summary": "イギリスが主催する会議で船の安全な通行とエネルギーの安定供給について話し合った。",
+      "question": "2026年4月2日、イギリスが主催する国際会議に日本の外務大臣が参加しました。中東のホルムズ海峡を船が安全に通れるようにするための協力について話し合いました。この海峡は石油を運ぶ船にとって重要な通り道です。\n\nホルムズ海峡は、どの湾（わん）の出入り口にありますか。",
+      "choices": [
+        "ベンガル湾",
+        "メキシコ湾",
+        "ペルシャ湾",
+        "ハドソン湾"
+      ],
+      "correct_index": 2,
+      "explanation": "ホルムズ海峡はペルシャ湾とオマーン湾を結ぶせまい海の通り道です。ペルシャ湾の周辺には石油を多く産出する国があります。日本も中東から多くの原油を輸入しているため、この海域の安全は日本の産業や生活にも深く関係します。",
+      "keywords": [
+        "ホルムズ海峡",
+        "ペルシャ湾",
+        "石油"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_03585.html"
         }
       ]
     }
