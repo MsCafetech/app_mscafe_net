@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 4,
+  "question_count": 5,
   "related_count": 13,
-  "image_count": 17,
+  "image_count": 18,
   "questions": [
     {
       "question_id": "20261125-010",
@@ -319,6 +319,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261125-014",
+      "images": [
+        {
+          "id": "20261125-014-I01",
+          "type": "photo",
+          "title": "陸上自衛隊の通信部隊を訪れる隊員",
+          "caption": "資料写真：通信に関わる部隊のようす。国を守るための体制では、人員だけでなく通信や装備を整えることも大切です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Japan_Ground-Self_Defense_Force_visits_7th_Communication_Battalion_%2810031543%29.jpg/1280px-Japan_Ground-Self_Defense_Force_visits_7th_Communication_Battalion_%2810031543%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Japan_Ground-Self_Defense_Force_visits_7th_Communication_Battalion_(10031543).jpg",
+          "credit": "U.S. Marine Corps photo by Lance Cpl. John Haubeil",
+          "license": "Public domain",
+          "license_url": "https://www.usa.gov/government-copyright",
+          "usage_notes": "米海兵隊提供のパブリックドメイン資料。撮影者名、提供元およびWikimedia Commonsの掲載元を出典として表示。"
+        }
+      ],
+      "related": []
     }
   ]
 }
