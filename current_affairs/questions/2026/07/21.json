@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-21",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260721-001",
+      "news_date": "2026-07-21",
+      "category": "science",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "東海地方で今年初の酷暑日（こくしょび）",
+      "news_summary": "愛知県と岐阜県の3地点で最高気温40度以上を観測した。",
+      "question": "2026年7月21日、愛知県の豊田市や岐阜（ぎふ）県の多治見市などで記録的な暑さとなり、今年初の酷暑日となりました。\n\n気象庁が定める酷暑日は、1日の最高気温が何度以上の日ですか？",
+      "choices": [
+        "25度",
+        "30度",
+        "35度",
+        "40度"
+      ],
+      "correct_index": 3,
+      "explanation": "気象庁は1日の最高気温が25度以上の日を夏日、30度以上を真夏日、35度以上を猛暑日（もうしょび）、40度以上を酷暑日と呼びます。7月21日には多治見市で40.3度を観測しました。暑い日は熱中症を防ぐため、水分を取るなどの対策が大切です。",
+      "keywords": [
+        "酷暑日",
+        "気象庁",
+        "最高気温",
+        "猛暑日"
+      ],
+      "sources": [
+        {
+          "name": "気象庁",
+          "url": "https://www.data.jma.go.jp/stats/stat/202615/amd_mxtem_ov40_202615.html"
+        },
+        {
+          "name": "日本気象協会",
+          "url": "https://weather-jwa.jp/news/forecast-accuracy/post15087"
+        }
+      ]
+    }
+  ]
+}
