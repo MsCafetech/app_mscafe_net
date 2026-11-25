@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 28,
-  "image_count": 38,
+  "related_count": 30,
+  "image_count": 40,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -687,6 +687,24 @@
               "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-012-R01",
+          "images": [
+            {
+              "id": "20261125-012-R01-I01",
+              "type": "illustration",
+              "title": "天宮宇宙ステーションの想像図",
+              "caption": "資料図：中国の宇宙ステーション「天宮」の外観を示した想像図。実験や宇宙飛行士の滞在に使う複数の部分からできています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Tiangong_Space_Station_Rendering_2021.08.png/1280px-Tiangong_Space_Station_Rendering_2021.08.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Tiangong_Space_Station_Rendering_2021.08.png",
+              "credit": "Shujianyang",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "CC BY-SA 4.0。作者名「Shujianyang」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
         }
       ]
     },
@@ -707,7 +725,26 @@
           "usage_notes": "米国中央情報局（CIA）提供のパブリックドメイン資料。CIAおよびWikimedia Commonsの掲載元を出典として表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-013-R02",
+          "images": [
+            {
+              "id": "20261125-013-R02-I01",
+              "type": "map",
+              "title": "オセアニアのメラネシア地域",
+              "caption": "資料地図：オセアニアのうちメラネシアと呼ばれる地域を示した図。ソロモン諸島は、この地域にある島国の一つです。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Oceania_-_Map_of_Melanesia.svg/1280px-Oceania_-_Map_of_Melanesia.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Oceania_-_Map_of_Melanesia.svg",
+              "credit": "Tintazul; derivative work by Cruickshanks",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。原作者Tintazulおよび派生版作者Cruickshanks、ライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
