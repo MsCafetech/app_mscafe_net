@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-17",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260717-001",
+      "news_date": "2026-07-17",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "防災庁設置法が公布（こうふ）",
+      "news_summary": "防災庁の組織や任務を定めた法律が公布された。",
+      "question": "2026年7月17日、防災庁設置法が公布されました。この法律では、防災庁の長を誰にするかも定めています。\n\n防災庁の長となるのは誰ですか？",
+      "choices": [
+        "衆議院議長",
+        "最高裁判所長官",
+        "内閣総理大臣",
+        "東京都知事"
+      ],
+      "correct_index": 2,
+      "explanation": "防災庁設置法の第6条では、防災庁の長を内閣総理大臣と定めています。防災庁は、災害が起きる前の備えから、被災者の支援、被災地の復旧や復興（ふっこう）まで、国の防災対策を進めるために設けられる機関です。",
+      "keywords": [
+        "防災庁",
+        "内閣総理大臣",
+        "防災庁設置法"
+      ],
+      "sources": [
+        {
+          "name": "衆議院",
+          "url": "https://www.shugiin.go.jp/internet/itdb_housei.nsf/html/housei/22120260717061.htm"
+        }
+      ]
+    }
+  ]
+}
