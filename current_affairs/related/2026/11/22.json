@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-22",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 3,
+  "question_count": 2,
+  "related_count": 6,
   "questions": [
     {
       "question_id": "20261122-001",
@@ -75,6 +75,81 @@
             {
               "name": "国土交通省：道路災害対策",
               "url": "https://www.mlit.go.jp/bosai/disaster/gyoumukeikaku/11douro.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261122-003",
+      "related": [
+        {
+          "id": "20261122-003-R01",
+          "relation_type": "answer",
+          "title": "食塩と塩化ナトリウムの性質",
+          "description": "食塩の主成分は塩化ナトリウム（NaCl）です。水に溶けると、ナトリウムイオンと塩化物イオンに分かれます。海水が真水より凍りにくいのと同じように、塩を溶かした水は凍り始める温度が下がります。この性質を利用して、道路では塩化ナトリウムなどをまき、凍結を起こりにくくします。ただし、薬剤をまいても気温が低すぎたり雪が急に強まったりすると効果は限られます。仕組みを知ると、冬道で注意が必要な理由も分かります。",
+          "relationship": "正解の食塩の主成分である塩化ナトリウムの性質と、道路での利用を理解する知識です。",
+          "keywords": [
+            "食塩",
+            "塩化ナトリウム",
+            "凍結抑制剤",
+            "氷点"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省東北地方整備局：凍結抑制剤の基礎知識",
+              "url": "https://www.thr.mlit.go.jp/bumon/J72101/homepage/syutu/aokoku/winter_information/yakusan.html"
+            },
+            {
+              "name": "国土交通省仙台河川国道事務所：凍結抑制剤とは",
+              "url": "https://www.thr.mlit.go.jp/sendai/furukoku/jyosetsu/jyosetu_na/jyosetuna.html"
+            }
+          ]
+        },
+        {
+          "id": "20261122-003-R02",
+          "relation_type": "question",
+          "title": "融雪剤と凍結抑制剤の役割",
+          "description": "融雪剤と凍結抑制剤は、どちらも冬の道路を安全にするための薬剤ですが、目的に違いがあります。塩化ナトリウムなどの凍結抑制剤は、路面の水の凍る温度を下げ、氷ができにくい状態にします。一方、融雪剤には雪を溶かす働きを利用するものがあります。薬剤は万能ではないため、道路管理者は気温や降雪の予測を見ながら散布し、必要に応じて除雪も行います。運転する人も、散布後でも滑ることがあると理解して速度を落とすことが大切です。",
+          "relationship": "問題の融雪剤を、冬の道路管理で使われる凍結抑制剤との役割の違いから深める知識です。",
+          "keywords": [
+            "融雪剤",
+            "凍結抑制剤",
+            "除雪",
+            "路面凍結"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省東北地方整備局：凍結抑制剤の基礎知識",
+              "url": "https://www.thr.mlit.go.jp/bumon/J72101/homepage/syutu/aokoku/winter_information/yakusan.html"
+            },
+            {
+              "name": "国土交通省仙台河川国道事務所：凍結抑制剤とは",
+              "url": "https://www.thr.mlit.go.jp/sendai/furukoku/jyosetsu/jyosetu_na/jyosetuna.html"
+            }
+          ]
+        },
+        {
+          "id": "20261122-003-R03",
+          "relation_type": "question",
+          "title": "道路の塩分と生態系への影響",
+          "description": "道路にまかれた塩化ナトリウムは、雨や雪どけ水とともに周囲の土へ広がることがあります。青森県の国道沿いで行われた研究では、道路に近いほど土壌・植物・アリに含まれるナトリウム濃度が高く、アリが利用する餌の割合も変化していました。人の安全のために役立つ融雪剤でも、使う場所や量によっては生態系に影響しうるため、効果と環境への影響を両方確かめることが大切です。身近な道路も自然とつながっていると考えてみましょう。",
+          "relationship": "融雪剤がアリの食べ物に影響したというニュースから、道路周辺の生態系への影響を考える知識です。",
+          "keywords": [
+            "生態系",
+            "アリ",
+            "ナトリウム",
+            "青森県",
+            "道路"
+          ],
+          "sources": [
+            {
+              "name": "京都大学：融雪剤の散布によってアリがより植食になる",
+              "url": "https://www.kyoto-u.ac.jp/ja/research-news/2026-09-03-0"
+            },
+            {
+              "name": "東京大学農学部：融雪剤の散布によってアリがより植食になる",
+              "url": "https://www.a.u-tokyo.ac.jp/topics/topics_20260901-3.html"
             }
           ]
         }
