@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-01",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 5,
   "questions": [
     {
       "id": "20260701-001",
@@ -98,6 +98,60 @@
         {
           "name": "観光庁",
           "url": "https://www.mlit.go.jp/kankocho/seisaku_seido/kihonkeikaku/inbound_kaifuku/ryokakuzei.html"
+        }
+      ]
+    },
+    {
+      "id": "20260701-004",
+      "news_date": "2026-07-01",
+      "category": "international",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "旅券手数料の改定",
+      "news_summary": "海外旅行などに必要なパスポートの手数料が改定されました。",
+      "question": "2026年7月1日、海外旅行などに必要なパスポートの手数料が改定されました。\n\n18歳以上の人が新しく申請できる通常のパスポートの有効期間は何年ですか？",
+      "choices": [
+        "3年",
+        "5年",
+        "10年",
+        "20年"
+      ],
+      "correct_index": 2,
+      "explanation": "新制度では18歳以上の通常の旅券（りょけん）は10年間有効で、18歳未満は5年間有効です。パスポートは海外で国籍や身分を証明するための公的な文書です。国内では都道府県の窓口やオンラインで申請できます。",
+      "keywords": [
+        "パスポート"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/files/100482215.pdf"
+        }
+      ]
+    },
+    {
+      "id": "20260701-005",
+      "news_date": "2026-07-01",
+      "category": "international",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "査証（さしょう）手数料の改定",
+      "news_summary": "日本の査証を発行する手数料が改定されました。",
+      "question": "2026年7月1日、日本の査証を発行する手数料が改定されました。\n\n査証の別名は何ですか？",
+      "choices": [
+        "ビザ",
+        "パスポート",
+        "関税",
+        "住民票"
+      ],
+      "correct_index": 0,
+      "explanation": "査証はビザとも呼ばれ、外国に入国するための審査に使われる文書です。パスポートとは役割が異なります。日本の新しい手数料は1回の入国に使える査証で約15000円となりました。国籍や渡航目的によっては手数料が不要な場合もあります。",
+      "keywords": [
+        "査証"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/toko/visa/tetsuzuki/pagew_000001_02672.html"
         }
       ]
     }

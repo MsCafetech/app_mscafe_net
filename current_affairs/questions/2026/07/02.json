@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-02",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260702-001",
+      "news_date": "2026-07-02",
+      "category": "international",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "日本とインドの首脳（しゅのう）会談",
+      "news_summary": "日本とインドの首相が会談し、経済安全保障や人工知能の分野で協力することを確認しました。",
+      "question": "2026年7月2日、日本とインドの首相が会談し、経済安全保障や人工知能の分野で協力することを確認しました。\n\nインドの首都はどこですか？",
+      "choices": [
+        "ムンバイ",
+        "ニューデリー",
+        "カトマンズ",
+        "ダッカ"
+      ],
+      "correct_index": 1,
+      "explanation": "インドの首都はニューデリーです。南アジアに位置するインドは人口の多い国で、日本とも経済や技術の分野で協力しています。今回の会談では経済安全保障や人工知能に関する共同文書が発表されました。",
+      "keywords": [
+        "日印首脳会談"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/s_sa/sw/in/pageit_000001_03048.html"
+        }
+      ]
+    }
+  ]
+}
