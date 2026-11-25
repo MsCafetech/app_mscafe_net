@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-01",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260701-001",
@@ -31,6 +31,40 @@
         {
           "name": "日本科学未来館",
           "url": "https://www.miraikan.jst.go.jp/news/press/202606304636.html"
+        }
+      ]
+    },
+    {
+      "id": "20260701-002",
+      "news_date": "2026-07-01",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "大阪のモササウルスの化石から新たな発見",
+      "news_summary": "岡山理科大学などが大阪府産のモササウルス類の骨の化石について新たな研究成果を発表した。",
+      "question": "2026年7月1日、岡山理科大学などの研究チームは、大阪府で以前に採取された岩石からモササウルスの仲間の骨の化石を新たに確認したと発表しました。この生き物は恐竜（きょうりゅう）がいた時代の海で生活していました。\n\nモササウルスは、現在のどの動物に近い仲間ですか？",
+      "choices": [
+        "イルカ",
+        "サメ",
+        "トカゲ",
+        "ペンギン"
+      ],
+      "correct_index": 2,
+      "explanation": "モササウルスはトカゲやヘビに近いは虫類で、海で生活するように進化した動物です。今回の研究では、上あごの先の骨などが確認されました。新種の可能性もあり、化石の研究は昔の生き物の種類や当時の自然環境を知る手がかりになります。",
+      "keywords": [
+        "モササウルス",
+        "化石",
+        "白亜紀",
+        "は虫類"
+      ],
+      "sources": [
+        {
+          "name": "岡山理科大学",
+          "url": "https://www.ous.ac.jp/topics/detail.php?cat=6&id=6587"
+        },
+        {
+          "name": "学研キッズネット",
+          "url": "https://kids.gakken.co.jp/news/102203/"
         }
       ]
     }
