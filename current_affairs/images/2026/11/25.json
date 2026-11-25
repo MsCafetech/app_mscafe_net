@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 38,
-  "image_count": 48,
+  "related_count": 40,
+  "image_count": 50,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -407,6 +407,24 @@
               "usage_notes": "国際連合提供のパブリックドメイン資料。国際連合およびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-008-R01",
+          "images": [
+            {
+              "id": "20261125-008-R01-I01",
+              "type": "photo",
+              "title": "国際刑事裁判所（ICC）の建物",
+              "caption": "資料写真：オランダのハーグにある国際刑事裁判所。戦争犯罪などの重大な犯罪について、個人の責任を国際法に基づいて問う機関です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/International_Criminal_Court_building_%282019%29_in_The_Hague_02.jpg/1280px-International_Criminal_Court_building_%282019%29_in_The_Hague_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:International_Criminal_Court_building_(2019)_in_The_Hague_02.jpg",
+              "credit": "OSeveno",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「OSeveno」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
         }
       ]
     },
@@ -701,6 +719,24 @@
               "license": "Public domain",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
               "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-011-R02",
+          "images": [
+            {
+              "id": "20261125-011-R02-I01",
+              "type": "photo",
+              "title": "地震を想定した訓練",
+              "caption": "資料写真：学校で行う地震訓練。BCPでは、緊急時にも大切な仕事を続けられるよう、あらかじめ計画を立て、訓練して確かめます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Students_practice_earthquake_drill._%2810726996365%29.jpg/1280px-Students_practice_earthquake_drill._%2810726996365%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Students_practice_earthquake_drill._(10726996365).jpg",
+              "credit": "Department of Foreign Affairs and Trade",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "CC BY 4.0。提供者「Department of Foreign Affairs and Trade」とライセンスを表示。"
             }
           ]
         }
