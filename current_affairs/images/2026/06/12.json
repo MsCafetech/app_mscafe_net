@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-06-12",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 0,
-  "image_count": 1,
+  "question_count": 2,
+  "related_count": 2,
+  "image_count": 4,
   "questions": [
     {
       "question_id": "20260612-001",
@@ -23,7 +23,64 @@
           "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。 元画像は切り抜き済み。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20260612-001-R01",
+          "images": [
+            {
+              "id": "20260612-001-R01-I01",
+              "type": "satellite",
+              "title": "静止気象衛星ひまわり8号が見た地球",
+              "caption": "資料画像：2022年6月24日に静止気象衛星ひまわり8号が撮影した地球。静止衛星は同じ側の地球を継続して観測できます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Himawari_8_Full_Disk_Earth.jpg/960px-Himawari_8_Full_Disk_Earth.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Himawari_8_Full_Disk_Earth.jpg",
+              "credit": "気象庁（JMA）",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容があれば明記する。 人物・提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20260612-002",
+      "images": [
+        {
+          "id": "20260612-002-I01",
+          "type": "photo",
+          "title": "2026年サッカーワールドカップ開会式",
+          "caption": "2026年6月11日（現地時間）、ワールドカップの開会式が行われた競技場の様子です。",
+          "is_reference": false,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/The_field_at_Azteca_Stadium_in_Mexico_City_during_the_opening_ceremony_of_the_2026_World_Cup.jpg/960px-The_field_at_Azteca_Stadium_in_Mexico_City_during_the_opening_ceremony_of_the_2026_World_Cup.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_field_at_Azteca_Stadium_in_Mexico_City_during_the_opening_ceremony_of_the_2026_World_Cup.jpg",
+          "credit": "Omar David Sandoval Sida",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容があれば明記する。 人物・提供元の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用する。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20260612-002-R01",
+          "images": [
+            {
+              "id": "20260612-002-R01-I01",
+              "type": "historical",
+              "title": "USMCA署名式",
+              "caption": "歴史写真：2018年11月30日、アルゼンチンのブエノスアイレスで、アメリカ・メキシコ・カナダの代表が貿易協定に署名した様子です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/President_Trump_Participates_in_the_USMCA_Signing_Ceremony_%2832244728588%29.jpg/960px-President_Trump_Participates_in_the_USMCA_Signing_Ceremony_%2832244728588%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:President_Trump_Participates_in_the_USMCA_Signing_Ceremony_(32244728588).jpg",
+              "credit": "U.S. Department of State / Ron Przysucha",
+              "license": "Public Domain (US Government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-DOS",
+              "usage_notes": "出典と提供元を表示する。 人物・提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

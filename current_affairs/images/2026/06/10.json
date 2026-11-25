@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-06-10",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
-  "image_count": 1,
+  "question_count": 2,
+  "related_count": 2,
+  "image_count": 3,
   "questions": [
     {
       "question_id": "20260610-001",
@@ -25,6 +25,44 @@
               "license": "Public Domain (NOAA)",
               "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NOAA",
               "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20260610-002",
+      "images": [
+        {
+          "id": "20260610-002-I01",
+          "type": "photo",
+          "title": "日本の紙の教科書",
+          "caption": "資料写真：2006年に撮影された日本の高校の紙の教科書。デジタル教材を取り入れる前の学習教材の一例です。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Japanese_textbooks.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_textbooks.jpg",
+          "credit": "Asahiko（朝彦）",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容があれば明記する。 人物・提供元の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用する。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20260610-002-R01",
+          "images": [
+            {
+              "id": "20260610-002-R01-I01",
+              "type": "photo",
+              "title": "日本の中学校の教室",
+              "caption": "資料写真：2005年、大分県日田市の中学校の教室。義務教育を行う学校の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Japanese_classroom.jpg/960px-Japanese_classroom.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_classroom.jpg",
+              "credit": "Bobo12345",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-user",
+              "usage_notes": "出典と提供元を表示する。 人物・提供元の推奨を示唆しない。"
             }
           ]
         }

@@ -3,8 +3,8 @@
   "date": "2026-06-23",
   "language": "ja",
   "question_count": 1,
-  "related_count": 0,
-  "image_count": 1,
+  "related_count": 1,
+  "image_count": 2,
   "questions": [
     {
       "question_id": "20260623-001",
@@ -23,7 +23,26 @@
           "usage_notes": "出典・提供元を表示し、提供元の推奨を示唆しない。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20260623-001-R01",
+          "images": [
+            {
+              "id": "20260623-001-R01-I01",
+              "type": "historical",
+              "title": "沖縄返還前の日米首脳会談",
+              "caption": "歴史写真：1972年1月5日、アメリカで会った佐藤栄作首相とニクソン大統領。沖縄返還協定の署名後、返還の実施前の写真です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/President_Nixon_and_Prime_Minister_Eisaku_Sato_of_Japan_at_San_Clemente_-_NARA_-_194752.jpg/960px-President_Nixon_and_Prime_Minister_Eisaku_Sato_of_Japan_at_San_Clemente_-_NARA_-_194752.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:President_Nixon_and_Prime_Minister_Eisaku_Sato_of_Japan_at_San_Clemente_-_NARA_-_194752.jpg",
+              "credit": "Bob Moore / U.S. National Archives (NARA 194752)",
+              "license": "Public Domain (US Government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+              "usage_notes": "出典と提供元を表示する。 人物・提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -4,11 +4,25 @@
   "language": "ja",
   "question_count": 1,
   "related_count": 1,
-  "image_count": 1,
+  "image_count": 2,
   "questions": [
     {
       "question_id": "20260617-001",
-      "images": [],
+      "images": [
+        {
+          "id": "20260617-001-I01",
+          "type": "photo",
+          "title": "G7エビアン・サミットの会議",
+          "caption": "2026年6月16日、フランスのエビアンで開かれたG7首脳会議の様子です。各国の代表が円卓を囲んで話し合っています。",
+          "is_reference": false,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Participation_of_Ursula_von_der_Leyen%2C_President_of_the_European_Commission%2C_in_the_G7_summit_%28P-070010-00-42%29.jpg/960px-Participation_of_Ursula_von_der_Leyen%2C_President_of_the_European_Commission%2C_in_the_G7_summit_%28P-070010-00-42%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Participation_of_Ursula_von_der_Leyen,_President_of_the_European_Commission,_in_the_G7_summit_(P-070010-00-42).jpg",
+          "credit": "© European Union, 2026 / Dati Bendo",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容があれば明記する。 人物・提供元の推奨を示唆しない。"
+        }
+      ],
       "related": [
         {
           "related_id": "20260617-001-R01",
