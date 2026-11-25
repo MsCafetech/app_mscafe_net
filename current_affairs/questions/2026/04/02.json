@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-02",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260402-001",
+      "news_date": "2026-04-02",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "アルテミスIIの打ち上げ成功",
+      "news_summary": "4人の宇宙飛行士を乗せた宇宙船が月に向かう計画の打ち上げに成功した。",
+      "question": "2026年4月2日、日本時間の朝、アメリカ航空宇宙局（NASA）は4人の宇宙飛行士を乗せた宇宙船の打ち上げに成功しました。月の近くを飛行して地球に帰る計画で、将来の月面探査（たんさ）に必要な技術を確かめます。\n\n月の表面で物体に働く重力の大きさは、地球の表面と比べておよそどれくらいですか。",
+      "choices": [
+        "6分の1",
+        "2分の1",
+        "同じ",
+        "6倍"
+      ],
+      "correct_index": 0,
+      "explanation": "月の表面の重力は地球の表面のおよそ6分の1です。同じ物体でも月では重さが小さくなりますが、物体そのものの質量は変わりません。月は地球の周りを回る天然の衛星（えいせい）で、地球からおよそ38万キロメートルはなれています。",
+      "keywords": [
+        "アルテミス計画",
+        "月",
+        "重力"
+      ],
+      "sources": [
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2098513.html"
+        },
+        {
+          "name": "ライブドアニュース（sorae）",
+          "url": "https://news.livedoor.com/article/detail/30890736/"
+        }
+      ]
+    }
+  ]
+}
