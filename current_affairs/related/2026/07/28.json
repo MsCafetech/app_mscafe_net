@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-28",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "questions": [
+    {
+      "question_id": "20260728-001",
+      "related": [
+        {
+          "id": "20260728-001-R01",
+          "relation_type": "question",
+          "title": "緊急地震速報はなぜ早く届くのか",
+          "description": "地震が起こると、地下を揺れが波となって伝わります。代表的なものにＰ波とＳ波があり、Ｐ波の方が速く、Ｓ波の方が一般に強い揺れをもたらします。気象庁は震源に近い地震計がとらえた波をもとに、地震の規模や各地の揺れを予測します。予測結果が基準を満たすと緊急地震速報を発表するため、強い揺れが来る前に情報が届く場合があります。ただし震源の近くでは速報が間に合わないこともあります。速報だけに頼らず、日ごろから地震に備えることが大切です。",
+          "relationship": "震度の予測に使われる地震波の性質を学ぶ。",
+          "keywords": [
+            "緊急地震速報",
+            "Ｐ波",
+            "Ｓ波"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/jishin/eew/shikumi/shikumi.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
