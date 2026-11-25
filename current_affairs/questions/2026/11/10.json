@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-10",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20261110-001",
@@ -59,6 +59,35 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/fp/pc/pageit_000001_00030.html"
+        }
+      ]
+    },
+    {
+      "id": "20261110-003",
+      "news_date": "2026-11-10",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "食料システム法に基づく米の取引への指導",
+      "news_summary": "農林水産省が主食用米を調達する19事業者に取引の適正化を求めた。",
+      "question": "2026年11月10日、農林水産省は、米を仕入れる19の事業者に対し、取引相手との価格の話し合いなどについて指導を行いました。食料を安定して供給するため、生産にかかる費用などを考えて取引することが重要です。\n\n農家が米を生産する農業は、何次産業に分類されますか。",
+      "choices": [
+        "第一次産業",
+        "第二次産業",
+        "第三次産業",
+        "第四次産業"
+      ],
+      "correct_index": 0,
+      "explanation": "農業は自然から食料などを得る第一次産業です。林業や漁業もこの仲間です。原料を加工して製品を作る製造業などは第二次産業、商品を販売する小売業や運送業などは第三次産業に分類されます。",
+      "keywords": [
+        "食料システム法",
+        "米",
+        "第一次産業"
+      ],
+      "sources": [
+        {
+          "name": "農林水産省",
+          "url": "https://www.maff.go.jp/j/press/shokuhin/kikaku/261110.html"
         }
       ]
     }
