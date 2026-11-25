@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 21,
-  "image_count": 31,
+  "related_count": 23,
+  "image_count": 33,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -353,7 +353,44 @@
           "usage_notes": "CC BY-SA 3.0。作者名「OSeveno」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-008-R03",
+          "images": [
+            {
+              "id": "20261125-008-R03-I01",
+              "type": "photo",
+              "title": "国際司法裁判所（ICJ）が置かれる平和宮",
+              "caption": "資料写真：オランダのハーグにある平和宮。国際司法裁判所（ICJ）は国と国の争いを扱い、ICCとは対象が異なります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/International_Court_of_Justice_HQ_2006.jpg/1280px-International_Court_of_Justice_HQ_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:International_Court_of_Justice_HQ_2006.jpg",
+              "credit": "International Court of Justice / Yeu Ninje",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Help:Public_domain",
+              "usage_notes": "パブリックドメイン。国際司法裁判所およびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-008-R04",
+          "images": [
+            {
+              "id": "20261125-008-R04-I01",
+              "type": "photo",
+              "title": "ハーグの平和宮",
+              "caption": "資料写真：国際法と平和に関わる機関が集まるハーグの平和宮。国境をこえる問題を話し合う場として知られます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Peace_Palace_%28Vredespalais%29_-_Houses_the_International_court_of_Justice_-_the_principal_Judiciary_body_of_the_United_Nations_%2834402091225%29.jpg/1280px-Peace_Palace_%28Vredespalais%29_-_Houses_the_International_court_of_Justice_-_the_principal_Judiciary_body_of_the_United_Nations_%2834402091225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Peace_Palace_(Vredespalais)_-_Houses_the_International_court_of_Justice_-_the_principal_Judiciary_body_of_the_United_Nations_(34402091225).jpg",
+              "credit": "Ontheway Advice",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-006",
