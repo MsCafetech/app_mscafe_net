@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-24",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260724-001",
@@ -31,6 +31,40 @@
         {
           "name": "海洋研究開発機構「南鳥島EEZ海域でのレアアース泥採鉱システム接続試験の結果について」",
           "url": "https://www.jamstec.go.jp/j/about/press_release/20260724/"
+        }
+      ]
+    },
+    {
+      "id": "20260724-002",
+      "news_date": "2026-07-24",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "改正国民投票法が成立",
+      "news_summary": "参議院本会議で改正国民投票法が可決され、投開票の環境整備が進められることになった。",
+      "question": "2026年7月24日、日本国憲法の改正手続きを定める改正国民投票法が成立しました。投票や開票に立ち会う人を選ぶ条件を緩（ゆる）めるなど、国民投票を実施するための環境を整えることが目的です。\n\n憲法改正案が国民投票で承認されるためには、有効投票のどれだけの賛成が必要ですか？",
+      "choices": [
+        "3分の1以上",
+        "2分の1を超える賛成",
+        "3分の2以上",
+        "全員の賛成"
+      ],
+      "correct_index": 1,
+      "explanation": "憲法第96条では、衆議院・参議院それぞれの総議員の3分の2以上の賛成によって国会が改正を発議（はつぎ）し、国民に提案することを定めています。さらに国民投票で有効投票の過半数の賛成が必要です。国会の発議と国民の承認は異なる手続きです。",
+      "keywords": [
+        "国民投票法",
+        "日本国憲法",
+        "憲法改正",
+        "過半数"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_politics/articles/000521598.html"
+        },
+        {
+          "name": "衆議院憲法審査会",
+          "url": "https://www.shugiin.go.jp/internet/itdb_kenpou.nsf/html/kenpou/tetsuzuki.htm"
         }
       ]
     }
