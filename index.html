@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 543,866 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 543,708 バイト）。</pre>';
   }
 });
 </script>
@@ -58,8 +58,8 @@ const SITE = {
 const NEWS = [
   { date: '2026/11/25', tag: L('タップる？', 'TaPru'), text: L('Android 版を Google Play でリリースしました。クローズドテストにご協力いただいたテスターの皆さま、ありがとうございました。',
       'The Android version is now released on Google Play. Many thanks to all the testers who joined the closed test.') },
-  { date: '2026/11/25', tag: L('時事Q', 'JijiQ'), text: L('新しいアプリ「時事Q」を仕込み中です。毎日のニュースから出題する、小学4\u301C6年生の中学受験向けの時事問題アプリです。',
-      'We are brewing a new app, “JijiQ”: a current-affairs quiz app built from each day’s news, for 4th to 6th graders preparing for junior high school entrance exams.') },
+  { date: '2026/11/25', tag: L('時事Q', 'JijiQ'), text: L('新しいアプリ「時事Q」を仕込み中です。毎日のニュースから出題する、小学4\u301C6年生の日々の学習向けの時事問題アプリです。',
+      'We are brewing a new app, “JijiQ”: a current-affairs quiz app built from each day’s news, for everyday learning by 4th to 6th graders.') },
   { date: '2026/11/25', tag: 'RAY', text: L('ゾンビが17種類・ボスが6体に増え、投げ物や充電装置の故障などの邪魔ギミックと、敵の強さの選択が加わりました。紹介を更新しました。',
       'Now with 17 zombie types and 6 bosses, hazards such as thrown objects and a broken charger, and a choice of enemy strength. We have updated its introduction.') },
   { date: '2026/11/19', tag: 'RAY', text: L('新しいゲーム「RAY」を仕込み中です。指でなぞって放つビームで、押し寄せるゾンビの群れを薙ぎ払う、縦画面の防衛ゲームです。', 'We are brewing a new game, “RAY”: a portrait defense game where you swipe to fire a beam and sweep away hordes of zombies.') },
@@ -1596,12 +1596,12 @@ const APPS = [
   },
   {
     id: 'jijiq', name: L('時事Q', 'JijiQ'), icon: jqIcon, status: L('開発中', 'In development'),
-    one: L('毎日のニュースから出題する4択クイズ。背景と関連知識まで学べる、小学4\u301C6年生の中学受験向け時事問題アプリ。', 'A four-choice quiz made from each day’s news. A current-affairs app for 4th to 6th graders preparing for junior high entrance exams, with background and related knowledge.'),
+    one: L('毎日のニュースから出題する4択クイズ。背景と関連知識まで学べる、小学4\u301C6年生の日々の学習向け時事問題アプリ。', 'A four-choice quiz made from each day’s news. A current-affairs app for everyday learning by 4th to 6th graders, with background and related knowledge.'),
     headline: L('<span class="nb">今朝のニュースで、</span><span class="nb"><span class="hl">一問</span>。</span>', '<span class="nb">This morning’s news,</span> <span class="nb">in <span class="hl">one question</span>.</span>'),
-    lead: L('モーニングのお供に、今日の一問はいかがですか。時事Q は、小学4\u301C6年生の中学受験向けの時事問題アプリです。毎日のニュースから作った問題を、ニュースの背景を読んでから4択で解き、'
+    lead: L('モーニングのお供に、今日の一問はいかがですか。時事Q は、小学4\u301C6年生の日々の学習向けの時事問題アプリです。毎日のニュースから作った問題を、ニュースの背景を読んでから4択で解き、'
         + '解説と関連知識で、ひとつの答えをまわりの知識へとつなげていきます。朝、登校前の数分で取り組めます。Android と iOS に対応予定で、スマホにもタブレットにも合わせた画面です。'
         + 'ただいま仕込み中です。本サイトでの画面と、実際に動作させたときの画面詳細は異なります。',
-        'How about a question of the day with your morning set? JijiQ is a current-affairs quiz app for 4th to 6th graders preparing for junior high school entrance exams. Read the background of a news story, answer a four-choice question made from it, '
+        'How about a question of the day with your morning set? JijiQ is a current-affairs quiz app for everyday learning by 4th to 6th graders. Read the background of a news story, answer a four-choice question made from it, '
         + 'and then connect that one answer to the knowledge around it through the explanation and related knowledge. It takes just a few minutes before school. Android and iOS versions are planned, with screens made for both phones and tablets. '
         + 'The app is in Japanese and is now in the works. The screens on this site differ in detail from the real app.'),
     os: L('対応OS　Android 8.0 以上 ／ iOS 15.0 以上（予定）　　料金　無料（広告あり）', 'OS: Android 8.0 or later / iOS 15.0 or later (planned)　　Price: Free (with ads)'), store: { label: L('開発中', 'In development'), url: '' },
@@ -1629,7 +1629,7 @@ const APPS = [
       [L('読んで答える', 'Read and answer'), L('ニュースの背景を読んで、4つの選択肢から答えを選び、「回答する」。', 'Read the background of the news, choose one of four answers and press “Answer”.')],
       [L('関連知識で広げる', 'Go further'), L('正解と解説を読んだら「関連知識を学ぶ」。終わったら「次の問題へ」。', 'After the answer and explanation, press “Learn related knowledge”. Then go on to the next question.')],
     ],
-    info: [[L('アプリ名', 'App name'), L('時事Q', '時事Q (JijiQ)')], [L('対象', 'For'), L('小学4\u301C6年生（中学受験向け）', '4th to 6th graders (junior high entrance exam prep)')],
+    info: [[L('アプリ名', 'App name'), L('時事Q', '時事Q (JijiQ)')], [L('対象', 'For'), L('小学4\u301C6年生（日々の学習向け）', '4th to 6th graders (for everyday learning)')],
         [L('対応OS', 'OS'), L('Android 8.0 以上 ／ iOS 15.0 以上（予定）。スマホ・タブレット、縦・横', 'Android 8.0 or later / iOS 15.0 or later (planned). Phones and tablets, portrait or landscape')],
         [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play・App Store（準備中）', 'Google Play and the App Store (in preparation)')],
         [L('問題', 'Questions'), L('毎日更新（1日10問まで、直近1年分）', 'Updated daily (up to 10 a day; the last year is kept)')],
@@ -2659,7 +2659,7 @@ const LEGAL = [
     'アプリ見守りが表示する運営会社と回線の持ち主は、内蔵の一覧とインターネットの登録機関（RDAP）の登録情報による参考情報です。登録情報は古いことがあり、回線の持ち主とサービスの運営者が別のこともあります（クラウドや CDN など）。「個人向け回線」などの種類は名前からの推定です。店長はこれらの正確さと、これをもとに行った操作の結果について責任を負いません。照会の結果を、特定の人や会社への嫌がらせなど不正な目的に使わないでください。',
     'タップる？の計測結果・分析・称号は、遊びとして楽しむためのもので、医学的・科学的な評価ではありません。計測値は、端末の性能やタッチパネルによって変わることがあります。連打による指や手首の痛み、端末の故障・破損について、店長は責任を負いません。適度に休憩しながらお楽しみください。',
     'BOMBOM はクローズドテスト中のゲームで、ステージ・得点・アイテムの内容は予告なく変わることがあります。進み具合やアイテムは端末の中に保存しているため、店長は復元できません。',
-    '時事Q の問題・解説・関連知識は、ニュースや資料をもとに作っていますが、誤りがあることや、その後の動きで内容が古くなることがあります。内容の正確さや、入学試験での正解を保証するものではありません。誤りに気づいたときは、アプリの「間違い連絡」からお知らせください。写真には、ニュースの当時のものではない資料写真が含まれることがあります。',
+    '時事Q の問題・解説・関連知識は、ニュースや資料をもとに作っていますが、誤りがあることや、その後の動きで内容が古くなることがあります。内容の正確さを保証するものではありません。誤りに気づいたときは、アプリの「間違い連絡」からお知らせください。写真には、ニュースの当時のものではない資料写真が含まれることがあります。',
     'RAY は開発中のゲームで、敵・WAVE・ビーム・アイテムの内容は予告なく変わることがあります。記録は端末の中に保存しているため、店長は復元できません。画面の点滅や大量の敵が出る場面があります。長時間のプレイは避け、適度に休憩してください。',
     'MP3変換は、端末の中で動画の音声を変換する道具です。すべての動画が変換できることや、変換後の音質を保証するものではありません。MP3・AAC は圧縮し直すため、元の音より少し劣化することがあります。変換した音声の利用について、店長は責任を負いません。長い動画の変換では、端末の発熱や電池の消費にご注意ください。',
     '外部のサービス（広告、ストアなど）や第三者のサイトの内容・動作について、店長は責任を負いません。',
@@ -2728,7 +2728,7 @@ const LEGAL = [
     'The operators and network owners shown in App Monitor are reference information from a built-in list and from internet registry (RDAP) records. Records may be out of date, and the network owner may differ from the service operator (for example, cloud and CDN providers). Types such as “home line” are guesses from names. The Manager is not responsible for their accuracy or for the results of actions taken based on them. Do not use lookup results for improper purposes such as harassing a person or company.',
     'TaPru’s measurements, analyses and titles are for fun and are not medical or scientific evaluations. Measured values may vary depending on device performance and touch screen. The Manager is not responsible for finger or wrist pain from rapid tapping, or for device failure or damage. Please take breaks as you play.',
     'BOMBOM is a game in closed testing, and its stages, scores and items may change without notice. Progress and items are saved on your device, and the Manager cannot restore them.',
-    'JijiQ’s questions, explanations and related knowledge are made from news and reference materials, but they may contain mistakes or become out of date as events move on. The Manager does not guarantee their accuracy or that they match the correct answers in entrance exams. If you notice a mistake, please let us know with “Report a mistake” in the app. Some photos are reference photos not taken at the time of the news.',
+    'JijiQ’s questions, explanations and related knowledge are made from news and reference materials, but they may contain mistakes or become out of date as events move on. The Manager does not guarantee their accuracy. If you notice a mistake, please let us know with “Report a mistake” in the app. Some photos are reference photos not taken at the time of the news.',
     'RAY is a game in development, and its enemies, waves, beams and items may change without notice. Records are saved on your device, and the Manager cannot restore them. Some scenes flash or show huge numbers of enemies. Avoid playing for long periods and take breaks.',
     'MP3 Converter is a tool that converts the audio of videos on your device. The Manager does not guarantee that every video can be converted or the quality of the converted audio. MP3 and AAC are re-compressed, so the sound may be slightly lower in quality than the original. The Manager is not responsible for how you use converted audio. When converting long videos, please watch out for device heat and battery use.',
     'The Manager is not responsible for the content or operation of external services (ads, app stores, etc.) or third-party websites.',
