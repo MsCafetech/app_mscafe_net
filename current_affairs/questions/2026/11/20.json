@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20261120-001",
@@ -59,6 +59,39 @@
         {
           "name": "科学技術振興機構・Science Portal",
           "url": "https://scienceportal.jst.go.jp/newsflash/20261120_n01/"
+        }
+      ]
+    },
+    {
+      "id": "20261120-003",
+      "news_date": "2026-11-20",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "H3ロケットの打ち上げを段階的に民間へ移行（いこう）",
+      "news_summary": "JAXAは日本の主力ロケットの打ち上げを段階的に民間へ移す方針を発表した。",
+      "question": "2026年11月20日、JAXA（宇宙航空研究開発機構（きこう））は、日本の主力ロケットH3の打ち上げを段階的に民間企業へ移す方針を発表しました。日本が宇宙へ物を運ぶ手段を維持（いじ）し、国際競争力を高めるための取り組みです。\n\nH3ロケットの打ち上げに使われる種子島宇宙センターは何県にありますか。",
+      "choices": [
+        "沖縄県（おきなわけん）",
+        "宮崎県（みやざきけん）",
+        "鹿児島県（かごしまけん）",
+        "長崎県（ながさきけん）"
+      ],
+      "correct_index": 2,
+      "explanation": "種子島宇宙センターは鹿児島県の種子島にあります。ロケットを東向きに打ち上げる場合、地球の自転による速さを利用できます。また、周囲に広い海があることは、打ち上げ時の安全を確保する上でも重要です。",
+      "keywords": [
+        "H3ロケット",
+        "JAXA",
+        "種子島"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/11/20261120-1_j.html"
+        },
+        {
+          "name": "時事通信（nippon.com）",
+          "url": "https://www.nippon.com/ja/articles/-/57784"
         }
       ]
     }
