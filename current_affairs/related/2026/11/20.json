@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 3,
+  "questions": [
+    {
+      "question_id": "20261120-001",
+      "related": [
+        {
+          "id": "20261120-001-R01",
+          "relation_type": "answer",
+          "title": "漁獲枠と持続可能な漁業",
+          "description": "魚は、海にいるだけで毎年同じ数だけとれるわけではありません。親魚が卵を産み、子どもの魚が成長して次の親魚になることで資源が保たれます。とりすぎると親魚や小型魚が減り、将来の世代が少なくなって漁業そのものを続けにくくなります。そこで、魚の数や大きさを調べ、漁獲量や漁獲する魚の大きさに上限を設けます。資源を守りながら利用する「持続可能な漁業」は、食卓に魚を届け続けるための大切な考え方です。食べる側も、資源を大切にする表示や取組に目を向けることができます。",
+          "relationship": "正解が示す「将来も漁業を続けられるようにする」資源管理の目的を、魚の世代交代と漁獲枠の考え方から説明する。",
+          "keywords": [
+            "持続可能な漁業",
+            "資源管理",
+            "漁獲枠",
+            "親魚"
+          ],
+          "sources": [
+            {
+              "name": "水産庁「令和7年度 水産白書 第1部第1章第4節」",
+              "url": "https://www.jfa.maff.go.jp/j/kikaku/wpaper/r07_h/trend/1/t1_4_2.html"
+            },
+            {
+              "name": "水産庁「太平洋クロマグロの資源・漁獲管理について」",
+              "url": "https://www.jfa.maff.go.jp/j/tuna/maguro_gyogyou/bluefinkanri.html"
+            }
+          ]
+        },
+        {
+          "id": "20261120-001-R02",
+          "relation_type": "question",
+          "title": "TAC（漁獲可能量）の仕組み",
+          "description": "TAC（漁獲可能量）とは、資源の状態をもとに決める、一定期間にとってよい魚の量の上限です。日本ではクロマグロなどでTACを漁業ごとに配分し、漁獲量を報告して管理しています。上限に近づくと漁を止めることもあります。これは漁師を困らせるためではなく、乱獲を防ぎ、次の世代の魚を残すための仕組みです。科学的な資源評価、正確な報告、漁業者や消費者の協力がそろって、資源管理は効果を発揮します。食卓の魚を未来へつなぐための約束です。",
+          "relationship": "太平洋クロマグロの国際的な漁獲枠のニュースを理解する基礎として、日本の漁獲可能量による管理を解説する。",
+          "keywords": [
+            "TAC",
+            "漁獲可能量",
+            "資源評価",
+            "乱獲"
+          ],
+          "sources": [
+            {
+              "name": "水産庁「水産資源の管理」",
+              "url": "https://www.jfa.maff.go.jp/j/suisin/index.html"
+            },
+            {
+              "name": "水産庁「太平洋クロマグロの資源・漁獲管理について」",
+              "url": "https://www.jfa.maff.go.jp/j/tuna/maguro_gyogyou/bluefinkanri.html"
+            }
+          ]
+        },
+        {
+          "id": "20261120-001-R03",
+          "relation_type": "question",
+          "title": "太平洋クロマグロを国際協力で守る",
+          "description": "太平洋クロマグロは、太平洋全体で一つの資源として扱われます。日本海付近で生まれた若い魚の一部は東へ移動して成長し、成熟すると西の海域へ戻って産卵します。そのため、一国だけがとる量を減らしても十分ではなく、日本、韓国、アメリカ、メキシコなどの国や地域が国際会議で協力してルールを決めます。小型魚を守ることは、将来卵を産む親魚を増やすことにつながるため、資源回復で特に重要です。海をこえる協力が欠かせません。",
+          "relationship": "太平洋クロマグロの漁獲枠が国際会議で決められる背景として、回遊魚の資源管理に必要な国際協力を説明する。",
+          "keywords": [
+            "太平洋クロマグロ",
+            "回遊魚",
+            "国際協力",
+            "WCPFC"
+          ],
+          "sources": [
+            {
+              "name": "WCPFC「Conservation and management of tuna and billfish species」",
+              "url": "https://www.wcpfc.int/index.php/sustainability/conservation-and-management-tuna-and-billfish-species"
+            },
+            {
+              "name": "水産庁「令和7年度 水産白書 第1部第1章第4節」",
+              "url": "https://www.jfa.maff.go.jp/j/kikaku/wpaper/r07_h/trend/1/t1_4_2.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
