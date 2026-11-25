@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-26T06:24:49+09:00",
+  "last_updated": "2026-11-26T06:41:33.352+09:00",
   "language": "ja",
   "total_questions": 45,
   "total_related": 149,
@@ -9,16 +9,16 @@
     {
       "date": "2026-11-25",
       "path": "2026/11/25.json",
-      "question_count": 4,
-      "related_count": 20,
-      "revision": 15
+      "question_count": 3,
+      "related_count": 15,
+      "revision": 16
     },
     {
       "date": "2026-11-24",
       "path": "2026/11/24.json",
-      "question_count": 7,
-      "related_count": 35,
-      "revision": 13
+      "question_count": 8,
+      "related_count": 40,
+      "revision": 14
     },
     {
       "date": "2026-11-23",

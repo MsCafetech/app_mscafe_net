@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "description": "旧問題IDから修復後IDへの対応表",
+  "mappings": [
+    {
+      "old_id": "20261125-010",
+      "new_id": "20261124-017",
+      "old_date": "2026-11-25",
+      "new_date": "2026-11-24",
+      "reason": "news_date verified against official source",
+      "source": "https://www.maff.go.jp/hokkaido/anzen/seikatsu/shouhisyacorner/261124.html"
+    }
+  ],
+  "last_updated": "2026-11-26T06:41:33.352+09:00"
+}

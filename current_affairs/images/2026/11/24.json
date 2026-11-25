@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-24",
   "language": "ja",
-  "question_count": 7,
-  "related_count": 28,
-  "image_count": 35,
+  "question_count": 8,
+  "related_count": 33,
+  "image_count": 41,
   "questions": [
     {
       "question_id": "20261124-009",
@@ -645,6 +645,116 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261124-017",
+      "images": [
+        {
+          "id": "20261124-017-I01",
+          "type": "photo",
+          "title": "日本の食事",
+          "caption": "資料写真：ご飯、汁物、おかずを組み合わせた日本の食事の一例。季節の食材や食事の習わしを大切にする和食文化を考える手がかりになります。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Japanese_Meal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Meal.jpg",
+          "credit": "Nome92",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "CC BY-SA 3.0。作者名「Nome92」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261124-017-R04",
+          "images": [
+            {
+              "id": "20261124-017-R04-I01",
+              "type": "photo",
+              "title": "正月のおせち料理",
+              "caption": "資料写真：正月に食べるおせち料理。節目の食事を家族や地域で分け合い、料理の意味や作り方を伝える行事食の一つです。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Osechi.jpg/1280px-Osechi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Osechi.jpg",
+              "credit": "Akihito Kurono",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-017-R03",
+          "images": [
+            {
+              "id": "20261124-017-R03-I01",
+              "type": "photo",
+              "title": "ご飯・汁物・おかずのある和食の定食",
+              "caption": "資料写真：ご飯、汁物、主菜や副菜を組み合わせた和食の定食。一汁三菜の考え方では、主食・汁物・おかずをそろえて食事を整えます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Japanese_set_meal_with_tonkatsu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_set_meal_with_tonkatsu.jpg",
+              "credit": "Betsylavolette",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "CC BY-SA 4.0。作者名「Betsylavolette」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-017-R05",
+          "images": [
+            {
+              "id": "20261124-017-R05-I01",
+              "type": "photo",
+              "title": "群馬県の郷土料理「おきりこみ」",
+              "caption": "資料写真：幅広い麺や野菜を煮込む群馬県の郷土料理「おきりこみ」。地域の食材や作り方を受け継ぐ食文化の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Okirikomi.jpg/1280px-Okirikomi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Okirikomi.jpg",
+              "credit": "禁樹なずな",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「禁樹なずな」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-017-R01",
+          "images": [
+            {
+              "id": "20261124-017-R01-I01",
+              "type": "photo",
+              "title": "正月のおせち料理",
+              "caption": "資料写真：正月に重箱に詰めて食べるおせち料理。和食は、料理だけでなく、節目の食事を通して知識や習わしを伝える食文化として無形文化遺産に登録されています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Osechi.jpg/1280px-Osechi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Osechi.jpg",
+              "credit": "Akihito Kurono",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-017-R02",
+          "images": [
+            {
+              "id": "20261124-017-R02-I01",
+              "type": "photo",
+              "title": "主食・汁物・おかずをそろえた和食の定食",
+              "caption": "資料写真：ご飯、汁物、主菜や副菜を組み合わせた和食の定食。地域でとれる食材や、季節の食材を生かす工夫は和食文化の土台です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Japanese_set_meal_with_tonkatsu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_set_meal_with_tonkatsu.jpg",
+              "credit": "Betsylavolette",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "CC BY-SA 4.0。作者名「Betsylavolette」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
             }
           ]
         }
