@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-15",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260415-001",
+      "news_date": "2026-04-15",
+      "category": "international",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "日本とポーランドの首脳会談（しゅのうかいだん）",
+      "news_summary": "日本とポーランドが首脳会談を行い、安全保障などで協力する方針を確認した。",
+      "question": "2026年4月15日、日本とポーランドの首相が東京で会談し、安全保障などの協力を進めることを確認しました。また、両国の社会保障に関する協定に署名（しょめい）しました。\n\nポーランドの首都はどこですか？",
+      "choices": [
+        "プラハ",
+        "ブダペスト",
+        "ワルシャワ",
+        "ウィーン"
+      ],
+      "correct_index": 2,
+      "explanation": "ポーランドの首都はワルシャワです。ポーランドはヨーロッパに位置し、ドイツやウクライナなどと国境を接しています。2004年にヨーロッパ連合（EU）に加盟しました。第二次世界大戦では大きな被害（ひがい）を受け、戦後に復興を進めました。",
+      "keywords": [
+        "ポーランド",
+        "ワルシャワ",
+        "EU"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/erp/seb/pl/pageit_000001_02873.html"
+        }
+      ]
+    }
+  ]
+}
