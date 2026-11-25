@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 10,
+  "question_count": 11,
   "questions": [
     {
       "id": "20261125-001",
@@ -310,6 +310,44 @@
         {
           "name": "共同通信（熊本日日新聞）",
           "url": "https://kumanichi.com/articles/2061591"
+        }
+      ]
+    },
+    {
+      "id": "20261125-014",
+      "news_date": "2026-11-25",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "安全保障関連3文書の見直し",
+      "news_summary": "政府が年末に改定を予定する防衛力整備計画の方針が明らかになりました。",
+      "question": "2026年11月25日、政府は安全保障関連3文書の年内の見直しに向け、自民党の会合で防衛力整備計画の内容の一部を示しました。国を守るための自衛隊の体制や、国内での装備品の生産などが見直しの対象です。\n\n安全保障関連3文書のうち、自衛隊の装備品や5年間の防衛関係の費用について具体的に定める文書はどれですか。",
+      "choices": [
+        "国家安全保障戦略",
+        "国家防衛戦略",
+        "防衛力整備計画",
+        "日本国憲法（にほんこくけんぽう）"
+      ],
+      "correct_index": 2,
+      "explanation": "安全保障関連3文書は2022年12月にまとめられました。国家安全保障戦略は国の安全に関する大きな方針を、国家防衛戦略は国を守るための目標や方法を示します。防衛力整備計画はそれらをもとに、必要な装備品や費用などを具体的に示します。",
+      "keywords": [
+        "安全保障関連3文書",
+        "防衛力整備計画",
+        "国家安全保障戦略",
+        "国家防衛戦略"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（熊本日日新聞掲載）",
+          "url": "https://www.kumanichi.com/articles/2061844"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://smart.asahi.com/v/article/ASVCT337XVCTUTFK00RM.php"
+        },
+        {
+          "name": "防衛省・令和6年版防衛白書",
+          "url": "https://www.mod.go.jp/j/press/wp/wp2024/html/n210300000.html"
         }
       ]
     }
