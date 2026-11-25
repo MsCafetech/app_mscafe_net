@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-01",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260701-001",
@@ -65,6 +65,39 @@
         {
           "name": "学研キッズネット",
           "url": "https://kids.gakken.co.jp/news/102203/"
+        }
+      ]
+    },
+    {
+      "id": "20260701-003",
+      "news_date": "2026-07-01",
+      "category": "economy",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "国際観光旅客税が3000円に",
+      "news_summary": "日本から出国する際にかかる国際観光旅客税の税率が引き上げられた。",
+      "question": "2026年7月1日、日本から出国する人にかかる国際観光旅客税が、原則として1回1000円から引き上げられました。\n\n新しい税額はいくらですか？",
+      "choices": [
+        "1500円",
+        "2000円",
+        "3000円",
+        "5000円"
+      ],
+      "correct_index": 2,
+      "explanation": "国際観光旅客税は、日本から飛行機や船で出国する人に原則としてかかる税金です。2026年7月1日から3000円になりました。観光地の混雑対策や、旅行者が利用する施設の整備などに税収が活用されます。一定の条件を満たす航空券などには以前の税率が適用されます。",
+      "keywords": [
+        "国際観光旅客税",
+        "観光",
+        "税金"
+      ],
+      "sources": [
+        {
+          "name": "国税庁",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7195.htm"
+        },
+        {
+          "name": "観光庁",
+          "url": "https://www.mlit.go.jp/kankocho/seisaku_seido/kihonkeikaku/inbound_kaifuku/ryokakuzei.html"
         }
       ]
     }
