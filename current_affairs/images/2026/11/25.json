@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 11,
-  "image_count": 21,
+  "related_count": 13,
+  "image_count": 23,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -259,6 +259,42 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "CC BY-SA 3.0。作者名「Taylor Weidman / The Vanishing Cultures Project」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-003-R03",
+          "images": [
+            {
+              "id": "20261125-003-R03-I01",
+              "type": "map",
+              "title": "シルクロードの地図",
+              "caption": "資料地図：東アジアから中央アジア、西アジア、ヨーロッパへつながる交易路を示した図。モンゴル帝国の時代には、広い地域の人・物・文化の交流が進みました。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Silk_route.jpg/1280px-Silk_route.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Silk_route.jpg",
+              "credit": "NASA/Goddard Space Flight Center、Splette",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "パブリックドメイン。NASA/Goddard Space Flight Center、制作者およびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-003-R04",
+          "images": [
+            {
+              "id": "20261125-003-R04-I01",
+              "type": "map",
+              "title": "モンゴル帝国の最大版図",
+              "caption": "資料地図：モンゴル帝国が最も広がった時期の範囲を示した図。広い地域がつながったことで、交易や文化の交流が活発になりました。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mongol_Empire_at_its_extent.png/1280px-Mongol_Empire_at_its_extent.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Mongol_Empire_at_its_extent.png",
+              "credit": "Tiashing595",
+              "license": "CC0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
             }
           ]
         }
