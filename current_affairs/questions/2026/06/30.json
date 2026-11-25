@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-30",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260630-001",
@@ -63,6 +63,44 @@
         {
           "name": "環境省",
           "url": "https://www.env.go.jp/annai/kaiken/kaiken_00401.html"
+        }
+      ]
+    },
+    {
+      "id": "20260630-003",
+      "news_date": "2026-06-30",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "2026年版通商白書を公表",
+      "news_summary": "経済産業省が通商白書を公表し、資源などの調達先を広げる重要性を示しました。",
+      "question": "2026年6月30日、経済産業省は2026年版の通商白書を公表しました。世界経済の先行きが不安定になる中、原材料などを仕入れる国や地域を増やすことの重要性を示しました。\n\n原材料を仕入れる国を増やす主な利点は何ですか？",
+      "choices": [
+        "すべての輸入品に同じ税金がかかるようになる",
+        "国内で原材料を生産することが禁止される",
+        "外国との貿易が必要なくなる",
+        "一つの国からの供給が止まっても、別の国から仕入れやすくなる"
+      ],
+      "correct_index": 3,
+      "explanation": "原材料を一つの国だけから仕入れていると、その国で災害や紛争（ふんそう）が起きたときに、製品を作れなくなるおそれがあります。仕入れ先を複数の国や地域に広げることで、原材料の不足を防ぎ、製品を安定して作ることにつながります。",
+      "keywords": [
+        "通商白書",
+        "貿易",
+        "サプライチェーン",
+        "資源"
+      ],
+      "sources": [
+        {
+          "name": "経済産業省",
+          "url": "https://www.meti.go.jp/report/tsuhaku2026/whitepaper_2026.html"
+        },
+        {
+          "name": "首相官邸",
+          "url": "https://www.kantei.go.jp/jp/kakugi/2026/kakugi-2026063001.html"
+        },
+        {
+          "name": "経済産業省発表（PublicNow転載）",
+          "url": "https://www.publicnow.com/view/D615BDE7EBD6F477FA4FDA865E7B0BD18824D4CC"
         }
       ]
     }
