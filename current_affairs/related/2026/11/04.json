@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "questions": [
+    {
+      "question_id": "20261104-001",
+      "related": [
+        {
+          "id": "20261104-001-R01",
+          "relation_type": "question",
+          "title": "アメリカの議会と大統領の権力の分担",
+          "description": "アメリカでは、法律を作る議会と、法律に基づいて政治を進める大統領などが異なる役割を持っています。議会には上院と下院があり、二つの議院が法律について話し合います。大統領は議会が可決した法案に対して拒否権を使うことができますが、議会は両院で一定の多数の賛成を得れば、拒否された法案を成立させることができます。権力が一か所に集中しないよう、互いにチェックする仕組みです。中間選挙で議会の構成が変わると、大統領が進めようとする政策についての話し合いにも影響します。",
+          "relationship": "中間選挙が大統領と議会の関係に影響する理由を学ぶ。",
+          "keywords": [
+            "三権分立",
+            "議会",
+            "拒否権"
+          ],
+          "sources": [
+            {
+              "name": "米国上院「Constitution」",
+              "url": "https://www.senate.gov/artandhistory/senate-stories/constitution.htm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
