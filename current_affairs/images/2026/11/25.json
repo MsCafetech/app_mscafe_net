@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 32,
-  "image_count": 42,
+  "related_count": 34,
+  "image_count": 44,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -387,6 +387,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-008-R02",
+          "images": [
+            {
+              "id": "20261125-008-R02-I01",
+              "type": "historical",
+              "title": "国際刑事裁判所ローマ規程の表紙",
+              "caption": "歴史資料：国際刑事裁判所のしくみを定めた「ローマ規程」の公文書。国どうしが共通の約束をつくり、裁判所の活動の土台にしています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Rome_Statute_of_the_International_Criminal_Court_%28A_CONF.183_9-EN%29.pdf/page1-960px-The_Rome_Statute_of_the_International_Criminal_Court_%28A_CONF.183_9-EN%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_Rome_Statute_of_the_International_Criminal_Court_(A_CONF.183_9-EN).pdf",
+              "credit": "United Nations",
+              "license": "Public domain",
+              "license_url": "https://www.un.org/en/about-us/terms-of-use",
+              "usage_notes": "国際連合提供のパブリックドメイン資料。国際連合およびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         }
@@ -777,6 +795,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "CC BY-SA 3.0。原作者Tintazulおよび派生版作者Cruickshanks、ライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-013-R05",
+          "images": [
+            {
+              "id": "20261125-013-R05-I01",
+              "type": "map",
+              "title": "ガダルカナル島の戦いを示す地図",
+              "caption": "歴史地図：第二次世界大戦中のガダルカナル島周辺の戦いを示した図。ソロモン諸島が太平洋の歴史で重要な場所だったことを考える資料です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png/1280px-Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png",
+              "credit": "U.S. Navy",
+              "license": "Public domain",
+              "license_url": "https://www.usa.gov/government-copyright",
+              "usage_notes": "米海軍提供のパブリックドメイン資料。米海軍およびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         }
