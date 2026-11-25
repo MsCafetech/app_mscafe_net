@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-22",
   "language": "ja",
-  "question_count": 3,
-  "related_count": 9,
+  "question_count": 6,
+  "related_count": 12,
   "questions": [
     {
       "question_id": "20261122-001",
@@ -75,6 +75,33 @@
             {
               "name": "国土交通省：道路災害対策",
               "url": "https://www.mlit.go.jp/bosai/disaster/gyoumukeikaku/11douro.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261122-002",
+      "related": [
+        {
+          "id": "20261122-002-R01",
+          "relation_type": "question",
+          "title": "国際連盟から国際連合へ",
+          "description": "第一次世界大戦の後、国どうしの争いを話し合いで解決しようとする国際連盟が作られました。その活動の中心となった都市がスイスのジュネーブです。しかし、第二次世界大戦を防ぐことはできませんでした。1945年に国際連合が成立し、1946年に国際連盟は解散しました。ジュネーブにあった国際連盟の建物などは国際連合に引きつがれました。現在もこの都市では軍備を減らすための話し合いや、人権、健康などに関する国際会議が開かれています。",
+          "relationship": "国際会議が開かれるジュネーブの歴史",
+          "keywords": [
+            "国際連盟",
+            "国際連合",
+            "ジュネーブ"
+          ],
+          "sources": [
+            {
+              "name": "国際連合ジュネーブ事務所",
+              "url": "https://www.ungeneva.org/en/about/league-of-nations/transition"
+            },
+            {
+              "name": "国際連合ジュネーブ事務所",
+              "url": "https://www.ungeneva.org/en/about/organizations"
             }
           ]
         }
@@ -225,6 +252,56 @@
             {
               "name": "内閣府：国民経済計算の見方・使い方",
               "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/kakuhou/files/2024/sankou/pdf/usage.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261122-005",
+      "related": [
+        {
+          "id": "20261122-005-R01",
+          "relation_type": "question",
+          "title": "石油危機とエネルギーの多様化",
+          "description": "日本では高度経済成長期に、海外から輸入する石油が工業や生活を支える重要な資源となりました。1973年度には、自然から得られるエネルギーの供給量の約4分の3を石油が占（し）めていました。しかし、1970年代に二度の石油危機（オイルショック）が起こり、原油の価格が大きく上がりました。そこで日本は石油だけに頼（たよ）らず、天然ガスや原子力なども利用するようになりました。エネルギー源を増やすことは、海外の資源価格の変化による影響（えいきょう）を小さくするためにも重要です。",
+          "relationship": "資源輸入と貿易収支の歴史的背景",
+          "keywords": [
+            "石油危機",
+            "高度経済成長",
+            "天然ガス"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-1.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261122-006",
+      "related": [
+        {
+          "id": "20261122-006-R01",
+          "relation_type": "question",
+          "title": "水素を作る方法と環境への影響",
+          "description": "水素は水に電気を流して分解する方法や、天然ガスなどの化石燃料を原料にする方法で作ることができます。水素を酸素と反応させて電気や熱を得るときには、二酸化炭素は直接発生しません。しかし、化石燃料から水素を作るときには二酸化炭素が発生します。水を電気分解する場合でも、使う電気をどのように作ったかが大切です。太陽光や風力などで作った電気を利用すれば、水素を作る段階での二酸化炭素の発生をおさえられます。このため、水素の利用方法だけでなく、作り方も研究されています。",
+          "relationship": "水素生成技術が研究される理由",
+          "keywords": [
+            "水素",
+            "電気分解",
+            "再生可能エネルギー"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/suisohou_01.html"
+            },
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/suiso.html"
             }
           ]
         }
