@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-02",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260402-001",
+      "images": [
+        {
+          "id": "20260402-001-I01",
+          "type": "photo",
+          "title": "アルテミスIIの打ち上げ",
+          "caption": "2026年4月2日（日本時間）、アメリカのケネディ宇宙センターからアルテミスIIのロケットが打ち上げられました。",
+          "is_reference": false,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Artemis_II_Launch_%28NHQ202604010215%29.jpg/960px-Artemis_II_Launch_%28NHQ202604010215%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Artemis_II_Launch_(NHQ202604010215).jpg",
+          "credit": "NASA/Joel Kowsky",
+          "license": "Public Domain (NASA)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+          "usage_notes": "出典と撮影者を表示。 NASAの推奨を示唆しない。ロゴを独立して使用しない。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

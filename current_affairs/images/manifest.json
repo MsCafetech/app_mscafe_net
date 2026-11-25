@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-26T07:23:10.281+09:00",
+  "last_updated": "2026-11-26T07:25:36.569+09:00",
   "language": "ja",
-  "total_questions": 38,
+  "total_questions": 48,
   "total_related": 65,
-  "total_images": 104,
-  "total_files": 14,
+  "total_images": 114,
+  "total_files": 22,
   "files": [
     {
       "date": "2026-11-25",
@@ -112,12 +112,76 @@
       "revision": 1
     },
     {
-      "date": "2026-04-01",
-      "path": "2026/04/01.json",
+      "date": "2026-04-29",
+      "path": "2026/04/29.json",
+      "revision": 1,
       "question_count": 1,
       "related_count": 0,
-      "image_count": 1,
-      "revision": 1
+      "image_count": 1
+    },
+    {
+      "date": "2026-04-28",
+      "path": "2026/04/28.json",
+      "revision": 1,
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1
+    },
+    {
+      "date": "2026-04-24",
+      "path": "2026/04/24.json",
+      "revision": 1,
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1
+    },
+    {
+      "date": "2026-04-17",
+      "path": "2026/04/17.json",
+      "revision": 1,
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1
+    },
+    {
+      "date": "2026-04-16",
+      "path": "2026/04/16.json",
+      "revision": 1,
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1
+    },
+    {
+      "date": "2026-04-07",
+      "path": "2026/04/07.json",
+      "revision": 1,
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1
+    },
+    {
+      "date": "2026-04-03",
+      "path": "2026/04/03.json",
+      "revision": 1,
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1
+    },
+    {
+      "date": "2026-04-02",
+      "path": "2026/04/02.json",
+      "revision": 1,
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1
+    },
+    {
+      "date": "2026-04-01",
+      "path": "2026/04/01.json",
+      "question_count": 3,
+      "related_count": 0,
+      "image_count": 3,
+      "revision": 2
     }
   ],
   "total_relateds": 65

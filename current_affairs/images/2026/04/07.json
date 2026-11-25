@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-07",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260407-001",
+      "images": [
+        {
+          "id": "20260407-001-I01",
+          "type": "photo",
+          "title": "国会議事堂",
+          "caption": "資料写真：東京にある国会議事堂。国の予算や法律について話し合う場所です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/National_Diet_Building.jpg/960px-National_Diet_Building.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_Building.jpg",
+          "credit": "Kakidai",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更があれば明記。提供元の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用する。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}
