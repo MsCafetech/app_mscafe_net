@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-23",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 6,
   "questions": [
     {
       "id": "20261123-001",
@@ -92,6 +92,101 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/a_o/rp/pageit_000001_00010.html"
+        }
+      ]
+    },
+    {
+      "id": "20261123-004",
+      "news_date": "2026-11-20",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "10月の消費者物価指数を発表",
+      "news_summary": "全国の消費者物価指数は前年同月より2.3％上がった。",
+      "question": "2026年11月20日、総務省は10月の全国の消費者物価指数が前年の同じ月に比べて2.3％上がったと発表しました。物の値段の変化は、人々の生活や家計に関係します。\n\n物やサービスの価格が全体として上がり続けることを何といいますか。",
+      "choices": [
+        "デフレーション",
+        "インフレーション",
+        "円高",
+        "円安"
+      ],
+      "correct_index": 1,
+      "explanation": "インフレーションは、物やサービスの価格が全体として上がり続ける現象（げんしょう）です。反対に価格が下がり続けることをデフレーションといいます。消費者物価指数は、家庭が買う物やサービスの価格の変化を表す指標（しひょう）です。",
+      "keywords": [
+        "消費者物価指数",
+        "インフレーション",
+        "物価"
+      ],
+      "sources": [
+        {
+          "name": "総務省統計局",
+          "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
+        },
+        {
+          "name": "政府統計の総合窓口",
+          "url": "https://www.e-stat.go.jp/release-calendar/detail/00200573/202611200830"
+        }
+      ]
+    },
+    {
+      "id": "20261123-005",
+      "news_date": "2026-11-19",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "深海のウニの体内から新種の二枚貝",
+      "news_summary": "京都大学などがオーストラリア南方の深海で見つかった新種の二枚貝について発表した。",
+      "question": "2026年11月19日、京都大学などの研究グループは、水深約4000～5000メートルの深海にすむウニの食道から、新種の二枚貝が見つかったと発表しました。長年分からなかった貝の正体が明らかになり、深海の生物の多様性を知る手がかりとなりました。\n\n二枚貝の仲間はどれですか。",
+      "choices": [
+        "サザエ",
+        "アワビ",
+        "アサリ",
+        "タコ"
+      ],
+      "correct_index": 2,
+      "explanation": "アサリは二枚の貝がらを持つ二枚貝です。ハマグリやシジミも同じ仲間です。サザエやアワビは巻き貝の仲間で、タコは外側に貝がらを持ちません。これらはすべて軟体動物（なんたいどうぶつ）の仲間に分けられます。",
+      "keywords": [
+        "深海",
+        "二枚貝",
+        "軟体動物"
+      ],
+      "sources": [
+        {
+          "name": "京都大学",
+          "url": "https://www.kyoto-u.ac.jp/ja/research-news/2026-11-19-0"
+        }
+      ]
+    },
+    {
+      "id": "20261123-006",
+      "news_date": "2026-11-19",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "ロヒンギャ問題で国際司法裁判所が判決",
+      "news_summary": "国際司法裁判所がロヒンギャに対するミャンマーの国家責任を認める判決を出した。",
+      "question": "2026年11月19日、国際司法裁判所は、ミャンマーで少数民族ロヒンギャに対して行われた重大な人権侵害（じんけんしんがい）について、ミャンマーの国家責任を認める判決を出しました。国際社会で人権を守るための重要な判断です。\n\n国際司法裁判所は、どの国際機関の主要な機関ですか。",
+      "choices": [
+        "世界貿易機関",
+        "国際通貨基金",
+        "世界保健機関",
+        "国際連合"
+      ],
+      "correct_index": 3,
+      "explanation": "国際司法裁判所（ICJ）は国際連合の主要な機関の一つで、国家間の法律上の争いを解決する役割があります。国際連合には、世界の平和と安全を守るための安全保障理事会や、加盟国が話し合う総会などの機関もあります。",
+      "keywords": [
+        "国際司法裁判所",
+        "国際連合",
+        "人権"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（熊本日日新聞）",
+          "url": "https://www.kumanichi.com/articles/2059850"
+        },
+        {
+          "name": "ヒューマン・ライツ・ウォッチ",
+          "url": "https://www.hrw.org/ja/news/2026/11/19/world-court-finds-myanmar-committed-rohingya-genocide"
         }
       ]
     }
