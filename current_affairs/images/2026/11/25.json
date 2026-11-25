@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 10,
-  "related_count": 19,
-  "image_count": 29,
+  "related_count": 21,
+  "image_count": 31,
   "questions": [
     {
       "question_id": "20261125-001",
@@ -464,7 +464,44 @@
           "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-007-R02",
+          "images": [
+            {
+              "id": "20261125-007-R02-I01",
+              "type": "diagram",
+              "title": "食物連鎖で有害物質が増えるしくみ",
+              "caption": "資料図：小さな生き物から魚、さらに大きな生き物へと食べられる関係の中で、体の外へ出にくい物質がたまる場合を示しています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/The_build_up_of_toxins_in_a_food_chain.svg/1280px-The_build_up_of_toxins_in_a_food_chain.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_build_up_of_toxins_in_a_food_chain.svg",
+              "credit": "Øystein Paulsen",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「Øystein Paulsen」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-007-R05",
+          "images": [
+            {
+              "id": "20261125-007-R05-I01",
+              "type": "map",
+              "title": "水俣条約の締約国・参加状況",
+              "caption": "資料地図：水銀による環境と健康への影響を減らすための水俣条約について、各国の参加状況を示した図です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Minamata_Convention_Ratification_Map.svg/1280px-Minamata_Convention_Ratification_Map.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Convention_Ratification_Map.svg",
+              "credit": "M.Bitton",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "CC BY-SA 4.0。作者名「M.Bitton」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-010",
