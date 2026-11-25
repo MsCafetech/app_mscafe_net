@@ -3,8 +3,8 @@
   "date": "2026-11-23",
   "language": "ja",
   "question_count": 9,
-  "related_count": 15,
-  "image_count": 25,
+  "related_count": 21,
+  "image_count": 31,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -165,6 +165,24 @@
               "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。資料写真。"
             }
           ]
+        },
+        {
+          "related_id": "20261123-012-R05",
+          "images": [
+            {
+              "id": "20261123-012-R05-I01",
+              "type": "photo",
+              "title": "首里城正殿の復元工事",
+              "caption": "資料写真：2025年12月23日の首里城。火災で失われた正殿の復元工事が進められている様子です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Shuri_Castle_under_reconstruction_on_23_December_2025.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Shuri_Castle_under_reconstruction_on_23_December_2025.jpg",
+              "credit": "Jun",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
         }
       ]
     },
@@ -237,6 +255,98 @@
               "license": "Public Domain (NASA)",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
               "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。既存の図解。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-013-R02",
+          "images": [
+            {
+              "id": "20261123-013-R02-I01",
+              "type": "photo",
+              "title": "石炭（瀝青炭）",
+              "caption": "資料写真：化石燃料の一つである石炭。炭素を多く含み、燃やすと二酸化炭素が発生します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Bituminous_coal.jpg/960px-Bituminous_coal.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bituminous_coal.jpg",
+              "credit": "Y.K. Liao",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-013-R03",
+          "images": [
+            {
+              "id": "20261123-013-R03-I01",
+              "type": "historical",
+              "title": "パリ協定の採択",
+              "caption": "資料写真：2015年12月12日、フランスのパリで開かれた国連気候変動会議でパリ協定が採択されたときの様子です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Adoption_of_the_Paris_Agreement_%2823677269226%29.jpg/960px-Adoption_of_the_Paris_Agreement_%2823677269226%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Adoption_of_the_Paris_Agreement_(23677269226).jpg",
+              "credit": "UNclimatechange",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261123-014",
+      "images": [
+        {
+          "id": "20261123-014-I01",
+          "type": "photo",
+          "title": "研究室で扱うiPS細胞",
+          "caption": "研究室で培養されるiPS細胞。今回の東北大学の研究で作られた細胞ではない資料写真。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+          "credit": "CSIRO",
+          "license": "CC BY 3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/",
+          "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。今回の研究で作られた細胞ではない資料写真。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261123-014-R03",
+          "images": [
+            {
+              "id": "20261123-014-R03-I01",
+              "type": "photo",
+              "title": "研究室で扱うiPS細胞",
+              "caption": "研究室で培養されるiPS細胞。iPS細胞が研究で扱われる様子を示す資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+              "credit": "CSIRO",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。iPS細胞の一般的な資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-014-R01",
+          "images": [
+            {
+              "id": "20261123-014-R01-I01",
+              "type": "diagram",
+              "title": "人の目の断面図",
+              "caption": "光が角膜や水晶体を通り、網膜へ届く目の断面図。網膜から脳へ情報が伝わる仕組みを学ぶ資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Schematic_diagram_of_the_human_eye_multilingual.svg/960px-Schematic_diagram_of_the_human_eye_multilingual.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Schematic_diagram_of_the_human_eye_multilingual.svg",
+              "credit": "Rhcastilhos / Jakov",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "パブリックドメインとして公開。出典・作者の表示を推奨。既存の模式図。"
             }
           ]
         }
@@ -315,6 +425,24 @@
               "usage_notes": "米国CDC提供のパブリックドメイン資料。CDCの推奨・後援を示唆しない。電子顕微鏡写真。"
             }
           ]
+        },
+        {
+          "related_id": "20261123-016-R04",
+          "images": [
+            {
+              "id": "20261123-016-R04-I01",
+              "type": "photo",
+              "title": "養鶏場のニワトリと卵",
+              "caption": "資料写真：ニワトリを飼育し、卵を集める養鶏場の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Chickens_in_cages_with_eggs_in_a_farm_setting.jpg/960px-Chickens_in_cages_with_eggs_in_a_farm_setting.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chickens_in_cages_with_eggs_in_a_farm_setting.jpg",
+              "credit": "Shixart1985 (Nenad Stojković)",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。"
+            }
+          ]
         }
       ]
     },
@@ -375,62 +503,6 @@
       ]
     },
     {
-      "question_id": "20261123-014",
-      "images": [
-        {
-          "id": "20261123-014-I01",
-          "type": "photo",
-          "title": "研究室で扱うiPS細胞",
-          "caption": "研究室で培養されるiPS細胞。今回の東北大学の研究で作られた細胞ではない資料写真。",
-          "is_reference": true,
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
-          "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
-          "credit": "CSIRO",
-          "license": "CC BY 3.0",
-          "license_url": "https://creativecommons.org/licenses/by/3.0/",
-          "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。今回の研究で作られた細胞ではない資料写真。"
-        }
-      ],
-      "related": [
-        {
-          "related_id": "20261123-014-R03",
-          "images": [
-            {
-              "id": "20261123-014-R03-I01",
-              "type": "photo",
-              "title": "研究室で扱うiPS細胞",
-              "caption": "研究室で培養されるiPS細胞。iPS細胞が研究で扱われる様子を示す資料写真。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
-              "credit": "CSIRO",
-              "license": "CC BY 3.0",
-              "license_url": "https://creativecommons.org/licenses/by/3.0/",
-              "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。iPS細胞の一般的な資料写真。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261123-014-R01",
-          "images": [
-            {
-              "id": "20261123-014-R01-I01",
-              "type": "diagram",
-              "title": "人の目の断面図",
-              "caption": "光が角膜や水晶体を通り、網膜へ届く目の断面図。網膜から脳へ情報が伝わる仕組みを学ぶ資料。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Schematic_diagram_of_the_human_eye_multilingual.svg/960px-Schematic_diagram_of_the_human_eye_multilingual.svg.png",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Schematic_diagram_of_the_human_eye_multilingual.svg",
-              "credit": "Rhcastilhos / Jakov",
-              "license": "Public Domain",
-              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
-              "usage_notes": "パブリックドメインとして公開。出典・作者の表示を推奨。既存の模式図。"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "question_id": "20261123-018",
       "images": [
         {
@@ -463,6 +535,42 @@
               "license": "Public Domain",
               "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
               "usage_notes": "パブリックドメインとして公開。出典表示を推奨。既存の模式図。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-018-R01",
+          "images": [
+            {
+              "id": "20261123-018-R01-I01",
+              "type": "photo",
+              "title": "かなとこ雲",
+              "caption": "資料写真：大きく成長した積乱雲の上部が横に広がり、かなとこのような形になった様子です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/AnvilCumNim.jpg/960px-AnvilCumNim.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:AnvilCumNim.jpg",
+              "credit": "PiccoloNamek",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-018-R03",
+          "images": [
+            {
+              "id": "20261123-018-R03-I01",
+              "type": "photo",
+              "title": "雲から地面への落雷",
+              "caption": "資料写真：雷雲から地面に向かって電気が流れ、光が見える様子です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cloud_to_ground_lightning.jpg/1280px-Cloud_to_ground_lightning.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Cloud_to_ground_lightning.jpg",
+              "credit": "Rotareneg",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
             }
           ]
         }

@@ -3,8 +3,8 @@
   "date": "2026-11-24",
   "language": "ja",
   "question_count": 6,
-  "related_count": 28,
-  "image_count": 34,
+  "related_count": 30,
+  "image_count": 36,
   "questions": [
     {
       "question_id": "20261124-011",
@@ -337,6 +337,116 @@
       ]
     },
     {
+      "question_id": "20261124-015",
+      "images": [
+        {
+          "id": "20261124-015-I01",
+          "type": "photo",
+          "title": "水俣病資料館",
+          "caption": "資料写真：熊本県水俣市にある水俣病資料館。メチル水銀による健康被害と、環境を守る取り組みについて学ぶための施設です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Minamata_Disease_Museum_20230226_02.jpg/1280px-Minamata_Disease_Museum_20230226_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Disease_Museum_20230226_02.jpg",
+          "credit": "先従隗始",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261124-015-R02",
+          "images": [
+            {
+              "id": "20261124-015-R02-I01",
+              "type": "diagram",
+              "title": "食物連鎖で有害物質が増えるしくみ",
+              "caption": "資料図：小さな生き物から魚、さらに大きな生き物へと食べられる関係の中で、体の外へ出にくい物質がたまる場合を示しています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/The_build_up_of_toxins_in_a_food_chain.svg/1280px-The_build_up_of_toxins_in_a_food_chain.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_build_up_of_toxins_in_a_food_chain.svg",
+              "credit": "Øystein Paulsen",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「Øystein Paulsen」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-015-R05",
+          "images": [
+            {
+              "id": "20261124-015-R05-I01",
+              "type": "map",
+              "title": "水俣条約の締約国・参加状況",
+              "caption": "資料地図：水銀による環境と健康への影響を減らすための水俣条約について、各国の参加状況を示した図です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Minamata_Convention_Ratification_Map.svg/1280px-Minamata_Convention_Ratification_Map.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Convention_Ratification_Map.svg",
+              "credit": "M.Bitton",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "CC BY-SA 4.0。作者名「M.Bitton」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-015-R01",
+          "images": [
+            {
+              "id": "20261124-015-R01-I01",
+              "type": "diagram",
+              "title": "水銀が食物連鎖でたまるしくみ",
+              "caption": "資料図：水中の水銀は、小さな生き物から魚へと食べられる過程でたまりやすくなります。魚介類を通して人の体に入る経路を考える資料です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/MercuryFoodChain-02.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:MercuryFoodChain-02.png",
+              "credit": "Ground Truth Trekking; derivative work by Osado",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "CC BY 3.0。原著作権者Ground Truth Trekkingおよび派生版作者Osado、ライセンスを表示する。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-015-R03",
+          "images": [
+            {
+              "id": "20261124-015-R03-I01",
+              "type": "photo",
+              "title": "水俣病歴史考証館",
+              "caption": "資料写真：熊本県水俣市にある水俣病歴史考証館。公害がなぜ起きたのかを学び、同じ問題をくり返さないために考える場所です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Minamata_Disease_Museum_20230226_02.jpg/1280px-Minamata_Disease_Museum_20230226_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Disease_Museum_20230226_02.jpg",
+              "credit": "先従隗始",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-015-R04",
+          "images": [
+            {
+              "id": "20261124-015-R04-I01",
+              "type": "photo",
+              "title": "脳のMRI画像",
+              "caption": "資料画像：MRIで人の頭部を横から断面として撮影した画像です。脳などの内部の構造を調べることができます。特定の健康被害を示す画像ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/MRI_brain_sagittal_section.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:MRI_brain_sagittal_section.jpg",
+              "credit": "everyone's idle (Flickr); crop: Chiswick Chap",
+              "license": "CC BY-SA 2.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "question_id": "20261124-016",
       "images": [
         {
@@ -425,96 +535,22 @@
               "usage_notes": "CC BY-SA 3.0。作者名「OSeveno」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
             }
           ]
-        }
-      ]
-    },
-    {
-      "question_id": "20261124-015",
-      "images": [
-        {
-          "id": "20261124-015-I01",
-          "type": "photo",
-          "title": "水俣病資料館",
-          "caption": "資料写真：熊本県水俣市にある水俣病資料館。メチル水銀による健康被害と、環境を守る取り組みについて学ぶための施設です。",
-          "is_reference": true,
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Minamata_Disease_Museum_20230226_02.jpg/1280px-Minamata_Disease_Museum_20230226_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Disease_Museum_20230226_02.jpg",
-          "credit": "先従隗始",
-          "license": "CC0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "usage_notes": "CC0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
-        }
-      ],
-      "related": [
-        {
-          "related_id": "20261124-015-R02",
-          "images": [
-            {
-              "id": "20261124-015-R02-I01",
-              "type": "diagram",
-              "title": "食物連鎖で有害物質が増えるしくみ",
-              "caption": "資料図：小さな生き物から魚、さらに大きな生き物へと食べられる関係の中で、体の外へ出にくい物質がたまる場合を示しています。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/The_build_up_of_toxins_in_a_food_chain.svg/1280px-The_build_up_of_toxins_in_a_food_chain.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:The_build_up_of_toxins_in_a_food_chain.svg",
-              "credit": "Øystein Paulsen",
-              "license": "CC BY-SA 3.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "CC BY-SA 3.0。作者名「Øystein Paulsen」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
-            }
-          ]
         },
         {
-          "related_id": "20261124-015-R05",
+          "related_id": "20261124-016-R05",
           "images": [
             {
-              "id": "20261124-015-R05-I01",
-              "type": "map",
-              "title": "水俣条約の締約国・参加状況",
-              "caption": "資料地図：水銀による環境と健康への影響を減らすための水俣条約について、各国の参加状況を示した図です。",
+              "id": "20261124-016-R05-I01",
+              "type": "photo",
+              "title": "国際刑事裁判所（ICC）",
+              "caption": "資料写真：オランダのハーグにある国際刑事裁判所の建物。2026年5月撮影。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Minamata_Convention_Ratification_Map.svg/1280px-Minamata_Convention_Ratification_Map.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Convention_Ratification_Map.svg",
-              "credit": "M.Bitton",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/The_Hague_International_Criminal_Court_building_seen_from_Maurits_Kiekpad.jpg/960px-The_Hague_International_Criminal_Court_building_seen_from_Maurits_Kiekpad.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_Hague_International_Criminal_Court_building_seen_from_Maurits_Kiekpad.jpg",
+              "credit": "Ymblanter",
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-              "usage_notes": "CC BY-SA 4.0。作者名「M.Bitton」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-015-R01",
-          "images": [
-            {
-              "id": "20261124-015-R01-I01",
-              "type": "diagram",
-              "title": "水銀が食物連鎖でたまるしくみ",
-              "caption": "資料図：水中の水銀は、小さな生き物から魚へと食べられる過程でたまりやすくなります。魚介類を通して人の体に入る経路を考える資料です。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/MercuryFoodChain-02.png",
-              "source_url": "https://commons.wikimedia.org/wiki/File:MercuryFoodChain-02.png",
-              "credit": "Ground Truth Trekking; derivative work by Osado",
-              "license": "CC BY 3.0",
-              "license_url": "https://creativecommons.org/licenses/by/3.0/",
-              "usage_notes": "CC BY 3.0。原著作権者Ground Truth Trekkingおよび派生版作者Osado、ライセンスを表示する。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-015-R03",
-          "images": [
-            {
-              "id": "20261124-015-R03-I01",
-              "type": "photo",
-              "title": "水俣病歴史考証館",
-              "caption": "資料写真：熊本県水俣市にある水俣病歴史考証館。公害がなぜ起きたのかを学び、同じ問題をくり返さないために考える場所です。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Minamata_Disease_Museum_20230226_02.jpg/1280px-Minamata_Disease_Museum_20230226_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Disease_Museum_20230226_02.jpg",
-              "credit": "先従隗始",
-              "license": "CC0 1.0",
-              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-              "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
             }
           ]
         }
