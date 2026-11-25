@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261116-100",
+      "related": [
+        {
+          "id": "20261116-100-R01",
+          "relation_type": "answer",
+          "title": "GDPと付加価値",
+          "description": "GDP（国内総生産）は、一定期間に国内で新しく生み出された付加価値の合計です。例えばパン屋なら、売上すべてではなく、小麦粉などの原材料費を差し引いて新たに生まれた価値を数えます。国全体では、工場で作る品物だけでなく、運輸、医療、教育などのサービスも含めて計算します。GDPは、国内の経済活動の大きさを知る代表的なものさしです。ただし、家事のようにお金で取引されない活動などは、GDPに十分表れないことも知っておきましょう。",
+          "relationship": "正解の「国内で新たに生み出された付加価値の合計」を、身近な生産活動に置き換えて理解する知識です。",
+          "keywords": [
+            "GDP",
+            "国内総生産",
+            "付加価値",
+            "経済活動"
+          ],
+          "sources": [
+            {
+              "name": "内閣府：国民経済計算（GDP統計）に関するQ&A",
+              "url": "https://www.esri.cao.go.jp/jp/sna/otoiawase/faq/pdf/faq_20170106.pdf"
+            },
+            {
+              "name": "総務省統計局：国内総生産（生産側及び支出側）",
+              "url": "https://www.stat.go.jp/library/faq/faq03/faq03a01.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261116-100-R02",
+          "relation_type": "question",
+          "title": "名目GDPと実質GDP",
+          "description": "名目GDPは、その時の値段で計算したGDPです。商品やサービスの量が同じでも、物価が上がれば名目GDPは増えます。そこで経済活動が実際にどれだけ増減したかを見るときには、物価の変化を取り除いた実質GDPを使います。実質GDPが前の期間より減ることを実質のマイナス成長といいます。ニュースでGDPを見るときは、名目か実質か、前年同じ時期との比較か前の3か月との比較かを確かめると、数字の意味を正しくつかめます。",
+          "relationship": "実質GDPのマイナス成長という問題の背景を、名目GDPとの違いから理解する知識です。",
+          "keywords": [
+            "名目GDP",
+            "実質GDP",
+            "物価",
+            "経済成長率"
+          ],
+          "sources": [
+            {
+              "name": "内閣府：名目値と実質値の違い",
+              "url": "https://www.esri.cao.go.jp/jp/sna/otoiawase/faq/qa1.html"
+            },
+            {
+              "name": "総務省統計局：国民経済計算の名目及び実質",
+              "url": "https://www.stat.go.jp/library/faq/faq03/faq03a03.html"
+            }
+          ]
+        },
+        {
+          "id": "20261116-100-R03",
+          "relation_type": "question",
+          "title": "GDPを三つの面から見る",
+          "description": "GDPは生産・支出・所得という三つの面からとらえられます。生産面では、国内でつくられた物やサービスの付加価値を合計します。支出面では、家計や政府の消費、企業の設備投資、輸出から輸入を引いた額などを合計します。所得面では、生産で生まれた価値が、働く人の賃金や企業のもうけなどにどう分配されたかを見ます。三つの見方は経済を別の角度から写すため、消費・貿易・雇用のニュースをGDPと結び付けて考えられます。",
+          "relationship": "GDPの速報を、消費・投資・貿易・所得と結び付けて読み解くための基礎知識です。",
+          "keywords": [
+            "GDP",
+            "消費",
+            "投資",
+            "輸出入",
+            "所得"
+          ],
+          "sources": [
+            {
+              "name": "内閣府：国民経済計算（GDP統計）に関するQ&A",
+              "url": "https://www.esri.cao.go.jp/jp/sna/otoiawase/faq/pdf/faq_20170106.pdf"
+            },
+            {
+              "name": "内閣府：国民経済計算の見方・使い方",
+              "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/kakuhou/files/2024/sankou/pdf/usage.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261116-101",
+      "related": [
+        {
+          "id": "20261116-101-R01",
+          "relation_type": "question",
+          "title": "水素を作る方法と環境への影響",
+          "description": "水素は水に電気を流して分解する方法や、天然ガスなどの化石燃料を原料にする方法で作ることができます。水素を酸素と反応させて電気や熱を得るときには、二酸化炭素は直接発生しません。しかし、化石燃料から水素を作るときには二酸化炭素が発生します。水を電気分解する場合でも、使う電気をどのように作ったかが大切です。太陽光や風力などで作った電気を利用すれば、水素を作る段階での二酸化炭素の発生をおさえられます。このため、水素の利用方法だけでなく、作り方も研究されています。",
+          "relationship": "水素生成技術が研究される理由",
+          "keywords": [
+            "水素",
+            "電気分解",
+            "再生可能エネルギー"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/suisohou_01.html"
+            },
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/suiso.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "question_count": 2,
+  "related_count": 4
+}

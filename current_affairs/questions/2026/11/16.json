@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-16",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20261116-001",
@@ -30,6 +30,69 @@
         {
           "name": "科学技術振興機構・Science Portal",
           "url": "https://scienceportal.jst.go.jp/newsflash/20261116_n01/"
+        }
+      ]
+    },
+    {
+      "id": "20261116-100",
+      "news_date": "2026-11-16",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国内総生産の速報でマイナス成長",
+      "news_summary": "内閣府が7～9月期の実質GDPの速報を発表し、4四半期ぶりのマイナス成長となった。",
+      "question": "2026年11月16日、内閣府（ないかくふ）は7～9月の国内総生産（GDP）の速報を発表しました。物価の変化を取り除いた実質GDPは、前の3か月よりわずかに減りました。国内の経済活動がどのように変化したかを知るための資料です。\n\n国内総生産とは、何を表すものですか。",
+      "choices": [
+        "国が1年間に集めた税金の総額",
+        "国内の人が銀行に預けた（あずけた）お金の総額",
+        "一定期間に国内で新たに生み出された付加価値の合計",
+        "外国から輸入した品物の代金の合計"
+      ],
+      "correct_index": 2,
+      "explanation": "GDPは、一定期間に国内で生産された物やサービスによって新たに生み出された価値を合計したものです。物価の変化を取り除いて計算した実質GDPを比べると、経済活動の規模（きぼ）が実際にどの程度変わったかが分かります。",
+      "keywords": [
+        "GDP",
+        "国内総生産",
+        "経済成長"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（ライブドアニュース）",
+          "url": "https://news.livedoor.com/article/detail/32827241/"
+        },
+        {
+          "name": "内閣府",
+          "url": "https://www.esri.cao.go.jp/jp/sna/sokuhou/sokuhou_top.html"
+        }
+      ]
+    },
+    {
+      "id": "20261116-101",
+      "news_date": "2026-11-16",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "生物由来の材料で水素を作る技術",
+      "news_summary": "北海道大学などがキトサンを使って光による水素生成を進める材料を開発した。",
+      "question": "2026年11月16日、北海道大学などは、カニやエビのからなどから得られるキトサンを使い、光のエネルギーで水素を作る反応を進める新しい材料を開発したと発表しました。エネルギーを得る方法の研究につながる成果です。\n\n水素が酸素と結び付いて燃えると、主に何ができますか。",
+      "choices": [
+        "二酸化炭素",
+        "水",
+        "窒素（ちっそ）",
+        "塩化ナトリウム"
+      ],
+      "correct_index": 1,
+      "explanation": "水素は酸素と反応して水になります。この反応ではエネルギーが放出されます。燃料電池は水素と酸素の反応を利用して電気を取り出す装置（そうち）です。ただし、水素を作る段階でもエネルギーが必要なので、その作り方が重要です。",
+      "keywords": [
+        "水素",
+        "酸素",
+        "燃料電池",
+        "キトサン"
+      ],
+      "sources": [
+        {
+          "name": "科学技術振興機構",
+          "url": "https://www.jst.go.jp/pr/announce/20261116-2/index.html"
         }
       ]
     }

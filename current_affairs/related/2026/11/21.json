@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-21",
   "language": "ja",
-  "question_count": 4,
-  "related_count": 6,
+  "question_count": 5,
+  "related_count": 7,
   "questions": [
     {
       "question_id": "20261121-001",
@@ -145,6 +145,33 @@
             {
               "name": "厚生労働省",
               "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/infulenza/QA2024.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261121-100",
+      "related": [
+        {
+          "id": "20261121-100-R01",
+          "relation_type": "question",
+          "title": "国際連盟から国際連合へ",
+          "description": "第一次世界大戦の後、国どうしの争いを話し合いで解決しようとする国際連盟が作られました。その活動の中心となった都市がスイスのジュネーブです。しかし、第二次世界大戦を防ぐことはできませんでした。1945年に国際連合が成立し、1946年に国際連盟は解散しました。ジュネーブにあった国際連盟の建物などは国際連合に引きつがれました。現在もこの都市では軍備を減らすための話し合いや、人権、健康などに関する国際会議が開かれています。",
+          "relationship": "国際会議が開かれるジュネーブの歴史",
+          "keywords": [
+            "国際連盟",
+            "国際連合",
+            "ジュネーブ"
+          ],
+          "sources": [
+            {
+              "name": "国際連合ジュネーブ事務所",
+              "url": "https://www.ungeneva.org/en/about/league-of-nations/transition"
+            },
+            {
+              "name": "国際連合ジュネーブ事務所",
+              "url": "https://www.ungeneva.org/en/about/organizations"
             }
           ]
         }
