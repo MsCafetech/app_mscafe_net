@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "image_count": 2,
+  "questions": [
+    {
+      "question_id": "20261124-008",
+      "images": [
+        {
+          "id": "20261124-008-I01",
+          "type": "photo",
+          "title": "日本の水田と稲の天日干し",
+          "caption": "日本の水田で収穫後の稲を干す様子。作付面積を学ぶための資料写真であり、2026年産の集計写真ではない。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Paddy_field_-_rice_drying%2C_Japan_001.jpg/960px-Paddy_field_-_rice_drying%2C_Japan_001.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Paddy_field_-_rice_drying,_Japan_001.jpg",
+          "credit": "Kropsoq",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。資料写真。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261124-008-R04",
+          "images": [
+            {
+              "id": "20261124-008-R04-I01",
+              "type": "photo",
+              "title": "水をためた水田と稲の苗",
+              "caption": "水をためた日本の水田と稲の苗。水田が雨水を一時的にためる働きなど、食料以外の役割を考える資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Rice_seedlings_in_a_flooded_paddy%2C_Tsuruga%2C_May_2016.jpg/960px-Rice_seedlings_in_a_flooded_paddy%2C_Tsuruga%2C_May_2016.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Rice_seedlings_in_a_flooded_paddy,_Tsuruga,_May_2016.jpg",
+              "credit": "NevinThompson",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。2016年撮影の資料写真。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

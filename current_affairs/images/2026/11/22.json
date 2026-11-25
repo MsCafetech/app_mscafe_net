@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-22",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 3,
+  "image_count": 4,
+  "questions": [
+    {
+      "question_id": "20261124-006",
+      "images": [
+        {
+          "id": "20261124-006-I01",
+          "type": "satellite",
+          "title": "水星の探査画像",
+          "caption": "NASAの探査機メッセンジャーが2008年に撮影した水星の観測画像。今回の探査機が撮影した画像ではない。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg",
+          "credit": "NASA / MESSENGER",
+          "license": "Public Domain (NASA)",
+          "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+          "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。元画像を切り出したカラー合成画像であり、今回の探査による写真ではない。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261124-006-R01",
+          "images": [
+            {
+              "id": "20261124-006-R01-I01",
+              "type": "diagram",
+              "title": "太陽系の惑星の並び",
+              "caption": "太陽から近い順に並ぶ太陽系の天体を示したNASAの図。水星が太陽に最も近いことを学ぶ資料。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Solar_System_graphic_by_NASA_%28long%29.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Solar_System_graphic_by_NASA_(long).png",
+              "credit": "NASA",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。既存の図解。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-006-R03",
+          "images": [
+            {
+              "id": "20261124-006-R03-I01",
+              "type": "illustration",
+              "title": "ベピコロンボ探査機の模型",
+              "caption": "日本と欧州が協力する水星探査計画「ベピコロンボ」の探査機模型。二つの探査機で水星を調べる計画を学ぶ資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/BepiColombo_spacecraft_model.png/960px-BepiColombo_spacecraft_model.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:BepiColombo_spacecraft_model.png",
+              "credit": "NASA",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。探査機模型の資料画像。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-006-R02",
+          "images": [
+            {
+              "id": "20261124-006-R02-I01",
+              "type": "satellite",
+              "title": "赤外線で見た水星",
+              "caption": "赤外線で観測した水星の表面。太陽に近く大気がほとんどない水星の環境を学ぶための観測資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/First_mid-infrared_light_observations_of_Mercury_ESA504690.png/960px-First_mid-infrared_light_observations_of_Mercury_ESA504690.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:First_mid-infrared_light_observations_of_Mercury_ESA504690.png",
+              "credit": "European Space Agency",
+              "license": "CC BY-SA 3.0 IGO",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+              "usage_notes": "提供元・出典URL・ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。赤外線観測資料。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

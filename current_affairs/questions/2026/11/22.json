@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-22",
   "language": "ja",
-  "question_count": 7,
+  "question_count": 8,
   "questions": [
     {
       "id": "20261122-001",
@@ -221,6 +221,34 @@
         {
           "name": "テレビ朝日",
           "url": "https://news.tv-asahi.co.jp/news_international/articles/000549551.html"
+        }
+      ]
+    },
+    {
+      "id": "20261124-006",
+      "news_date": "2026-11-22",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日欧（にちおう）の水星探査機が周回軌道（きどう）へ",
+      "news_summary": "日本と欧州の共同探査計画で、二つの探査機が水星を回る軌道に入りました。水星の地形や磁場などを調べる計画です。",
+      "question": "2026年11月22日、日本と欧州（おうしゅう）の共同探査計画で、二つの探査機が水星を回る軌道に入りました。水星の地形や磁場などを調べる計画です。\n\n太陽に最も近い惑星（わくせい）はどれですか。",
+      "choices": [
+        "金星",
+        "水星",
+        "地球",
+        "火星"
+      ],
+      "correct_index": 1,
+      "explanation": "水星は太陽系の八つの惑星のうち、太陽に最も近い惑星です。太陽から近い順に水星、金星、地球、火星と並びます。日本の探査機みおは水星の磁場などを調べ、惑星の成り立ちを知る手がかりを探します。",
+      "keywords": [
+        "水星",
+        "太陽系"
+      ],
+      "sources": [
+        {
+          "name": "共同通信・熊本日日新聞",
+          "url": "https://www.kumanichi.com/articles/2060702"
         }
       ]
     }

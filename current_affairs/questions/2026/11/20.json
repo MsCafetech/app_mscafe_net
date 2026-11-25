@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 4,
   "questions": [
     {
       "id": "20261120-001",
@@ -92,6 +92,34 @@
         {
           "name": "時事通信（nippon.com）",
           "url": "https://www.nippon.com/ja/articles/-/57784"
+        }
+      ]
+    },
+    {
+      "id": "20261124-008",
+      "news_date": "2026-11-20",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "主食用米の作付面積を発表",
+      "news_summary": "農林水産省は2026年産の主食用米の作付面積が約135.9万ヘクタールだったと発表しました。米の生産状況を把握することは食料の安定供給に役立ちます。",
+      "question": "2026年11月20日、農林水産省は2026年産の主食用米の作付面積が約135.9万ヘクタールだったと発表しました。米の生産状況（じょうきょう）を把握（はあく）することは食料の安定供給に役立ちます。\n\n1ヘクタールは何平方メートルですか。",
+      "choices": [
+        "100",
+        "1000",
+        "100000",
+        "10000"
+      ],
+      "correct_index": 3,
+      "explanation": "1ヘクタールは縦100メートル、横100メートルの正方形の面積で、1万平方メートルです。農地や森林など広い土地の面積を表すときに使われます。作付面積は農作物を植えた土地の広さを示します。",
+      "keywords": [
+        "作付面積",
+        "ヘクタール"
+      ],
+      "sources": [
+        {
+          "name": "農林水産省",
+          "url": "https://www.maff.go.jp/j/press/nousan/s_taisaku/261120.html"
         }
       ]
     }
