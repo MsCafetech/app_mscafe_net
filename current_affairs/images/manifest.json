@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-26T06:48:16.711+09:00",
+  "last_updated": "2026-11-26T07:17:11.089+09:00",
   "language": "ja",
-  "total_questions": 24,
+  "total_questions": 37,
   "total_related": 62,
-  "total_images": 87,
-  "total_files": 7,
+  "total_images": 101,
+  "total_files": 14,
   "files": [
     {
       "date": "2026-11-25",
       "path": "2026/11/25.json",
-      "question_count": 4,
+      "question_count": 8,
       "related_count": 11,
-      "image_count": 15,
-      "revision": 32
+      "image_count": 19,
+      "revision": 33
     },
     {
       "date": "2026-11-24",
@@ -40,12 +40,20 @@
       "image_count": 4
     },
     {
+      "date": "2026-11-21",
+      "path": "2026/11/21.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
       "date": "2026-11-20",
       "path": "2026/11/20.json",
-      "revision": 2,
-      "question_count": 1,
-      "related_count": 1,
-      "image_count": 2
+      "revision": 3,
+      "question_count": 2,
+      "related_count": 2,
+      "image_count": 4
     },
     {
       "date": "2026-11-19",
@@ -56,12 +64,61 @@
       "image_count": 1
     },
     {
+      "date": "2026-11-18",
+      "path": "2026/11/18.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
       "date": "2026-11-17",
       "path": "2026/11/17.json",
       "revision": 2,
       "question_count": 2,
       "related_count": 4,
       "image_count": 6
+    },
+    {
+      "date": "2026-10-04",
+      "path": "2026/10/04.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-09-01",
+      "path": "2026/09/01.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-07-01",
+      "path": "2026/07/01.json",
+      "question_count": 2,
+      "related_count": 0,
+      "image_count": 2,
+      "revision": 1
+    },
+    {
+      "date": "2026-05-01",
+      "path": "2026/05/01.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
+    },
+    {
+      "date": "2026-04-01",
+      "path": "2026/04/01.json",
+      "question_count": 1,
+      "related_count": 0,
+      "image_count": 1,
+      "revision": 1
     }
-  ]
+  ],
+  "total_relateds": 63
 }

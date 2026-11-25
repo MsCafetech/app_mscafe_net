@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-01",
+  "language": "ja",
+  "question_count": 2,
+  "related_count": 0,
+  "image_count": 2,
+  "questions": [
+    {
+      "question_id": "20260701-001",
+      "images": [
+        {
+          "id": "20260701-001-I01",
+          "type": "photo",
+          "title": "南極の昭和基地の看板",
+          "caption": "資料写真：日本が南極で観測を行う昭和基地の看板です。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/SYOWA_STATION_signboard.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:SYOWA_STATION_signboard.jpg",
+          "credit": "環境省",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20260701-002",
+      "images": [
+        {
+          "id": "20260701-002-I01",
+          "type": "photo",
+          "title": "モササウルスの骨格展示",
+          "caption": "資料写真：ドイツのミュンヘンにある博物館のモササウルスの骨格展示です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mosasaurus-Skelett.jpg/960px-Mosasaurus-Skelett.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Mosasaurus-Skelett.jpg",
+          "credit": "Bildflut",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "出典と提供元を表示。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

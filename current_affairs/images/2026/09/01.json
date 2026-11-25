@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-01",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260901-001",
+      "images": [
+        {
+          "id": "20260901-001-I01",
+          "type": "photo",
+          "title": "東京のゾーン30標識",
+          "caption": "資料写真：東京にあるゾーン30の標識です。生活道路で車の速度をおさえる取り組みの一例です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Zone30_JP_Tokyo.jpg/960px-Zone30_JP_Tokyo.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Zone30_JP_Tokyo.jpg",
+          "credit": "Haya4",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

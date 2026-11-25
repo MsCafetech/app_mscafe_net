@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-21",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20261121-001",
+      "images": [
+        {
+          "id": "20261121-001-I01",
+          "type": "photo",
+          "title": "伊豆大島の三原山火口",
+          "caption": "資料写真：伊豆大島にある三原山の火口です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Mount_Mihara_%289609570317%29.jpg/960px-Mount_Mihara_%289609570317%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Mount_Mihara_(9609570317).jpg",
+          "credit": "Guilhem Vellut",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

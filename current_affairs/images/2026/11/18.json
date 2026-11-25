@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20261118-100",
+      "images": [
+        {
+          "id": "20261118-100-I01",
+          "type": "photo",
+          "title": "横浜港のコンテナ船",
+          "caption": "資料写真：横浜港で撮影されたコンテナ船です。船は外国との貿易で荷物を運びます。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/YM_Earth_%28ship%2C_2003%29_001.jpg/960px-YM_Earth_%28ship%2C_2003%29_001.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:YM_Earth_(ship%2C_2003)_001.jpg",
+          "credit": "Kabacchi",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

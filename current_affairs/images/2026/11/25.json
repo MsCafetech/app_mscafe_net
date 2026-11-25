@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 4,
+  "question_count": 8,
   "related_count": 11,
-  "image_count": 15,
+  "image_count": 19,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -279,6 +279,82 @@
           "license": "Public domain",
           "license_url": "https://www.usa.gov/government-copyright",
           "usage_notes": "米海兵隊提供のパブリックドメイン資料。撮影者名、提供元およびWikimedia Commonsの掲載元を出典として表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-015",
+      "images": [
+        {
+          "id": "20261125-015-I01",
+          "type": "photo",
+          "title": "ライチョウの親子",
+          "caption": "資料写真：雪倉岳で撮影されたライチョウの親子です。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Lagopus_muta_japonica_Yukikura.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Lagopus_muta_japonica_Yukikura.jpg",
+          "credit": "Alpsdake",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-016",
+      "images": [
+        {
+          "id": "20261125-016-I01",
+          "type": "photo",
+          "title": "横浜港のコンテナ船",
+          "caption": "資料写真：横浜港で撮影された、荷物をコンテナに入れて運ぶ船です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/YM_Earth_%28ship%2C_2003%29_001.jpg/960px-YM_Earth_%28ship%2C_2003%29_001.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:YM_Earth_(ship%2C_2003)_001.jpg",
+          "credit": "Kabacchi",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-017",
+      "images": [
+        {
+          "id": "20261125-017-I01",
+          "type": "photo",
+          "title": "充電中の電気自動車",
+          "caption": "資料写真：ドイツのベルリンで、電気自動車を充電している様子です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Electric_Car_recharging.jpg/960px-Electric_Car_recharging.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Electric_Car_recharging.jpg",
+          "credit": "Michael Movchin（原写真）、Mueller felix（加工）",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-019",
+      "images": [
+        {
+          "id": "20261125-019-I01",
+          "type": "satellite",
+          "title": "小惑星ディモルフォス",
+          "caption": "資料画像：2022年に探査機ダートが撮った小惑星ディモルフォスの表面です。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Penultimate_image_of_Dimorphos_by_DART.png",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Penultimate_image_of_Dimorphos_by_DART.png",
+          "credit": "NASA/Johns Hopkins APL",
+          "license": "Public Domain (NASA)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+          "usage_notes": "出典と提供元を表示。"
         }
       ],
       "related": []

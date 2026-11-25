@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-01",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1,
+  "questions": [
+    {
+      "question_id": "20260501-001",
+      "images": [
+        {
+          "id": "20260501-001-I01",
+          "type": "photo",
+          "title": "水俣市立水俣病資料館",
+          "caption": "資料写真：熊本県水俣市にある、水俣病について学べる資料館です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Minamata_Disease_Municipal_Museum_20230226.jpg/960px-Minamata_Disease_Municipal_Museum_20230226.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Disease_Municipal_Museum_20230226.jpg",
+          "credit": "先従隗始",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "出典と提供元を表示。"
+        }
+      ],
+      "related": []
+    }
+  ]
+}

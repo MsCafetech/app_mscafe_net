@@ -2,10 +2,48 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
-  "image_count": 2,
+  "question_count": 2,
+  "related_count": 2,
+  "image_count": 4,
   "questions": [
+    {
+      "question_id": "20261120-003",
+      "images": [
+        {
+          "id": "20261120-003-I01",
+          "type": "photo",
+          "title": "打ち上がるH3ロケット",
+          "caption": "資料写真：2025年のH3ロケットの打ち上げです。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/H3_rocket_launch.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:H3_rocket_launch.jpg",
+          "credit": "U.S. Air Force / AF991",
+          "license": "Public Domain (U.S. Air Force)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Air_Force",
+          "usage_notes": "出典と提供元を表示。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261120-003-R03",
+          "images": [
+            {
+              "id": "20261120-003-R03-I01",
+              "type": "photo",
+              "title": "打ち上がるH3ロケット",
+              "caption": "資料写真：2025年のH3ロケットの打ち上げです。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/H3_rocket_launch.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:H3_rocket_launch.jpg",
+              "credit": "U.S. Air Force / AF991",
+              "license": "Public Domain (U.S. Air Force)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Air_Force",
+              "usage_notes": "出典と提供元を表示。"
+            }
+          ]
+        }
+      ]
+    },
     {
       "question_id": "20261120-004",
       "images": [
