@@ -2429,7 +2429,7 @@ End Function
 '   同じ行でカンマの後が OU= / DC= / O= / L= / ST= / C= / STREET= で始まり、直前の値が「=」を含むときは、1つの値として続ける
 '   例：CN=xxxx,OU=xxxx,DC=xxx,DC=local → 1件 ／ CN=a,OU=x,CN=b,OU=y → 2件
 Private Function SplitVals(ByVal s As String) As Variant
-    Dim lines() As String, parts() As String, res() As String, i As Long, j As Long, n As Long, t As String, lineTop As Long
+    Dim lines() As String, parts() As String, res() As String, i As Long, j As Long, n As Long, t As String, lineTop As Long, joinIt As Boolean
     SplitVals = Split("")
     If Len(s) = 0 Then Exit Function
     ReDim res(0 To Len(s))
@@ -2441,7 +2441,12 @@ Private Function SplitVals(ByVal s As String) As Variant
         For j = 0 To UBound(parts)
             t = Trim$(parts(j))
             If t <> "" Then
-                If n >= lineTop And IsDnPart(t) And InStr(res(n), "=") > 0 Then
+                ' VBA の And は短絡評価しないので、res(n) を見るのは n >= 0 を確かめてから
+                joinIt = False
+                If n >= lineTop Then
+                    If IsDnPart(t) Then joinIt = (InStr(res(n), "=") > 0)
+                End If
+                If joinIt Then
                     res(n) = res(n) & "," & t
                 Else
                     n = n + 1
