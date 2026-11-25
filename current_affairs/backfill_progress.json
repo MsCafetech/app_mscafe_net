@@ -2,16 +2,20 @@
   "schema_version": 1,
   "start_date": "2026-04-01",
   "end_date": "2026-11-23",
-  "completed_dates": [],
+  "completed_dates": [
+    "2026-04-01"
+  ],
   "published_question_counts": {
-    "2026-11-23": 6
+    "2026-11-23": 6,
+    "2026-04-01": 10
   },
   "new_question_counts": {
-    "2026-11-23": 3
+    "2026-11-23": 3,
+    "2026-04-01": 10
   },
   "zero_question_dates": [],
-  "next_date": "2026-11-23",
-  "last_updated": "2026-11-25T09:27:00+09:00",
+  "next_date": "2026-04-02",
+  "last_updated": "2026-11-25T09:38:51+09:00",
   "completed": false,
   "partial_dates": {
     "2026-11-23": {
@@ -22,5 +26,6 @@
         "fa921d4502bb18822073398a0910a7c2d25f82bf"
       ]
     }
-  }
+  },
+  "processing_order": "ascending"
 }
