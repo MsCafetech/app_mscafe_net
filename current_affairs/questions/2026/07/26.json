@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-26",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260726-001",
+      "news_date": "2026-07-26",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "飛鳥（あすか）・藤原の宮都（きゅうと）が世界遺産に",
+      "news_summary": "世界遺産委員会が飛鳥・藤原の宮都の世界遺産一覧表への記載を決定しました。",
+      "question": "2026年7月26日、ユネスコの世界遺産委員会は「飛鳥・藤原の宮都」の世界遺産への登録を決めました。古代日本の国づくりを伝える宮殿（きゅうでん）や寺院などの遺跡（いせき）が残る地域です。\n\nこの世界遺産がある都道府県はどこですか？",
+      "choices": [
+        "京都府",
+        "奈良県",
+        "滋賀県",
+        "大阪府"
+      ],
+      "correct_index": 1,
+      "explanation": "飛鳥・藤原の宮都は奈良県の橿原市（かしはらし）、桜井市、明日香村（あすかむら）にあります。6世紀末から8世紀初めにかけて政治や文化の中心となった地域で、宮殿や寺院などの跡から、古代日本の国づくりの様子を学ぶことができます。",
+      "keywords": [
+        "飛鳥",
+        "藤原京",
+        "世界遺産",
+        "奈良県",
+        "ユネスコ"
+      ],
+      "sources": [
+        {
+          "name": "文化庁",
+          "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94413401.html"
+        },
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_03987.html"
+        },
+        {
+          "name": "世界遺産登録推進協議会",
+          "url": "https://asuka-fujiwara.jp/news/4649/"
+        }
+      ]
+    }
+  ]
+}
