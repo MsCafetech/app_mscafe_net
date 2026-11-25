@@ -129,7 +129,31 @@
       "new_date": "2026-11-19",
       "reason": "news/event date checked against source",
       "source": "https://www.kumanichi.com/articles/2059850"
+    },
+    {
+      "old_id": "20261119-001",
+      "new_id": "20261118-101",
+      "old_date": "2026-11-19",
+      "new_date": "2026-11-18",
+      "reason": "news/event date checked against source",
+      "source": "https://news.livedoor.com/article/detail/32851381/"
+    },
+    {
+      "old_id": "20261107-001",
+      "new_id": "20261106-100",
+      "old_date": "2026-11-07",
+      "new_date": "2026-11-06",
+      "reason": "news/event date checked against source",
+      "source": "https://www.afpbb.com/articles/-/3661349"
+    },
+    {
+      "old_id": "20260401-009",
+      "new_id": "20260318-100",
+      "old_date": "2026-04-01",
+      "new_date": "2026-03-18",
+      "reason": "news/event date checked against source",
+      "source": "https://www.ffpri.go.jp/press/2026/20260318/index.html"
     }
   ],
-  "last_updated": "2026-11-26T06:47:51.906+09:00"
+  "last_updated": "2026-11-26T06:48:16.711+09:00"
 }

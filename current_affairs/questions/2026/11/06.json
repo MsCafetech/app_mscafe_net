@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-06",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261106-001",
@@ -30,6 +30,35 @@
         {
           "name": "テレビ朝日",
           "url": "https://news.tv-asahi.co.jp/news_politics/articles/000545774.html"
+        }
+      ]
+    },
+    {
+      "id": "20261106-100",
+      "news_date": "2026-11-06",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "アメリカと中国が貿易について協議（きょうぎ）",
+      "news_summary": "米中の高官が電話で貿易に関する取り決めについて話し合った。",
+      "question": "2026年11月6日、アメリカと中国の政府の高官が電話で貿易について話し合いました。11月7日に報じられたこの会談では、両国が貿易上の問題について意見を伝え、安定した貿易関係を目指すことを確認しました。\n\n外国から輸入する品物などにかけられる税金を何といいますか。",
+      "choices": [
+        "所得税",
+        "住民税",
+        "固定資産税",
+        "関税"
+      ],
+      "correct_index": 3,
+      "explanation": "関税は外国から輸入する品物などにかかる税金です。輸入品の価格に影響（えいきょう）するため、国内の産業を守る目的で用いられることもあります。国同士で関税や貿易の決まりを話し合うことは、経済の安定につながります。",
+      "keywords": [
+        "米中貿易",
+        "関税",
+        "国際経済"
+      ],
+      "sources": [
+        {
+          "name": "AFPBB News",
+          "url": "https://www.afpbb.com/articles/-/3661349"
         }
       ]
     }
