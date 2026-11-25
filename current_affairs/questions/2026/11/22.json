@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-22",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20261122-001",
+      "news_date": "2026-11-22",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "福島県の大雪で集落が孤立（こりつ）",
+      "news_summary": "福島県で大雪による道路の通行止めが続き、住民や観光客の移動が難しくなった。",
+      "question": "2026年11月22日、福島県では20日からの大雪で道路が通行止めとなり、多くの住民や観光客が移動できない状態が続きました。県は水や食料を届けるために対応を進めました。\n\n日本の冬に日本海側で雪が多くなる主な理由はどれですか。",
+      "choices": [
+        "南東からの風が太平洋の水分を運ぶため",
+        "北西からの季節風が日本海の水分を運ぶため",
+        "夏の台風が日本海で発生するため",
+        "日本海の海水がすべてこおるため"
+      ],
+      "correct_index": 1,
+      "explanation": "冬は大陸から冷たい北西の季節風がふき、日本海を通る間に水分を取りこみます。その空気が山地にぶつかって上に向かうと冷やされ、雪雲が発達します。日本海側や山地で雪が多くなる理由の一つです。",
+      "keywords": [
+        "大雪",
+        "季節風",
+        "日本海"
+      ],
+      "sources": [
+        {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp/articles/-/1157241"
+        },
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000549831.html"
+        }
+      ]
+    },
+    {
+      "id": "20261122-002",
+      "news_date": "2026-11-21",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "自動で攻撃（こうげき）する兵器の国際ルールを協議",
+      "news_summary": "スイスのジュネーブで開かれた国際会議で、人間の操作を必要としない兵器の規制について文書作りを進めることになった。",
+      "question": "2026年11月21日、スイスのジュネーブで開かれた国際会議で、人間の判断を必要とせずに攻撃する兵器について、国際的な規制のための文書作りを進めることが決まりました。法的な義務を持つ条約の交渉（こうしょう）開始については合意できませんでした。\n\nスイスが位置する大陸はどれですか。",
+      "choices": [
+        "アジア",
+        "アフリカ",
+        "南アメリカ",
+        "ヨーロッパ"
+      ],
+      "correct_index": 3,
+      "explanation": "スイスはヨーロッパの内陸国で、フランスやドイツ、イタリアなどと国境を接しています。首都はベルンです。ジュネーブには国際連合の事務所や世界保健機関などがあり、多くの国際会議が開かれます。",
+      "keywords": [
+        "スイス",
+        "ジュネーブ",
+        "国際会議"
+      ],
+      "sources": [
+        {
+          "name": "スイス連邦外務省",
+          "url": "https://www.dfae.admin.ch/en/newnsb/cpYJGLEaQYIi"
+        },
+        {
+          "name": "JURIST",
+          "url": "https://www.jurist.org/news/2026/11/un-arms-conference-falls-short-of-treaty-mandate-on-autonomous-weapons-due-to-us-and-russia-opposition/"
+        }
+      ]
+    }
+  ]
+}
