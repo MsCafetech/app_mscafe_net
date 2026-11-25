@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-05",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20260805-001",
+      "news_date": "2026-08-05",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "飲食料品の消費税を1％にする方針を決定",
+      "news_summary": "政府は飲食料品の消費税率を2年間引き下げる方針を決めた。",
+      "question": "2026年8月5日、政府は飲食料品にかかる消費税率を、2027年4月から2年間、8％から1％に下げる方針を決めました。物価高で生活にかかる負担が大きくなっていることが背景にあります。\n\n消費税のように、税を負担する人と国に納（おさ）める人が異なる税を何といいますか？",
+      "choices": [
+        "間接税",
+        "直接税",
+        "住民税",
+        "所得税"
+      ],
+      "correct_index": 0,
+      "explanation": "消費税は間接税です。商品を買った人が税を負担し、商品を売った事業者などが国に納めます。一方、所得税のように税を負担する人自身が納める仕組みの税を直接税といいます。税金は社会保障などの公共の仕事に使われます。",
+      "keywords": [
+        "消費税",
+        "間接税",
+        "税金"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_politics/articles/000524294.html"
+        },
+        {
+          "name": "金融庁",
+          "url": "https://www.fsa.go.jp/common/conference/minister/2026b/20260805-1.html"
+        }
+      ]
+    },
+    {
+      "id": "20260805-002",
+      "news_date": "2026-08-05",
+      "category": "society",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "夏の高校野球開会式で手話による案内",
+      "news_summary": "高校野球の開会式で手話による司会進行や学校紹介が行われた。",
+      "question": "2026年8月5日、全国高校野球選手権大会の開会式で、司会の言葉や出場校の紹介（しょうかい）を手話で伝える新しい取り組みが行われました。耳が聞こえにくい人にも式の内容を伝える工夫です。\n\nこのように、生活の中のさまざまな不便や障害を取りのぞく考え方を何といいますか？",
+      "choices": [
+        "リサイクル",
+        "地産地消",
+        "キャッシュレス",
+        "バリアフリー"
+      ],
+      "correct_index": 3,
+      "explanation": "バリアフリーは、障害のある人や高齢者（こうれいしゃ）などが生活するときの不便をなくす考え方です。建物の段差をなくすことだけでなく、手話や字幕で情報を伝えることも、だれもが社会に参加しやすくするための大切な工夫です。",
+      "keywords": [
+        "手話",
+        "バリアフリー",
+        "情報保障"
+      ],
+      "sources": [
+        {
+          "name": "日刊スポーツ",
+          "url": "https://www.nikkansports.com/baseball/highschool/news/202608050001066.html?mode=all"
+        }
+      ]
+    }
+  ]
+}

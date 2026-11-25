@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-31",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260831-001",
+      "news_date": "2026-08-31",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "原子力発電のごみの処分地を探す調査",
+      "news_summary": "経済産業省が茨城県常陸大宮市に文献調査を申し入れた。",
+      "question": "2026年8月31日、経済産業省は茨城県（いばらきけん）常陸大宮市（ひたちおおみやし）に、原子力発電から出る高レベル放射性廃棄物（ほうしゃせいはいきぶつ）の最終処分地を探すための調査を申し入れました。まだ処分地が決まったわけではありません。\n\nこのごみの最終処分として日本が計画している方法はどれですか？",
+      "choices": [
+        "海にそのまま流す",
+        "地上にそのまま置く",
+        "深い地下にうめて人の生活から遠ざける",
+        "ふつうのごみと一緒（いっしょ）に燃やす"
+      ],
+      "correct_index": 2,
+      "explanation": "高レベル放射性廃棄物からは長い間、放射線が出ます。日本では地下300メートルより深い安定した地層にうめる地層処分を計画しています。文献調査は、地質などの資料を調べる処分地選びの最初の段階です。",
+      "keywords": [
+        "原子力発電",
+        "放射性廃棄物",
+        "地層処分"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000530011.html"
+        },
+        {
+          "name": "TBS",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2908923?display=1"
+        }
+      ]
+    }
+  ]
+}

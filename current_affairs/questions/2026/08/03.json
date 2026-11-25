@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-03",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260803-001",
+      "news_date": "2026-07-31",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日米が協力して円買いを実施",
+      "news_summary": "日米が円の急な値動きをおさえるために協力した。",
+      "question": "2026年7月31日（アメリカ現地時間）、日本とアメリカは協力して円を買いました。8月3日に財務省が発表したもので、円の急な値動きをおさえることが目的です。\n\n1ドル＝160円から1ドル＝140円に変わることを何といいますか？",
+      "choices": [
+        "円安",
+        "円高",
+        "物価高",
+        "物価安"
+      ],
+      "correct_index": 1,
+      "explanation": "円高とは、外国のお金に対して円の価値が高くなることです。1ドルを買うのに必要な円が少なくなるため、同じドル価格なら輸入品を円で買うときの負担は小さくなります。逆に円の価値が下がることを円安といいます。",
+      "keywords": [
+        "円高",
+        "円安",
+        "外国為替（がいこくかわせ）"
+      ],
+      "sources": [
+        {
+          "name": "財務省",
+          "url": "https://www.mof.go.jp/public_relations/statement/other/20260803072806.html"
+        }
+      ]
+    }
+  ]
+}
