@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-15",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260415-001",
@@ -30,6 +30,39 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/erp/seb/pl/pageit_000001_02873.html"
+        }
+      ]
+    },
+    {
+      "id": "20260415-002",
+      "news_date": "2026-04-15",
+      "category": "economy",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "2025年度の訪日外国人が初めて4000万人を超える",
+      "news_summary": "2025年度の訪日外客数は速報値で約4283万人となった。",
+      "question": "2026年4月15日、日本政府観光局が3月の訪日外国人の数を発表しました。2025年度の合計は約4283万人となり、年度として初めて4000万人を超えました。観光産業にとって大きな変化です。\n\n外国から日本を訪れる旅行者や、その旅行需要を表す言葉は何ですか？",
+      "choices": [
+        "アウトバウンド",
+        "インバウンド",
+        "リサイクル",
+        "エネルギーミックス"
+      ],
+      "correct_index": 1,
+      "explanation": "外国から日本へ来る旅行者やその旅行需要をインバウンドと呼びます。反対に、日本から外国へ旅行することはアウトバウンドと呼ばれます。外国からの旅行者が増えると、宿泊（しゅくはく）や飲食、交通などの産業に経済効果が期待できます。",
+      "keywords": [
+        "インバウンド",
+        "観光",
+        "訪日外国人"
+      ],
+      "sources": [
+        {
+          "name": "日本政府観光局",
+          "url": "https://www.jnto.go.jp/news/press/20260415_monthly.html"
+        },
+        {
+          "name": "さぴあニュースバンク",
+          "url": "https://www.sapia.jp/reading/news/2606/"
         }
       ]
     }
