@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-27",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260827-001",
+      "news_date": "2026-08-14",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "世界で活やくした芸術家、草間彌生（くさまやよい）さん",
+      "news_summary": "草間彌生さんが8月14日に亡くなったことが27日に発表された。",
+      "question": "2026年8月14日、世界的な芸術家の草間彌生さんが亡くなり、8月27日にそのことが発表されました。水玉や網目のもようなどを使った作品で知られ、日本の美術を世界に広めた一人です。\n\n草間さんの出身地である松本市は、どの都道府県にありますか？",
+      "choices": [
+        "長野県",
+        "山梨県",
+        "岐阜県（ぎふけん）",
+        "新潟県（にいがたけん）"
+      ],
+      "correct_index": 0,
+      "explanation": "松本市は長野県にあり、国宝の松本城などでも知られています。草間さんは松本市で生まれ、アメリカでも活動し、国内外で作品を発表しました。2016年には文化の発展に大きく貢献（こうけん）した人に贈（おく）られる文化勲章（ぶんかくんしょう）を受けました。",
+      "keywords": [
+        "草間彌生",
+        "松本市",
+        "文化勲章"
+      ],
+      "sources": [
+        {
+          "name": "松本市美術館",
+          "url": "https://matsumoto-artmuse.jp/2026/08/27/5076/"
+        },
+        {
+          "name": "草間彌生美術館",
+          "url": "https://yayoikusamamuseum.jp/about/yayoikusama/"
+        }
+      ]
+    }
+  ]
+}

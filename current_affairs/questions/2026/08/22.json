@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-22",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260822-001",
@@ -30,6 +30,39 @@
         {
           "name": "共同通信・熊本日日新聞",
           "url": "https://kumanichi.com/articles/2027816"
+        }
+      ]
+    },
+    {
+      "id": "20260822-002",
+      "news_date": "2026-08-22",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "愛知・名古屋アジア大会の聖火（せいか）リレーが始まる",
+      "news_summary": "名古屋城で東京、広島、愛知の火を合わせて聖火リレーが始まった。",
+      "question": "2026年8月22日、愛知県と名古屋市を中心に9月から開かれるアジア大会に向け、名古屋城で聖火リレーが始まりました。東京と広島、愛知・名古屋で取った火を合わせて、大会の聖火が作られました。\n\n名古屋市が位置する平野はどれですか？",
+      "choices": [
+        "関東平野",
+        "石狩平野（いしかりへいや）",
+        "越後平野（えちごへいや）",
+        "濃尾平野（のうびへいや）"
+      ],
+      "correct_index": 3,
+      "explanation": "濃尾平野は愛知県と岐阜県（ぎふけん）に広がり、木曽川（きそがわ）などの川が運んだ土や砂が積もってできた平野です。名古屋市はこの平野にあり、伊勢湾（いせわん）に面しています。中部地方の工業や交通の中心の一つです。",
+      "keywords": [
+        "アジア大会",
+        "名古屋",
+        "濃尾平野"
+      ],
+      "sources": [
+        {
+          "name": "名古屋テレビ",
+          "url": "https://www.nagoyatv.com/news/?id=036881"
+        },
+        {
+          "name": "名古屋市",
+          "url": "https://www.city.nagoya.jp/shisei/gaiyou/1013729/1013735.html"
         }
       ]
     }

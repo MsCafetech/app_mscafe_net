@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-25",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260825-001",
+      "news_date": "2026-08-25",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "外国人の在留許可手数料を引き上げる政令を決定",
+      "news_summary": "政府が外国人の在留手続きにかかる手数料の改定を決定した。",
+      "question": "2026年8月25日、政府は外国人が日本に住み続けるための手続きにかかる手数料を引き上げる政令を閣議決定（かくぎけってい）しました。住むことができる期間などに応じて手数料を変える仕組みです。\n\n日本国憲法（にほんこくけんぽう）で、法律の規定を実施するために政令を制定する機関はどれですか？",
+      "choices": [
+        "内閣（ないかく）",
+        "衆議院",
+        "参議院",
+        "最高裁判所"
+      ],
+      "correct_index": 0,
+      "explanation": "政令は内閣が制定する決まりで、日本国憲法第73条にその権限が定められています。国会が作った法律を実際に運用するための細かな内容などを定めます。法律を作る国会と、法律に基づいて行政を行う内閣の役割は異なります。",
+      "keywords": [
+        "在留許可",
+        "政令",
+        "内閣"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000528571.html"
+        },
+        {
+          "name": "衆議院",
+          "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+        }
+      ]
+    }
+  ]
+}

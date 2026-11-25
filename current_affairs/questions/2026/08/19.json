@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-19",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260819-001",
+      "news_date": "2026-08-18",
+      "category": "international",
+      "difficulty": 3,
+      "question_type": "current_affairs",
+      "news_title": "国際刑事裁判所（こくさいけいじさいばんしょ）の日本人所長に米国が制裁（せいさい）",
+      "news_summary": "アメリカ政府がICCの赤根智子所長らを制裁対象とした。",
+      "question": "2026年8月18日（アメリカ現地時間）、アメリカ政府は国際刑事裁判所（ICC）の赤根智子（あかねともこ）所長らを制裁の対象に加えると発表しました。国際的な裁判のあり方が注目されています。\n\n国際刑事裁判所の主な役割は何ですか？",
+      "choices": [
+        "国どうしの貿易のルールを決める",
+        "各国の通貨の価値を決める",
+        "戦争犯罪など重大な犯罪を行った個人の責任を裁く",
+        "国際的なスポーツ大会を運営する"
+      ],
+      "correct_index": 2,
+      "explanation": "ICCは戦争犯罪など、国際社会にとって重大な犯罪に関わった個人の刑事責任を問う裁判所です。日本も2007年に加盟しました。国どうしの法律上の争いなどを扱う国際司法裁判所（ICJ）とは別の機関です。",
+      "keywords": [
+        "ICC",
+        "国際刑事裁判所",
+        "国際法"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_international/articles/000527197.html"
+        },
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/gaiko/icc/"
+        }
+      ]
+    }
+  ]
+}

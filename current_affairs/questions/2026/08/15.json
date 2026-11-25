@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-15",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260815-001",
+      "news_date": "2026-08-15",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "終戦81年、全国戦没者追悼式（ぜんこくせんぼつしゃついとうしき）",
+      "news_summary": "日本武道館で戦争で亡くなった人々をしのぶ式典が開かれた。",
+      "question": "2026年8月15日、東京の日本武道館で全国戦没者追悼式が行われました。終戦から81年を迎え、戦争で亡くなった人々をしのび、平和を願う式典です。\n\n1945年8月、日本が受け入れ、第二次世界大戦の終結につながった宣言は何ですか？",
+      "choices": [
+        "大西洋憲章（たいせいようけんしょう）",
+        "ポツダム宣言",
+        "人権宣言",
+        "世界人権宣言"
+      ],
+      "correct_index": 1,
+      "explanation": "日本は1945年8月14日にポツダム宣言を受け入れることを決め、15日に昭和天皇のラジオ放送で国民に知らせました。この日を終戦の日と呼んでいます。9月2日には日本が降伏文書（こうふくぶんしょ）に署名（しょめい）しました。",
+      "keywords": [
+        "終戦",
+        "ポツダム宣言",
+        "第二次世界大戦"
+      ],
+      "sources": [
+        {
+          "name": "厚生労働省",
+          "url": "https://www.mhlw.go.jp/stf/photo_report/2026/ph0815-01.html"
+        },
+        {
+          "name": "国立公文書館",
+          "url": "https://www.archives.go.jp/ayumi/kobetsu/s20_1945_04.html"
+        }
+      ]
+    }
+  ]
+}
