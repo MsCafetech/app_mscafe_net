@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 15,
-  "related_count": 33,
-  "image_count": 48,
+  "related_count": 34,
+  "image_count": 49,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -335,7 +335,26 @@
           "usage_notes": "米海兵隊提供のパブリックドメイン資料。撮影者名、提供元およびWikimedia Commonsの掲載元を出典として表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-014-R03",
+          "images": [
+            {
+              "id": "20261125-014-R03-I01",
+              "type": "photo",
+              "title": "呉の造船所",
+              "caption": "資料写真：広島県呉市の造船所。船を造ったり修理したりするための大型設備が見えます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Japan_Marine_United_Kure_Shipyard_(1).jpg/960px-Japan_Marine_United_Kure_Shipyard_(1).jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japan_Marine_United_Kure_Shipyard_(1).jpg",
+              "credit": "liveinvain",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示し、加工時は変更を明記。縮小版を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-015",
