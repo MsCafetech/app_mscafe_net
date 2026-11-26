@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-04",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260804-001",
@@ -30,6 +30,35 @@
         {
           "name": "日本オリンピック委員会",
           "url": "https://www.joc.or.jp/news/20260804038645.html"
+        }
+      ]
+    },
+    {
+      "id": "20260804-002",
+      "news_date": "2026-08-04",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "熊本地震への予備費の使用を決定",
+      "news_summary": "政府が熊本地震への対応に242億円の予備費を使うことを決めた。",
+      "question": "2026年8月4日、政府は7月28日に発生した熊本地震への対応として、242億円の予備費の使用を閣議（かくぎ）決定しました。\n\n国の予備費は主に何のために用意されるものですか？",
+      "choices": [
+        "外国への旅行費用を全員に配るため",
+        "予算を決めた時に予想できなかった支出に備えるため",
+        "国会議員の選挙だけに使うため",
+        "毎年の税金をなくすため"
+      ],
+      "correct_index": 1,
+      "explanation": "予備費は、予算を決めた時に予想できなかった支出に備えるための費用です。内閣（ないかく）の責任で使用し、後から国会の承諾（しょうだく）を得る必要があります。大きな災害への対応などにも使われます。",
+      "keywords": [
+        "予備費",
+        "熊本地震",
+        "財政"
+      ],
+      "sources": [
+        {
+          "name": "首相官邸",
+          "url": "https://www.kantei.go.jp/jp/105/actions/202608/04hijoukaigi.html"
         }
       ]
     }
