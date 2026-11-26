@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 2,
-  "related_count": 3,
-  "image_count": 6,
+  "related_count": 5,
+  "image_count": 8,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -90,6 +90,24 @@
               "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-001-R03",
+          "images": [
+            {
+              "id": "20261126-001-R03-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：国政調査権を持つ国会の議事堂。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/NationalDietBuilding.jpg/960px-NationalDietBuilding.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:NationalDietBuilding.jpg",
+              "credit": "Douglas P. Perkins",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更した場合は明記。"
+            }
+          ]
         }
       ]
     },
@@ -110,7 +128,26 @@
           "usage_notes": "商用利用・再配布・加工可能。出典を表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-002-R04",
+          "images": [
+            {
+              "id": "20261126-002-R04-I01",
+              "type": "photo",
+              "title": "日本銀行の建物",
+              "caption": "資料写真：金融政策を決める日本銀行の建物。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Bank_of_Japan_building.jpg/960px-Bank_of_Japan_building.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_building.jpg",
+              "credit": "Syced",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用・再配布・加工可能。出典を表示。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
