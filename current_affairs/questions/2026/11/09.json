@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-09",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261109-001",
@@ -30,6 +30,40 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/s_sa/sea1/vn/pageit_000001_00016.html"
+        }
+      ]
+    },
+    {
+      "id": "20261109-002",
+      "news_date": "2026-11-09",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連の気候変動会議COP31が開幕（かいまく）",
+      "news_summary": "トルコのアンタルヤで国連の気候変動会議COP31が始まりました。",
+      "question": "2026年11月9日、トルコのアンタルヤで国連の気候変動会議COP31が始まりました。各国が地球温暖化への対策について話し合います。\n\nこの会議のCOPとは、何を意味する言葉ですか。",
+      "choices": [
+        "世界の気温を測る観測所",
+        "条約を結んだ国などが集まる締約国会議（ていやくこくかいぎ）",
+        "国際的な気象衛星（きしょうえいせい）",
+        "二酸化炭素の排出量（はいしゅつりょう）を表す単位"
+      ],
+      "correct_index": 1,
+      "explanation": "COPは英語のConference of the Partiesの略で、締約国会議を意味します。気候変動に関する国際条約に参加する国などが集まり、地球温暖化をおさえる方法や、気候変動による被害への対策を話し合います。31は会議の回数を表しています。",
+      "keywords": [
+        "COP31",
+        "締約国会議（ていやくこくかいぎ）",
+        "気候変動",
+        "地球温暖化"
+      ],
+      "sources": [
+        {
+          "name": "国連気候変動枠組条約事務局",
+          "url": "https://unfccc.int/cop31"
+        },
+        {
+          "name": "ロイター",
+          "url": "https://www.reuters.com/sustainability/cop/cop31-open-turkey-with-climate-goals-under-pressure-war-ai-2026-11-09/"
         }
       ]
     }
