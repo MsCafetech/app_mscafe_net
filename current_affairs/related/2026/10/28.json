@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-28",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 2,
+  "question_count": 2,
+  "related_count": 4,
   "questions": [
     {
       "question_id": "20261028-001",
@@ -43,6 +43,53 @@
             {
               "name": "外務省 国際原子力機関（IAEA）保障措置",
               "url": "https://www.mofa.go.jp/mofaj/gaiko/atom/iaea/kyoutei.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261028-002",
+      "related": [
+        {
+          "id": "20261028-002-R01",
+          "relation_type": "question",
+          "title": "ドイツの連邦制と都市州",
+          "description": "ドイツの正式な国名はドイツ連邦共和国です。国は16の州から成り立ち、州はそれぞれ独自の憲法を持っています。首都ベルリンのほか、ハンブルクとブレーメンは都市を中心とした州です。国全体の政治を担当する連邦政府と、地域の政治を担当する州政府がある仕組みを連邦制（れんぽうせい）といいます。国の議会には、国民の選挙で選ばれる連邦議会のほか、各州政府の代表が参加する連邦参議院があります。地域ごとの考えを国の政治に反映させる仕組みがある点が特徴です。",
+          "relationship": "日本と首脳会談を行ったドイツの政治制度と首都の特徴を学ぶ。",
+          "keywords": [
+            "ドイツ",
+            "連邦制",
+            "都市州",
+            "連邦参議院"
+          ],
+          "sources": [
+            {
+              "name": "欧州連合 ドイツの基礎情報",
+              "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/germany_en"
+            },
+            {
+              "name": "外務省 ドイツ基礎データ",
+              "url": "https://www.mofa.go.jp/mofaj/area/germany/data.html"
+            }
+          ]
+        },
+        {
+          "id": "20261028-002-R02",
+          "relation_type": "question",
+          "title": "ドイツの工業と日本との貿易",
+          "description": "ドイツはヨーロッパを代表する工業国で、自動車や機械、化学製品、医薬品などの産業が発達しています。製品を国内で売るだけでなく、外国との貿易も盛んで、ヨーロッパの国々との取引が大きな割合を占めています。日本とも機械や自動車などの取引があり、日本からドイツへ工場などに投資する企業もあります。ドイツから日本への投資も行われています。両国は工業技術に強みを持つため、新しい技術の開発や、工業製品を作るための資源を安定して手に入れることなどが共通の課題となります。",
+          "relationship": "日独首脳会談における技術協力と資源確保の経済的背景を学ぶ。",
+          "keywords": [
+            "ドイツ",
+            "工業",
+            "貿易",
+            "投資"
+          ],
+          "sources": [
+            {
+              "name": "外務省 ドイツ基礎データ",
+              "url": "https://www.mofa.go.jp/mofaj/area/germany/data.html"
             }
           ]
         }
