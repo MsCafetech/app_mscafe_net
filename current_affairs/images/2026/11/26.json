@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 6,
-  "related_count": 12,
-  "image_count": 19,
+  "related_count": 13,
+  "image_count": 20,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -352,7 +352,26 @@
           "usage_notes": "撮影者・出典・ライセンスを表示し、加工時は変更内容を明記。2013年撮影の資料写真。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-006-R01",
+          "images": [
+            {
+              "id": "20261126-006-R01-I01",
+              "type": "map",
+              "title": "1930年代の南洋群島地図",
+              "caption": "歴史資料：日本が委任統治していた1930年代の南洋群島の地図。右側にマーシャル諸島が描かれています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/South_Pacific_Mandate_map_in_1930s.PNG/960px-South_Pacific_Mandate_map_in_1930s.PNG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:South_Pacific_Mandate_map_in_1930s.PNG",
+              "credit": "作者不詳／東海通信社『大日本外地写真帖』",
+              "license": "Public Domain (PD-Japan-oldphoto, PD-1996)",
+              "license_url": "https://commons.wikimedia.org/wiki/File:South_Pacific_Mandate_map_in_1930s.PNG#Licensing",
+              "usage_notes": "掲載元では日本および米国で著作権保護期間満了と表示。出典を明記。歴史資料であり現在の国境を示すものではない。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
