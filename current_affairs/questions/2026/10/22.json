@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20261022-001",
+      "news_date": "2026-10-22",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "IPCC第65回総会の結果",
+      "news_summary": "環境省がエチオピアで開かれたIPCC総会の結果を発表した。",
+      "question": "2026年10月22日、環境省は、エチオピアのアディスアベバで開かれた気候変動に関する政府間パネル（IPCC）の総会の結果を発表しました。\n\nIPCCの主な役割は何ですか？",
+      "choices": [
+        "気候変動に関する科学的な研究成果を評価する",
+        "世界の通貨を発行する",
+        "国際的なスポーツ大会を開催する",
+        "世界各国の国境を決める"
+      ],
+      "correct_index": 0,
+      "explanation": "IPCCは世界の科学的な研究成果をもとに、気候変動の原因や影響、対策に関する評価を行います。各国が温暖化対策を考える際の重要な資料になります。",
+      "keywords": [
+        "IPCC",
+        "気候変動",
+        "地球温暖化"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05725.html"
+        }
+      ]
+    },
+    {
+      "id": "20261022-002",
+      "news_date": "2026-10-22",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "世界津波の日高校生サミット",
+      "news_summary": "岩手県で各国の高校生が津波防災について学び合った。",
+      "question": "2026年10月20日から22日まで、岩手県で「世界津波の日」の高校生サミットが開かれました。各国の高校生が津波への備えについて学び合いました。\n\n岩手県などの三陸海岸に多く見られる、入り江が複雑に入り組んだ海岸地形を何といいますか？",
+      "choices": [
+        "砂丘",
+        "リアス海岸",
+        "三角州",
+        "扇状地"
+      ],
+      "correct_index": 1,
+      "explanation": "リアス海岸は山地の谷に海水が入り込むなどしてできた、入り江の多い海岸です。三陸海岸には良い漁港が多い一方、湾の形によって津波が高くなることがあるため防災が重要です。",
+      "keywords": [
+        "三陸海岸",
+        "リアス海岸",
+        "津波",
+        "岩手県"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04334.html"
+        }
+      ]
+    }
+  ]
+}
