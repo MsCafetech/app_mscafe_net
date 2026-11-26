@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 10,
+  "question_count": 11,
   "related_count": 13,
-  "image_count": 24,
+  "image_count": 25,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -444,6 +444,25 @@
           "credit": "acediscovery",
           "license": "CC BY 4.0",
           "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。変更時は明示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-011",
+      "images": [
+        {
+          "id": "20261126-011-I01",
+          "type": "photo",
+          "title": "液化天然ガス輸送船",
+          "caption": "資料写真：液化天然ガスを運ぶ船。丸いタンクが見えます。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Liquefied_gas_tanker.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Liquefied_gas_tanker.jpg",
+          "credit": "Jnzl's Photos",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。変更時は明示。"
         }
       ],
