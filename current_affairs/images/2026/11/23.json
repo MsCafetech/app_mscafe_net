@@ -3,8 +3,8 @@
   "date": "2026-11-23",
   "language": "ja",
   "question_count": 12,
-  "related_count": 21,
-  "image_count": 34,
+  "related_count": 35,
+  "image_count": 48,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -61,7 +61,26 @@
           "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像を配布する場合は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261123-008-R01",
+          "images": [
+            {
+              "id": "20261123-008-R01-I01",
+              "type": "photo",
+              "title": "財務省の建物",
+              "caption": "資料写真：国の予算や会計を担当する財務省。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Ministry_of_Finance_Building_%28Japan%29.jpg/960px-Ministry_of_Finance_Building_%28Japan%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Ministry_of_Finance_Building_(Japan).jpg",
+              "credit": "Kakidai",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像を配布する場合は同一または互換ライセンス。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261123-009",
@@ -128,6 +147,78 @@
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
               "usage_notes": "作者名、出典URL、CC BY 3.0ライセンスを表示。資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-011-R01",
+          "images": [
+            {
+              "id": "20261123-011-R01-I01",
+              "type": "photo",
+              "title": "参議院の本会議場",
+              "caption": "資料写真：二院制を構成する参議院の議場。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Chamber_of_the_House_of_Councillors_P5200850.jpg/960px-Chamber_of_the_House_of_Councillors_P5200850.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Councillors_P5200850.jpg",
+              "credit": "Kestrel",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-011-R03",
+          "images": [
+            {
+              "id": "20261123-011-R03-I01",
+              "type": "photo",
+              "title": "衆議院の本会議場",
+              "caption": "資料写真：予算などで優越が認められる衆議院の議場。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chamber_of_the_House_of_Representatives_of_Japan.jpg/960px-Chamber_of_the_House_of_Representatives_of_Japan.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Representatives_of_Japan.jpg",
+              "credit": "Kimtaro",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者名、出典URL、CC BY 3.0ライセンスを表示。資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-011-R04",
+          "images": [
+            {
+              "id": "20261123-011-R04-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：国政調査権を持つ国会。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/National_Diet_Building%28in_2025%29.jpg/960px-National_Diet_Building%28in_2025%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_Building(in_2025).jpg",
+              "credit": "緑さん",
+              "license": "Public Domain (PD-self)",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "撮影者によりパブリックドメインとして公開。出典・作者の表示を推奨。2025年撮影の資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-011-R05",
+          "images": [
+            {
+              "id": "20261123-011-R05-I01",
+              "type": "photo",
+              "title": "参議院の本会議場",
+              "caption": "資料写真：衆議院解散中に緊急集会が開かれる参議院。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Chamber_of_the_House_of_Councillors_P5200850.jpg/960px-Chamber_of_the_House_of_Councillors_P5200850.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Councillors_P5200850.jpg",
+              "credit": "Kestrel",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。資料写真。"
             }
           ]
         }
@@ -406,6 +497,42 @@
               "usage_notes": "パブリックドメインとして公開。出典・作者の表示を推奨。既存の模式図。"
             }
           ]
+        },
+        {
+          "related_id": "20261123-014-R02",
+          "images": [
+            {
+              "id": "20261123-014-R02-I01",
+              "type": "diagram",
+              "title": "人の目の断面図",
+              "caption": "資料写真：網膜と視神経の位置を学ぶための目の断面図。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Schematic_diagram_of_the_human_eye_multilingual.svg/960px-Schematic_diagram_of_the_human_eye_multilingual.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Schematic_diagram_of_the_human_eye_multilingual.svg",
+              "credit": "Rhcastilhos / Jakov",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "パブリックドメインとして公開。出典・作者の表示を推奨。既存の模式図。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-014-R05",
+          "images": [
+            {
+              "id": "20261123-014-R05-I01",
+              "type": "photo",
+              "title": "研究室で扱うiPS細胞",
+              "caption": "資料写真：再生医療の研究に使われるiPS細胞。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+              "credit": "CSIRO",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。今回の研究で作られた細胞ではない資料写真。"
+            }
+          ]
         }
       ]
     },
@@ -442,6 +569,42 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。日本の投票機ではない資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-015-R04",
+          "images": [
+            {
+              "id": "20261123-015-R04-I01",
+              "type": "photo",
+              "title": "日本の投票参加呼びかけ",
+              "caption": "資料写真：選挙への参加を呼びかける掲示。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Hikaru_Takahashi_2024_Japan_General_Election_Voting_Awareness.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hikaru_Takahashi_2024_Japan_General_Election_Voting_Awareness.jpg",
+              "credit": "総務省",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・CC BY 4.0ライセンスを表示。2024年の選挙啓発用資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-015-R05",
+          "images": [
+            {
+              "id": "20261123-015-R05-I01",
+              "type": "photo",
+              "title": "日本の投票参加呼びかけ",
+              "caption": "資料写真：住民が政治に参加する方法の一つである投票。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Hikaru_Takahashi_2024_Japan_General_Election_Voting_Awareness.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hikaru_Takahashi_2024_Japan_General_Election_Voting_Awareness.jpg",
+              "credit": "総務省",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・CC BY 4.0ライセンスを表示。2024年の選挙啓発用資料写真。"
             }
           ]
         }
@@ -491,6 +654,42 @@
               "type": "photo",
               "title": "養鶏場のニワトリと卵",
               "caption": "資料写真：ニワトリを飼育し、卵を集める養鶏場の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Chickens_in_cages_with_eggs_in_a_farm_setting.jpg/960px-Chickens_in_cages_with_eggs_in_a_farm_setting.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chickens_in_cages_with_eggs_in_a_farm_setting.jpg",
+              "credit": "Shixart1985 (Nenad Stojković)",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-016-R02",
+          "images": [
+            {
+              "id": "20261123-016-R02-I01",
+              "type": "photo",
+              "title": "養鶏場の鶏",
+              "caption": "資料写真：鳥インフルエンザの防疫が必要な養鶏場。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Chickens_at_Parafield_Poultry_Farm%28GN12787%29.jpg/960px-Chickens_at_Parafield_Poultry_Farm%28GN12787%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chickens_at_Parafield_Poultry_Farm(GN12787).jpg",
+              "credit": "State Government Photographer",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0として公開。商用利用、複製、改変が可能。出典表示を推奨。資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-016-R05",
+          "images": [
+            {
+              "id": "20261123-016-R05-I01",
+              "type": "photo",
+              "title": "養鶏場のニワトリと卵",
+              "caption": "資料写真：食の安全について考えるための鶏と卵。",
               "is_reference": true,
               "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Chickens_in_cages_with_eggs_in_a_farm_setting.jpg/960px-Chickens_in_cages_with_eggs_in_a_farm_setting.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
               "source_url": "https://commons.wikimedia.org/wiki/File:Chickens_in_cages_with_eggs_in_a_farm_setting.jpg",
@@ -554,6 +753,24 @@
               "license": "Public Domain (NASA)",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
               "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。国際宇宙ステーションからの観測資料。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-017-R04",
+          "images": [
+            {
+              "id": "20261123-017-R04-I01",
+              "type": "photo",
+              "title": "ニューヨークの都市景観",
+              "caption": "資料写真：港町として発展したニューヨーク。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Long_Island_City_New_York_May_2015_panorama_3.jpg/960px-Long_Island_City_New_York_May_2015_panorama_3.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Long_Island_City_New_York_May_2015_panorama_3.jpg",
+              "credit": "King of Hearts",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。2015年撮影の資料写真。"
             }
           ]
         }
@@ -625,6 +842,42 @@
               "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cloud_to_ground_lightning.jpg/1280px-Cloud_to_ground_lightning.jpg",
               "source_url": "https://commons.wikimedia.org/wiki/File:Cloud_to_ground_lightning.jpg",
               "credit": "Rotareneg",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-018-R04",
+          "images": [
+            {
+              "id": "20261123-018-R04-I01",
+              "type": "photo",
+              "title": "積乱雲",
+              "caption": "資料写真：短時間の強い雨をもたらすことがある積乱雲。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/08-30-2020_Cumululonimbus_cloud.jpg/960px-08-30-2020_Cumululonimbus_cloud.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:08-30-2020_Cumululonimbus_cloud.jpg",
+              "credit": "Shellparakeet",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用、複製、改変が可能。撮影者・掲載元の表示を推奨。2020年撮影の資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-018-R05",
+          "images": [
+            {
+              "id": "20261123-018-R05-I01",
+              "type": "photo",
+              "title": "かなとこ雲",
+              "caption": "資料写真：発達した積乱雲の特徴であるかなとこ状の雲。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/AnvilCumNim.jpg/960px-AnvilCumNim.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:AnvilCumNim.jpg",
+              "credit": "PiccoloNamek",
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
