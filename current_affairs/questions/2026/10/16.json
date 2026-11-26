@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-10-16",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261016-001",
@@ -30,6 +30,35 @@
         {
           "name": "気象庁",
           "url": "https://www.jma.go.jp/jma/press/2610/16b/202610161400.html"
+        }
+      ]
+    },
+    {
+      "id": "20261016-002",
+      "news_date": "2026-10-16",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "世界食料デー",
+      "news_summary": "世界の食料問題を考える国際デーを迎えた。",
+      "question": "2026年10月16日は世界食料デーです。世界では、十分な食料を得られない人がいる一方、食べられる食品が捨てられる問題もあります。\n\n食料や農業の問題に取り組む国連の専門機関はどれですか？",
+      "choices": [
+        "WHO",
+        "ILO",
+        "FAO",
+        "IMF"
+      ],
+      "correct_index": 2,
+      "explanation": "FAOは国際連合食糧農業機関です。飢餓（きが）の解消や農業の発展などに取り組みます。WHOは世界保健機関、ILOは国際労働機関、IMFは国際通貨基金です。",
+      "keywords": [
+        "世界食料デー",
+        "FAO",
+        "飢餓"
+      ],
+      "sources": [
+        {
+          "name": "FAO駐日連絡事務所",
+          "url": "https://www.fao.org/japan/highlights/world-food-day/jp"
         }
       ]
     }
