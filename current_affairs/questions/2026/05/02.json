@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-02",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20260502-001",
+      "news_date": "2026-05-02",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日・ベトナム首脳会談（しゅのうかいだん）",
+      "news_summary": "日本とベトナムの首相がハノイで会談した。",
+      "question": "2026年5月2日、日本の総理大臣がベトナムのハノイを訪れ、フン首相と会談しました。両国は経済や安全保障（ほしょう）などの協力を進めることを確認しました。\n\nベトナムの首都はどこですか？",
+      "choices": [
+        "バンコク",
+        "ハノイ",
+        "マニラ",
+        "ジャカルタ"
+      ],
+      "correct_index": 1,
+      "explanation": "ベトナムの首都はハノイです。ベトナムは東南アジアのインドシナ半島の東側に位置し、南北に長い国です。バンコクはタイ、マニラはフィリピン、ジャカルタはインドネシアの都市です。",
+      "keywords": [
+        "ベトナム",
+        "ハノイ",
+        "東南アジア"
+      ],
+      "sources": [
+        {
+          "name": "首相官邸",
+          "url": "https://www.kantei.go.jp/jp/105/actions/202605/02vietnam1.html"
+        }
+      ]
+    },
+    {
+      "id": "20260502-002",
+      "news_date": "2026-05-02",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日越（にちえつ）首脳会談でCPTPPの協力を確認",
+      "news_summary": "日本とベトナムが貿易協定の拡大について話し合った。",
+      "question": "2026年5月2日、日本とベトナムの首相は、ベトナムが議長国を務めるCPTPPを広げていくことの重要性を確認しました。\n\nCPTPPのような貿易協定の主な目的は何ですか？",
+      "choices": [
+        "国境をなくして一つの国になること",
+        "各国の通貨を必ず同じにすること",
+        "関税（かんぜい）などの貿易の障害を減らすこと",
+        "すべての輸入品を禁止すること"
+      ],
+      "correct_index": 2,
+      "explanation": "CPTPPは太平洋を取り巻く国々などが参加する経済連携協定（けいざいれんけいきょうてい）です。関税を減らすことや共通の貿易ルールを作ることで、国をこえた商品やサービスの取引を進めやすくします。",
+      "keywords": [
+        "CPTPP",
+        "貿易",
+        "関税（かんぜい）"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/s_sa/sea1/vn/pageit_000001_02922.html"
+        }
+      ]
+    }
+  ]
+}
