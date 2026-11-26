@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20261126-001",
@@ -72,6 +72,41 @@
         {
           "name": "日本銀行",
           "url": "https://www.boj.or.jp/note_tfjgs/note/outline/"
+        }
+      ]
+    },
+    {
+      "id": "20261126-003",
+      "news_date": "2026-11-26",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "消費税減税の財源に競輪・宝くじの収益を活用する提案",
+      "news_summary": "自民党の作業チームは食料品の消費税減税に必要な財源を確保するため、競輪や宝くじの収益の一部を国の収入とする案をまとめました。",
+      "question": "2026年11月26日、自民党の作業チームは、食料品の消費税を2年間引き下げるために必要な財源の確保策をまとめました。競輪や宝くじなどの収益の一部を国の収入とする案が示されました。\n\nこのような財源確保策が検討される主な理由は何ですか。",
+      "choices": [
+        "地方公共団体の数を減らすため",
+        "減税によって減る税収を補うため",
+        "日本銀行が発行する紙幣（しへい）を増やすため",
+        "外国からの輸入品を減らすため"
+      ],
+      "correct_index": 1,
+      "explanation": "消費税を引き下げると、その分だけ税収が減ることが見込まれます。国は社会保障などの公共サービスに必要なお金を確保するため、税以外の収入や支出の見直しなども検討します。今回示された収益の活用は提案の段階であり、実施が決まったわけではありません。",
+      "keywords": [
+        "消費税",
+        "減税",
+        "財源",
+        "国庫",
+        "宝くじ"
+      ],
+      "sources": [
+        {
+          "name": "時事通信（JEMTC Web）",
+          "url": "https://forincs.com/headlines.php?src=2026112601064.xml"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://smart.asahi.com/v/article/ASVCV20HDVCVULFA00CM.php"
         }
       ]
     }
