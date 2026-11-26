@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 13,
+  "question_count": 14,
   "questions": [
     {
       "id": "20261125-011",
@@ -409,6 +409,40 @@
         {
           "name": "JAXA宇宙科学研究所",
           "url": "https://www.isas.jaxa.jp/topics/004692.html"
+        }
+      ]
+    },
+    {
+      "id": "20261125-024",
+      "news_date": "2026-11-25",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "キューバ革命の指導者カストロ氏の死去から10年",
+      "news_summary": "キューバ革命の指導者だったカストロ氏の死去から10年となり、現地でその死をいたむ動きが広がりました。",
+      "question": "2026年11月25日、1959年のキューバ革命を率いたカストロ氏が亡（な）くなって10年となり、キューバではその死をいたむ人々の動きが広がりました。共同通信が11月26日に報じました。\n\nキューバの首都はどこですか。",
+      "choices": [
+        "キングストン",
+        "マナグア",
+        "ハバナ",
+        "サントドミンゴ"
+      ],
+      "correct_index": 2,
+      "explanation": "ハバナはキューバの首都です。キューバはカリブ海にある島国で、アメリカのフロリダ半島の南に位置します。キングストンはジャマイカ、マナグアはニカラグア、サントドミンゴはドミニカ共和国の首都です。",
+      "keywords": [
+        "キューバ",
+        "カストロ",
+        "ハバナ",
+        "カリブ海"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（埼玉新聞）",
+          "url": "https://www.saitama-np.co.jp/articles/224950"
+        },
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/area/cuba/data.html"
         }
       ]
     }
