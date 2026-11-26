@@ -24,7 +24,21 @@
     },
     {
       "question_id": "20261119-101",
-      "images": [],
+      "images": [
+        {
+          "id": "20261119-101-I01",
+          "type": "photo",
+          "title": "深海にすむウニ",
+          "caption": "資料写真：水深2932メートルで撮影されたウニの仲間。今回の研究対象とは異なる資料写真です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Expl0867_-_Flickr_-_NOAA_Photo_Library.jpg/960px-Expl0867_-_Flickr_-_NOAA_Photo_Library.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Expl0867_-_Flickr_-_NOAA_Photo_Library.jpg",
+          "credit": "NOAA/Monterey Bay Aquarium Research Institute",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
       "related": [
         {
           "related_id": "20261119-101-R01",
@@ -48,7 +62,21 @@
     },
     {
       "question_id": "20261119-102",
-      "images": [],
+      "images": [
+        {
+          "id": "20261119-102-I01",
+          "type": "photo",
+          "title": "国際司法裁判所のある平和宮",
+          "caption": "資料写真：オランダのハーグにある平和宮。国際司法裁判所が置かれています。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Peace_Palace_The_Hague.jpg/960px-Peace_Palace_The_Hague.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peace_Palace_The_Hague.jpg",
+          "credit": "Iamthestig",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
       "related": [
         {
           "related_id": "20261119-102-R01",
@@ -73,5 +101,5 @@
   ],
   "question_count": 3,
   "related_count": 2,
-  "image_count": 3
+  "image_count": 5
 }
