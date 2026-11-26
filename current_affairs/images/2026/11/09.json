@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261109-001",
+      "images": [
+        {
+          "id": "20261109-001-I01",
+          "type": "photo",
+          "title": "日本とベトナムの首脳会談",
+          "caption": "2026年11月9日の日ベトナム首脳会談での握手。",
+          "is_reference": false,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/2026_Japan-Vietnam_Summit.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2026_Japan-Vietnam_Summit.jpg",
+          "credit": "内閣広報室 / Cabinet Public Affairs Office",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1
+}
