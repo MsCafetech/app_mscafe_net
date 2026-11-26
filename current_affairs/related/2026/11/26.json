@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 2,
-  "related_count": 5,
+  "related_count": 9,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -19,6 +19,94 @@
             "衆議院",
             "日本国憲法第69条",
             "総辞職"
+          ],
+          "sources": [
+            {
+              "name": "衆議院 日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-001-R02",
+          "relation_type": "question",
+          "title": "二院制と議員の任期",
+          "description": "日本の国会は衆議院（しゅうぎいん）と参議院の二つの議院から成り立っています。このような仕組みを二院制といいます。衆議院議員の任期は4年ですが、解散があればその前に終わります。参議院議員の任期は6年で、解散はなく、3年ごとに半数を選び直します。衆議院では解散によって国民の考えを改めて選挙で確かめることができ、参議院では選挙のたびに全員が入れ替わらないため、長い期間にわたる課題にも取り組みやすくなります。二つの議院で話し合うことで、多様な意見を政治に取り入れられます。",
+          "relationship": "問責決議を提出する参議院と衆議院の制度上の違いを学ぶ。",
+          "keywords": [
+            "二院制",
+            "参議院",
+            "衆議院",
+            "任期"
+          ],
+          "sources": [
+            {
+              "name": "衆議院 国会の構成",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kousei.htm"
+            },
+            {
+              "name": "衆議院 日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-001-R03",
+          "relation_type": "question",
+          "title": "国会の国政調査権",
+          "description": "国会には、法律を作ったり予算を決めたりするだけでなく、国の政治がどのように行われているかを調べる役割があります。日本国憲法第62条は、衆議院と参議院のそれぞれに国政調査権（こくせいちょうさけん）を認めています。議院は調査のために関係者に来てもらい、話を聞いたり、記録の提出を求めたりできます。また、大臣は国会から説明を求められた場合には出席しなければなりません。国民が選んだ議員が政府の仕事を確かめ、問題があれば明らかにするための大切な仕組みです。",
+          "relationship": "大臣の政治上の責任を問う背景にある政府監督の制度を学ぶ。",
+          "keywords": [
+            "国政調査権",
+            "日本国憲法第62条",
+            "国会",
+            "大臣"
+          ],
+          "sources": [
+            {
+              "name": "衆議院 国会の権限",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kengen2.htm"
+            },
+            {
+              "name": "衆議院 日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-001-R04",
+          "relation_type": "question",
+          "title": "衆議院の優越と予算",
+          "description": "国会の二つの議院は、原則として同じ結論に達することで国としての決定を行います。ただし、いつまでも意見がまとまらないと国の政治が進まなくなるため、日本国憲法は一部の決定で衆議院を優先する仕組みを定めています。これを衆議院の優越（ゆうえつ）といいます。例えば国の予算はまず衆議院で審議します。参議院と結論が異なり、両院の話し合いでも一致しない場合などには、衆議院の決定が国会の決定となります。法律案の場合には、衆議院で再び出席議員の3分の2以上の賛成を得る方法もあります。",
+          "relationship": "参議院と衆議院の権限の違いを国会の重要な決定から理解する。",
+          "keywords": [
+            "衆議院の優越",
+            "予算",
+            "法律案",
+            "二院制"
+          ],
+          "sources": [
+            {
+              "name": "衆議院 国会の権限",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kengen2.htm"
+            },
+            {
+              "name": "衆議院 日本国憲法",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-001-R05",
+          "relation_type": "question",
+          "title": "国務大臣の任命と内閣の仕組み",
+          "description": "内閣は内閣総理大臣とその他の国務大臣によって組織され、国の行政を担当します。国会が国会議員の中から内閣総理大臣を指名し、天皇が任命します。その後、内閣総理大臣が国務大臣を選び、任命します。日本国憲法では、国務大臣の半数をこえる人数を国会議員から選ばなければならないと定めています。また、総理大臣には国務大臣を辞めさせる権限もあります。国民が直接すべての大臣を選ぶのではなく、選挙で選ばれた国会と内閣が結び付くことで政治を行う仕組みになっています。",
+          "relationship": "問責決議の対象となる国務大臣の任命と内閣の構成を学ぶ。",
+          "keywords": [
+            "内閣",
+            "国務大臣",
+            "内閣総理大臣",
+            "議院内閣制"
           ],
           "sources": [
             {
