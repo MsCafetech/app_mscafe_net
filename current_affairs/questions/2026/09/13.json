@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-13",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260913-001",
+      "news_date": "2026-09-13",
+      "category": "politics",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "沖縄県知事（おきなわけんちじ）選挙で古謝玄太（こじゃげんた）氏が初当選",
+      "news_summary": "沖縄県知事選挙で古謝玄太氏が初当選しました。",
+      "question": "2026年9月13日、沖縄県知事選挙の投票と開票が行われ、古謝玄太氏が初当選しました。\n\n都道府県知事の任期は原則何年ですか。",
+      "choices": [
+        "2年",
+        "3年",
+        "4年",
+        "6年"
+      ],
+      "correct_index": 2,
+      "explanation": "都道府県知事の任期は地方自治法で4年と定められています。知事は住民の直接選挙で選ばれ、都道府県の行政を担当します。住民が地域の政治に参加し、自分たちの暮らしに関わる政策を決める仕組みを地方自治といいます。",
+      "keywords": [
+        "沖縄県",
+        "知事選挙",
+        "地方自治"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/news/q202609/"
+        }
+      ]
+    }
+  ]
+}
