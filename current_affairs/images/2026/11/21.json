@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-21",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "related_count": 1,
-  "image_count": 3,
+  "image_count": 4,
   "questions": [
     {
       "question_id": "20261121-001",
@@ -43,6 +43,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261121-002",
+      "images": [
+        {
+          "id": "20261121-002-I01",
+          "type": "photo",
+          "title": "シンガポールの街並み",
+          "caption": "資料写真：シンガポールのマーライオンと高層ビル。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Merlion_and_the_Singapore_Skyline.JPG/960px-Merlion_and_the_Singapore_Skyline.JPG",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Merlion_and_the_Singapore_Skyline.JPG",
+          "credit": "Merlion444",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "出典を表示。商用利用可能。"
+        }
+      ],
+      "related": []
     },
     {
       "question_id": "20261121-100",
