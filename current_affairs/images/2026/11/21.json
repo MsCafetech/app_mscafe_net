@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-21",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "related_count": 1,
-  "image_count": 2,
+  "image_count": 3,
   "questions": [
     {
       "question_id": "20261121-001",
@@ -43,6 +43,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261121-100",
+      "images": [
+        {
+          "id": "20261121-100-I01",
+          "type": "photo",
+          "title": "国連の会議室",
+          "caption": "資料写真：ジュネーブにある国連の会議室。今回の会議の写真ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/United_Nations_Geneva_Council_Chamber.jpg/960px-United_Nations_Geneva_Council_Chamber.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:United_Nations_Geneva_Council_Chamber.jpg",
+          "credit": "Nacaru",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
     }
   ]
 }
