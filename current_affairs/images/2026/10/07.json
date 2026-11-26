@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261007-001",
+      "images": [
+        {
+          "id": "20261007-001-I01",
+          "type": "photo",
+          "title": "化学実験の器具",
+          "caption": "資料写真：化学の実験で使われるフラスコやビーカー。今回の研究の写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Lab_glassware.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Lab_glassware.jpg",
+          "credit": "Tweenk",
+          "license": "CC BY 3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。広告・推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261007-002",
+      "images": [
+        {
+          "id": "20261007-002-I01",
+          "type": "photo",
+          "title": "店頭に並ぶ缶ビール",
+          "caption": "資料写真：2008年に撮影された日本の店舗の酒類売り場。今回の調査の対象商品とは限りません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Cans_of_beer_on_Japanese_discount_store.jpg/960px-Cans_of_beer_on_Japanese_discount_store.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Cans_of_beer_on_Japanese_discount_store.jpg",
+          "credit": "夢の散歩",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。広告・推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 2,
+  "related_count": 0,
+  "image_count": 2
+}
