@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20261009-001",
+      "news_date": "2026-10-09",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "ノーベル平和賞にナビ・ピレイ氏",
+      "news_summary": "国際法による平和への取り組みが評価された。",
+      "question": "2026年10月9日、南アフリカ出身のナビ・ピレイ氏がノーベル平和賞に選ばれました。国際法を通じて平和を進める活動が評価されました。\n\nかつて南アフリカで行われていた人種隔離（かくり）政策は何と呼ばれますか？",
+      "choices": [
+        "アパルトヘイト",
+        "ペレストロイカ",
+        "ニューディール",
+        "グラスノスチ"
+      ],
+      "correct_index": 0,
+      "explanation": "アパルトヘイトは南アフリカで行われていた人種による差別や隔離の制度です。長い反対運動を経て制度は廃止（はいし）され、1994年にはすべての人種が参加する総選挙が行われました。人権と平等を考える上で重要な歴史です。",
+      "keywords": [
+        "ノーベル平和賞",
+        "南アフリカ",
+        "アパルトヘイト"
+      ],
+      "sources": [
+        {
+          "name": "innovatopia",
+          "url": "https://innovatopia.jp/tech-social/tech-social-news/118770/"
+        }
+      ]
+    },
+    {
+      "id": "20261009-002",
+      "news_date": "2026-10-09",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "米国が国際刑事裁判所を制裁（せいさい）対象に指定",
+      "news_summary": "米国政府が国際刑事裁判所を制裁の対象にした。",
+      "question": "2026年10月9日、米国政府は国際刑事裁判所（ICC）そのものを制裁の対象に指定したと発表しました。ICCと同じ都市には国際司法裁判所（ICJ）があります。\n\n国際司法裁判所が主に扱うのはどのような争いですか？",
+      "choices": [
+        "個人間の買い物の争い",
+        "国と国の間の法律上の争い",
+        "学校内の成績の争い",
+        "会社内の人事の争い"
+      ],
+      "correct_index": 1,
+      "explanation": "国際司法裁判所は国際連合の主要機関で、国と国の間の法律上の争いを扱います。一方、国際刑事裁判所は重大な国際犯罪について個人の責任を問う機関です。どちらもオランダのハーグにあります。",
+      "keywords": [
+        "ICC",
+        "ICJ",
+        "国際司法裁判所"
+      ],
+      "sources": [
+        {
+          "name": "スクールコンパス",
+          "url": "https://eleschool-compass.com/school-matching/shinbun/jiji/2026-10.php"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20261013-001",
+      "news_date": "2026-10-13",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "IMFが日本のGDP順位低下を予測",
+      "news_summary": "国際通貨基金が世界経済の見通しを発表した。",
+      "question": "2026年10月13日、国際通貨基金（IMF）は世界経済見通しを発表し、日本の国内総生産が2027年に世界6位となる可能性を示しました。\n\n国内総生産の略称（りゃくしょう）はどれですか？",
+      "choices": [
+        "GNP",
+        "GDP",
+        "ODA",
+        "FTA"
+      ],
+      "correct_index": 1,
+      "explanation": "GDPは国内総生産の略称です。一定期間に国内で新しく生み出された商品やサービスの付加価値を合計したもので、経済の規模を知る指標です。外国との比較では為替（かわせ）相場の変化も順位に影響します。",
+      "keywords": [
+        "GDP",
+        "IMF",
+        "経済"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/55454"
+        }
+      ]
+    },
+    {
+      "id": "20261013-002",
+      "news_date": "2026-10-13",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国際通貨基金が世界経済見通しを公表",
+      "news_summary": "IMFが各国の経済の将来予測を公表した。",
+      "question": "2026年10月13日、国際通貨基金は世界経済見通しを公表しました。各国の経済成長などについて調査や予測を行っています。\n\n国際通貨基金の略称（りゃくしょう）はどれですか？",
+      "choices": [
+        "WTO",
+        "WHO",
+        "IMF",
+        "ILO"
+      ],
+      "correct_index": 2,
+      "explanation": "IMFは国際通貨基金の略称です。国際的な通貨や金融の安定を目指し、各国の経済を調査したり、資金不足に直面した加盟国（かめいこく）を支援したりします。日本も加盟している国際機関です。",
+      "keywords": [
+        "IMF",
+        "国際通貨基金",
+        "金融"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/55454"
+        }
+      ]
+    }
+  ]
+}

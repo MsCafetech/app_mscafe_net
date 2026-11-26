@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20261008-001",
+      "news_date": "2026-10-08",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "ノーベル文学賞にカナダの作家",
+      "news_summary": "アン・カーソン氏が文学賞に選ばれた。",
+      "question": "2026年10月8日、ノーベル文学賞の受賞者にカナダの作家アン・カーソン氏が選ばれました。古典文学と現代文学を結びつける作品が評価されました。\n\nカナダの首都はどこですか？",
+      "choices": [
+        "トロント",
+        "オタワ",
+        "バンクーバー",
+        "モントリオール"
+      ],
+      "correct_index": 1,
+      "explanation": "カナダの首都はオタワです。カナダは北アメリカ大陸の北部に位置し、英語とフランス語を公用語としています。トロントやバンクーバーなども大きな都市ですが、首都ではありません。",
+      "keywords": [
+        "ノーベル文学賞",
+        "カナダ",
+        "オタワ"
+      ],
+      "sources": [
+        {
+          "name": "innovatopia",
+          "url": "https://innovatopia.jp/tech-social/tech-social-news/118770/"
+        }
+      ]
+    }
+  ]
+}

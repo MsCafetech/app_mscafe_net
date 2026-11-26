@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20261012-001",
+      "news_date": "2026-10-12",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "スポーツの日と東京オリンピック",
+      "news_summary": "10月の第2月曜日にスポーツの日を迎えた。",
+      "question": "2026年10月12日、国民の祝日であるスポーツの日を迎えました。この祝日は、1964年に日本で開かれたオリンピックの開会式に由来しています。\n\n1964年の夏季オリンピックが開かれた都市はどこですか？",
+      "choices": [
+        "札幌（さっぽろ）",
+        "大阪",
+        "東京",
+        "長野"
+      ],
+      "correct_index": 2,
+      "explanation": "1964年の夏季オリンピックは東京で開かれ、開会式は10月10日でした。これを記念して体育の日が設けられ、2020年からスポーツの日に名前が変わりました。現在は原則として10月の第2月曜日です。",
+      "keywords": [
+        "スポーツの日",
+        "東京オリンピック",
+        "祝日"
+      ],
+      "sources": [
+        {
+          "name": "スクールコンパス",
+          "url": "https://eleschool-compass.com/school-matching/shinbun/jiji/2026-10.php"
+        }
+      ]
+    }
+  ]
+}
