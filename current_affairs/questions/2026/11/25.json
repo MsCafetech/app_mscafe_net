@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 14,
+  "question_count": 16,
   "questions": [
     {
       "id": "20261125-011",
@@ -445,6 +445,80 @@
           "url": "https://www.mofa.go.jp/mofaj/area/cuba/data.html"
         }
       ]
+    },
+    {
+      "news_date": "2026-11-25",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "秋吉台（あきよしだい）の山焼き見送り",
+      "news_summary": "秋吉台（あきよしだい）の山焼きは、安全対策のため2027年の実施（じっし）が見送られることになりました。",
+      "sources": [
+        {
+          "name": "山口新聞",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/113668"
+        },
+        {
+          "name": "美祢市",
+          "url": "https://www2.city.mine.lg.jp/soshiki/kyoiku/hogoka/bunkazai/bunkazai/kunishitei/tokubetsu/1530.html"
+        },
+        {
+          "name": "美祢市",
+          "url": "https://www2.city.mine.lg.jp/soshiki/norinbu/norinka/sangyo/noringyo/ringyo/5226.html"
+        }
+      ],
+      "question": "2026年11月25日、山口県美祢市（みねし）の秋吉台の山焼きについて、対策協議会は安全対策に時間が必要なため、2027年の実施（じっし）を見送ることを決めました。11月26日に山口新聞が報じました。\n\n秋吉台のカルスト地形は、主に何という岩石が雨水などにとけてできたものですか。",
+      "choices": [
+        "花こう岩",
+        "石灰岩",
+        "砂岩（さがん）",
+        "安山岩"
+      ],
+      "correct_index": 1,
+      "explanation": "カルスト地形は、石灰岩が雨水や地下水に少しずつとけてできる地形です。石灰岩の主な成分は炭酸カルシウムです。秋吉台には白い岩が見られ、地下には水によってできた大きなほら穴もあります。",
+      "keywords": [
+        "秋吉台（あきよしだい）",
+        "カルスト地形",
+        "石灰岩"
+      ],
+      "id": "20261125-025"
+    },
+    {
+      "news_date": "2026-11-25",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "秋吉台（あきよしだい）の山焼き見送り",
+      "news_summary": "秋吉台（あきよしだい）の山焼きは、安全対策のため2027年の実施（じっし）が見送られることになりました。",
+      "sources": [
+        {
+          "name": "山口新聞",
+          "url": "https://yama.minato-yamaguchi.co.jp/e-yama/articles/113668"
+        },
+        {
+          "name": "美祢市",
+          "url": "https://www2.city.mine.lg.jp/soshiki/kyoiku/hogoka/bunkazai/bunkazai/kunishitei/tokubetsu/1530.html"
+        },
+        {
+          "name": "美祢市",
+          "url": "https://www2.city.mine.lg.jp/soshiki/norinbu/norinka/sangyo/noringyo/ringyo/5226.html"
+        }
+      ],
+      "question": "2026年11月25日、山口県美祢市（みねし）の秋吉台の山焼きについて、対策協議会は安全対策に時間が必要なため、2027年の実施（じっし）を見送ることを決めました。11月26日に山口新聞が報じました。\n\n秋吉台で山焼きが行われてきた主な目的の一つは何ですか。",
+      "choices": [
+        "草原が森林になるのを防ぐこと",
+        "岩石を燃やして新しい土を作ること",
+        "川の水量を増やすこと",
+        "台地の高さを低くすること"
+      ],
+      "correct_index": 0,
+      "explanation": "草原をそのままにしておくと、木が成長して森林に変わることがあります。山焼きは古い草などを焼き、草原の状態を保つために行われてきました。草原をすみかとする植物や昆虫（こんちゅう）の生息環境（せいそくかんきょう）を守ることにも役立ちます。",
+      "keywords": [
+        "秋吉台（あきよしだい）",
+        "山焼き",
+        "草原"
+      ],
+      "id": "20261125-026"
     }
   ]
 }
