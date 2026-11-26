@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20261014-001",
+      "news_date": "2026-10-14",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "黒部川・常願寺川の治水計画",
+      "news_summary": "国土交通省が気候変動を考慮した河川整備方針の見直しに向けた議論を発表した。",
+      "question": "2026年10月14日、国土交通省は、気候変動による大雨などに備えるため、黒部川（くろべがわ）と常願寺川（じょうがんじがわ）の河川整備基本方針の見直しについて議論すると発表しました。\n\nこの2つの川が日本海へ流れ込む県はどこですか？",
+      "choices": [
+        "山梨県",
+        "富山県",
+        "長野県",
+        "群馬県"
+      ],
+      "correct_index": 1,
+      "explanation": "黒部川と常願寺川は富山県を流れ、日本海に注ぎます。北アルプスの山々から流れる急な川で、治水（ちすい）や水力発電などについて学ぶ際にも重要です。",
+      "keywords": [
+        "富山県",
+        "黒部川",
+        "常願寺川",
+        "治水"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/mizukokudo03_hh_001366.html"
+        }
+      ]
+    }
+  ]
+}
