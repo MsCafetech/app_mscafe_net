@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-06",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260406-001",
+      "news_date": "2026-04-06",
+      "category": "geography",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "天皇ご一家が福島県双葉町を訪問（ほうもん）",
+      "news_summary": "天皇ご一家が東日本大震災（ひがしにほんだいしんさい）の記憶（きおく）を伝える施設（しせつ）を訪れ、復興（ふっこう）の状況（じょうきょう）を確認した。",
+      "question": "2026年4月6日、天皇ご一家は、東日本大震災（ひがしにほんだいしんさい）から15年となる年に、双葉町の東日本大震災・原子力災害伝承館（げんしりょくさいがいでんしょうかん）を訪れました。\n\n双葉町がある都道府県はどこですか？",
+      "choices": [
+        "岩手県",
+        "宮城県",
+        "福島県",
+        "茨城県（いばらきけん）"
+      ],
+      "correct_index": 2,
+      "explanation": "双葉町は福島県の太平洋側にあります。2011年3月11日の地震（じしん）では、大きな津波（つなみ）や原子力発電所の事故が発生しました。伝承館では、災害の記憶（きおく）や教訓を伝え、将来の防災に役立てるための展示を行っています。",
+      "keywords": [
+        "福島県",
+        "双葉町",
+        "東日本大震災（ひがしにほんだいしんさい）"
+      ],
+      "sources": [
+        {
+          "name": "宮内庁",
+          "url": "https://www.kunaicho.go.jp/watch/activity/imperial-family-activity-01/info/fukushima2.html"
+        },
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/11172"
+        }
+      ]
+    }
+  ]
+}
