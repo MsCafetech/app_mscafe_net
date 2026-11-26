@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 8,
+  "question_count": 9,
   "related_count": 13,
-  "image_count": 22,
+  "image_count": 23,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -407,6 +407,25 @@
           "license": "CC BY 4.0",
           "license_url": "https://creativecommons.org/licenses/by/4.0/",
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更があれば明示する。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-009",
+      "images": [
+        {
+          "id": "20261126-009-I01",
+          "type": "photo",
+          "title": "アジア開発銀行の本部",
+          "caption": "資料写真：フィリピンのマニラ首都圏にあるアジア開発銀行の本部正門（2007年撮影）。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Asian_Development_Bank_headquarters.jpg/960px-Asian_Development_Bank_headquarters.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Asian_Development_Bank_headquarters.jpg",
+          "credit": "© Eugene Alvin Villar, 2007 (https://commons.wikimedia.org/wiki/User:Seav)",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "商用利用可能。指定の作者名・年・作者ページURLとライセンスを表示。改変時は変更を明示し同等ライセンスで配布。"
         }
       ],
       "related": []
