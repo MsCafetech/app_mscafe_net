@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-21",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260821-001",
@@ -30,6 +30,35 @@
         {
           "name": "JAXA",
           "url": "https://www.jaxa.jp/press/2026/"
+        }
+      ]
+    },
+    {
+      "id": "20260821-002",
+      "news_date": "2026-08-21",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "パラグアイの日本人移住90周年記念式典",
+      "news_summary": "秋篠宮（あきしののみや）ご夫妻が記念式典に出席された。",
+      "question": "2026年8月21日、現地時間のこの日、秋篠宮ご夫妻はパラグアイの日本人移住90周年記念式典に出席されました。日本人の移住は1936年に始まりました。\n\nパラグアイの首都はどこですか？",
+      "choices": [
+        "リマ",
+        "ブエノスアイレス",
+        "アスンシオン",
+        "サンティアゴ"
+      ],
+      "correct_index": 2,
+      "explanation": "パラグアイの首都はアスンシオンです。パラグアイは南アメリカの内陸国で、ブラジル、アルゼンチン、ボリビアと国境を接しています。日本から移住した人々やその子孫は、農業や文化交流などを通じて両国の関係を支えてきました。",
+      "keywords": [
+        "パラグアイ",
+        "アスンシオン",
+        "日本人移住"
+      ],
+      "sources": [
+        {
+          "name": "宮内庁",
+          "url": "https://www.kunaicho.go.jp/watch/okotoba/imperial-family03/addresses/2026pry.html"
         }
       ]
     }
