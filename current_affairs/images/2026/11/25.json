@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 15,
-  "related_count": 31,
-  "image_count": 46,
+  "related_count": 32,
+  "image_count": 47,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -484,7 +484,26 @@
           "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-017-R02",
+          "images": [
+            {
+              "id": "20261125-017-R02-I01",
+              "type": "photo",
+              "title": "日EU経済連携協定の署名",
+              "caption": "資料写真：2018年7月17日に日本とEUの代表が経済連携協定に署名する様子。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/EU-Japan_EPA_Signing_%287%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:EU-Japan_EPA_Signing_(7).jpg",
+              "credit": "内閣官房内閣広報室",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-018",
