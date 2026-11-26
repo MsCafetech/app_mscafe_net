@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 6,
+  "question_count": 7,
   "questions": [
     {
       "id": "20261126-001",
@@ -200,6 +200,40 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/a_o/ocn/mh/pageit_000001_03355.html"
+        }
+      ]
+    },
+    {
+      "id": "20261126-007",
+      "news_date": "2026-11-26",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とオマーンの外相会談",
+      "news_summary": "日本とオマーンの外相が中東の安定やエネルギー分野の協力について話し合いました。",
+      "question": "2026年11月26日、日本とオマーンの外務大臣が会談し、中東地域の安定やエネルギー分野での協力について話し合いました。\n\nオマーンが位置する半島はどれですか。",
+      "choices": [
+        "インドシナ半島",
+        "アラビア半島",
+        "イベリア半島",
+        "バルカン半島"
+      ],
+      "correct_index": 1,
+      "explanation": "オマーンはアラビア半島の南東部にある国で、首都はマスカットです。ペルシャ湾とオマーン湾を結ぶホルムズ海峡（かいきょう）に面しています。この海峡は原油などを運ぶ船の重要な通り道であり、中東の安定は日本のエネルギー供給にも関係します。",
+      "keywords": [
+        "オマーン",
+        "アラビア半島",
+        "ホルムズ海峡",
+        "エネルギー"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04523.html"
+        },
+        {
+          "name": "時事通信（nippon.com）",
+          "url": "https://www.nippon.com/ja/articles/-/58064"
         }
       ]
     }
