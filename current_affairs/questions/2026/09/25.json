@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-25",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260925-001",
@@ -59,6 +59,64 @@
         {
           "name": "テレビ朝日",
           "url": "https://news.tv-asahi.co.jp/news_society/articles/000535892.html"
+        }
+      ]
+    },
+    {
+      "id": "20260925-003",
+      "news_date": "2026-09-25",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "中秋の名月と満月の日の違い",
+      "news_summary": "2026年の中秋の名月は9月25日で、満月は27日となった。",
+      "question": "2026年9月25日、中秋の名月を迎えました。今年は満月になる日と中秋の名月の日が2日ずれています。\n\n満月のとき、太陽・地球・月はおおむねどの順番に並びますか？",
+      "choices": [
+        "地球・太陽・月",
+        "太陽・月・地球",
+        "太陽・地球・月",
+        "月・太陽・地球"
+      ],
+      "correct_index": 2,
+      "explanation": "月は太陽の光を反射して輝きます。満月のころには地球から見て太陽と反対の方向に月があり、月の明るい面がほぼ全体見えます。中秋の名月は昔のこよみで8月15日の月を指すため、必ずしも満月とは一致しません。",
+      "keywords": [
+        "中秋の名月",
+        "満月",
+        "月の満ち欠け"
+      ],
+      "sources": [
+        {
+          "name": "国立天文台",
+          "url": "https://www.nao.ac.jp/astro/sky/2026/09-topics03.html"
+        }
+      ]
+    },
+    {
+      "id": "20260925-004",
+      "news_date": "2026-09-25",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "中秋の名月を楽しむ伝統行事",
+      "news_summary": "9月25日に中秋の名月を迎えた。",
+      "question": "2026年9月25日、中秋の名月を迎えました。日本では昔から秋の月をながめ、農作物の収穫（しゅうかく）に感謝する風習があります。\n\n中秋の名月に月見団子とともに供えることが多い植物はどれですか？",
+      "choices": [
+        "ススキ",
+        "サクラ",
+        "アサガオ",
+        "チューリップ"
+      ],
+      "correct_index": 0,
+      "explanation": "月見では団子やススキ、秋に取れる作物などを供える風習があります。中秋の名月は昔のこよみの8月15日に当たり、現在のこよみでは毎年日付が変わります。季節の変化と農業に結びついた伝統行事です。",
+      "keywords": [
+        "中秋の名月",
+        "月見",
+        "ススキ"
+      ],
+      "sources": [
+        {
+          "name": "国立天文台",
+          "url": "https://www.nao.ac.jp/astro/sky/2026/09-topics03.html"
         }
       ]
     }

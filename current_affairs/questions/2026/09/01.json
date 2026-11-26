@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-01",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260901-001",
@@ -59,6 +59,35 @@
         {
           "name": "警察庁",
           "url": "https://www.npa.go.jp/bureau/traffic/seikatsudouro/seikatsudoro.html"
+        }
+      ]
+    },
+    {
+      "id": "20260901-003",
+      "news_date": "2026-09-01",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "防災の日に総合防災訓練",
+      "news_summary": "政府が防災の日に総合防災訓練を行った。",
+      "question": "2026年9月1日、防災の日に政府の総合防災訓練（くんれん）が行われました。9月1日は、過去に起きた大きな災害の教訓を伝える日でもあります。\n\n防災の日が9月1日となった理由に関係する災害はどれですか？",
+      "choices": [
+        "阪神・淡路大震災（はんしん・あわじだいしんさい）",
+        "関東大震災",
+        "東日本大震災",
+        "熊本地震"
+      ],
+      "correct_index": 1,
+      "explanation": "1923年9月1日に関東大震災が発生し、東京や神奈川県などで大きな被害が出ました。この教訓を生かし、災害への備えを広めるため9月1日が防災の日となりました。家庭でも避難（ひなん）場所や備蓄（びちく）品を確認することが大切です。",
+      "keywords": [
+        "防災の日",
+        "関東大震災",
+        "防災訓練"
+      ],
+      "sources": [
+        {
+          "name": "政府広報オンライン",
+          "url": "https://www.gov-online.go.jp/article/202608/radio-3711.html"
         }
       ]
     }

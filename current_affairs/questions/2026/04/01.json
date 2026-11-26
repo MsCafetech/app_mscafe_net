@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-01",
   "language": "ja",
-  "question_count": 12,
+  "question_count": 13,
   "questions": [
     {
       "id": "20260401-001",
@@ -369,6 +369,35 @@
         {
           "name": "厚生労働省・長野労働局",
           "url": "https://jsite.mhlw.go.jp/nagano-roudoukyoku/newpage_00172.html"
+        }
+      ]
+    },
+    {
+      "id": "20260401-014",
+      "news_date": "2026-04-01",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "自転車への青切符制度導入",
+      "news_summary": "16歳以上の自転車運転者に交通反則通告制度が適用された。",
+      "question": "2026年4月1日、16歳以上の自転車運転者を対象に、一定の交通違反に青切符を使う制度が始まりました。自転車の安全な利用を進めるための制度です。\n\n自転車の運転や道路での交通ルールを定めている法律はどれですか？",
+      "choices": [
+        "学校教育法",
+        "地方自治法",
+        "食品衛生法（しょくひんえいせいほう）",
+        "道路交通法"
+      ],
+      "correct_index": 3,
+      "explanation": "道路交通法は道路での交通の安全や円滑（えんかつ）な通行を目的とする法律です。自転車は原則として車道の左側を通ります。青切符の対象年齢に達していなくても、交通ルールを守る必要があります。",
+      "keywords": [
+        "自転車",
+        "青切符",
+        "道路交通法"
+      ],
+      "sources": [
+        {
+          "name": "警察庁",
+          "url": "https://www.npa.go.jp/bureau/traffic/bicycle/info.html"
         }
       ]
     }
