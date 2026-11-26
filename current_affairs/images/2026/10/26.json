@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261026-001",
+      "images": [
+        {
+          "id": "20261026-001-I01",
+          "type": "photo",
+          "title": "コンピューター室",
+          "caption": "資料写真：コンピューターが並ぶ部屋。情報を安全に管理することが重要です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Computer_room.jpg/960px-Computer_room.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Computer_room.jpg",
+          "credit": "StellaAnnie",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。人物写真は報道・教材の文脈でのみ使用し、推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1
+}
