@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 12,
-  "related_count": 40,
+  "question_count": 13,
+  "related_count": 41,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -863,6 +863,30 @@
             {
               "name": "厚生労働省「地域包括ケアシステム」",
               "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/chiiki-houkatsu/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-023",
+      "related": [
+        {
+          "id": "20261125-023-R01",
+          "relation_type": "question",
+          "title": "地球を守る磁気圏",
+          "description": "地球の内部には外核（がいかく）と呼ばれる部分があり、そこに流れる電流によって地球の磁場が生まれます。方位磁石がほぼ北を指すのも、この磁場があるためです。宇宙から飛んでくる電気を帯びた粒子（りゅうし）は磁場の力で進む向きが変わるため、地球の低い緯度（いど）の地域には入りにくくなります。地球の周りに広がる磁気圏（じきけん）は、こうした粒子から地球を守る働きをしています。ただし、太陽風が強まると磁気圏の形や内部の状態も変化します。",
+          "relationship": "磁気嵐が起こる地球の磁気圏の仕組みを理解する。",
+          "keywords": [
+            "磁気圏",
+            "地球磁場",
+            "外核",
+            "方位磁石"
+          ],
+          "sources": [
+            {
+              "name": "情報通信研究機構（NICT）",
+              "url": "https://swc.nict.go.jp/knowledge/magnetosphere.html"
             }
           ]
         }
