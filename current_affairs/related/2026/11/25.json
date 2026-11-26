@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 13,
-  "related_count": 41,
+  "question_count": 14,
+  "related_count": 42,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -887,6 +887,30 @@
             {
               "name": "情報通信研究機構（NICT）",
               "url": "https://swc.nict.go.jp/knowledge/magnetosphere.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-024",
+      "related": [
+        {
+          "id": "20261125-024-R01",
+          "relation_type": "question",
+          "title": "キューバ革命と政治の仕組み",
+          "description": "キューバは1902年に独立した国です。1959年にフィデル・カストロが中心となった革命によって新しい政権（せいけん）が生まれ、その後、社会主義の国となりました。アメリカとの関係が悪化し、1961年には外交関係が断たれました。2015年には両国が外交関係を回復し、互いの国に大使館を置きました。キューバの国会にあたる議会は一つで、日本のように衆議院と参議院の二つに分かれていません。国によって政治の仕組みが異なることや、歴史が国どうしの関係に影響することが分かります。",
+          "relationship": "カストロが率いた革命と、その後のキューバの政治・外交を学ぶ。",
+          "keywords": [
+            "キューバ革命",
+            "社会主義",
+            "外交関係",
+            "一院制"
+          ],
+          "sources": [
+            {
+              "name": "外務省 キューバ基礎データ",
+              "url": "https://www.mofa.go.jp/mofaj/area/cuba/data.html"
             }
           ]
         }
