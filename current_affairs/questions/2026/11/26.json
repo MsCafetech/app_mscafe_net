@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 5,
+  "question_count": 6,
   "questions": [
     {
       "id": "20261126-001",
@@ -166,6 +166,40 @@
         {
           "name": "共同通信（熊本日日新聞）",
           "url": "https://kumanichi.com/articles/2062260"
+        }
+      ]
+    },
+    {
+      "id": "20261126-006",
+      "news_date": "2026-11-26",
+      "category": "geography",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "日・マーシャル諸島首脳（しゅのう）会談",
+      "news_summary": "日本とマーシャル諸島共和国の首脳（しゅのう）が会談し、初の共同声明を発表しました。",
+      "question": "2026年11月26日、日本とマーシャル諸島共和国の首脳が会談し、両国で初めての首脳共同声明を発表しました。\n\nマーシャル諸島共和国が位置する海はどれですか。",
+      "choices": [
+        "インド洋",
+        "大西洋",
+        "太平洋",
+        "地中海"
+      ],
+      "correct_index": 2,
+      "explanation": "マーシャル諸島共和国は、太平洋のミクロネシア地域にある島国です。多くの島々やサンゴ礁（さんごしょう）からなり、海面上昇（かいめんじょうしょう）などの気候変動への対策が重要な課題となっています。日本とは漁業や防災などで協力しています。",
+      "keywords": [
+        "マーシャル諸島",
+        "太平洋",
+        "ミクロネシア",
+        "首脳会談（しゅのうかいだん）"
+      ],
+      "sources": [
+        {
+          "name": "首相官邸",
+          "url": "https://www.kantei.go.jp/jp/105/actions/202611/26marshall.html"
+        },
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/a_o/ocn/mh/pageit_000001_03355.html"
         }
       ]
     }
