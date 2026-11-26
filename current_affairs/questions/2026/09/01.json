@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-01",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260901-001",
@@ -24,6 +24,35 @@
       "keywords": [
         "生活道路",
         "法定速度",
+        "交通安全"
+      ],
+      "sources": [
+        {
+          "name": "警察庁",
+          "url": "https://www.npa.go.jp/bureau/traffic/seikatsudouro/seikatsudoro.html"
+        }
+      ]
+    },
+    {
+      "id": "20260901-002",
+      "news_date": "2026-09-01",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "生活道路の法定速度引き下げ",
+      "news_summary": "中央線などがない生活道路の自動車の法定速度が原則時速30キロになった。",
+      "question": "2026年9月1日、中央線などがない生活道路で、自動車の法定速度が原則時速60キロから30キロに引き下げられました。\n\nこの変更の主な目的は何ですか？",
+      "choices": [
+        "自動車の販売台数を増やす",
+        "歩行者や自転車の安全を守る",
+        "高速道路をなくす",
+        "道路の長さを短くする"
+      ],
+      "correct_index": 1,
+      "explanation": "住宅地や通学路などでは、歩行者や自転車と自動車が近い場所を通ります。自動車の速度を下げることで事故を防ぎ、事故が起きたときの被害も小さくすることが期待されます。速度標識がある場合はその指定に従います。",
+      "keywords": [
+        "生活道路",
+        "道路交通法",
         "交通安全"
       ],
       "sources": [

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-01",
   "language": "ja",
-  "question_count": 5,
+  "question_count": 6,
   "questions": [
     {
       "id": "20260701-001",
@@ -152,6 +152,35 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/toko/visa/tetsuzuki/pagew_000001_02672.html"
+        }
+      ]
+    },
+    {
+      "id": "20260701-006",
+      "news_date": "2026-07-01",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国際観光旅客税の引き上げ",
+      "news_summary": "出国時にかかる税金が原則3000円になった。",
+      "question": "2026年7月1日、日本から出国する人にかかる国際観光旅客税が原則として1000円から3000円に引き上げられました。\n\nこの税金のように国が課す税を何と呼びますか？",
+      "choices": [
+        "地方税",
+        "住民税",
+        "国税",
+        "固定資産税"
+      ],
+      "correct_index": 2,
+      "explanation": "国が課す税金を国税と呼びます。国際観光旅客税はその一つで、原則として航空会社や船会社が旅行者から集めて国に納めます。地方公共団体が課す税金は地方税と呼びます。",
+      "keywords": [
+        "国際観光旅客税",
+        "国税",
+        "観光"
+      ],
+      "sources": [
+        {
+          "name": "財務省",
+          "url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_04.html"
         }
       ]
     }

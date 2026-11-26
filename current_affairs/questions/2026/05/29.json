@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-29",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260529-001",
@@ -92,6 +92,35 @@
         {
           "name": "気象庁",
           "url": "https://www.jma.go.jp/jma/kishou/know/bosai/keiho-update2026/"
+        }
+      ]
+    },
+    {
+      "id": "20260529-004",
+      "news_date": "2026-05-29",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "新たな防災気象情報の運用開始",
+      "news_summary": "警戒レベルを名称に示す新しい防災気象情報が始まった。",
+      "question": "2026年5月29日、気象庁は大雨などの危険度が分かりやすくなるよう、防災気象情報の名称に警戒レベルの数字を付ける新しい仕組みを始めました。\n\n警戒レベル4で危険な場所にいる人が取るべき行動は何ですか？",
+      "choices": [
+        "危険な場所から全員避難（ひなん）する",
+        "川の様子を見に行く",
+        "警戒レベル5まで必ず待つ",
+        "外で遊ぶ"
+      ],
+      "correct_index": 0,
+      "explanation": "警戒レベル4では危険な場所から全員が避難することが求められます。レベル5はすでに安全な避難が難しい場合がある段階です。早めに情報を確認し、安全な場所へ移動することが重要です。",
+      "keywords": [
+        "防災",
+        "警戒レベル",
+        "避難"
+      ],
+      "sources": [
+        {
+          "name": "気象庁",
+          "url": "https://www.jma.go.jp/jma/kishou/know/bosai/keiho-update2026/index.html"
         }
       ]
     }

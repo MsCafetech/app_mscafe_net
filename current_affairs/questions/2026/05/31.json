@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-31",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260531-001",
@@ -30,6 +30,64 @@
         {
           "name": "石川県",
           "url": "https://www.pref.ishikawa.lg.jp/sizen/toki/houcyoushikiten_2026k.html"
+        }
+      ]
+    },
+    {
+      "id": "20260531-002",
+      "news_date": "2026-05-31",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "能登地域でトキを放鳥",
+      "news_summary": "石川県羽咋市で本州初のトキ放鳥が行われた。",
+      "question": "2026年5月31日、石川県羽咋（はくい）市でトキ8羽が自然に放されました。これまで新潟県の佐渡島でもトキの野生復帰が進められてきました。\n\n能登半島が突き出している海は何ですか？",
+      "choices": [
+        "太平洋",
+        "日本海",
+        "瀬戸内海（せとないかい）",
+        "オホーツク海"
+      ],
+      "correct_index": 1,
+      "explanation": "能登半島は石川県北部を中心に日本海へ突き出した半島です。トキがえさを取る水田などの環境を整え、野生で暮らせる地域を広げる取り組みが進められています。",
+      "keywords": [
+        "トキ",
+        "能登半島",
+        "日本海"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/nature/kisho/hogozoushoku/toki.html"
+        }
+      ]
+    },
+    {
+      "id": "20260531-003",
+      "news_date": "2026-05-31",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "本州でトキの野生復帰を進める",
+      "news_summary": "石川県でトキが自然に放された。",
+      "question": "2026年5月31日、石川県で保護されてきたトキが自然に放されました。トキが野生で生活し、子孫を残せるようにする取り組みです。\n\nトキのえさとなる小動物が暮らす場所を守るために適した取り組みはどれですか？",
+      "choices": [
+        "すべての水田を舗装（ほそう）する",
+        "水路をすべてなくす",
+        "水田や水路の生き物が暮らせる環境を保つ",
+        "水田にごみを捨てる"
+      ],
+      "correct_index": 2,
+      "explanation": "トキは水田や水路などでドジョウや昆虫（こんちゅう）などを食べます。トキの野生復帰には、鳥そのものを保護するだけでなく、えさとなる生き物が暮らせる環境を守ることも必要です。",
+      "keywords": [
+        "トキ",
+        "水田",
+        "生態系"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/nature/kisho/hogozoushoku/toki.html"
         }
       ]
     }
