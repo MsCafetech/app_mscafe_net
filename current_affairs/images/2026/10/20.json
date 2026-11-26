@@ -4,6 +4,25 @@
   "language": "ja",
   "questions": [
     {
+      "question_id": "20261020-001",
+      "images": [
+        {
+          "id": "20261020-001-I01",
+          "type": "photo",
+          "title": "H3ロケット",
+          "caption": "資料写真：2025年2月のH3ロケットの打ち上げ。今回のMMXの打ち上げとは異なります。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/H3_rocket_launch.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:H3_rocket_launch.jpg",
+          "credit": "Jacob Wood / U.S. Air Force",
+          "license": "Public Domain (US government)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Air_Force",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
+      "related": []
+    },
+    {
       "question_id": "20261020-002",
       "images": [
         {
@@ -23,7 +42,7 @@
       "related": []
     }
   ],
-  "question_count": 1,
+  "question_count": 2,
   "related_count": 0,
-  "image_count": 1
+  "image_count": 2
 }
