@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261023-001",
+      "images": [
+        {
+          "id": "20261023-001-I01",
+          "type": "photo",
+          "title": "最高裁判所",
+          "caption": "資料写真：東京にある最高裁判所。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Supreme_court.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Supreme_court.jpg",
+          "credit": "7",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261023-003",
+      "images": [
+        {
+          "id": "20261023-003-I01",
+          "type": "photo",
+          "title": "太陽光パネル",
+          "caption": "資料写真：福島県に設置された太陽光パネル。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Solar_farm_in_Fukushima_Prefecture.jpg/960px-Solar_farm_in_Fukushima_Prefecture.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Solar_farm_in_Fukushima_Prefecture.jpg",
+          "credit": "Benlisquare",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 2,
+  "related_count": 0,
+  "image_count": 2
+}
