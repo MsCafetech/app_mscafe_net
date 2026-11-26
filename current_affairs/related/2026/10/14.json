@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "questions": [
+    {
+      "question_id": "20261014-001",
+      "related": [
+        {
+          "id": "20261014-001-R01",
+          "relation_type": "question",
+          "title": "常願寺川と天井川のしくみ",
+          "description": "富山県の常願寺川（じょうがんじがわ）は、山から海まで約56キロメートルの間に約3000メートルの高さの差がある急流です。上流では水の勢いが強く、岩や土がけずられて下流へ運ばれます。長い年月の間に土砂が川底にたまり、周囲の土地より川底が高くなることがあります。このような川を天井川（てんじょうがわ）と呼びます。堤防がこわれると水が低い土地へ広がり、川に戻りにくくなります。常願寺川では土砂を受け止める砂防施設（さぼうしせつ）を整備し、下流の町を守っています。",
+          "relationship": "急流の地形と治水の必要性を理解する。",
+          "keywords": [
+            "常願寺川",
+            "天井川",
+            "砂防",
+            "富山県"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省立山砂防事務所",
+              "url": "https://www.hrr.mlit.go.jp/tateyama/jigyo/tokucho.html"
+            },
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/sogoseisaku/region/kyojinka/cross-knowledge/hokuriku-tateyamasabo/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
