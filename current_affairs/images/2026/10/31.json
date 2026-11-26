@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-31",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261031-001",
+      "images": [
+        {
+          "id": "20261031-001-I01",
+          "type": "photo",
+          "title": "青函トンネルの入口",
+          "caption": "資料写真：2006年に撮影された本州側の青函トンネルの入口。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Seikan_Tunnel_Entrance_Honshu_side.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Seikan_Tunnel_Entrance_Honshu_side.jpg",
+          "credit": "Ariake",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261031-002",
+      "images": [
+        {
+          "id": "20261031-002-I01",
+          "type": "photo",
+          "title": "4か国の外相会合",
+          "caption": "2026年10月31日、米国での日本、米国、オーストラリア、インドの外相会合。",
+          "is_reference": false,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Secretary_Rubio_Meets_with_Indo-Pacific_Quad_Foreign_Ministers_%2855623162443%29.jpg/960px-Secretary_Rubio_Meets_with_Indo-Pacific_Quad_Foreign_Ministers_%2855623162443%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Secretary_Rubio_Meets_with_Indo-Pacific_Quad_Foreign_Ministers_(55623162443).jpg",
+          "credit": "Freddie Everett / U.S. Department of State",
+          "license": "Public Domain (US government)",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 2,
+  "related_count": 0,
+  "image_count": 2
+}
