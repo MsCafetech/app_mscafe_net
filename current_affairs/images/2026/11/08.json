@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261108-001",
+      "images": [
+        {
+          "id": "20261108-001-I01",
+          "type": "photo",
+          "title": "地震で生じた地割れ",
+          "caption": "資料写真：2011年に千葉県香取市で撮影された地割れ。今回の愛知県の地震の写真ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Crack_in_the_ground_caused_by_the_earthquake%2CKogaishima%2CKatori-city%2CJapan.jpg/960px-Crack_in_the_ground_caused_by_the_earthquake%2CKogaishima%2CKatori-city%2CJapan.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Crack_in_the_ground_caused_by_the_earthquake%2CKogaishima%2CKatori-city%2CJapan.jpg",
+          "credit": "Katorisi",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1
+}
