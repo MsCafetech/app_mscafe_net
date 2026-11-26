@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-04",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260504-001",
@@ -30,6 +30,35 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/a_o/ocn/au/pageit_000001_02933.html"
+        }
+      ]
+    },
+    {
+      "id": "20260504-002",
+      "news_date": "2026-05-04",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "子どもの数の減少が続く",
+      "news_summary": "総務省が15歳（さい）未満の人口の推計を公表した。",
+      "question": "2026年5月4日、総務省は、こどもの日にちなんで、15歳（さい）未満の人口を調べた結果を公表しました。子どもの数は長期にわたって減り続けています。\n\n生まれる子どもの数が減り、社会全体で子どもの割合が小さくなる現象を何といいますか？",
+      "choices": [
+        "少子化",
+        "都市化",
+        "工業化",
+        "国際化"
+      ],
+      "correct_index": 0,
+      "explanation": "少子化は、生まれる子どもの数が減り、子どもの割合が小さくなる現象です。将来働く世代が少なくなることや、年金や医療（いりょう）などの社会保障（ほしょう）を支える仕組みへの影響（えいきょう）が課題となります。",
+      "keywords": [
+        "少子化",
+        "人口推計",
+        "こどもの日"
+      ],
+      "sources": [
+        {
+          "name": "総務省統計局",
+          "url": "https://www.stat.go.jp/data/jinsui/topics/topi1480.html"
         }
       ]
     }
