@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 15,
-  "related_count": 22,
-  "image_count": 37,
+  "related_count": 25,
+  "image_count": 40,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -522,6 +522,24 @@
               "usage_notes": "出典と提供元を表示。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-019-R01",
+          "images": [
+            {
+              "id": "20261125-019-R01-I01",
+              "type": "satellite",
+              "title": "二つの小惑星",
+              "caption": "資料写真（観測画像）：探査機DARTが2022年に撮影したディディモス（大）とディモルフォス（小）。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Last_image_showing_all_of_Didymos_%26_Dimorphos_by_DART.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Last_image_showing_all_of_Didymos_%26_Dimorphos_by_DART.png",
+              "credit": "NASA/Johns Hopkins APL",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+              "usage_notes": "提供元を表示し、NASAの推奨を示唆しない。"
+            }
+          ]
         }
       ]
     },
@@ -637,7 +655,26 @@
           "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-023-R01",
+          "images": [
+            {
+              "id": "20261125-023-R01-I01",
+              "type": "diagram",
+              "title": "地球の磁気圏",
+              "caption": "資料写真（模式図）：太陽から飛んでくる粒子の流れが地球の磁場によって変わる様子。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Magnetosphere_schematic.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Magnetosphere_schematic.jpg",
+              "credit": "NASA",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+              "usage_notes": "提供元を表示し、NASAの推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-024",
@@ -694,7 +731,26 @@
           "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-026-R01",
+          "images": [
+            {
+              "id": "20261125-026-R01-I01",
+              "type": "photo",
+              "title": "秋吉台の石灰岩",
+              "caption": "資料写真：秋吉台の地表に現れた石灰岩と展望台。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Akiyoshidai_Karst_Observation_Deck_and_limestones_on_Akiyoshi_Plateau.jpg/960px-Akiyoshidai_Karst_Observation_Deck_and_limestones_on_Akiyoshi_Plateau.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Akiyoshidai_Karst_Observation_Deck_and_limestones_on_Akiyoshi_Plateau.jpg",
+              "credit": "そらみみ (Soramimi)",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示。変更を明記し、改変画像は同一または互換ライセンスで配布。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
