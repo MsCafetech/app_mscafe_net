@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 4,
   "questions": [
     {
       "id": "20261126-001",
@@ -107,6 +107,35 @@
         {
           "name": "朝日新聞",
           "url": "https://smart.asahi.com/v/article/ASVCV20HDVCVULFA00CM.php"
+        }
+      ]
+    },
+    {
+      "id": "20261126-004",
+      "news_date": "2026-11-26",
+      "category": "society",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "学校のいじめの認知件数が過去最多",
+      "news_summary": "文部科学省が2025年度のいじめの認知件数が約79万件になったと発表しました。",
+      "question": "2026年11月26日、文部科学省は2025年度の学校のいじめの認知件数が約79万件に上り、過去最多になったと発表しました。\n\nこの調査を行った文部科学省が主に担当する分野はどれですか。",
+      "choices": [
+        "外交や国際関係",
+        "道路や鉄道の整備",
+        "教育や科学技術",
+        "税金や国の予算"
+      ],
+      "correct_index": 2,
+      "explanation": "文部科学省は学校教育や科学技術、文化などを担当する国の機関です。いじめの認知件数とは、学校などがいじめとして把握（はあく）した件数です。早い段階でいじめに気付き、子どもを守る取り組みも大切です。",
+      "keywords": [
+        "いじめ",
+        "文部科学省",
+        "学校教育"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000550813.html"
         }
       ]
     }
