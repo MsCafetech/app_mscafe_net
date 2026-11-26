@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-05",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260405-001",
+      "news_date": "2026-04-05",
+      "category": "history_culture",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "ローマ教皇（きょうこう）が復活祭のメッセージを発表",
+      "news_summary": "教皇レオ14世が復活祭に合わせ、世界の平和を呼びかけた。",
+      "question": "2026年4月5日、教皇レオ14世はバチカンで復活祭（イースター）のメッセージを発表し、世界の平和を呼びかけました。\n\nイエスの復活を祝うイースターは、どの宗教の行事ですか？",
+      "choices": [
+        "仏教",
+        "イスラム教",
+        "キリスト教",
+        "ヒンドゥー教"
+      ],
+      "correct_index": 2,
+      "explanation": "イースターは、イエス・キリストの復活を祝うキリスト教の大切な行事です。毎年同じ日ではなく、春に行われます。ローマ教皇はキリスト教のカトリック教会の最高指導者で、バチカン市国の元首でもあります。",
+      "keywords": [
+        "復活祭",
+        "イースター",
+        "キリスト教",
+        "バチカン"
+      ],
+      "sources": [
+        {
+          "name": "バチカンニュース",
+          "url": "https://www.vaticannews.va/ja/pope/news/2026-04/domenica-di-pasqua-urbi-et-orbi-20260405.html"
+        }
+      ]
+    }
+  ]
+}
