@@ -4,6 +4,25 @@
   "language": "ja",
   "questions": [
     {
+      "question_id": "20261117-001",
+      "images": [
+        {
+          "id": "20261117-001-I01",
+          "type": "photo",
+          "title": "沖縄のサンゴ礁",
+          "caption": "資料写真：沖縄県の渡名喜島のサンゴ礁。今回発見されたごみの写真ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Coral_reef_of_Tonaki_Island_202407.jpg/960px-Coral_reef_of_Tonaki_Island_202407.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Coral_reef_of_Tonaki_Island_202407.jpg",
+          "credit": "Kugel~commonswiki",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンス表示。変更を明記し、改変画像は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
       "question_id": "20261117-002",
       "images": [
         {
@@ -115,7 +134,7 @@
       "related": []
     }
   ],
-  "question_count": 2,
+  "question_count": 3,
   "related_count": 4,
-  "image_count": 6
+  "image_count": 7
 }
