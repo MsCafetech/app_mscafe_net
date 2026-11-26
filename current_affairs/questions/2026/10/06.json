@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-10-06",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261006-001",
@@ -30,6 +30,35 @@
         {
           "name": "科学技術振興機構 Science Portal",
           "url": "https://scienceportal.jst.go.jp/newsflash/20261006_n01/"
+        }
+      ]
+    },
+    {
+      "id": "20261006-002",
+      "news_date": "2026-10-06",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "アンダーパスの冠水事故防止",
+      "news_summary": "国土交通省が大雨による道路の冠水事故を防ぐ指針を公表した。",
+      "question": "2026年10月6日、国土交通省は、鉄道などの下を通る低い道路（アンダーパス）での冠水（かんすい）事故を防ぐための指針を公表しました。大雨の際には通行を早めに止める対策が重要です。\n\nこのような道路に水がたまりやすい主な理由は何ですか？",
+      "choices": [
+        "周囲より低く、水が流れ込みやすいため",
+        "太陽の光が強く当たるため",
+        "海水が必ず流れ込むため",
+        "道路の温度が高いため"
+      ],
+      "correct_index": 0,
+      "explanation": "水は高い場所から低い場所へ流れます。周囲より低い道路では排水が追いつかないと短時間で水がたまることがあります。冠水した道路には入らず、安全な場所へ移動することが大切です。",
+      "keywords": [
+        "冠水",
+        "アンダーパス",
+        "防災"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/road01_hh_002153.html"
         }
       ]
     }
