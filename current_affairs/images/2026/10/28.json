@@ -21,9 +21,28 @@
         }
       ],
       "related": []
+    },
+    {
+      "question_id": "20261028-002",
+      "images": [
+        {
+          "id": "20261028-002-I01",
+          "type": "photo",
+          "title": "日独首脳会談",
+          "caption": "2026年10月28日、首相官邸で行われたドイツ首相の歓迎行事。",
+          "is_reference": false,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Friedrich_Merz_and_Sanae_Takaichi_at_the_Prime_Minister%27s_Office_2026_%284%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Friedrich_Merz_and_Sanae_Takaichi_at_the_Prime_Minister%27s_Office_2026_%284%29.jpg",
+          "credit": "首相官邸ホームページ（内閣官房）",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
+      "related": []
     }
   ],
-  "question_count": 1,
+  "question_count": 2,
   "related_count": 0,
-  "image_count": 1
+  "image_count": 2
 }
