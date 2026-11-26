@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-18",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "related_count": 0,
-  "image_count": 2,
+  "image_count": 3,
   "questions": [
     {
       "question_id": "20261118-001",
@@ -40,6 +40,25 @@
           "license": "CC BY 2.0",
           "license_url": "https://creativecommons.org/licenses/by/2.0/",
           "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261118-101",
+      "images": [
+        {
+          "id": "20261118-101-I01",
+          "type": "photo",
+          "title": "消火訓練",
+          "caption": "資料写真：沖縄県で行われた建物火災の消火訓練。佐賀関の火災の写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/MCBJ_firefighters_take_on_Kadena%27s_%22burn_house%22_DVIDS35218.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:MCBJ_firefighters_take_on_Kadena%27s_%22burn_house%22_DVIDS35218.jpg",
+          "credit": "Spc. Leigh Campbell / U.S. Army",
+          "license": "Public Domain (US government)",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
       "related": []
