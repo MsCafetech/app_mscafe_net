@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-09",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
+  "question_count": 2,
+  "related_count": 2,
   "questions": [
     {
       "question_id": "20261109-001",
@@ -23,6 +23,30 @@
             {
               "name": "外務省「日・ベトナム首脳会談」",
               "url": "https://www.mofa.go.jp/mofaj/s_sa/sea1/vn/pageit_000001_00016.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261109-002",
+      "related": [
+        {
+          "id": "20261109-002-R01",
+          "relation_type": "question",
+          "title": "パリ協定と世界の温暖化対策",
+          "description": "2015年にフランスのパリで開かれたCOP21では、地球温暖化を防ぐための国際的な取り決めであるパリ協定が採択（さいたく）され、翌年に発効（はっこう）しました。世界の平均気温の上昇を産業革命前と比べて2度より十分低く保ち、1.5度におさえる努力をすることが目標です。各国は温室効果ガスを減らすための計画を作り、5年ごとに対策を強化していきます。また、気候変動による被害を減らす取り組みや、資金や技術が不足する国への支援（しえん）も重視されています。",
+          "relationship": "COPで各国が進める気候変動対策の国際的な枠組みを学ぶ。",
+          "keywords": [
+            "パリ協定",
+            "COP21",
+            "温室効果ガス",
+            "気候変動"
+          ],
+          "sources": [
+            {
+              "name": "国連気候変動枠組条約事務局",
+              "url": "https://unfccc.int/process-and-meetings/the-paris-agreement"
             }
           ]
         }
