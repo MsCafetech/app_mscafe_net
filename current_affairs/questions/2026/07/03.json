@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-03",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260703-001",
+      "news_date": "2026-07-03",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "長期金利が約30年ぶりの高水準",
+      "news_summary": "新しく発行される10年物国債の利回りが上がった。",
+      "question": "2026年7月3日、新たに発行される10年物国債の利回りが一時2.810％となり、約30年ぶりの高水準になりました。\n\n国債とは何ですか？",
+      "choices": [
+        "国が資金を借りるために発行する証券",
+        "地方自治体が住民に発行する投票券",
+        "企業が発行する商品券",
+        "日本銀行が発行する紙幣（しへい）"
+      ],
+      "correct_index": 0,
+      "explanation": "国債は国が資金を集めるために発行する証券です。買った人は国にお金を貸すことになり、決められた条件で利子や元のお金を受け取ります。国の歳入（さいにゅう）には税金のほか、国債による収入などがあります。",
+      "keywords": [
+        "国債",
+        "金利",
+        "財政"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/54365"
+        }
+      ]
+    }
+  ]
+}

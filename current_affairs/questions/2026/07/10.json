@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-10",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20260710-001",
+      "news_date": "2026-07-10",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "改正個人情報保護法が成立",
+      "news_summary": "AI開発に関わる個人情報の取り扱いについて法律が改正された。",
+      "question": "2026年7月10日、AIの開発などに使われる個人情報の取り扱いを見直す改正個人情報保護法が成立しました。\n\n次のうち個人情報に当たるものはどれですか？",
+      "choices": [
+        "日本の国土面積",
+        "特定の人を識別できる氏名と住所",
+        "全国の年間降水量の平均",
+        "地球の公転周期"
+      ],
+      "correct_index": 1,
+      "explanation": "個人情報とは、生きている個人に関する情報で、特定の人を識別できるものなどを指します。氏名や住所などが代表例です。情報を利用する便利さと、個人の権利やプライバシーを守ることの両立が大切です。",
+      "keywords": [
+        "個人情報",
+        "AI",
+        "情報社会"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/54365"
+        }
+      ]
+    },
+    {
+      "id": "20260710-002",
+      "news_date": "2026-07-10",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "個人情報保護法改正とAI開発",
+      "news_summary": "人工知能の開発と個人情報の保護の両立が課題となっている。",
+      "question": "2026年7月10日、改正個人情報保護法が成立し、AI開発のためのデータ利用に関する規則が見直されました。\n\nAIは日本語で一般に何と呼ばれますか？",
+      "choices": [
+        "全地球測位（そくい）システム",
+        "仮想現実（かそうげんじつ）",
+        "人工知能",
+        "拡張現実（かくちょうげんじつ）"
+      ],
+      "correct_index": 2,
+      "explanation": "AIは人工知能のことで、人間が行うような認識（にんしき）や判断などをコンピューターで実現する技術です。多くのデータから特徴（とくちょう）を学ぶ仕組みもあります。データの正しさや個人情報の取り扱いに注意が必要です。",
+      "keywords": [
+        "AI",
+        "人工知能",
+        "データ"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/54365"
+        }
+      ]
+    }
+  ]
+}
