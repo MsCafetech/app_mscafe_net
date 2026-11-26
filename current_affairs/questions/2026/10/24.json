@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-10-24",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20261024-001",
@@ -63,6 +63,35 @@
         {
           "name": "e-Gov法令検索",
           "url": "https://laws.e-gov.go.jp/law/321CONSTITUTION?occasion_date=20260520"
+        }
+      ]
+    },
+    {
+      "id": "20261024-003",
+      "news_date": "2026-10-24",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連デー",
+      "news_summary": "国際連合の成立を記念する国連デーを迎えました。世界の平和や人権を守るための国際協力について考える日です。",
+      "question": "2026年10月24日、国際連合の成立を記念する国連デーを迎えました。世界の平和や人権を守るための国際協力について考える日です。\n\n国際連合が成立した年はいつですか？",
+      "choices": [
+        "1919年",
+        "1939年",
+        "1945年",
+        "1956年"
+      ],
+      "correct_index": 2,
+      "explanation": "1945年10月24日に国連憲章（けんしょう）が発効し、国際連合が成立しました。第二次世界大戦の反省をふまえ、国際平和と安全を守ることなどを目的としています。日本は1956年に国際連合に加盟しました。",
+      "keywords": [
+        "国連",
+        "国連デー",
+        "第二次世界大戦"
+      ],
+      "sources": [
+        {
+          "name": "ユネスコスクール",
+          "url": "https://www.unesco-school.mext.go.jp/events/%E3%80%8C%E5%9B%BD%E9%80%A3%E3%83%87%E3%83%BC%E3%80%8D%EF%BC%8810-24%EF%BC%89-2/"
         }
       ]
     }

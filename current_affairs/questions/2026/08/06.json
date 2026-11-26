@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-06",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260806-001",
@@ -35,6 +35,35 @@
         {
           "name": "首相官邸",
           "url": "https://www.kantei.go.jp/jp/105/actions/202608/06hiroshima.html"
+        }
+      ]
+    },
+    {
+      "id": "20260806-002",
+      "news_date": "2026-08-06",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "気候変動によるチョウの分布変化",
+      "news_summary": "東京大学などが世界のチョウの分布変化を調べた研究を発表しました。気候の変化によって生息する地域が変わる事例が多く見つかりました。",
+      "question": "2026年8月6日、東京大学などが世界のチョウの分布変化を調べた研究を発表しました。気候の変化によって生息する地域が変わる事例が多く見つかりました。\n\n地球温暖化の原因となる温室効果ガスの一つはどれですか？",
+      "choices": [
+        "窒素（ちっそ）",
+        "酸素",
+        "二酸化炭素",
+        "アルゴン"
+      ],
+      "correct_index": 2,
+      "explanation": "二酸化炭素は温室効果ガスの一つです。大気中の温室効果ガスが増えると地球から宇宙へ熱が逃げにくくなります。気温の変化は植物や動物が暮らせる地域にも影響を与えるため、生物の分布を調べることは自然保護に役立ちます。",
+      "keywords": [
+        "チョウ",
+        "温暖化",
+        "温室効果ガス"
+      ],
+      "sources": [
+        {
+          "name": "東京大学総合研究博物館",
+          "url": "https://www.um.u-tokyo.ac.jp/research/umutnews/umutnews20260806.html"
         }
       ]
     }

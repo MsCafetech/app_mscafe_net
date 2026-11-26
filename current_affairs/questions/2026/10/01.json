@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-10-01",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261001-001",
@@ -30,6 +30,35 @@
         {
           "name": "気象庁",
           "url": "https://www.jma.go.jp/jma/press/2610/01a/tenko202610.html"
+        }
+      ]
+    },
+    {
+      "id": "20261001-002",
+      "news_date": "2026-10-01",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "酒税の税率改正",
+      "news_summary": "酒税の税率が改正され、ビールや発泡酒（はっぽうしゅ）などの税率の見直しが行われました。",
+      "question": "2026年10月1日、酒税の税率が改正され、ビールや発泡酒（はっぽうしゅ）などの税率の見直しが行われました。\n\n酒税のように特定の商品にかかる税金は、何を基準として課される税ですか？",
+      "choices": [
+        "土地の所有",
+        "相続した財産",
+        "商品の消費",
+        "個人の所得"
+      ],
+      "correct_index": 2,
+      "explanation": "酒税は酒類にかかる国の税金で、商品の消費に関係する税の一つです。製造者などが国に納める税が商品の価格にも反映される仕組みです。税金には所得や財産にかかるものなど、さまざまな種類があります。",
+      "keywords": [
+        "酒税",
+        "税金",
+        "消費"
+      ],
+      "sources": [
+        {
+          "name": "財務省",
+          "url": "https://www.mof.go.jp/tax_policy/summary/consumption/d08.htm"
         }
       ]
     }

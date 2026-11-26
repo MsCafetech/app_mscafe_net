@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-25",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260825-001",
@@ -34,6 +34,35 @@
         {
           "name": "衆議院",
           "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260825-002",
+      "news_date": "2026-08-25",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "東アジアのチョウの遺伝子研究",
+      "news_summary": "東京大学などの研究グループが、東アジアにすむツマジロウラジャノメのDNAを比較した研究成果を発表しました。",
+      "question": "2026年8月25日、東京大学などの研究グループが、東アジアにすむツマジロウラジャノメのDNAを比較した研究成果を発表しました。\n\n親から子へ体の特徴（とくちょう）が伝わることを何といいますか？",
+      "choices": [
+        "変態（へんたい）",
+        "遺伝（いでん）",
+        "冬眠（とうみん）",
+        "発芽"
+      ],
+      "correct_index": 1,
+      "explanation": "親から子へ体の特徴が伝わることを遺伝といいます。DNAには生物の体の仕組みなどに関係する情報が含まれています。同じ種類の生物でもDNAには違いがあり、研究者はその違いを調べて生物の多様性や進化を研究しています。",
+      "keywords": [
+        "チョウ",
+        "DNA",
+        "遺伝"
+      ],
+      "sources": [
+        {
+          "name": "東京大学総合研究博物館",
+          "url": "https://www.um.u-tokyo.ac.jp/research/umutnews/umut20260825.html"
         }
       ]
     }
