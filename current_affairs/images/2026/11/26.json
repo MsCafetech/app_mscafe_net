@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 11,
+  "question_count": 12,
   "related_count": 13,
-  "image_count": 25,
+  "image_count": 26,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -464,6 +464,25 @@
           "license": "CC BY 2.0",
           "license_url": "https://creativecommons.org/licenses/by/2.0/",
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。変更時は明示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-012",
+      "images": [
+        {
+          "id": "20261126-012-I01",
+          "type": "photo",
+          "title": "地震計",
+          "caption": "資料写真：南極の観測基地の地震計。地面の揺れを観測する機器です。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Seismometer.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Seismometer.jpg",
+          "credit": "Hannes Grobe/AWI",
+          "license": "CC BY 3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/",
+          "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示。"
         }
       ],
       "related": []
