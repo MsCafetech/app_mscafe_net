@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 15,
-  "related_count": 13,
-  "image_count": 28,
+  "related_count": 22,
+  "image_count": 37,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -75,6 +75,24 @@
               "license": "CC BY 2.0",
               "license_url": "https://creativecommons.org/licenses/by/2.0/",
               "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示。加工した場合は変更内容を明記。提供者がアプリを推奨していると誤解させないこと。960px縮小版を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-011-R01",
+          "images": [
+            {
+              "id": "20261125-011-R01-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：首都機能の一つである国会の議事堂。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
+              "credit": "Ayumu Ozaki",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者名を出典として表示。"
             }
           ]
         }
@@ -336,7 +354,44 @@
           "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-015-R01",
+          "images": [
+            {
+              "id": "20261125-015-R01-I01",
+              "type": "photo",
+              "title": "ライチョウの親子",
+              "caption": "資料写真：ライチョウの羽の色を観察できる資料写真。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Lagopus_muta_japonica_Yukikura.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Lagopus_muta_japonica_Yukikura.jpg",
+              "credit": "Alpsdake",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-015-R03",
+          "images": [
+            {
+              "id": "20261125-015-R03-I01",
+              "type": "photo",
+              "title": "ライチョウの親子",
+              "caption": "資料写真：生息地の保全が必要なライチョウ。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Lagopus_muta_japonica_Yukikura.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Lagopus_muta_japonica_Yukikura.jpg",
+              "credit": "Alpsdake",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-016",
@@ -355,7 +410,26 @@
           "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-016-R01",
+          "images": [
+            {
+              "id": "20261125-016-R01-I01",
+              "type": "photo",
+              "title": "横浜港のコンテナ船",
+              "caption": "資料写真：輸入品を運ぶコンテナ船。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/YM_Earth_%28ship%2C_2003%29_001.jpg/960px-YM_Earth_%28ship%2C_2003%29_001.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:YM_Earth_(ship%2C_2003)_001.jpg",
+              "credit": "Kabacchi",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-017",
@@ -412,7 +486,44 @@
           "usage_notes": "出典と提供元を表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-019-R02",
+          "images": [
+            {
+              "id": "20261125-019-R02-I01",
+              "type": "satellite",
+              "title": "小惑星ディモルフォス",
+              "caption": "資料写真：DARTが接近して撮影した小惑星ディモルフォス。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Penultimate_image_of_Dimorphos_by_DART.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Penultimate_image_of_Dimorphos_by_DART.png",
+              "credit": "NASA/Johns Hopkins APL",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+              "usage_notes": "出典と提供元を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-019-R03",
+          "images": [
+            {
+              "id": "20261125-019-R03-I01",
+              "type": "satellite",
+              "title": "小惑星ディモルフォス",
+              "caption": "資料写真：ヘラが調査する小惑星ディモルフォスの衝突前の姿。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Penultimate_image_of_Dimorphos_by_DART.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Penultimate_image_of_Dimorphos_by_DART.png",
+              "credit": "NASA/Johns Hopkins APL",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+              "usage_notes": "出典と提供元を表示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-020",
@@ -431,7 +542,26 @@
           "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-020-R01",
+          "images": [
+            {
+              "id": "20261125-020-R01-I01",
+              "type": "photo",
+              "title": "スマートフォン",
+              "caption": "資料写真：SNSを利用する端末の一例。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Smart-Phone.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Smart-Phone.jpg",
+              "credit": "Ka Kit Pang",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-021",
@@ -469,7 +599,26 @@
           "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-022-R01",
+          "images": [
+            {
+              "id": "20261125-022-R01-I01",
+              "type": "photo",
+              "title": "特別養護老人ホーム",
+              "caption": "資料写真：介護サービスを提供する施設の一例。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Special_elderly_nursing_home_of_Japan.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Special_elderly_nursing_home_of_Japan.jpg",
+              "credit": "Corpse Reviver",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-023",
@@ -507,7 +656,26 @@
           "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-024-R01",
+          "images": [
+            {
+              "id": "20261125-024-R01-I01",
+              "type": "photo",
+              "title": "1959年のフィデル・カストロ",
+              "caption": "資料写真：キューバ革命を率いたフィデル・カストロ。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/FidelCastro.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:FidelCastro.jpg",
+              "credit": "U.S. News & World Report / Library of Congress",
+              "license": "Public Domain",
+              "license_url": "https://www.loc.gov/rr/print/res/078_usnw.html",
+              "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-026",
