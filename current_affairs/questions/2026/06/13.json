@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-13",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260613-001",
@@ -59,6 +59,43 @@
         {
           "name": "宮内庁",
           "url": "https://www.kunaicho.go.jp/watch/activity/imperial-family-activity-01/info/nld-bel1.html"
+        }
+      ]
+    },
+    {
+      "id": "20260613-003",
+      "news_date": "2026-06-13",
+      "category": "history_culture",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "「発掘（はっくつ）された日本列島2026」展が開幕（かいまく）",
+      "news_summary": "全国の遺跡（いせき）から見つかった資料を紹介（しょうかい）する展覧会が東京で始まりました。",
+      "question": "2026年6月13日、東京都江戸東京博物館で、全国の遺跡（いせき）から見つかった資料を紹介（しょうかい）する展覧会が始まりました。展示品には埴輪（はにわ）もあります。\n\n埴輪が大きな墓（はか）の周りなどに置かれたのは、主に何時代ですか。",
+      "choices": [
+        "縄文（じょうもん）時代",
+        "古墳（こふん）時代",
+        "奈良（なら）時代",
+        "平安時代"
+      ],
+      "correct_index": 1,
+      "explanation": "埴輪は古墳時代に作られた焼き物です。人や馬、家などを表したものや、円い筒（つつ）の形をしたものがあります。大きな墓の周りなどに置かれました。発掘調査で見つかった品物は、昔の人々の生活や社会の仕組みを知る手がかりになります。",
+      "keywords": [
+        "発掘（はっくつ）",
+        "埴輪（はにわ）",
+        "古墳（こふん）時代"
+      ],
+      "sources": [
+        {
+          "name": "文化庁",
+          "url": "https://www.bunka.go.jp/gyoji/94366201.html"
+        },
+        {
+          "name": "東京都江戸東京博物館",
+          "url": "https://www.edo-tokyo-museum.or.jp/s-exhibition/retto2026/"
+        },
+        {
+          "name": "下松市",
+          "url": "https://www.city.kudamatsu.lg.jp/gakusyuu/bunka/retto-ten.html"
         }
       ]
     }
