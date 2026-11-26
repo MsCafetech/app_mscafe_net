@@ -2,6 +2,41 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 0,
-  "questions": []
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20261126-001",
+      "news_date": "2026-11-26",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "文部科学大臣への問責決議案の提出（ていしゅつ）",
+      "news_summary": "野党が文部科学大臣の政治上の責任を問う決議案を参議院に提出（ていしゅつ）しました。",
+      "question": "2026年11月26日、文部科学大臣の政治資金をめぐる問題について、野党8会派が参議院に問責決議案を提出しました。\n\n問責決議案の主な目的は何ですか。",
+      "choices": [
+        "新しい法律を制定すること",
+        "大臣などの政治上の責任を問うこと",
+        "国の予算を決定すること",
+        "国会議員の選挙を行うこと"
+      ],
+      "correct_index": 1,
+      "explanation": "問責決議は、大臣などの政治上の責任を問うための国会の意思表示です。参議院で可決されても、それだけで大臣を辞（や）めさせる法的な強制力はありません。国会には法律を作るだけでなく、政府の活動を調べる役割もあります。",
+      "keywords": [
+        "問責決議",
+        "参議院",
+        "国会",
+        "政治資金"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_politics/articles/000550684.html"
+        },
+        {
+          "name": "日テレNEWS（ライブドアニュース）",
+          "url": "https://news.livedoor.com/article/detail/32902737/"
+        }
+      ]
+    }
+  ]
 }
