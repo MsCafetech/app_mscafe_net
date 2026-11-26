@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-05",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261105-001",
@@ -30,6 +30,39 @@
         {
           "name": "文化庁",
           "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94461801.html"
+        }
+      ]
+    },
+    {
+      "id": "20261105-002",
+      "news_date": "2026-11-05",
+      "category": "international",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "日米印豪共同訓練（くんれん）マラバールが始まる",
+      "news_summary": "日本、アメリカ、インド、オーストラリアの共同訓練（くんれん）が関東の南方で始まりました。",
+      "question": "2026年11月5日、日本の海上自衛隊とアメリカ、インド、オーストラリアによる共同訓練マラバールが始まりました。訓練は関東地方の南方の海で行われました。\n\nこの海は次のうちどれですか。",
+      "choices": [
+        "インド洋",
+        "大西洋",
+        "太平洋",
+        "北極海"
+      ],
+      "correct_index": 2,
+      "explanation": "関東地方の南方に広がる海は太平洋です。太平洋は日本やアメリカ、オーストラリアなどが面する世界で最も広い海洋です。海を通じた物資の輸送は日本の生活や産業を支えており、各国が協力して海の安全を守ることは重要です。",
+      "keywords": [
+        "マラバール",
+        "海上自衛隊",
+        "太平洋"
+      ],
+      "sources": [
+        {
+          "name": "海上自衛隊",
+          "url": "https://www.mod.go.jp/msdf/operation/training/malabar2026/"
+        },
+        {
+          "name": "共同通信（神戸新聞）",
+          "url": "https://www.kobe-np.co.jp/news/zenkoku/compact/202611/0021002965.shtml"
         }
       ]
     }
