@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-26",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260726-001",
@@ -40,6 +40,64 @@
         {
           "name": "世界遺産登録推進協議会",
           "url": "https://asuka-fujiwara.jp/news/4649/"
+        }
+      ]
+    },
+    {
+      "id": "20260726-002",
+      "news_date": "2026-07-26",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "飛鳥（あすか）・藤原の宮都が世界遺産（せかいいさん）に",
+      "news_summary": "世界遺産委員会で飛鳥・藤原の宮都の登録が決まった。",
+      "question": "2026年7月26日、韓国で開かれた世界遺産委員会で、飛鳥・藤原の宮都の世界遺産登録が決まりました。古代日本の国づくりを伝える遺跡（いせき）です。\n\n藤原京から710年に移された都はどこですか？",
+      "choices": [
+        "平安京",
+        "長岡京",
+        "平城京",
+        "鎌倉（かまくら）"
+      ],
+      "correct_index": 2,
+      "explanation": "藤原京は694年に都となり、710年に平城京へ都が移されました。平城京を中心とする時代を奈良（なら）時代と呼びます。飛鳥・藤原の宮都の遺跡は、古代の日本で国の制度や都が整えられていく過程を伝えています。",
+      "keywords": [
+        "藤原京",
+        "平城京",
+        "世界遺産（せかいいさん）"
+      ],
+      "sources": [
+        {
+          "name": "文化庁",
+          "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94413401.html"
+        }
+      ]
+    },
+    {
+      "id": "20260726-003",
+      "news_date": "2026-07-26",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "飛鳥（あすか）・藤原の宮都の世界遺産登録",
+      "news_summary": "古代日本の宮都の遺跡が世界遺産に登録された。",
+      "question": "2026年7月26日、飛鳥・藤原の宮都が世界遺産に登録されました。古代の宮殿や役所、寺院などの跡が国づくりの歴史を伝えています。\n\n世界遺産の登録を行う国連の専門機関はどれですか？",
+      "choices": [
+        "WHO",
+        "UNESCO",
+        "ILO",
+        "IMF"
+      ],
+      "correct_index": 1,
+      "explanation": "UNESCO（ユネスコ）は国際連合教育科学文化機関です。教育、科学、文化を通じて国際協力を進めています。世界遺産条約に基づく世界遺産委員会では、人類にとって重要な文化遺産や自然遺産の登録などを決めています。",
+      "keywords": [
+        "世界遺産",
+        "UNESCO",
+        "飛鳥（あすか）"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_03987.html"
         }
       ]
     }
