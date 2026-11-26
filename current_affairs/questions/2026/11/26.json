@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 9,
+  "question_count": 10,
   "questions": [
     {
       "id": "20261126-001",
@@ -303,6 +303,40 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/3115357?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20261126-010",
+      "news_date": "2026-11-26",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "欧州中央銀行（おうしゅうちゅうおうぎんこう）の次期総裁人事",
+      "news_summary": "欧州連合（おうしゅうれんごう）の首脳会議でデコス氏を欧州中央銀行（おうしゅうちゅうおうぎんこう）の次期総裁に起用する方向で合意しました。",
+      "question": "2026年11月26日、欧州連合（おうしゅうれんごう、EU）の首脳（しゅのう）会議で、スペイン出身のデコス氏を欧州中央銀行（ECB）の次期総裁に起用する方向で合意しました。\n\nこの銀行が金融（きんゆう）政策を担当する共通通貨は何ですか。",
+      "choices": [
+        "ドル",
+        "ポンド",
+        "ユーロ",
+        "フラン"
+      ],
+      "correct_index": 2,
+      "explanation": "ユーロはEUの一部の加盟（かめい）国で使われている共通通貨です。ECBはユーロを使う国々の物価の安定を目指し、政策金利などを決めます。EUに入っていても独自の通貨を使う国があるため、EUとユーロ圏（けん）は同じではありません。",
+      "keywords": [
+        "欧州中央銀行（おうしゅうちゅうおうぎんこう）",
+        "ECB",
+        "EU",
+        "ユーロ"
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://smart.asahi.com/v/article/ASVCV4QZRVCVUHBI02JM.php"
+        },
+        {
+          "name": "読売新聞オンライン（ライブドアニュース）",
+          "url": "https://news.livedoor.com/article/detail/32911149/"
         }
       ]
     }

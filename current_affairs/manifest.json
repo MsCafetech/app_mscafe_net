@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-27T08:12:27.189+09:00",
+  "last_updated": "2026-11-27T08:14:38+09:00",
   "language": "ja",
-  "total_questions": 367,
+  "total_questions": 368,
   "total_files": 184,
   "files": [
     {
@@ -14,8 +14,8 @@
     {
       "date": "2026-11-26",
       "path": "questions/2026/11/26.json",
-      "question_count": 9,
-      "revision": 12
+      "question_count": 10,
+      "revision": 13
     },
     {
       "date": "2026-11-25",
