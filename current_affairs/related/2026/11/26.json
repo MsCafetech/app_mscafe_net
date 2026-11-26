@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
+  "question_count": 2,
+  "related_count": 2,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -24,6 +24,30 @@
             {
               "name": "衆議院 日本国憲法",
               "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-002",
+      "related": [
+        {
+          "id": "20261126-002-R01",
+          "relation_type": "question",
+          "title": "金利と景気・物価の関係",
+          "description": "金利（きんり）とは、お金を借りたときに支払う利息の割合です。日本銀行が金融政策によって金利を低くする方向に働きかけると、会社は工場や店を建てるためのお金を借りやすくなり、家庭も住宅を買いやすくなります。買い物や投資が増えると、景気が良くなる方向に働き、物価も上がりやすくなります。反対に金利が上がると、お金を借りる負担が増え、買い物や投資が減る方向に働きます。日本銀行はこのような仕組みを利用して、景気や物価の動きを安定させようとしています。",
+          "relationship": "日本銀行の政策金利が生活や経済に影響する仕組みを学ぶ。",
+          "keywords": [
+            "金利",
+            "金融政策",
+            "景気",
+            "物価"
+          ],
+          "sources": [
+            {
+              "name": "日本銀行 教えて！にちぎん",
+              "url": "https://www.boj.or.jp/about/education/oshiete/seisaku/b28.htm"
             }
           ]
         }
