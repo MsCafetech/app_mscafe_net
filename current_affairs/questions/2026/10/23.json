@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-10-23",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20261023-001",
@@ -59,6 +59,35 @@
         {
           "name": "電撃オンライン",
           "url": "https://dengekionline.com/article/202610/91862"
+        }
+      ]
+    },
+    {
+      "id": "20261023-003",
+      "news_date": "2026-10-23",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "太陽光パネルの再資源化",
+      "news_summary": "環境省が使用済み太陽電池の再資源化に関する法令の検討会開催を発表した。",
+      "question": "2026年10月23日、環境省は、使い終わった太陽電池の再資源化（さいしげんか）を進める法律に関する検討会を開くと発表しました。再生可能エネルギーを広げるうえで、設備の廃棄にも対策が必要です。\n\n太陽光発電の仕組みとして正しいものはどれですか？",
+      "choices": [
+        "石炭を燃やして発電する",
+        "風で羽根を回して発電する",
+        "太陽の光を電気に変える",
+        "地下の熱で蒸気を作り発電する"
+      ],
+      "correct_index": 2,
+      "explanation": "太陽光発電では太陽電池を使い、光のエネルギーを電気に変えます。発電時に燃料を燃やす必要はありませんが、使用済みパネルの適切な処理や資源の再利用も重要です。",
+      "keywords": [
+        "太陽光発電",
+        "太陽電池",
+        "再生可能エネルギー"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05740.html"
         }
       ]
     }
