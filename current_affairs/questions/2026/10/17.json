@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-17",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20261017-001",
+      "news_date": "2026-10-17",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "福岡県議会が百条委員会の設置を決定",
+      "news_summary": "福岡県議会は議会に関する問題を調べるための特別委員会の設置を決めた。",
+      "question": "2026年10月17日、福岡県議会は議会に関する問題を調べるため、強い調査権限（ちょうさけんげん）を持つ百条委員会を設置することを決めました。\n\nこの委員会の名前のもととなっている法律は何ですか？",
+      "choices": [
+        "教育基本法",
+        "地方自治法",
+        "道路交通法",
+        "労働基準法"
+      ],
+      "correct_index": 1,
+      "explanation": "百条委員会は、地方自治法第100条に基づいて地方議会が設ける調査委員会です。地方公共団体の事務について調べるため、関係者に証言や記録の提出などを求めることができます。地方議会には、行政を点検する役割があります。",
+      "keywords": [
+        "地方自治法",
+        "百条委員会",
+        "地方議会"
+      ],
+      "sources": [
+        {
+          "name": "福岡県議会",
+          "url": "https://www.gikai.pref.fukuoka.lg.jp/soshiki/2/gaiyou081106.html"
+        },
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000540887.html"
+        }
+      ]
+    }
+  ]
+}
