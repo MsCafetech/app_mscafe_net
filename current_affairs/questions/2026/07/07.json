@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-07",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260707-001",
@@ -35,6 +35,35 @@
         {
           "name": "静岡県「リニア中央新幹線整備工事に伴う環境への影響に関する対応」",
           "url": "https://www.pref.shizuoka.jp/kurashikankyo/kankyo/1040554/1002001/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260707-002",
+      "news_date": "2026-07-07",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "リニア中央新幹線の静岡工区着工を容認（ようにん）と走行技術",
+      "news_summary": "静岡県知事がリニア中央新幹線の工事を認める考えを示した。",
+      "question": "2026年7月7日、静岡県知事はリニア中央新幹線の静岡工区の着工を認める考えを示しました。この鉄道では車体を浮かせて走る技術が使われます。\n\n車体を浮かせたり前へ進めたりするために利用する力は何ですか？",
+      "choices": [
+        "水圧",
+        "磁力",
+        "浮力（ふりょく）",
+        "風力"
+      ],
+      "correct_index": 1,
+      "explanation": "超電導（ちょうでんどう）リニアは、車両と地上のコイルの間に働く磁力を利用して車体を浮かせたり進めたりします。高速走行時には車輪とレールの接触（せっしょく）による抵抗（ていこう）を小さくできる仕組みです。",
+      "keywords": [
+        "リニア",
+        "磁力",
+        "鉄道"
+      ],
+      "sources": [
+        {
+          "name": "静岡放送",
+          "url": "https://newsdig.tbs.co.jp/articles/sbs/2784363?display=1"
         }
       ]
     }
