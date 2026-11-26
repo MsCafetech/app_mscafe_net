@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261009-001",
+      "images": [
+        {
+          "id": "20261009-001-I01",
+          "type": "photo",
+          "title": "ナビ・ピレイ氏",
+          "caption": "資料写真：2013年に撮影された国際人権活動家の資料写真。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Navi_Pillay._2026_Nobel_Peace_Prize_laureate_%28cropped%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Navi_Pillay._2026_Nobel_Peace_Prize_laureate_%28cropped%29.jpg",
+          "credit": "Dutch Ministry of Foreign Affairs",
+          "license": "CC BY-SA 2.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。広告・推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261009-002",
+      "images": [
+        {
+          "id": "20261009-002-I01",
+          "type": "photo",
+          "title": "国際刑事裁判所",
+          "caption": "資料写真：オランダのハーグにある国際刑事裁判所の看板。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/ICC_-_The_International_Criminal_Court_-_The_Hague.jpg/960px-ICC_-_The_International_Criminal_Court_-_The_Hague.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:ICC_-_The_International_Criminal_Court_-_The_Hague.jpg",
+          "credit": "Tony Webster",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。広告・推奨を示唆しない。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 2,
+  "related_count": 0,
+  "image_count": 2
+}
