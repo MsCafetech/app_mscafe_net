@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-04",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260804-001",
@@ -59,6 +59,35 @@
         {
           "name": "首相官邸",
           "url": "https://www.kantei.go.jp/jp/105/actions/202608/04hijoukaigi.html"
+        }
+      ]
+    },
+    {
+      "id": "20260804-003",
+      "news_date": "2026-08-04",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "永住許可（えいじゅうきょか）の指針改定案について意見募集",
+      "news_summary": "出入国在留管理庁が永住許可の指針改定案を公示した。",
+      "question": "2026年8月4日、出入国在留管理庁（しゅつにゅうこくざいりゅうかんりちょう）は、外国人の永住許可に関する指針の改定案を示し、国民から意見を募集し始めました。\n\n行政機関が規則などの案を示して広く意見を募集する手続きは何ですか？",
+      "choices": [
+        "国勢調査",
+        "パブリックコメント",
+        "国民審査（しんさ）",
+        "住民投票"
+      ],
+      "correct_index": 1,
+      "explanation": "パブリックコメントは、行政機関が命令や規則などの案を公表し、広く意見を求める手続きです。集まった意見を考慮して内容を決め、結果を公表します。行政の透明性を高めるための仕組みの一つです。",
+      "keywords": [
+        "永住許可（えいじゅうきょか）",
+        "行政",
+        "パブリックコメント"
+      ],
+      "sources": [
+        {
+          "name": "e-Gov",
+          "url": "https://public-comment.e-gov.go.jp/pcm/detail?Mode=0&id=315000140"
         }
       ]
     }
