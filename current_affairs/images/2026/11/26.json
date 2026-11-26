@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 4,
-  "related_count": 9,
-  "image_count": 14,
+  "related_count": 10,
+  "image_count": 15,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -238,7 +238,26 @@
           "usage_notes": "作者・出典・ライセンスを表示し、変更時は変更内容を明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-003-R01",
+          "images": [
+            {
+              "id": "20261126-003-R01-I01",
+              "type": "photo",
+              "title": "日本のスーパーマーケット",
+              "caption": "資料写真：買い物の際に消費税を支払い、店が税を納める仕組みを学ぶための写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
+              "credit": "Yuya Tamai",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0",
+              "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記する。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-004",
