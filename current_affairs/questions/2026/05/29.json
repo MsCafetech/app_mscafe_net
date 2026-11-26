@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-29",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260529-001",
@@ -30,6 +30,68 @@
         {
           "name": "テレビ朝日",
           "url": "https://news.tv-asahi.co.jp/news_economy/articles/000508569.html"
+        }
+      ]
+    },
+    {
+      "id": "20260529-002",
+      "news_date": "2026-05-29",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "category": "society",
+      "news_title": "国勢調査（こくせいちょうさ）の人口速報を発表",
+      "news_summary": "2025年の国勢調査の人口速報が公表された。",
+      "question": "2026年5月29日、2025年に行われた国勢調査の人口速報が発表されました。国の人口や世帯の状況（じょうきょう）を知るための大切な調査です。\n\n国勢調査は原則として何年ごとに行われますか？",
+      "choices": [
+        "2年",
+        "3年",
+        "5年",
+        "10年"
+      ],
+      "correct_index": 2,
+      "explanation": "国勢調査は原則として5年ごとに行われ、日本に住む人や世帯を対象としています。人口や年齢（ねんれい）、世帯の構成などを調べた結果は、学校や福祉（ふくし）、防災などの政策を考えるために役立てられます。",
+      "keywords": [
+        "国勢調査（こくせいちょうさ）",
+        "人口",
+        "統計"
+      ],
+      "sources": [
+        {
+          "name": "総務省統計局",
+          "url": "https://www.stat.go.jp/data/kokusei/2025/kekka.html"
+        },
+        {
+          "name": "政府統計の総合窓口",
+          "url": "https://www.e-stat.go.jp/release-calendar/detail/00200521/202605290830"
+        }
+      ]
+    },
+    {
+      "id": "20260529-003",
+      "news_date": "2026-05-29",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "category": "science",
+      "news_title": "新しい防災気象情報の運用開始",
+      "news_summary": "気象庁が警戒（けいかい）レベルに対応した新しい情報の運用を開始した。",
+      "question": "2026年5月29日、気象庁（きしょうちょう）は新しい防災気象情報の運用を始めました。情報の名前に警戒（けいかい）レベルの数字を付け、災害の危険性を分かりやすく伝える取り組みです。\n\n警戒レベルは何段階に分けられていますか？",
+      "choices": [
+        "3段階",
+        "4段階",
+        "5段階",
+        "6段階"
+      ],
+      "correct_index": 2,
+      "explanation": "警戒レベルは1から5までの5段階です。数字が大きいほど災害の危険性が高まります。レベル4では危険な場所から全員が避難（ひなん）することが求められます。レベル5を待たずに安全な場所へ移動することが大切です。",
+      "keywords": [
+        "防災気象情報",
+        "警戒（けいかい）レベル",
+        "大雨"
+      ],
+      "sources": [
+        {
+          "name": "気象庁",
+          "url": "https://www.jma.go.jp/jma/kishou/know/bosai/keiho-update2026/"
         }
       ]
     }
