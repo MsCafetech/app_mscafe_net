@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 15,
-  "related_count": 27,
-  "image_count": 42,
+  "related_count": 29,
+  "image_count": 44,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -390,6 +390,24 @@
               "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-015-R02",
+          "images": [
+            {
+              "id": "20261125-015-R02-I01",
+              "type": "photo",
+              "title": "白馬岳の高山植物",
+              "caption": "資料写真：白馬岳の斜面に広がる高山植物。ライチョウが暮らす高山帯の環境を知る手がかりになります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Alpine_plants_and_Mount_Shirouma.jpg/960px-Alpine_plants_and_Mount_Shirouma.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Alpine_plants_and_Mount_Shirouma.jpg",
+              "credit": "Alpsdake",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用・複製可。出典を表示。"
+            }
+          ]
         }
       ]
     },
@@ -633,6 +651,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-021-R02",
+          "images": [
+            {
+              "id": "20261125-021-R02-I01",
+              "type": "map",
+              "title": "カタルーニャ語の方言分布",
+              "caption": "資料地図：カタルーニャ語の方言が広がる地域を色分けした地図。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Dialectal_map_of_Catalan_Language.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Dialectal_map_of_Catalan_Language.png",
+              "credit": "Pepetps",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示。変更を明記し、改変物は同一または互換ライセンスで配布。"
             }
           ]
         }
