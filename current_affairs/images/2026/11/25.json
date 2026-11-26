@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 15,
-  "related_count": 32,
-  "image_count": 47,
+  "related_count": 33,
+  "image_count": 48,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -500,6 +500,24 @@
               "license": "CC BY 4.0",
               "license_url": "https://creativecommons.org/licenses/by/4.0/",
               "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-017-R01",
+          "images": [
+            {
+              "id": "20261125-017-R01-I01",
+              "type": "photo",
+              "title": "ベルギーの国境標識",
+              "caption": "資料写真：ヨーロッパの国境にある標識。EUの単一市場と、人の移動に関わる別の制度であるシェンゲン協定を考える手がかり。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bilingual_Schengen_border_sign%2C_Belgium.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bilingual_Schengen_border_sign,_Belgium.JPG",
+              "credit": "Smiley.toerist（原作）、Kontrollstellekundl（切り抜き）",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+              "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記する。加工物は同一または互換ライセンスで配布する。"
             }
           ]
         }
