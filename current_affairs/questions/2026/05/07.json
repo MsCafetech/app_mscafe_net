@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-07",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260507-001",
+      "news_date": "2026-05-07",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "イギリスで地方議会選挙",
+      "news_summary": "イングランドの地方議会とスコットランド、ウェールズの議会で選挙が行われた。",
+      "question": "2026年5月7日、イギリスで地方議会などの選挙が行われました。イングランド、スコットランド、ウェールズで有権者が投票しました。\n\nこの3地域とともにイギリスを構成する地域はどこですか？",
+      "choices": [
+        "北アイルランド",
+        "アイスランド",
+        "アイルランド共和国",
+        "デンマーク"
+      ],
+      "correct_index": 0,
+      "explanation": "イギリスはイングランド、スコットランド、ウェールズ、北アイルランドの四つの地域から成ります。正式な国名はグレートブリテン及び北アイルランド連合王国です。アイルランド共和国は別の独立国です。",
+      "keywords": [
+        "イギリス",
+        "地方選挙",
+        "北アイルランド"
+      ],
+      "sources": [
+        {
+          "name": "JETRO",
+          "url": "https://www.jetro.go.jp/biznews/2026/05/2aaa7745b5521dfc.html"
+        }
+      ]
+    }
+  ]
+}

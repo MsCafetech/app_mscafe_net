@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-14",
+  "language": "ja",
+  "question_count": 3,
+  "questions": [
+    {
+      "id": "20260514-001",
+      "news_date": "2026-05-14",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "米中首脳会談（しゅのうかいだん）でAPECへの協力",
+      "news_summary": "中国とアメリカの首脳が北京で会談した。",
+      "question": "2026年5月14日、中国の国家主席とアメリカの大統領が北京で会談し、APECの首脳会議などの開催に向けて協力することを確認しました。\n\nAPECは主にどの地域の経済協力を進める仕組みですか？",
+      "choices": [
+        "アフリカ",
+        "アジア太平洋",
+        "南アメリカのみ",
+        "ヨーロッパのみ"
+      ],
+      "correct_index": 1,
+      "explanation": "APECはアジア太平洋経済協力会議の略称（りゃくしょう）です。1989年に発足し、日本やアメリカ、中国などが参加しています。貿易や投資を進めやすくすることなどを通じて地域の経済発展を目指しています。",
+      "keywords": [
+        "APEC",
+        "米中首脳会談",
+        "経済協力"
+      ],
+      "sources": [
+        {
+          "name": "中国駐日本大使館",
+          "url": "https://jp.china-embassy.gov.cn/jpn/jzzg/202605/t20260518_11911962.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260514-002",
+      "news_date": "2026-05-14",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "米中首脳会談（しゅのうかいだん）でG20への協力",
+      "news_summary": "両国の首脳がG20首脳会議の開催への協力を確認した。",
+      "question": "2026年5月14日、中国とアメリカの首脳が会談し、G20首脳会議の開催に向けて互いに協力することで一致しました。\n\nG20が主に話し合う課題は何ですか？",
+      "choices": [
+        "世界の経済や金融",
+        "オリンピックの競技規則",
+        "世界の郵便番号の統一",
+        "各国の学校の時間割"
+      ],
+      "correct_index": 0,
+      "explanation": "G20は主要な国や地域の代表が世界経済や金融などの課題について話し合う枠組みです。日本も参加しています。世界的な経済危機への対応だけでなく、気候変動や開発などの課題も取り上げられます。",
+      "keywords": [
+        "G20",
+        "世界経済",
+        "国際協力"
+      ],
+      "sources": [
+        {
+          "name": "中国駐日本大使館",
+          "url": "https://jp.china-embassy.gov.cn/jpn/jzzg/202605/t20260518_11911962.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260514-003",
+      "news_date": "2026-05-14",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本関係船舶（せんぱく）がホルムズ海峡（かいきょう）を通過",
+      "news_summary": "日本関係の船がペルシャ湾の外へ出た。",
+      "question": "2026年5月14日、外務省は、日本関係の船がホルムズ海峡を通り、ペルシャ湾の外へ出たと発表しました。この海峡は国際的な海上交通の要所です。\n\nホルムズ海峡の北側に位置する国はどこですか？",
+      "choices": [
+        "エジプト",
+        "トルコ",
+        "イラン",
+        "インド"
+      ],
+      "correct_index": 2,
+      "explanation": "ホルムズ海峡はペルシャ湾とオマーン湾を結ぶ海峡で、北側にはイランがあります。南側にはオマーンの一部があります。中東の産油国から原油などを運ぶ船が通るため、日本のエネルギー供給にも関係する重要な海域です。",
+      "keywords": [
+        "ホルムズ海峡（かいきょう）",
+        "イラン",
+        "ペルシャ湾"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_03720.html"
+        }
+      ]
+    }
+  ]
+}

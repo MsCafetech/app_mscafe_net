@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-20",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260520-001",
@@ -63,6 +63,64 @@
         {
           "name": "海洋研究開発機構",
           "url": "https://www.jamstec.go.jp/j/about/press_release/20260520/"
+        }
+      ]
+    },
+    {
+      "id": "20260520-003",
+      "news_date": "2026-05-20",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国会で党首討論（とうろん）を実施",
+      "news_summary": "衆参両院の合同審査会で総理大臣と野党の代表が討論した。",
+      "question": "2026年5月20日、国会で党首討論が開かれ、総理大臣と野党の代表が国の政策について意見を交わしました。\n\n国会の議決に基づいて内閣（ないかく）が成立し、国会に対して責任を負う制度は何ですか？",
+      "choices": [
+        "大統領制",
+        "議院内閣制",
+        "直接民主制",
+        "連邦制（れんぽうせい）"
+      ],
+      "correct_index": 1,
+      "explanation": "議院内閣制では、国会が内閣総理大臣を指名し、内閣は行政権の行使について国会に対して連帯して責任を負います。国会での質問や討論は、政府の政策を明らかにし、その活動を確認する役割を持っています。",
+      "keywords": [
+        "党首討論",
+        "議院内閣制",
+        "国会"
+      ],
+      "sources": [
+        {
+          "name": "衆議院",
+          "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/topics/toshu260520.html"
+        }
+      ]
+    },
+    {
+      "id": "20260520-004",
+      "news_date": "2026-05-20",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "中国とロシアの首脳会談（しゅのうかいだん）",
+      "news_summary": "中国とロシアが協力を進める共同声明を発表した。",
+      "question": "2026年5月20日、中国の国家主席とロシアの大統領が北京で会談し、経済や科学技術などの協力を進めることを確認しました。\n\n中国とロシアの両方に陸上で国境を接する国はどこですか？",
+      "choices": [
+        "日本",
+        "モンゴル",
+        "タイ",
+        "フィリピン"
+      ],
+      "correct_index": 1,
+      "explanation": "モンゴルは北をロシア、南を中国に囲まれた内陸国です。首都はウランバートルです。内陸国とは海に面していない国のことで、海外との貿易では近くの国を通る鉄道や道路などが重要になります。",
+      "keywords": [
+        "中国",
+        "ロシア",
+        "モンゴル"
+      ],
+      "sources": [
+        {
+          "name": "中国駐日本大使館",
+          "url": "https://jp.china-embassy.gov.cn/jpn/jzzg/202605/t20260522_11915871.htm"
         }
       ]
     }
