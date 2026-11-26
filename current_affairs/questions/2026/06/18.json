@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-18",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260618-001",
@@ -30,6 +30,35 @@
         {
           "name": "nippon.com",
           "url": "https://www.nippon.com/ja/articles/-/11174"
+        }
+      ]
+    },
+    {
+      "id": "20260618-002",
+      "news_date": "2026-06-18",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "米国とイランの覚書署名を受け外務大臣が声明",
+      "news_summary": "日本の外務大臣が戦闘終結に向けた覚書を歓迎した。",
+      "question": "2026年6月18日、日本の外務大臣は、米国とイランが戦闘終結に向けた覚書に署名したことを歓迎する声明を発表しました。核問題の平和的解決に向けた国際機関との協力にも言及（げんきゅう）しました。\n\n原子力の平和利用を進め、核物質が軍事目的に転用されないよう確認する国際機関はどれですか？",
+      "choices": [
+        "WHO",
+        "ILO",
+        "IAEA",
+        "UNICEF"
+      ],
+      "correct_index": 2,
+      "explanation": "IAEAは国際原子力機関です。原子力の平和利用を進めるとともに、核物質が核兵器などに転用されないよう確認する活動を行っています。本部はオーストリアのウィーンにあり、日本も加盟（かめい）しています。",
+      "keywords": [
+        "IAEA",
+        "イラン",
+        "原子力"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/me_a/me2/ir/pageit_000001_00021.html"
         }
       ]
     }

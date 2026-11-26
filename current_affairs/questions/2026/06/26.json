@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-26",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260626-001",
+      "news_date": "2026-06-26",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "山梨県東部・富士五湖を震源（しんげん）とする地震",
+      "news_summary": "山梨県東部で地震が起き、最大震度6弱を観測した。",
+      "question": "2026年6月26日、山梨県東部・富士五湖を震源とする地震が発生し、最大震度（しんど）6弱を観測しました。富士五湖は富士山の北側にある五つの湖です。\n\n次のうち富士五湖に含まれる湖はどれですか？",
+      "choices": [
+        "琵琶湖（びわこ）",
+        "諏訪湖（すわこ）",
+        "山中湖",
+        "猪苗代湖（いなわしろこ）"
+      ],
+      "correct_index": 2,
+      "explanation": "富士五湖は山中湖、河口湖、西湖、精進湖（しょうじこ）、本栖湖（もとすこ）の五つです。いずれも山梨県にあり、富士山の火山活動と深い関係があります。観光や自然学習の場としても知られています。",
+      "keywords": [
+        "富士五湖",
+        "山中湖",
+        "山梨県"
+      ],
+      "sources": [
+        {
+          "name": "気象庁",
+          "url": "https://www.data.jma.go.jp/eqev/data/higai/higai1996-new.html"
+        }
+      ]
+    }
+  ]
+}

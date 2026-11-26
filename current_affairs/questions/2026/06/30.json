@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-30",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 5,
   "questions": [
     {
       "id": "20260630-001",
@@ -101,6 +101,64 @@
         {
           "name": "経済産業省発表（PublicNow転載）",
           "url": "https://www.publicnow.com/view/D615BDE7EBD6F477FA4FDA865E7B0BD18824D4CC"
+        }
+      ]
+    },
+    {
+      "id": "20260630-004",
+      "news_date": "2026-06-30",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "円相場が約39年半ぶりの安値水準に",
+      "news_summary": "東京外国為替市場で1ドル162円台前半となった。",
+      "question": "2026年6月30日、東京外国為替市場（がいこくかわせしじょう）で円が1ドル162円台前半まで下がり、約39年半ぶりの円安水準となりました。\n\n円安が進むと、外国で同じドル価格の商品を買うために必要な日本円はどうなりますか？",
+      "choices": [
+        "増える",
+        "減る",
+        "必ず半分になる",
+        "変わらない"
+      ],
+      "correct_index": 0,
+      "explanation": "円安とは外国の通貨に対する円の価値が下がることです。例えば1ドル100円から160円になると、1ドルの商品を買うのに必要な円は60円増えます。輸入する原料や食品などの価格が上がる原因の一つになります。",
+      "keywords": [
+        "円安",
+        "外国為替（がいこくかわせ）",
+        "輸入"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/11174"
+        }
+      ]
+    },
+    {
+      "id": "20260630-005",
+      "news_date": "2026-06-30",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "皇室典範（こうしつてんぱん）改正案を国会に提出",
+      "news_summary": "内閣が皇族数の確保に向けた法律案を提出した。",
+      "question": "2026年6月30日、政府は皇族（こうぞく）の人数の確保を目指す皇室典範などの改正案を国会に提出しました。この時点では法律の成立前です。\n\n内閣（ないかく）による法律案の提出後、法律案を審議（しんぎ）して議決する国の機関はどれですか？",
+      "choices": [
+        "最高裁判所",
+        "日本銀行",
+        "会計検査院",
+        "国会"
+      ],
+      "correct_index": 3,
+      "explanation": "国会は日本国憲法（けんぽう）で国の唯一（ゆいいつ）の立法機関と定められています。内閣や国会議員が提出した法律案は、国会で審議されます。原則として衆議院と参議院の両院で可決されると法律が成立します。",
+      "keywords": [
+        "皇室典範（こうしつてんぱん）",
+        "法律案",
+        "国会"
+      ],
+      "sources": [
+        {
+          "name": "衆議院",
+          "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/gianrireki/221_221_kakuho_64.htm"
         }
       ]
     }

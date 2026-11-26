@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-25",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260625-001",
+      "news_date": "2026-06-25",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "岩手県沖でマグニチュード7.2の地震",
+      "news_summary": "岩手県沖で地震が起き、青森県で震度6強を観測した。",
+      "question": "2026年6月25日、岩手県沖で大きな地震が発生し、青森県で最大震度（しんど）6強を観測しました。岩手県の太平洋に面した沿岸（えんがん）には、入り江が多い海岸があります。\n\nこのような海岸の地形を何といいますか？",
+      "choices": [
+        "砂丘（さきゅう）",
+        "リアス海岸",
+        "三角州",
+        "扇状地（せんじょうち）"
+      ],
+      "correct_index": 1,
+      "explanation": "リアス海岸は山地の谷が海にしずむなどしてできた、入り江の多い海岸です。三陸海岸の一部に見られ、漁業や養殖業（ようしょくぎょう）に利用されています。一方、入り江の形によって津波（つなみ）が高くなる場合があり、防災が重要です。",
+      "keywords": [
+        "岩手県",
+        "リアス海岸",
+        "地震"
+      ],
+      "sources": [
+        {
+          "name": "気象庁",
+          "url": "https://www.data.jma.go.jp/eqev/data/higai/higai1996-new.html"
+        }
+      ]
+    }
+  ]
+}

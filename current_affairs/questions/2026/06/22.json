@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-22",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260622-001",
+      "news_date": "2026-06-22",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "旧統一教会の解散命令に関する最高裁の決定",
+      "news_summary": "最高裁が教団側の特別抗告を退ける決定をした。",
+      "question": "2026年6月22日、最高裁判所は、世界平和統一家庭連合（旧統一教会）の解散命令をめぐり、教団側の特別抗告（とくべつこうこく）を退ける決定をしました。この決定は6月23日に報じられました。\n\n日本の最高裁判所の長官を任命するのは誰ですか？",
+      "choices": [
+        "衆議院議長",
+        "天皇",
+        "参議院議長",
+        "都道府県知事"
+      ],
+      "correct_index": 1,
+      "explanation": "日本国憲法（けんぽう）では、最高裁判所の長官は内閣（ないかく）が指名し、天皇が任命すると定められています。長官以外の最高裁判所の裁判官は内閣が任命します。裁判所は三権分立の司法を担当します。",
+      "keywords": [
+        "最高裁判所",
+        "司法",
+        "任命"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000514196.html"
+        }
+      ]
+    }
+  ]
+}
