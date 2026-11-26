@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 2,
-  "related_count": 1,
-  "image_count": 4,
+  "related_count": 3,
+  "image_count": 6,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -52,6 +52,42 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。改変画像の配布は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-001-R01",
+          "images": [
+            {
+              "id": "20261126-001-R01-I01",
+              "type": "photo",
+              "title": "衆議院の議場",
+              "caption": "資料写真：内閣不信任決議を行う衆議院の議場。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chamber_of_the_House_of_Representatives_of_Japan.jpg/960px-Chamber_of_the_House_of_Representatives_of_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Representatives_of_Japan.jpg",
+              "credit": "Kimtaro",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-001-R04",
+          "images": [
+            {
+              "id": "20261126-001-R04-I01",
+              "type": "photo",
+              "title": "衆議院の議場",
+              "caption": "資料写真：予算の審議で優越が認められている衆議院の議場。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chamber_of_the_House_of_Representatives_of_Japan.jpg/960px-Chamber_of_the_House_of_Representatives_of_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Representatives_of_Japan.jpg",
+              "credit": "Kimtaro",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。"
             }
           ]
         }
