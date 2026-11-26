@@ -4,11 +4,25 @@
   "language": "ja",
   "question_count": 3,
   "related_count": 5,
-  "image_count": 6,
+  "image_count": 8,
   "questions": [
     {
       "question_id": "20261122-001",
-      "images": [],
+      "images": [
+        {
+          "id": "20261122-001-I01",
+          "type": "photo",
+          "title": "雪に覆われた福島県の集落",
+          "caption": "資料写真：2010年12月に福島県下郷町で撮影された雪景色。今回の大雪そのものの写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Houses_under_snow_in_Fukushima%2C_2010.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Houses_under_snow_in_Fukushima,_2010.jpg",
+          "credit": "Syuzo Tsushima",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
       "related": [
         {
           "related_id": "20261122-001-R03",
@@ -32,7 +46,21 @@
     },
     {
       "question_id": "20261122-003",
-      "images": [],
+      "images": [
+        {
+          "id": "20261122-003-I01",
+          "type": "photo",
+          "title": "道路に融雪剤を散布する車両",
+          "caption": "資料写真：アメリカのオレゴン州で道路の凍結対策を行う車両。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Spreading_salt_%2831652293186%29.jpg/960px-Spreading_salt_%2831652293186%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Spreading_salt_(31652293186).jpg",
+          "credit": "Oregon Department of Transportation",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
       "related": [
         {
           "related_id": "20261122-003-R01",
