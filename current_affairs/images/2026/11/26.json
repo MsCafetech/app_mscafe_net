@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 2,
-  "related_count": 6,
-  "image_count": 9,
+  "related_count": 7,
+  "image_count": 10,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -106,6 +106,24 @@
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
               "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更した場合は明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-001-R05",
+          "images": [
+            {
+              "id": "20261126-001-R05-I01",
+              "type": "photo",
+              "title": "2022年の内閣発足時の閣僚",
+              "caption": "資料写真：2022年8月、第2次岸田改造内閣の発足時に首相官邸の閣僚応接室で撮影された写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Fumio_Kishida_Cabinet_20220810_Kakugi2.jpg/960px-Fumio_Kishida_Cabinet_20220810_Kakugi2.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Fumio_Kishida_Cabinet_20220810_Kakugi2.jpg",
+              "credit": "内閣官房内閣広報室／首相官邸ホームページ",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "出典・著作者・ライセンスを表示し、変更時は明記。政府による推奨を示唆しない。"
             }
           ]
         }
