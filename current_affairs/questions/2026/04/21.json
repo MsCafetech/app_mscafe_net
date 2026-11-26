@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-21",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260421-001",
@@ -30,6 +30,35 @@
         {
           "name": "防衛省",
           "url": "https://www.mod.go.jp/j/press/news/2026/04/21a.html"
+        }
+      ]
+    },
+    {
+      "id": "20260421-002",
+      "news_date": "2026-04-21",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "はしかの患者数が前年の年間報告数を超える",
+      "news_summary": "はしかの患者数が年初から299人に達したと発表された。",
+      "question": "2026年4月21日、国立健康危機管理研究機構は、今年のはしかの患者数が299人に達したと発表しました。\n\nはしかの予防に有効な方法はどれですか？",
+      "choices": [
+        "抗生物質を毎日飲む",
+        "ワクチンを接種（せっしゅ）する",
+        "水を飲まない",
+        "運動をしない"
+      ],
+      "correct_index": 1,
+      "explanation": "はしかはウイルスによる感染症（かんせんしょう）です。ワクチンによる予防が重要で、必要な回数の接種を受けることが勧められています。感染力が強いため、地域全体で予防に取り組むことも大切です。",
+      "keywords": [
+        "はしか",
+        "ワクチン",
+        "感染症（かんせんしょう）"
+      ],
+      "sources": [
+        {
+          "name": "熊本日日新聞・共同通信",
+          "url": "https://kumanichi.com/articles/1983004"
         }
       ]
     }
