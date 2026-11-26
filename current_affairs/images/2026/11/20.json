@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 6,
+  "question_count": 8,
   "related_count": 3,
-  "image_count": 9,
+  "image_count": 11,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -43,6 +43,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261120-002",
+      "images": [
+        {
+          "id": "20261120-002-I01",
+          "type": "photo",
+          "title": "東日本大震災の津波被害",
+          "caption": "資料写真：2011年の東日本大震災で津波の被害を受けた仙台北部の航空写真。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Tsunami_damage_north_of_Sendai_1x1_resized.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tsunami_damage_north_of_Sendai_1x1_resized.jpg",
+          "credit": "U.S. Navy / Flodded (cropped)",
+          "license": "Public Domain (US government)",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
+      "related": []
     },
     {
       "question_id": "20261120-003",
@@ -119,6 +138,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261120-100",
+      "images": [
+        {
+          "id": "20261120-100-I01",
+          "type": "photo",
+          "title": "日本のスーパー",
+          "caption": "資料写真：食品が並ぶ日本のスーパー。2012年撮影。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
+          "credit": "Yuya Tamai",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
+      "related": []
     },
     {
       "question_id": "20261120-101",
