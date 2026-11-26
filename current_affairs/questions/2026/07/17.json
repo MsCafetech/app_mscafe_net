@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-17",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260717-001",
@@ -93,6 +93,35 @@
         {
           "name": "衆議院",
           "url": "https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/keika/1DE2B16.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260717-004",
+      "news_date": "2026-07-17",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国旗の損壊（そんかい）等の処罰（しょばつ）に関する法律が成立",
+      "news_summary": "国旗の損壊などを一定の条件で処罰する法律が議員立法により成立した。",
+      "question": "2026年7月17日、国旗の損壊等の処罰に関する法律が議員立法によって成立しました。法律案には、内閣（ないかく）が提出するものと国会議員が提出するものがあります。\n\n国会議員が法律案を提出して法律を作ることを何といいますか？",
+      "choices": [
+        "行政指導",
+        "議員立法",
+        "住民投票",
+        "違憲審査（いけんしんさ）"
+      ],
+      "correct_index": 1,
+      "explanation": "議員立法は、国会議員が法律案を提出し、国会の議決を経て法律を作ることです。内閣も法律案を提出できます。日本国憲法（けんぽう）は、国会を国の唯一（ゆいいつ）の立法機関と定めています。",
+      "keywords": [
+        "議員立法",
+        "国旗",
+        "法律"
+      ],
+      "sources": [
+        {
+          "name": "法務省",
+          "url": "https://www.moj.go.jp/keiji1/keiji12_00243.html?hl=ja-JP"
         }
       ]
     }
