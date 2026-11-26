@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 12,
+  "question_count": 15,
   "related_count": 13,
-  "image_count": 25,
+  "image_count": 28,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -410,6 +410,63 @@
           "license": "Public Domain (NASA)",
           "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
           "usage_notes": "出典と提供元を表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-020",
+      "images": [
+        {
+          "id": "20261125-020-I01",
+          "type": "photo",
+          "title": "スマートフォン",
+          "caption": "資料写真：SNSなどを利用するスマートフォン。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Smart-Phone.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Smart-Phone.jpg",
+          "credit": "Ka Kit Pang",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-021",
+      "images": [
+        {
+          "id": "20261125-021-I01",
+          "type": "photo",
+          "title": "カタルーニャ独立運動の旗",
+          "caption": "資料写真：2017年の独立運動で建物に掲げられた旗。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Catalan_independence_referendum_2017_-_Flags.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Catalan_independence_referendum_2017_-_Flags.jpg",
+          "credit": "Philipp Reichmuth",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-022",
+      "images": [
+        {
+          "id": "20261125-022-I01",
+          "type": "photo",
+          "title": "特別養護老人ホーム",
+          "caption": "資料写真：日本の高齢者向け介護施設。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Special_elderly_nursing_home_of_Japan.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Special_elderly_nursing_home_of_Japan.jpg",
+          "credit": "Corpse Reviver",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
       "related": []
