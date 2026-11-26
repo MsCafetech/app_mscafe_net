@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 9,
+  "question_count": 12,
   "related_count": 13,
-  "image_count": 22,
+  "image_count": 25,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -410,6 +410,63 @@
           "license": "Public Domain (NASA)",
           "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
           "usage_notes": "出典と提供元を表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-023",
+      "images": [
+        {
+          "id": "20261125-023-I01",
+          "type": "photo",
+          "title": "2024年5月のオーロラ",
+          "caption": "資料写真：2024年5月11日、米国サウスカロライナ州で観測されたオーロラ。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/May_2024_Aurora_SC.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:May_2024_Aurora_SC.jpg",
+          "credit": "SpacePod9",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-024",
+      "images": [
+        {
+          "id": "20261125-024-I01",
+          "type": "photo",
+          "title": "1959年のフィデル・カストロ",
+          "caption": "資料写真：1959年、米国を訪れたフィデル・カストロ。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/FidelCastro.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:FidelCastro.jpg",
+          "credit": "U.S. News & World Report / Library of Congress",
+          "license": "Public Domain",
+          "license_url": "https://www.loc.gov/rr/print/res/078_usnw.html",
+          "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261125-026",
+      "images": [
+        {
+          "id": "20261125-026-I01",
+          "type": "photo",
+          "title": "秋吉台の山焼き",
+          "caption": "資料写真：2011年2月26日、山口県の秋吉台で行われた山焼き。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Akiyoshidai_open_burning.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Akiyoshidai_open_burning.jpg",
+          "credit": "Tu-ka-pon",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
       "related": []
