@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 6,
+  "question_count": 7,
   "related_count": 13,
-  "image_count": 20,
+  "image_count": 21,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -372,6 +372,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261126-007",
+      "images": [
+        {
+          "id": "20261126-007-I01",
+          "type": "map",
+          "title": "オマーンの位置",
+          "caption": "資料地図：アラビア半島の南東にあるオマーンを緑色で示しています。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/LocationOman.png",
+          "source_url": "https://commons.wikimedia.org/wiki/File:LocationOman.png",
+          "credit": "Vardion",
+          "license": "Public domain (PD-user)",
+          "license_url": "https://commons.wikimedia.org/wiki/File:LocationOman.png",
+          "usage_notes": "作者によるパブリックドメインへの提供。商用利用可能。"
+        }
+      ],
+      "related": []
     }
   ]
 }
