@@ -23,6 +23,25 @@
       "related": []
     },
     {
+      "question_id": "20261110-002",
+      "images": [
+        {
+          "id": "20261110-002-I01",
+          "type": "photo",
+          "title": "G7外相の会合",
+          "caption": "資料写真：2025年9月にニューヨークで開かれたG7外相の会合。今回の会合とは異なります。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/2025_G7_Foreign_Ministers_working_dinner_in_New_York_City%2C_New_York_on_22_September.jpg/960px-2025_G7_Foreign_Ministers_working_dinner_in_New_York_City%2C_New_York_on_22_September.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2025_G7_Foreign_Ministers_working_dinner_in_New_York_City%2C_New_York_on_22_September.jpg",
+          "credit": "U.S. Department of State / Freddie Everett",
+          "license": "Public Domain (US government)",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
+        }
+      ],
+      "related": []
+    },
+    {
       "question_id": "20261110-003",
       "images": [
         {
@@ -42,7 +61,7 @@
       "related": []
     }
   ],
-  "question_count": 2,
+  "question_count": 3,
   "related_count": 0,
-  "image_count": 2
+  "image_count": 3
 }
