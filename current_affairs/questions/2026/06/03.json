@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-03",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260603-001",
@@ -30,6 +30,35 @@
         {
           "name": "厚生労働省",
           "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/geppo/nengai25/dl/gaikyouR7houdou.pdf"
+        }
+      ]
+    },
+    {
+      "id": "20260603-002",
+      "news_date": "2026-06-03",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "台風6号が紀伊（きい）半島に上陸",
+      "news_summary": "台風6号の影響で新しいレベル5の警報が発表された。",
+      "question": "2026年6月3日、台風6号が紀伊半島に上陸し、新しい防災気象情報の運用開始後、初のレベル5氾濫（はんらん）特別警報が出されました。\n\n日本付近の台風は何という海上の低気圧が発達したものですか？",
+      "choices": [
+        "温帯低気圧",
+        "移動性高気圧",
+        "熱帯低気圧",
+        "太平洋高気圧"
+      ],
+      "correct_index": 2,
+      "explanation": "台風は北西太平洋などで発生した熱帯低気圧のうち、最大風速が一定の強さ以上になったものです。暖かい海から水蒸気を取りこみ発達します。強い風や大雨をもたらすため、早めに防災情報を確認することが大切です。",
+      "keywords": [
+        "台風",
+        "熱帯低気圧",
+        "防災"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/11174"
         }
       ]
     }

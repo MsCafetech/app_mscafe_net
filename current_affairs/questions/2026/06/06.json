@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-06",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260606-001",
+      "news_date": "2026-06-06",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "飛鳥（あすか）・藤原の宮都の世界遺産登録勧告（かんこく）",
+      "news_summary": "世界文化遺産への登録を勧める判断が示された。",
+      "question": "2026年6月6日、ユネスコの専門機関が、飛鳥・藤原の宮都を世界文化遺産に登録するよう勧告しました。\n\n飛鳥・藤原の宮都がある都道府県はどこですか？",
+      "choices": [
+        "京都府",
+        "大阪府",
+        "滋賀県",
+        "奈良県（ならけん）"
+      ],
+      "correct_index": 3,
+      "explanation": "飛鳥・藤原の宮都は奈良県にあります。飛鳥時代から藤原京にかけての宮殿（きゅうでん）や寺院などの遺跡（いせき）が残り、古代日本の国づくりの過程を伝えています。登録を勧める判断と正式な登録決定は別の段階です。",
+      "keywords": [
+        "飛鳥（あすか）",
+        "藤原京",
+        "世界遺産"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/11174"
+        }
+      ]
+    }
+  ]
+}

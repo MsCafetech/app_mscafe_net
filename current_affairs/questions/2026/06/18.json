@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-18",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260618-001",
+      "news_date": "2026-06-18",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日経平均株価が終値で初の7万円突破（とっぱ）",
+      "news_summary": "東京株式市場の代表的な株価指数が最高値を更新した。",
+      "question": "2026年6月18日、日経平均株価の終値が初めて7万円をこえました。日経平均株価は東京の株式市場の動きを知るための指標です。\n\n株式を買うと、一般にどのような立場になりますか？",
+      "choices": [
+        "国会議員",
+        "銀行の預金者",
+        "会社の出資者",
+        "会社の取引先"
+      ],
+      "correct_index": 2,
+      "explanation": "株式は会社が資金を集めるために発行します。株式を持つ人を株主と呼び、会社の利益の一部を配当として受け取れる場合があります。株価は会社の業績や経済の見通しなどによって変化します。",
+      "keywords": [
+        "日経平均株価",
+        "株式",
+        "株主"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/11174"
+        }
+      ]
+    }
+  ]
+}

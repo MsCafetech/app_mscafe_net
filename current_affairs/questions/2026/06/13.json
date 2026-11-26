@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-13",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20260613-001",
+      "news_date": "2026-06-13",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "天皇皇后両陛下（りょうへいか）がオランダ・ベルギー訪問へ",
+      "news_summary": "両陛下がヨーロッパの2か国を訪問するため日本を出発した。",
+      "question": "2026年6月13日、天皇皇后両陛下がオランダとベルギーを公式訪問するため、日本を出発されました。\n\nオランダの首都はどこですか？",
+      "choices": [
+        "アムステルダム",
+        "ブリュッセル",
+        "ベルリン",
+        "ウィーン"
+      ],
+      "correct_index": 0,
+      "explanation": "オランダの首都はアムステルダムです。オランダはヨーロッパ西部の北海に面する国で、低地が多く、水を管理する技術が発達しています。江戸時代には長崎の出島を通じて日本と貿易を行っていました。",
+      "keywords": [
+        "オランダ",
+        "アムステルダム",
+        "出島"
+      ],
+      "sources": [
+        {
+          "name": "宮内庁",
+          "url": "https://www.kunaicho.go.jp/watch/activity/imperial-family-activity-01/info/nld-bel1.html"
+        }
+      ]
+    },
+    {
+      "id": "20260613-002",
+      "news_date": "2026-06-13",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "天皇皇后両陛下（りょうへいか）のベルギー訪問へ",
+      "news_summary": "オランダとベルギーへの公式訪問が始まった。",
+      "question": "2026年6月13日、天皇皇后両陛下がオランダとベルギーへの公式訪問に出発されました。ベルギーにはヨーロッパ連合の主要な機関があります。\n\nベルギーの首都はどこですか？",
+      "choices": [
+        "パリ",
+        "ブリュッセル",
+        "ローマ",
+        "マドリード"
+      ],
+      "correct_index": 1,
+      "explanation": "ベルギーの首都はブリュッセルです。ヨーロッパ連合（EU）の主要な機関が置かれており、ヨーロッパの国際政治の中心の一つです。ベルギーではオランダ語やフランス語、ドイツ語が公用語になっています。",
+      "keywords": [
+        "ベルギー",
+        "ブリュッセル",
+        "EU"
+      ],
+      "sources": [
+        {
+          "name": "宮内庁",
+          "url": "https://www.kunaicho.go.jp/watch/activity/imperial-family-activity-01/info/nld-bel1.html"
+        }
+      ]
+    }
+  ]
+}
