@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-23",
   "language": "ja",
-  "question_count": 9,
+  "question_count": 12,
   "related_count": 21,
-  "image_count": 31,
+  "image_count": 34,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -21,6 +21,63 @@
           "license": "CC BY-SA 2.0",
           "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
           "usage_notes": "CC BY-SA 2.0。提供者「IAEA Imagebank」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261123-007",
+      "images": [
+        {
+          "id": "20261123-007-I01",
+          "type": "photo",
+          "title": "国会議事堂",
+          "caption": "資料写真：日本の国会議事堂。国の安全保障に関する政策も議論されます。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/National_Diet_Building%28in_2025%29.jpg/960px-National_Diet_Building%28in_2025%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_Building(in_2025).jpg",
+          "credit": "緑さん",
+          "license": "Public Domain (PD-self)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "usage_notes": "著作権者が全世界でパブリックドメインに提供。出典を表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261123-008",
+      "images": [
+        {
+          "id": "20261123-008-I01",
+          "type": "photo",
+          "title": "財務省の建物",
+          "caption": "資料写真：東京の財務省。国の予算や財政を担当する役所です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Ministry_of_Finance_Building_%28Japan%29.jpg/960px-Ministry_of_Finance_Building_%28Japan%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ministry_of_Finance_Building_(Japan).jpg",
+          "credit": "Kakidai",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像を配布する場合は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261123-009",
+      "images": [
+        {
+          "id": "20261123-009-I01",
+          "type": "photo",
+          "title": "ネパールの地震被害",
+          "caption": "資料写真：2015年のネパール地震で被害を受けた建物を、インド空軍のヘリコプターから撮影したものです。今回の支援発表時の写真ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/An_aerial_view_of_damaged_houses_occurred_due_to_a_recent_massive_earthquake_in_Nepal%2C_taken_by_the_Indian_Air_Force_%28IAF%29_helicopter_on_its_way_to_Dhadhing.jpg/960px-An_aerial_view_of_damaged_houses_occurred_due_to_a_recent_massive_earthquake_in_Nepal%2C_taken_by_the_Indian_Air_Force_%28IAF%29_helicopter_on_its_way_to_Dhadhing.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_damaged_houses_occurred_due_to_a_recent_massive_earthquake_in_Nepal,_taken_by_the_Indian_Air_Force_(IAF)_helicopter_on_its_way_to_Dhadhing.jpg",
+          "credit": "Ministry of Defence, Government of India (PIB)",
+          "license": "GODL-India",
+          "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+          "usage_notes": "提供元・出典URL・ライセンスを表示。政府による推奨を示唆しない。"
         }
       ],
       "related": []
