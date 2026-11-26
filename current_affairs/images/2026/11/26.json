@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 2,
-  "related_count": 7,
-  "image_count": 10,
+  "related_count": 9,
+  "image_count": 12,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -180,6 +180,42 @@
               "license": "CC BY 4.0",
               "license_url": "https://creativecommons.org/licenses/by/4.0/",
               "usage_notes": "出典・著作者・ライセンスを表示し変更を明記。紙幣見本の表示を保持。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-002-R01",
+          "images": [
+            {
+              "id": "20261126-002-R01-I01",
+              "type": "photo",
+              "title": "日本のスーパーマーケット",
+              "caption": "資料写真：商品と値札が並ぶ店内。物価は買い物にかかる費用に関係する。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
+              "credit": "Yuya Tamai",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-002-R03",
+          "images": [
+            {
+              "id": "20261126-002-R03-I01",
+              "type": "photo",
+              "title": "銀行のATM",
+              "caption": "資料写真：振りこみなどに使う銀行のATM。銀行間の決済そのものを撮影した写真ではない。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/%E4%B8%89%E4%BA%95%E4%BD%8F%E5%8F%8B%E9%8A%80%E8%A1%8CATM.JPG/960px-%E4%B8%89%E4%BA%95%E4%BD%8F%E5%8F%8B%E9%8A%80%E8%A1%8CATM.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E4%BA%95%E4%BD%8F%E5%8F%8B%E9%8A%80%E8%A1%8CATM.JPG",
+              "credit": "Autumn Snake（おぉたむすねィく探検隊・大原佳苗）",
+              "license": "CC BY-SA 2.5",
+              "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。改変物は同一または互換ライセンスで配布。"
             }
           ]
         }
