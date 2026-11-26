@@ -3,8 +3,8 @@
   "date": "2026-11-23",
   "language": "ja",
   "question_count": 12,
-  "related_count": 35,
-  "image_count": 48,
+  "related_count": 37,
+  "image_count": 50,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -42,7 +42,26 @@
           "usage_notes": "著作権者が全世界でパブリックドメインに提供。出典を表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261123-007-R01",
+          "images": [
+            {
+              "id": "20261123-007-R01-I01",
+              "type": "photo",
+              "title": "NPT再検討会議",
+              "caption": "資料写真：2022年8月1日、国連で開かれたNPT再検討会議。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Secretary_Blinken_Delivers_an_Address_at_the_NPT_Review_Conference_%2852257532575%29.jpg/960px-Secretary_Blinken_Delivers_an_Address_at_the_NPT_Review_Conference_%2852257532575%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Secretary_Blinken_Delivers_an_Address_at_the_NPT_Review_Conference_%2852257532575%29.jpg",
+              "credit": "U.S. Department of State / Ron Przysucha",
+              "license": "Public Domain (US government work)",
+              "license_url": "https://www.law.cornell.edu/uscode/text/17/105",
+              "usage_notes": "米国政府著作物。出典を表示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261123-008",
@@ -771,6 +790,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。2015年撮影の資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-017-R02",
+          "images": [
+            {
+              "id": "20261123-017-R02-I01",
+              "type": "map",
+              "title": "アメリカ合衆国の地理地図",
+              "caption": "資料地図：西には太平洋、東には大西洋が広がっています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/US_map_-_geographic.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:US_map_-_geographic.png",
+              "credit": "US Department of Interior",
+              "license": "Public Domain (US government work)",
+              "license_url": "https://www.law.cornell.edu/uscode/text/17/105",
+              "usage_notes": "米国政府著作物。出典を表示。"
             }
           ]
         }
