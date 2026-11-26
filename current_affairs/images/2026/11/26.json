@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 7,
+  "question_count": 8,
   "related_count": 13,
-  "image_count": 21,
+  "image_count": 22,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -388,6 +388,25 @@
           "license": "Public domain (PD-user)",
           "license_url": "https://commons.wikimedia.org/wiki/File:LocationOman.png",
           "usage_notes": "作者によるパブリックドメインへの提供。商用利用可能。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-008",
+      "images": [
+        {
+          "id": "20261126-008-I01",
+          "type": "photo",
+          "title": "衆議院の本会議場",
+          "caption": "資料写真：衆議院議員が集まり、法律案などを話し合って採決する本会議場。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/House_of_Representatives_of_Japan_2025-04-18_%282%29.jpg/960px-House_of_Representatives_of_Japan_2025-04-18_%282%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:House_of_Representatives_of_Japan_2025-04-18_(2).jpg",
+          "credit": "DimensionalFusion",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更があれば明示する。"
         }
       ],
       "related": []
