@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261126-001",
@@ -35,6 +35,43 @@
         {
           "name": "日テレNEWS（ライブドアニュース）",
           "url": "https://news.livedoor.com/article/detail/32902737/"
+        }
+      ]
+    },
+    {
+      "id": "20261126-002",
+      "news_date": "2026-11-26",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "related_knowledge",
+      "news_title": "日本銀行の委員が政策金利について講演（こうえん）",
+      "news_summary": "日本銀行の委員が山梨県で講演（こうえん）し、政策金利を中立水準に早く近づける必要があるとの考えを示しました。",
+      "question": "2026年11月26日、日本銀行の田村委員は山梨県で講演し、政策金利について考えを述べました。日本銀行は物価や景気を見ながら、金融政策（きんゆうせいさく）を行います。\n\n日本銀行は金利の調整に加えて、次のうちどの仕事を行っていますか。",
+      "choices": [
+        "国の税率を決める",
+        "国会の予算を議決する",
+        "銀行券を発行する",
+        "市町村の公共工事を決める"
+      ],
+      "correct_index": 2,
+      "explanation": "日本銀行は日本の中央銀行で、銀行券を発行する仕事を行っています。銀行券とは一万円札などのお札のことです。日本銀行には、物価の安定を目指して金融政策を行うことや、銀行どうしのお金の受けわたしを支える役割もあります。",
+      "keywords": [
+        "日本銀行",
+        "金融政策（きんゆうせいさく）",
+        "銀行券"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（神戸新聞）",
+          "url": "https://www.kobe-np.co.jp/news/zenkoku/compact/202611/0021074571.shtml"
+        },
+        {
+          "name": "日本銀行",
+          "url": "https://www.boj.or.jp/about/press/koen_2026/ko261126a.htm"
+        },
+        {
+          "name": "日本銀行",
+          "url": "https://www.boj.or.jp/note_tfjgs/note/outline/"
         }
       ]
     }
