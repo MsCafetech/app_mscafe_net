@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-12",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260512-001",
@@ -34,6 +34,35 @@
         {
           "name": "衆議院 国土交通委員会会議録",
           "url": "https://www.shugiin.go.jp/internet/itdb_kaigiroku.nsf/html/kaigiroku/009922120260415005.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260512-002",
+      "news_date": "2026-05-12",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "category": "international",
+      "news_title": "OECD事務総長と外務大臣が会談",
+      "news_summary": "日本とOECDが今後の協力について話し合った。",
+      "question": "2026年5月12日、日本の外務大臣は、来日したOECDのコーマン事務総長と会談しました。自由貿易や経済安全保障（ほしょう）などの分野で協力を強めることを確認しました。\n\nOECDの日本語名は何ですか？",
+      "choices": [
+        "世界保健機関",
+        "国際労働機関",
+        "経済協力開発機構（きこう）",
+        "国際原子力機関"
+      ],
+      "correct_index": 2,
+      "explanation": "OECDは経済協力開発機構の略称（りゃくしょう）です。加盟国（かめいこく）が経済や教育、環境（かんきょう）などの政策について協力し、調査や情報交換を行う国際組織です。日本は1964年に加盟しました。",
+      "keywords": [
+        "OECD",
+        "国際組織",
+        "経済協力"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_03715.html"
         }
       ]
     }

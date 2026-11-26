@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-01",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260501-001",
@@ -34,6 +34,35 @@
         {
           "name": "国立水俣病総合研究センター",
           "url": "https://nimd.env.go.jp/archives/faq/"
+        }
+      ]
+    },
+    {
+      "id": "20260501-002",
+      "news_date": "2026-05-01",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "category": "economy",
+      "news_title": "UAEがOPECから脱退（だったい）",
+      "news_summary": "アラブ首長国連邦（れんぽう）が石油輸出国の組織から離れた。",
+      "question": "2026年5月1日、アラブ首長国連邦（れんぽう）（UAE）が、4月28日の発表に基づきOPECとOPECプラスから脱退しました。原油を生産する国々の協力のあり方に関わる出来事です。\n\nOPECの日本語名は何ですか？",
+      "choices": [
+        "世界貿易機関",
+        "石油輸出国機構（きこう）",
+        "国際通貨基金",
+        "経済協力開発機構"
+      ],
+      "correct_index": 1,
+      "explanation": "OPECは石油を輸出する国々が石油政策について協力するための組織です。1960年に設立されました。日本は原油の多くを海外から輸入しているため、産油国の政策や原油価格の変化は日本の生活にも関係します。",
+      "keywords": [
+        "OPEC",
+        "UAE",
+        "原油"
+      ],
+      "sources": [
+        {
+          "name": "JOGMEC",
+          "url": "https://journal.jogmec.go.jp/oilgas/info-reports/info-reports_02132.html"
         }
       ]
     }
