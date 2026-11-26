@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-24",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 2,
+  "question_count": 2,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261024-001",
@@ -43,6 +43,34 @@
             {
               "name": "日本パラスポーツ協会 ジャパンパラ競技大会 クラス分けとは",
               "url": "https://www.parasports.or.jp/japanpara/class.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261024-002",
+      "related": [
+        {
+          "id": "20261024-002-R01",
+          "relation_type": "question",
+          "title": "象徴天皇と国事行為",
+          "description": "日本国憲法の第1条では、天皇は日本の国と国民のまとまりを表す象徴（しょうちょう）とされています。国の政治を決める力は国民にあり、天皇が自分の判断で法律や政策を決めることはありません。憲法が定める国事行為（こくじこうい）には、国会が指名した内閣総理大臣を任命することや、成立した法律を国民に知らせることなどがあります。国事行為には内閣の助言と承認が必要で、その責任は内閣が負います。天皇の役割と政治を決める権限を区別することが、国民主権を理解する上で大切です。",
+          "relationship": "皇位を定める憲法第2条と合わせて、天皇の地位や国事行為を理解する。",
+          "keywords": [
+            "象徴天皇",
+            "国事行為",
+            "国民主権",
+            "日本国憲法"
+          ],
+          "sources": [
+            {
+              "name": "宮内庁 天皇",
+              "url": "https://www.kunaicho.go.jp/learn/institution/seido/seido01.html"
+            },
+            {
+              "name": "衆議院 日本国憲法",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
             }
           ]
         }
