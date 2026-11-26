@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 10,
+  "question_count": 11,
   "questions": [
     {
       "id": "20261126-001",
@@ -337,6 +337,36 @@
         {
           "name": "読売新聞オンライン（ライブドアニュース）",
           "url": "https://news.livedoor.com/article/detail/32911149/"
+        }
+      ]
+    },
+    {
+      "id": "20261126-011",
+      "news_date": "2026-11-26",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "オーストラリア上院が天然ガス輸出規制法案を可決",
+      "news_summary": "オーストラリア上院が国内への天然ガス供給を優先する法案を可決しました。",
+      "question": "2026年11月26日、オーストラリアの上院は、液化天然ガス（LNG）の輸出業者に国内向けの供給を求める法案を可決しました。日本のエネルギー調達にも関係する動きです。\n\nLNGは何を冷やして液体にしたものですか。",
+      "choices": [
+        "原油",
+        "天然ガス",
+        "石炭",
+        "水素"
+      ],
+      "correct_index": 1,
+      "explanation": "LNGはメタンを主成分とする天然ガスを冷やして液体にした燃料です。気体のときより体積が小さくなるため、専用の船で大量に運ぶことができます。日本は天然ガスの多くを輸入に頼り（たより）、火力発電や都市ガスなどに利用しています。",
+      "keywords": [
+        "LNG",
+        "液化天然ガス",
+        "オーストラリア",
+        "エネルギー"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（熊本日日新聞）",
+          "url": "https://kumanichi.com/articles/2062295"
         }
       ]
     }
