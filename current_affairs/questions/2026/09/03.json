@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-03",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260903-001",
+      "news_date": "2026-09-03",
+      "category": "science",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "イグ・ノーベル賞で日本人が20年連続受賞",
+      "news_summary": "鼻のかみ方を科学的に研究した海野徳二（うんのとくじ）氏が医学賞を受賞しました。",
+      "question": "2026年9月3日、スイスでイグ・ノーベル賞の授賞式（じゅしょうしき）が行われ、鼻のかみ方を科学的に研究した日本人が医学賞を受賞しました。日本人の受賞は20年連続となりました。\n\nイグ・ノーベル賞は、どのような研究に贈（おく）られる賞ですか。",
+      "choices": [
+        "世界で最も多くの特許を取った研究",
+        "人を笑わせ、さらに考えさせる研究",
+        "最も高い費用をかけた研究",
+        "学校の教科書を作るための研究"
+      ],
+      "correct_index": 1,
+      "explanation": "イグ・ノーベル賞は、思わず笑ってしまうような発想から、人々に考えるきっかけを与える研究などを表彰（ひょうしょう）する賞です。1991年に始まりました。身近な疑問（ぎもん）を観察や実験によって調べることも、科学の大切な第一歩です。",
+      "keywords": [
+        "イグ・ノーベル賞",
+        "科学",
+        "医学賞"
+      ],
+      "sources": [
+        {
+          "name": "イグ・ノーベル賞公式",
+          "url": "https://improbable.com/ig/winners/"
+        },
+        {
+          "name": "旭川医科大学",
+          "url": "https://www.asahikawa-med.ac.jp/newstopics/single/post_886.html"
+        },
+        {
+          "name": "TBS",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2920070?display=1"
+        }
+      ]
+    }
+  ]
+}
