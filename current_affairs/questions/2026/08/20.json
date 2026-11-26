@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-20",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20260820-001",
+      "news_date": "2026-08-20",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "火星衛星（えいせい）探査機（たんさき）MMXの打ち上げ計画発表",
+      "news_summary": "JAXAがH3ロケット10号機によるMMXの打ち上げ計画を公表した。",
+      "question": "2026年8月20日、JAXAはH3ロケット10号機で火星衛星探査機MMXを打ち上げる計画を発表しました。火星とその衛星について調べる計画です。\n\n火星は太陽に近い方から数えて何番目の惑星（わくせい）ですか？",
+      "choices": [
+        "2番目",
+        "3番目",
+        "4番目",
+        "5番目"
+      ],
+      "correct_index": 2,
+      "explanation": "太陽に近い方から水星、金星、地球、火星の順に並びます。火星にはフォボスとダイモスという二つの衛星があります。火星やその衛星を調べる研究は、太陽系の天体がどのようにできたかを考える手がかりになります。",
+      "keywords": [
+        "火星",
+        "MMX",
+        "太陽系"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/"
+        }
+      ]
+    },
+    {
+      "id": "20260820-002",
+      "news_date": "2026-08-20",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "MMXの打ち上げ計画と火星の衛星（えいせい）",
+      "news_summary": "JAXAが火星衛星探査機の打ち上げ計画を公表した。",
+      "question": "2026年8月20日、JAXAは火星衛星探査機（たんさき）MMXの打ち上げ計画を発表しました。惑星（わくせい）の周りを回る天体を調べる計画です。\n\n地球の自然の衛星はどれですか？",
+      "choices": [
+        "太陽",
+        "月",
+        "金星",
+        "火星"
+      ],
+      "correct_index": 1,
+      "explanation": "衛星とは惑星などの周りを回る天体です。月は地球の自然の衛星であり、火星にはフォボスとダイモスがあります。人間が作って宇宙に打ち上げた人工衛星とは区別して考えることができます。",
+      "keywords": [
+        "MMX",
+        "衛星（えいせい）",
+        "月"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/"
+        }
+      ]
+    }
+  ]
+}
