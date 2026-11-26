@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261114-001",
+      "images": [
+        {
+          "id": "20261114-001-I01",
+          "type": "photo",
+          "title": "米国の空港",
+          "caption": "資料写真：シカゴのオヘア国際空港に並ぶ飛行機。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/OHareAirportAirplanes.jpg/960px-OHareAirportAirplanes.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:OHareAirportAirplanes.jpg",
+          "credit": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "出典を表示。商用利用可能。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1
+}
