@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-16",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
+  "question_count": 2,
+  "related_count": 2,
   "questions": [
     {
       "question_id": "20261016-001",
@@ -24,6 +24,29 @@
             {
               "name": "気象庁・震度・マグニチュード・地震情報について",
               "url": "https://www.jma.go.jp/jma/kishou/know/faq/faq27.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261016-002",
+      "related": [
+        {
+          "id": "20261016-002-R01",
+          "relation_type": "question",
+          "title": "食品ロスを減らす取り組み",
+          "description": "食品ロスとは、食べることができるのに捨てられてしまう食べ物のことです。日本では毎年10月を食品ロス削減（さくげん）月間とし、10月30日を食品ロス削減の日としています。店や飲食店では、食品の売れ残りや食べ残しを減らす取り組みが進められています。企業が余った食品を必要とする人に届けるために寄付する活動もあります。家庭でも、買い物の前に家にある食材を確認したり、食べ切れる量だけ料理を作ったりすることで、食べ物をむだにしない工夫ができます。",
+          "relationship": "世界食料デーに関連して日本の食品ロス対策を学ぶ。",
+          "keywords": [
+            "食品ロス",
+            "食品ロス削減月間",
+            "食品寄付"
+          ],
+          "sources": [
+            {
+              "name": "農林水産省・食品ロス・食品リサイクル",
+              "url": "https://www.maff.go.jp/j/shokusan/recycle/syoku_loss/"
             }
           ]
         }
