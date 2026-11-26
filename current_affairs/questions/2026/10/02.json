@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20261002-001",
+      "news_date": "2026-10-02",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "G7が石油備蓄（せきゆびちく）の協調放出に合意",
+      "news_summary": "主要7か国が燃料価格の高まりに対応するため石油備蓄を協力して放出する方針を決めた。",
+      "question": "2026年10月2日、主要7か国（G7）はオンライン会議で、石油の供給を安定させるために備蓄を協力して放出することを決めました。\n\n石油備蓄を行う主な目的は何ですか？",
+      "choices": [
+        "石油の輸入を永久に禁止するため",
+        "石油をすべて海外に売るため",
+        "供給が不足したときに備えるため",
+        "石油の使用を義務付けるため"
+      ],
+      "correct_index": 2,
+      "explanation": "日本は使う石油の多くを海外から輸入しています。戦争や災害などで輸入が難しくなったときに備え、国や民間の会社は石油を保管しています。必要なときに放出することで、燃料の不足や価格の急な上昇（じょうしょう）をやわらげることができます。",
+      "keywords": [
+        "G7",
+        "石油備蓄（せきゆびちく）",
+        "エネルギー"
+      ],
+      "sources": [
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04250.html"
+        },
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_international/articles/000537623.html"
+        }
+      ]
+    }
+  ]
+}
