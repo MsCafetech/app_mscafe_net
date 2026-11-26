@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261021-001",
+      "related": [
+        {
+          "id": "20261021-001-R01",
+          "relation_type": "question",
+          "title": "稲むらの火と広村堤防",
+          "description": "江戸時代の1854年、安政（あんせい）南海地震による津波が現在の和歌山県広川町をおそいました。浜口梧陵（はまぐちごりょう）は積み上げた稲に火をつけ、夜の暗さで逃げ道が分からなくなった人々を高台へ導きました。その後、自分のお金を使って高さ約5メートル、長さ約600メートルの堤防（ていぼう）を造り、工事に村人を雇うことで生活の立て直しも支えました。この堤防は1946年の南海地震でも役立ちました。この故事にちなみ、旧暦（きゅうれき）の地震発生日である11月5日が世界津波の日になりました。",
+          "relationship": "世界津波の日の由来と災害後の復興を学ぶ。",
+          "keywords": [
+            "稲むらの火",
+            "浜口梧陵",
+            "安政南海地震",
+            "広村堤防"
+          ],
+          "sources": [
+            {
+              "name": "内閣府 防災白書",
+              "url": "https://www.bousai.go.jp/kaigirep/hakusho/h17/bousai2005/html/honmon/hm100303.htm"
+            },
+            {
+              "name": "新潟県 世界津波の日の由来",
+              "url": "https://www.pref.niigata.lg.jp/site/tsunami2022/yurai.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "question_count": 1,
+  "related_count": 1
+}
