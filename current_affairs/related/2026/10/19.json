@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "questions": [
+    {
+      "question_id": "20261019-001",
+      "related": [
+        {
+          "id": "20261019-001-R01",
+          "relation_type": "question",
+          "title": "春闘と労使交渉のしくみ",
+          "description": "働く人が受け取る給料や休みなどの条件について、働く人の代表と会社が話し合うことを労使交渉（ろうしこうしょう）といいます。日本では毎年春になると、多くの労働組合が給料を上げるよう会社に求めます。この取り組みは春闘（しゅんとう）と呼ばれます。全国の労働組合をまとめる連合や、会社側の経済団体である経団連は、それぞれ交渉の方針を示します。実際の話し合いは各会社などで行われ、大きな会社の結果が中小企業（ちゅうしょうきぎょう）の交渉の参考になることもあります。",
+          "relationship": "経団連が企業側の立場から労使交渉に関わるしくみを学ぶ。",
+          "keywords": [
+            "春闘",
+            "労働組合",
+            "経団連",
+            "連合",
+            "賃金"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省・令和7年版 労働経済の分析",
+              "url": "https://www.mhlw.go.jp/stf/wp/hakusyo/roudou/25/1-3.html"
+            },
+            {
+              "name": "厚生労働省・春闘",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudouseisaku/shuntou/index.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
