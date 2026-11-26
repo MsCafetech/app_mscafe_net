@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 15,
-  "related_count": 34,
-  "image_count": 49,
+  "related_count": 38,
+  "image_count": 53,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -86,6 +86,24 @@
               "type": "photo",
               "title": "国会議事堂",
               "caption": "資料写真：首都機能の一つである国会の議事堂。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
+              "credit": "Ayumu Ozaki",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-011-R03",
+          "images": [
+            {
+              "id": "20261125-011-R03-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：首都機能の移転を考える際に対象となる国会議事堂。",
               "is_reference": true,
               "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
               "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
@@ -577,6 +595,42 @@
               "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物を配布する場合は同一または互換ライセンスを適用。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-018-R01",
+          "images": [
+            {
+              "id": "20261125-018-R01-I01",
+              "type": "photo",
+              "title": "アメリカのスーパーマーケット",
+              "caption": "資料写真：個人消費の対象となる商品が並ぶ店。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Grocery_Store_Aisle%2C_vermont.jpg/960px-Grocery_Store_Aisle%2C_vermont.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Grocery_Store_Aisle,_vermont.jpg",
+              "credit": "Tessa Bury",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示。加工した場合は変更内容を明記。提供者がアプリを推奨していると誤解させないこと。960px縮小版を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-018-R02",
+          "images": [
+            {
+              "id": "20261125-018-R02-I01",
+              "type": "photo",
+              "title": "アメリカのスーパーマーケット",
+              "caption": "資料写真：物価指数の対象となる食品が並ぶ店。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Grocery_Store_Aisle%2C_vermont.jpg/960px-Grocery_Store_Aisle%2C_vermont.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Grocery_Store_Aisle,_vermont.jpg",
+              "credit": "Tessa Bury",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示。加工した場合は変更内容を明記。提供者がアプリを推奨していると誤解させないこと。960px縮小版を使用。"
+            }
+          ]
         }
       ]
     },
@@ -680,6 +734,24 @@
               "type": "photo",
               "title": "スマートフォン",
               "caption": "資料写真：SNSを利用する端末の一例。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Smart-Phone.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Smart-Phone.jpg",
+              "credit": "Ka Kit Pang",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-020-R02",
+          "images": [
+            {
+              "id": "20261125-020-R02-I01",
+              "type": "photo",
+              "title": "スマートフォン",
+              "caption": "資料写真：ネット上のいじめが起きることもある通信端末。",
               "is_reference": true,
               "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Smart-Phone.jpg",
               "source_url": "https://commons.wikimedia.org/wiki/File:Smart-Phone.jpg",
