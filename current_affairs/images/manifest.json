@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-11-27T05:15:15.261+09:00",
+  "last_updated": "2026-11-27T06:34:24.848+09:00",
   "language": "ja",
-  "total_questions": 159,
+  "total_questions": 160,
   "total_related": 150,
-  "total_images": 311,
+  "total_images": 312,
   "total_files": 76,
   "files": [
     {
       "date": "2026-11-26",
       "path": "2026/11/26.json",
-      "revision": 11,
-      "question_count": 5,
+      "revision": 12,
+      "question_count": 6,
       "related_count": 12,
-      "image_count": 18
+      "image_count": 19
     },
     {
       "date": "2026-11-25",
