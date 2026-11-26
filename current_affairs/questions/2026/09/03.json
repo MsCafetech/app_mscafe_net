@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-03",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260903-001",
@@ -38,6 +38,39 @@
         {
           "name": "TBS",
           "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2920070?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20260903-002",
+      "news_date": "2026-09-03",
+      "category": "history_culture",
+      "difficulty": 1,
+      "question_type": "current_affairs",
+      "news_title": "彦根城（ひこねじょう）が世界文化遺産（いさん）の国内推薦（すいせん）候補に選ばれる",
+      "news_summary": "2028年の世界文化遺産登録を目指す彦根城が国内推薦候補に選ばれました。",
+      "question": "2026年9月3日、国の文化審議会（しんぎかい）は、2028年の世界文化遺産登録を目指す国内推薦候補に彦根城を選びました。\n\n彦根城がある都道府県はどこですか。",
+      "choices": [
+        "奈良県（ならけん）",
+        "滋賀県（しがけん）",
+        "兵庫県",
+        "岐阜県（ぎふけん）"
+      ],
+      "correct_index": 1,
+      "explanation": "彦根城は滋賀県彦根市にあり、琵琶湖（びわこ）の近くに位置します。江戸（えど）時代の大名による政治の仕組みを今に伝える貴重な城です。世界遺産への登録にはユネスコによる審査（しんさ）などが必要であり、国内推薦候補に選ばれただけでは登録は決まりません。",
+      "keywords": [
+        "彦根城",
+        "滋賀県",
+        "世界文化遺産"
+      ],
+      "sources": [
+        {
+          "name": "滋賀県",
+          "url": "https://www.pref.shiga.lg.jp/sd00/press-release/32998.html"
+        },
+        {
+          "name": "彦根市",
+          "url": "https://www.city.hikone.lg.jp/kakuka/kanko_bunka/7/2_1/30825.html"
         }
       ]
     }
