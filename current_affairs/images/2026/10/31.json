@@ -39,10 +39,29 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261031-002-R02",
+          "images": [
+            {
+              "id": "20261031-002-R02-I01",
+              "type": "photo",
+              "title": "国際協力による救援物資の仕分け",
+              "caption": "資料写真：2005年1月4日、インドネシアで米国の海兵隊や現地の軍、国際支援団体の人々が津波の救援物資を仕分けする様子。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/US_Navy_050104-M-9792P-027_U.S._Marines_work_with_Indonesian_Military_personnel_and_International_Aid_workers_to_sort_and_distribute_humanitarian_relief_supplies_stored_in_a_warehouse_at_Palonia_Air_Field_in_Medan%2C_Indonesia.jpg/960px-thumbnail.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:US_Navy_050104-M-9792P-027_U.S._Marines_work_with_Indonesian_Military_personnel_and_International_Aid_workers_to_sort_and_distribute_humanitarian_relief_supplies_stored_in_a_warehouse_at_Palonia_Air_Field_in_Medan%2C_Indonesia.jpg",
+              "credit": "Andreas A. Plaza / U.S. Marine Corps",
+              "license": "Public Domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Marines",
+              "usage_notes": "提供元と出典を表示。2022年の指針に基づく活動ではなく、過去の災害支援の資料写真。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 2,
-  "related_count": 0,
-  "image_count": 2
+  "related_count": 1,
+  "image_count": 3
 }
