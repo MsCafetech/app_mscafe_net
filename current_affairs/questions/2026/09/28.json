@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-28",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260928-001",
@@ -30,6 +30,35 @@
         {
           "name": "水産庁",
           "url": "https://www.jfa.maff.go.jp/j/press/kenkyu/260928_1.html"
+        }
+      ]
+    },
+    {
+      "id": "20260928-002",
+      "news_date": "2026-09-28",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "東京大学で初の女性学長を選出",
+      "news_summary": "東京大学は次期学長に藤垣裕子（ふじがきゆうこ）教授を選びました。",
+      "question": "2026年9月28日、東京大学は次期学長に藤垣裕子（ふじがきゆうこ）教授を選びました。同大学で初の女性学長となります。\n\n男女が性別にかかわらず社会のさまざまな分野で活やくできる社会を何といいますか。",
+      "choices": [
+        "男女共同参画社会",
+        "高度情報社会",
+        "循環型社会（じゅんかんがたしゃかい）",
+        "少子高齢社会（しょうしこうれいしゃかい）"
+      ],
+      "correct_index": 0,
+      "explanation": "男女共同参画社会とは、性別にかかわらず、一人一人が自分の能力を生かして社会に参加できる社会です。1999年には男女共同参画社会基本法が制定されました。教育や仕事、政治などの分野で平等な機会を確保することが大切です。",
+      "keywords": [
+        "東京大学",
+        "女性学長",
+        "男女共同参画社会"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/54951"
         }
       ]
     }
