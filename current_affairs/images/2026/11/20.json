@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 4,
+  "question_count": 6,
   "related_count": 3,
-  "image_count": 7,
+  "image_count": 9,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -135,6 +135,44 @@
           "license": "CC BY 4.0",
           "license_url": "https://creativecommons.org/licenses/by/4.0/",
           "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261120-103",
+      "images": [
+        {
+          "id": "20261120-103-I01",
+          "type": "photo",
+          "title": "東京証券取引所",
+          "caption": "資料写真：2004年の東京証券取引所の内部。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Tokyo_stock_exchange.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tokyo_stock_exchange.jpg",
+          "credit": "Chris 73 / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261120-104",
+      "images": [
+        {
+          "id": "20261120-104-I01",
+          "type": "photo",
+          "title": "インフルエンザウイルス",
+          "caption": "資料写真：米国CDCが撮影したH1N1型インフルエンザウイルス。今回の流行株とは限りません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/H1N1_influenza_virus.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:H1N1_influenza_virus.jpg",
+          "credit": "Centers for Disease Control and Prevention",
+          "license": "Public Domain (US government)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-HHS-CDC",
+          "usage_notes": "提供元・出典を表示。"
         }
       ],
       "related": []
