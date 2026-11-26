@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 8,
+  "question_count": 9,
   "questions": [
     {
       "id": "20261126-001",
@@ -269,6 +269,40 @@
         {
           "name": "NHK「定数削減法案 26日は採決行わず 改めて協議 衆院特別委」",
           "url": "https://news.web.nhk/newsweb/na/nd-20261126de81641"
+        }
+      ]
+    },
+    {
+      "id": "20261126-009",
+      "news_date": "2026-11-26",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "中国とアジア開発銀行の協力40周年",
+      "news_summary": "中国の首相とアジア開発銀行の総裁が会談し、地域の発展に向けた協力を確認しました。",
+      "question": "2026年11月26日、中国の首相はアジア開発銀行（ADB）の神田総裁と北京で会談しました。2026年は中国とADBの協力が始まって40周年に当たります。\n\nアジア開発銀行の主な役割は何ですか。",
+      "choices": [
+        "アジアの国々の通貨を一つにすること",
+        "アジアの国々の選挙を管理すること",
+        "アジアの国々の経済発展を資金面などで支えること",
+        "アジアの国々の関税を一律に決めること"
+      ],
+      "correct_index": 2,
+      "explanation": "アジア開発銀行は、アジア・太平洋地域の経済や社会の発展を支える国際機関です。道路や電力、水道などの整備に必要な資金を提供し、貧困（ひんこん）の減少や環境保全にも取り組んでいます。日本も加盟（かめい）しています。",
+      "keywords": [
+        "アジア開発銀行",
+        "ADB",
+        "国際協力",
+        "経済発展"
+      ],
+      "sources": [
+        {
+          "name": "中国外務省",
+          "url": "https://www.mfa.gov.cn/wjdt_674879/gjldrhd_674881/202611/t20261126_12067805.shtml"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/3115357?display=1"
         }
       ]
     }
