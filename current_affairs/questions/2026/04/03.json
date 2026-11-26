@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-03",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260403-001",
@@ -59,6 +59,35 @@
         {
           "name": "国連食糧農業機関（FAO）",
           "url": "https://www.fao.org/newsroom/detail/fao-food-price-index-rises-in-march-as-near-east-conflict-raises-energy-costs/"
+        }
+      ]
+    },
+    {
+      "id": "20260403-003",
+      "news_date": "2026-04-03",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "民法改正案を閣議（かくぎ）決定",
+      "news_summary": "政府が成年後見（せいねんこうけん）や遺言（ゆいごん）の制度を見直す法律案を決定した。",
+      "question": "2026年4月3日、政府は民法などを改正する法律案を閣議決定し、国会に提出しました。高齢化（こうれいか）が進む中、電子データで作成できる新たな遺言（ゆいごん）の方式などを設ける内容です。\n\n遺言は主に何のために作成するものですか？",
+      "choices": [
+        "自分が亡くなった後の財産の分け方などを伝えるため",
+        "選挙で投票する候補者を登録するため",
+        "住民票を別の市町村へ移すため",
+        "新しい法律案を国会に提出するため"
+      ],
+      "correct_index": 0,
+      "explanation": "遺言は、自分が亡くなった後に財産をどのように分けるかなどについて、本人の意思を伝えるものです。今回の改正案には、電子データなどで作成する新しい方式を設け、制度を利用しやすくすることが含まれています。4月3日の時点ではまだ法律案でした。",
+      "keywords": [
+        "民法",
+        "遺言（ゆいごん）",
+        "高齢化（こうれいか）"
+      ],
+      "sources": [
+        {
+          "name": "内閣法制局",
+          "url": "https://www.clb.go.jp/recent-laws/diet_bill/detail/id=5261"
         }
       ]
     }
