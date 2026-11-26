@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261012-001",
+      "images": [
+        {
+          "id": "20261012-001-I01",
+          "type": "photo",
+          "title": "国立競技場",
+          "caption": "資料写真：建て替え後の国立競技場。1964年大会当時の写真ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Japan_National_Stadium.jpg/960px-Japan_National_Stadium.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Japan_National_Stadium.jpg",
+          "credit": "Syced",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1
+}
