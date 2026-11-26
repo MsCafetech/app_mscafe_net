@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 2,
-  "related_count": 5,
-  "image_count": 8,
+  "related_count": 6,
+  "image_count": 9,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -144,6 +144,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用・再配布・加工可能。出典を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-002-R02",
+          "images": [
+            {
+              "id": "20261126-002-R02-I01",
+              "type": "photo",
+              "title": "一万円紙幣の見本",
+              "caption": "資料写真：2024年に発行が始まった一万円紙幣の見本。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/New_10000_yen_banknote_obverse.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:New_10000_yen_banknote_obverse.png",
+              "credit": "独立行政法人 国立印刷局",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "出典・著作者・ライセンスを表示し変更を明記。紙幣見本の表示を保持。"
             }
           ]
         }
