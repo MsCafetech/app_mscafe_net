@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 5,
+  "question_count": 6,
   "related_count": 12,
-  "image_count": 18,
+  "image_count": 19,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -334,6 +334,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261126-006",
+      "images": [
+        {
+          "id": "20261126-006-I01",
+          "type": "photo",
+          "title": "マジュロ環礁の航空写真",
+          "caption": "資料写真：マーシャル諸島のマジュロ環礁を上空から撮影した写真。細長い島と周囲のサンゴ礁が見えます。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Majuro_aerial_%2810703502814%29.jpg/960px-Majuro_aerial_%2810703502814%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Majuro_aerial_(10703502814).jpg",
+          "credit": "Erin Magee/AusAID",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "撮影者・出典・ライセンスを表示し、加工時は変更内容を明記。2013年撮影の資料写真。"
+        }
+      ],
+      "related": []
     }
   ]
 }
