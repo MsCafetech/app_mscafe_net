@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-12",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260912-001",
+      "news_date": "2026-09-12",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "インドでBRICS（ブリックス）首脳会議（しゅのうかいぎ）開催（かいさい）",
+      "news_summary": "インドのニューデリーで第18回BRICS首脳会議が始まりました。",
+      "question": "2026年9月12日、インドのニューデリーで第18回BRICS首脳会議が始まり、加盟国の協力について話し合われました。\n\n次のうち、BRICSの加盟国はどこですか。",
+      "choices": [
+        "日本",
+        "カナダ",
+        "ブラジル",
+        "フランス"
+      ],
+      "correct_index": 2,
+      "explanation": "BRICSはブラジル、ロシア、インド、中国、南アフリカなどが参加する国際的な協力の枠組みです。現在はインドネシアなども加盟しています。経済や貿易、国際社会の課題について話し合い、加盟国の協力を進めています。",
+      "keywords": [
+        "BRICS",
+        "インド",
+        "ブラジル"
+      ],
+      "sources": [
+        {
+          "name": "インド政府",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2309505&lang=1&reg=3"
+        },
+        {
+          "name": "ジェトロ",
+          "url": "https://www.jetro.go.jp/biznews/2026/06/cca121b413012374.html"
+        }
+      ]
+    }
+  ]
+}
