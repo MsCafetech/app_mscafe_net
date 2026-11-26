@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 5,
-  "related_count": 12,
+  "question_count": 6,
+  "related_count": 13,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -267,6 +267,30 @@
             {
               "name": "環境省・環境省が行う直轄防除",
               "url": "https://www.env.go.jp/nature/intro/3control/bojokankyo.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-006",
+      "related": [
+        {
+          "id": "20261126-006-R01",
+          "relation_type": "question",
+          "title": "マーシャル諸島の独立と日本との歴史",
+          "description": "マーシャル諸島は、第一次世界大戦後の1920年に国際連盟（れんめい）から日本が統治を任された地域の一つでした。第二次世界大戦後は国際連合の信託統治領（しんたくとうちりょう）としてアメリカが管理しました。1979年には独自の憲法を定め、1986年にアメリカとの自由連合盟約（めいやく）に基づいて独立しました。この取り決めにより、国を守る役割をアメリカに任せ、経済的な支援を受けています。日本とは1988年に外交関係を結び、1991年には国際連合に加盟しました。島国の歴史と国際協力の関係を学ぶことができます。",
+          "relationship": "首脳会談の背景となる両国の歴史と島国の独立を学ぶ。",
+          "keywords": [
+            "マーシャル諸島",
+            "国際連盟",
+            "信託統治",
+            "自由連合盟約"
+          ],
+          "sources": [
+            {
+              "name": "外務省・マーシャル基礎データ",
+              "url": "https://www.mofa.go.jp/mofaj/area/marshall/data.html"
             }
           ]
         }
