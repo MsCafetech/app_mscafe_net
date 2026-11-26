@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-30",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
+  "question_count": 2,
+  "related_count": 2,
   "questions": [
     {
       "question_id": "20261030-001",
@@ -28,6 +28,33 @@
             {
               "name": "環境省 里地里山と生物多様性",
               "url": "https://www.env.go.jp/nature/satoyama/seibutu.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261030-002",
+      "related": [
+        {
+          "id": "20261030-002-R01",
+          "relation_type": "question",
+          "title": "日本銀行の物価安定の目標",
+          "description": "物価とは、さまざまな商品やサービスの価格を全体として見たものです。日本銀行は2013年1月、消費者物価指数（しょうひしゃぶっかしすう）が前年より2％上がることを物価安定の目標としました。この指数は、家庭が買う品物や利用するサービスの価格の動きを表します。物価が急に変わると、家庭は買い物の計画を立てにくくなり、会社も新しい設備にお金を使うかどうかを判断しにくくなります。日本銀行は、物価の動きを安定させ、人々が安心して経済活動を行えるようにすることを目指しています。",
+          "relationship": "政策金利を調整する目的と消費者物価指数の意味を学ぶ。",
+          "keywords": [
+            "日本銀行",
+            "物価安定の目標",
+            "消費者物価指数"
+          ],
+          "sources": [
+            {
+              "name": "日本銀行 物価安定の目標",
+              "url": "https://www.boj.or.jp/mopo/outline/target.htm"
+            },
+            {
+              "name": "日本銀行 教えて！にちぎん",
+              "url": "https://www.boj.or.jp/about/education/oshiete/seisaku/b29.htm"
             }
           ]
         }
