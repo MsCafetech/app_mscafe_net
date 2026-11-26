@@ -2,10 +2,29 @@
   "schema_version": 1,
   "date": "2026-11-18",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "related_count": 0,
-  "image_count": 1,
+  "image_count": 2,
   "questions": [
+    {
+      "question_id": "20261118-001",
+      "images": [
+        {
+          "id": "20261118-001-I01",
+          "type": "photo",
+          "title": "最高裁判所",
+          "caption": "資料写真：東京にある日本の最高裁判所。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Supreme_court.jpg/960px-Supreme_court.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Supreme_court.jpg",
+          "credit": "7",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者・出典・ライセンス表示。変更を明記し、改変画像は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
     {
       "question_id": "20261118-100",
       "images": [
