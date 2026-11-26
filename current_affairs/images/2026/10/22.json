@@ -4,6 +4,25 @@
   "language": "ja",
   "questions": [
     {
+      "question_id": "20261022-001",
+      "images": [
+        {
+          "id": "20261022-001-I01",
+          "type": "photo",
+          "title": "氷河の変化",
+          "caption": "資料写真：スイスのアレッチ氷河の1979年、2002年、2025年の比較。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Gletscherschmelze_1979-2002-2025.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Gletscherschmelze_1979-2002-2025.jpg",
+          "credit": "L. Albrecht/Pro Natura Zentrum Aletsch, Zuecho, Anidaat",
+          "license": "CC BY 3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
+      "related": []
+    },
+    {
       "question_id": "20261022-002",
       "images": [
         {
@@ -23,7 +42,7 @@
       "related": []
     }
   ],
-  "question_count": 1,
+  "question_count": 2,
   "related_count": 0,
-  "image_count": 1
+  "image_count": 2
 }
