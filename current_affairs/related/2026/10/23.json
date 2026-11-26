@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261023-001",
+      "related": [
+        {
+          "id": "20261023-001-R01",
+          "relation_type": "question",
+          "title": "生活保護費の決まり方と支援の種類",
+          "description": "生活保護では、家族の人数や年齢、住んでいる地域などに応じて、生活に必要な費用の基準が決められています。利用できる財産や年金などを活用しても生活費が足りない場合には、基準に基づく最低生活費と収入との差を補う仕組みになっています。支援には、食費や電気代などをまかなう生活扶助（ふじょ）、家賃を支える住宅扶助、義務教育に必要な学用品などを支える教育扶助などがあります。病気の治療に必要な医療扶助もあり、生活のさまざまな面を支える制度です。",
+          "relationship": "生活保護費の引き下げをめぐる問題の背景となる制度の仕組みを学ぶ。",
+          "keywords": [
+            "生活保護",
+            "最低生活費",
+            "生活扶助",
+            "住宅扶助",
+            "教育扶助"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省 生活保護制度",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/seikatuhogo/index.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "question_count": 1,
+  "related_count": 1
+}
