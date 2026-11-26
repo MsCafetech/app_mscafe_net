@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-06",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261006-001",
+      "images": [
+        {
+          "id": "20261006-001-I01",
+          "type": "photo",
+          "title": "南極の観測設備",
+          "caption": "資料写真：2009年のアイスキューブ観測施設の掘削設備。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/IceCube_drill_camp_2009.jpg/960px-IceCube_drill_camp_2009.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:IceCube_drill_camp_2009.jpg",
+          "credit": "Amble",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261006-002",
+      "images": [
+        {
+          "id": "20261006-002-I01",
+          "type": "photo",
+          "title": "道路のアンダーパス",
+          "caption": "資料写真：2026年7月に撮影された諏訪通りのアンダーパス。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Suwa-dori_underpass_2026-07-20.jpg/960px-Suwa-dori_underpass_2026-07-20.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Suwa-dori_underpass_2026-07-20.jpg",
+          "credit": "Asanagi",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 2,
+  "related_count": 0,
+  "image_count": 2
+}
