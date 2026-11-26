@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261101-001",
+      "images": [
+        {
+          "id": "20261101-001-I01",
+          "type": "photo",
+          "title": "物流倉庫での荷物の積み込み",
+          "caption": "資料写真：タイの物流倉庫で荷物をコンテナに積み込む作業。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Loading_palletized_cargo_inside_a_shipping_container.jpg/960px-Loading_palletized_cargo_inside_a_shipping_container.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Loading_palletized_cargo_inside_a_shipping_container.jpg",
+          "credit": "Goterrestrial",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 1,
+  "related_count": 0,
+  "image_count": 1
+}
