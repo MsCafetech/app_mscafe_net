@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-16",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261016-001",
+      "images": [
+        {
+          "id": "20261016-001-I01",
+          "type": "photo",
+          "title": "昔の地震計",
+          "caption": "資料写真：国立科学博物館に展示されているミルンの地震計。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Milne_Horizontal_Pendulum_Seismograph.jpg/960px-Milne_Horizontal_Pendulum_Seismograph.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Milne_Horizontal_Pendulum_Seismograph.jpg",
+          "credit": "Momotarou2012",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261016-002",
+      "images": [
+        {
+          "id": "20261016-002-I01",
+          "type": "photo",
+          "title": "稲の収穫",
+          "caption": "資料写真：沖縄県名護市での稲の収穫風景。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Paddy_field_in_Nago%2C_Okinawa_Prefecture_202406_02.jpg/960px-Paddy_field_in_Nago%2C_Okinawa_Prefecture_202406_02.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Paddy_field_in_Nago%2C_Okinawa_Prefecture_202406_02.jpg",
+          "credit": "Kugel~commonswiki",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    }
+  ],
+  "question_count": 2,
+  "related_count": 0,
+  "image_count": 2
+}
