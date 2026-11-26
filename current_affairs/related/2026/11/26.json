@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 4,
-  "related_count": 11,
+  "question_count": 5,
+  "related_count": 12,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -239,6 +239,34 @@
             {
               "name": "文部科学省",
               "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1406848.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-005",
+      "related": [
+        {
+          "id": "20261126-005-R01",
+          "relation_type": "question",
+          "title": "奄美大島のマングース根絶と外来種問題",
+          "description": "1979年ごろ、奄美大島（あまみおおしま）にハブやネズミを減らす目的で約30頭のマングースが持ち込まれました。しかし、マングースはウサギやカエルなども食べるため、島固有の動物が減少しました。2000年には約1万頭まで増えたと推定されています。環境省はわなや自動撮影カメラ、探索（たんさく）犬などを使って対策を進め、2018年に最後の1頭を捕らえました。その後も調査を続け、2024年9月3日に根絶（こんぜつ）を宣言しました。この取り組みは外来種を持ち込む前に生態系への影響を考える大切さを示しています。",
+          "relationship": "アマミノクロウサギの生息状況が回復した背景を学ぶ。",
+          "keywords": [
+            "外来種",
+            "マングース",
+            "生態系",
+            "根絶"
+          ],
+          "sources": [
+            {
+              "name": "環境省・マングースの根絶の宣言",
+              "url": "https://www.env.go.jp/press/press_03661.html"
+            },
+            {
+              "name": "環境省・環境省が行う直轄防除",
+              "url": "https://www.env.go.jp/nature/intro/3control/bojokankyo.html"
             }
           ]
         }
