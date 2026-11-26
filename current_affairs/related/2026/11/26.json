@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 3,
-  "related_count": 10,
+  "question_count": 4,
+  "related_count": 11,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -216,6 +216,29 @@
             {
               "name": "財務省「消費税について教えてください。」",
               "url": "https://www.mof.go.jp/tax_information/qanda022.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-004",
+      "related": [
+        {
+          "id": "20261126-004-R01",
+          "relation_type": "question",
+          "title": "いじめ防止対策推進法と学校の役割",
+          "description": "2013年に施行（しこう）されたいじめ防止対策推進法は、子どもが安心して教育を受けられるようにするための法律です。たたくなどの暴力だけでなく、インターネット上での悪口なども、相手が心や体に苦しみを感じていれば、いじめに当たります。学校には、定期的な調査や相談を受ける仕組みを整え、複数の先生や専門家などで対策を行う組織を置くことが求められています。いじめが確認された場合は、被害を受けた子どもを支え、いじめをした子どもを指導し、同じことが起きないように取り組みます。",
+          "relationship": "いじめの認知件数を調べる背景にある学校の法的な役割を学ぶ。",
+          "keywords": [
+            "いじめ防止対策推進法",
+            "学校教育",
+            "早期発見"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1406848.htm"
             }
           ]
         }
