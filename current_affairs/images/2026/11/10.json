@@ -4,6 +4,25 @@
   "language": "ja",
   "questions": [
     {
+      "question_id": "20261110-001",
+      "images": [
+        {
+          "id": "20261110-001-I01",
+          "type": "photo",
+          "title": "野生のゾウの群れ",
+          "caption": "資料写真：インドのバンディプール国立公園に生息するゾウ。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Herd_of_wild_elephants.jpg/960px-Herd_of_wild_elephants.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Herd_of_wild_elephants.jpg",
+          "credit": "Sphoortik",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+        }
+      ],
+      "related": []
+    },
+    {
       "question_id": "20261110-003",
       "images": [
         {
@@ -23,7 +42,7 @@
       "related": []
     }
   ],
-  "question_count": 1,
+  "question_count": 2,
   "related_count": 0,
-  "image_count": 1
+  "image_count": 2
 }
