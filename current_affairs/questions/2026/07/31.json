@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-31",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260731-001",
@@ -35,6 +35,35 @@
         {
           "name": "京都大学",
           "url": "https://www.kyoto-u.ac.jp/ja/news/2026-07-31-0"
+        }
+      ]
+    },
+    {
+      "id": "20260731-002",
+      "news_date": "2026-07-31",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国家情報会議設置法が施行（しこう）",
+      "news_summary": "政府の情報活動をまとめる会議を設置する法律が施行された。",
+      "question": "2026年7月31日、国家情報会議設置法が施行され、政府の情報活動の中心となる国家情報会議と国家情報局が設置されました。\n\n法律が実際に効力を持ち始めることを何といいますか？",
+      "choices": [
+        "提出",
+        "公布（こうふ）",
+        "施行",
+        "審議（しんぎ）"
+      ],
+      "correct_index": 2,
+      "explanation": "施行とは法律が実際に効力を持ち始めることです。法律が国会で成立した後、その内容を国民に知らせる公布が行われ、定められた日から施行されます。成立の日と施行の日が異なる法律もあります。",
+      "keywords": [
+        "国家情報会議",
+        "施行（しこう）",
+        "法律"
+      ],
+      "sources": [
+        {
+          "name": "内閣官房",
+          "url": "https://www.cas.go.jp/jp/gaiyou/jimu/nic_nib.html"
         }
       ]
     }
