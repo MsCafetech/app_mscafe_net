@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-10",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260410-001",
+      "news_date": "2026-04-10",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "御嶽山（おんたけさん）が国定公園に指定",
+      "news_summary": "御嶽山が全国58番目の国定公園になった。",
+      "question": "2026年4月10日、標高3000メートルを超える火山である御嶽山とその周辺が、新たに国定公園に指定されました。豊かな森林や山の自然環境を守ることが目的の一つです。\n\n御嶽山がまたがる二つの県はどこですか？",
+      "choices": [
+        "長野県と岐阜県（ぎふけん）",
+        "長野県と山梨県",
+        "新潟県（にいがたけん）と富山県",
+        "山梨県と静岡県"
+      ],
+      "correct_index": 0,
+      "explanation": "御嶽山は長野県と岐阜県の境にある火山です。標高によって植物の種類が変化する豊かな自然や、山を大切にする文化が評価されました。国定公園は優れた自然の風景を守りながら、人々が自然に親しむために国が指定する公園です。",
+      "keywords": [
+        "御嶽山（おんたけさん）",
+        "国定公園",
+        "火山"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_03975.html"
+        },
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/annai/kaiken/kaiken_00378.html"
+        }
+      ]
+    }
+  ]
+}
