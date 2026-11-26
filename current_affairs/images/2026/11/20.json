@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 8,
+  "question_count": 9,
   "related_count": 3,
-  "image_count": 11,
+  "image_count": 12,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -173,6 +173,25 @@
           "license": "CC BY 4.0",
           "license_url": "https://creativecommons.org/licenses/by/4.0/",
           "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261120-102",
+      "images": [
+        {
+          "id": "20261120-102-I01",
+          "type": "photo",
+          "title": "教育予算をめぐるデモ",
+          "caption": "資料写真：2010年にロンドンで行われた教育予算削減に反対するデモ。今回のデモとは異なります。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Student_protest_march_past_Houses_of_Parliament.jpg/960px-Student_protest_march_past_Houses_of_Parliament.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Student_protest_march_past_Houses_of_Parliament.jpg",
+          "credit": "BillyH",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
       "related": []
