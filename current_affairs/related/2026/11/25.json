@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 14,
-  "related_count": 42,
+  "question_count": 15,
+  "related_count": 43,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -911,6 +911,30 @@
             {
               "name": "外務省 キューバ基礎データ",
               "url": "https://www.mofa.go.jp/mofaj/area/cuba/data.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-026",
+      "related": [
+        {
+          "id": "20261125-026-R01",
+          "relation_type": "question",
+          "title": "秋吉台のカルスト地形ができるまで",
+          "description": "山口県の秋吉台（あきよしだい）は、石灰岩（せっかいがん）という岩石でできた広い台地です。この岩石には大昔の海にすんでいた生き物の化石が見つかり、もとは海にできたサンゴ礁（さんごしょう）だったことが分かります。石灰岩は雨水に少しずつ溶ける性質があるため、長い年月をかけて地表にくぼみができたり、地下に大きな空間ができたりします。このような地形をカルスト地形といいます。秋吉台の草原に見える白い岩も、長い地球の歴史と雨水の働きによって生まれた風景の一部です。",
+          "relationship": "山焼きで草原が守られてきた秋吉台の地形と岩石の成り立ちを学ぶ。",
+          "keywords": [
+            "秋吉台",
+            "石灰岩",
+            "カルスト地形",
+            "化石"
+          ],
+          "sources": [
+            {
+              "name": "美祢市 秋吉台",
+              "url": "https://www2.city.mine.lg.jp/soshiki/kyoiku/hogoka/bunkazai/bunkazai/kunishitei/tokubetsu/1530.html"
             }
           ]
         }
