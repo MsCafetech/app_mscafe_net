@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-10",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260610-001",
@@ -63,6 +63,35 @@
         {
           "name": "文部科学省",
           "url": "https://www.mext.go.jp/b_menu/activity/detail/2026/20260610.html?adtype=mail&uns_flg=1"
+        }
+      ]
+    },
+    {
+      "id": "20260610-003",
+      "news_date": "2026-06-10",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "地球観測衛星（えいせい）はくりゅうのデータが気象予報に利用開始",
+      "news_summary": "欧州の気象予報機関が雲の観測データを日常の予報に取り入れた。",
+      "question": "2026年6月10日、欧州中期予報センターが、日本と欧州が開発した衛星はくりゅうの雲の観測データを日々の気象予報に使い始めました。JAXAは6月25日に発表しました。\n\n雲を作っているものは主に何ですか？",
+      "choices": [
+        "目に見える水蒸気だけ",
+        "小さな水滴（すいてき）や氷の粒",
+        "細かな砂だけ",
+        "酸素の固まり"
+      ],
+      "correct_index": 1,
+      "explanation": "雲は空気中の水蒸気が冷やされてできた小さな水滴や氷の粒の集まりです。雲の高さや動きを観測すると、大気の状態を詳しく知ることができます。はくりゅうの観測データは、気象予報の精度を高めるために役立てられています。",
+      "keywords": [
+        "はくりゅう",
+        "雲",
+        "気象予報"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/06/20260625-1_j.html"
         }
       ]
     }

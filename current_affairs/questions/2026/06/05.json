@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-05",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260605-001",
@@ -59,6 +59,35 @@
         {
           "name": "nippon.com",
           "url": "https://www.nippon.com/ja/articles/-/11174"
+        }
+      ]
+    },
+    {
+      "id": "20260605-003",
+      "news_date": "2026-06-05",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "熱中症（ねっちゅうしょう）対策の産官学連携組織が発足",
+      "news_summary": "研究機関や企業などが熱中症対策で協力する組織を設立した。",
+      "question": "2026年6月5日、国立環境研究所など9機関が、熱中症対策を進めるための新しい組織を設立しました。気候変動による暑さへの対策を社会に広めることを目指します。\n\n気候変動による被害を小さくするため、暑さに備える取り組みを何といいますか？",
+      "choices": [
+        "適応（てきおう）策",
+        "緩和（かんわ）策",
+        "資源採掘（さいくつ）",
+        "森林伐採（ばっさい）"
+      ],
+      "correct_index": 0,
+      "explanation": "気候変動への適応策とは、すでに起きている変化や将来の影響に備え、被害を減らす取り組みです。暑さ対策や洪水（こうずい）への備えなどがあります。一方、温室効果ガスの排出（はいしゅつ）を減らす取り組みは緩和策と呼ばれます。",
+      "keywords": [
+        "熱中症（ねっちゅうしょう）",
+        "気候変動",
+        "適応策（てきおうさく）"
+      ],
+      "sources": [
+        {
+          "name": "国立環境研究所",
+          "url": "https://www.nies.go.jp/pr/news-and-updates/2026/Press20260605-1.html"
         }
       ]
     }

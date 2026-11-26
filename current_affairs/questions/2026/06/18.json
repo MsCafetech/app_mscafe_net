@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-18",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260618-001",
@@ -59,6 +59,64 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/me_a/me2/ir/pageit_000001_00021.html"
+        }
+      ]
+    },
+    {
+      "id": "20260618-003",
+      "news_date": "2026-06-18",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "月面ロボットSORA-Qの研究成果を発表",
+      "news_summary": "JAXAなどが小型月面ロボットの研究成果と新しい画像を公開した。",
+      "question": "2026年6月18日、JAXAなどは、月面ロボットSORA-Qの研究成果が国際学術誌に掲載（けいさい）されたと発表しました。ロボットは地上からの操作なしに月面を移動して写真を撮（と）りました。\n\n月が地球から受ける光ではなく、月面を照らしている主な光のもとは何ですか？",
+      "choices": [
+        "北極星",
+        "地球の内部",
+        "太陽",
+        "木星"
+      ],
+      "correct_index": 2,
+      "explanation": "月は自分で光を出す天体ではなく、主に太陽の光を反射して光って見えます。月面の明るい部分と暗い部分は太陽の光が当たるかどうかで変わります。月面探査（たんさ）では光の当たり方や温度の変化にも注意する必要があります。",
+      "keywords": [
+        "SORA-Q",
+        "月",
+        "太陽"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/06/20260618-1_j.html"
+        }
+      ]
+    },
+    {
+      "id": "20260618-004",
+      "news_date": "2026-06-18",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "小型月面ロボットの自律（じりつ）運用を実証",
+      "news_summary": "月面で自ら判断して移動や撮影を行う技術の成果が公表された。",
+      "question": "2026年6月18日、JAXAなどは小型ロボットSORA-Qが自律的に月面を移動し、画像を無線で送信した研究成果を発表しました。\n\nロボットが自ら周囲の状態を知るために使う装置はどれですか？",
+      "choices": [
+        "電池",
+        "歯車",
+        "車輪",
+        "センサー"
+      ],
+      "correct_index": 3,
+      "explanation": "センサーは光や温度、距離（きょり）などの情報を得る装置です。ロボットはカメラなどのセンサーから得た情報をコンピューターで処理し、動き方を決めることができます。遠く離れた天体の探査では自ら判断する技術が役立ちます。",
+      "keywords": [
+        "SORA-Q",
+        "センサー",
+        "自律制御（じりつせいぎょ）"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/06/20260618-1_j.html"
         }
       ]
     }
