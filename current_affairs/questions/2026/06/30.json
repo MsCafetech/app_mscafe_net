@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-30",
   "language": "ja",
-  "question_count": 5,
+  "question_count": 7,
   "questions": [
     {
       "id": "20260630-001",
@@ -159,6 +159,64 @@
         {
           "name": "衆議院",
           "url": "https://www.shugiin.go.jp/internet/itdb_iinkai.nsf/html/gianrireki/221_221_kakuho_64.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260630-006",
+      "news_date": "2026-06-30",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "JAXAが水循環（みずじゅんかん）の観測データ提供を開始",
+      "news_summary": "高性能マイクロ波放射計3の観測データの提供が始まった。",
+      "question": "2026年6月30日、JAXAは地球の水循環を観測する装置AMSR3のデータ提供を開始しました。降水量などの観測を通じ、気象予報の精度向上などに役立つことが期待されています。\n\n海や地面の水が水蒸気に変わる現象を何といいますか？",
+      "choices": [
+        "凝結（ぎょうけつ）",
+        "蒸発",
+        "凝固（ぎょうこ）",
+        "融解（ゆうかい）"
+      ],
+      "correct_index": 1,
+      "explanation": "蒸発とは液体の水が水蒸気に変わる現象です。海や地面から蒸発した水は、上空で冷やされて雲となり、雨や雪として地上に戻ります。このように水が地球上をめぐることを水循環といいます。",
+      "keywords": [
+        "AMSR3",
+        "水循環（みずじゅんかん）",
+        "蒸発"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/06/20260630-1_j.html"
+        }
+      ]
+    },
+    {
+      "id": "20260630-007",
+      "news_date": "2026-06-30",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "地球観測装置AMSR3のデータ公開",
+      "news_summary": "JAXAが宇宙から得られた地球観測データの提供を開始した。",
+      "question": "2026年6月30日、JAXAは宇宙から地球の降水量などを観測する装置AMSR3のデータ提供を開始しました。\n\n人工衛星による地球観測の利点として適切なものはどれですか？",
+      "choices": [
+        "地球上の広い範囲を繰り返し観測できる",
+        "地上の天気を自由に変えられる",
+        "太陽の光を完全に止められる",
+        "すべての地震を正確に予知できる"
+      ],
+      "correct_index": 0,
+      "explanation": "人工衛星は地球の広い範囲を継続して観測するのに役立ちます。海上など地上の観測地点が少ない場所の情報も得られ、天気予報や気候変動の研究などに活用できます。観測する目的に応じてさまざまな装置が使われています。",
+      "keywords": [
+        "AMSR3",
+        "人工衛星",
+        "地球観測"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/06/20260630-1_j.html"
         }
       ]
     }

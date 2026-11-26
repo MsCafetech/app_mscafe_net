@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-14",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20260614-001",
+      "news_date": "2026-06-14",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "スイスで人口制限案を国民投票で否決",
+      "news_summary": "人口を1000万人以下に制限する提案が国民投票で否決された。",
+      "question": "2026年6月14日、スイスでは人口を1000万人以下に制限する提案について国民投票が行われ、否決されました。\n\n国民が代表者を通さず、政策の決定に直接参加する仕組みを何といいますか？",
+      "choices": [
+        "議院内閣制",
+        "三権分立",
+        "直接民主制",
+        "世襲制（せしゅうせい）"
+      ],
+      "correct_index": 2,
+      "explanation": "直接民主制では、国民自身が投票などを通じて政策の決定に参加します。スイスでは国民投票が広く活用されています。日本でも憲法（けんぽう）改正の国民投票など、国民が直接意思を示す仕組みがあります。",
+      "keywords": [
+        "スイス",
+        "国民投票",
+        "直接民主制"
+      ],
+      "sources": [
+        {
+          "name": "JETRO",
+          "url": "https://www.jetro.go.jp/biznews/2026/06/d8c69fb86cde80b1.html"
+        }
+      ]
+    },
+    {
+      "id": "20260614-002",
+      "news_date": "2026-06-14",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "スイスの国民投票とヨーロッパの地理",
+      "news_summary": "スイスで人口制限案の国民投票が行われた。",
+      "question": "2026年6月14日、ヨーロッパのスイスで人口を制限する提案の国民投票が行われました。スイスは海に面していない国です。\n\nスイスを通り、フランスやイタリアなどにも広がる山脈はどれですか？",
+      "choices": [
+        "アンデス山脈",
+        "ヒマラヤ山脈",
+        "ロッキー山脈",
+        "アルプス山脈"
+      ],
+      "correct_index": 3,
+      "explanation": "アルプス山脈はヨーロッパ中央部に広がる山脈です。スイスやフランス、イタリア、オーストリアなどにまたがり、氷河や高い山々が見られます。スイスでは山地の景観を生かした観光なども行われています。",
+      "keywords": [
+        "スイス",
+        "アルプス山脈",
+        "内陸国"
+      ],
+      "sources": [
+        {
+          "name": "JETRO",
+          "url": "https://www.jetro.go.jp/biznews/2026/06/d8c69fb86cde80b1.html"
+        }
+      ]
+    }
+  ]
+}
