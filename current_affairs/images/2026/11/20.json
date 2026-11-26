@@ -2,13 +2,27 @@
   "schema_version": 1,
   "date": "2026-11-20",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 4,
   "related_count": 3,
-  "image_count": 5,
+  "image_count": 7,
   "questions": [
     {
       "question_id": "20261120-001",
-      "images": [],
+      "images": [
+        {
+          "id": "20261120-001-I01",
+          "type": "photo",
+          "title": "クロマグロ",
+          "caption": "資料写真：葛西臨海水族園のクロマグロ。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Pacific_bluefin_tuna.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pacific_bluefin_tuna.jpg",
+          "credit": "aes256（色調整：Togabi）",
+          "license": "CC BY 2.1 JP",
+          "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+          "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
+        }
+      ],
       "related": [
         {
           "related_id": "20261120-001-R03",
@@ -105,6 +119,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261120-101",
+      "images": [
+        {
+          "id": "20261120-101-I01",
+          "type": "photo",
+          "title": "国際連合本部",
+          "caption": "資料写真：ニューヨークの国際連合本部。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/UN_HQ_NYC.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:UN_HQ_NYC.jpg",
+          "credit": "LPulecio-WMF",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
+        }
+      ],
+      "related": []
     }
   ]
 }
