@@ -3,8 +3,8 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 15,
-  "related_count": 29,
-  "image_count": 44,
+  "related_count": 31,
+  "image_count": 46,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -446,6 +446,24 @@
               "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-016-R02",
+          "images": [
+            {
+              "id": "20261125-016-R02-I01",
+              "type": "photo",
+              "title": "世界貿易機関の本部",
+              "caption": "資料写真：スイスのジュネーブにある世界貿易機関（WTO）の本部。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Centre_William-Rappard_1.jpg/960px-Centre_William-Rappard_1.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Centre_William-Rappard_1.jpg",
+              "credit": "Jérémy Toma",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物は同一または互換ライセンスで配布。"
+            }
+          ]
         }
       ]
     },
@@ -669,6 +687,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "著作者・出典・ライセンスを表示。変更を明記し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-021-R01",
+          "images": [
+            {
+              "id": "20261125-021-R01-I01",
+              "type": "map",
+              "title": "スペインの自治州の地図",
+              "caption": "地図：スペインの自治州の境界を色分けした地図。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Comunidades_Aut%C3%B3nomas_Espa%C3%B1olas.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Comunidades_Aut%C3%B3nomas_Espa%C3%B1olas.png",
+              "credit": "giruivan（Fobos92による修正）",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物は同一または互換ライセンスで配布。"
             }
           ]
         }
