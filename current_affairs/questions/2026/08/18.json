@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-18",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260818-001",
@@ -59,6 +59,36 @@
         {
           "name": "農林水産省",
           "url": "https://www.maff.go.jp/j/press-conf/260818.html"
+        }
+      ]
+    },
+    {
+      "id": "20260818-003",
+      "news_date": "2026-08-18",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とウズベキスタンが道路や都市開発で協力",
+      "news_summary": "8月11～14日に国土交通副大臣がウズベキスタンを訪問した。",
+      "question": "8月11日から14日まで、国土交通副大臣はウズベキスタンを訪問し、道路や都市開発などについて協議しました。\n\nウズベキスタンはアジアのどの地域にありますか。",
+      "choices": [
+        "東南アジア",
+        "南アジア",
+        "中央アジア",
+        "東アジア"
+      ],
+      "correct_index": 2,
+      "explanation": "ウズベキスタンは中央アジアにある内陸国で、首都はタシケントです。サマルカンドなどは古くからシルクロードの交易（こうえき）で栄えました。日本は道路や防災、都市開発などの分野で協力を進めています。",
+      "keywords": [
+        "ウズベキスタン",
+        "タシケント",
+        "サマルカンド",
+        "国際協力"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/sogo07_hh_000813.html"
         }
       ]
     }
