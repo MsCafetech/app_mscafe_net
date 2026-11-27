@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 3,
-  "related_count": 2,
-  "image_count": 5,
+  "related_count": 3,
+  "image_count": 6,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -99,7 +99,26 @@
           "usage_notes": "作者・出典・ライセンスを表示し、変更時は明示。商用利用可能。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261127-003-R02",
+          "images": [
+            {
+              "id": "20261127-003-R02-I01",
+              "type": "diagram",
+              "title": "DNAの塩基が対になる仕組み",
+              "caption": "資料図：DNAを作る二本の鎖では、AとT、GとCが組み合わさります。親子関係を調べるDNA検査の基礎になる遺伝情報の仕組みです。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/DNA_Diagram.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:DNA_Diagram.png",
+              "credit": "Christinelmiller",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスURLを表示し、改変時は変更を明示。図中の英語表記を残す場合は補足の日本語説明を併記する。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
