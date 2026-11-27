@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-31",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 6,
   "questions": [
     {
       "id": "20260731-001",
@@ -64,6 +64,126 @@
         {
           "name": "内閣官房",
           "url": "https://www.cas.go.jp/jp/gaiyou/jimu/nic_nib.html"
+        }
+      ]
+    },
+    {
+      "id": "20260731-003",
+      "news_date": "2026-07-31",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "公共工事でグリーン鉄の利用を試行",
+      "news_summary": "国土交通省が製造時の二酸化炭素排出量を減らした鋼材の試行工事を発表した。",
+      "question": "国土交通省は公共工事で、グリーン鉄と呼ばれる鋼材（こうざい）を試験的に使用すると発表しました。\n\nグリーン鉄にはどのような特徴がありますか。",
+      "choices": [
+        "すべて緑色に塗られている",
+        "鉄を一切含んでいない",
+        "海水だけで作られている",
+        "製造時の二酸化炭素排出量が減らされている"
+      ],
+      "correct_index": 3,
+      "explanation": "グリーン鉄は、製造時に出る二酸化炭素を減らした鋼材です。鉄は建物や橋、自動車などに広く使われています。製鉄時の温室効果ガスを減らすことは、産業全体の地球温暖化対策として重要です。",
+      "keywords": [
+        "鉄鋼業",
+        "GX",
+        "公共工事",
+        "脱炭素（だつたんそ）"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kanbo08_hh_001354.html"
+        }
+      ]
+    },
+    {
+      "id": "20260731-004",
+      "news_date": "2026-07-31",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "OECD造船委員会の議長に初の日本人を選出",
+      "news_summary": "経済協力開発機構の造船委員会で日本の候補者が議長に選ばれた。",
+      "question": "日本人が初めてOECD造船委員会の議長に選ばれました。\n\nOECDの日本語での名称は何ですか。",
+      "choices": [
+        "経済協力開発機構（きこう）",
+        "世界保健機関",
+        "国際労働機関",
+        "世界貿易機関"
+      ],
+      "correct_index": 0,
+      "explanation": "OECDは経済協力開発機構の略称です。加盟国などが経済や社会の課題について調査し、政策を話し合います。造船委員会では船を造る産業の公正な競争や国際的な政策協力について取り組んでいます。",
+      "keywords": [
+        "OECD",
+        "造船業",
+        "国際協力",
+        "議長"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kaiji05_hh_000338.html"
+        }
+      ]
+    },
+    {
+      "id": "20260731-005",
+      "news_date": "2026-07-31",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "熊本地震の影響を受けた受験者に高卒認定の再試験",
+      "news_summary": "文部科学省が地震のため受験できない人を対象に再試験を実施すると発表した。",
+      "question": "熊本地震のため、高等学校卒業程度認定試験を予定日に受けられない人に再試験が設けられました。\n\n高等学校卒業程度認定試験は、何を認めるための試験ですか。",
+      "choices": [
+        "自動車の運転技術",
+        "高等学校を卒業した人と同等以上の学力",
+        "小学校教員として働く資格",
+        "外国の国籍を取得する資格"
+      ],
+      "correct_index": 1,
+      "explanation": "高等学校卒業程度認定試験は、高校を卒業した人と同等以上の学力があることを認める試験です。合格すると大学などの受験資格を得られますが、高校を卒業したことになるわけではありません。災害時の再試験は学ぶ機会を守るための対応です。",
+      "keywords": [
+        "文部科学省",
+        "高卒認定試験",
+        "熊本地震",
+        "教育機会"
+      ],
+      "sources": [
+        {
+          "name": "文部科学省",
+          "url": "https://www.mext.go.jp/b_menu/houdou/31/11/1422845_00003.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260731-006",
+      "news_date": "2026-07-31",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "自然を活用した解決策の手引きを公表",
+      "news_summary": "環境省が自然の働きを利用して社会課題を解決するための手引きを公表した。",
+      "question": "環境省は、自然の働きを生かして社会の問題を解決する取り組み（NbS）の手引きを公表しました。\n\nこの取り組みの例として最も適切なのはどれですか。",
+      "choices": [
+        "すべての森林を切り開く",
+        "川をすべて埋め立てる",
+        "湿地（しっち）を保全して洪水の被害を減らす",
+        "野生生物の生息地をなくす"
+      ],
+      "correct_index": 2,
+      "explanation": "自然を活用した解決策は、生態系（せいたいけい）の働きを持続的に利用して社会の課題を解決する方法です。湿地には水を一時的にためる働きがあり、洪水対策や生物多様性の保全に役立つ場合があります。",
+      "keywords": [
+        "NbS",
+        "環境省",
+        "自然環境",
+        "防災"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05370.html"
         }
       ]
     }
