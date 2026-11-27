@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-23",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260623-001",
@@ -30,6 +30,96 @@
         {
           "name": "厚生労働省",
           "url": "https://www.mhlw.go.jp/stf/photo_report/2026/ph0623-01.html"
+        }
+      ]
+    },
+    {
+      "id": "20260623-002",
+      "news_date": "2026-06-23",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "鉛を含まないペロブスカイト材料の光電変換を研究",
+      "news_summary": "理化学研究所などは鉛を含まない材料で光によって大きな電流が生じることを確認した。",
+      "question": "理化学研究所などは、鉛（なまり）を含まないペロブスカイト材料に光を当てると、大きな電流が生じることを明らかにしました。\n\n光のエネルギーを直接電気に変える装置はどれですか。",
+      "choices": [
+        "風力発電機",
+        "太陽電池",
+        "火力発電機",
+        "燃料電池"
+      ],
+      "correct_index": 1,
+      "explanation": "太陽電池は光を受けて電気を生み出す装置です。ペロブスカイトと呼ばれる結晶構造を持つ材料は、新しい光電変換材料として研究されています。鉛を含まない材料の研究は環境への負担を減らすことにもつながります。",
+      "keywords": [
+        "ペロブスカイト",
+        "光電変換",
+        "理化学研究所",
+        "鉛フリー"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260623_1/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260623-003",
+      "news_date": "2026-06-23",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連総会が気候変動に関する国際司法裁判所の判断を支持",
+      "news_summary": "5月20日に国連総会が気候変動に関する各国の義務についての決議を採択し、6月23日に日本語訳が公開された。",
+      "question": "5月20日、国連総会は、気候変動への対策が各国の義務であるとする国際司法裁判所の判断を支持する決議を採択（さいたく）しました。\n\n国際司法裁判所（ICJ）が置かれている都市はどこですか。",
+      "choices": [
+        "ジュネーブ",
+        "ニューヨーク",
+        "ウィーン",
+        "ハーグ"
+      ],
+      "correct_index": 3,
+      "explanation": "国際司法裁判所はオランダのハーグに置かれている国連の主要な司法機関です。国どうしの法的な争いを解決したり、国連の機関などから求められた法律上の問題について意見を示したりします。",
+      "keywords": [
+        "国際司法裁判所",
+        "ICJ",
+        "気候変動",
+        "国連総会"
+      ],
+      "sources": [
+        {
+          "name": "国際連合広報センター",
+          "url": "https://www.unic.or.jp/news_press/features_backgrounders/54649/"
+        }
+      ]
+    },
+    {
+      "id": "20260623-004",
+      "news_date": "2026-06-23",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "ドイツで気候変動枠組条約の補助機関会合",
+      "news_summary": "6月8日から18日までボンで気候変動枠組条約の補助機関会合が開催された。",
+      "question": "6月8日から18日まで、ドイツのボンで国連気候変動枠組条約の補助機関会合が開かれました。\n\n国連気候変動枠組条約の締約国（ていやくこく）が集まる会議の略称はどれですか。",
+      "choices": [
+        "COP",
+        "WHO",
+        "WTO",
+        "IOC"
+      ],
+      "correct_index": 0,
+      "explanation": "COPは締約国会議を意味します。国連気候変動枠組条約のCOPでは、各国が温暖化を防ぐ対策や気候変動の影響に備える方法などについて話し合います。補助機関の会合では科学的な助言や条約の実施などが検討されます。",
+      "keywords": [
+        "UNFCCC",
+        "SB64",
+        "ボン",
+        "気候変動枠組条約"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05152.html"
         }
       ]
     }
