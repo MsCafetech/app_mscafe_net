@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 18,
+  "question_count": 19,
   "related_count": 13,
-  "image_count": 32,
+  "image_count": 33,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -597,6 +597,25 @@
           "license": "CC0 1.0",
           "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
           "usage_notes": "商用利用・改変可能。資料写真として明記し、出典と作者を表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-019",
+      "images": [
+        {
+          "id": "20261126-019-I01",
+          "type": "photo",
+          "title": "マウスの胚の顕微鏡写真",
+          "caption": "資料写真：成長途中のマウスの胚（はい）を染色して観察した顕微鏡写真。生物の体ができていく過程を調べる研究例です。今回の理化学研究所の研究そのものの画像ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Mouse_embryo.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Mouse_embryo.jpg",
+          "credit": "Ian P Newton",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。改変時は明示し、派生作品は同等ライセンスで配布。"
         }
       ],
       "related": []
