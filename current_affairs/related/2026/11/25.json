@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 15,
-  "related_count": 43,
+  "question_count": 16,
+  "related_count": 44,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -935,6 +935,31 @@
             {
               "name": "美祢市 秋吉台",
               "url": "https://www2.city.mine.lg.jp/soshiki/kyoiku/hogoka/bunkazai/bunkazai/kunishitei/tokubetsu/1530.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-027",
+      "related": [
+        {
+          "id": "20261125-027-R01",
+          "relation_type": "question",
+          "title": "月の南極に水が残る理由",
+          "description": "月の南極付近では、太陽が地平線近くの低い位置に見えます。そのため、クレーターの底などには、長い間太陽の光が当たらない永久影（えいきゅうえい）と呼ばれる場所があります。こうした低温の場所には、水が氷として残っている可能性があります。日本とインドの月探査計画LUPEX（ルペックス）は、探査車で月面を移動し、地下の土などを採取して水の量や状態を調べる計画です。月の水を利用できれば、将来の宇宙活動に役立つ可能性があります。",
+          "relationship": "月の南極を調査する理由と国際共同探査の目的を理解する。",
+          "keywords": [
+            "月",
+            "南極",
+            "永久影",
+            "LUPEX",
+            "水資源"
+          ],
+          "sources": [
+            {
+              "name": "JAXA 国際宇宙探査センター",
+              "url": "https://www.exploration.jaxa.jp/program/lunarpolar/index.html"
             }
           ]
         }
