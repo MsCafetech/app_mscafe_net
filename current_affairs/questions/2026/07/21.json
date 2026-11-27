@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-21",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260721-001",
@@ -35,6 +35,36 @@
         {
           "name": "日本気象協会",
           "url": "https://weather-jwa.jp/news/forecast-accuracy/post15087"
+        }
+      ]
+    },
+    {
+      "id": "20260721-002",
+      "news_date": "2026-07-21",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "固体中をイオンが速く移動する仕組みを解明",
+      "news_summary": "大阪大学などが超イオン伝導の仕組みを研究した。",
+      "question": "大阪大学などは、結晶の構造を保ったまま固体中の一部のイオンが高速で移動する仕組みを明らかにしました。\n\nイオンとはどのような粒子ですか。",
+      "choices": [
+        "電気を帯びた原子や原子の集まり",
+        "必ず電気を帯びない原子",
+        "光だけでできた粒子",
+        "必ず肉眼で見える粒子"
+      ],
+      "correct_index": 0,
+      "explanation": "原子などが電子を失ったり受け取ったりして電気を帯びたものがイオンです。固体の中をイオンが移動できる材料は、電池などの研究でも重要です。今回の研究は、イオンが速く移動する現象の基礎となる仕組みを調べたものです。",
+      "keywords": [
+        "超イオン伝導",
+        "結晶",
+        "大阪大学",
+        "固体電解質（でんかいしつ）"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260721_2/index.html"
         }
       ]
     }
