@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-30",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260430-001",
@@ -30,6 +30,96 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2636635?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20260430-002",
+      "news_date": "2026-04-30",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "4水系の河川整備基本方針を変更",
+      "news_summary": "国土交通省は気候変動による降雨量の増加などを考慮し、4水系の河川整備基本方針を変更した。",
+      "question": "大雨の際に川の上流で水を一時的にため、下流の洪水を防ぐ役割を持つ施設はどれですか。",
+      "choices": [
+        "灯台",
+        "ダム",
+        "空港",
+        "浄水場"
+      ],
+      "correct_index": 1,
+      "explanation": "ダムには水を一時的にためて下流へ流れる量を調節する役割があります。洪水を防ぐには、河川の整備だけでなく、流域全体で雨水をためるなどの対策を組み合わせることも重要です。",
+      "keywords": [
+        "流域治水",
+        "河川整備",
+        "気候変動",
+        "洪水対策"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/mizukokudo03_hh_001351.html"
+        }
+      ]
+    },
+    {
+      "id": "20260430-003",
+      "news_date": "2026-04-30",
+      "category": "culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "漫画家ちばてつや氏の原画などを受け入れ",
+      "news_summary": "文化庁はメディア芸術の保存・活用に向け、ちばてつや氏の漫画原画などを受け入れた。",
+      "question": "漫画の原画などを公的な施設で収集し、保存する主な目的はどれですか。",
+      "choices": [
+        "作品をすべて廃棄するため",
+        "新しい漫画の制作を禁止するため",
+        "文化的な資料を後世に伝えるため",
+        "作者の名前を消すため"
+      ],
+      "correct_index": 2,
+      "explanation": "漫画の原画などには制作過程や時代の文化を知るための価値があります。適切に保存し、研究や展示に活用することで、日本のメディア芸術の歴史を将来の世代へ伝えられます。",
+      "keywords": [
+        "ちばてつや",
+        "漫画原画",
+        "文化庁",
+        "メディア芸術"
+      ],
+      "sources": [
+        {
+          "name": "文化庁",
+          "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94373301.html"
+        }
+      ]
+    },
+    {
+      "id": "20260430-004",
+      "news_date": "2026-04-30",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "メタノールを利用する酵母の酵素の研究",
+      "news_summary": "理化学研究所などは、メタノールを利用する酵母の酵素の構造を調べた。",
+      "question": "生物の体内で化学反応を進みやすくする酵素（こうそ）の働きとして正しいものはどれですか。",
+      "choices": [
+        "化学反応の速度を高める",
+        "物質の重さを必ず2倍にする",
+        "すべての反応を止める",
+        "水を必ず金属に変える"
+      ],
+      "correct_index": 0,
+      "explanation": "酵素は生物の体内でさまざまな化学反応を進みやすくします。消化酵素などもその一例です。酵素の構造と働きを調べる研究は、生物が物質を利用する仕組みの理解につながります。",
+      "keywords": [
+        "メタノール",
+        "酵母",
+        "タンパク質",
+        "理化学研究所"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260430_3/index.html"
         }
       ]
     }
