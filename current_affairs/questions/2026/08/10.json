@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-10",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260810-001",
+      "news_date": "2026-08-10",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "熊本地震で動いた断層帯を分析",
+      "news_summary": "地震調査委員会は7月28日の地震で断層帯が約30キロにわたり活動したと評価した。",
+      "question": "7月28日の熊本地震について、地震調査委員会は震源となった断層帯が約30キロにわたって活動したと評価しました。\n\n断層（だんそう）とは何ですか。",
+      "choices": [
+        "地下水が流れる通路",
+        "地層や岩盤が割れてずれた部分",
+        "火山から出た灰の層",
+        "川が運んだ砂だけの層"
+      ],
+      "correct_index": 1,
+      "explanation": "断層とは地層や岩盤が割れ、その両側にずれが生じた部分です。地下で岩盤に力が加わり、断層が急に動くことで地震が起こることがあります。大きな地震の後も地震活動が続く場合があるため、備えを続けることが大切です。",
+      "keywords": [
+        "熊本地震",
+        "日奈久（ひなぐ）断層帯",
+        "地震調査委員会",
+        "地震活動"
+      ],
+      "sources": [
+        {
+          "name": "Science Portal",
+          "url": "https://scienceportal.jst.go.jp/stories/20260810_s01/"
+        }
+      ]
+    }
+  ]
+}
