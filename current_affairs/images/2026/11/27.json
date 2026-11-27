@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "related_count": 1,
-  "image_count": 3,
+  "image_count": 4,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -59,6 +59,25 @@
           "license": "CC0 1.0",
           "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
           "usage_notes": "商用利用・改変可能。出典を表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261127-003",
+      "images": [
+        {
+          "id": "20261127-003-I01",
+          "type": "photo",
+          "title": "野生のキタイワトビペンギン",
+          "caption": "資料写真：南大西洋の島に暮らすキタイワトビペンギン。黄色い羽が特徴です。今回生まれたひなの写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Northern_Rockhopper_Penguin_on_Inaccessible_Island.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Northern_Rockhopper_Penguin_on_Inaccessible_Island.jpg",
+          "credit": "Brian Gratwicke",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "作者・出典・ライセンスを表示し、変更時は明示。商用利用可能。"
         }
       ],
       "related": []
