@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 15,
-  "related_count": 41,
-  "image_count": 56,
+  "question_count": 16,
+  "related_count": 42,
+  "image_count": 58,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -1039,6 +1039,44 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "著作者・出典・ライセンスを表示。変更を明記し、改変画像は同一または互換ライセンスで配布。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-027",
+      "images": [
+        {
+          "id": "20261125-027-I01",
+          "type": "photo",
+          "title": "月の南極付近",
+          "caption": "資料写真：月の南極付近を探査機が撮影した画像を組み合わせたもの。多くのクレーターが見える。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Moon_South_Pole.jpg/500px-Moon_South_Pole.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Moon_South_Pole.jpg",
+          "credit": "NASA/JPL-Caltech",
+          "license": "Public domain (NASA)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+          "usage_notes": "NASA/JPL-Caltechを出典として表示。NASAの推奨・承認を示唆しない。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261125-027-R01",
+          "images": [
+            {
+              "id": "20261125-027-R01-I01",
+              "type": "photo",
+              "title": "月の南極付近",
+              "caption": "資料写真：月の南極付近を探査機が撮影した画像を組み合わせたもの。多くのクレーターが見える。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Moon_South_Pole.jpg/500px-Moon_South_Pole.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Moon_South_Pole.jpg",
+              "credit": "NASA/JPL-Caltech",
+              "license": "Public domain (NASA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+              "usage_notes": "NASA/JPL-Caltechを出典として表示。NASAの推奨・承認を示唆しない。"
             }
           ]
         }
