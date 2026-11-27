@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-16",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260416-001",
@@ -30,6 +30,66 @@
         {
           "name": "柏崎市",
           "url": "https://www.city.kashiwazaki.lg.jp/soshikiichiran/sogokikakubu/genkihasshinka/1/24/2026release/202604/48811.html"
+        }
+      ]
+    },
+    {
+      "id": "20260416-002",
+      "news_date": "2026-04-16",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "認知症モデルマウスの脳の機能を改善",
+      "news_summary": "理化学研究所が神経幹細胞を活性化しマウスの認知機能を改善した。",
+      "question": "理化学研究所は、認知症（にんちしょう）の一つであるアルツハイマー病の研究に使うマウスで、神経細胞を作る働きを活発にして脳の機能を改善する研究成果を発表しました。\n\n脳が主に行う働きはどれですか。",
+      "choices": [
+        "血液を全身に送り出す",
+        "食べ物を消化する",
+        "情報を処理して体の動きを調整する",
+        "血液から尿を作る"
+      ],
+      "correct_index": 2,
+      "explanation": "脳は感覚器官から届く情報を処理し、記憶（きおく）や学習、体の動きなどに関わります。神経細胞は情報を伝える役割を持ちます。今回の研究はマウスを使ったもので、人への治療法として確立されたわけではありません。",
+      "keywords": [
+        "理化学研究所",
+        "アルツハイマー病",
+        "神経幹細胞",
+        "マウス"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260416_1/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260416-003",
+      "news_date": "2026-04-16",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "核融合に関わるミュオン分子を直接観測",
+      "news_summary": "国際共同研究グループがミュオン分子の特定の状態を初めて直接観測した。",
+      "question": "中部大学などの研究グループは、核融合（かくゆうごう）に関わるミュオンという粒子を含む分子の状態を直接観測しました。\n\n太陽が光や熱を出すエネルギーのもととなっている反応はどれですか。",
+      "choices": [
+        "水が凍る反応",
+        "鉄がさびる反応",
+        "植物の光合成",
+        "水素の原子核が結び付く核融合反応"
+      ],
+      "correct_index": 3,
+      "explanation": "太陽の中心部では、水素の原子核が結び付いてヘリウムになる核融合反応が起こり、大きなエネルギーが生まれます。地上でも核融合を利用する研究が進められていますが、実用的な発電にはまだ課題があります。",
+      "keywords": [
+        "ミュオン",
+        "核融合研究",
+        "X線分光",
+        "中部大学"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260416_3/index.html"
         }
       ]
     }
