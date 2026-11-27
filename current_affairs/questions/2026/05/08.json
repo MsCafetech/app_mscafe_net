@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-08",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260508-001",
@@ -30,6 +30,66 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2649285?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20260508-002",
+      "news_date": "2026-05-08",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "コイルを使わない電子回路の研究",
+      "news_summary": "理化学研究所などがコイルなしで発振する回路を実現した。",
+      "question": "理化学研究所などは5月8日、従来コイルが担っていた働きを別の材料で実現し、電気信号をくり返し発生させる回路を作ったと発表しました。\n\n一般的にコイルに電流を流すと、その周りには何が生じますか。",
+      "choices": [
+        "音波だけ",
+        "磁界（じかい）",
+        "水蒸気",
+        "重力の消失"
+      ],
+      "correct_index": 1,
+      "explanation": "導線を巻いたコイルに電流を流すと、周りに磁界が生じます。鉄心を入れて電磁石にすることもできます。今回の研究は、コイルを使わない回路によって電子機器の小型化などにつながる可能性があります。",
+      "keywords": [
+        "コイル",
+        "電子回路",
+        "メモリスタ",
+        "理化学研究所"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260508_2/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260508-003",
+      "news_date": "2026-05-08",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本と欧州が小惑星探査で協力",
+      "news_summary": "JAXAとESAが5月7日にアポフィス探査に関する協定を締結した。",
+      "question": "宇宙航空研究開発機構（JAXA）と欧州宇宙機関（ESA）は5月7日、地球に近づく小惑星（しょうわくせい）アポフィスの探査（たんさ）などで協力する協定を結びました。\n\nこのような天体を早く発見し、地球との衝突（しょうとつ）による被害を防ぐ取り組みを何といいますか。",
+      "choices": [
+        "テラフォーミング",
+        "宇宙旅行",
+        "プラネタリーディフェンス",
+        "気象観測"
+      ],
+      "correct_index": 2,
+      "explanation": "プラネタリーディフェンスは、地球に近づく天体を発見し、その軌道（きどう）を計算するなどして、衝突の危険を調べ、被害を防ぐ取り組みです。アポフィスは2029年に地球へ接近する予定で、国際協力による探査が計画されています。",
+      "keywords": [
+        "JAXA",
+        "ESA",
+        "アポフィス",
+        "RAMSES"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/05/20260508-1_j.html"
         }
       ]
     }
