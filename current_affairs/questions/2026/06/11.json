@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-11",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260611-001",
@@ -34,6 +34,66 @@
         {
           "name": "バチカン・ニュース",
           "url": "https://www.vaticannews.va/ja/pope/news/2026-06/leone-xiv-spagna-barcellona-messa-sagrada-familia.html"
+        }
+      ]
+    },
+    {
+      "id": "20260611-002",
+      "news_date": "2026-06-11",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "機械学習で心臓の病気の遺伝的な要因を研究",
+      "news_summary": "千葉大学と理化学研究所は、冠動脈の病気のリスク予測の精度を高めた。",
+      "question": "千葉大学などは6月11日、機械学習を用いて冠動脈（かんどうみゃく）の病気と遺伝子の関係を調べた成果を発表しました。\n\n冠動脈は主にどの器官に血液を送りますか。",
+      "choices": [
+        "肺",
+        "心臓",
+        "胃",
+        "腎臓（じんぞう）"
+      ],
+      "correct_index": 1,
+      "explanation": "冠動脈は心臓の筋肉に酸素や養分を含む血液を届ける血管です。血流が悪くなると、心臓の働きに影響することがあります。遺伝情報などを分析する研究は、将来の病気の予防方法を考える手がかりになります。",
+      "keywords": [
+        "冠動脈疾患",
+        "機械学習",
+        "千葉大学",
+        "遺伝子変異"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260611_1/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260611-003",
+      "news_date": "2026-06-11",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連とJAXAの超小型衛星支援で2機関を選定",
+      "news_summary": "エルサルバドルとタイの機関がKiboCUBEの第9回公募で選ばれた。",
+      "question": "JAXAと国連宇宙部は6月11日、国際宇宙ステーションの日本実験棟から超小型衛星を放出する機会を提供する事業で、エルサルバドルとタイの機関を選んだと発表しました。\n\nこの日本実験棟の名前は何ですか。",
+      "choices": [
+        "きぼう",
+        "ひまわり",
+        "みちびき",
+        "あかつき"
+      ],
+      "correct_index": 0,
+      "explanation": "きぼうは国際宇宙ステーションにある日本の実験施設です。宇宙での科学実験に加え、小型衛星を宇宙へ放出する機能もあります。KiboCUBEは宇宙技術の開発経験が限られる国や地域の人材育成にも役立っています。",
+      "keywords": [
+        "KiboCUBE",
+        "国連宇宙部",
+        "エルサルバドル",
+        "超小型衛星"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/06/20260611-1_j.html"
         }
       ]
     }
