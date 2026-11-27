@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-03",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260603-001",
@@ -59,6 +59,66 @@
         {
           "name": "nippon.com",
           "url": "https://www.nippon.com/ja/articles/-/11174"
+        }
+      ]
+    },
+    {
+      "id": "20260603-003",
+      "news_date": "2026-06-03",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "一瞬でナノの世界を撮影するX線技術",
+      "news_summary": "理化学研究所と大阪大学が微小な構造を広い範囲で一度に撮影できる技術を開発した。",
+      "question": "理化学研究所などは6月3日、ナノメートルの大きさの世界を一瞬で撮影できるX線技術を発表しました。\n\n1ナノメートルは1メートルの何分の1ですか。",
+      "choices": [
+        "1000分の1",
+        "100万分の1",
+        "10億分の1",
+        "1兆分の1"
+      ],
+      "correct_index": 2,
+      "explanation": "ナノメートルは非常に小さな長さを表す単位で、1メートルの10億分の1です。新しいX線撮影技術によって、小さな構造の短時間の変化を調べられるようになり、生命科学や材料の研究に役立つと期待されています。",
+      "keywords": [
+        "X線イメージング",
+        "SACLA",
+        "放射光",
+        "理化学研究所"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260603_1/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260603-004",
+      "news_date": "2026-06-03",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "再生可能資源を使い道路材料を再生",
+      "news_summary": "農研機構などが糖質と脂肪酸から作る材料で古いアスファルトの性能を回復する技術を開発した。",
+      "question": "農研機構（のうけんきこう）などは6月3日、植物などから得られる原料を使い、古くなったアスファルトの性能を回復する技術を発表しました。\n\nアスファルトが広く使われる場所はどれですか。",
+      "choices": [
+        "道路の舗装（ほそう）",
+        "窓の透明なガラス",
+        "電球のフィラメント",
+        "飲料水の容器"
+      ],
+      "correct_index": 0,
+      "explanation": "アスファルトは道路の舗装や建物の防水などに利用されます。熱や紫外線（しがいせん）によって古くなると、もろくなることがあります。再生可能な資源を使って性能を回復できれば、道路を長く使い、資源の消費を減らすことにつながります。",
+      "keywords": [
+        "アスファルト再生",
+        "農研機構",
+        "C-AG",
+        "資源循環"
+      ],
+      "sources": [
+        {
+          "name": "農研機構",
+          "url": "https://www.naro.go.jp/publicity_report/press/laboratory/nfri/175957.html"
         }
       ]
     }
