@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-01",
   "language": "ja",
-  "question_count": 6,
+  "question_count": 8,
   "questions": [
     {
       "id": "20260701-001",
@@ -181,6 +181,66 @@
         {
           "name": "財務省",
           "url": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_04.html"
+        }
+      ]
+    },
+    {
+      "id": "20260701-007",
+      "news_date": "2026-07-01",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "アトピー性皮膚炎の症状の違いを研究",
+      "news_summary": "広島大学と理化学研究所がT細胞受容体の違いと症状の関係を明らかにした。",
+      "question": "広島大学などは、アトピー性皮膚炎（ひふえん）の症状が人によって異なる仕組みの一端を明らかにしました。T細胞と呼ばれる細胞が関係します。\n\nT細胞が関わる、体を病原体などから守る仕組みは何ですか。",
+      "choices": [
+        "消化",
+        "免疫（めんえき）",
+        "呼吸",
+        "排出（はいしゅつ）"
+      ],
+      "correct_index": 1,
+      "explanation": "T細胞は白血球の一種で、体の免疫の働きに関わります。免疫は体を病原体などから守りますが、特定の物質への反応がアレルギーの症状につながることもあります。今回の研究は症状の違いを理解する手がかりとなります。",
+      "keywords": [
+        "T細胞",
+        "アレルギー",
+        "広島大学",
+        "理化学研究所"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260701_2/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260701-008",
+      "news_date": "2026-07-01",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "水の日が第50回を迎える",
+      "news_summary": "国土交通省が8月1日の水の日と関連行事を発表した。",
+      "question": "国土交通省は、8月1日の「水の日」が2026年で50回目を迎えると発表しました。水資源の大切さを伝える行事が各地で予定されています。\n\n家庭で水資源を大切に使う取り組みとして適切なのはどれですか。",
+      "choices": [
+        "歯をみがく間は水を出し続ける",
+        "水道の水もれを放置する",
+        "必要な量だけ水を使う",
+        "飲める水を不用意に捨てる"
+      ],
+      "correct_index": 2,
+      "explanation": "水は地球上を循環（じゅんかん）していますが、生活に利用できるきれいな水には限りがあります。水をむだにしないことや、水源となる森林などの環境を守ることが大切です。8月1日は水循環基本法で水の日と定められています。",
+      "keywords": [
+        "水の日",
+        "水循環基本法",
+        "水資源",
+        "国土交通省"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/water01_hh_000184.html"
         }
       ]
     }
