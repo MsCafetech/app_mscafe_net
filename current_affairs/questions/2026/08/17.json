@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-17",
+  "language": "ja",
+  "question_count": 2,
+  "questions": [
+    {
+      "id": "20260817-001",
+      "news_date": "2026-08-17",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とフィリピン・マレーシアが海上保安で協力",
+      "news_summary": "8月11～14日の訪問で国土交通大臣が海上保安分野の連携を確認した。",
+      "question": "8月11日から14日まで、国土交通大臣はフィリピンとマレーシアを訪問し、海上保安などの協力について話し合いました。\n\n船が物資を運ぶために利用する重要な海上交通路を何といいますか。",
+      "choices": [
+        "シーレーン",
+        "ハイウェイ",
+        "空路",
+        "鉄道網"
+      ],
+      "correct_index": 0,
+      "explanation": "シーレーンは海上交通路のことです。日本は石油や食料など多くの物資を船で輸入するため、海上交通路の安全は生活や産業に深く関係します。沿岸国と協力して海の安全を守ることが重要です。",
+      "keywords": [
+        "海上保安",
+        "フィリピン",
+        "マレーシア",
+        "インド太平洋"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/sogo05_hh_000421.html"
+        }
+      ]
+    },
+    {
+      "id": "20260817-002",
+      "news_date": "2026-08-17",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "物流倉庫の荷物を地震から守る技術を開発",
+      "news_summary": "金沢工業大学などは球状の人工骨材を用いた防震構法を開発した。",
+      "question": "金沢工業大学などは、物流倉庫の床に球状の材料を使い、地震で荷物がくずれるのをおさえる技術を開発しました。\n\n地面の揺れが建物に伝わりにくくする構造を何といいますか。",
+      "choices": [
+        "耐火構造",
+        "免震構造（めんしんこうぞう）",
+        "防水構造",
+        "断熱構造"
+      ],
+      "correct_index": 1,
+      "explanation": "免震構造は、地面と建物の間などに装置を設け、地震の揺れが建物に伝わりにくくする構造です。今回の研究は倉庫の荷物を守るために、材料のすべりを利用する方法を検討したもので、実用化に向けた研究が続きます。",
+      "keywords": [
+        "金沢工業大学",
+        "物流倉庫",
+        "人工骨材",
+        "防震構法"
+      ],
+      "sources": [
+        {
+          "name": "Science Portal",
+          "url": "https://scienceportal.jst.go.jp/newsflash/20260817_n01/"
+        }
+      ]
+    }
+  ]
+}
