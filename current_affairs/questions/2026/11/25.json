@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 18,
+  "question_count": 20,
   "questions": [
     {
       "id": "20261125-011",
@@ -581,6 +581,74 @@
         {
           "name": "次期指導要領ナビ",
           "url": "https://www.haradaeigo.com/jikigakushushido/kyoiku/"
+        }
+      ]
+    },
+    {
+      "id": "20261125-030",
+      "news_date": "2026-11-25",
+      "question_type": "current_affairs",
+      "category": "politics",
+      "difficulty": 2,
+      "news_title": "裁判官弾劾裁判所（さいばんかんだんがいさいばんしょ）が罷免（ひめん）の判決",
+      "news_summary": "11月25日、国会の裁判官弾劾裁判所が、有罪判決の確定した新潟簡易裁判所（にいがたかんいさいばんしょ）の裁判官を辞めさせる判決を出しました。",
+      "question": "11月25日、罪を犯したとして有罪判決が確定していた新潟簡易裁判所（にいがたかんいさいばんしょ）の裁判官について、裁判官弾劾裁判所がその職を失わせる判決を出しました。\n\n日本国憲法（にほんこくけんぽう）に基づき、裁判官弾劾裁判所を設ける機関はどれですか。",
+      "choices": [
+        "内閣（ないかく）",
+        "最高裁判所",
+        "国会",
+        "会計検査院"
+      ],
+      "correct_index": 2,
+      "explanation": "日本国憲法第64条は、国会が衆議院と参議院の議員で構成する弾劾裁判所を設けると定めています。裁判官は独立して裁判を行うため、政府が自由に辞めさせることはできません。一方、重大な問題がある場合には、憲法に定められた手続きによって職を失わせることができます。",
+      "keywords": [
+        "裁判官弾劾裁判所（さいばんかんだんがいさいばんしょ）",
+        "三権分立",
+        "国会",
+        "日本国憲法（にほんこくけんぽう）"
+      ],
+      "sources": [
+        {
+          "name": "テレビ朝日",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000550516.html"
+        },
+        {
+          "name": "衆議院",
+          "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/kokkai/kokkai_sotui.htm"
+        }
+      ]
+    },
+    {
+      "id": "20261125-031",
+      "news_date": "2026-11-25",
+      "question_type": "current_affairs",
+      "category": "economy",
+      "difficulty": 2,
+      "news_title": "海上貿易の書類を電子化する改正商法が成立",
+      "news_summary": "11月25日、船荷証券（ふなにしょうけん）などを電子データで取り扱えるようにする改正商法が成立しました。",
+      "question": "11月25日、船による貿易で使う船荷証券（ふなにしょうけん）などを電子データで取り扱えるようにする改正商法が、参議院本会議で可決され、成立しました。\n\n船荷証券は主に何を証明するための書類ですか。",
+      "choices": [
+        "貨物を受け取る権利",
+        "船員の国籍（こくせき）",
+        "港の使用料の金額",
+        "船の建造年月日"
+      ],
+      "correct_index": 0,
+      "explanation": "船荷証券は、船で運ばれる貨物を受け取る権利を証明する重要な書類です。これまでは紙の書類を送り届ける手間がかかっていました。電子化により、書類のやり取りが速くなり、貿易手続きの効率化が期待されます。島国である日本にとって、海上輸送は外国との貿易を支える重要な手段です。",
+      "keywords": [
+        "船荷証券（ふなにしょうけん）",
+        "商法",
+        "海上貿易",
+        "電子化"
+      ],
+      "sources": [
+        {
+          "name": "時事通信（nippon.com）",
+          "url": "https://www.nippon.com/ja/articles/-/57938"
+        },
+        {
+          "name": "内閣法制局",
+          "url": "https://www.clb.go.jp/recent-laws/diet_bill/detail/id%3D5390"
         }
       ]
     }
