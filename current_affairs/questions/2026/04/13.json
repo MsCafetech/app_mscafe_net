@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-13",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260413-001",
@@ -30,6 +30,36 @@
         {
           "name": "原子力発電環境整備機構",
           "url": "https://www.numo.or.jp/chisoushobun/survey_status/minamitorishima/"
+        }
+      ]
+    },
+    {
+      "id": "20260413-002",
+      "news_date": "2026-04-13",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "藻類と共生する菌類を84年ぶりに再発見",
+      "news_summary": "京都大学などが京都市郊外で長年正体が不明だった菌類を再発見した。",
+      "question": "京都大学などは、藻類（そうるい）と共生する、長い間正体が分からなかった菌類（きんるい）を京都市の郊外（こうがい）で再発見しました。\n\n異なる種類の生物が互いに利益を得ながら生活する関係の例はどれですか。",
+      "choices": [
+        "ライオンとそのえもの",
+        "マメ科植物と根粒菌（こんりゅうきん）",
+        "同じ食べ物を取り合う動物",
+        "植物とそれを枯らす病原菌"
+      ],
+      "correct_index": 1,
+      "explanation": "マメ科植物は根粒菌に養分を与え、根粒菌は空気中の窒素（ちっそ）を植物が利用できる形に変えます。このように異なる種類の生物が互いに利益を得る関係も共生の一つです。生物同士の関係を調べることで、生態系への理解が深まります。",
+      "keywords": [
+        "京都大学",
+        "藻類",
+        "菌類",
+        "共生"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260413_1/index.html"
         }
       ]
     }
