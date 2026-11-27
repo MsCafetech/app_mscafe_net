@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 13,
-  "image_count": 34,
+  "related_count": 15,
+  "image_count": 36,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -466,7 +466,26 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。変更時は明示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-011-R01",
+          "images": [
+            {
+              "id": "20261126-011-R01-I01",
+              "type": "photo",
+              "title": "LNGタンカー",
+              "caption": "資料写真：液化天然ガスを海上輸送する専用船。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lng_tanker.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Lng_tanker.jpg",
+              "credit": "lightgraphs",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-012",
@@ -542,7 +561,26 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-015-R01",
+          "images": [
+            {
+              "id": "20261126-015-R01-I01",
+              "type": "photo",
+              "title": "店から出た食品ロス",
+              "caption": "資料写真：大型店で捨てられた野菜や果物。事業系食品ロスの例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Treasure_trove_of_wasted_food.JPG/960px-Treasure_trove_of_wasted_food.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Treasure_trove_of_wasted_food.JPG",
+              "credit": "Foerster",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用・改変可能。出典と作者を表示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-016",
