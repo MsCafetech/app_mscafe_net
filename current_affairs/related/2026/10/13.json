@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "questions": [
+    {
+      "question_id": "20261013-001",
+      "related": [
+        {
+          "id": "20261013-001-R01",
+          "relation_type": "answer",
+          "title": "名目GDPと実質GDPの違い",
+          "description": "経済の成長を調べるときには、名目GDP（めいもくジーディーピー）と実質GDP（じっしつジーディーピー）を使い分けます。名目GDPはその時の価格で計算し、実質GDPは物価の変化の影響（えいきょう）を取り除いて計算します。例えば、ある店で100円のパンを100個売ったとします。翌年も同じ数を売り、価格だけが120円になれば、売上高は1万円から1万2千円になりますが、生産量は増えていません。このように、価格の上昇（じょうしょう）と生産の増加を区別するため、実質GDPが役立ちます。",
+          "relationship": "GDPで経済成長を比較する際に物価の変化を区別する理由を学ぶ。",
+          "keywords": [
+            "GDP",
+            "名目GDP",
+            "実質GDP",
+            "物価"
+          ],
+          "sources": [
+            {
+              "name": "日本銀行「GDP、実質GDP」",
+              "url": "https://www.boj.or.jp/about/education/oshiete/glossary/economy/e03.htm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
