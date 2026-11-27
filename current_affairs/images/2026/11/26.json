@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 15,
+  "question_count": 18,
   "related_count": 13,
-  "image_count": 29,
+  "image_count": 32,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -540,6 +540,63 @@
           "license": "CC BY 2.0",
           "license_url": "https://creativecommons.org/licenses/by/2.0/",
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-016",
+      "images": [
+        {
+          "id": "20261126-016-I01",
+          "type": "historical",
+          "title": "芥川龍之介の肖像写真",
+          "caption": "資料写真：小説『藪の中』を書いた芥川龍之介。今回見つかった直筆原稿の写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Ryunosuke_Akutagawa_01.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ryunosuke_Akutagawa_01.jpg",
+          "credit": "撮影者不詳（1927年『歴史写真』掲載、あばさーがデジタル化）",
+          "license": "Public domain (Japan and United States)",
+          "license_url": "https://commons.wikimedia.org/wiki/File:Ryunosuke_Akutagawa_01.jpg#Licensing",
+          "usage_notes": "1927年発行の肖像写真で著作権保護期間満了。資料写真として掲載、出典を表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-017",
+      "images": [
+        {
+          "id": "20261126-017-I01",
+          "type": "photo",
+          "title": "陸前高田の奇跡の一本松",
+          "caption": "資料写真：東日本大震災の津波被害の中で残った奇跡の一本松。2027年横浜国際園芸博覧会の会場を撮影した写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Miracle_Pine_Tree.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Miracle_Pine_Tree.jpg",
+          "credit": "国土交通省 東北地方整備局",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "商用利用可能。国土交通省東北地方整備局、出典URL、ライセンスを明記。改変時は変更内容を表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-020",
+      "images": [
+        {
+          "id": "20261126-020-I01",
+          "type": "photo",
+          "title": "アラスカの野生のラッコ",
+          "caption": "資料写真：アラスカの海に浮かぶ野生のラッコ。海遊館に受け入れられた4頭とは別の個体です。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Sea_Otter_in_Alaska.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sea_Otter_in_Alaska.jpg",
+          "credit": "RndmCrs",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "商用利用・改変可能。資料写真として明記し、出典と作者を表示。"
         }
       ],
       "related": []
