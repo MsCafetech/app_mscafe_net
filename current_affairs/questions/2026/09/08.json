@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-08",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260908-001",
@@ -59,6 +59,36 @@
         {
           "name": "テレビ朝日",
           "url": "https://news.tv-asahi.co.jp/news_society/articles/000531936.html"
+        }
+      ]
+    },
+    {
+      "id": "20260908-003",
+      "news_date": "2026-09-08",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とイスラエルが航空安全の相互承認で合意",
+      "news_summary": "9月8日、両国の航空当局が航空製品の安全認証に関する取り決めを結んだ。",
+      "question": "9月8日、日本とイスラエルの航空当局は、航空製品の安全性を確かめる検査などを互いに認める取り決めを結びました。\n\nこの取り決めの主な目的は何ですか。",
+      "choices": [
+        "航空機の安全基準をなくす",
+        "検査の重複を減らし認証手続を効率化する",
+        "両国間の航空輸送を禁止する",
+        "航空機をすべて同じ機種にする"
+      ],
+      "correct_index": 1,
+      "explanation": "航空機やその部品には安全性を確かめるための基準があります。国の航空当局どうしが検査結果などを認め合うことで、安全を確保しながら同じ検査をくり返す負担を減らせます。航空産業の国際協力にもつながります。",
+      "keywords": [
+        "航空安全",
+        "相互承認",
+        "イスラエル",
+        "航空産業"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kouku11_hh_000136.html"
         }
       ]
     }
