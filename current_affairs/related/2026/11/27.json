@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 5,
-  "related_count": 7,
+  "related_count": 10,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -23,6 +23,24 @@
             {
               "name": "環境省",
               "url": "https://kyushu.env.go.jp/okinawa/park.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-001-R02",
+          "relation_type": "question",
+          "title": "島の生物地理と分布調査",
+          "description": "海で分けられた島には、ほかの地域では見られない固有種（こゆうしゅ）が暮らしていることがあります。生き物がどこに分布し、どれくらいいるかを調べると、島ごとの自然の特徴（とくちょう）が分かります。環境省は小笠原諸島（おがさわらしょとう）などの島の固有種について、種類数や絶滅危惧種（ぜつめつきぐしゅ）の割合を調べています。開発や外来種によって生息地が変化することもあるため、分布や個体数の変化を調べることは自然を守るうえで重要です。",
+          "relationship": "島ごとの生き物の分布を調べる意義を学びます。",
+          "keywords": [
+            "固有種",
+            "分布",
+            "島の生態系"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/content/000305472.pdf"
             }
           ]
         }
@@ -93,6 +111,24 @@
               "url": "https://www.env.go.jp/nature/yasei/ex-situ/what.html"
             }
           ]
+        },
+        {
+          "id": "20261127-003-R02",
+          "relation_type": "question",
+          "title": "DNAによる親子関係の確認",
+          "description": "DNA（ディーエヌエー）は、生き物の体の特徴（とくちょう）などを決める情報を持つ物質です。子は父親と母親から遺伝（いでん）情報を受けつぎます。親子関係を調べるときには、子と親の候補となる個体のDNAのうち、個体によって違いがある部分を比べます。複数の部分を調べることで、親子関係について科学的な判断ができます。人間の親子鑑定（おやこかんてい）にも、このような遺伝の仕組みが利用されています。",
+          "relationship": "人工授精（じんこうじゅせい）で生まれたひなの親子関係を確認する技術の基礎（きそ）を学びます。",
+          "keywords": [
+            "DNA",
+            "遺伝",
+            "親子鑑定"
+          ],
+          "sources": [
+            {
+              "name": "公益社団法人日本厚生協会",
+              "url": "https://www.kousei-kyoukai.or.jp/dna-kantei.html"
+            }
+          ]
         }
       ]
     },
@@ -155,6 +191,32 @@
             {
               "name": "環境省",
               "url": "https://www.env.go.jp/air/acidrain/monitoring/rep1/full.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261127-005-R02",
+          "relation_type": "answer",
+          "title": "四日市ぜんそくと大気汚染（たいきおせん）対策",
+          "description": "三重県四日市市では、高度経済成長期に石油化学工業が発達しました。工場で硫黄（いおう）を多く含む原油を使ったため、二酸化硫黄などが空気中に放出され、住民にぜんそくなどの健康被害が発生しました。これを四日市ぜんそくといいます。対策として、硫黄分の少ない燃料の使用や、工場ごとの汚染物質の排出（はいしゅつ）総量を制限する制度、大気の観測などが進められました。産業の発展と人々の健康を両立させることの大切さを示す公害問題です。",
+          "relationship": "酸性雨の原因物質でもある二酸化硫黄が人の健康にも関係することを学びます。",
+          "keywords": [
+            "四日市ぜんそく",
+            "二酸化硫黄",
+            "総量規制"
+          ],
+          "sources": [
+            {
+              "name": "四日市市・四日市公害と環境未来館",
+              "url": "https://www.city.yokkaichi.mie.jp/yokkaichikougai-kankyoumiraikan/about-yokkaichi-pollution/summary/summary10/"
+            },
+            {
+              "name": "四日市市・四日市公害と環境未来館",
+              "url": "https://www.city.yokkaichi.mie.jp/yokkaichikougai-kankyoumiraikan/about-yokkaichi-pollution/countermeasures/countermeasures06/"
+            },
+            {
+              "name": "四日市市・四日市公害と環境未来館",
+              "url": "https://www.city.yokkaichi.mie.jp/yokkaichikougai-kankyoumiraikan/about-yokkaichi-pollution/countermeasures/countermeasures08/"
             }
           ]
         }
