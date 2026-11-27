@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-26",
+  "count": 2,
+  "articles": [
+    {
+      "id": "33944c72cb8f6a6c03bcd7ddb1fcece921489eb437b7a52ad4d4c8864ffd4632",
+      "source_id": "mext",
+      "publisher_id": "mext",
+      "source_name": "文部科学省",
+      "role": "discovery",
+      "category": "government",
+      "title": "学校基本調査－令和8年度　結果の概要－：文部科学省",
+      "discovery_title": "学校基本調査－令和8年度　結果の概要－",
+      "published_at": "2026-07-26",
+      "publication_day": "2026-07-26",
+      "updated_at": null,
+      "url": "https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/kekka/k_detail/2026_00001.htm",
+      "discovered_url": "https://www.mext.go.jp/b_menu/toukei/chousa01/kihon/kekka/k_detail/2026_00001.htm",
+      "summary": null,
+      "body": null,
+      "body_chars": 135,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "list_row_unverified",
+      "quality_flags": [
+        "short_body",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:26:18+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:26:18+09:00"
+    },
+    {
+      "id": "f1c6d1348f876108d05ba2731581eadbe4e8fe3f138dd1600e3b43d12ca8bd06",
+      "source_id": "bunka",
+      "publisher_id": "bunka",
+      "source_name": "文化庁",
+      "role": "discovery",
+      "category": "government",
+      "title": "「飛鳥・藤原の宮都」に係る世界遺産委員会決議についてお知らせします（概要） | 文化庁",
+      "discovery_title": "「飛鳥・藤原の宮都」に係る世界遺産委員会決議についてお知らせします（概要）",
+      "published_at": "2026-07-26",
+      "publication_day": "2026-07-26",
+      "updated_at": null,
+      "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94413401.html",
+      "discovered_url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94413401.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 871,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "list_row_unverified",
+      "quality_flags": [
+        "publication_unverified",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:32:08+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:32:08+09:00"
+    }
+  ]
+}

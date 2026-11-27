@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-12",
+  "count": 3,
+  "articles": [
+    {
+      "id": "2cce7322637c15925aaa3ff86bafc4b60b27e3cd6d26677fb798409e1614f8b5",
+      "source_id": "itmedia",
+      "publisher_id": "itmedia",
+      "source_name": "ITmedia NEWS",
+      "role": "discovery",
+      "category": "news",
+      "title": "Cloud USER",
+      "discovery_title": "Cloud USER",
+      "published_at": "2026-08-12T14:55:50+09:00",
+      "publication_day": "2026-08-12",
+      "updated_at": null,
+      "url": "https://www.itmedia.co.jp/news/feature/clouduser",
+      "discovered_url": "https://www.itmedia.co.jp/news/feature/clouduser",
+      "summary": null,
+      "body": null,
+      "body_chars": 93,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified",
+        "body_not_confirmed",
+        "article_identity_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:23:10+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:23:10+09:00"
+    },
+    {
+      "id": "7753eb7b88aa4c77e392207baa6f6db1cdc930a42062e3d9a9a5631cddbb3109",
+      "source_id": "mext",
+      "publisher_id": "mext",
+      "source_name": "文部科学省",
+      "role": "discovery",
+      "category": "government",
+      "title": "ライフサイエンス委員会（第122回）の開催について：文部科学省",
+      "discovery_title": "ライフサイエンス委員会（第122回）の開催について",
+      "published_at": "2026-08-12",
+      "publication_day": "2026-08-12",
+      "updated_at": null,
+      "url": "https://www.mext.go.jp/b_menu/shingi/gijyutu/gijyutu2/kaisai/1419839_00027.htm",
+      "discovered_url": "https://www.mext.go.jp/b_menu/shingi/gijyutu/gijyutu2/kaisai/1419839_00027.htm",
+      "summary": null,
+      "body": null,
+      "body_chars": 619,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:25:52+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:25:52+09:00"
+    },
+    {
+      "id": "d3aa95494d2332e8905422ad056e56cc1c8b089fedeee2df9fc5ea288781e78b",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "H3ロケット9号機打ち上げ成功、準天頂衛星みちびき7号機搭載 | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "H3ロケット9号機打ち上げ成功、準天頂衛星みちびき7号機搭載",
+      "published_at": "2026-08-12",
+      "publication_day": "2026-08-12",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/newsflash/20260812_n01/",
+      "discovered_url": "https://scienceportal.jst.go.jp/newsflash/20260812_n01/",
+      "summary": null,
+      "body": null,
+      "body_chars": 2615,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:45:45+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:45:45+09:00"
+    }
+  ]
+}

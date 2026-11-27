@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "count": 2,
+  "articles": [
+    {
+      "id": "33928b7697a7e73ba0a7b65a02d8cbff3d07e7755e2751e02d291ea2094633c7",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜第４７回危険業務従事者叙勲受章者が決定されました",
+      "discovery_title": "第４７回危険業務従事者叙勲受章者が決定されました",
+      "published_at": "2026-10-10",
+      "publication_day": "2026-10-10",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/kanbo03_hh_000423.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/kanbo03_hh_000423.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 461,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T18:05:03+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T18:05:03+09:00"
+    },
+    {
+      "id": "4859ae2e24df3a0709743ade9579124fd54fdf2cba6f5c50436ff3fcb7f5625b",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "地質標本館 イベント 「地質標本館　一点解説」 | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "地質標本館 イベント 「地質標本館　一点解説」",
+      "published_at": "2026-10-10",
+      "publication_day": "2026-10-10",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19718/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19718/",
+      "summary": null,
+      "body": null,
+      "body_chars": 261,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "short_body",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:44:54+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:44:54+09:00"
+    }
+  ]
+}

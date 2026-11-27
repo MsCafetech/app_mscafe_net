@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-25",
+  "count": 1,
+  "articles": [
+    {
+      "id": "58f48d72069e5af933990b42df79d1ef4f2377f4af8371a98dbf1d509ed902ba",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "特別展「フチュウで はたらく ウチュウ人」 | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "特別展「フチュウで はたらく ウチュウ人」",
+      "published_at": "2026-07-25",
+      "publication_day": "2026-07-25",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19697/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19697/",
+      "summary": null,
+      "body": null,
+      "body_chars": 345,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:45:53+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:45:53+09:00"
+    }
+  ]
+}

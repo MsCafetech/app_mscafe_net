@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "count": 1,
+  "articles": [
+    {
+      "id": "42a8a54a1b1ebbf28ef1379789397444e68df090a7906d1b6c41f7a48d915dce",
+      "source_id": "jaxa",
+      "publisher_id": "jaxa",
+      "source_name": "JAXA",
+      "role": "discovery",
+      "category": "science",
+      "title": "JAXA | H3ロケット10号機による火星衛星探査機（MMX）の打上げ時刻",
+      "discovery_title": "H3ロケット10号機による火星衛星探査機（MMX）の打上げ時刻",
+      "published_at": "2026-10-18",
+      "publication_day": "2026-10-18",
+      "updated_at": null,
+      "url": "https://www.jaxa.jp/press/2026/10/20261018-1_j.html",
+      "discovered_url": "https://www.jaxa.jp/press/2026/10/20261018-1_j.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 299,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "short_body",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:42:11+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:42:11+09:00"
+    }
+  ]
+}

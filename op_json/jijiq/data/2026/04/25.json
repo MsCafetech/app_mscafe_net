@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-25",
+  "count": 1,
+  "articles": [
+    {
+      "id": "e262dff65ca68a0c8722ce85fa9b5e88dacaa257687aa963b84fb999150cd887",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜国土交通省手続業務一貫処理システム(eMLIT) の機能停止について",
+      "discovery_title": "国土交通省手続業務一貫処理システム(eMLIT) の機能停止について",
+      "published_at": "2026-04-25",
+      "publication_day": "2026-04-25",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/joho01_hh_000099.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/joho01_hh_000099.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 366,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:25:27+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:25:27+09:00"
+    }
+  ]
+}

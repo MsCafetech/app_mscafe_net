@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "count": 1,
+  "articles": [
+    {
+      "id": "cd88c6ec9bb065a6db04e38c2d96b298250f3e908a2ffe3cf89d9f8081c1b54e",
+      "source_id": "afp",
+      "publisher_id": "afp",
+      "source_name": "AFPBB News",
+      "role": "discovery",
+      "category": "news",
+      "title": "プーチン氏はウクライナ侵攻の「過ち」認められず、元ロシア首相インタビュー",
+      "discovery_title": "プーチン氏はウクライナ侵攻の「過ち」認められず、元ロシア首相インタビュー",
+      "published_at": "2026-10-04T16:59:00+09:00",
+      "publication_day": "2026-10-04",
+      "updated_at": "2026-10-04T16:59:34+09:00",
+      "url": "https://www.afpbb.com/articles/-/3655940",
+      "discovered_url": "https://www.afpbb.com/articles/-/3655940?cx_part=common_focus",
+      "summary": null,
+      "body": null,
+      "body_chars": 838,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "structured_metadata",
+      "quality_flags": [],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:23:13+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:23:13+09:00"
+    }
+  ]
+}

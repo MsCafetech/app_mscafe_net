@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-02",
+  "count": 2,
+  "articles": [
+    {
+      "id": "b47cbfab8ebd36b17336d6f3d99098da799ec4a4a22cea8c5002613c9bbd3e11",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜≪三角港≫港湾の広域ネットワークを活用した被災地への入浴支援を開始<br>～令和８年熊本地震における対応【白山】～",
+      "discovery_title": "≪三角港≫港湾の広域ネットワークを活用した被災地への入浴支援を開始 ～令和８年熊本地震における対応【白山】～",
+      "published_at": "2026-08-02",
+      "publication_day": "2026-08-02",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/port06_hh_000346.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/port06_hh_000346.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 818,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:53:55+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:53:55+09:00"
+    },
+    {
+      "id": "e5ef18878d15436817962d9bd116c6ea1b1b6b07e06a1a93879659594e2cf055",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜熊本県の八代港における国による港湾施設の一部管理について<br>～令和８年熊本地震における対応～",
+      "discovery_title": "熊本県の八代港における国による港湾施設の一部管理について ～令和８年熊本地震における対応～",
+      "published_at": "2026-08-02",
+      "publication_day": "2026-08-02",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/port07_hh_000268.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/port07_hh_000268.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 794,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:53:58+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:53:58+09:00"
+    }
+  ]
+}

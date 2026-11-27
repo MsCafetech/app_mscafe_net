@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-29",
+  "count": 2,
+  "articles": [
+    {
+      "id": "52c5181759401785d9e819ef8405e581f3048d0755db2a2d32bea90d1fb553fd",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜令和８年春の叙勲について",
+      "discovery_title": "令和８年春の叙勲について",
+      "published_at": "2026-04-29",
+      "publication_day": "2026-04-29",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/kanbo03_hh_000416.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/kanbo03_hh_000416.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 661,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:30:18+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:30:18+09:00"
+    },
+    {
+      "id": "a7851be5c9949188ad3cfa9b5c6aa99f85c31bf23d0f8718b45ee6048b73778e",
+      "source_id": "env",
+      "publisher_id": "env",
+      "source_name": "環境省",
+      "role": "discovery",
+      "category": "government",
+      "title": "令和８年春の叙勲受章者について",
+      "discovery_title": "令和８年春の叙勲受章者について",
+      "published_at": "2026-04-29",
+      "publication_day": "2026-04-29",
+      "updated_at": null,
+      "url": "https://www.env.go.jp/press/press_04320.html",
+      "discovered_url": "https://www.env.go.jp/press/press_04320.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 358,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:30:27+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:30:27+09:00"
+    }
+  ]
+}

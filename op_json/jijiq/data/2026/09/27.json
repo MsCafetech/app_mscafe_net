@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-27",
+  "count": 2,
+  "articles": [
+    {
+      "id": "2cf9b51d5ff702ae9260708f4067d1d1e3e854ee363603740df480c8378ed131",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "第25回情報処理学会関西支部　支部大会 | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "第25回情報処理学会関西支部　支部大会",
+      "published_at": "2026-09-27",
+      "publication_day": "2026-09-27",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19716/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19716/",
+      "summary": null,
+      "body": null,
+      "body_chars": 298,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "short_body",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:44:58+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:44:58+09:00"
+    },
+    {
+      "id": "a927a17ff7850215df6b714d92c3b52143ab776ac1d7c266e32ada1ab9176092",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "新たなる挑戦！地球型惑星をめざして!! みらいの地球をみんなの手でつくるには？ テクノロジーと地球のみらいを想像しよう！ | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "新たなる挑戦！地球型惑星をめざして!! みらいの地球をみんなの手でつくるには？ テクノロジーと地球のみらいを想像しよう！",
+      "published_at": "2026-09-27",
+      "publication_day": "2026-09-27",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19710/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19710/",
+      "summary": null,
+      "body": null,
+      "body_chars": 388,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:45:10+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:45:10+09:00"
+    }
+  ]
+}

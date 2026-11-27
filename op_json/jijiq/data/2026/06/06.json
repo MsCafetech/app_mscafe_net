@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-06",
+  "count": 1,
+  "articles": [
+    {
+      "id": "4f0170cf7e7e79aae09dc6be9234e9b7ca1e72488c7fdf6d0fb0c5609a6abbe2",
+      "source_id": "bunka",
+      "publisher_id": "bunka",
+      "source_name": "文化庁",
+      "role": "discovery",
+      "category": "government",
+      "title": "世界遺産に推薦中の「飛鳥・藤原の宮都」に係るイコモスによる評価結果及び勧告についてお知らせします（概要） | 文化庁",
+      "discovery_title": "世界遺産に推薦中の「飛鳥・藤原の宮都」に係るイコモスによる評価結果及び勧告についてお知らせします（概要）",
+      "published_at": "2026-06-06",
+      "publication_day": "2026-06-06",
+      "updated_at": null,
+      "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94387302.html",
+      "discovered_url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94387302.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 562,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "list_row_unverified",
+      "quality_flags": [
+        "publication_unverified",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:32:53+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:32:53+09:00"
+    }
+  ]
+}

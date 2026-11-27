@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-09",
+  "count": 1,
+  "articles": [
+    {
+      "id": "5a6dd2f2071896acc1acd9251e37295a2fc5259400cc846c81c7f6945d72b68a",
+      "source_id": "jaxa",
+      "publisher_id": "jaxa",
+      "source_name": "JAXA",
+      "role": "discovery",
+      "category": "science",
+      "title": "JAXA | H3ロケット9号機による「みちびき7号機」の打上げ時刻及び打上げ時間帯",
+      "discovery_title": "H3ロケット9号機による「みちびき7号機」の打上げ時刻及び打上げ時間帯",
+      "published_at": "2026-08-09",
+      "publication_day": "2026-08-09",
+      "updated_at": null,
+      "url": "https://www.jaxa.jp/press/2026/08/20260809-1_j.html",
+      "discovered_url": "https://www.jaxa.jp/press/2026/08/20260809-1_j.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 380,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:42:37+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:42:37+09:00"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-30",
+  "count": 1,
+  "articles": [
+    {
+      "id": "f827a8cc7fefec84fb9a89908705eeb440cfc2b3cec9a55dc03b58fb02ec9a00",
+      "source_id": "riken",
+      "publisher_id": "riken",
+      "source_name": "理化学研究所",
+      "role": "discovery",
+      "category": "science",
+      "title": "直感の更新メカニズムの解明",
+      "discovery_title": "直感の更新メカニズムの解明",
+      "published_at": "2026-05-30",
+      "publication_day": "2026-05-30",
+      "updated_at": null,
+      "url": "https://www.riken.jp/press/2026/20260530_1/index.html",
+      "discovered_url": "https://www.riken.jp/press/2026/20260530_1/index.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 9242,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "list_row_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:52:42+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:52:42+09:00"
+    }
+  ]
+}

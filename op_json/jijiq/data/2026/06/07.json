@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-07",
+  "count": 1,
+  "articles": [
+    {
+      "id": "275facec4bc02234b9e631ebf9e523aa2f3ceb54f7f03dd1786834d729545ebf",
+      "source_id": "nippon",
+      "publisher_id": "nippon",
+      "source_name": "nippon.com",
+      "role": "discovery",
+      "category": "news",
+      "title": "イワシ : 安くておいしい大衆魚、かつては農業の発展にも寄与",
+      "discovery_title": "3 イワシ : 安くておいしい大衆魚、かつては農業の発展にも寄与 CULTURE  |  2026. 06. 07",
+      "published_at": "2026-06-07T09:00:00+09:00",
+      "publication_day": "2026-06-07",
+      "updated_at": "2026-10-22T22:13:58+09:00",
+      "url": "https://www.nippon.com/ja/articles/-/3560",
+      "discovered_url": "https://www.nippon.com/ja/articles/-/3560",
+      "summary": null,
+      "body": null,
+      "body_chars": 1020,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "structured_metadata",
+      "quality_flags": [],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:22:40+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:22:40+09:00"
+    }
+  ]
+}

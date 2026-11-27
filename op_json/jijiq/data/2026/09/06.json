@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-06",
+  "count": 1,
+  "articles": [
+    {
+      "id": "9db5aae184ee2fe11c7f3aba994691641ef17fe30a98a21f11d74e4ee8b20993",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "琵琶湖外来魚駆除大会(2026.09.06) | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "琵琶湖外来魚駆除大会(2026.09.06)",
+      "published_at": "2026-09-06",
+      "publication_day": "2026-09-06",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19689/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19689/",
+      "summary": null,
+      "body": null,
+      "body_chars": 92,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "publication_date_unverified",
+        "body_not_confirmed"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:46:19+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:46:19+09:00"
+    }
+  ]
+}

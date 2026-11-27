@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-23",
+  "count": 2,
+  "articles": [
+    {
+      "id": "3d82215af81f720d57067ee13bbed02cc0731e689a4079c37ffbfc938ebc8353",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "キミの宇宙食を考えよう！―これからの有人宇宙開発を支える食― | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "キミの宇宙食を考えよう！―これからの有人宇宙開発を支える食―",
+      "published_at": "2026-08-23",
+      "publication_day": "2026-08-23",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19708/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19708/",
+      "summary": null,
+      "body": null,
+      "body_chars": 281,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "short_body",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:45:22+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:45:22+09:00"
+    },
+    {
+      "id": "a0f37e613e56c3ad88c297f714c9d4278082464a60af2793c7ab2aef0d84ddca",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "ZEN大学×ゲンロン共同公開講座#20「科学も生成されるのか ──AIが切り拓く新たな科学革命」 | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "ZEN大学×ゲンロン共同公開講座#20「科学も生成されるのか ──AIが切り拓く新たな科学革命」",
+      "published_at": "2026-08-23",
+      "publication_day": "2026-08-23",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19700/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19700/",
+      "summary": null,
+      "body": null,
+      "body_chars": 504,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:45:32+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:45:32+09:00"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-18",
+  "count": 1,
+  "articles": [
+    {
+      "id": "966d82c59575a97ddb4541ac40cdb869915e7a3a6820dc8bbb76054186f38d1b",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜令和８年４月18日13時20分頃の長野県北部の地震に伴う土砂災害警戒情報発表基準の暫定的な運用について",
+      "discovery_title": "令和８年４月18日13時20分頃の長野県北部の地震に伴う土砂災害警戒情報発表基準の暫定的な運用について",
+      "published_at": "2026-04-18",
+      "publication_day": "2026-04-18",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/sabo01_hh_000201.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/sabo01_hh_000201.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 544,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:30:34+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:30:34+09:00"
+    }
+  ]
+}

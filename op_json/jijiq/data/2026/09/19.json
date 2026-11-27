@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-19",
+  "count": 2,
+  "articles": [
+    {
+      "id": "194e1c9572012f91b154fbe9d42171d67fd8be7eaf4ada712e4301bacb7e7c8b",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "ものづくりカフェ「どんどん身近になる宇宙技術　-人工衛星の謎を聞く-」 | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "ものづくりカフェ「どんどん身近になる宇宙技術　-人工衛星の謎を聞く-」",
+      "published_at": "2026-09-19",
+      "publication_day": "2026-09-19",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19711/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19711/",
+      "summary": null,
+      "body": null,
+      "body_chars": 249,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "short_body",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:45:08+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:45:08+09:00"
+    },
+    {
+      "id": "aa442f4e444554e506b4de7be233c6f68c101c7cbb4fbcd1c181724fbe14b589",
+      "source_id": "riken",
+      "publisher_id": "riken",
+      "source_name": "理化学研究所",
+      "role": "discovery",
+      "category": "science",
+      "title": "肌や電子素子に負担をかけない伸縮・通気導電フィルム",
+      "discovery_title": "肌や電子素子に負担をかけない伸縮・通気導電フィルム",
+      "published_at": "2026-09-19",
+      "publication_day": "2026-09-19",
+      "updated_at": null,
+      "url": "https://www.riken.jp/press/2026/20260919_1/index.html",
+      "discovered_url": "https://www.riken.jp/press/2026/20260919_1/index.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 4690,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "list_row_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:46:59+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:46:59+09:00"
+    }
+  ]
+}

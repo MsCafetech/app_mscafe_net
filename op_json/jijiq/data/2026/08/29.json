@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-29",
+  "count": 1,
+  "articles": [
+    {
+      "id": "46c0096bf8ca19c08ba0a807832fde9f3661df3e9e323bca670152e7931d1919",
+      "source_id": "riken",
+      "publisher_id": "riken",
+      "source_name": "理化学研究所",
+      "role": "discovery",
+      "category": "science",
+      "title": "ゴルジ体膜の脂質再編成が細胞内分解系を制御",
+      "discovery_title": "ゴルジ体膜の脂質再編成が細胞内分解系を制御",
+      "published_at": "2026-08-29",
+      "publication_day": "2026-08-29",
+      "updated_at": null,
+      "url": "https://www.riken.jp/press/2026/20260829_1/index.html",
+      "discovered_url": "https://www.riken.jp/press/2026/20260829_1/index.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 8564,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "list_row_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:47:29+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:47:29+09:00"
+    }
+  ]
+}

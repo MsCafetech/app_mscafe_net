@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-17",
+  "count": 1,
+  "articles": [
+    {
+      "id": "84e123e8f5b18a5785df29c9c84460ff61a3a327577648486b1c57058e6acd73",
+      "source_id": "imf",
+      "publisher_id": "imf",
+      "source_name": "IMF",
+      "role": "discovery",
+      "category": "international",
+      "title": "第54回国際通貨金融委員会（IMFC）議長声明（仮訳）",
+      "discovery_title": "/ja/news/articles/2026/10/17/pr26340-chairs-statement-fifty-fourth-meeting-of-the-imfc",
+      "published_at": "2026-10-17",
+      "publication_day": "2026-10-17",
+      "updated_at": null,
+      "url": "https://www.imf.org/ja/news/articles/2026/10/17/pr26340-chairs-statement-fifty-fourth-meeting-of-the-imfc",
+      "discovered_url": "https://www.imf.org/ja/news/articles/2026/10/17/pr26340-chairs-statement-fifty-fourth-meeting-of-the-imfc",
+      "summary": null,
+      "body": null,
+      "body_chars": 5006,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:52:01+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:52:01+09:00"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-27",
+  "count": 1,
+  "articles": [
+    {
+      "id": "0b80d899e0e41932a21831f64ba9a4590a4b7af4ff3893d6fca6d41ce3a58897",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜令和８年６月26日22時29分頃の山梨県東部・富士五湖の地震に伴う土砂災害に関する警報等の暫定的な運用について",
+      "discovery_title": "令和８年６月26日22時29分頃の山梨県東部・富士五湖の地震に伴う土砂災害に関する警報等の暫定的な運用について",
+      "published_at": "2026-06-27",
+      "publication_day": "2026-06-27",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/sabo01_hh_000211.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/sabo01_hh_000211.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 600,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:41:35+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:41:35+09:00"
+    }
+  ]
+}

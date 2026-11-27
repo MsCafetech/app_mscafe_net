@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-13",
+  "count": 1,
+  "articles": [
+    {
+      "id": "c44ad8499751c481ceb08e370c8a16c8168c5d7e21b5485400259cbe6806e358",
+      "source_id": "scienceportal",
+      "publisher_id": "scienceportal",
+      "source_name": "Science Portal",
+      "role": "discovery",
+      "category": "science",
+      "title": "英語でサイエンスカフェ・宇宙「ジャシ博士、宇宙を語る～ビッグバンからダークエネルギーまで～」 | Science Portal - 科学技術の最新情報サイト「サイエンスポータル」",
+      "discovery_title": "英語でサイエンスカフェ・宇宙「ジャシ博士、宇宙を語る～ビッグバンからダークエネルギーまで～」",
+      "published_at": "2026-09-13",
+      "publication_day": "2026-09-13",
+      "updated_at": null,
+      "url": "https://scienceportal.jst.go.jp/events/19709/",
+      "discovered_url": "https://scienceportal.jst.go.jp/events/19709/",
+      "summary": null,
+      "body": null,
+      "body_chars": 331,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "heading_nearby_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:45:20+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:45:20+09:00"
+    }
+  ]
+}

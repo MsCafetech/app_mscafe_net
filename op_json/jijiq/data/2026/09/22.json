@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-22",
+  "count": 1,
+  "articles": [
+    {
+      "id": "131470c1759071ecf87f8460ff940c64a659184ba8b72d74336886e1bcc7c83d",
+      "source_id": "unic",
+      "publisher_id": "unic",
+      "source_name": "国際連合広報センター",
+      "role": "discovery",
+      "category": "international",
+      "title": "第81回国連総会における高市早苗総理大臣による一般討論演説（2026年9月22日） | 国連広報センター",
+      "discovery_title": "第81回国連総会における高市早苗総理大臣による一般討論演説（2026年9月22日）",
+      "published_at": "2026-09-22",
+      "publication_day": "2026-09-22",
+      "updated_at": null,
+      "url": "https://www.unic.or.jp/news_press/info/55030/",
+      "discovered_url": "https://www.unic.or.jp/news_press/info/55030/",
+      "summary": null,
+      "body": null,
+      "body_chars": 215,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "list_row_unverified",
+      "quality_flags": [
+        "short_body",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:51:41+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:51:41+09:00"
+    }
+  ]
+}

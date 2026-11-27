@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-04-11",
+  "count": 1,
+  "articles": [
+    {
+      "id": "055df0c1a1f0f6a76ad5e9ade35341713d4eec064c6902c3926ed38804576461",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜第４６回危険業務従事者叙勲受章者が決定されました",
+      "discovery_title": "第４６回危険業務従事者叙勲受章者が決定されました",
+      "published_at": "2026-04-11",
+      "publication_day": "2026-04-11",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/kanbo03_hh_000413.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/kanbo03_hh_000413.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 652,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:28:30+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:28:30+09:00"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-21",
+  "count": 1,
+  "articles": [
+    {
+      "id": "2f55b5bcd65899d7dd50f5ae377cf4e2762c136a128a58c44d9dbd89890ec0a4",
+      "source_id": "nippon",
+      "publisher_id": "nippon",
+      "source_name": "nippon.com",
+      "role": "discovery",
+      "category": "news",
+      "title": "羽田空港「空の玄関」を囲む漁師町と穴守稲荷：初沢亜利の東京探検（1）",
+      "discovery_title": "羽田空港「空の玄関」を囲む漁師町と穴守稲荷：初沢亜利の東京探検（1） TRAVEL  |  2026. 09. 21",
+      "published_at": "2026-09-21T09:00:00+09:00",
+      "publication_day": "2026-09-21",
+      "updated_at": "2026-11-18T17:25:38+09:00",
+      "url": "https://www.nippon.com/ja/articles/-/54723",
+      "discovered_url": "https://www.nippon.com/ja/articles/-/54723",
+      "summary": null,
+      "body": null,
+      "body_chars": 1017,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "structured_metadata",
+      "quality_flags": [],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:22:30+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:22:30+09:00"
+    }
+  ]
+}

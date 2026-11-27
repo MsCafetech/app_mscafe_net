@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "count": 1,
+  "articles": [
+    {
+      "id": "a8a910dfd42e208a4920b38ee05fba29d06453b1ea7518e25668fa8d02563247",
+      "source_id": "imf",
+      "publisher_id": "imf",
+      "source_name": "IMF",
+      "role": "discovery",
+      "category": "international",
+      "title": "世界経済の強靭性が試されており、果断な政策対応が求められる",
+      "discovery_title": "世界経済の強靭性が試されており、果断な政策対応が求められる",
+      "published_at": "2026-10-12",
+      "publication_day": "2026-10-12",
+      "updated_at": null,
+      "url": "https://www.imf.org/ja/blogs/articles/2026/10/12/global-economic-resilience-is-under-strain-demanding-decisive-policy-action",
+      "discovered_url": "https://www.imf.org/ja/blogs/articles/2026/10/12/global-economic-resilience-is-under-strain-demanding-decisive-policy-action",
+      "summary": null,
+      "body": null,
+      "body_chars": 2816,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:52:12+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:52:12+09:00"
+    }
+  ]
+}

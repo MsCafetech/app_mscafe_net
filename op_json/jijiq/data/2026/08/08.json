@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-08",
+  "count": 2,
+  "articles": [
+    {
+      "id": "92ae5ce55862f045f5097862fadab2f66bd3a21c511e74bdbc01badf4a23490b",
+      "source_id": "riken",
+      "publisher_id": "riken",
+      "source_name": "理化学研究所",
+      "role": "discovery",
+      "category": "science",
+      "title": "ネコにもヒトと共通する遺伝性腫瘍の可能性",
+      "discovery_title": "ネコにもヒトと共通する遺伝性腫瘍の可能性",
+      "published_at": "2026-08-08",
+      "publication_day": "2026-08-08",
+      "updated_at": null,
+      "url": "https://www.riken.jp/press/2026/20260808_1/index.html",
+      "discovered_url": "https://www.riken.jp/press/2026/20260808_1/index.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 5592,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "list_row_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:48:16+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:48:16+09:00"
+    },
+    {
+      "id": "e5aca90cca4ec9fcdef74ced1f7ddf28ad84fa3fd65331ba5035ff37ef0ae0a5",
+      "source_id": "jaxa",
+      "publisher_id": "jaxa",
+      "source_name": "JAXA",
+      "role": "discovery",
+      "category": "science",
+      "title": "JAXA | H3ロケット9号機による「みちびき7号機」の打上げ［再設定］",
+      "discovery_title": "H3ロケット9号機による「みちびき7号機」の打上げ［再設定］",
+      "published_at": "2026-08-08",
+      "publication_day": "2026-08-08",
+      "updated_at": null,
+      "url": "https://www.jaxa.jp/press/2026/08/20260808-1_j.html",
+      "discovered_url": "https://www.jaxa.jp/press/2026/08/20260808-1_j.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 440,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:42:39+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:42:39+09:00"
+    }
+  ]
+}

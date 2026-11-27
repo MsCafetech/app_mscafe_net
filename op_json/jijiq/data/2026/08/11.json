@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-11",
+  "count": 1,
+  "articles": [
+    {
+      "id": "db15c96573d4e0146c56a9d7eb24b2413c502dfee4feb1e95de3a78b76e4aebd",
+      "source_id": "jaxa",
+      "publisher_id": "jaxa",
+      "source_name": "JAXA",
+      "role": "discovery",
+      "category": "science",
+      "title": "JAXA | H3ロケット9号機による「みちびき7号機」の打上げ結果",
+      "discovery_title": "H3ロケット9号機による「みちびき7号機」の打上げ結果",
+      "published_at": "2026-08-11",
+      "publication_day": "2026-08-11",
+      "updated_at": null,
+      "url": "https://www.jaxa.jp/press/2026/08/20260811-1_j.html",
+      "discovered_url": "https://www.jaxa.jp/press/2026/08/20260811-1_j.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 271,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "short_body",
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T17:42:35+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T17:42:35+09:00"
+    }
+  ]
+}
