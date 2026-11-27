@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-27",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260527-001",
@@ -30,6 +30,36 @@
         {
           "name": "参議院",
           "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/221/meisai/m221080221024.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260527-002",
+      "news_date": "2026-05-27",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "宇宙ステーション補給機HTV-X1が任務完了",
+      "news_summary": "JAXAは5月26日にHTV-X1が大気圏へ再突入し、任務を終えたと発表した。",
+      "question": "JAXAは5月27日、新型宇宙ステーション補給機HTV-X1が前日に地球の大気圏へ再突入（さいとつにゅう）し、任務を終えたと発表しました。\n\nこの補給機が物資を届けた場所はどこですか。",
+      "choices": [
+        "月面基地",
+        "火星探査車",
+        "国際宇宙ステーション（ISS）",
+        "気象衛星ひまわり"
+      ],
+      "correct_index": 2,
+      "explanation": "国際宇宙ステーションは地球の周りを回る有人の研究施設です。宇宙飛行士が生活し、さまざまな実験を行っています。補給機は食料や実験装置などを届けます。HTV-X1は物資輸送に加え、新しい技術を宇宙で確かめる任務も行いました。",
+      "keywords": [
+        "HTV-X1",
+        "JAXA",
+        "こうのとり",
+        "宇宙補給機"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/05/20260527-1_j.html"
         }
       ]
     }
