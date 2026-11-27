@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 5,
-  "related_count": 10,
+  "related_count": 11,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -127,6 +127,28 @@
             {
               "name": "公益社団法人日本厚生協会",
               "url": "https://www.kousei-kyoukai.or.jp/dna-kantei.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-003-R03",
+          "relation_type": "question",
+          "title": "絶滅危惧種（ぜつめつきぐしゅ）とレッドリスト",
+          "description": "レッドリストは、野生の生き物が地球上やある地域からいなくなる危険性を評価した一覧です。環境省は日本の野生生物を調べ、危険性の高さによって絶滅危惧Ⅰ類やⅡ類などに分けています。すむ場所が失われたり、外来種に食べられたりすると、数が減ることがあります。反対に、保護活動によって数が回復することもあります。レッドリストは定期的に見直され、生き物を守る対策を考える資料になります。",
+          "relationship": "ペンギンの保護活動をきっかけに、生き物がいなくなる危険性の評価方法を学びます。",
+          "keywords": [
+            "絶滅危惧種",
+            "レッドリスト",
+            "生物多様性"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/nature/kisho/hozen/redlist/rank.html"
+            },
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/press/press_03312.html"
             }
           ]
         }
