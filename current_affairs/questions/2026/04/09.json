@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-09",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260409-001",
@@ -30,6 +30,36 @@
         {
           "name": "科学技術振興機構 Science Portal",
           "url": "https://scienceportal.jst.go.jp/newsflash/20260409_n01/"
+        }
+      ]
+    },
+    {
+      "id": "20260409-002",
+      "news_date": "2026-04-09",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "植物の成長を助ける新種の細菌を発見",
+      "news_summary": "東京農業大学と理化学研究所が植物の成長に関わる細菌2種を発見した。",
+      "question": "東京農業大学などは、植物の成長を助ける働きに関わる新種の細菌（さいきん）を2種類発見しました。\n\n一般に、土の中の細菌などが落ち葉や生物の死がいを分解すると、どのようなことが起こりますか。",
+      "choices": [
+        "土の中の水がすべてなくなる",
+        "植物が光なしで育つようになる",
+        "有機物が分解され、養分が循環（じゅんかん）する",
+        "すべての土が岩石に変わる"
+      ],
+      "correct_index": 2,
+      "explanation": "土の中の細菌や菌類（きんるい）には、落ち葉などの有機物を分解し、植物が再び利用できる養分の循環を助けるものがあります。植物と微生物の関係を調べる研究は、作物の育て方や土の環境を理解するうえで大切です。",
+      "keywords": [
+        "東京農業大学",
+        "植物共生微生物",
+        "細菌",
+        "土壌"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260409_1/index.html"
         }
       ]
     }
