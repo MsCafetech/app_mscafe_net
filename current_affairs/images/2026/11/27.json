@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 5,
   "related_count": 3,
-  "image_count": 6,
+  "image_count": 8,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -119,6 +119,44 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261127-004",
+      "images": [
+        {
+          "id": "20261127-004-I01",
+          "type": "photo",
+          "title": "暴風で倒れた木",
+          "caption": "資料写真：海外で強風により倒れた木。暴風雨では家屋や道路などにも被害が及ぶことがあり、写真は今回の日本の災害ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Tree_fallen_after_a_storm.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tree_fallen_after_a_storm.jpg",
+          "credit": "Drummyfish",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "商用利用・改変可能。資料写真であることを明記し、出典と作者を表示。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261127-005",
+      "images": [
+        {
+          "id": "20261127-005-I01",
+          "type": "photo",
+          "title": "酸性雨で傷んだ石像",
+          "caption": "資料写真：酸性雨の影響で表面が傷んだ石像。酸性雨は建物や石像などにも影響を与えます。新潟市の会合の写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Pollution_-_Damaged_by_acid_rain.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pollution_-_Damaged_by_acid_rain.jpg",
+          "credit": "Nino Barbieri",
+          "license": "CC BY 2.5",
+          "license_url": "https://creativecommons.org/licenses/by/2.5/",
+          "usage_notes": "商用利用可能。作者・出典・ライセンスへのリンクを表示し、改変時には変更内容を明示。"
+        }
+      ],
+      "related": []
     }
   ]
 }
