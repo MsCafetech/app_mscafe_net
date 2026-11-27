@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-14",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260514-001",
@@ -88,6 +88,36 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_03720.html"
+        }
+      ]
+    },
+    {
+      "id": "20260514-004",
+      "news_date": "2026-05-14",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "ステビアの遺伝情報を解読",
+      "news_summary": "富山大学などがステビアの全ゲノム配列を解読した。",
+      "question": "富山大学などは5月14日、甘味成分をつくる植物ステビアの遺伝情報を読み取ったと発表しました。\n\n親から子へ生物の特徴を伝える遺伝情報を担う物質はどれですか。",
+      "choices": [
+        "水",
+        "デンプン",
+        "DNA",
+        "食塩"
+      ],
+      "correct_index": 2,
+      "explanation": "DNAは生物の遺伝情報を担う物質です。生物が持つ遺伝情報全体をゲノムといいます。ステビアは甘味成分をつくる植物で、その遺伝情報を調べることは、甘味成分がつくられる仕組みを理解する手がかりになります。",
+      "keywords": [
+        "ステビア",
+        "ステビオール配糖体",
+        "ゲノム",
+        "富山大学"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260514_1/index.html"
         }
       ]
     }
