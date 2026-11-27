@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-28",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260728-001",
@@ -89,6 +89,36 @@
         {
           "name": "気象庁",
           "url": "https://www.jma.go.jp/jma/press/2607/28c/20260728_zantei.html"
+        }
+      ]
+    },
+    {
+      "id": "20260728-004",
+      "news_date": "2026-07-28",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "東京圏と大阪圏の鉄道混雑率が上昇",
+      "news_summary": "2025年度の都市鉄道混雑率調査が公表された。",
+      "question": "国土交通省の調査によると、2025年度の東京圏の鉄道の平均混雑率（こんざつりつ）は143％でした。\n\n鉄道の混雑率は何を基準に計算しますか。",
+      "choices": [
+        "駅の数に対する列車の数",
+        "線路の長さに対する駅の数",
+        "運賃に対する電気代",
+        "輸送力に対する乗車人数"
+      ],
+      "correct_index": 3,
+      "explanation": "鉄道の混雑率は、列車の輸送力に対して何人が乗っているかを割合で示したものです。輸送力と乗車人数が同じなら100％です。混雑率の調査は、列車の本数や輸送力などを見直すための資料になります。",
+      "keywords": [
+        "都市鉄道",
+        "混雑率",
+        "三大都市圏",
+        "通勤通学"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/tetsudo04_hh_000139.html"
         }
       ]
     }
