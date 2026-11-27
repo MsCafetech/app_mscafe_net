@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
+  "question_count": 2,
+  "related_count": 2,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -23,6 +23,33 @@
             {
               "name": "環境省",
               "url": "https://kyushu.env.go.jp/okinawa/park.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-002",
+      "related": [
+        {
+          "id": "20261127-002-R01",
+          "relation_type": "question",
+          "title": "線状降水帯（せんじょうこうすいたい）ができる仕組み",
+          "description": "海から暖かく湿った空気が流れこみ、山や前線などで上に持ち上げられると雲ができます。積乱雲（せきらんうん）が次々に発達して列を作ると、同じ地域で強い雨が長く続くことがあります。雨の区域は長さ約50～300km、幅約20～50kmです。",
+          "relationship": "大雨が長く続く理由を、空気の動きと雲の発達から理解できます。",
+          "keywords": [
+            "線状降水帯",
+            "積乱雲",
+            "前線"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/bosai/kishojoho_senjoukousuitai.html"
+            },
+            {
+              "name": "福岡管区気象台",
+              "url": "https://www.data.jma.go.jp/fukuoka/gyomu/file/20240606_bosai-jyoho.pdf"
             }
           ]
         }
