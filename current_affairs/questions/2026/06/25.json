@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-25",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260625-001",
@@ -30,6 +30,96 @@
         {
           "name": "気象庁",
           "url": "https://www.data.jma.go.jp/eqev/data/higai/higai1996-new.html"
+        }
+      ]
+    },
+    {
+      "id": "20260625-002",
+      "news_date": "2026-06-25",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "全国の民有林林道の管理課題を調査",
+      "news_summary": "森林総合研究所は林道の管理に必要な人員や予算の不足などを指摘した。",
+      "question": "森林総合研究所は、民有林の林道を管理する市町村などを調査し、維持管理の課題を明らかにしました。\n\n林道が林業で果たす役割として最も適切なのはどれですか。",
+      "choices": [
+        "海の魚を養殖する",
+        "木材の運び出しや森林の手入れをしやすくする",
+        "農地に海水を供給する",
+        "船舶の通行を管理する"
+      ],
+      "correct_index": 1,
+      "explanation": "林道は森林の手入れや木材の運び出しに利用される道路です。適切な管理は森林資源の利用や保全にもつながります。今回の調査では、人手や予算の不足に対応するため、地理情報システムなどによる管理の効率化が提案されました。",
+      "keywords": [
+        "林道",
+        "民有林",
+        "森林総合研究所",
+        "地理情報システム"
+      ],
+      "sources": [
+        {
+          "name": "森林総合研究所",
+          "url": "https://www.ffpri.go.jp/press/2026/20260625/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260625-003",
+      "news_date": "2026-06-25",
+      "category": "space",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "欧州の気象予報にはくりゅうのデータを利用開始",
+      "news_summary": "JAXAは欧州中期予報センターによるEarthCARE衛星の雲観測データ利用開始を発表した。",
+      "question": "JAXAと欧州宇宙機関が共同開発した地球観測衛星（えいせい）はくりゅうのデータを、欧州中期予報センターが気象予報に利用し始めました。\n\nはくりゅうに搭載（とうさい）された雲プロファイリングレーダが調べる情報はどれですか。",
+      "choices": [
+        "海底の地形",
+        "地中の鉱物の種類",
+        "雲の高さ方向の構造",
+        "地球の人口分布"
+      ],
+      "correct_index": 2,
+      "explanation": "はくりゅうの雲プロファイリングレーダは、雲の高さ方向の構造を調べます。この観測データを気象予報の計算に取り入れることで、予報の精度向上が期待されます。人工衛星による観測は、世界各地の気象を知るために役立ちます。",
+      "keywords": [
+        "EarthCARE",
+        "はくりゅう",
+        "ECMWF",
+        "雲観測"
+      ],
+      "sources": [
+        {
+          "name": "JAXA",
+          "url": "https://www.jaxa.jp/press/2026/06/20260625-1_j.html"
+        }
+      ]
+    },
+    {
+      "id": "20260625-004",
+      "news_date": "2026-06-25",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "気候行動に関する閣僚会合を開催",
+      "news_summary": "6月22日から23日にブリュッセルで気候行動について各国が議論した。",
+      "question": "6月22日から23日まで、ベルギーのブリュッセルで気候行動に関する閣僚（かくりょう）会合が開かれました。2026年のCOP31に向けて各国が協力を話し合いました。\n\nCOP31の議長国を務める国はどこですか。",
+      "choices": [
+        "ブラジル",
+        "トルコ",
+        "カナダ",
+        "エジプト"
+      ],
+      "correct_index": 1,
+      "explanation": "2026年のCOP31の議長国はトルコです。COPは国連気候変動枠組条約の締約国会議で、各国が温暖化対策について話し合います。開催に向けて主要国の担当者が事前に議論を行うことも、国際協力を進める上で重要です。",
+      "keywords": [
+        "MOCA",
+        "COP31",
+        "国連気候変動枠組条約",
+        "気候行動"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05187.html"
         }
       ]
     }
