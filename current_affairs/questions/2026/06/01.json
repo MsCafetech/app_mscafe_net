@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-06-01",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260601-001",
+      "news_date": "2026-06-01",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "TEC-FORCEの予備隊員を募集",
+      "news_summary": "国土交通省が災害対応の専門知識を持つ民間人材を募集した。",
+      "question": "6月1日、国土交通省は、災害時に地方公共団体を支える緊急災害対策派遣隊（きんきゅうさいがいたいさくはけんたい）の予備隊員を募集し始めました。\n\nこの隊員が被災地で担う仕事として最も適切なものはどれですか。",
+      "choices": [
+        "選挙の投票管理",
+        "災害による被害の調査と復旧の支援",
+        "学校の入学試験の実施",
+        "国税の徴収（ちょうしゅう）"
+      ],
+      "correct_index": 1,
+      "explanation": "TEC-FORCEは、大きな災害が起きたときに被害の状況を調べ、被害の拡大防止や早期復旧を支える国土交通省の組織です。予備隊員には民間の専門家も参加し、地方公共団体だけでは対応が難しい場合に力を合わせます。",
+      "keywords": [
+        "TEC-FORCE",
+        "国土交通省",
+        "防災",
+        "地方公共団体"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/mizukokudo06_hh_000345.html"
+        }
+      ]
+    }
+  ]
+}
