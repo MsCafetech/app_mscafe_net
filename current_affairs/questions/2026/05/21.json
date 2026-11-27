@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-21",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260521-001",
@@ -30,6 +30,96 @@
         {
           "name": "裁判所",
           "url": "https://www.courts.go.jp/saiban/minjidejitaruka/minso_gaiyou/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260521-002",
+      "news_date": "2026-05-21",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "北田桃子教授がIMOジェンダー平等賞を受賞",
+      "news_summary": "5月18日、ロンドンで北田桃子教授の授賞式が行われた。",
+      "question": "5月18日、国際海事機関（IMO）のジェンダー平等賞の授賞式が開かれ、世界海事大学の北田桃子教授が受賞しました。\n\n国連の持続可能な開発目標（SDGs）のうち、ジェンダー平等を目指すのは何番の目標ですか。",
+      "choices": [
+        "3番",
+        "5番",
+        "9番",
+        "14番"
+      ],
+      "correct_index": 1,
+      "explanation": "SDGsの目標5はジェンダー平等の実現です。性別にかかわらず、教育や仕事に参加する機会が等しく得られる社会を目指します。IMOも船や海事産業の分野で女性が活やくできるよう取り組んでいます。",
+      "keywords": [
+        "北田桃子",
+        "世界海事大学",
+        "IMO",
+        "ジェンダー平等賞"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kaiji01_hh_000591.html"
+        }
+      ]
+    },
+    {
+      "id": "20260521-003",
+      "news_date": "2026-05-21",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とインドネシアの環境ウィーク",
+      "news_summary": "5月11～12日にジャカルタで両国が環境協力について議論した。",
+      "question": "5月11日から12日まで、インドネシアのジャカルタで、日本とインドネシアの環境ウィークが開かれました。\n\nインドネシアが加盟する、東南アジアの国々による地域協力の組織はどれですか。",
+      "choices": [
+        "EU",
+        "G7",
+        "ASEAN",
+        "USMCA"
+      ],
+      "correct_index": 2,
+      "explanation": "東南アジア諸国連合（ASEAN）は、東南アジアの国々が経済や社会などの分野で協力する組織です。日本はインドネシアなどと環境問題でも協力しています。今回の会合では気候変動やごみの管理などについて話し合われました。",
+      "keywords": [
+        "インドネシア",
+        "ジャカルタ",
+        "環境ウィーク",
+        "環境協力"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_04733.html"
+        }
+      ]
+    },
+    {
+      "id": "20260521-004",
+      "news_date": "2026-05-21",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "広島市で南極条約協議国会議を開催",
+      "news_summary": "5月11～21日に広島市で南極の環境保護などを議論した。",
+      "question": "5月11日から21日まで、広島市で南極条約協議国会議が開かれ、コウテイペンギンの保護や観光活動について話し合われました。\n\n南極条約の基本的な考え方として適切なものはどれですか。",
+      "choices": [
+        "南極を軍事目的に利用する",
+        "一つの国が南極を独占する",
+        "南極での科学研究を禁止する",
+        "南極を平和目的に利用し科学研究を進める"
+      ],
+      "correct_index": 3,
+      "explanation": "南極条約は1959年に署名され、南極を平和目的で利用することや科学研究の自由、国際協力などを定めています。南極には独特の生態系があるため、観光や研究活動と自然環境の保護を両立することも重要です。",
+      "keywords": [
+        "南極条約",
+        "広島市",
+        "コウテイペンギン",
+        "南極観測"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_04737.html"
         }
       ]
     }
