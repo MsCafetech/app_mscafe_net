@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-06",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260806-001",
@@ -64,6 +64,36 @@
         {
           "name": "東京大学総合研究博物館",
           "url": "https://www.um.u-tokyo.ac.jp/research/umutnews/umutnews20260806.html"
+        }
+      ]
+    },
+    {
+      "id": "20260806-003",
+      "news_date": "2026-08-06",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "渇水（かっすい）への対策を強化",
+      "news_summary": "国土交通省は少雨を受け渇水情報の連絡体制を強化すると発表した。",
+      "question": "雨の少ない状態が続いたため、国土交通省は水不足への備えを強化し、節水を呼びかけました。\n\n渇水とはどのような状態ですか。",
+      "choices": [
+        "海水が陸地に流れこむ",
+        "利用できる水が不足する",
+        "河川の水量が急に増える",
+        "地下から温泉がわく"
+      ],
+      "correct_index": 1,
+      "explanation": "渇水は、雨が少ないことなどによって川やダムの水が減り、生活や農業などに必要な水を十分に確保できなくなる状態です。水源の状況を調べ、計画的に水を使うことが大切です。家庭でも水をむだにしないよう心がけます。",
+      "keywords": [
+        "少雨",
+        "水資源",
+        "ダム",
+        "国土交通省"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/water02_hh_000211.html"
         }
       ]
     }
