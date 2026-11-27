@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 1,
+  "questions": [
+    {
+      "question_id": "20261127-001",
+      "related": [
+        {
+          "id": "20261127-001-R01",
+          "relation_type": "answer",
+          "title": "西表石垣（いりおもていしがき）国立公園",
+          "description": "日本の最南端（さいなんたん）に位置する国立公園です。西表島には亜熱帯（あねったい）の森林や、海水と川の水が混じる場所に育つマングローブ林があります。石垣島との間には日本最大規模のサンゴ礁（しょう）が広がります。",
+          "relationship": "八重山（やえやま）諸島の自然環境と、生物を守る取り組みを学べます。",
+          "keywords": [
+            "西表石垣国立公園",
+            "マングローブ",
+            "サンゴ礁"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://kyushu.env.go.jp/okinawa/park.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
