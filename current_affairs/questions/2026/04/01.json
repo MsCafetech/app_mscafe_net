@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-01",
   "language": "ja",
-  "question_count": 13,
+  "question_count": 14,
   "questions": [
     {
       "id": "20260401-001",
@@ -398,6 +398,36 @@
         {
           "name": "警察庁",
           "url": "https://www.npa.go.jp/bureau/traffic/bicycle/info.html"
+        }
+      ]
+    },
+    {
+      "id": "20260401-015",
+      "news_date": "2026-04-01",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "空港の設置・管理の基本方針を変更",
+      "news_summary": "国土交通省が人口減少や訪日旅行者の増加などに対応する空港の基本方針を変更しました。",
+      "question": "4月1日、国土交通省は空港の設置や管理の基本方針を変更しました。国際交流を広げるため、空港の施設や交通手段の整備を進める方針です。\n\n滑走路（かっそうろ）の新設や増設が方針に示された成田国際空港は、何県にありますか。",
+      "choices": [
+        "埼玉県",
+        "千葉県",
+        "神奈川県",
+        "茨城県（いばらきけん）"
+      ],
+      "correct_index": 1,
+      "explanation": "成田国際空港は千葉県にあり、日本と世界を結ぶ主要な空港の一つです。滑走路は飛行機が離陸（りりく）や着陸をするための施設です。国際線の利用者が増えることに対応するため、空港の受け入れ能力を高める取り組みが進められています。",
+      "keywords": [
+        "成田国際空港",
+        "滑走路",
+        "国際航空",
+        "訪日旅行者"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kouku05_hh_000244.html"
         }
       ]
     }
