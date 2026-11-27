@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "date": "2026-11-25",
-  "count": 543,
+  "count": 544,
   "articles": [
     {
       "id": "0118b755f39c66ab944623d295fc5904c9979dab2d6ca317f8f0557886b60025",
@@ -25,7 +25,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:15+09:00",
+      "collected_at": "2026-11-27T18:35:29+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:15+09:00"
     },
@@ -51,7 +51,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:10+09:00",
+      "collected_at": "2026-11-27T18:31:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:10+09:00"
     },
@@ -77,7 +77,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:28+09:00",
+      "collected_at": "2026-11-27T18:39:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:28+09:00"
     },
@@ -103,7 +103,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:38+09:00",
+      "collected_at": "2026-11-27T18:40:56+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:38+09:00"
     },
@@ -131,7 +131,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:58+09:00",
+      "collected_at": "2026-11-27T18:53:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:58+09:00"
     },
@@ -157,7 +157,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:18:13+09:00",
+      "collected_at": "2026-11-27T18:25:39+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:18:13+09:00"
     },
@@ -209,7 +209,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -235,7 +235,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:19+09:00",
+      "collected_at": "2026-11-27T18:51:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:19+09:00"
     },
@@ -263,7 +263,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:15+09:00",
+      "collected_at": "2026-11-27T18:36:18+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:15+09:00"
     },
@@ -289,7 +289,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -301,8 +301,8 @@
       "role": "discovery",
       "category": "government",
       "title": "教育課程部会　教育課程企画特別部会（第24回）の開催について：文部科学省",
-      "discovery_title": "中央教育審議会初等中等教育分科会教育課程部会教育課程企画特別部会（第24回）を開催します",
-      "published_at": "2026-11-25T14:00:00+09:00",
+      "discovery_title": "教育課程部会　教育課程企画特別部会（第24回）の開催について",
+      "published_at": "2026-11-25",
       "publication_day": "2026-11-25",
       "updated_at": null,
       "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/kaisai/mext_00162.html",
@@ -312,12 +312,13 @@
       "body_chars": 154,
       "body_url": null,
       "body_method": "trafilatura",
-      "date_method": "feed_date",
+      "date_method": "list_row_unverified",
       "quality_flags": [
-        "short_body"
+        "short_body",
+        "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:30+09:00",
+      "collected_at": "2026-11-27T18:32:51+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:30+09:00"
     },
@@ -343,7 +344,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:30+09:00",
+      "collected_at": "2026-11-27T18:46:23+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:30+09:00"
     },
@@ -369,7 +370,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:42:59+09:00",
+      "collected_at": "2026-11-27T18:50:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:42:59+09:00"
     },
@@ -397,7 +398,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:41+09:00",
+      "collected_at": "2026-11-27T18:32:09+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:41+09:00"
     },
@@ -423,7 +424,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:31+09:00",
+      "collected_at": "2026-11-27T18:38:41+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:31+09:00"
     },
@@ -449,7 +450,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:55+09:00",
+      "collected_at": "2026-11-27T18:48:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:55+09:00"
     },
@@ -475,7 +476,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -501,7 +502,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -529,7 +530,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:42:26+09:00",
+      "collected_at": "2026-11-27T18:46:44+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:42:26+09:00"
     },
@@ -555,7 +556,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -581,7 +582,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:53+09:00",
+      "collected_at": "2026-11-27T18:30:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:53+09:00"
     },
@@ -609,7 +610,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:30:07+09:00",
+      "collected_at": "2026-11-27T18:37:34+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:30:07+09:00"
     },
@@ -635,7 +636,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -663,7 +664,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:15+09:00",
+      "collected_at": "2026-11-27T18:41:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:15+09:00"
     },
@@ -691,7 +692,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:13+09:00",
+      "collected_at": "2026-11-27T18:36:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:13+09:00"
     },
@@ -719,7 +720,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:52+09:00",
+      "collected_at": "2026-11-27T18:33:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:52+09:00"
     },
@@ -747,7 +748,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:24+09:00",
+      "collected_at": "2026-11-27T18:36:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:24+09:00"
     },
@@ -773,7 +774,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:39:06+09:00",
+      "collected_at": "2026-11-27T18:47:03+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:39:06+09:00"
     },
@@ -799,7 +800,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:22:09+09:00",
+      "collected_at": "2026-11-27T18:30:47+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:22:09+09:00"
     },
@@ -825,7 +826,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:32+09:00",
+      "collected_at": "2026-11-27T18:46:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:32+09:00"
     },
@@ -851,7 +852,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:42+09:00",
+      "collected_at": "2026-11-27T18:53:01+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:42+09:00"
     },
@@ -877,7 +878,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -929,7 +930,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:45+09:00",
+      "collected_at": "2026-11-27T18:49:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:45+09:00"
     },
@@ -955,7 +956,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:24+09:00",
+      "collected_at": "2026-11-27T18:51:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:24+09:00"
     },
@@ -981,7 +982,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:37+09:00",
+      "collected_at": "2026-11-27T18:39:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:37+09:00"
     },
@@ -1009,7 +1010,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:47+09:00",
+      "collected_at": "2026-11-27T18:39:43+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:47+09:00"
     },
@@ -1035,7 +1036,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:36+09:00",
+      "collected_at": "2026-11-27T18:33:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:36+09:00"
     },
@@ -1061,7 +1062,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -1087,7 +1088,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:53+09:00",
+      "collected_at": "2026-11-27T18:46:49+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:53+09:00"
     },
@@ -1115,7 +1116,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:22+09:00",
+      "collected_at": "2026-11-27T18:32:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:22+09:00"
     },
@@ -1141,7 +1142,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:58+09:00",
+      "collected_at": "2026-11-27T18:40:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:58+09:00"
     },
@@ -1169,7 +1170,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:00+09:00",
+      "collected_at": "2026-11-27T18:29:55+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:00+09:00"
     },
@@ -1195,7 +1196,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:10+09:00",
+      "collected_at": "2026-11-27T18:48:42+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:10+09:00"
     },
@@ -1221,7 +1222,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:17+09:00",
+      "collected_at": "2026-11-27T18:30:46+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:17+09:00"
     },
@@ -1249,7 +1250,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:13+09:00",
+      "collected_at": "2026-11-27T18:47:36+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:13+09:00"
     },
@@ -1275,7 +1276,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -1303,7 +1304,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:55+09:00",
+      "collected_at": "2026-11-27T18:37:23+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:55+09:00"
     },
@@ -1329,7 +1330,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:12+09:00",
+      "collected_at": "2026-11-27T18:53:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:12+09:00"
     },
@@ -1355,7 +1356,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:38+09:00",
+      "collected_at": "2026-11-27T18:33:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:38+09:00"
     },
@@ -1381,7 +1382,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:26+09:00",
+      "collected_at": "2026-11-27T18:36:18+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:26+09:00"
     },
@@ -1436,7 +1437,7 @@
         "article_identity_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:42:43+09:00",
+      "collected_at": "2026-11-27T18:47:06+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:42:43+09:00"
     },
@@ -1462,7 +1463,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:42:57+09:00",
+      "collected_at": "2026-11-27T18:50:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:42:57+09:00"
     },
@@ -1488,7 +1489,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:18:17+09:00",
+      "collected_at": "2026-11-27T18:26:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:18:17+09:00"
     },
@@ -1514,7 +1515,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:34+09:00",
+      "collected_at": "2026-11-27T18:29:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:34+09:00"
     },
@@ -1540,7 +1541,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:35+09:00",
+      "collected_at": "2026-11-27T18:39:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:35+09:00"
     },
@@ -1568,7 +1569,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:42+09:00",
+      "collected_at": "2026-11-27T18:36:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:42+09:00"
     },
@@ -1594,7 +1595,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:36+09:00",
+      "collected_at": "2026-11-27T18:41:59+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:36+09:00"
     },
@@ -1620,7 +1621,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:51+09:00",
+      "collected_at": "2026-11-27T18:46:46+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:51+09:00"
     },
@@ -1648,7 +1649,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:29+09:00",
+      "collected_at": "2026-11-27T18:41:52+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:29+09:00"
     },
@@ -1674,7 +1675,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:51+09:00",
+      "collected_at": "2026-11-27T18:40:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:51+09:00"
     },
@@ -1700,7 +1701,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:55+09:00",
+      "collected_at": "2026-11-27T18:30:32+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:55+09:00"
     },
@@ -1726,7 +1727,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:03+09:00",
+      "collected_at": "2026-11-27T18:31:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:03+09:00"
     },
@@ -1752,7 +1753,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -1780,7 +1781,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:32+09:00",
+      "collected_at": "2026-11-27T18:44:57+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:32+09:00"
     },
@@ -1808,7 +1809,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:13+09:00",
+      "collected_at": "2026-11-27T18:28:53+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:13+09:00"
     },
@@ -1834,7 +1835,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:10+09:00",
+      "collected_at": "2026-11-27T18:32:10+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:10+09:00"
     },
@@ -1860,7 +1861,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -1886,7 +1887,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:05+09:00",
+      "collected_at": "2026-11-27T18:48:37+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:05+09:00"
     },
@@ -1914,7 +1915,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:52+09:00",
+      "collected_at": "2026-11-27T18:28:47+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:52+09:00"
     },
@@ -1943,7 +1944,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:15+09:00",
+      "collected_at": "2026-11-27T18:37:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:15+09:00"
     },
@@ -1969,7 +1970,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:19+09:00",
+      "collected_at": "2026-11-27T18:35:34+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:19+09:00"
     },
@@ -1997,7 +1998,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:37+09:00",
+      "collected_at": "2026-11-27T18:52:56+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:37+09:00"
     },
@@ -2023,7 +2024,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -2049,7 +2050,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:51+09:00",
+      "collected_at": "2026-11-27T18:37:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:51+09:00"
     },
@@ -2075,7 +2076,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:49:17+09:00",
+      "collected_at": "2026-11-27T18:55:09+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:49:17+09:00"
     },
@@ -2087,7 +2088,7 @@
       "role": "discovery",
       "category": "news",
       "title": "プレジャーボート2艇にコンクリートブロック38個と20個以上を敷き詰め沈没させ海に不法投棄か　海洋汚染の疑いで岡山市南区の自営業の男性（69）を書類送検　海上保安部",
-      "discovery_title": "5 プレジャーボート2艇にコンクリートブロック38個と20個以上を敷き詰め沈没させ海に…",
+      "discovery_title": "4 プレジャーボート2艇にコンクリートブロック38個と20個以上を敷き詰め沈没させ海に…",
       "published_at": "2026-11-25T13:32:00+09:00",
       "publication_day": "2026-11-25",
       "updated_at": "2026-11-25T18:56:00+09:00",
@@ -2103,7 +2104,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:19:33+09:00",
+      "collected_at": "2026-11-27T18:27:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:19:33+09:00"
     },
@@ -2129,7 +2130,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -2155,7 +2156,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:29+09:00",
+      "collected_at": "2026-11-27T18:54:46+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:29+09:00"
     },
@@ -2181,7 +2182,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -2207,7 +2208,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:14+09:00",
+      "collected_at": "2026-11-27T18:44:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:14+09:00"
     },
@@ -2233,7 +2234,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:36:00+09:00",
+      "collected_at": "2026-11-27T18:43:47+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:36:00+09:00"
     },
@@ -2259,7 +2260,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:38+09:00",
+      "collected_at": "2026-11-27T18:51:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:38+09:00"
     },
@@ -2285,7 +2286,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:17+09:00",
+      "collected_at": "2026-11-27T18:32:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:17+09:00"
     },
@@ -2313,7 +2314,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:18+09:00",
+      "collected_at": "2026-11-27T18:44:43+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:18+09:00"
     },
@@ -2341,7 +2342,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:26+09:00",
+      "collected_at": "2026-11-27T18:33:03+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:26+09:00"
     },
@@ -2367,7 +2368,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -2393,7 +2394,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:33+09:00",
+      "collected_at": "2026-11-27T18:32:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:33+09:00"
     },
@@ -2421,7 +2422,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:06+09:00",
+      "collected_at": "2026-11-27T18:41:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:06+09:00"
     },
@@ -2447,7 +2448,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:46+09:00",
+      "collected_at": "2026-11-27T18:40:29+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:46+09:00"
     },
@@ -2473,7 +2474,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:05+09:00",
+      "collected_at": "2026-11-27T18:31:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:05+09:00"
     },
@@ -2499,7 +2500,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:34:01+09:00",
+      "collected_at": "2026-11-27T18:40:43+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:34:01+09:00"
     },
@@ -2527,7 +2528,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:33+09:00",
+      "collected_at": "2026-11-27T18:45:05+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:33+09:00"
     },
@@ -2553,7 +2554,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:22:13+09:00",
+      "collected_at": "2026-11-27T18:30:52+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:22:13+09:00"
     },
@@ -2581,7 +2582,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:26:56+09:00",
+      "collected_at": "2026-11-27T18:34:52+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:26:56+09:00"
     },
@@ -2607,7 +2608,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:40+09:00",
+      "collected_at": "2026-11-27T18:32:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:40+09:00"
     },
@@ -2633,7 +2634,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -2687,7 +2688,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -2715,7 +2716,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:51+09:00",
+      "collected_at": "2026-11-27T18:32:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:51+09:00"
     },
@@ -2743,7 +2744,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:34+09:00",
+      "collected_at": "2026-11-27T18:32:47+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:34+09:00"
     },
@@ -2769,7 +2770,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -2795,7 +2796,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:39:13+09:00",
+      "collected_at": "2026-11-27T18:47:10+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:39:13+09:00"
     },
@@ -2851,7 +2852,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:17+09:00",
+      "collected_at": "2026-11-27T18:31:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:17+09:00"
     },
@@ -2877,7 +2878,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:35+09:00",
+      "collected_at": "2026-11-27T18:36:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:35+09:00"
     },
@@ -2903,7 +2904,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:50+09:00",
+      "collected_at": "2026-11-27T18:30:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:50+09:00"
     },
@@ -2929,7 +2930,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:48+09:00",
+      "collected_at": "2026-11-27T18:30:25+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:48+09:00"
     },
@@ -2955,7 +2956,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -2981,7 +2982,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:27+09:00",
+      "collected_at": "2026-11-27T18:38:37+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:27+09:00"
     },
@@ -3007,7 +3008,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:39+09:00",
+      "collected_at": "2026-11-27T18:45:03+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:39+09:00"
     },
@@ -3033,7 +3034,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -3059,7 +3060,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -3085,7 +3086,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:16:02+09:00",
+      "collected_at": "2026-11-27T18:23:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:16:02+09:00"
     },
@@ -3111,7 +3112,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:31+09:00",
+      "collected_at": "2026-11-27T18:33:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:31+09:00"
     },
@@ -3137,7 +3138,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -3165,7 +3166,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:05+09:00",
+      "collected_at": "2026-11-27T18:54:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:05+09:00"
     },
@@ -3191,7 +3192,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:17+09:00",
+      "collected_at": "2026-11-27T18:54:34+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:17+09:00"
     },
@@ -3219,7 +3220,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:10+09:00",
+      "collected_at": "2026-11-27T18:53:29+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:10+09:00"
     },
@@ -3245,7 +3246,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:45+09:00",
+      "collected_at": "2026-11-27T18:52:07+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:45+09:00"
     },
@@ -3297,7 +3298,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:35+09:00",
+      "collected_at": "2026-11-27T18:44:59+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:35+09:00"
     },
@@ -3323,7 +3324,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:12+09:00",
+      "collected_at": "2026-11-27T18:31:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:12+09:00"
     },
@@ -3349,7 +3350,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:47+09:00",
+      "collected_at": "2026-11-27T18:49:42+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:47+09:00"
     },
@@ -3375,7 +3376,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -3401,7 +3402,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:26+09:00",
+      "collected_at": "2026-11-27T18:35:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:26+09:00"
     },
@@ -3431,7 +3432,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:19:59+09:00",
+      "collected_at": "2026-11-27T18:27:25+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:19:59+09:00"
     },
@@ -3489,7 +3490,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:33+09:00",
+      "collected_at": "2026-11-27T18:41:56+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:33+09:00"
     },
@@ -3515,7 +3516,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:44+09:00",
+      "collected_at": "2026-11-27T18:36:37+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:44+09:00"
     },
@@ -3541,7 +3542,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:43+09:00",
+      "collected_at": "2026-11-27T18:32:42+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:43+09:00"
     },
@@ -3567,7 +3568,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:22:02+09:00",
+      "collected_at": "2026-11-27T18:30:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:22:02+09:00"
     },
@@ -3593,7 +3594,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -3621,7 +3622,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:26:58+09:00",
+      "collected_at": "2026-11-27T18:34:55+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:26:58+09:00"
     },
@@ -3647,7 +3648,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:26:46+09:00",
+      "collected_at": "2026-11-27T18:34:43+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:26:46+09:00"
     },
@@ -3673,7 +3674,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:10+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -3701,7 +3702,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:41+09:00",
+      "collected_at": "2026-11-27T18:40:25+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:41+09:00"
     },
@@ -3729,7 +3730,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:46+09:00",
+      "collected_at": "2026-11-27T18:37:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:46+09:00"
     },
@@ -3755,7 +3756,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:17+09:00",
+      "collected_at": "2026-11-27T18:35:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:17+09:00"
     },
@@ -3781,7 +3782,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:17+09:00",
+      "collected_at": "2026-11-27T18:53:36+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:17+09:00"
     },
@@ -3807,7 +3808,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:31+09:00",
+      "collected_at": "2026-11-27T18:51:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:31+09:00"
     },
@@ -3835,7 +3836,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:28+09:00",
+      "collected_at": "2026-11-27T18:36:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:28+09:00"
     },
@@ -3863,7 +3864,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:47+09:00",
+      "collected_at": "2026-11-27T18:52:10+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:47+09:00"
     },
@@ -3889,7 +3890,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:03+09:00",
+      "collected_at": "2026-11-27T18:48:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:03+09:00"
     },
@@ -3915,7 +3916,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:38+09:00",
+      "collected_at": "2026-11-27T18:42:01+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:38+09:00"
     },
@@ -3941,7 +3942,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:00+09:00",
+      "collected_at": "2026-11-27T18:48:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:00+09:00"
     },
@@ -3967,7 +3968,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:13:18+09:00",
+      "collected_at": "2026-11-27T18:20:56+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:13:18+09:00"
     },
@@ -3993,7 +3994,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:29+09:00",
+      "collected_at": "2026-11-27T18:33:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:29+09:00"
     },
@@ -4019,7 +4020,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:58+09:00",
+      "collected_at": "2026-11-27T18:48:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:58+09:00"
     },
@@ -4045,7 +4046,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -4071,7 +4072,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -4097,7 +4098,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -4123,7 +4124,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:49+09:00",
+      "collected_at": "2026-11-27T18:36:42+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:49+09:00"
     },
@@ -4149,7 +4150,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -4175,7 +4176,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:27+09:00",
+      "collected_at": "2026-11-27T18:32:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:27+09:00"
     },
@@ -4201,7 +4202,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:59+09:00",
+      "collected_at": "2026-11-27T18:52:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:59+09:00"
     },
@@ -4227,7 +4228,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -4255,7 +4256,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:17+09:00",
+      "collected_at": "2026-11-27T18:41:41+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:17+09:00"
     },
@@ -4281,7 +4282,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:00+09:00",
+      "collected_at": "2026-11-27T18:53:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:00+09:00"
     },
@@ -4307,7 +4308,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:43+09:00",
+      "collected_at": "2026-11-27T18:29:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:43+09:00"
     },
@@ -4335,7 +4336,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:46+09:00",
+      "collected_at": "2026-11-27T18:32:53+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:46+09:00"
     },
@@ -4361,7 +4362,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:51+09:00",
+      "collected_at": "2026-11-27T18:36:44+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:51+09:00"
     },
@@ -4387,7 +4388,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:39:09+09:00",
+      "collected_at": "2026-11-27T18:47:05+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:39:09+09:00"
     },
@@ -4439,7 +4440,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:21+09:00",
+      "collected_at": "2026-11-27T18:44:45+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:21+09:00"
     },
@@ -4467,7 +4468,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:15+09:00",
+      "collected_at": "2026-11-27T18:32:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:15+09:00"
     },
@@ -4495,7 +4496,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:19+09:00",
+      "collected_at": "2026-11-27T18:53:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:19+09:00"
     },
@@ -4521,7 +4522,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:58+09:00",
+      "collected_at": "2026-11-27T18:46:53+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:58+09:00"
     },
@@ -4547,7 +4548,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -4573,7 +4574,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:41+09:00",
+      "collected_at": "2026-11-27T18:29:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:41+09:00"
     },
@@ -4599,7 +4600,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:16+09:00",
+      "collected_at": "2026-11-27T18:39:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:16+09:00"
     },
@@ -4663,7 +4664,7 @@
       "role": "discovery",
       "category": "news",
       "title": "北海道の未来を拓くリーダーたちに迫る「HOKKAIDO未来リーダーズ」 WEB版が公開",
-      "discovery_title": "北海道の未来を拓くリーダーたちに迫る「HOKKAIDO未来リーダーズ」 WEB版が公開 AD HOKKAIDO未来リーダーズ編集部",
+      "discovery_title": "北海道の未来を拓くリーダーたちに迫る「HOKKAIDO未来リーダーズ」 WEB版が公... AD HOKKAIDO未来リーダーズ編集部",
       "published_at": "2026-11-25T10:00:00+09:00",
       "publication_day": "2026-11-25",
       "updated_at": "2026-11-25T10:02:00+09:00",
@@ -4677,7 +4678,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:34+09:00",
+      "collected_at": "2026-11-27T18:28:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:34+09:00"
     },
@@ -4703,7 +4704,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:19+09:00",
+      "collected_at": "2026-11-27T18:38:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:19+09:00"
     },
@@ -4729,7 +4730,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:54+09:00",
+      "collected_at": "2026-11-27T18:54:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:54+09:00"
     },
@@ -4755,7 +4756,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:25+09:00",
+      "collected_at": "2026-11-27T18:44:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:25+09:00"
     },
@@ -4781,7 +4782,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:08+09:00",
+      "collected_at": "2026-11-27T18:41:32+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:08+09:00"
     },
@@ -4807,7 +4808,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -4833,7 +4834,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:52+09:00",
+      "collected_at": "2026-11-27T18:52:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:52+09:00"
     },
@@ -4859,7 +4860,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:19+09:00",
+      "collected_at": "2026-11-27T18:31:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:19+09:00"
     },
@@ -4885,7 +4886,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:21+09:00",
+      "collected_at": "2026-11-27T18:39:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:21+09:00"
     },
@@ -4911,7 +4912,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:31+09:00",
+      "collected_at": "2026-11-27T18:49:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:31+09:00"
     },
@@ -4940,7 +4941,7 @@
         "article_identity_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:07+09:00",
+      "collected_at": "2026-11-27T18:43:51+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:07+09:00"
     },
@@ -4966,7 +4967,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:39:11+09:00",
+      "collected_at": "2026-11-27T18:47:07+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:39:11+09:00"
     },
@@ -4992,7 +4993,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:44+09:00",
+      "collected_at": "2026-11-27T18:37:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:44+09:00"
     },
@@ -5018,7 +5019,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:46+09:00",
+      "collected_at": "2026-11-27T18:53:05+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:46+09:00"
     },
@@ -5044,7 +5045,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:07+09:00",
+      "collected_at": "2026-11-27T18:31:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:07+09:00"
     },
@@ -5070,7 +5071,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:30+09:00",
+      "collected_at": "2026-11-27T18:44:54+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:30+09:00"
     },
@@ -5096,7 +5097,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:33+09:00",
+      "collected_at": "2026-11-27T18:51:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:33+09:00"
     },
@@ -5122,7 +5123,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:08+09:00",
+      "collected_at": "2026-11-27T18:28:48+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:08+09:00"
     },
@@ -5148,7 +5149,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:04+09:00",
+      "collected_at": "2026-11-27T18:50:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:04+09:00"
     },
@@ -5174,7 +5175,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:30:00+09:00",
+      "collected_at": "2026-11-27T18:37:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:30:00+09:00"
     },
@@ -5200,7 +5201,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:22:11+09:00",
+      "collected_at": "2026-11-27T18:30:49+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:22:11+09:00"
     },
@@ -5226,7 +5227,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:13+09:00",
+      "collected_at": "2026-11-27T18:50:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:13+09:00"
     },
@@ -5255,7 +5256,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:24+09:00",
+      "collected_at": "2026-11-27T18:33:01+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:24+09:00"
     },
@@ -5281,7 +5282,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:08+09:00",
+      "collected_at": "2026-11-27T18:35:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:08+09:00"
     },
@@ -5307,7 +5308,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:49:30+09:00",
+      "collected_at": "2026-11-27T18:55:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:49:30+09:00"
     },
@@ -5333,7 +5334,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:50+09:00",
+      "collected_at": "2026-11-27T18:49:45+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:50+09:00"
     },
@@ -5359,7 +5360,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:46+09:00",
+      "collected_at": "2026-11-27T18:36:39+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:46+09:00"
     },
@@ -5388,7 +5389,7 @@
         "article_identity_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:26:43+09:00",
+      "collected_at": "2026-11-27T18:33:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:26:43+09:00"
     },
@@ -5414,7 +5415,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:20+09:00",
+      "collected_at": "2026-11-27T18:29:00+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:20+09:00"
     },
@@ -5440,7 +5441,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:40+09:00",
+      "collected_at": "2026-11-27T18:52:03+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:40+09:00"
     },
@@ -5468,7 +5469,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:56+09:00",
+      "collected_at": "2026-11-27T18:53:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:56+09:00"
     },
@@ -5494,7 +5495,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:11+09:00",
+      "collected_at": "2026-11-27T18:38:23+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:11+09:00"
     },
@@ -5550,7 +5551,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:56+09:00",
+      "collected_at": "2026-11-27T18:48:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:56+09:00"
     },
@@ -5576,7 +5577,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:57+09:00",
+      "collected_at": "2026-11-27T18:43:45+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:57+09:00"
     },
@@ -5602,7 +5603,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:53+09:00",
+      "collected_at": "2026-11-27T18:37:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:53+09:00"
     },
@@ -5630,7 +5631,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:30:41+09:00",
+      "collected_at": "2026-11-27T18:36:58+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:30:41+09:00"
     },
@@ -5658,7 +5659,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:31+09:00",
+      "collected_at": "2026-11-27T18:41:54+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:31+09:00"
     },
@@ -5684,7 +5685,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:14:14+09:00",
+      "collected_at": "2026-11-27T18:21:59+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:14:14+09:00"
     },
@@ -5710,7 +5711,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:24+09:00",
+      "collected_at": "2026-11-27T18:35:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:24+09:00"
     },
@@ -5738,7 +5739,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:28+09:00",
+      "collected_at": "2026-11-27T18:36:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:28+09:00"
     },
@@ -5764,7 +5765,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:38+09:00",
+      "collected_at": "2026-11-27T18:52:00+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:38+09:00"
     },
@@ -5790,7 +5791,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:36+09:00",
+      "collected_at": "2026-11-27T18:29:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:36+09:00"
     },
@@ -5816,7 +5817,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:23+09:00",
+      "collected_at": "2026-11-27T18:38:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:23+09:00"
     },
@@ -5844,7 +5845,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:01+09:00",
+      "collected_at": "2026-11-27T18:28:55+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:01+09:00"
     },
@@ -5870,7 +5871,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:22+09:00",
+      "collected_at": "2026-11-27T18:41:45+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:22+09:00"
     },
@@ -5896,7 +5897,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:17+09:00",
+      "collected_at": "2026-11-27T18:47:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:17+09:00"
     },
@@ -5922,7 +5923,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -5948,7 +5949,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:27+09:00",
+      "collected_at": "2026-11-27T18:54:43+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:27+09:00"
     },
@@ -5974,7 +5975,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:30+09:00",
+      "collected_at": "2026-11-27T18:39:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:30+09:00"
     },
@@ -6000,7 +6001,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:01+09:00",
+      "collected_at": "2026-11-27T18:54:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:01+09:00"
     },
@@ -6028,7 +6029,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:03+09:00",
+      "collected_at": "2026-11-27T18:53:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:03+09:00"
     },
@@ -6054,7 +6055,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -6080,7 +6081,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:57+09:00",
+      "collected_at": "2026-11-27T18:37:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:57+09:00"
     },
@@ -6108,7 +6109,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:55+09:00",
+      "collected_at": "2026-11-27T18:40:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:55+09:00"
     },
@@ -6134,7 +6135,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:10+09:00",
+      "collected_at": "2026-11-27T18:35:25+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:10+09:00"
     },
@@ -6164,7 +6165,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:21+09:00",
+      "collected_at": "2026-11-27T18:40:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:21+09:00"
     },
@@ -6192,7 +6193,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:04+09:00",
+      "collected_at": "2026-11-27T18:28:59+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:04+09:00"
     },
@@ -6218,7 +6219,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -6246,7 +6247,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:11+09:00",
+      "collected_at": "2026-11-27T18:36:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:11+09:00"
     },
@@ -6272,7 +6273,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -6298,7 +6299,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:23+09:00",
+      "collected_at": "2026-11-27T18:39:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:23+09:00"
     },
@@ -6324,7 +6325,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -6350,7 +6351,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:49+09:00",
+      "collected_at": "2026-11-27T18:52:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:49+09:00"
     },
@@ -6376,7 +6377,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -6404,7 +6405,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:31+09:00",
+      "collected_at": "2026-11-27T18:31:59+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:31+09:00"
     },
@@ -6432,7 +6433,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:19+09:00",
+      "collected_at": "2026-11-27T18:36:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:19+09:00"
     },
@@ -6458,7 +6459,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:25+09:00",
+      "collected_at": "2026-11-27T18:30:52+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:25+09:00"
     },
@@ -6484,7 +6485,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -6510,7 +6511,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:39:00+09:00",
+      "collected_at": "2026-11-27T18:46:56+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:39:00+09:00"
     },
@@ -6536,7 +6537,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:38+09:00",
+      "collected_at": "2026-11-27T18:49:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:38+09:00"
     },
@@ -6564,7 +6565,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:08+09:00",
+      "collected_at": "2026-11-27T18:32:07+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:08+09:00"
     },
@@ -6622,7 +6623,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:19:27+09:00",
+      "collected_at": "2026-11-27T18:26:54+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:19:27+09:00"
     },
@@ -6648,7 +6649,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:10+09:00",
+      "collected_at": "2026-11-27T18:47:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:10+09:00"
     },
@@ -6674,7 +6675,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:40+09:00",
+      "collected_at": "2026-11-27T18:33:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:40+09:00"
     },
@@ -6700,7 +6701,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:19+09:00",
+      "collected_at": "2026-11-27T18:54:37+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:19+09:00"
     },
@@ -6726,7 +6727,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:17+09:00",
+      "collected_at": "2026-11-27T18:28:57+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:17+09:00"
     },
@@ -6752,7 +6753,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:21+09:00",
+      "collected_at": "2026-11-27T18:35:36+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:21+09:00"
     },
@@ -6778,7 +6779,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -6804,7 +6805,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:36+09:00",
+      "collected_at": "2026-11-27T18:32:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:36+09:00"
     },
@@ -6830,7 +6831,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -6856,7 +6857,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -6884,7 +6885,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:30+09:00",
+      "collected_at": "2026-11-27T18:36:32+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:30+09:00"
     },
@@ -6910,7 +6911,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -6938,7 +6939,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:27+09:00",
+      "collected_at": "2026-11-27T18:33:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:27+09:00"
     },
@@ -6964,7 +6965,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:22+09:00",
+      "collected_at": "2026-11-27T18:51:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:22+09:00"
     },
@@ -6990,7 +6991,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -7016,7 +7017,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:22:16+09:00",
+      "collected_at": "2026-11-27T18:30:54+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:22:16+09:00"
     },
@@ -7042,7 +7043,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:31+09:00",
+      "collected_at": "2026-11-27T18:32:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:31+09:00"
     },
@@ -7068,7 +7069,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:18:54+09:00",
+      "collected_at": "2026-11-27T18:26:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:18:54+09:00"
     },
@@ -7094,7 +7095,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:13+09:00",
+      "collected_at": "2026-11-27T18:30:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:13+09:00"
     },
@@ -7120,7 +7121,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:07+09:00",
+      "collected_at": "2026-11-27T18:48:39+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:07+09:00"
     },
@@ -7146,7 +7147,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -7198,7 +7199,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -7224,7 +7225,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:42:52+09:00",
+      "collected_at": "2026-11-27T18:50:10+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:42:52+09:00"
     },
@@ -7252,7 +7253,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:29+09:00",
+      "collected_at": "2026-11-27T18:38:39+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:29+09:00"
     },
@@ -7278,7 +7279,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:40+09:00",
+      "collected_at": "2026-11-27T18:49:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:40+09:00"
     },
@@ -7306,7 +7307,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:28+09:00",
+      "collected_at": "2026-11-27T18:44:52+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:28+09:00"
     },
@@ -7332,7 +7333,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:49:12+09:00",
+      "collected_at": "2026-11-27T18:55:05+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:49:12+09:00"
     },
@@ -7358,7 +7359,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:30:09+09:00",
+      "collected_at": "2026-11-27T18:37:37+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:30:09+09:00"
     },
@@ -7384,7 +7385,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -7410,7 +7411,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:12+09:00",
+      "collected_at": "2026-11-27T18:48:44+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:12+09:00"
     },
@@ -7436,7 +7437,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:48+09:00",
+      "collected_at": "2026-11-27T18:37:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:48+09:00"
     },
@@ -7490,7 +7491,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -7516,7 +7517,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:14:16+09:00",
+      "collected_at": "2026-11-27T18:21:46+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:14:16+09:00"
     },
@@ -7542,7 +7543,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:36:16+09:00",
+      "collected_at": "2026-11-27T18:44:03+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:36:16+09:00"
     },
@@ -7570,7 +7571,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:26+09:00",
+      "collected_at": "2026-11-27T18:36:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:26+09:00"
     },
@@ -7596,7 +7597,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -7622,7 +7623,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -7648,7 +7649,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:42:54+09:00",
+      "collected_at": "2026-11-27T18:50:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:42:54+09:00"
     },
@@ -7674,7 +7675,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -7700,7 +7701,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:21+09:00",
+      "collected_at": "2026-11-27T18:46:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:21+09:00"
     },
@@ -7728,7 +7729,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:30:39+09:00",
+      "collected_at": "2026-11-27T18:36:56+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:30:39+09:00"
     },
@@ -7754,7 +7755,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:10+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -7780,7 +7781,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:30+09:00",
+      "collected_at": "2026-11-27T18:40:48+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:30+09:00"
     },
@@ -7806,7 +7807,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -7832,7 +7833,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -7858,7 +7859,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:06+09:00",
+      "collected_at": "2026-11-27T18:50:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:06+09:00"
     },
@@ -7886,7 +7887,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:54+09:00",
+      "collected_at": "2026-11-27T18:33:44+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:54+09:00"
     },
@@ -7912,7 +7913,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:33+09:00",
+      "collected_at": "2026-11-27T18:35:49+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:33+09:00"
     },
@@ -7938,7 +7939,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -7964,7 +7965,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:29+09:00",
+      "collected_at": "2026-11-27T18:29:09+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:29+09:00"
     },
@@ -7990,7 +7991,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:12:55+09:00",
+      "collected_at": "2026-11-27T18:20:32+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:55+09:00"
     },
@@ -8016,7 +8017,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:29+09:00",
+      "collected_at": "2026-11-27T18:32:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:29+09:00"
     },
@@ -8042,7 +8043,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -8094,7 +8095,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:24+09:00",
+      "collected_at": "2026-11-27T18:29:04+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:24+09:00"
     },
@@ -8120,7 +8121,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:15+09:00",
+      "collected_at": "2026-11-27T18:30:44+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:15+09:00"
     },
@@ -8146,7 +8147,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:55+09:00",
+      "collected_at": "2026-11-27T18:43:43+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:55+09:00"
     },
@@ -8172,7 +8173,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -8198,7 +8199,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:14:46+09:00",
+      "collected_at": "2026-11-27T18:22:32+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:14:46+09:00"
     },
@@ -8226,7 +8227,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:22+09:00",
+      "collected_at": "2026-11-27T18:29:02+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:22+09:00"
     },
@@ -8252,7 +8253,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:42+09:00",
+      "collected_at": "2026-11-27T18:45:06+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:42+09:00"
     },
@@ -8278,7 +8279,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:48+09:00",
+      "collected_at": "2026-11-27T18:29:44+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:48+09:00"
     },
@@ -8304,7 +8305,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:49:25+09:00",
+      "collected_at": "2026-11-27T18:55:17+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:49:25+09:00"
     },
@@ -8330,7 +8331,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:39+09:00",
+      "collected_at": "2026-11-27T18:29:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:39+09:00"
     },
@@ -8356,7 +8357,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -8385,7 +8386,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:48+09:00",
+      "collected_at": "2026-11-27T18:32:55+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:48+09:00"
     },
@@ -8411,7 +8412,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:14+09:00",
+      "collected_at": "2026-11-27T18:48:46+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:14+09:00"
     },
@@ -8437,7 +8438,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:24+09:00",
+      "collected_at": "2026-11-27T18:41:48+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:24+09:00"
     },
@@ -8467,7 +8468,7 @@
         "article_identity_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:27+09:00",
+      "collected_at": "2026-11-27T18:32:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:27+09:00"
     },
@@ -8493,7 +8494,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:12+09:00",
+      "collected_at": "2026-11-27T18:54:29+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:12+09:00"
     },
@@ -8519,7 +8520,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:53+09:00",
+      "collected_at": "2026-11-27T18:40:36+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:53+09:00"
     },
@@ -8545,7 +8546,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -8571,7 +8572,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:51+09:00",
+      "collected_at": "2026-11-27T18:48:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:51+09:00"
     },
@@ -8599,7 +8600,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:49:20+09:00",
+      "collected_at": "2026-11-27T18:55:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:49:20+09:00"
     },
@@ -8627,7 +8628,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:31+09:00",
+      "collected_at": "2026-11-27T18:35:47+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:31+09:00"
     },
@@ -8653,7 +8654,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:19+09:00",
+      "collected_at": "2026-11-27T18:48:51+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:19+09:00"
     },
@@ -8679,7 +8680,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:59+09:00",
+      "collected_at": "2026-11-27T18:28:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:59+09:00"
     },
@@ -8705,7 +8706,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:43+09:00",
+      "collected_at": "2026-11-27T18:30:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:43+09:00"
     },
@@ -8731,7 +8732,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:19+09:00",
+      "collected_at": "2026-11-27T18:30:48+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:19+09:00"
     },
@@ -8759,7 +8760,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:12+09:00",
+      "collected_at": "2026-11-27T18:32:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:12+09:00"
     },
@@ -8785,7 +8786,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:51+09:00",
+      "collected_at": "2026-11-27T18:53:10+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:51+09:00"
     },
@@ -8811,7 +8812,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:16+09:00",
+      "collected_at": "2026-11-27T18:46:09+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:16+09:00"
     },
@@ -8837,7 +8838,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:59+09:00",
+      "collected_at": "2026-11-27T18:30:37+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:59+09:00"
     },
@@ -8863,7 +8864,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:23+09:00",
+      "collected_at": "2026-11-27T18:46:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:23+09:00"
     },
@@ -8893,7 +8894,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:18:17+09:00",
+      "collected_at": "2026-11-27T18:25:47+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:18:17+09:00"
     },
@@ -8919,7 +8920,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:40+09:00",
+      "collected_at": "2026-11-27T18:42:03+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:40+09:00"
     },
@@ -8945,7 +8946,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:36:13+09:00",
+      "collected_at": "2026-11-27T18:44:01+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:36:13+09:00"
     },
@@ -8973,7 +8974,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:07+09:00",
+      "collected_at": "2026-11-27T18:29:03+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:07+09:00"
     },
@@ -8999,7 +9000,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:54+09:00",
+      "collected_at": "2026-11-27T18:52:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:54+09:00"
     },
@@ -9028,7 +9029,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:13+09:00",
+      "collected_at": "2026-11-27T18:37:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:13+09:00"
     },
@@ -9054,7 +9055,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:49+09:00",
+      "collected_at": "2026-11-27T18:53:08+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:49+09:00"
     },
@@ -9080,7 +9081,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:50+09:00",
+      "collected_at": "2026-11-27T18:48:06+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:50+09:00"
     },
@@ -9132,7 +9133,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:21+09:00",
+      "collected_at": "2026-11-27T18:38:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:21+09:00"
     },
@@ -9158,7 +9159,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:14+09:00",
+      "collected_at": "2026-11-27T18:54:32+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:14+09:00"
     },
@@ -9184,7 +9185,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:36:09+09:00",
+      "collected_at": "2026-11-27T18:43:56+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:36:09+09:00"
     },
@@ -9210,7 +9211,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -9236,7 +9237,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:35+09:00",
+      "collected_at": "2026-11-27T18:35:51+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:35+09:00"
     },
@@ -9262,7 +9263,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -9288,7 +9289,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -9314,7 +9315,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:37+09:00",
+      "collected_at": "2026-11-27T18:36:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:37+09:00"
     },
@@ -9340,7 +9341,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:22+09:00",
+      "collected_at": "2026-11-27T18:48:53+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:22+09:00"
     },
@@ -9352,7 +9353,7 @@
       "role": "discovery",
       "category": "news",
       "title": "【行方不明】富山市田畑のパート従業員・𠮷田さつきさん（50） 22日午後11時ごろ徒歩で外出後、連絡取れず　茶色ショートヘア・白い上着、警察が捜索",
-      "discovery_title": "3 【行方不明】富山市田畑のパート従業員・𠮷田さつきさん（50） 22日午後11時ごろ徒…",
+      "discovery_title": "4 【行方不明】富山市田畑のパート従業員・𠮷田さつきさん（50） 22日午後11時ごろ徒…",
       "published_at": "2026-11-25T17:45:00+09:00",
       "publication_day": "2026-11-25",
       "updated_at": "2026-11-27T06:31:00+09:00",
@@ -9368,7 +9369,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:19:31+09:00",
+      "collected_at": "2026-11-27T18:27:09+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:19:31+09:00"
     },
@@ -9394,7 +9395,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:22+09:00",
+      "collected_at": "2026-11-27T18:31:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:22+09:00"
     },
@@ -9422,7 +9423,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:21+09:00",
+      "collected_at": "2026-11-27T18:36:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:21+09:00"
     },
@@ -9448,7 +9449,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:12+09:00",
+      "collected_at": "2026-11-27T18:35:27+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:12+09:00"
     },
@@ -9474,7 +9475,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:42+09:00",
+      "collected_at": "2026-11-27T18:39:39+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:42+09:00"
     },
@@ -9502,7 +9503,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:30:12+09:00",
+      "collected_at": "2026-11-27T18:37:39+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:30:12+09:00"
     },
@@ -9528,7 +9529,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:27+09:00",
+      "collected_at": "2026-11-27T18:29:07+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:27+09:00"
     },
@@ -9559,7 +9560,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:23+09:00",
+      "collected_at": "2026-11-27T18:27:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:23+09:00"
     },
@@ -9571,7 +9572,7 @@
       "role": "discovery",
       "category": "news",
       "title": "六花亭のカード情報流出、対応が「誠実」と評判　再発行時の「伝え方」まで明記",
-      "discovery_title": "3 六花亭のカード情報流出、対応が「誠実」と評判　再発行時の「伝え方」まで明記",
+      "discovery_title": "4 六花亭のカード情報流出、対応が「誠実」と評判　再発行時の「伝え方」まで明記",
       "published_at": "2026-11-25T11:34:15+00:00",
       "publication_day": "2026-11-25",
       "updated_at": "2026-11-25T14:21:43+00:00",
@@ -9585,7 +9586,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:30+09:00",
+      "collected_at": "2026-11-27T18:32:00+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:30+09:00"
     },
@@ -9611,7 +9612,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:39+09:00",
+      "collected_at": "2026-11-27T18:52:58+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:39+09:00"
     },
@@ -9639,7 +9640,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:18+09:00",
+      "collected_at": "2026-11-27T18:29:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:18+09:00"
     },
@@ -9665,7 +9666,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:50+09:00",
+      "collected_at": "2026-11-27T18:29:46+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:50+09:00"
     },
@@ -9691,7 +9692,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:01+09:00",
+      "collected_at": "2026-11-27T18:41:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:01+09:00"
     },
@@ -9720,7 +9721,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:45+09:00",
+      "collected_at": "2026-11-27T18:44:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:45+09:00"
     },
@@ -9746,7 +9747,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:18+09:00",
+      "collected_at": "2026-11-27T18:39:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:18+09:00"
     },
@@ -9774,7 +9775,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:32+09:00",
+      "collected_at": "2026-11-27T18:32:45+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:32+09:00"
     },
@@ -9800,7 +9801,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:44+09:00",
+      "collected_at": "2026-11-27T18:40:27+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:44+09:00"
     },
@@ -9826,7 +9827,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:53+09:00",
+      "collected_at": "2026-11-27T18:53:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:53+09:00"
     },
@@ -9852,7 +9853,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:15:58+09:00",
+      "collected_at": "2026-11-27T18:23:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:15:58+09:00"
     },
@@ -9878,7 +9879,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -9904,7 +9905,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:40+09:00",
+      "collected_at": "2026-11-27T18:51:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:40+09:00"
     },
@@ -9932,7 +9933,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:18:36+09:00",
+      "collected_at": "2026-11-27T18:26:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:18:36+09:00"
     },
@@ -9958,7 +9959,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:48+09:00",
+      "collected_at": "2026-11-27T18:40:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:48+09:00"
     },
@@ -9984,7 +9985,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -10010,7 +10011,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -10036,7 +10037,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:36+09:00",
+      "collected_at": "2026-11-27T18:51:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:36+09:00"
     },
@@ -10062,7 +10063,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -10090,7 +10091,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:13+09:00",
+      "collected_at": "2026-11-27T18:29:09+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:13+09:00"
     },
@@ -10116,7 +10117,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:32+09:00",
+      "collected_at": "2026-11-27T18:39:29+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:32+09:00"
     },
@@ -10142,7 +10143,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -10170,7 +10171,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:42:28+09:00",
+      "collected_at": "2026-11-27T18:46:46+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:42:28+09:00"
     },
@@ -10196,7 +10197,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:52+09:00",
+      "collected_at": "2026-11-27T18:49:47+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:52+09:00"
     },
@@ -10222,7 +10223,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -10248,7 +10249,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -10274,7 +10275,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:09+09:00",
+      "collected_at": "2026-11-27T18:38:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:09+09:00"
     },
@@ -10300,7 +10301,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:47+09:00",
+      "collected_at": "2026-11-27T18:33:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:47+09:00"
     },
@@ -10326,7 +10327,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:11+09:00",
+      "collected_at": "2026-11-27T18:44:36+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:11+09:00"
     },
@@ -10352,7 +10353,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:08+09:00",
+      "collected_at": "2026-11-27T18:50:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:08+09:00"
     },
@@ -10378,7 +10379,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -10404,7 +10405,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:22:06+09:00",
+      "collected_at": "2026-11-27T18:30:44+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:22:06+09:00"
     },
@@ -10456,7 +10457,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -10484,7 +10485,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:15+09:00",
+      "collected_at": "2026-11-27T18:53:34+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:15+09:00"
     },
@@ -10510,7 +10511,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:44+09:00",
+      "collected_at": "2026-11-27T18:53:03+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:44+09:00"
     },
@@ -10536,7 +10537,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -10562,7 +10563,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:57+09:00",
+      "collected_at": "2026-11-27T18:30:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:57+09:00"
     },
@@ -10588,7 +10589,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:28+09:00",
+      "collected_at": "2026-11-27T18:31:56+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:28+09:00"
     },
@@ -10616,7 +10617,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:20+09:00",
+      "collected_at": "2026-11-27T18:32:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:20+09:00"
     },
@@ -10644,7 +10645,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:03+09:00",
+      "collected_at": "2026-11-27T18:41:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:03+09:00"
     },
@@ -10670,7 +10671,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:20+09:00",
+      "collected_at": "2026-11-27T18:41:43+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:20+09:00"
     },
@@ -10698,7 +10699,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:06+09:00",
+      "collected_at": "2026-11-27T18:28:46+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:06+09:00"
     },
@@ -10726,7 +10727,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:18+09:00",
+      "collected_at": "2026-11-27T18:50:36+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:18+09:00"
     },
@@ -10752,7 +10753,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:43+09:00",
+      "collected_at": "2026-11-27T18:33:29+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:43+09:00"
     },
@@ -10778,7 +10779,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:27:28+09:00",
+      "collected_at": "2026-11-27T18:35:43+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:27:28+09:00"
     },
@@ -10806,7 +10807,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:16+09:00",
+      "collected_at": "2026-11-27T18:44:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:16+09:00"
     },
@@ -10834,7 +10835,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:55+09:00",
+      "collected_at": "2026-11-27T18:28:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:55+09:00"
     },
@@ -10862,7 +10863,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:58+09:00",
+      "collected_at": "2026-11-27T18:28:53+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:58+09:00"
     },
@@ -10916,7 +10917,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:17+09:00",
+      "collected_at": "2026-11-27T18:38:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:17+09:00"
     },
@@ -10944,7 +10945,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:50+09:00",
+      "collected_at": "2026-11-27T18:33:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:50+09:00"
     },
@@ -10970,7 +10971,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:33+09:00",
+      "collected_at": "2026-11-27T18:33:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:33+09:00"
     },
@@ -10996,7 +10997,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:39+09:00",
+      "collected_at": "2026-11-27T18:39:36+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:39+09:00"
     },
@@ -11022,7 +11023,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:22+09:00",
+      "collected_at": "2026-11-27T18:54:39+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:22+09:00"
     },
@@ -11048,7 +11049,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:14:49+09:00",
+      "collected_at": "2026-11-27T18:22:34+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:14:49+09:00"
     },
@@ -11074,7 +11075,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -11100,7 +11101,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:25+09:00",
+      "collected_at": "2026-11-27T18:40:44+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:25+09:00"
     },
@@ -11128,7 +11129,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:27+09:00",
+      "collected_at": "2026-11-27T18:41:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:27+09:00"
     },
@@ -11154,7 +11155,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:08+09:00",
+      "collected_at": "2026-11-27T18:53:27+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:08+09:00"
     },
@@ -11180,7 +11181,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:24+09:00",
+      "collected_at": "2026-11-27T18:54:41+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:24+09:00"
     },
@@ -11208,7 +11209,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:53+09:00",
+      "collected_at": "2026-11-27T18:46:05+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:53+09:00"
     },
@@ -11260,7 +11261,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:15+09:00",
+      "collected_at": "2026-11-27T18:47:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:15+09:00"
     },
@@ -11286,7 +11287,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -11312,7 +11313,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -11338,7 +11339,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -11366,7 +11367,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:05+09:00",
+      "collected_at": "2026-11-27T18:53:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:05+09:00"
     },
@@ -11392,7 +11393,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -11448,7 +11449,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:39:04+09:00",
+      "collected_at": "2026-11-27T18:47:00+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:39:04+09:00"
     },
@@ -11474,7 +11475,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:49:22+09:00",
+      "collected_at": "2026-11-27T18:55:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:49:22+09:00"
     },
@@ -11500,7 +11501,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:58+09:00",
+      "collected_at": "2026-11-27T18:54:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:58+09:00"
     },
@@ -11528,7 +11529,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:02+09:00",
+      "collected_at": "2026-11-27T18:32:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:02+09:00"
     },
@@ -11554,7 +11555,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:46:35+09:00",
+      "collected_at": "2026-11-27T18:52:54+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:46:35+09:00"
     },
@@ -11582,7 +11583,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:07+09:00",
+      "collected_at": "2026-11-27T18:32:35+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:07+09:00"
     },
@@ -11608,7 +11609,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:01+09:00",
+      "collected_at": "2026-11-27T18:48:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:01+09:00"
     },
@@ -11634,7 +11635,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:10+09:00",
+      "collected_at": "2026-11-27T18:54:27+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:10+09:00"
     },
@@ -11690,7 +11691,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:15+09:00",
+      "collected_at": "2026-11-27T18:28:55+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:15+09:00"
     },
@@ -11716,7 +11717,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:54+09:00",
+      "collected_at": "2026-11-27T18:48:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:54+09:00"
     },
@@ -11742,7 +11743,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:39+09:00",
+      "collected_at": "2026-11-27T18:40:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:39+09:00"
     },
@@ -11768,7 +11769,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -11794,7 +11795,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -11820,7 +11821,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:36:04+09:00",
+      "collected_at": "2026-11-27T18:43:52+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:36:04+09:00"
     },
@@ -11846,7 +11847,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:15+09:00",
+      "collected_at": "2026-11-27T18:51:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:15+09:00"
     },
@@ -11874,7 +11875,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:10+09:00",
+      "collected_at": "2026-11-27T18:29:06+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:10+09:00"
     },
@@ -11902,7 +11903,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:29+09:00",
+      "collected_at": "2026-11-27T18:51:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:29+09:00"
     },
@@ -11928,7 +11929,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:17+09:00",
+      "collected_at": "2026-11-27T18:48:49+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:17+09:00"
     },
@@ -11954,7 +11955,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:10+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -11980,7 +11981,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:01+09:00",
+      "collected_at": "2026-11-27T18:50:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:01+09:00"
     },
@@ -12006,7 +12007,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:25+09:00",
+      "collected_at": "2026-11-27T18:46:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:25+09:00"
     },
@@ -12032,7 +12033,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -12058,7 +12059,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -12084,7 +12085,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -12114,7 +12115,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:21+09:00",
+      "collected_at": "2026-11-27T18:27:48+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:21+09:00"
     },
@@ -12142,7 +12143,7 @@
         "publication_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:58+09:00",
+      "collected_at": "2026-11-27T18:35:42+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:58+09:00"
     },
@@ -12168,7 +12169,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -12194,9 +12195,37 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:01+09:00",
+      "collected_at": "2026-11-27T18:31:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:01+09:00"
+    },
+    {
+      "id": "d9ea8702a0c89e11c598c02272d2f8c57ee4dfc8eb9f8dc5eeb2f68b8b1451af",
+      "source_id": "tbs",
+      "publisher_id": "tbs",
+      "source_name": "TBS NEWS DIG",
+      "role": "discovery",
+      "category": "news",
+      "title": "『先輩の競輪選手から性被害受けた』 元競輪選手の女性が選手会など訴えた訴訟で和解成立 女性はPTSD診断され引退「少しずつ自分自身の人生を取り戻し、前を向いて歩んでいきたい」",
+      "discovery_title": "5 『先輩の競輪選手から性被害受けた』 元競輪選手の女性が選手会など訴えた訴訟で和…",
+      "published_at": "2026-11-25T19:28:00+09:00",
+      "publication_day": "2026-11-25",
+      "updated_at": "2026-11-26T13:44:00+09:00",
+      "url": "https://newsdig.tbs.co.jp/articles/-/3111726",
+      "discovered_url": "https://newsdig.tbs.co.jp/articles/-/3111726?display=1",
+      "summary": null,
+      "body": null,
+      "body_chars": 66,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "structured_metadata",
+      "quality_flags": [
+        "body_not_confirmed"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T18:27:12+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T18:27:12+09:00"
     },
     {
       "id": "da458656ddb5b88c970d5f9bd39e490cde6d7d3e5d9316e2dcdd6abea4b4a776",
@@ -12220,7 +12249,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -12246,7 +12275,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:31+09:00",
+      "collected_at": "2026-11-27T18:36:23+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:31+09:00"
     },
@@ -12274,7 +12303,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:36+09:00",
+      "collected_at": "2026-11-27T18:32:04+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:36+09:00"
     },
@@ -12302,7 +12331,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:15+09:00",
+      "collected_at": "2026-11-27T18:50:33+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:15+09:00"
     },
@@ -12330,7 +12359,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:26:49+09:00",
+      "collected_at": "2026-11-27T18:34:45+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:26:49+09:00"
     },
@@ -12358,7 +12387,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:26:53+09:00",
+      "collected_at": "2026-11-27T18:34:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:26:53+09:00"
     },
@@ -12384,7 +12413,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -12410,7 +12439,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -12436,7 +12465,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -12462,7 +12491,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:08+09:00",
+      "collected_at": "2026-11-27T18:47:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:08+09:00"
     },
@@ -12488,7 +12517,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:18+09:00",
+      "collected_at": "2026-11-27T18:46:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:18+09:00"
     },
@@ -12514,7 +12543,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:37+09:00",
+      "collected_at": "2026-11-27T18:45:01+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:37+09:00"
     },
@@ -12542,7 +12571,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:34:56+09:00",
+      "collected_at": "2026-11-27T18:41:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:34:56+09:00"
     },
@@ -12568,7 +12597,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:37:23+09:00",
+      "collected_at": "2026-11-27T18:44:47+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:37:23+09:00"
     },
@@ -12594,7 +12623,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:57+09:00",
+      "collected_at": "2026-11-27T18:48:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:57+09:00"
     },
@@ -12620,7 +12649,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -12646,7 +12675,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -12698,7 +12727,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:55+09:00",
+      "collected_at": "2026-11-27T18:29:51+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:55+09:00"
     },
@@ -12724,7 +12753,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:19:38+09:00",
+      "collected_at": "2026-11-27T18:27:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:19:38+09:00"
     },
@@ -12750,7 +12779,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:39:02+09:00",
+      "collected_at": "2026-11-27T18:46:58+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:39:02+09:00"
     },
@@ -12778,7 +12807,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:46+09:00",
+      "collected_at": "2026-11-27T18:32:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:46+09:00"
     },
@@ -12804,7 +12833,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:11+09:00",
+      "collected_at": "2026-11-27T18:28:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:11+09:00"
     },
@@ -12830,7 +12859,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:03+09:00",
+      "collected_at": "2026-11-27T18:54:20+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:03+09:00"
     },
@@ -12856,7 +12885,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:13+09:00",
+      "collected_at": "2026-11-27T18:32:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:13+09:00"
     },
@@ -12884,7 +12913,7 @@
         "body_not_confirmed"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:22+09:00",
+      "collected_at": "2026-11-27T18:50:40+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:22+09:00"
     },
@@ -12912,7 +12941,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:33+09:00",
+      "collected_at": "2026-11-27T18:36:25+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:33+09:00"
     },
@@ -12940,7 +12969,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:34:59+09:00",
+      "collected_at": "2026-11-27T18:41:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:34:59+09:00"
     },
@@ -12966,7 +12995,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:39+09:00",
+      "collected_at": "2026-11-27T18:36:32+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:39+09:00"
     },
@@ -12992,7 +13021,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:24+09:00",
+      "collected_at": "2026-11-27T18:32:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:24+09:00"
     },
@@ -13020,7 +13049,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:34:03+09:00",
+      "collected_at": "2026-11-27T18:40:45+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:34:03+09:00"
     },
@@ -13048,7 +13077,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:21+09:00",
+      "collected_at": "2026-11-27T18:29:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:21+09:00"
     },
@@ -13076,7 +13105,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:16:52+09:00",
+      "collected_at": "2026-11-27T18:24:23+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:16:52+09:00"
     },
@@ -13102,7 +13131,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:17+09:00",
+      "collected_at": "2026-11-27T18:51:14+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:17+09:00"
     },
@@ -13128,7 +13157,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:32+09:00",
+      "collected_at": "2026-11-27T18:29:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:32+09:00"
     },
@@ -13156,7 +13185,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:30:04+09:00",
+      "collected_at": "2026-11-27T18:37:32+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:30:04+09:00"
     },
@@ -13182,7 +13211,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:42+09:00",
+      "collected_at": "2026-11-27T18:52:05+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:42+09:00"
     },
@@ -13208,7 +13237,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:33:34+09:00",
+      "collected_at": "2026-11-27T18:40:52+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:33:34+09:00"
     },
@@ -13234,7 +13263,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:11+09:00",
+      "collected_at": "2026-11-27T18:31:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:11+09:00"
     },
@@ -13260,7 +13289,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:57+09:00",
+      "collected_at": "2026-11-27T18:29:53+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:57+09:00"
     },
@@ -13286,7 +13315,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:36:11+09:00",
+      "collected_at": "2026-11-27T18:43:59+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:36:11+09:00"
     },
@@ -13312,7 +13341,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:03+09:00",
+      "collected_at": "2026-11-27T18:47:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:03+09:00"
     },
@@ -13338,7 +13367,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:48:08+09:00",
+      "collected_at": "2026-11-27T18:54:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:48:08+09:00"
     },
@@ -13364,7 +13393,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:06+09:00",
+      "collected_at": "2026-11-27T18:38:18+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:06+09:00"
     },
@@ -13390,7 +13419,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:24:38+09:00",
+      "collected_at": "2026-11-27T18:32:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:24:38+09:00"
     },
@@ -13418,7 +13447,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:15+09:00",
+      "collected_at": "2026-11-27T18:29:11+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:15+09:00"
     },
@@ -13444,7 +13473,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:10+09:00",
+      "collected_at": "2026-11-27T18:41:34+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:10+09:00"
     },
@@ -13470,7 +13499,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:21:46+09:00",
+      "collected_at": "2026-11-27T18:30:23+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:21:46+09:00"
     },
@@ -13496,7 +13525,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:20+09:00",
+      "collected_at": "2026-11-27T18:50:38+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:20+09:00"
     },
@@ -13522,7 +13551,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:55+09:00",
+      "collected_at": "2026-11-27T18:46:51+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:55+09:00"
     },
@@ -13574,7 +13603,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:35+09:00",
+      "collected_at": "2026-11-27T18:49:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:35+09:00"
     },
@@ -13600,7 +13629,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:35:13+09:00",
+      "collected_at": "2026-11-27T18:41:36+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:35:13+09:00"
     },
@@ -13626,7 +13655,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:53+09:00",
+      "collected_at": "2026-11-27T18:48:08+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:53+09:00"
     },
@@ -13652,7 +13681,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:25:45+09:00",
+      "collected_at": "2026-11-27T18:33:31+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:25:45+09:00"
     },
@@ -13678,7 +13707,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:49:15+09:00",
+      "collected_at": "2026-11-27T18:55:07+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:49:15+09:00"
     },
@@ -13704,7 +13733,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:45+09:00",
+      "collected_at": "2026-11-27T18:39:41+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:45+09:00"
     },
@@ -13730,7 +13759,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:22:04+09:00",
+      "collected_at": "2026-11-27T18:30:42+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:22:04+09:00"
     },
@@ -13756,7 +13785,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:38:28+09:00",
+      "collected_at": "2026-11-27T18:46:21+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:38:28+09:00"
     },
@@ -13782,7 +13811,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:36:02+09:00",
+      "collected_at": "2026-11-27T18:43:50+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:36:02+09:00"
     },
@@ -13808,7 +13837,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:43:11+09:00",
+      "collected_at": "2026-11-27T18:50:29+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:43:11+09:00"
     },
@@ -13836,7 +13865,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:33+09:00",
+      "collected_at": "2026-11-27T18:49:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:33+09:00"
     },
@@ -13864,7 +13893,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:29:17+09:00",
+      "collected_at": "2026-11-27T18:36:20+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:29:17+09:00"
     },
@@ -13890,7 +13919,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:42+09:00",
+      "collected_at": "2026-11-27T18:49:37+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:42+09:00"
     },
@@ -13916,7 +13945,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:32:25+09:00",
+      "collected_at": "2026-11-27T18:39:22+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:32:25+09:00"
     },
@@ -13944,7 +13973,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:26:51+09:00",
+      "collected_at": "2026-11-27T18:34:48+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:26:51+09:00"
     },
@@ -13970,7 +13999,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:36:06+09:00",
+      "collected_at": "2026-11-27T18:43:54+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:36:06+09:00"
     },
@@ -13996,7 +14025,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:53+09:00",
+      "collected_at": "2026-11-27T18:29:48+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:53+09:00"
     },
@@ -14022,7 +14051,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:31:14+09:00",
+      "collected_at": "2026-11-27T18:38:26+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:31:14+09:00"
     },
@@ -14048,7 +14077,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:40:06+09:00",
+      "collected_at": "2026-11-27T18:47:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:40:06+09:00"
     },
@@ -14074,7 +14103,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:45:56+09:00",
+      "collected_at": "2026-11-27T18:52:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:45:56+09:00"
     },
@@ -14100,7 +14129,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -14126,7 +14155,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:14:18+09:00",
+      "collected_at": "2026-11-27T18:21:48+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:14:18+09:00"
     },
@@ -14154,7 +14183,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:30:02+09:00",
+      "collected_at": "2026-11-27T18:37:30+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:30:02+09:00"
     },
@@ -14182,7 +14211,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:49:27+09:00",
+      "collected_at": "2026-11-27T18:55:19+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:49:27+09:00"
     },
@@ -14208,7 +14237,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:14+09:00",
+      "collected_at": "2026-11-27T18:31:28+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:14+09:00"
     },
@@ -14236,7 +14265,7 @@
         "short_body"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:20:46+09:00",
+      "collected_at": "2026-11-27T18:29:42+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:20:46+09:00"
     },
@@ -14262,7 +14291,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:28:24+09:00",
+      "collected_at": "2026-11-27T18:36:16+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:28:24+09:00"
     },
@@ -14290,7 +14319,7 @@
         "publication_date_unverified"
       ],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:23:56+09:00",
+      "collected_at": "2026-11-27T18:32:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:23:56+09:00"
     },
@@ -14316,7 +14345,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:47:56+09:00",
+      "collected_at": "2026-11-27T18:54:13+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:47:56+09:00"
     },
@@ -14342,7 +14371,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:34+09:00",
+      "collected_at": "2026-11-27T18:20:15+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:34+09:00"
     },
@@ -14368,7 +14397,7 @@
       "date_method": "feed_date",
       "quality_flags": [],
       "article_status": "metadata_only",
-      "collected_at": "2026-11-27T16:12:33+09:00",
+      "collected_at": "2026-11-27T18:20:12+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:12:33+09:00"
     },
@@ -14394,7 +14423,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:41:54+09:00",
+      "collected_at": "2026-11-27T18:49:49+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:41:54+09:00"
     },
@@ -14420,7 +14449,7 @@
       "date_method": "structured_metadata",
       "quality_flags": [],
       "article_status": "ok",
-      "collected_at": "2026-11-27T16:44:26+09:00",
+      "collected_at": "2026-11-27T18:51:24+09:00",
       "permission_status": "unverified",
       "first_collected_at": "2026-11-27T16:44:26+09:00"
     }
