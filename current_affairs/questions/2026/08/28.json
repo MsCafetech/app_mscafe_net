@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-28",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260828-001",
+      "news_date": "2026-08-28",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本と米州開発銀行がインフラ整備で協力",
+      "news_summary": "8月25日に国土交通省が米州開発銀行との協力覚書に署名した。",
+      "question": "8月25日、国土交通省は米州開発銀行（IDB）と、ある地域の交通、水道、住宅などの整備を支援する協力文書に署名しました。\n\n米州開発銀行が主に発展を支援する地域はどこですか。",
+      "choices": [
+        "中央アジア",
+        "北ヨーロッパ",
+        "中南米・カリブ海地域",
+        "東南アジア"
+      ],
+      "correct_index": 2,
+      "explanation": "米州開発銀行は中南米やカリブ海地域の経済・社会の発展を支援する国際機関です。交通、水道など生活や経済活動に必要な施設の整備も支援しています。日本は災害に強い施設を整えるための技術や経験を共有して協力します。",
+      "keywords": [
+        "IDB",
+        "中南米",
+        "カリブ海",
+        "国際協力"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/sogo05_hh_000422.html"
+        }
+      ]
+    }
+  ]
+}
