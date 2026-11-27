@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 16,
+  "question_count": 17,
   "questions": [
     {
       "id": "20261125-011",
@@ -519,6 +519,39 @@
         {
           "name": "JAXA「プレスリリース・記者会見等（2026年）」月極域探査機（LUPEX）に関する記者説明会",
           "url": "https://www.jaxa.jp/press/2026/index_j.html"
+        }
+      ]
+    },
+    {
+      "id": "20261125-028",
+      "news_date": "2026-11-25",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "全国の子ども食堂が過去最多に",
+      "news_summary": "認定NPO法人むすびえが全国の子ども食堂の数を1万3879か所と発表しました。",
+      "question": "2026年11月25日、認定（にんてい）NPO法人むすびえは、全国の子ども食堂が1万3879か所になったと発表しました。\n\nNPOとは、どのような団体ですか。",
+      "choices": [
+        "利益を会員に分配することを目的とする団体",
+        "利益の分配を目的とせず社会のために活動する団体",
+        "国の法律を作る団体",
+        "国の税金を集める団体"
+      ],
+      "correct_index": 1,
+      "explanation": "NPOは、利益を構成員に分配することを目的としない民間の団体です。福祉（ふくし）や環境保全など、さまざまな分野で活動しています。子ども食堂は食事を提供するだけでなく、地域の人々が交流できる居場所としても役立っています。",
+      "keywords": [
+        "子ども食堂",
+        "NPO",
+        "地域交流"
+      ],
+      "sources": [
+        {
+          "name": "共同通信（ライブドアニュース）",
+          "url": "https://news.livedoor.com/article/detail/32899383/"
+        },
+        {
+          "name": "全国こども食堂支援センター・むすびえ",
+          "url": "https://prtimes.jp/main/html/rd/p/000000159.000044382.html"
         }
       ]
     }
