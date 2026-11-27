@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 3,
-  "related_count": 1,
-  "image_count": 4,
+  "related_count": 2,
+  "image_count": 5,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -61,7 +61,26 @@
           "usage_notes": "商用利用・改変可能。出典を表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261127-002-R01",
+          "images": [
+            {
+              "id": "20261127-002-R01-I01",
+              "type": "photo",
+              "title": "発達した積乱雲の資料写真",
+              "caption": "資料写真：東京から撮影された発達した積乱雲。線状降水帯は、このような積乱雲が列状に次々と発達して大雨を降らせる現象です。単独の積乱雲の写真であり、線状降水帯そのものの撮影ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/08-30-2020_Cumululonimbus_cloud.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:08-30-2020_Cumululonimbus_cloud.jpg",
+              "credit": "Shellparakeet",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用・改変可能。出典を表示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261127-003",
