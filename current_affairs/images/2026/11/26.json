@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 14,
+  "question_count": 15,
   "related_count": 13,
-  "image_count": 28,
+  "image_count": 29,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -521,6 +521,25 @@
           "license": "CC BY 4.0",
           "license_url": "https://creativecommons.org/licenses/by/4.0/",
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示する。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-015",
+      "images": [
+        {
+          "id": "20261126-015-I01",
+          "type": "photo",
+          "title": "食事の食べ残し",
+          "caption": "資料写真：食事の後、お皿に残った野菜やパンなど。食べ残しを減らすことは食品ロスの削減につながります。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Dining_experience_concludes_with_a_plate_left_behind_featuring_remnants_of_a_delicious_meal_at_a_table_undefined.jpg/960px-Dining_experience_concludes_with_a_plate_left_behind_featuring_remnants_of_a_delicious_meal_at_a_table_undefined.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Dining_experience_concludes_with_a_plate_left_behind_featuring_remnants_of_a_delicious_meal_at_a_table_undefined.jpg",
+          "credit": "Shixart1985 (Nenad Stojković)",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示。"
         }
       ],
       "related": []
