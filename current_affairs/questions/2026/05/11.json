@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-05-11",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260511-001",
+      "news_date": "2026-05-11",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "2027年度の国民文化祭は東京で開催",
+      "news_summary": "文化庁は第42回国民文化祭の開催地を東京都に決定した。",
+      "question": "文化庁は5月11日、2027年度の第42回国民文化祭の開催地を東京都に決定したと発表しました。\n\n国民文化祭を開く主な目的は何ですか。",
+      "choices": [
+        "全国の農作物の生産量を決める",
+        "国際的な通貨の交換を行う",
+        "各地の芸術や文化の発表・交流を進める",
+        "国会議員を選ぶ"
+      ],
+      "correct_index": 2,
+      "explanation": "国民文化祭は、全国の人々が音楽や美術、伝統芸能などの文化活動を発表し、交流する機会です。地域の文化を受けついで発展させ、新たな文化を生み出すことにもつながります。観光やまちづくりとの連携も重視されています。",
+      "keywords": [
+        "国民文化祭",
+        "東京都",
+        "文化庁",
+        "伝統芸能"
+      ],
+      "sources": [
+        {
+          "name": "文化庁",
+          "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94374501.html"
+        }
+      ]
+    }
+  ]
+}
