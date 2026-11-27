@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-19",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260819-001",
@@ -34,6 +34,36 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/gaiko/icc/"
+        }
+      ]
+    },
+    {
+      "id": "20260819-002",
+      "news_date": "2026-08-19",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "脳が予想外の音に気付く仕組みを解明",
+      "news_summary": "理化学研究所などはマウスの大脳皮質にある神経回路を特定した。",
+      "question": "理化学研究所などは、脳が予想外の音を見つけるための神経回路をマウスの研究で明らかにしました。\n\n音の高さが高くなると、音を生じさせる振動（しんどう）の回数はどうなりますか。",
+      "choices": [
+        "1秒間の振動回数が多くなる",
+        "1秒間の振動回数が少なくなる",
+        "振動がなくなる",
+        "振動回数は変わらない"
+      ],
+      "correct_index": 0,
+      "explanation": "音は物体の振動によって生じ、振動が空気などを伝わることで耳に届きます。1秒間の振動回数を周波数といい、一般に周波数が高いほど高い音になります。脳は耳から届く情報を処理し、音の違いを見分けます。",
+      "keywords": [
+        "聴覚野（ちょうかくや）",
+        "大脳皮質",
+        "理化学研究所",
+        "神経回路"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260819_1/index.html"
         }
       ]
     }
