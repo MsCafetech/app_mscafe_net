@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-18",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260918-001",
@@ -30,6 +30,66 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/2955295?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20260918-002",
+      "news_date": "2026-09-18",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日米でAIを使った造船技術の開発を進める",
+      "news_summary": "国土交通省は日米共同のAI造船技術の協議結果を発表した。",
+      "question": "国土交通省は、船を造る作業に人工知能（AI）を活用するため、日本とアメリカが研究開発で協力を進めていると発表しました。\n\n造船所が海岸近くに立地する主な理由はどれですか。",
+      "choices": [
+        "完成した大型船を海に出しやすいから",
+        "原料の木材が海から生えるから",
+        "海岸では電気を使う必要がないから",
+        "船を鉄道で運ぶため"
+      ],
+      "correct_index": 0,
+      "explanation": "造船所では大型の船を組み立て、完成した船を海に浮かべます。そのため海岸近くに立地することが多く、資材の輸送にも港を利用できます。AIやロボットの活用は、作業の効率化や人手不足への対応に役立つと期待されています。",
+      "keywords": [
+        "造船業",
+        "人工知能",
+        "造船ロボット",
+        "日米協力"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kaiji05_hh_000348.html"
+        }
+      ]
+    },
+    {
+      "id": "20260918-003",
+      "news_date": "2026-09-18",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とシンガポールが気候適応で協力を強化へ",
+      "news_summary": "国土交通省は9月25日の協力覚書署名式の開催を発表した。",
+      "question": "国土交通省は、日本とシンガポールが気候変動への備えに関する協力文書を9月25日に更新する予定だと発表しました。\n\n気候変動への適応策にあたるものはどれですか。",
+      "choices": [
+        "石炭の使用を増やす",
+        "海面上昇に備えて海岸の防護施設を整える",
+        "二酸化炭素の排出量を増やす",
+        "気象観測を中止する"
+      ],
+      "correct_index": 1,
+      "explanation": "適応策とは、気候変動によって起こる被害を少なくするための取り組みです。海岸の防護施設の整備や暑さへの備えなどが例です。温室効果ガスの排出を減らす緩和策（かんわさく）とともに進める必要があります。",
+      "keywords": [
+        "シンガポール",
+        "気候適応",
+        "海岸防護",
+        "ロングアイランド構想"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/sogo07_hh_000822.html"
         }
       ]
     }
