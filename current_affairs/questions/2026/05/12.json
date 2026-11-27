@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-12",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260512-001",
@@ -63,6 +63,36 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_03715.html"
+        }
+      ]
+    },
+    {
+      "id": "20260512-003",
+      "news_date": "2026-05-12",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とイタリアが交通・社会資本分野で協力",
+      "news_summary": "5月8日にミラノで両国の大臣が交通などの技術協力について話し合った。",
+      "question": "5月8日、日本とイタリアの大臣はミラノで長い橋の建設など、交通分野での協力について話し合いました。\n\nイタリアの国土の大部分を占める半島はどれですか。",
+      "choices": [
+        "イベリア半島",
+        "バルカン半島",
+        "スカンディナビア半島",
+        "イタリア半島"
+      ],
+      "correct_index": 3,
+      "explanation": "イタリア半島は地中海に突き出し、長ぐつのような形をしています。イタリアはこの半島のほか、シチリア島やサルデーニャ島などを領土とします。日本との会談では橋の建設など、交通や社会資本の分野で協力を進めることが話し合われました。",
+      "keywords": [
+        "ミラノ",
+        "地中海",
+        "長大橋",
+        "日伊技術協力"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/sogo05_hh_000413.html"
         }
       ]
     }
