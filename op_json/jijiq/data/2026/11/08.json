@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "count": 2,
+  "articles": [
+    {
+      "id": "045076ea5e33a47c9f88264b08b93c3a310f93eb9903fd9965e8f68d103cff7f",
+      "source_id": "asahi",
+      "publisher_id": "asahi",
+      "source_name": "朝日新聞",
+      "role": "discovery",
+      "category": "news",
+      "title": "子どもが欲しがる限り授乳「もちろん良いことだけど」小児科医の懸念",
+      "discovery_title": "子どもが欲しがる限り授乳「もちろん良いことだけど」小児科医の懸念",
+      "published_at": "2026-11-08T07:00:00+09:00",
+      "publication_day": "2026-11-08",
+      "updated_at": "2026-11-06T12:27:34+09:00",
+      "url": "https://www.asahi.com/articles/ASVC411CKVC4OXIE03MM.html",
+      "discovered_url": "https://www.asahi.com/articles/ASVC411CKVC4OXIE03MM.html?iref=comtop_AcsRank_02",
+      "summary": null,
+      "body": null,
+      "body_chars": 749,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "structured_metadata",
+      "quality_flags": [],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T16:16:34+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T16:16:34+09:00"
+    },
+    {
+      "id": "3f0af8ac122a710be49ae139dd4cc4edaf9f659470e78a8a04cc75921a6d5e78",
+      "source_id": "mlit",
+      "publisher_id": "mlit",
+      "source_name": "国土交通省",
+      "role": "discovery",
+      "category": "government",
+      "title": "国土交通省｜報道資料｜令和8年11月8日01時04分頃の静岡県西部の地震に伴う土砂災害に関する警報等の暫定的な運用について",
+      "discovery_title": "令和8年11月8日01時04分頃の静岡県西部の地震に伴う土砂災害に関する警報等の暫定的な運用について",
+      "published_at": "2026-11-08",
+      "publication_day": "2026-11-08",
+      "updated_at": null,
+      "url": "https://www.mlit.go.jp/report/press/sabo01_hh_000221.html",
+      "discovered_url": "https://www.mlit.go.jp/report/press/sabo01_hh_000221.html",
+      "summary": null,
+      "body": null,
+      "body_chars": 587,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "visible_date_unverified",
+      "quality_flags": [
+        "publication_date_unverified"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T16:32:13+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T16:32:13+09:00"
+    }
+  ]
+}

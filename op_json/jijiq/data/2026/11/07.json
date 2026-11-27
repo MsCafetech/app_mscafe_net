@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-07",
+  "count": 2,
+  "articles": [
+    {
+      "id": "445971a7eadfcc74d98318e999a6e3b78a0748324a7ba7eb57c7d5c1759774ee",
+      "source_id": "tokyo_np",
+      "publisher_id": "tokyo_np",
+      "source_name": "東京新聞",
+      "role": "discovery",
+      "category": "news",
+      "title": "2027 ドラゴンズカレンダー　20日発売：東京新聞デジタル",
+      "discovery_title": "2027 ドラゴンズカレンダー　20日発売",
+      "published_at": "2026-11-07T07:11:27+09:00",
+      "publication_day": "2026-11-07",
+      "updated_at": "2026-11-07T07:15:19+09:00",
+      "url": "https://www.tokyo-np.co.jp/article/526613",
+      "discovered_url": "https://www.tokyo-np.co.jp/article/526613?rct=release",
+      "summary": null,
+      "body": null,
+      "body_chars": 413,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "structured_metadata",
+      "quality_flags": [],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T16:20:12+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T16:20:12+09:00"
+    },
+    {
+      "id": "f59bed1032ae6b8c2086624488109ec1ecf0c13a796926a92b22e2c804537dc6",
+      "source_id": "tokyo_np",
+      "publisher_id": "tokyo_np",
+      "source_name": "東京新聞",
+      "role": "discovery",
+      "category": "news",
+      "title": "和歌山と四国を結ぶ「南海フェリー」撤退方針に地元自治体が大慌て　NANKAI側「今更困ると言われても…」：東京新聞デジタル",
+      "discovery_title": "和歌山と四国を結ぶ「南海フェリー」撤退方針に地元自治体が大慌て　NANKAI側「今更困ると言われても…」",
+      "published_at": "2026-11-07T17:00:00+09:00",
+      "publication_day": "2026-11-07",
+      "updated_at": "2026-11-07T17:01:46+09:00",
+      "url": "https://www.tokyo-np.co.jp/article/524709",
+      "discovered_url": "https://www.tokyo-np.co.jp/article/524709",
+      "summary": null,
+      "body": null,
+      "body_chars": 354,
+      "body_url": null,
+      "body_method": "trafilatura",
+      "date_method": "structured_metadata",
+      "quality_flags": [
+        "paywall_metadata",
+        "possible_paywall",
+        "body_not_confirmed"
+      ],
+      "article_status": "ok",
+      "collected_at": "2026-11-27T16:20:38+09:00",
+      "permission_status": "unverified",
+      "first_collected_at": "2026-11-27T16:20:38+09:00"
+    }
+  ]
+}
