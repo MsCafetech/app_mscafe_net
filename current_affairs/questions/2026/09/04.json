@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-04",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260904-001",
@@ -59,6 +59,66 @@
         {
           "name": "奈良大学",
           "url": "https://www.nara-u.ac.jp/faculty/geography/news/1598.html"
+        }
+      ]
+    },
+    {
+      "id": "20260904-003",
+      "news_date": "2026-09-04",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "全国の道の駅が1234か所に",
+      "news_summary": "国土交通省が3か所を新たに登録した。",
+      "question": "国土交通省は、新たに3か所の道の駅を登録し、全国で1234か所になったと発表しました。\n\n道の駅の登録要件に含まれるものはどれですか。",
+      "choices": [
+        "鉄道の改札口",
+        "有料の宿泊施設",
+        "高速道路の料金所",
+        "24時間無料で使える駐車場やトイレ"
+      ],
+      "correct_index": 3,
+      "explanation": "道の駅は道路利用者の休けい、地域情報の提供、地域振興（しんこう）などの機能を持つ施設です。24時間無料で使える駐車場やトイレなどが登録の要件です。地域の特産品の販売や観光案内などにも活用されています。",
+      "keywords": [
+        "道の駅",
+        "地域振興",
+        "道路交通",
+        "国土交通省"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/road01_hh_002138.html"
+        }
+      ]
+    },
+    {
+      "id": "20260904-004",
+      "news_date": "2026-09-04",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "有明海と八代海の干潟の分布を調査",
+      "news_summary": "環境省が衛星画像による藻場・干潟の調査結果を公表した。",
+      "question": "環境省は、有明海（ありあけかい）と八代海（やつしろかい）の藻場（もば）や干潟（ひがた）の分布を人工衛星の画像で調べました。\n\n干潟とはどのような場所ですか。",
+      "choices": [
+        "干潮のときに海底の砂や泥が現れる場所",
+        "海底の火山が常に噴火する場所",
+        "海水が一年中凍る場所",
+        "海の水深が最も深い場所"
+      ],
+      "correct_index": 0,
+      "explanation": "干潟は潮が引くと砂や泥が現れる場所で、貝やカニなどがすみ、鳥のえさ場にもなります。水質を保つ働きもあります。有明海は潮の満ち引きの差が大きいことで知られ、干潟の保全は生物多様性を守るために重要です。",
+      "keywords": [
+        "有明海",
+        "八代海",
+        "干潟",
+        "藻場"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05394.html"
         }
       ]
     }
