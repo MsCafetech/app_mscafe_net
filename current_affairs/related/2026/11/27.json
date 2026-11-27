@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 5,
-  "related_count": 5,
+  "related_count": 7,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -52,6 +52,24 @@
               "url": "https://www.data.jma.go.jp/fukuoka/gyomu/file/20240606_bosai-jyoho.pdf"
             }
           ]
+        },
+        {
+          "id": "20261127-002-R02",
+          "relation_type": "answer",
+          "title": "ハザードマップと避難先",
+          "description": "ハザードマップは、災害が起きたときに危険となる場所を示した地図です。洪水（こうずい）の地図では、川の水があふれた場合に水につかると予想される場所や水の深さを知ることができます。自宅や学校の周りの危険を調べ、安全な避難先までの道を家族と確認しておくことが大切です。大雨で道路が水につかってから移動するのは危険なので、気象情報や市町村の避難情報を確認し、早めに行動します。",
+          "relationship": "大雨の際に安全な場所へ避難するための事前準備を学びます。",
+          "keywords": [
+            "ハザードマップ",
+            "洪水",
+            "避難経路"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.ktr.mlit.go.jp/river/bousai/river_index0001.html"
+            }
+          ]
         }
       ]
     },
@@ -96,6 +114,24 @@
             {
               "name": "防災庁",
               "url": "https://www.bousai.go.jp/taisaku/gekijinhukko/qa.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-004-R02",
+          "relation_type": "answer",
+          "title": "復旧と復興（ふっこう）の取り組み",
+          "description": "災害でこわれた道路や水道などを直し、生活に必要な仕組みを取り戻すことを復旧といいます。復興では、住まいや仕事を取り戻すことに加えて、将来の災害にも強い地域をつくることを目指します。家を失った人が一時的に暮らせる住宅を確保することは、学校に通ったり仕事を再開したりするためにも大切です。国や地方公共団体、地域の人々などが協力し、長い時間をかけて生活を立て直していきます。",
+          "relationship": "公共施設の復旧から人々の生活の再建へと学習を広げます。",
+          "keywords": [
+            "復旧",
+            "復興",
+            "生活再建"
+          ],
+          "sources": [
+            {
+              "name": "防災庁",
+              "url": "https://www.bousai.go.jp/kaigirep/hakusho/r08/honbun/t1_3s_02_05.html"
             }
           ]
         }
