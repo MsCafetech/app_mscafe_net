@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 8,
-  "related_count": 15,
+  "question_count": 10,
+  "related_count": 17,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -328,6 +328,29 @@
       ]
     },
     {
+      "question_id": "20261126-012",
+      "related": [
+        {
+          "id": "20261126-012-R01",
+          "relation_type": "answer",
+          "title": "P波とS波",
+          "description": "地震が起こると、地中を地震波が伝わります。P波は秒速約7km、S波は秒速約4kmで伝わり、一般にS波の方が強くゆれます。気象庁は先に届くP波を観測して、強いゆれが来る前に知らせようとします。ただし、震源（しんげん）に近い場所では速報が間に合わないこともあります。",
+          "relationship": "緊急地震速報（きんきゅうじしんそくほう）が利用する地震波の速さの違いを学ぶ。",
+          "keywords": [
+            "P波",
+            "S波",
+            "地震波"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/jishin/eew/shikumi/shikumi.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "question_id": "20261126-015",
       "related": [
         {
@@ -349,6 +372,28 @@
             {
               "name": "農林水産省",
               "url": "https://www.maff.go.jp/j/pr/aff/2310/spe1_01.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-018",
+      "related": [
+        {
+          "id": "20261126-018-R01",
+          "relation_type": "question",
+          "title": "登録有形文化財の仕組み",
+          "description": "1996年に始まった文化財登録制度は、歴史的な建物を幅広く守るための仕組みです。文部科学大臣が登録し、建物の変更などについて届け出や助言を基本とする方法で保護します。重要文化財の指定制度を補い、古い学校や住宅などを使いながら次の世代に伝えることにも役立ちます。",
+          "relationship": "明治時代の学校建築（けんちく）を保存する制度を学ぶ。",
+          "keywords": [
+            "登録有形文化財",
+            "文化財登録制度"
+          ],
+          "sources": [
+            {
+              "name": "文化庁",
+              "url": "https://www.bunka.go.jp/seisaku/bunkazai/shokai/yukei_kenzobutsu/toroku_yukei.html"
             }
           ]
         }
