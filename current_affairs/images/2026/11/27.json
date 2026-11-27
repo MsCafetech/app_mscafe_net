@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 5,
-  "related_count": 10,
-  "image_count": 15,
+  "related_count": 12,
+  "image_count": 17,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -57,6 +57,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者・出典・ライセンスURLを表示。加工時は改変を明記し、派生物は同等のライセンスで公開。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-001-R03",
+          "images": [
+            {
+              "id": "20261127-001-R03-I01",
+              "type": "map",
+              "title": "八重山諸島の地図",
+              "caption": "資料地図：石垣島や西表島などの位置を示しています。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Yaeyama_map.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Yaeyama_map.png",
+              "credit": "Jpatokal / Wikimedia Commons",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。",
+              "is_reference": true
             }
           ]
         }
@@ -169,6 +187,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、改変時は変更を明記して同等ライセンスで提供。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-003-R03",
+          "images": [
+            {
+              "id": "20261127-003-R03-I01",
+              "type": "diagram",
+              "title": "世界のレッドリストの分類",
+              "caption": "資料図：国際自然保護連合（IUCN）が生き物の絶滅の危険性を分類する区分です。日本の環境省の分類とは異なる場合があります。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/IUCN_-_Red_List_-_Categories.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:IUCN_-_Red_List_-_Categories.png",
+              "credit": "Sciencia58 / Wikimedia Commons",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用・改変可。出典と作者を表示。",
+              "is_reference": true
             }
           ]
         }
