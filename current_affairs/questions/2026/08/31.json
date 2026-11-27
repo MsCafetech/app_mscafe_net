@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-31",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260831-001",
@@ -34,6 +34,66 @@
         {
           "name": "TBS",
           "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2908923?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20260831-002",
+      "news_date": "2026-08-31",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "気候変動対策の世界的な進み具合を評価する日ASEAN会合",
+      "news_summary": "8月27～28日、日本とASEANなどが東京で第2回グローバル・ストックテイクに向けて協議した。",
+      "question": "8月27日から28日まで、日本とASEANなどは東京で、グローバル・ストックテイクに向けた会合を開きました。\n\nパリ協定（きょうてい）に基づくグローバル・ストックテイクの主な目的はどれですか。",
+      "choices": [
+        "世界全体の気候変動対策の進み具合を定期的に評価する",
+        "すべての国の通貨を統一する",
+        "世界の人口を毎月調査する",
+        "各国の関税率を決定する"
+      ],
+      "correct_index": 0,
+      "explanation": "グローバル・ストックテイク（GST）は、パリ協定の下で世界全体の気候変動対策の進み具合を定期的に評価する仕組みです。評価の結果は各国が次の温室効果ガス削減目標などを検討するときに役立ちます。第2回は2028年に結果をまとめる予定です。",
+      "keywords": [
+        "日ASEAN協力",
+        "CAMPUR",
+        "パリ協定",
+        "温室効果ガス"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05517.html"
+        }
+      ]
+    },
+    {
+      "id": "20260831-003",
+      "news_date": "2026-08-31",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "ASEANの職員が日本の環境対策を学ぶ",
+      "news_summary": "8月24～28日にASEANの職員6名が訪日し、ごみ焼却熱の活用などの取り組みを学んだ。",
+      "question": "8月24日から28日まで、ASEANの職員が日本を訪れ、気候変動対策などについて学びました。ごみを燃やしたときの熱を活用する清掃工場も見学しました。\n\nごみを燃やすときの熱を有効に利用する方法はどれですか。",
+      "choices": [
+        "燃やす前のごみを海へ流す",
+        "発生した熱で蒸気（じょうき）を作り、発電などに利用する",
+        "発生した熱をすべて外へ逃がす",
+        "発生した熱でごみの量を増やす"
+      ],
+      "correct_index": 1,
+      "explanation": "ごみ焼却（しょうきゃく）施設では、発生した熱を使って水を蒸気に変え、タービンを回して発電したり、温水を作ったりできます。エネルギーを有効利用する方法の一つですが、ごみそのものを減らす取り組みも大切です。",
+      "keywords": [
+        "AHEAD50",
+        "大田清掃工場",
+        "廃棄物（はいきぶつ）",
+        "人材育成"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05511.html"
         }
       ]
     }
