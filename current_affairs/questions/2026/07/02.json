@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-02",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260702-001",
@@ -57,6 +57,66 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/s_sa/sw/in/pageit_000001_03048.html"
+        }
+      ]
+    },
+    {
+      "id": "20260702-003",
+      "news_date": "2026-07-02",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連の改革計画UN80が進展",
+      "news_summary": "国連広報センターがUN80イニシアチブの進展を伝えた。",
+      "question": "国連は、活動の効率を高めるための改革計画「UN80イニシアチブ」を進めています。国連創設80周年に合わせて始まった取り組みです。\n\n国際連合が創設された年はいつですか。",
+      "choices": [
+        "1919年",
+        "1939年",
+        "1945年",
+        "1956年"
+      ],
+      "correct_index": 2,
+      "explanation": "国際連合は第二次世界大戦が終わった1945年に発足しました。国際平和と安全の維持や人権の保護、各国の協力などを目的としています。2025年には創設80周年を迎え、活動をより効果的にするための改革が始まりました。",
+      "keywords": [
+        "UN80イニシアチブ",
+        "国連改革",
+        "国際連合",
+        "国連憲章（けんしょう）"
+      ],
+      "sources": [
+        {
+          "name": "国際連合広報センター",
+          "url": "https://www.unic.or.jp/news_press/features_backgrounders/54722/"
+        }
+      ]
+    },
+    {
+      "id": "20260702-004",
+      "news_date": "2026-07-02",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日韓都市開発協力会議で人口減少対策を協議",
+      "news_summary": "6月25日に東京で日本と韓国の都市政策担当者が意見交換した。",
+      "question": "6月25日、日本と韓国は都市開発協力会議を開き、人口減少に対応する都市政策などについて話し合いました。\n\n住宅や病院、商店などを公共交通の利用しやすい地域に集める都市づくりを何と呼びますか。",
+      "choices": [
+        "コンパクトシティ",
+        "ベッドタウン",
+        "ニュータウン",
+        "リゾート開発"
+      ],
+      "correct_index": 0,
+      "explanation": "コンパクトシティは、生活に必要な施設を利用しやすい場所に集め、公共交通などで結ぶ都市づくりです。人口が減少する地域でも暮らしやすさを保ち、道路や上下水道などを効率よく維持することにつながります。",
+      "keywords": [
+        "日韓都市開発協力会議",
+        "人口減少",
+        "立地適正化計画",
+        "公共交通"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/toshi01_hh_000101.html"
         }
       ]
     }
