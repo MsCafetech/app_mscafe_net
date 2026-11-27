@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 5,
-  "related_count": 5,
-  "image_count": 10,
+  "related_count": 7,
+  "image_count": 12,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -95,6 +95,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用・改変可能。出典を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-002-R02",
+          "images": [
+            {
+              "id": "20261127-002-R02-I01",
+              "type": "map",
+              "title": "岩手県宮古市のハザードマップ例",
+              "caption": "資料地図：岩手県宮古市の津波ハザードマップの例。色分けで浸水の深さ、記号で避難場所や避難経路が示されています。洪水用の地図ではありませんが、災害前に危険箇所や避難先を確認する仕組みは共通です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/An_example_of_a_tsunami_hazard_map_Miyako_City_Iwate_Prefecture.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:An_example_of_a_tsunami_hazard_map_Miyako_City_Iwate_Prefecture.jpg",
+              "credit": "宮古市 / Junko Sagara, Keiko Saito, World Bank (2014)",
+              "license": "CC BY 3.0 IGO",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/igo/deed.en",
+              "usage_notes": "商用利用可能。宮古市、出典資料・ライセンスを明示し、加工時は変更を示す。津波地図であることを明記。"
             }
           ]
         }
@@ -190,6 +208,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "商用利用可。作者・出典・ライセンスを表示し、改変時は明記、派生作品は同等ライセンスで提供。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-005-R01",
+          "images": [
+            {
+              "id": "20261127-005-R01-I01",
+              "type": "diagram",
+              "title": "酸性雨ができるしくみ",
+              "caption": "資料図：工場などの排出物が大気中で変化し、雨などとともに地表へ戻る過程を示したアメリカ環境保護庁の図。図中の英語は汚染物質や地表に戻る過程を表します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Origins_of_acid_rain.svg/500px-Origins_of_acid_rain.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Origins_of_acid_rain.svg",
+              "credit": "U.S. Environmental Protection Agency (EPA); vector adaptation Zazou",
+              "license": "Public domain (U.S. federal government work)",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Origins_of_acid_rain.svg#Licensing",
+              "usage_notes": "商用利用可能。米国環境保護庁が公務として制作した図を元にした資料。SVGの500px PNG版を直接配信。出典を表示。"
             }
           ]
         }
