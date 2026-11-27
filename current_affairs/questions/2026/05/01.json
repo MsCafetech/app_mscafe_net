@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-01",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260501-001",
@@ -63,6 +63,66 @@
         {
           "name": "JOGMEC",
           "url": "https://journal.jogmec.go.jp/oilgas/info-reports/info-reports_02132.html"
+        }
+      ]
+    },
+    {
+      "id": "20260501-003",
+      "news_date": "2026-05-01",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "炭素と酸素の原子核の新たな構造を発見",
+      "news_summary": "理化学研究所などが原子核内に陽子と中性子の組が存在することを確認した。",
+      "question": "理化学研究所などは5月1日、炭素と酸素の原子核（げんしかく）の中に陽子（ようし）と中性子の組が予想以上に多く存在することを発表しました。\n\n原子の中心にある原子核の主な構成要素は何ですか。",
+      "choices": [
+        "電子と光子",
+        "陽子と中性子",
+        "電子と中性子",
+        "分子と電子"
+      ],
+      "correct_index": 1,
+      "explanation": "原子は中心にある原子核と、その周囲に存在する電子からできています。原子核は主に陽子と中性子からなり、陽子の数によって元素の種類が決まります。今回の研究は、原子核の内部構造を理解する手がかりになります。",
+      "keywords": [
+        "理化学研究所",
+        "おのころプロジェクト",
+        "炭素",
+        "酸素"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260501_2/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260501-004",
+      "news_date": "2026-05-01",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "iPS細胞を利用したがん治療の研究",
+      "news_summary": "千葉大学などはiPS細胞由来のNKT細胞を使う治療の可能性を前臨床研究で確認した。",
+      "question": "千葉大学と理化学研究所は5月1日、iPS細胞から作ったNKT細胞を使って、がんに対する免疫（めんえき）の働きを高める研究成果を発表しました。\n\niPS細胞の研究で2012年にノーベル生理学・医学賞を受賞した日本の研究者は誰ですか。",
+      "choices": [
+        "大隅良典（おおすみよしのり）",
+        "本庶佑（ほんじょたすく）",
+        "山中伸弥（やまなかしんや）",
+        "大村智（おおむらさとし）"
+      ],
+      "correct_index": 2,
+      "explanation": "山中伸弥さんは、体の細胞からさまざまな種類の細胞になれるiPS細胞を作る技術を開発しました。病気の仕組みや治療法の研究に利用されています。今回の研究は人への治療効果が確立したという発表ではありません。",
+      "keywords": [
+        "iPS細胞",
+        "NKT細胞",
+        "千葉大学",
+        "がん免疫療法"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260501_1/index.html"
         }
       ]
     }
