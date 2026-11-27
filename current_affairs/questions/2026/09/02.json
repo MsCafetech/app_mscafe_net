@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-02",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260902-001",
@@ -64,6 +64,36 @@
         {
           "name": "国連環境計画（UNEP）",
           "url": "https://www.unep.org/en/news-and-stories/press-release/unep-world-set-cross-15degc-global-warming-can-still-limit-adapt-and"
+        }
+      ]
+    },
+    {
+      "id": "20260902-003",
+      "news_date": "2026-09-02",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とブラジルが初の防衛当局間協議",
+      "news_summary": "9月1日に東京で第1回の日ブラジル防衛当局間協議を開催し、災害救援などの協力事項を確認した。",
+      "question": "9月1日、日本とブラジルは東京で初めての防衛当局間協議を開き、災害救援（きゅうえん）などの協力について話し合いました。\n\nブラジルの首都はどこですか。",
+      "choices": [
+        "リオデジャネイロ",
+        "ブエノスアイレス",
+        "ブラジリア",
+        "サンパウロ"
+      ],
+      "correct_index": 2,
+      "explanation": "ブラジリアは1960年にブラジルの首都となった計画都市です。以前の首都はリオデジャネイロでした。ブラジルは南アメリカ大陸で最も面積の大きい国で、日本との間には移住などを通じた長い交流の歴史があります。",
+      "keywords": [
+        "ブラジル",
+        "日ブラジル防衛協力",
+        "南アメリカ",
+        "災害救援"
+      ],
+      "sources": [
+        {
+          "name": "防衛省",
+          "url": "https://www.mod.go.jp/j/approach/exchange/area/2026/20260901_bra-j.html"
         }
       ]
     }
