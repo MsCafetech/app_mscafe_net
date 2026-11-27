@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-28",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 5,
   "questions": [
     {
       "id": "20260428-001",
@@ -30,6 +30,126 @@
         {
           "name": "Reuters",
           "url": "https://www.reuters.com/markets/commodities/uae-says-it-quits-opec-opec-statement-2026-04-28/"
+        }
+      ]
+    },
+    {
+      "id": "20260428-002",
+      "news_date": "2026-04-28",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "G7環境大臣会合の結果公表",
+      "news_summary": "フランスのパリでG7の環境分野の会合が開催された。",
+      "question": "この会合が開かれたパリを首都とする国はどこですか。",
+      "choices": [
+        "イタリア",
+        "ドイツ",
+        "フランス",
+        "カナダ"
+      ],
+      "correct_index": 2,
+      "explanation": "パリはフランスの首都です。G7は主要7か国の枠組みで、環境問題など世界共通の課題について協議します。2026年はフランスが議長国を務めています。",
+      "keywords": [
+        "G7",
+        "環境大臣会合",
+        "パリ",
+        "国際協力"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_04389.html"
+        }
+      ]
+    },
+    {
+      "id": "20260428-003",
+      "news_date": "2026-04-28",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とカナダの環境政策対話",
+      "news_summary": "日本とカナダの環境担当大臣が環境政策について意見を交わした。",
+      "question": "カナダが位置する大陸はどれですか。",
+      "choices": [
+        "南アメリカ大陸",
+        "北アメリカ大陸",
+        "アフリカ大陸",
+        "ユーラシア大陸"
+      ],
+      "correct_index": 1,
+      "explanation": "カナダは北アメリカ大陸の北部にあり、アメリカ合衆国と国境を接しています。広大な森林や湖を持ち、日本とともに環境保全などの国際的な課題に取り組んでいます。",
+      "keywords": [
+        "カナダ",
+        "環境政策",
+        "日加関係",
+        "生物多様性"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_04392.html"
+        }
+      ]
+    },
+    {
+      "id": "20260428-004",
+      "news_date": "2026-04-28",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日・シンガポールのグリーン・デジタル海運回廊",
+      "news_summary": "日本とシンガポールが海運の脱炭素化やデジタル化に向けた協力を進める。",
+      "question": "シンガポールは、どの半島の南端近くに位置する国ですか。",
+      "choices": [
+        "朝鮮半島",
+        "アラビア半島",
+        "インド半島",
+        "マレー半島"
+      ],
+      "correct_index": 3,
+      "explanation": "シンガポールはマレー半島の南端近くに位置し、世界有数の貿易港を持つ国です。日本との協力では、船舶からの温室効果ガス排出削減や港湾のデジタル化などを進めます。",
+      "keywords": [
+        "シンガポール",
+        "海運",
+        "港湾",
+        "脱炭素化"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/port01_hh_000320.html"
+        }
+      ]
+    },
+    {
+      "id": "20260428-005",
+      "news_date": "2026-04-28",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "建設現場のデジタル化を進めるi-Construction 2.0",
+      "news_summary": "国土交通省は建設現場の自動化などを進める取り組みの成果を公表した。",
+      "question": "建設現場で機械の自動運転や遠隔操作を導入する主な目的として適切なものはどれですか。",
+      "choices": [
+        "作業の効率化と人手不足への対応",
+        "工事をすべて中止すること",
+        "道路を使えなくすること",
+        "働く人の作業を増やすこと"
+      ],
+      "correct_index": 0,
+      "explanation": "建設現場では人手不足が課題となっています。機械の自動化やデジタル技術の活用によって、安全性や生産性を高め、少ない人数でも工事を進められるようにすることが期待されます。",
+      "keywords": [
+        "建設業",
+        "i-Construction",
+        "自動化",
+        "生産性"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kanbo08_hh_001324.html"
         }
       ]
     }
