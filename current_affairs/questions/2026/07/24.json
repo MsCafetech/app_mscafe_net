@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-24",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 7,
   "questions": [
     {
       "id": "20260724-001",
@@ -65,6 +65,156 @@
         {
           "name": "衆議院憲法審査会",
           "url": "https://www.shugiin.go.jp/internet/itdb_kenpou.nsf/html/kenpou/tetsuzuki.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260724-003",
+      "news_date": "2026-07-24",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "サポカーの安全技術を強化",
+      "news_summary": "国土交通省は安全運転サポート車の新たな区分を発表した。",
+      "question": "安全運転サポート車（サポカー）の安全技術が強化されます。\n\n運転者の状態を見守る装置の主な目的は何ですか。",
+      "choices": [
+        "燃料を作る",
+        "運転者の眠気や不注意を検知する",
+        "道路の幅を広げる",
+        "車の色を変える"
+      ],
+      "correct_index": 1,
+      "explanation": "運転者の状態を見守る装置は、眠気や前方への注意不足などを検知し、警告することで事故の防止を支援します。安全技術を備えた車でも、運転者が交通規則を守り、安全を確認することが大切です。",
+      "keywords": [
+        "サポカー",
+        "交通安全",
+        "運転支援",
+        "国土交通省"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/jidosha07_hh_000571.html"
+        }
+      ]
+    },
+    {
+      "id": "20260724-004",
+      "news_date": "2026-07-24",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "全国13河川の水質が最も良好と評価",
+      "news_summary": "国土交通省が2025年の一級河川の水質調査結果を公表した。",
+      "question": "全国の一級河川について、2025年の水質調査結果が公表されました。\n\n川の水質を調べる指標のBODは、何の量に関係していますか。",
+      "choices": [
+        "水中の微生物が有機物を分解するときに使う酸素",
+        "川底にある砂の重さ",
+        "川の水が流れる速さ",
+        "水面に当たる日光の量"
+      ],
+      "correct_index": 0,
+      "explanation": "BODは生物化学的酸素要求量のことです。水中の有機物を微生物が分解するときに必要とする酸素の量を表します。一般に値が小さいほど有機物による汚れが少なく、河川の水質を評価する目安になります。",
+      "keywords": [
+        "一級河川",
+        "水質調査",
+        "BOD",
+        "有機物"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/mizukokudo04_hh_000310.html"
+        }
+      ]
+    },
+    {
+      "id": "20260724-005",
+      "news_date": "2026-07-24",
+      "category": "economy",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "全国73港の港湾施設整備計画を決定",
+      "news_summary": "政府は港湾施設整備の基本計画を閣議決定した。",
+      "question": "政府は全国73港を対象とする港湾（こうわん）施設の整備計画を決定しました。\n\n地方公共団体が事業の資金を借り入れるために発行する債券（さいけん）は何ですか。",
+      "choices": [
+        "国債",
+        "社債",
+        "地方債",
+        "株式"
+      ],
+      "correct_index": 2,
+      "explanation": "地方債は都道府県や市町村などが資金を借り入れるための仕組みです。道路や港湾などの施設整備に活用されることがあります。国が発行する国債とは発行する主体が異なり、借り入れた資金は返済する必要があります。",
+      "keywords": [
+        "港湾整備",
+        "地方財政",
+        "公共事業",
+        "物流"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/port04_hh_000567.html"
+        }
+      ]
+    },
+    {
+      "id": "20260724-006",
+      "news_date": "2026-07-24",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "阿寒摩周国立公園の区域などの変更を答申",
+      "news_summary": "中央環境審議会が公園区域などの変更について答申した。",
+      "question": "阿寒摩周（あかんましゅう）国立公園の区域や計画の変更について、中央環境審議会（しんぎかい）が答申しました。\n\n公園内の阿寒湖で知られる、丸い形に育つ藻類（そうるい）は何ですか。",
+      "choices": [
+        "ワカメ",
+        "コンブ",
+        "アオノリ",
+        "マリモ"
+      ],
+      "correct_index": 3,
+      "explanation": "阿寒湖は北海道東部にあり、マリモの生息地として知られています。マリモは緑色の藻類が集まって球状になることがあります。国立公園は優れた自然の景観や生態系を保護し、人々の自然体験にも役立てる場所です。",
+      "keywords": [
+        "阿寒摩周国立公園",
+        "阿寒湖",
+        "北海道",
+        "自然保護"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05336.html"
+        }
+      ]
+    },
+    {
+      "id": "20260724-007",
+      "news_date": "2026-07-24",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "改良が必要な踏切31か所を指定",
+      "news_summary": "国土交通省が改良すべき踏切道を指定した。",
+      "question": "国土交通省は、交通の安全を高めるため、改良が必要な踏切（ふみきり）を31か所指定しました。\n\n道路と鉄道を上下に分け、同じ高さで交わらないようにする方法は何ですか。",
+      "choices": [
+        "立体交差",
+        "平面交差",
+        "一方通行",
+        "歩行者天国"
+      ],
+      "correct_index": 0,
+      "explanation": "立体交差は道路と鉄道などが異なる高さで交わる構造です。踏切をなくすことで列車との事故の危険を減らし、道路の混雑を改善できる場合があります。地域の状況に応じた安全対策が進められています。",
+      "keywords": [
+        "踏切改良",
+        "鉄道",
+        "交通事故防止",
+        "道路整備"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/road01_hh_002122.html"
         }
       ]
     }
