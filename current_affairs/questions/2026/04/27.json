@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-27",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260427-001",
@@ -30,6 +30,96 @@
         {
           "name": "気象庁",
           "url": "https://www.jma.go.jp/jma/press/2604/27d/202604271715.html"
+        }
+      ]
+    },
+    {
+      "id": "20260427-002",
+      "news_date": "2026-04-27",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "Mine秋吉台がユネスコ世界ジオパークに認定",
+      "news_summary": "山口県美祢市のMine秋吉台が世界ジオパークに認定された。",
+      "question": "秋吉台に広がるカルスト地形は、主に何という岩石が水に溶けてできたものですか。",
+      "choices": [
+        "花こう岩",
+        "石灰岩（せっかいがん）",
+        "玄武岩（げんぶがん）",
+        "砂岩"
+      ],
+      "correct_index": 1,
+      "explanation": "石灰岩は二酸化炭素を含む水に溶けやすく、長い年月をかけて独特の地形や鍾乳洞（しょうにゅうどう）をつくります。秋吉台は日本を代表するカルスト台地です。",
+      "keywords": [
+        "山口県",
+        "秋吉台",
+        "カルスト地形",
+        "ユネスコ世界ジオパーク"
+      ],
+      "sources": [
+        {
+          "name": "文部科学省",
+          "url": "https://www.mext.go.jp/unesco/001/2019/1418143_00002.htm"
+        }
+      ]
+    },
+    {
+      "id": "20260427-003",
+      "news_date": "2026-04-27",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "植物が傷ついた部分を再生する仕組みの研究",
+      "news_summary": "理化学研究所などが植物の傷に応じた細胞の変化を研究した。",
+      "question": "植物の枝を切り取り、土などにさして根を出させ、新しい株を育てる方法は何ですか。",
+      "choices": [
+        "接ぎ木",
+        "種まき",
+        "挿し木（さしき）",
+        "受粉"
+      ],
+      "correct_index": 2,
+      "explanation": "挿し木は、植物の枝や葉などから根を出させて新しい株を育てる方法です。植物には細胞の働きを変え、失われた部分を再生する能力があります。",
+      "keywords": [
+        "植物の再生",
+        "細胞",
+        "栄養生殖",
+        "理化学研究所"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260427_1/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260427-004",
+      "news_date": "2026-04-27",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "クマの人身被害防止に関する報告書を公表",
+      "news_summary": "環境省はクマの人身被害や対策に関する報告書を公表した。",
+      "question": "日本で野生のヒグマが生息する主な地域はどこですか。",
+      "choices": [
+        "北海道",
+        "四国",
+        "九州",
+        "沖縄県"
+      ],
+      "correct_index": 0,
+      "explanation": "日本のヒグマは北海道に生息しています。本州と四国にはツキノワグマが生息します。クマとの事故を防ぐため、地域の出没情報を確認し、野生のクマには近づかないことが大切です。",
+      "keywords": [
+        "ヒグマ",
+        "ツキノワグマ",
+        "野生動物",
+        "生息域"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_04487.html"
         }
       ]
     }
