@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-30",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 5,
   "questions": [
     {
       "id": "20260730-001",
@@ -89,6 +89,66 @@
         {
           "name": "首相官邸",
           "url": "https://www.kantei.go.jp/jp/105/statement/2026/0730kaiken.html"
+        }
+      ]
+    },
+    {
+      "id": "20260730-004",
+      "news_date": "2026-07-30",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とエジプトが水資源管理で協力",
+      "news_summary": "両国が水資源管理に関する協力覚書に署名した。",
+      "question": "日本とエジプトは、水資源の管理や水害対策などで協力を深めることになりました。\n\nエジプトを流れ、農業や生活を支えている大河は何ですか。",
+      "choices": [
+        "アマゾン川",
+        "ライン川",
+        "ナイル川",
+        "メコン川"
+      ],
+      "correct_index": 2,
+      "explanation": "ナイル川はアフリカ大陸の北東部を流れ、地中海に注ぎます。雨が少ないエジプトでは、川の水は農業や生活に欠かせません。水資源の管理や農地に水を供給する技術は、国際協力の重要な分野です。",
+      "keywords": [
+        "エジプト",
+        "水資源管理",
+        "国際協力",
+        "かんがい"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/mizukokudo03_hh_001358.html"
+        }
+      ]
+    },
+    {
+      "id": "20260730-005",
+      "news_date": "2026-07-30",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "熊本地震の被災地へコンテナ型トイレを派遣",
+      "news_summary": "国土交通省が道の駅などの防災用トイレの派遣を発表した。",
+      "question": "熊本地震の被災地（ひさいち）へ、水をくり返し利用できる防災用コンテナ型トイレが送られました。\n\n災害時にもトイレを清潔に保つことが重要なのはなぜですか。",
+      "choices": [
+        "地震の回数を減らすため",
+        "感染症（かんせんしょう）の発生を防ぐため",
+        "気温を上げるため",
+        "道路の長さを変えるため"
+      ],
+      "correct_index": 1,
+      "explanation": "災害で水道や下水道が使えなくなると、トイレの衛生状態が悪くなり、感染症が広がるおそれがあります。移動できるトイレや水を処理する設備を活用することで、被災した人々の健康を守ることにつながります。",
+      "keywords": [
+        "熊本地震",
+        "防災道の駅",
+        "衛生管理",
+        "災害支援"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/road01_hh_002129.html"
         }
       ]
     }
