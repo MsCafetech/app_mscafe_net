@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-21",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 5,
   "questions": [
     {
       "id": "20260821-001",
@@ -59,6 +59,100 @@
         {
           "name": "宮内庁",
           "url": "https://www.kunaicho.go.jp/watch/okotoba/imperial-family03/addresses/2026pry.html"
+        }
+      ]
+    },
+    {
+      "id": "20260821-003",
+      "news_date": "2026-08-21",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "海辺のフナムシにプラスチック汚染の影響",
+      "news_summary": "九州大学などがモデル実験でフナムシの消化器系に生理的変化が生じうることを確認した。",
+      "question": "九州大学などは、海辺にすむフナムシを使った実験で、プラスチック汚染（おせん）が消化器系に影響を与える可能性を示しました。\n\n海洋プラスチックごみを減らす取り組みとして適切なのはどれですか。",
+      "choices": [
+        "使い捨ての製品を必要以上に使う",
+        "ごみを川に流す",
+        "使い捨てを減らし、ごみを適切に回収する",
+        "海辺にプラスチック製品を放置する"
+      ],
+      "correct_index": 2,
+      "explanation": "プラスチックごみは陸上から川などを通じて海へ流れこむことがあります。海の生物がごみを飲みこんだり、細かな破片の影響を受けたりする場合もあります。ごみの発生を減らし、適切に回収することが海の環境保全につながります。",
+      "keywords": [
+        "フナムシ",
+        "海洋プラスチックごみ",
+        "九州大学",
+        "海洋生態系"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260821_4/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260821-004",
+      "news_date": "2026-08-21",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "学校の教育の情報化に関する調査結果を公表",
+      "news_summary": "文部科学省は学校のICT環境などに関する2025年度調査の結果概要を公表した。",
+      "question": "文部科学省は、学校の情報通信機器やインターネットの利用環境などを調べた結果の概要を公表しました。\n\n情報通信技術を表す略称はどれですか。",
+      "choices": [
+        "ICT",
+        "GDP",
+        "ODA",
+        "WHO"
+      ],
+      "correct_index": 0,
+      "explanation": "ICTは情報通信技術の略称です。学校ではタブレット端末やインターネットなどを活用して、情報を調べたり、考えを共有したりする学習が行われています。調査結果は、学習環境や教員への支援を改善するための資料になります。",
+      "keywords": [
+        "教育の情報化",
+        "GIGAスクール構想",
+        "学習用端末",
+        "文部科学省"
+      ],
+      "sources": [
+        {
+          "name": "文部科学省",
+          "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00094.html"
+        },
+        {
+          "name": "文部科学省（報道発表一覧）",
+          "url": "https://www.mext.go.jp/b_menu/houdou/kyoiku/2026/index.html"
+        }
+      ]
+    },
+    {
+      "id": "20260821-005",
+      "news_date": "2026-08-21",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "アンダーパスの冠水対策設備を緊急点検",
+      "news_summary": "国土交通省は8月13日の千葉市の冠水を受けて全国102か所を点検した。",
+      "question": "8月13日に千葉市のアンダーパスで道路が水につかる事案が発生したため、国土交通省は排水設備などを緊急点検しました。\n\n大雨のとき、道路が水につかっている場合の適切な行動はどれですか。",
+      "choices": [
+        "水の深さを車で確かめる",
+        "水がたまった道路に入らず、安全な経路を選ぶ",
+        "水がたまった道路を急いで通過する",
+        "排水口の近くで待つ"
+      ],
+      "correct_index": 1,
+      "explanation": "アンダーパスは鉄道や道路の下を通る道路で、周囲より低いため水がたまりやすいことがあります。水の深さは見た目だけでは判断できず、車が動けなくなる危険があります。通行規制や気象情報を確認し、安全を優先しましょう。",
+      "keywords": [
+        "アンダーパス",
+        "冠水（かんすい）",
+        "排水ポンプ",
+        "国道16号"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/road01_hh_002134.html"
         }
       ]
     }
