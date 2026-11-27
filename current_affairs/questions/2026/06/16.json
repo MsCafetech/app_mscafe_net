@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-06-16",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260616-001",
@@ -35,6 +35,36 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2735531?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20260616-002",
+      "news_date": "2026-06-16",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "原発事故後の森林で放射性セシウムの動きを調査",
+      "news_summary": "森林総合研究所は福島第一原発事故から約6年後に樹木内のセシウム137の分布などが安定したことを報告した。",
+      "question": "森林総合研究所は、福島第一原子力発電所の事故後の森林を10年間調べ、放射性セシウムの動きが安定する時期を明らかにしました。\n\n福島第一原子力発電所の事故が起きるきっかけとなった地震はどれですか。",
+      "choices": [
+        "阪神・淡路大震災（はんしん・あわじだいしんさい）",
+        "東日本大震災",
+        "新潟県中越地震（にいがたけんちゅうえつじしん）",
+        "北海道胆振東部地震（ほっかいどういぶりとうぶじしん）"
+      ],
+      "correct_index": 1,
+      "explanation": "2011年3月11日の東日本大震災では、大きな津波（つなみ）が福島第一原子力発電所を襲い、事故が発生しました。森林内の放射性物質の動きを長期的に調べることは、木材の安全性や林業再開の見通しを考えるために役立ちます。",
+      "keywords": [
+        "森林総合研究所",
+        "セシウム137",
+        "福島県",
+        "木材"
+      ],
+      "sources": [
+        {
+          "name": "森林総合研究所",
+          "url": "https://www.ffpri.go.jp/press/2026/20260616/index.html"
         }
       ]
     }
