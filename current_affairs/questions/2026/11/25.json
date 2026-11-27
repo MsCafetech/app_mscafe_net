@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 17,
+  "question_count": 18,
   "questions": [
     {
       "id": "20261125-011",
@@ -552,6 +552,35 @@
         {
           "name": "全国こども食堂支援センター・むすびえ",
           "url": "https://prtimes.jp/main/html/rd/p/000000159.000044382.html"
+        }
+      ]
+    },
+    {
+      "id": "20261125-029",
+      "news_date": "2026-11-25",
+      "category": "politics",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "次期学習指導要領への意見募集結果を公表",
+      "news_summary": "文部科学省は次期学習指導要領に向けた意見募集の結果を公表しました。",
+      "question": "2026年11月25日、文部科学省は次期学習指導要領に向けた議論のまとめについて、1万7757件の意見が寄せられたと公表しました。\n\n行政機関が政策などの案を公表し、広く国民から意見を募集する手続きを何といいますか。",
+      "choices": [
+        "住民投票",
+        "国勢調査",
+        "パブリックコメント",
+        "国民審査（こくみんしんさ）"
+      ],
+      "correct_index": 2,
+      "explanation": "パブリックコメントは、行政機関が制度などの案を公表して広く意見を集める手続きです。寄せられた意見を検討し、政策づくりの参考にします。多数決で政策を決める投票とは異なり、行政の公正さや透明性を高める役割があります。",
+      "keywords": [
+        "学習指導要領",
+        "パブリックコメント",
+        "文部科学省"
+      ],
+      "sources": [
+        {
+          "name": "次期指導要領ナビ",
+          "url": "https://www.haradaeigo.com/jikigakushushido/kyoiku/"
         }
       ]
     }
