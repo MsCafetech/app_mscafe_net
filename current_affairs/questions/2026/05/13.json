@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-05-13",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260513-001",
@@ -30,6 +30,66 @@
         {
           "name": "テレビ朝日",
           "url": "https://news.tv-asahi.co.jp/news_society/articles/000504805.html"
+        }
+      ]
+    },
+    {
+      "id": "20260513-002",
+      "news_date": "2026-05-13",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国際交通フォーラムの議長国に日本が決定",
+      "news_summary": "ドイツで5月6～8日に開催された国際交通フォーラムで、日本が2028～2029年に議長国を務めることが決まった。",
+      "question": "5月6日から8日までドイツのライプチヒで国際交通フォーラム（ITF）の交通大臣会合が開かれ、日本が2028年から2029年に議長国を務めることが決まりました。\n\nこのフォーラムが主に扱う政策分野は何ですか。",
+      "choices": [
+        "農業と林業",
+        "陸・海・空の交通",
+        "学校教育",
+        "通貨の発行"
+      ],
+      "correct_index": 1,
+      "explanation": "国際交通フォーラムは陸上、海上、航空などの交通政策について各国が話し合い、研究する国際機関です。災害などに強い交通網や、環境に配慮した移動手段を整えるためには、各国の協力が重要です。",
+      "keywords": [
+        "国際交通フォーラム",
+        "ITF",
+        "ライプチヒ",
+        "交通政策"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/sogo05_hh_000414.html"
+        }
+      ]
+    },
+    {
+      "id": "20260513-003",
+      "news_date": "2026-05-13",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "植物の葉緑体が分解される新たな仕組みを発見",
+      "news_summary": "理化学研究所は麦芽糖の過剰蓄積が葉緑体の分解を促すことを発見した。",
+      "question": "理化学研究所は5月13日、植物の細胞内に麦芽糖（ばくがとう）がたまりすぎると、葉緑体が分解されやすくなることを発表しました。\n\n葉緑体で主に行われる働きは何ですか。",
+      "choices": [
+        "光合成",
+        "受粉",
+        "発芽",
+        "蒸散（じょうさん）"
+      ],
+      "correct_index": 0,
+      "explanation": "葉緑体では、光のエネルギーを使って水と二酸化炭素から養分をつくる光合成が行われます。植物はつくった養分を利用して成長します。葉緑体の分解の仕組みを知ることは、植物が環境の変化に対応する方法を理解する助けになります。",
+      "keywords": [
+        "葉緑体",
+        "麦芽糖",
+        "オートファジー",
+        "理化学研究所"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260513_1/index.html"
         }
       ]
     }
