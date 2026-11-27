@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-20",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260420-001",
@@ -30,6 +30,66 @@
         {
           "name": "気象庁",
           "url": "https://www.jma.go.jp/jma/press/2604/20b/nceq202604201920.html"
+        }
+      ]
+    },
+    {
+      "id": "20260420-002",
+      "news_date": "2026-04-20",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連総会が国連の機能強化に向けた決議を採択",
+      "news_summary": "国連広報センターは3月31日に採択された国連改革に関する決議を紹介した。",
+      "question": "国連広報センターは、国際連合の活動をより効果的にするために総会が決議を採択（さいたく）したことを伝えました。\n\n国連総会では、加盟国は原則として何票の投票権を持ちますか。",
+      "choices": [
+        "各国1票",
+        "人口100万人につき1票",
+        "国土面積に比例した票数",
+        "常任理事国だけが1票"
+      ],
+      "correct_index": 0,
+      "explanation": "国連総会にはすべての加盟国が参加し、国の大きさや人口に関係なく、各国が1票を持ちます。平和や人権、国際協力などの問題を話し合う場です。国連の活動をより効果的に進めるための改革も行われています。",
+      "keywords": [
+        "国連総会",
+        "国際連合",
+        "UN80イニシアチブ",
+        "国連改革"
+      ],
+      "sources": [
+        {
+          "name": "国連広報センター",
+          "url": "https://www.unic.or.jp/news_press/features_backgrounders/54348/"
+        }
+      ]
+    },
+    {
+      "id": "20260420-003",
+      "news_date": "2026-04-20",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国際海事機関がホルムズ海峡の安全な通航を要求",
+      "news_summary": "IMOの法律委員会がホルムズ海峡の円滑な通航確保を要求した。",
+      "question": "国際海事機関（IMO）は、ホルムズ海峡（かいきょう）を船が安全に通れるよう求めました。\n\n国際海事機関の主な活動はどれですか。",
+      "choices": [
+        "世界の学校の入学試験を決める",
+        "各国の紙幣を印刷する",
+        "船の安全や海洋汚染防止の国際ルールを整える",
+        "世界の農地の広さを決める"
+      ],
+      "correct_index": 2,
+      "explanation": "国際海事機関（IMO）は国連の専門機関で、船の安全や海洋汚染（おせん）の防止などに関する国際的なルールづくりを行います。日本は多くの資源や製品を船で運んでいるため、国際海運の安全は暮らしにも関わります。",
+      "keywords": [
+        "IMO",
+        "ホルムズ海峡",
+        "海上交通",
+        "国際海運"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kaiji01_hh_000590.html"
         }
       ]
     }
