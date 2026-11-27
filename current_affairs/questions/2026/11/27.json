@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 4,
+  "question_count": 5,
   "questions": [
     {
       "id": "20261127-001",
@@ -133,6 +133,44 @@
         {
           "name": "農林水産省",
           "url": "https://www.maff.go.jp/j/press/kanbo/bunsyo/saigai/261127.html"
+        }
+      ]
+    },
+    {
+      "id": "20261127-005",
+      "news_date": "2026-11-27",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "東アジア酸性雨対策の国際会合・設立25周年",
+      "news_summary": "環境省は、11月24日から25日に新潟市（にいがたし）で開かれた東アジア酸性雨モニタリングネットワークの政府間会合の結果を公表しました。",
+      "question": "11月24日から25日まで、新潟市（にいがたし）で東アジア酸性雨モニタリングネットワーク（EANET）の政府間会合が開かれました。設立25周年を迎え（むかえ）、各国は大気環境を守るための協力について話し合いました。\n\n酸性雨の主な原因となる物質の組み合わせはどれですか。",
+      "choices": [
+        "酸素と水素",
+        "窒素（ちっそ）とアルゴン",
+        "二酸化硫黄（にさんかいおう）と窒素酸化物",
+        "ヘリウムとネオン"
+      ],
+      "correct_index": 2,
+      "explanation": "石炭や石油などを燃やすと発生する二酸化硫黄や窒素酸化物は、大気中で反応し、雨などを酸性にします。酸性雨は森林や湖の生物、建物などに悪い影響（えいきょう）を与えることがあります。大気の流れで国境をこえて物質が運ばれるため、各国が協力して観測や対策を行うことが重要です。",
+      "keywords": [
+        "酸性雨",
+        "EANET",
+        "大気汚染（たいきおせん）",
+        "国際協力"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05876.html"
+        },
+        {
+          "name": "新潟テレビ21",
+          "url": "https://www.uxtv.co.jp/ux-news/20261124-ux-003/"
+        },
+        {
+          "name": "外務省",
+          "url": "https://www.mofa.go.jp/mofaj/gaiko/kankyo/kikan/eanet.html"
         }
       ]
     }
