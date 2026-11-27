@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-27",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20260827-001",
@@ -34,6 +34,36 @@
         {
           "name": "草間彌生美術館",
           "url": "https://yayoikusamamuseum.jp/about/yayoikusama/"
+        }
+      ]
+    },
+    {
+      "id": "20260827-002",
+      "news_date": "2026-08-27",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "耕作をやめた農地の生物多様性への影響を研究",
+      "news_summary": "国立環境研究所などは国内199か所の鳥類調査と世界の研究を分析した。",
+      "question": "国立環境研究所などは、農地の管理をやめた後に鳥の種類が増えるか減るかは、地域の鳥が好む環境によって異なると発表しました。\n\n農作物を育てていた土地で、耕作（こうさく）をやめて管理されなくなった土地を何といいますか。",
+      "choices": [
+        "休耕田（きゅうこうでん）",
+        "耕作放棄地（こうさくほうきち）",
+        "干拓地（かんたくち）",
+        "農業用ため池"
+      ],
+      "correct_index": 1,
+      "explanation": "耕作放棄地は、農作物を作ることをやめ、再び耕作する意思がない農地などを指します。管理がなくなると草木が増えるなど環境が変わります。研究では、元の環境を好む鳥が減る地域もあれば、森林や湿原を好む鳥が増える地域もあることが示されました。",
+      "keywords": [
+        "鳥類",
+        "生物多様性",
+        "国立環境研究所",
+        "農地管理"
+      ],
+      "sources": [
+        {
+          "name": "森林総合研究所",
+          "url": "https://www.ffpri.go.jp/press/2026/20260827/index.html"
         }
       ]
     }
