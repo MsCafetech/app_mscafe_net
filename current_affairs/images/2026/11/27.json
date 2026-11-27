@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 2,
-  "related_count": 0,
-  "image_count": 2,
+  "related_count": 1,
+  "image_count": 3,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -23,7 +23,26 @@
           "usage_notes": "作者・出典・ライセンスを表示。改変時は同等ライセンスで配布し、変更を明示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261127-001-R01",
+          "images": [
+            {
+              "id": "20261127-001-R01-I01",
+              "type": "photo",
+              "title": "西表島の仲間川",
+              "caption": "資料写真：西表島の仲間川。川沿いにはマングローブ林が広がっています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Nakama_River_Iriomote_Okinawa_Japan06s3.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nakama_River_Iriomote_Okinawa_Japan06s3.jpg",
+              "credit": "663highland",
+              "license": "CC BY 2.5",
+              "license_url": "https://creativecommons.org/licenses/by/2.5/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261127-002",
