@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 19,
+  "question_count": 20,
   "related_count": 13,
-  "image_count": 33,
+  "image_count": 34,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -616,6 +616,25 @@
           "license": "CC BY-SA 4.0",
           "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。改変時は明示し、派生作品は同等ライセンスで配布。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261126-018",
+      "images": [
+        {
+          "id": "20261126-018-I01",
+          "type": "photo",
+          "title": "旧盛岡高等農林学校の歴史的校舎",
+          "caption": "資料写真：旧盛岡高等農林学校の本館として使われた歴史的な木造校舎（現・岩手大学農業教育資料館）。今回登録文化財に答申された1902年築の図書館収蔵庫とは別の建物です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg/960px-171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg",
+          "credit": "663highland",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "商用利用可能。作者663highland・出典・CC BY-SA 4.0を表示。変更時は明示して派生著作物に同等ライセンスを適用。表示用960px縮小画像を使用。"
         }
       ],
       "related": []
