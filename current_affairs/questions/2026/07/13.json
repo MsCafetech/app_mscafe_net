@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-13",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260713-001",
@@ -59,6 +59,66 @@
         {
           "name": "nippon.com",
           "url": "https://www.nippon.com/ja/articles/-/54365"
+        }
+      ]
+    },
+    {
+      "id": "20260713-003",
+      "news_date": "2026-07-13",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "IMOがホルムズ海峡の通航料を課さない原則を再確認",
+      "news_summary": "7月6～10日のIMO理事会で国際航路の自由を求める決議が採択された。",
+      "question": "7月6日から10日までの国際海事機関（IMO）の理事会で、ホルムズ海峡（かいきょう）の通航に料金を課さないことが再確認されました。\n\nホルムズ海峡は、どの二つの海域を結んでいますか。",
+      "choices": [
+        "紅海と地中海",
+        "黒海とマルマラ海",
+        "ペルシャ湾とオマーン湾",
+        "日本海と太平洋"
+      ],
+      "correct_index": 2,
+      "explanation": "ホルムズ海峡はペルシャ湾とオマーン湾を結ぶ海峡です。ペルシャ湾沿岸には石油の産出国が多く、原油などを運ぶ船が通ります。日本も中東から多くの原油を輸入しており、この海峡の安全な通航は重要です。",
+      "keywords": [
+        "IMO",
+        "ホルムズ海峡",
+        "原油輸送",
+        "国際航路"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/kaiji01_hh_000593.html"
+        }
+      ]
+    },
+    {
+      "id": "20260713-004",
+      "news_date": "2026-07-13",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とブラジルが海の炭素吸収について協議",
+      "news_summary": "6月29日の技術会合でマングローブ保全や海藻養殖について情報を共有した。",
+      "question": "6月29日、日本とブラジルはブルーカーボンについて技術会合を開きました。ブラジルは海辺のマングローブの保全などを紹介しました。\n\nマングローブが主に生育する環境はどれですか。",
+      "choices": [
+        "熱帯・亜熱帯の河口や海岸",
+        "寒冷な高山の岩場",
+        "乾燥した砂漠の中央",
+        "南極大陸の氷の上"
+      ],
+      "correct_index": 0,
+      "explanation": "マングローブは、熱帯や亜熱帯の河口など、海水と淡水が混じる場所に育つ樹木の総称です。炭素を植物体や土の中にたくわえるほか、生き物のすみかにもなります。沿岸（えんがん）の自然を守ることは気候変動対策にもつながります。",
+      "keywords": [
+        "ブラジル",
+        "ブルーカーボン",
+        "マングローブ保全",
+        "海藻養殖（かいそうようしょく）"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_05317.html"
         }
       ]
     }
