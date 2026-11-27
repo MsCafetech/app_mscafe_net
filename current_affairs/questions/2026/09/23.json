@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-23",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260923-001",
@@ -30,6 +30,66 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/fp/un/pageit_000001_03219.html"
+        }
+      ]
+    },
+    {
+      "id": "20260923-002",
+      "news_date": "2026-09-23",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "海面上昇による危険を国連が解説",
+      "news_summary": "国連は、気候変動に伴う海面上昇が沿岸地域に与える影響を紹介した。",
+      "question": "国連は、海面が上昇すると沿岸地域の暮らしが脅かされることを紹介しました。\n\n地球温暖化によって海面が上昇する原因の一つはどれですか。",
+      "choices": [
+        "海水が温まって体積が増える",
+        "海水の塩分がすべてなくなる",
+        "海底の砂がすべて溶ける",
+        "海水が冷えて体積が減る"
+      ],
+      "correct_index": 0,
+      "explanation": "水は一般に温まると体積が増えます。海水が温まることによる体積の増加や、陸上の氷河（ひょうが）などがとけて海に流れ込むことは、海面上昇の原因になります。海面上昇は低い土地に住む人々の暮らしに影響します。",
+      "keywords": [
+        "海面上昇",
+        "気候変動",
+        "沿岸地域",
+        "国連"
+      ],
+      "sources": [
+        {
+          "name": "国際連合広報センター",
+          "url": "https://www.unic.or.jp/news_press/features_backgrounders/55063/"
+        }
+      ]
+    },
+    {
+      "id": "20260923-003",
+      "news_date": "2026-09-23",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連と赤十字が自律型兵器の規制を要請",
+      "news_summary": "国連と赤十字国際委員会は、自律型兵器に関する国際的な規制を求めた。",
+      "question": "国連と赤十字国際委員会は、人の関与が少ない兵器について国際的な決まりを作るよう求めました。\n\n戦争の際にも守られるべき国際人道法の基本的な考え方はどれですか。",
+      "choices": [
+        "戦闘に参加していない人も攻撃してよい",
+        "民間人や負傷者を保護する",
+        "医療活動を一律に禁止する",
+        "戦争中は国際的な決まりを守らなくてよい"
+      ],
+      "correct_index": 1,
+      "explanation": "国際人道法は、武力紛争（ぶりょくふんそう）の被害をできるだけ減らすための国際的な決まりです。戦闘に参加していない人や負傷した人を保護します。赤十字国際委員会はその普及や人道支援に取り組んでいます。",
+      "keywords": [
+        "国際人道法",
+        "赤十字国際委員会",
+        "国連",
+        "軍縮"
+      ],
+      "sources": [
+        {
+          "name": "国際連合広報センター",
+          "url": "https://www.unic.or.jp/news_press/features_backgrounders/55043/"
         }
       ]
     }
