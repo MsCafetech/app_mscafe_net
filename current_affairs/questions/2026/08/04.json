@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-04",
   "language": "ja",
-  "question_count": 3,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260804-001",
@@ -88,6 +88,36 @@
         {
           "name": "e-Gov",
           "url": "https://public-comment.e-gov.go.jp/pcm/detail?Mode=0&id=315000140"
+        }
+      ]
+    },
+    {
+      "id": "20260804-004",
+      "news_date": "2026-08-04",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "災害時の下水道復旧を都道府県が代行",
+      "news_summary": "政府は8月4日、復旧工事代行制度を8月17日から施行する政令を閣議決定した。",
+      "question": "政府は8月4日、市町村などが管理する公共下水道の災害復旧工事を都道府県が代わりに行える制度の開始日を決めました。\n\n下水道の主な役割は何ですか。",
+      "choices": [
+        "生活に使った水を集めて処理する",
+        "飲料水を家庭へ供給する",
+        "電気を家庭へ送る",
+        "都市ガスを供給する"
+      ],
+      "correct_index": 0,
+      "explanation": "下水道は生活や工場などから出る水を集め、処理して川や海へ戻す役割を持ちます。雨水を排除する機能もあります。災害で市町村だけでは復旧が難しい場合、都道府県が工事を代行できる仕組みが設けられました。",
+      "keywords": [
+        "下水道法",
+        "災害復旧",
+        "都道府県",
+        "公共下水道"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/mizukokudo13_hh_000748.html"
         }
       ]
     }
