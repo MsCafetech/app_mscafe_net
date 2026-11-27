@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-16",
+  "language": "ja",
+  "question_count": 1,
+  "questions": [
+    {
+      "id": "20260716-001",
+      "news_date": "2026-07-16",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連の科学パネルがAIの影響を評価",
+      "news_summary": "7月1日にAIの機会・リスク・影響に関する初の国際的な科学評価報告書が発表された。",
+      "question": "7月1日、国連の独立した科学者のグループは、人工知能（AI）が経済や社会に与える影響について初の国際的な評価報告書を発表しました。\n\nこのような評価を行う主な目的は何ですか。",
+      "choices": [
+        "AIの利用を全世界で禁止するため",
+        "AIの利点だけを宣伝するため",
+        "科学的根拠をもとに利点や危険性を理解し、各国の政策に役立てるため",
+        "すべての国に同じAI製品を買わせるため"
+      ],
+      "correct_index": 2,
+      "explanation": "AIは教育や医療などの発展に役立つ一方、誤情報や人権への影響などの課題もあります。国連の科学パネルは研究成果をもとに両面を評価し、各国が共通の理解を得て政策を検討できるようにすることを目指しています。",
+      "keywords": [
+        "国連",
+        "AI独立国際科学パネル",
+        "科学的評価",
+        "AIガバナンス"
+      ],
+      "sources": [
+        {
+          "name": "国際連合広報センター",
+          "url": "https://www.unic.or.jp/news_press/features_backgrounders/54794/"
+        }
+      ]
+    }
+  ]
+}
