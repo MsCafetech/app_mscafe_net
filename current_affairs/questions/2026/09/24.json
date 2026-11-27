@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-24",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260924-001",
@@ -30,6 +30,96 @@
         {
           "name": "日本オリンピック委員会",
           "url": "https://joc.or.jp/news/20260924038904.html"
+        }
+      ]
+    },
+    {
+      "id": "20260924-002",
+      "news_date": "2026-09-24",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "伝統的な畳づくりの技術の登録を記念",
+      "news_summary": "文化庁は、2025年12月のユネスコ無形文化遺産への追加登録を記念する式典を10月1日に開くと発表した。",
+      "question": "文化庁は、伝統的な畳（たたみ）を作る技術のユネスコ無形文化遺産への追加登録を記念する式典を開くと発表しました。\n\n畳の表面に使われる代表的な植物はどれですか。",
+      "choices": [
+        "ワタ",
+        "イグサ",
+        "茶",
+        "サトウキビ"
+      ],
+      "correct_index": 1,
+      "explanation": "畳の表面をおおう畳表には、イグサが広く使われています。イグサを織る技術などは、日本の伝統的な建築文化を支えてきました。無形文化遺産は、形のある建物だけでなく、受けつがれてきた技術や芸能などを守る仕組みです。",
+      "keywords": [
+        "無形文化遺産",
+        "畳表",
+        "伝統建築",
+        "文化庁"
+      ],
+      "sources": [
+        {
+          "name": "文化庁",
+          "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94442101.html"
+        }
+      ]
+    },
+    {
+      "id": "20260924-003",
+      "news_date": "2026-09-24",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "北京でAPEC交通大臣会合",
+      "news_summary": "9月22日、中国の北京で交通分野のデジタル技術活用などを話し合った。",
+      "question": "9月22日に北京でAPEC交通大臣会合が開かれ、日本は交通安全や鉄道点検にデジタル技術を使う事例を紹介しました。\n\nAPECが経済協力を進める主な地域はどこですか。",
+      "choices": [
+        "ヨーロッパ",
+        "アフリカ",
+        "アジア太平洋",
+        "中東"
+      ],
+      "correct_index": 2,
+      "explanation": "APECはアジア太平洋経済協力の略称です。日本や中国、アメリカなどが参加し、貿易や投資、交通などの分野で協力しています。地域の経済発展や人々の移動の便利さを高めるため、さまざまな会合が開かれています。",
+      "keywords": [
+        "APEC",
+        "北京",
+        "交通政策",
+        "経済協力"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/sogo05_hh_000426.html"
+        }
+      ]
+    },
+    {
+      "id": "20260924-004",
+      "news_date": "2026-09-24",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "幼少期の栄養と寿命の関係を研究",
+      "news_summary": "理化学研究所はショウジョウバエで幼虫期の栄養と成虫の寿命をつなぐタンパク質を特定した。",
+      "question": "理化学研究所は、ショウジョウバエの幼虫期の栄養が、成虫になってからの寿命に関係する仕組みを調べました。\n\nタンパク質を作るもととなる物質は何ですか。",
+      "choices": [
+        "デンプン",
+        "脂肪酸",
+        "ブドウ糖",
+        "アミノ酸"
+      ],
+      "correct_index": 3,
+      "explanation": "タンパク質はアミノ酸がつながってできています。筋肉などの体の組織を作る重要な栄養素でもあります。今回の研究はハエを使ったもので、人間の子供がタンパク質を減らせば健康になるという意味ではありません。",
+      "keywords": [
+        "ショウジョウバエ",
+        "栄養",
+        "タンパク質",
+        "理化学研究所"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260924_1/index.html"
         }
       ]
     }
