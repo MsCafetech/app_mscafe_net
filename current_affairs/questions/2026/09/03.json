@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-09-03",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260903-001",
@@ -71,6 +71,66 @@
         {
           "name": "彦根市",
           "url": "https://www.city.hikone.lg.jp/kakuka/kanko_bunka/7/2_1/30825.html"
+        }
+      ]
+    },
+    {
+      "id": "20260903-003",
+      "news_date": "2026-09-03",
+      "category": "history_culture",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "熊本地震で被災した文化財の救援活動",
+      "news_summary": "9月1日から熊本県などが文化財の救援活動を本格化した。",
+      "question": "熊本県は9月1日から、文化庁などと協力して地震で被害を受けた文化財の救援活動を本格的に始めました。\n\n文化財レスキュー事業の目的は何ですか。",
+      "choices": [
+        "被災した文化財を救出し保存する",
+        "新しい道路の通行料を決める",
+        "被災した建物をすべて解体する",
+        "文化財の所有者を変更する"
+      ],
+      "correct_index": 0,
+      "explanation": "文化財には、地域の歴史を伝える古文書や絵画、工芸品などがあります。災害で水ぬれや破損（はそん）が起きた場合、専門家が救出や応急処置を行います。地域の歴史を後の世代に伝えるために重要な活動です。",
+      "keywords": [
+        "熊本地震",
+        "文化財防災",
+        "文化庁",
+        "国立文化財機構"
+      ],
+      "sources": [
+        {
+          "name": "文化庁",
+          "url": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94433301.html"
+        }
+      ]
+    },
+    {
+      "id": "20260903-004",
+      "news_date": "2026-09-03",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "日本とメキシコが交通・インフラで協力",
+      "news_summary": "8月26～30日に国土交通副大臣がメキシコを訪問した。",
+      "question": "8月26日から30日まで、国土交通副大臣がメキシコを訪問し、交通網や工業団地の整備などについて協力を進めました。\n\nメキシコと陸上で国境を接する国はどれですか。",
+      "choices": [
+        "ブラジル",
+        "カナダ",
+        "アメリカ合衆国",
+        "チリ"
+      ],
+      "correct_index": 2,
+      "explanation": "メキシコは北アメリカ大陸にあり、北側でアメリカ合衆国と国境を接しています。日本の企業もメキシコに進出し、自動車などを生産しています。交通網や工業団地の整備は、工業製品の生産や輸送を支える役割を果たします。",
+      "keywords": [
+        "メキシコ",
+        "グアナファト州",
+        "交通網",
+        "工業団地"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/sogo05_hh_000423.html"
         }
       ]
     }
