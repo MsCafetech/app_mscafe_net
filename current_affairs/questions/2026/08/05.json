@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-08-05",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260805-001",
@@ -63,6 +63,66 @@
         {
           "name": "日刊スポーツ",
           "url": "https://www.nikkansports.com/baseball/highschool/news/202608050001066.html?mode=all"
+        }
+      ]
+    },
+    {
+      "id": "20260805-003",
+      "news_date": "2026-08-05",
+      "category": "geography",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "気候変動を考慮した三つの水系の長期計画",
+      "news_summary": "国土交通省が天塩川、久慈川、那珂川の河川整備基本方針を見直した。",
+      "question": "国土交通省は、将来の雨量増加を考慮して天塩川（てしおがわ）など三つの水系の治水計画を見直しました。\n\n天塩川が流れている都道府県はどこですか。",
+      "choices": [
+        "青森県",
+        "北海道",
+        "長野県",
+        "新潟県"
+      ],
+      "correct_index": 1,
+      "explanation": "天塩川は北海道北部を流れ、日本海へ注ぐ川です。気候変動により大雨の危険が高まることを考え、国は河川整備の方針を見直しています。川の周辺の森林や水を一時的にためる場所を含め、流域全体で対策を進めることが重要です。",
+      "keywords": [
+        "天塩川",
+        "久慈川",
+        "那珂川",
+        "河川整備"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/mizukokudo03_hh_001357.html"
+        }
+      ]
+    },
+    {
+      "id": "20260805-004",
+      "news_date": "2026-08-05",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "永久磁石の内部構造を壊さず観察",
+      "news_summary": "関西学院大学などがX線で磁石内部の粒子の結晶の向きを三次元で観察した。",
+      "question": "関西学院大学などは、永久磁石の内部にある小さな粒子を、磁石を壊さずに立体的に観察する技術を開発しました。\n\n永久磁石と電磁石の違いとして正しいものはどれですか。",
+      "choices": [
+        "永久磁石は電流を流さなくても磁力を持つ",
+        "永久磁石にはN極がない",
+        "電磁石には磁力がない",
+        "永久磁石は必ず電池が必要である"
+      ],
+      "correct_index": 0,
+      "explanation": "永久磁石は外から電流を流さなくても磁力を持ちます。電磁石はコイルに電流を流すことで磁力を生じさせます。磁石の内部構造を詳しく調べることは、電気自動車のモーターなどに使われる高性能な磁石の開発に役立ちます。",
+      "keywords": [
+        "SPring-8",
+        "X線回折",
+        "永久磁石",
+        "結晶"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260805_3/index.html"
         }
       ]
     }
