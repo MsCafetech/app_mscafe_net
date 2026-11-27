@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 5,
-  "related_count": 11,
+  "related_count": 12,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -41,6 +41,29 @@
             {
               "name": "環境省",
               "url": "https://www.env.go.jp/content/000305472.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261127-001-R03",
+          "relation_type": "question",
+          "title": "沖縄県（おきなわけん）の島々と亜熱帯（あねったい）の気候",
+          "description": "八重山諸島（やえやましょとう）は沖縄本島の南西にあり、石垣島（いしがきじま）や西表島（いりおもてじま）などからなります。周囲を流れる暖かい黒潮の影響（えいきょう）もあり、一年を通して気温が高い地域です。夏は海から暖かく湿った空気が流れこみ、冬は北東からの季節風でくもりや小雨の日が多くなります。梅雨（つゆ）や台風の時期には雨が多くなります。",
+          "relationship": "八重山諸島に分布する植物の生育環境を、島の位置と気候から学びます。",
+          "keywords": [
+            "八重山諸島",
+            "亜熱帯海洋性気候",
+            "黒潮",
+            "季節風"
+          ],
+          "sources": [
+            {
+              "name": "沖縄県",
+              "url": "https://www.pref.okinawa.lg.jp/shigoto/shinkooroshi/1011448/1024245/1011460/1024372/1010571.html"
+            },
+            {
+              "name": "石垣島地方気象台",
+              "url": "https://www.jma-net.go.jp/ishigaki/know/kiko/index_yaekiko.html"
             }
           ]
         }
