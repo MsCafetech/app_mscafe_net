@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-02",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20260402-001",
@@ -63,6 +63,36 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_03585.html"
+        }
+      ]
+    },
+    {
+      "id": "20260402-003",
+      "news_date": "2026-04-02",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "アジアの炭素市場づくりに向けた国際会合",
+      "news_summary": "環境省と経済産業省は4月1日に開いたAZECの国際会合について4月2日に発表した。",
+      "question": "環境省と経済産業省は、アジア・ゼロエミッション共同体（AZEC）の国際会合を開き、温室効果ガスの排出（はいしゅつ）に価格をつける政策などについて意見を交わしました。\n\n温室効果ガスを減らすため、石炭火力発電の代わりに利用を広げることが望ましい発電方法はどれですか。",
+      "choices": [
+        "石油火力発電",
+        "太陽光発電",
+        "天然ガス火力発電",
+        "石炭火力発電"
+      ],
+      "correct_index": 1,
+      "explanation": "太陽光発電は、太陽の光を電気に変える方法で、発電時に燃料を燃やす必要がありません。石炭や石油などを燃やす火力発電に比べ、温室効果ガスの発生をおさえることができます。アジアの国々も協力して脱炭素（だつたんそ）を進めています。",
+      "keywords": [
+        "AZEC",
+        "炭素市場",
+        "国際協力",
+        "カーボンプライシング"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_03891.html"
         }
       ]
     }
