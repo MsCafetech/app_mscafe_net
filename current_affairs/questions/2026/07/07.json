@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-07-07",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260707-001",
@@ -64,6 +64,66 @@
         {
           "name": "静岡放送",
           "url": "https://newsdig.tbs.co.jp/articles/sbs/2784363?display=1"
+        }
+      ]
+    },
+    {
+      "id": "20260707-003",
+      "news_date": "2026-07-07",
+      "category": "society",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "外国籍の子供の就学を支える可児市の取り組み",
+      "news_summary": "可児市は学校に通う前の日本語や生活習慣を学ぶ教室を運営している。",
+      "question": "岐阜県可児市（かにし）では、外国籍の子供が学校に通えるよう、日本語や学校生活について事前に学ぶ教室を運営しています。\n\n異なる文化や国籍の人々が互いの違いを認めて暮らす考え方を何といいますか。",
+      "choices": [
+        "地産地消",
+        "多文化共生",
+        "男女共同参画",
+        "地方分権"
+      ],
+      "correct_index": 1,
+      "explanation": "多文化共生とは、国籍や文化などの違いを認め、地域でともに生活することです。学校で使う言葉や生活習慣が異なる子供への支援は、教育を受ける機会を守るために役立ちます。可児市の活動はその一例です。",
+      "keywords": [
+        "可児市",
+        "ばら教室KANI",
+        "外国籍の子供",
+        "プレクラス"
+      ],
+      "sources": [
+        {
+          "name": "nippon.com",
+          "url": "https://www.nippon.com/ja/articles/-/7032"
+        }
+      ]
+    },
+    {
+      "id": "20260707-004",
+      "news_date": "2026-07-07",
+      "category": "international",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "国連が2026年版SDGs報告書を発表",
+      "news_summary": "国連は7月7日、持続可能な開発目標の進み具合に関する報告書を発表した。",
+      "question": "7月7日、国連は持続可能な開発目標（SDGs）の報告書を発表しました。飲み水や電力へのアクセスが改善した一方、目標の達成にはさらに取り組みが必要としています。\n\nSDGsの達成目標年はいつですか。",
+      "choices": [
+        "2028年",
+        "2035年",
+        "2030年",
+        "2050年"
+      ],
+      "correct_index": 2,
+      "explanation": "SDGsは2015年に国連で採択（さいたく）された17の目標で、2030年までの達成を目指しています。貧困（ひんこん）や教育、環境など幅広い課題を扱います。2026年の報告書は、進展とともに残された課題への対策の必要性を示しています。",
+      "keywords": [
+        "SDGs報告書",
+        "2030アジェンダ",
+        "国際連合",
+        "持続可能な開発"
+      ],
+      "sources": [
+        {
+          "name": "国際連合広報センター",
+          "url": "https://www.unic.or.jp/news_press/info/54747/"
         }
       ]
     }
