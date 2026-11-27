@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-04-06",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 4,
   "questions": [
     {
       "id": "20260406-001",
@@ -34,6 +34,96 @@
         {
           "name": "nippon.com",
           "url": "https://www.nippon.com/ja/articles/-/11172"
+        }
+      ]
+    },
+    {
+      "id": "20260406-002",
+      "news_date": "2026-04-06",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "緊急銃猟のガイドラインを改訂",
+      "news_summary": "環境省が実際の対応事例を追加した。",
+      "question": "環境省は、クマなどの野生動物が人の生活する場所に現れた際の緊急銃猟（きんきゅうじゅうりょう）制度について、実際の事例を加えた手引きを公表しました。\n\nこの制度を実施する主体となる地方公共団体はどれですか。",
+      "choices": [
+        "市町村",
+        "国際連合",
+        "国会",
+        "最高裁判所"
+      ],
+      "correct_index": 0,
+      "explanation": "緊急銃猟制度は、人の生活する場所で危険な野生動物による被害を防ぐための制度です。市町村が実施主体となり、都道府県などと連携（れんけい）します。野生動物の保護と人の安全を両立することが大切です。",
+      "keywords": [
+        "クマ",
+        "鳥獣保護管理法",
+        "野生動物",
+        "緊急銃猟"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_03867.html"
+        }
+      ]
+    },
+    {
+      "id": "20260406-003",
+      "news_date": "2026-04-06",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "mottECO導入の手引きを公表",
+      "news_summary": "環境省が飲食店向けに食べ残しの持ち帰りサービスの手引きを公表した。",
+      "question": "環境省は、飲食店で食べきれなかった料理を持ち帰る取り組み「mottECO（モッテコ）」の手引きを公表しました。\n\nまだ食べられるのに捨てられてしまう食品を何といいますか。",
+      "choices": [
+        "再生資源",
+        "食品ロス",
+        "自然エネルギー",
+        "食品添加物（てんかぶつ）"
+      ],
+      "correct_index": 1,
+      "explanation": "食品ロスを減らすには、まず食べきれる量を注文することが大切です。食べ残した場合には、お店の説明に従い、安全に持ち帰れる料理かどうかを確認します。食べ物を大切にすることは、ごみを減らすことにもつながります。",
+      "keywords": [
+        "mottECO",
+        "外食",
+        "SDGs目標12",
+        "食べ残し"
+      ],
+      "sources": [
+        {
+          "name": "環境省",
+          "url": "https://www.env.go.jp/press/press_03945.html"
+        }
+      ]
+    },
+    {
+      "id": "20260406-004",
+      "news_date": "2026-04-06",
+      "category": "science",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "タンパク質の吸着量を予測するAIを開発",
+      "news_summary": "理化学研究所が材料の表面に付くタンパク質の量を予測するAIを開発した。",
+      "question": "理化学研究所は、材料の表面にどれくらいタンパク質が付くかを予測する人工知能（AI）を開発しました。\n\nタンパク質を多く含む食品の組み合わせはどれですか。",
+      "choices": [
+        "砂糖と食塩",
+        "米とじゃがいも",
+        "卵と大豆",
+        "油とバター"
+      ],
+      "correct_index": 2,
+      "explanation": "タンパク質は、筋肉や皮ふなどを作るために必要な栄養素です。卵や大豆、魚、肉などに多く含まれます。今回の研究で開発されたAIは、体に接する医療用の材料などを効率よく開発することに役立つと期待されています。",
+      "keywords": [
+        "理化学研究所",
+        "人工知能",
+        "バイオ材料",
+        "吸着"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20260406_1/index.html"
         }
       ]
     }
