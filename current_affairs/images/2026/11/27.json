@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 5,
-  "related_count": 7,
-  "image_count": 12,
+  "related_count": 10,
+  "image_count": 15,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -153,6 +153,24 @@
               "usage_notes": "商用利用可能。作者・出典・ライセンスURLを表示し、改変時は変更を明示。図中の英語表記を残す場合は補足の日本語説明を併記する。"
             }
           ]
+        },
+        {
+          "related_id": "20261127-003-R01",
+          "images": [
+            {
+              "id": "20261127-003-R01-I01",
+              "type": "photo",
+              "title": "動物園で保護される希少なシカ",
+              "caption": "資料写真：インドの動物園で飼育され、飼育下での繁殖に取り組んできた絶滅のおそれのあるシカ。生息域外保全の例で、ペンギンの写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Eld%27s_Deer-Female.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Eld%27s_Deer-Female.jpg",
+              "credit": "Chandrava Sinha",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、改変時は変更を明記して同等ライセンスで提供。"
+            }
+          ]
         }
       ]
     },
@@ -173,7 +191,44 @@
           "usage_notes": "商用利用・改変可能。資料写真であることを明記し、出典と作者を表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261127-004-R01",
+          "images": [
+            {
+              "id": "20261127-004-R01-I01",
+              "type": "photo",
+              "title": "千葉県の河川護岸復旧工事",
+              "caption": "資料写真：千葉県香取市の小野川で行われた地震災害後の護岸復旧工事。災害で傷んだ公共施設を直す事業の例で、2026年の激甚災害指定に関する工事ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Restoration_construction_of_the_earthquake_disaster%2COno-river%2CSawara%2CKatori-city%2CJapan.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Restoration_construction_of_the_earthquake_disaster,Ono-river,Sawara,Katori-city,Japan.jpg",
+              "credit": "Katorisi",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスを表示、改変時は変更を明記し同等ライセンスで公開。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-004-R02",
+          "images": [
+            {
+              "id": "20261127-004-R02-I01",
+              "type": "photo",
+              "title": "西日本豪雨のがれき撤去前後",
+              "caption": "資料写真：2018年の西日本豪雨後、岡山県倉敷市真備町で道路に積まれたがれきなどを撤去する前後の様子。今回の災害の写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Kurashiki_2018_Flood.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Kurashiki_2018_Flood.jpg",
+              "credit": "内閣官房内閣広報室",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "商用利用可能。内閣官房内閣広報室・出典・ライセンスを表示し、改変時は明示。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261127-005",
