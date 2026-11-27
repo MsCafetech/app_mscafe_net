@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 5,
-  "related_count": 3,
-  "image_count": 8,
+  "related_count": 5,
+  "image_count": 10,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -39,6 +39,24 @@
               "license": "CC BY 2.5",
               "license_url": "https://creativecommons.org/licenses/by/2.5/",
               "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-001-R02",
+          "images": [
+            {
+              "id": "20261127-001-R02-I01",
+              "type": "photo",
+              "title": "小笠原諸島の固有種・オガサワラシジミ",
+              "caption": "資料写真：小笠原諸島だけに生息するオガサワラシジミの標本。島の固有種がほかの地域と異なることを学ぶための例です。石垣島で見つかったランの写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/155-Celastrina_ogasawaraensis.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:155-Celastrina_ogasawaraensis.JPG",
+              "credit": "コミスジ空港（Hiroyuki Tsuchiya）",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスURLを表示。加工時は改変を明記し、派生物は同等のライセンスで公開。"
             }
           ]
         }
@@ -156,7 +174,26 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスへのリンクを表示し、改変時には変更内容を明示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261127-005-R02",
+          "images": [
+            {
+              "id": "20261127-005-R02-I01",
+              "type": "photo",
+              "title": "四日市市の工場と煙突",
+              "caption": "資料写真：2007年に撮影された三重県四日市市の工場と煙突。四日市ぜんそくが問題になった高度経済成長期の写真ではなく、写っている工場が健康被害の原因であることを示すものではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/0704_Australia_Memorial_Hall_%26_Yokkaichi_complex.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:0704_Australia_Memorial_Hall_%26_Yokkaichi_complex.jpg",
+              "credit": "名古屋太郎",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "商用利用可。作者・出典・ライセンスを表示し、改変時は明記、派生作品は同等ライセンスで提供。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
