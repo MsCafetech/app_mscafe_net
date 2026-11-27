@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-13",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
+  "question_count": 2,
+  "related_count": 2,
   "questions": [
     {
       "question_id": "20261013-001",
@@ -24,6 +24,29 @@
             {
               "name": "日本銀行「GDP、実質GDP」",
               "url": "https://www.boj.or.jp/about/education/oshiete/glossary/economy/e03.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261013-002",
+      "related": [
+        {
+          "id": "20261013-002-R01",
+          "relation_type": "answer",
+          "title": "IMFと世界銀行の役割の違い",
+          "description": "国際通貨基金（IMF）と世界銀行は、1944年にアメリカのブレトンウッズで開かれた国際会議をきっかけに生まれました。IMFは外国への支払いに必要なお金が不足した国に資金を貸し、経済の安定を助けます。一方、世界銀行は学校を建てたり、水道や電気を整えたりする事業を長期的に支え、貧困（ひんこん）を減らすことを目指します。どちらも国々が協力して生活をよくするための機関ですが、支援（しえん）の目的や期間に違いがあります。",
+          "relationship": "IMFと世界銀行の成り立ちや役割を比較する。",
+          "keywords": [
+            "IMF",
+            "世界銀行",
+            "ブレトンウッズ会議"
+          ],
+          "sources": [
+            {
+              "name": "IMF The IMF and the World Bank",
+              "url": "https://www.imf.org/en/About/Factsheets/Sheets/2022/IMF-World-Bank-New"
             }
           ]
         }
