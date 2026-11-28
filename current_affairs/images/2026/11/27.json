@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 58,
-  "image_count": 78,
+  "related_count": 60,
+  "image_count": 80,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -167,6 +167,24 @@
               "license_url": "https://creativecommons.org/licenses/by/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示。変更がある場合は明示。",
               "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-002-R03",
+          "images": [
+            {
+              "id": "20261127-002-R03-I01",
+              "type": "photo",
+              "title": "洪水のなかでの避難支援",
+              "caption": "資料写真：2012年、アメリカで洪水のなか子どもの避難を助ける隊員。早めの避難が大切です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flickr_-_The_U.S._Army_-_Flood_evacuation.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Flickr_-_The_U.S._Army_-_Flood_evacuation.jpg",
+              "credit": "Sgt. Rashawn D. Price / U.S. Army",
+              "license": "Public domain (US Army)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Army",
+              "usage_notes": "米陸軍の公務中の作品。出典と撮影者を記載。"
             }
           ]
         }
@@ -1037,6 +1055,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "CC0 1.0。商用利用・改変可能。元のSVGをWikimediaがPNGに変換した画像。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-013-R03",
+          "images": [
+            {
+              "id": "20261127-013-R03-I01",
+              "type": "photo",
+              "title": "コンピューターとインターネット",
+              "caption": "資料写真：ノートパソコンを使って情報を調べたり、やりとりしたりできます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Laptop-notebook-working-internet_%2823698255954%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Laptop-notebook-working-internet_(23698255954).jpg",
+              "credit": "www.Pixel.la Free Stock Photos",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。商用利用・改変可能。"
             }
           ]
         }
