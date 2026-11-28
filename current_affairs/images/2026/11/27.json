@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 64,
-  "image_count": 84,
+  "related_count": 65,
+  "image_count": 85,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -591,6 +591,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-007-R04",
+          "images": [
+            {
+              "id": "20261127-007-R04-I01",
+              "type": "photo",
+              "title": "藤原宮跡から出土した木簡の複製",
+              "caption": "文字が書かれた木簡の複製（資料写真）。藤原宮跡から見つかった木簡を再現したものです。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/%E8%97%A4%E5%8E%9F%E5%AE%AE%E8%B7%A1%E5%87%BA%E5%9C%9F_%E6%9C%A8%E7%B0%A1%E3%80%8C%E4%B8%8A%E6%8C%9F%E5%9B%BD%E9%98%BF%E6%B3%A2%E8%A9%95%E6%9D%BE%E9%87%8C%E3%80%8D_%28%E8%A4%87%E8%A3%BD%29.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E8%97%A4%E5%8E%9F%E5%AE%AE%E8%B7%A1%E5%87%BA%E5%9C%9F_%E6%9C%A8%E7%B0%A1%E3%80%8C%E4%B8%8A%E6%8C%9F%E5%9B%BD%E9%98%BF%E6%B3%A2%E8%A9%95%E6%9D%BE%E9%87%8C%E3%80%8D_(%E8%A4%87%E8%A3%BD).JPG",
+              "credit": "Saigen Jiro",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+              "usage_notes": "撮影者がパブリックドメインに提供。法令上必要な条件を除き、用途を問わず利用可能。"
             }
           ]
         }
