@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 45,
-  "image_count": 63,
+  "related_count": 47,
+  "image_count": 67,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -1048,7 +1048,21 @@
     },
     {
       "question_id": "20261127-015",
-      "images": [],
+      "images": [
+        {
+          "id": "20261127-015-I01",
+          "type": "photo",
+          "title": "総務省が入る中央合同庁舎",
+          "caption": "資料写真：東京都千代田区の中央合同庁舎第2号館。総務省などが入っています。",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Central_Gov%27t_Bldg_2.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Central_Gov%27t_Bldg_2.jpg",
+          "credit": "Lover of Romance",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+          "is_reference": true
+        }
+      ],
       "related": [
         {
           "related_id": "20261127-015-R02",
@@ -1065,6 +1079,42 @@
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
               "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-015-R01",
+          "images": [
+            {
+              "id": "20261127-015-R01-I01",
+              "type": "photo",
+              "title": "総務省が入る中央合同庁舎",
+              "caption": "資料写真：東京都千代田区の中央合同庁舎第2号館。総務省などが入っています。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Central_Gov%27t_Bldg_2.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Central_Gov%27t_Bldg_2.jpg",
+              "credit": "Lover of Romance",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-015-R03",
+          "images": [
+            {
+              "id": "20261127-015-R03-I01",
+              "type": "photo",
+              "title": "総務省が入る中央合同庁舎",
+              "caption": "資料写真：東京都千代田区の中央合同庁舎第2号館。総務省などが入っています。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Central_Gov%27t_Bldg_2.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Central_Gov%27t_Bldg_2.jpg",
+              "credit": "Lover of Romance",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
             }
           ]
         }
@@ -1129,7 +1179,21 @@
     },
     {
       "question_id": "20261127-014",
-      "images": [],
+      "images": [
+        {
+          "id": "20261127-014-I01",
+          "type": "photo",
+          "title": "内閣府庁舎",
+          "caption": "資料写真：東京都千代田区にある内閣府の庁舎。",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Cabinet_Office_Government_Buildings.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Cabinet_Office_Government_Buildings.jpg",
+          "credit": "Yuukokusya",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+          "is_reference": true
+        }
+      ],
       "related": [
         {
           "related_id": "20261127-014-R01",
