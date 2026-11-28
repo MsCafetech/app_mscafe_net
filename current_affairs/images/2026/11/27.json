@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 9,
-  "related_count": 18,
-  "image_count": 26,
+  "question_count": 11,
+  "related_count": 22,
+  "image_count": 32,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -341,6 +341,24 @@
       ],
       "related": [
         {
+          "related_id": "20261127-006-R01",
+          "images": [
+            {
+              "id": "20261127-006-R01-I01",
+              "type": "photo",
+              "title": "シロイヌナズナの根毛",
+              "caption": "資料写真：顕微鏡で撮影した根と細い根毛。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Arabidopsis_root_hairs.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Arabidopsis_root_hairs.jpg",
+              "credit": "G Lens Microscopist, Megan Gerber",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。原画像を使用。"
+            }
+          ]
+        },
+        {
           "related_id": "20261127-006-R02",
           "images": [
             {
@@ -379,6 +397,44 @@
       ]
     },
     {
+      "question_id": "20261127-007",
+      "images": [
+        {
+          "id": "20261127-007-I01",
+          "type": "photo",
+          "title": "平城宮の朱雀門と発掘調査",
+          "caption": "資料写真：復元された朱雀門と朱雀大路の発掘調査の様子（2016年）。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Heijo_Palace,_Suzaku-mon_and_Suzaku-oji.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Heijo_Palace,_Suzaku-mon_and_Suzaku-oji.jpg",
+          "credit": "Saigen Jiro",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261127-007-R02",
+          "images": [
+            {
+              "id": "20261127-007-R02-I01",
+              "type": "photo",
+              "title": "平城宮の朱雀門と発掘調査",
+              "caption": "資料写真：復元された朱雀門と朱雀大路の発掘調査の様子（2016年）。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Heijo_Palace,_Suzaku-mon_and_Suzaku-oji.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Heijo_Palace,_Suzaku-mon_and_Suzaku-oji.jpg",
+              "credit": "Saigen Jiro",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "question_id": "20261127-008",
       "images": [
         {
@@ -397,6 +453,24 @@
       ],
       "related": [
         {
+          "related_id": "20261127-008-R01",
+          "images": [
+            {
+              "id": "20261127-008-R01-I01",
+              "type": "photo",
+              "title": "サンゴと魚",
+              "caption": "資料写真：米領サモアの海で撮影されたサンゴと魚。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Coral_And_Fish_(39506096061).jpg/960px-Coral_And_Fish_(39506096061).jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Coral_And_Fish_(39506096061).jpg",
+              "credit": "Greg McFall / NOAA",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "商用利用可能。作者と出典を表示。配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
           "related_id": "20261127-008-R02",
           "images": [
             {
@@ -411,6 +485,24 @@
               "license": "Public domain",
               "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
               "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-008-R03",
+          "images": [
+            {
+              "id": "20261127-008-R03-I01",
+              "type": "photo",
+              "title": "サンゴと魚",
+              "caption": "資料写真：米領サモアの海で撮影されたサンゴと魚。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Coral_And_Fish_(39506096061).jpg/960px-Coral_And_Fish_(39506096061).jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Coral_And_Fish_(39506096061).jpg",
+              "credit": "Greg McFall / NOAA",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "商用利用可能。作者と出典を表示。配布元の縮小画像を使用。"
             }
           ]
         }
@@ -495,6 +587,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261127-016",
+      "images": [
+        {
+          "id": "20261127-016-I01",
+          "type": "photo",
+          "title": "ヒグマの仲間",
+          "caption": "資料写真：ヒグマ（Ursus arctos）の資料写真。北海道で今回捕獲された個体ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Brown_Bear_us_fish.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Brown_Bear_us_fish.jpg",
+          "credit": "Steve Hillebrand / USFWS",
+          "license": "Public domain",
+          "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+          "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+        }
+      ],
+      "related": []
     }
   ]
 }
