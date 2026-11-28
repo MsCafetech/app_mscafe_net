@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 19,
-  "related_count": 40,
-  "image_count": 58,
+  "related_count": 42,
+  "image_count": 60,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -969,6 +969,24 @@
               "is_reference": true
             }
           ]
+        },
+        {
+          "related_id": "20261127-020-R02",
+          "images": [
+            {
+              "id": "20261127-020-R02-I01",
+              "type": "diagram",
+              "title": "地球と月、潮の満ち引き",
+              "caption": "資料図：地球と月の位置と、潮が満ちる場所・引く場所の模式図。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tide_diagram.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Tide_diagram.png",
+              "credit": "Jim Thomas (Jomegat)",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
         }
       ]
     },
@@ -1069,7 +1087,26 @@
           "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261127-018-R03",
+          "images": [
+            {
+              "id": "20261127-018-R03-I01",
+              "type": "photo",
+              "title": "熊本県八代市を流れる球磨川",
+              "caption": "資料写真：熊本県八代市坂本町付近を流れる球磨川。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Kuma_River_Yatsushiro_Satamoto-machi_01.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Kuma_River_Yatsushiro_Satamoto-machi_01.JPG",
+              "credit": "hyolee2",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261127-019",
