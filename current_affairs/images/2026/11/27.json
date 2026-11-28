@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 65,
-  "image_count": 85,
+  "related_count": 66,
+  "image_count": 86,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -351,6 +351,24 @@
               "license": "Public domain (author dedication)",
               "license_url": "https://commons.wikimedia.org/wiki/File:Futtsu_City_Firefighting_%26_Disaster_Control_Center.JPG",
               "usage_notes": "作者が全世界でパブリックドメインに提供。商用利用可能。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-004-R04",
+          "images": [
+            {
+              "id": "20261127-004-R04-I01",
+              "type": "map",
+              "title": "米国の洪水ハザードマップ",
+              "caption": "資料画像：米国ニュージャージー州ウッドブリッジの洪水ハザードマップ。洪水の危険がある区域を示した地図の例です。日本の避難情報ではありません。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/South_Branch_Rahway_River%2C_Woodbridge.jpg/960px-South_Branch_Rahway_River%2C_Woodbridge.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:South_Branch_Rahway_River,_Woodbridge.jpg",
+              "credit": "米国連邦緊急事態管理庁（FEMA）",
+              "license": "Public domain (US federal government work)",
+              "license_url": "https://commons.wikimedia.org/wiki/File:South_Branch_Rahway_River,_Woodbridge.jpg#Licensing",
+              "usage_notes": "米国連邦政府の職務上の著作物。資料画像として出典・作成機関を表示。縮小版を使用。"
             }
           ]
         }
