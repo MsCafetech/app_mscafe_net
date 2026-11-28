@@ -20,10 +20,65 @@
           "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261111-001-R01",
+          "images": [
+            {
+              "id": "20261111-001-R01-I01",
+              "type": "photo",
+              "title": "美浜原子力発電所",
+              "caption": "資料写真：福井県の美浜原子力発電所の外観。長期間使う設備は点検や保守を続ける必要があります。2009年撮影。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Mihama_Nuclear_Power_Plant.JPG/960px-Mihama_Nuclear_Power_Plant.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Mihama_Nuclear_Power_Plant.JPG",
+              "credit": "Hirorinmasa（撮影） / ChNPP（色・明るさ調整）",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し、継承条件がある場合は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261111-001-R02",
+          "images": [
+            {
+              "id": "20261111-001-R02-I01",
+              "type": "map",
+              "title": "若狭湾の地形図",
+              "caption": "資料地図：福井県と京都府にまたがる若狭湾。日本海に面した入り組んだ海岸線が分かります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Wakasa_Bay_topographic_map.png/960px-Wakasa_Bay_topographic_map.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Wakasa_Bay_topographic_map.png",
+              "credit": "Hans Braxmeier / maps-for-free.com; Krorokeroro（編集）",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し、継承条件がある場合は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261111-001-R03",
+          "images": [
+            {
+              "id": "20261111-001-R03-I01",
+              "type": "satellite",
+              "title": "冬の日本列島の衛星写真",
+              "caption": "資料写真：2023年1月11日、本州中部を撮影した衛星画像。日本海上の雲や雪に覆われた山地が見られます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Japan_01162023_%28MODIS%29.jpg/960px-Japan_01162023_%28MODIS%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japan_01162023_(MODIS).jpg",
+              "credit": "MODIS Land Rapid Response Team, NASA GSFC",
+              "license": "Public Domain (US government)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASAの出典を表示。NASAによる承認・推奨を示唆しない。配布元の縮小画像を使用。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 1,
-  "related_count": 0,
-  "image_count": 1
+  "related_count": 3,
+  "image_count": 4
 }
