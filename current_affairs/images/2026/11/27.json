@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 17,
-  "related_count": 36,
-  "image_count": 52,
+  "related_count": 38,
+  "image_count": 54,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -149,6 +149,24 @@
               "license": "CC BY 3.0 IGO",
               "license_url": "https://creativecommons.org/licenses/by/3.0/igo/deed.en",
               "usage_notes": "商用利用可能。宮古市、出典資料・ライセンスを明示し、加工時は変更を示す。津波地図であることを明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-002-R04",
+          "images": [
+            {
+              "id": "20261127-002-R04-I01",
+              "type": "photo",
+              "title": "伊豆大島の土砂災害",
+              "caption": "資料写真：2013年の台風による東京都・伊豆大島の土砂災害。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/%E4%BC%8A%E8%B1%86%E5%A4%A7%E5%B3%B6%E5%9C%9F%E7%A0%82%E7%81%BD%E5%AE%B3.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E8%B1%86%E5%A4%A7%E5%B3%B6%E5%9C%9F%E7%A0%82%E7%81%BD%E5%AE%B3.jpg",
+              "credit": "気象庁",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更がある場合は明示。",
+              "is_reference": true
             }
           ]
         }
@@ -913,6 +931,24 @@
               "license": "CC BY-SA 2.0 KR",
               "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/",
               "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。改変画像は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-020-R01",
+          "images": [
+            {
+              "id": "20261127-020-R01-I01",
+              "type": "photo",
+              "title": "ドイツの干潟",
+              "caption": "資料写真：ドイツのワッデン海に広がる干潟。潮が引くと海底が現れます。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Tidal_flats.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Tidal_flats.jpg",
+              "credit": "M.Buschmann",
+              "license": "パブリックドメイン（著作者による権利放棄）",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Tidal_flats.jpg",
+              "usage_notes": "著作者がパブリックドメインとして公開。出典・作者を表示。",
+              "is_reference": true
             }
           ]
         }
