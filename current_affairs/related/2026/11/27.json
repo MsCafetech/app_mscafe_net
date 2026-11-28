@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 5,
-  "related_count": 12,
+  "question_count": 6,
+  "related_count": 15,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -262,6 +262,68 @@
             {
               "name": "四日市市・四日市公害と環境未来館",
               "url": "https://www.city.yokkaichi.mie.jp/yokkaichikougai-kankyoumiraikan/about-yokkaichi-pollution/countermeasures/countermeasures08/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-007",
+      "related": [
+        {
+          "id": "20261127-007-R01",
+          "relation_type": "answer",
+          "title": "木簡（もっかん）と紙の使い分け",
+          "description": "奈良時代、人々は文字を書くために木簡と紙を使い分けていました。木は丈夫で、荷物に結び付ける札に向いています。また、書き終えた木簡の表面を小刀で削（けず）れば、文字を書き直して使えます。発掘（はっくつ）調査で見つかる薄（うす）い木の削りくずは、このような再利用の手がかりです。一方、長い文章を書くときには、広く使える紙が役立ちました。",
+          "relationship": "木簡に記録を残した理由を、材料の特徴から考えられます。",
+          "keywords": [
+            "木簡",
+            "紙",
+            "再利用",
+            "奈良時代"
+          ],
+          "sources": [
+            {
+              "name": "奈良文化財研究所",
+              "url": "https://www.nabunken.go.jp/nabunkenblog/2015/05/tanken95.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-007-R02",
+          "relation_type": "question",
+          "title": "平城京（へいじょうきょう）の道と区画",
+          "description": "奈良時代の都、平城京では、東西と南北に大きな道が通り、町は碁盤（ごばん）の目のように区切られていました。南北に通る朱雀大路（すざくおおじ）を中心に、東側を左京（さきょう）、西側を右京（うきょう）と呼びました。さらに道で区切った場所に番号を付け、住所のように位置を表しました。発掘された木簡や建物の跡を、こうした区画と合わせて調べることで、都の暮らしが見えてきます。",
+          "relationship": "木簡が見つかった平城京の町の造りを学べます。",
+          "keywords": [
+            "平城京",
+            "朱雀大路",
+            "左京",
+            "右京"
+          ],
+          "sources": [
+            {
+              "name": "奈良文化財研究所",
+              "url": "https://www.nabunken.go.jp/nabunkenblog/2015/03/tanken89.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-007-R03",
+          "relation_type": "question",
+          "title": "税として運ばれた品物と木簡",
+          "description": "奈良時代、都には各地から税としてさまざまな品物が運ばれました。品物に付けた木簡には、送り出した地域や品名などが書かれた例があります。平城宮（へいじょうきゅう）の跡からは、地方から納（おさ）められた鉄製のくわに関わる荷札も見つかっています。木簡を読むと、昔の人々が何を税として納め、都へ届けたのかを考える手がかりになります。",
+          "relationship": "木簡が税の記録や荷札として使われたことを具体例で学べます。",
+          "keywords": [
+            "木簡",
+            "奈良時代",
+            "税",
+            "荷札"
+          ],
+          "sources": [
+            {
+              "name": "奈良文化財研究所・平城宮跡資料館",
+              "url": "https://sitereports.nabunken.go.jp/files/attach/44/44039/63643_2_%E5%B9%B3%E5%9F%8E%E5%AE%AE%E8%B7%A1%E8%B3%87%E6%96%99%E9%A4%A8%E5%B9%B3%E6%88%9025%E5%B9%B4%E5%BA%A6%E7%89%B9%E5%88%A5%E4%BC%81%E7%94%BB%E5%B1%95%E5%9C%B0%E4%B8%8B%E3%81%AE%E6%AD%A3%E5%80%89%E9%99%A2%E5%B1%95%E3%83%BC%E6%9C%A8%E7%B0%A1%E5%AD%A6%E3%81%93.pdf"
             }
           ]
         }
