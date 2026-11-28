@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 51,
-  "image_count": 71,
+  "related_count": 52,
+  "image_count": 72,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -649,6 +649,24 @@
               "license": "Public domain",
               "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
               "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-009-R02",
+          "images": [
+            {
+              "id": "20261127-009-R02-I01",
+              "type": "diagram",
+              "title": "脳とせきずい",
+              "caption": "資料図：脳とせきずいからなる中枢神経の位置を示した図。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Central_nervous_system_%28ja%29.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Central_nervous_system_(ja).png",
+              "credit": "NIH（原図）、was a bee（日本語訳）",
+              "license": "パブリックドメイン（著作者による権利放棄）",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Central_nervous_system_(ja).png",
+              "usage_notes": "著作者がパブリックドメインとして公開。出典・作者を表示。",
+              "is_reference": true
             }
           ]
         }
