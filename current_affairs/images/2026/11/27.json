@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 18,
+  "question_count": 19,
   "related_count": 40,
-  "image_count": 57,
+  "image_count": 58,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -1067,6 +1067,25 @@
           "license": "CC BY-SA 4.0",
           "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
           "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。"
+        }
+      ],
+      "related": []
+    },
+    {
+      "question_id": "20261127-019",
+      "images": [
+        {
+          "id": "20261127-019-I01",
+          "type": "photo",
+          "title": "岡山大学病院",
+          "caption": "資料写真：岡山市にある岡山大学病院。",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Okayama_University_Hospital.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Okayama_University_Hospital.jpg",
+          "credit": "さかおり",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+          "is_reference": true
         }
       ],
       "related": []
