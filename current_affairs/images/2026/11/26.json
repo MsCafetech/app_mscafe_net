@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 40,
-  "image_count": 61,
+  "related_count": 42,
+  "image_count": 63,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -1000,6 +1000,24 @@
               "usage_notes": "1927年発行の肖像写真で著作権保護期間満了。資料写真として掲載、出典を表示。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-016-R01",
+          "images": [
+            {
+              "id": "20261126-016-R01-I01",
+              "type": "historical",
+              "title": "芥川龍之介の短編集『羅生門』の表紙",
+              "caption": "資料画像：1917年に刊行された芥川龍之介の短編集『羅生門』の表紙。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Rashomon_%28cover%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Rashomon_(cover).jpg",
+              "credit": "芥川龍之介、阿蘭陀書房／国立国会図書館",
+              "license": "パブリックドメイン",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "著作権保護期間が満了した資料の複製。出典を表示。",
+              "is_reference": true
+            }
+          ]
         }
       ]
     },
@@ -1020,7 +1038,26 @@
           "usage_notes": "商用利用可能。国土交通省東北地方整備局、出典URL、ライセンスを明記。改変時は変更内容を表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-017-R01",
+          "images": [
+            {
+              "id": "20261126-017-R01-I01",
+              "type": "photo",
+              "title": "高田松原の奇跡の一本松",
+              "caption": "資料写真：2011年の津波後、岩手県陸前高田市の高田松原に残った一本松。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Collapsed_Rikuzentakata_Youth_Hostel_and_a_Pine_Tree_of_Hope.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Collapsed_Rikuzentakata_Youth_Hostel_and_a_Pine_Tree_of_Hope.jpg",
+              "credit": "Jacob Ehnmark",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示し、変更時は明示。",
+              "is_reference": true
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-018",
