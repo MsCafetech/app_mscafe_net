@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 14,
-  "related_count": 35,
+  "question_count": 20,
+  "related_count": 60,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -111,6 +111,24 @@
               "url": "https://www.ktr.mlit.go.jp/river/bousai/river_index0001.html"
             }
           ]
+        },
+        {
+          "id": "20261127-002-R03",
+          "relation_type": "question",
+          "title": "警戒レベルと避難行動",
+          "description": "大雨などの危険が高まると、市町村は避難情報を出します。警戒（けいかい）レベル4の避難指示が出たら、危険な場所にいる人は全員避難します。レベル5はすでに安全に避難できないおそれがあるため、5を待たずに行動することが大切です。",
+          "relationship": "大雨の情報を避難行動につなげる仕組みを学ぶ。",
+          "keywords": [
+            "警戒レベル",
+            "避難指示",
+            "防災"
+          ],
+          "sources": [
+            {
+              "name": "政府広報オンライン",
+              "url": "https://www.gov-online.go.jp/article/202607/entry-11422.html"
+            }
+          ]
         }
       ]
     },
@@ -215,6 +233,25 @@
               "url": "https://www.bousai.go.jp/kaigirep/hakusho/r08/honbun/t1_3s_02_05.html"
             }
           ]
+        },
+        {
+          "id": "20261127-004-R03",
+          "relation_type": "question",
+          "title": "国と地方自治体の役割",
+          "description": "災害が起きると、市町村は避難所の運営など住民に近い場所で活動します。都道府県は市町村を支援し、国は広い地域に関わる調整や物資の支援などを行います。大きな災害では、これらの機関が協力することが重要です。",
+          "relationship": "災害からの復旧を支える行政の役割を学ぶ。",
+          "keywords": [
+            "市町村",
+            "都道府県",
+            "国",
+            "災害対策"
+          ],
+          "sources": [
+            {
+              "name": "内閣府",
+              "url": "https://www.bousai.go.jp/kaigirep/hakusho/r07/honbun/1b_1s_01_01.html"
+            }
+          ]
         }
       ]
     },
@@ -262,6 +299,24 @@
             {
               "name": "四日市市・四日市公害と環境未来館",
               "url": "https://www.city.yokkaichi.mie.jp/yokkaichikougai-kankyoumiraikan/about-yokkaichi-pollution/countermeasures/countermeasures08/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-005-R03",
+          "relation_type": "question",
+          "title": "四大公害病と大気汚染",
+          "description": "日本の四大公害病は、水俣病（みなまたびょう）、新潟水俣病、イタイイタイ病、四日市ぜんそくです。前の三つは主に水の汚染（おせん）に関係し、四日市ぜんそくは工場などから出る物質による大気汚染が原因となりました。公害対策の重要性を示す歴史です。",
+          "relationship": "大気汚染を日本の公害の歴史と結びつける。",
+          "keywords": [
+            "四大公害病",
+            "大気汚染",
+            "水質汚染"
+          ],
+          "sources": [
+            {
+              "name": "環境再生保全機構",
+              "url": "https://www.erca.go.jp/fukakin/y_tebiki/situgi/q03.html"
             }
           ]
         }
@@ -750,6 +805,42 @@
               "url": "https://www.ipa.go.jp/security/anshin/measures/everyday.html"
             }
           ]
+        },
+        {
+          "id": "20261127-013-R02",
+          "relation_type": "answer",
+          "title": "個人情報と情報モラル",
+          "description": "名前や住所、顔写真など、個人を見分けられる情報は大切に扱う必要があります。インターネットに写真を公開すると、写っている友達の情報まで広がることがあります。本人の許可を得ることや公開する範囲を考えることが、情報モラルにつながります。",
+          "relationship": "情報を安全に利用するための考え方を学ぶ。",
+          "keywords": [
+            "個人情報",
+            "情報モラル",
+            "プライバシー"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/zyoukatsu/moral/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-013-R03",
+          "relation_type": "question",
+          "title": "社会の情報化と生活",
+          "description": "情報通信技術が発達すると、離れた人と連絡したり、必要な情報を調べたりすることができます。一方、誤った情報や犯罪（はんざい）に巻きこまれる危険もあります。情報の出所を確かめ、安全な利用方法を身につけることが大切です。",
+          "relationship": "情報化による生活の変化と課題を学ぶ。",
+          "keywords": [
+            "情報化社会",
+            "情報通信",
+            "情報モラル"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/a_menu/shotou/zyouhou/1368445.htm"
+            }
+          ]
         }
       ]
     },
@@ -771,6 +862,407 @@
             {
               "name": "厚生労働省",
               "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/childcare/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-014-R02",
+          "relation_type": "question",
+          "title": "少子化と子育て支援",
+          "description": "少子化とは、生まれる子どもの数が減り、社会の中で子どもの割合などが小さくなることです。子育てにかかる費用や仕事との両立などの課題に対し、国は児童手当や保育の充実など、さまざまな支援を進めています。",
+          "relationship": "育児休業を少子化対策と関連づける。",
+          "keywords": [
+            "少子化",
+            "児童手当",
+            "子育て支援"
+          ],
+          "sources": [
+            {
+              "name": "こども家庭庁",
+              "url": "https://www.cfa.go.jp/resources/strategy/kodomo-oen"
+            }
+          ]
+        },
+        {
+          "id": "20261127-014-R03",
+          "relation_type": "answer",
+          "title": "男女共同参画社会",
+          "description": "男女共同参画社会とは、性別にかかわらず、一人ひとりが自分の希望や能力に応じて社会に参加できる社会です。仕事だけでなく、家事や育児などの責任も分かち合うことが大切です。男性も女性も育児休業を利用できる制度は、その考え方につながります。",
+          "relationship": "仕事と家庭の両立を社会全体の課題として考える。",
+          "keywords": [
+            "男女共同参画",
+            "育児休業",
+            "仕事"
+          ],
+          "sources": [
+            {
+              "name": "内閣府男女共同参画局",
+              "url": "https://www.gender.go.jp/about_danjo/society/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-015",
+      "related": [
+        {
+          "id": "20261127-015-R01",
+          "relation_type": "answer",
+          "title": "政治資金の公開",
+          "description": "政党や政治団体が集めたお金や使ったお金は、政治資金収支報告書に記載され、公開される仕組みがあります。政治に関わるお金の流れを国民が確認できるようにすることで、公正な政治活動を支えることが目的です。",
+          "relationship": "政治資金を公開する理由を学ぶ。",
+          "keywords": [
+            "政治資金",
+            "収支報告書",
+            "政治資金規正法"
+          ],
+          "sources": [
+            {
+              "name": "e-Gov法令検索",
+              "url": "https://laws.e-gov.go.jp/law/323AC1000000194/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-015-R02",
+          "relation_type": "question",
+          "title": "政党と民主政治",
+          "description": "政党は、政治について共通する考えや目標を持つ人々がつくる団体です。選挙では政策を示し、有権者（ゆうけんしゃ）に支持を求めます。選ばれた議員は議会で議論し、法律や予算などを決める活動を行います。",
+          "relationship": "政党の働きと民主政治の関係を学ぶ。",
+          "keywords": [
+            "政党",
+            "選挙",
+            "議会",
+            "民主政治"
+          ],
+          "sources": [
+            {
+              "name": "コトバンク",
+              "url": "https://kotobank.jp/word/%E6%94%BF%E5%85%9A-86273"
+            }
+          ]
+        },
+        {
+          "id": "20261127-015-R03",
+          "relation_type": "answer",
+          "title": "国民の知る権利と情報公開",
+          "description": "国民が政治や行政の活動について知ることは、民主政治を支えるうえで重要です。情報公開制度では、国の行政機関が持つ文書について、原則として誰でも開示（かいじ）を請求できます。ただし、個人の情報など、公開できない情報もあります。",
+          "relationship": "政治の透明性と情報公開の仕組みを学ぶ。",
+          "keywords": [
+            "知る権利",
+            "情報公開",
+            "民主政治"
+          ],
+          "sources": [
+            {
+              "name": "内閣法制局",
+              "url": "https://www.clb.go.jp/contact/disclosure/guide/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-016",
+      "related": [
+        {
+          "id": "20261127-016-R01",
+          "relation_type": "answer",
+          "title": "ヒグマの食性と森林",
+          "description": "ヒグマは植物も動物も食べる雑食性（ざっしょくせい）の動物です。季節や地域によって食べ物は変わり、草や木の実、魚などを利用します。秋には冬ごもりに備えて多くの食べ物を必要とします。森林の環境はヒグマの暮らしに深く関係しています。",
+          "relationship": "ヒグマの食べ物と季節による生活の変化を学ぶ。",
+          "keywords": [
+            "ヒグマ",
+            "雑食性",
+            "森林",
+            "冬ごもり"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/park/shiretoko/guide/sirecoco/bear/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-016-R02",
+          "relation_type": "answer",
+          "title": "森林の食物連鎖",
+          "description": "森林では植物が太陽の光を利用して養分をつくり、植物を食べる動物や、その動物を食べる動物へと栄養が受けつがれます。このつながりを食物連鎖（れんさ）といいます。ヒグマのように植物も動物も食べる生き物は、複数の食物連鎖に関わっています。",
+          "relationship": "森林の生き物が食べ物を通じてつながることを学ぶ。",
+          "keywords": [
+            "食物連鎖",
+            "森林",
+            "ヒグマ"
+          ],
+          "sources": [
+            {
+              "name": "札幌市円山動物園",
+              "url": "https://www.city.sapporo.jp/zoo/s077/25749.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-016-R03",
+          "relation_type": "question",
+          "title": "野生動物との共存",
+          "description": "野生動物と人間が安全に共存（きょうぞん）するには、動物を人の生活する場所へ引き寄せないことが重要です。ごみや食べ物を外に放置せず、クマの出没（しゅつぼつ）情報に注意します。野生動物を見つけても近づかず、安全を優先します。",
+          "relationship": "野生動物による被害を防ぐための行動を学ぶ。",
+          "keywords": [
+            "野生動物",
+            "クマ",
+            "共存",
+            "出没"
+          ],
+          "sources": [
+            {
+              "name": "札幌市",
+              "url": "https://www.city.sapporo.jp/kurashi/animal/choju/kuma/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-017",
+      "related": [
+        {
+          "id": "20261127-017-R01",
+          "relation_type": "answer",
+          "title": "災害関連死と避難生活",
+          "description": "災害関連死とは、建物の倒壊（とうかい）などの直接の被害ではなく、災害によるけがの悪化や避難生活の負担による病気などで亡くなることです。避難所の生活環境を整え、必要な医療や支援を受けられるようにすることが重要です。",
+          "relationship": "災害後も健康を守る必要があることを学ぶ。",
+          "keywords": [
+            "災害関連死",
+            "避難所",
+            "健康"
+          ],
+          "sources": [
+            {
+              "name": "内閣府",
+              "url": "https://www.bousai.go.jp/kaigirep/hakusho/r02/honbun/1b_1s_01_01.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-017-R02",
+          "relation_type": "answer",
+          "title": "災害時の自助・共助・公助",
+          "description": "自助（じじょ）は自分や家族の安全を自ら守ること、共助（きょうじょ）は地域の人々が助け合うこと、公助（こうじょ）は国や地方公共団体などが支援することです。災害に備えるには、三つの取り組みを組み合わせることが大切です。",
+          "relationship": "災害時の助け合いと行政の役割を学ぶ。",
+          "keywords": [
+            "自助",
+            "共助",
+            "公助",
+            "防災"
+          ],
+          "sources": [
+            {
+              "name": "内閣府",
+              "url": "https://www.bousai.go.jp/kyoiku/keigen/kihon/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-017-R03",
+          "relation_type": "question",
+          "title": "能登半島と地震の備え",
+          "description": "能登半島（のとはんとう）は石川県を中心に日本海へ突き出しています。2024年1月1日に大きな地震が発生しました。地震に備えて家具を固定し、避難する場所や家族の連絡方法を決めておくことが大切です。",
+          "relationship": "能登半島の位置と地震への日ごろの備えを学ぶ。",
+          "keywords": [
+            "能登半島",
+            "石川県",
+            "地震",
+            "防災"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/jishin/jishin_bosai/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-018",
+      "related": [
+        {
+          "id": "20261127-018-R01",
+          "relation_type": "answer",
+          "title": "山・鉾・屋台行事と無形文化遺産",
+          "description": "山・鉾（ほこ）・屋台行事は、地域の人々が祭りで飾りつけた山車（だし）などを引く伝統行事です。八代妙見祭（やつしろみょうけんさい）の神幸行事もその一つで、2016年にユネスコの無形文化遺産（むけいぶんかいさん）に登録されました。",
+          "relationship": "地域の祭りが世界的に評価される理由を学ぶ。",
+          "keywords": [
+            "山鉾屋台行事",
+            "八代妙見祭",
+            "無形文化遺産"
+          ],
+          "sources": [
+            {
+              "name": "八代市",
+              "url": "https://www.city.yatsushiro.lg.jp/museum/kiji00325677/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-018-R02",
+          "relation_type": "answer",
+          "title": "ユネスコと文化遺産の保護",
+          "description": "ユネスコは教育、科学、文化を通じて国際協力を進める国際連合の専門機関です。祭りや芸能、伝統技術など、形のない文化も無形文化遺産として保護する取り組みがあります。地域の人々が技術や知識を次の世代に伝えることが大切です。",
+          "relationship": "ユネスコの文化保護の役割を学ぶ。",
+          "keywords": [
+            "ユネスコ",
+            "無形文化遺産",
+            "伝統文化"
+          ],
+          "sources": [
+            {
+              "name": "文化庁",
+              "url": "https://www.bunka.go.jp/seisaku/bunkazai/shokai/mukei_bunka_isan/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-018-R03",
+          "relation_type": "question",
+          "title": "熊本県と八代市の地理",
+          "description": "八代市（やつしろし）は九州の熊本県にあります。球磨川（くまがわ）が市内を流れて八代海に注ぎます。川や海、平野などの地形は地域の暮らしや産業に関係しています。地図で熊本県と八代市、球磨川の位置を確認してみましょう。",
+          "relationship": "祭りの行われる地域の地理を学ぶ。",
+          "keywords": [
+            "熊本県",
+            "八代市",
+            "球磨川",
+            "八代海"
+          ],
+          "sources": [
+            {
+              "name": "八代市",
+              "url": "https://www.city.yatsushiro.lg.jp/kiji003432/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-019",
+      "related": [
+        {
+          "id": "20261127-019-R01",
+          "relation_type": "answer",
+          "title": "臓器提供の意思表示",
+          "description": "臓器提供（ぞうきていきょう）については、提供する意思も、提供しない意思も表示できます。マイナンバーカードや運転免許証などの意思表示欄や、インターネットによる登録が利用できます。本人の考えを家族と話し合っておくことも大切です。",
+          "relationship": "臓器提供の意思表示の方法を学ぶ。",
+          "keywords": [
+            "臓器提供",
+            "意思表示",
+            "家族"
+          ],
+          "sources": [
+            {
+              "name": "日本臓器移植ネットワーク",
+              "url": "https://www.jotnw.or.jp/explanation/06/01/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-019-R02",
+          "relation_type": "question",
+          "title": "人体の主な臓器と働き",
+          "description": "心臓（しんぞう）は血液を全身に送り、肺（はい）は酸素を取り入れて二酸化炭素を出します。肝臓（かんぞう）は養分の貯蔵などを行い、腎臓（じんぞう）は血液中の不要な物質を取り除いて尿（にょう）をつくります。それぞれの臓器が協力して生命を支えています。",
+          "relationship": "移植に関係する主な臓器の働きを学ぶ。",
+          "keywords": [
+            "心臓",
+            "肺",
+            "肝臓",
+            "腎臓",
+            "人体"
+          ],
+          "sources": [
+            {
+              "name": "みんなの教育技術",
+              "url": "https://kyoiku.sho.jp/21054/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-019-R03",
+          "relation_type": "question",
+          "title": "生命倫理と本人・家族の意思",
+          "description": "臓器移植（ぞうきいしょく）は病気などで臓器の働きが低下した人を助ける医療です。同時に、提供するかどうかは本人の大切な意思に関わります。提供する意思も提供しない意思も尊重し、法律に基づいて家族の意思も確認する仕組みがあります。",
+          "relationship": "生命を支える医療と本人の意思の尊重を学ぶ。",
+          "keywords": [
+            "臓器移植",
+            "生命倫理",
+            "意思表示"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/zouki_ishoku/intention.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-020",
+      "related": [
+        {
+          "id": "20261127-020-R01",
+          "relation_type": "answer",
+          "title": "干潟の生き物と生態系",
+          "description": "干潟（ひがた）は潮が引くと海底が現れる浅い場所です。貝やカニ、ゴカイなど多くの生き物がすみ、それらを食べる鳥も集まります。生き物の食物連鎖や水をきれいにする働きなどがあり、海の環境を守るために重要です。",
+          "relationship": "干潟にすむ生き物と自然環境の役割を学ぶ。",
+          "keywords": [
+            "干潟",
+            "生態系",
+            "貝",
+            "水鳥"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/water/heisa/heisa_net/setouchiNet/seto/g1/g1chapter3/mobahigata/higatatowa/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-020-R02",
+          "relation_type": "answer",
+          "title": "月の引力と潮の満ち引き",
+          "description": "海面の高さが周期的に変化する現象を潮汐（ちょうせき）といいます。主に月と太陽の引力が関係しています。新月や満月のころは潮の満ち引きの差が大きくなる大潮、上弦（じょうげん）や下弦の月のころは差が小さくなる小潮になります。",
+          "relationship": "干潟の現れる仕組みと月の働きを学ぶ。",
+          "keywords": [
+            "潮汐",
+            "引力",
+            "大潮",
+            "小潮"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.data.jma.go.jp/kaiyou/db/tide/knowledge/tide/choseki.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-020-R03",
+          "relation_type": "question",
+          "title": "有明海の水産資源と資源管理",
+          "description": "有明海（ありあけかい）は九州にある海で、ノリや貝などの水産資源を利用した漁業が行われています。水産資源を将来も利用するには、海の環境を調べ、貝などが育つ場所を守り、必要に応じて漁獲（ぎょかく）を管理することが大切です。",
+          "relationship": "有明海の漁業と水産資源保護の関係を学ぶ。",
+          "keywords": [
+            "有明海",
+            "タイラギ",
+            "水産資源",
+            "資源管理"
+          ],
+          "sources": [
+            {
+              "name": "農林水産省",
+              "url": "https://www.maff.go.jp/kyusyu/seibibu/ariake_saisei/ariakesaiseitorikumi.html"
             }
           ]
         }
