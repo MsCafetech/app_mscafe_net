@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-05",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 1,
+  "question_count": 2,
+  "related_count": 6,
   "questions": [
     {
       "question_id": "20261105-001",
@@ -23,6 +23,104 @@
             {
               "name": "文化庁「無形文化遺産」",
               "url": "https://www.bunka.go.jp/seisaku/bunkazai/shokai/mukei_bunka_isan/"
+            }
+          ]
+        },
+        {
+          "id": "20261105-001-R02",
+          "relation_type": "answer",
+          "title": "無形文化遺産（むけいぶんかいさん）と伝統の継承（けいしょう）",
+          "description": "建物や絵画のように物として残る文化だけでなく、歌やおどり、祭り、工芸の技術なども大切な文化です。無形文化遺産は、人から人へ伝えられてきたこうした文化を指します。技術を持つ人が次の世代に教え、地域の人が活動を支えることで、文化を未来に残すことができます。",
+          "relationship": "形のない芸能や技術を受け継ぐ意味",
+          "keywords": [
+            "無形文化遺産",
+            "伝統",
+            "継承"
+          ],
+          "sources": [
+            {
+              "name": "文化庁",
+              "url": "https://www.bunka.go.jp/seisaku/bunkazai/shokai/mukei_bunka_isan/"
+            }
+          ]
+        },
+        {
+          "id": "20261105-001-R03",
+          "relation_type": "question",
+          "title": "日本の伝統芸能と継承（けいしょう）",
+          "description": "日本には能（のう）や歌舞伎（かぶき）など、長い歴史を持つ伝統芸能があります。地域でも祭りの音楽やおどりが受け継がれています。演じ方を教える人、学ぶ人、公演を支える人などの協力が必要です。文化庁では公演などを支援（しえん）し、伝統芸能の価値を広く伝える取り組みを行っています。",
+          "relationship": "地域で受け継ぐ芸能や技術と人々の活動を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "伝統芸能",
+            "能",
+            "歌舞伎",
+            "文化庁"
+          ],
+          "sources": [
+            {
+              "name": "文化庁",
+              "url": "https://www.bunka.go.jp/seisaku/bunka_gyosei/hoshin/kihon_hoshin_4ji/03-1-3.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261105-002",
+      "related": [
+        {
+          "id": "20261105-002-R01",
+          "relation_type": "answer",
+          "title": "太平洋と日本列島の位置",
+          "description": "太平洋は日本列島の東から南に広がる大きな海です。関東地方の南には伊豆諸島（いずしょとう）や小笠原諸島（おがさわらしょとう）などの島々があります。日本の国土を地図で見ると、陸地だけでなく南北に広がる島々の位置を知ることができます。",
+          "relationship": "関東の南に広がる海の位置を地図で学ぶ",
+          "keywords": [
+            "太平洋",
+            "日本列島",
+            "伊豆諸島",
+            "小笠原諸島"
+          ],
+          "sources": [
+            {
+              "name": "国土地理院",
+              "url": "https://www.gsi.go.jp/KIDS/map-index/map-5000.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261105-002-R02",
+          "relation_type": "question",
+          "title": "海上交通と国際協力",
+          "description": "日本は食料やエネルギーなど多くの物資を船で輸入しています。船が安全に航行できるよう、国どうしで共通の安全基準を作ったり、海難救助（かいなんきゅうじょ）の訓練を行ったりしています。国際海事機関（IMO）では船の安全や海の環境（かんきょう）を守るために各国が協力しています。",
+          "relationship": "海上輸送路を通じた国際的なつながりを調べる",
+          "keywords": [
+            "海上交通",
+            "IMO",
+            "国際協力"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/maritime/maritime_tk1_000035.html"
+            }
+          ]
+        },
+        {
+          "id": "20261105-002-R03",
+          "relation_type": "question",
+          "title": "日本を囲む海と海峡（かいきょう）",
+          "description": "日本の東には太平洋、西には日本海や東シナ海、北海道の北東にはオホーツク海があります。海峡とは陸地と陸地の間にある細い海の通り道です。北海道と本州の間には津軽海峡（つがるかいきょう）があります。船の通り道を考えるときには、海や島、海峡の位置が重要です。",
+          "relationship": "日本列島の太平洋側の位置や海上輸送路の地理を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "日本海",
+            "東シナ海",
+            "オホーツク海",
+            "津軽海峡"
+          ],
+          "sources": [
+            {
+              "name": "国土地理院",
+              "url": "https://www.gsi.go.jp/KIDS/map-index/map-5000.htm"
             }
           ]
         }

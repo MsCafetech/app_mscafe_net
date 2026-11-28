@@ -3,7 +3,7 @@
   "date": "2026-11-06",
   "language": "ja",
   "question_count": 2,
-  "related_count": 2,
+  "related_count": 6,
   "questions": [
     {
       "question_id": "20261106-001",
@@ -23,6 +23,44 @@
             {
               "name": "国税庁「消費税の基本的なしくみ」",
               "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261106-001-R02",
+          "relation_type": "answer",
+          "title": "直接税と間接税",
+          "description": "税金を負担する人が自分で国や地方公共団体に納める税を直接税といいます。所得税（しょとくぜい）がその例です。間接税は、税を実質的に負担する人と国などに納める人が異なる税です。消費税では商品を買う人が代金の一部として税を負担し、店などの事業者が納税します。",
+          "relationship": "税を負担する人と納める人の関係の違い",
+          "keywords": [
+            "直接税",
+            "間接税",
+            "所得税",
+            "消費税"
+          ],
+          "sources": [
+            {
+              "name": "国税庁",
+              "url": "https://www.nta.go.jp/about/organization/kumamoto/education/kyozai_chugaku/oita/02-02zei-bunrui.html"
+            }
+          ]
+        },
+        {
+          "id": "20261106-001-R03",
+          "relation_type": "question",
+          "title": "税金と社会保障（しゃかいほしょう）",
+          "description": "社会保障は、病気や高齢（こうれい）、生活上の困りごとなどに対して、社会全体で生活を支える仕組みです。医療（いりょう）や福祉（ふくし）などの費用には、税金や社会保険料などが使われます。税金を集めて必要なところに使うことで、生活を支える公共サービスを利用できるようにしています。",
+          "relationship": "税金が医療・福祉などの公共サービスを支える関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "社会保障",
+            "税金",
+            "医療",
+            "福祉"
+          ],
+          "sources": [
+            {
+              "name": "国税庁",
+              "url": "https://www.nta.go.jp/about/organization/kantoshinetsu/education/tochigidgbook/20240620/pageindices/index7.html"
             }
           ]
         }
@@ -46,6 +84,42 @@
             {
               "name": "財務省「わが国の関税制度の概要」",
               "url": "https://www.mof.go.jp/policy/customs_tariff/summary/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261106-100-R02",
+          "relation_type": "answer",
+          "title": "関税と輸入品の価格",
+          "description": "関税は外国から輸入する品物にかけられる税金です。国内の産業を守る役割などがあります。品物の種類によって税率は異なります。たとえば輸入価格が1000円で税率が10％なら、関税は100円です。関税が高くなると、輸入にかかる費用が増え、販売価格にも影響（えいきょう）することがあります。",
+          "relationship": "輸入品に課される税と価格の関係",
+          "keywords": [
+            "関税",
+            "輸入",
+            "税率"
+          ],
+          "sources": [
+            {
+              "name": "税関",
+              "url": "https://www.customs.go.jp/ccl/works/index.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261106-100-R03",
+          "relation_type": "question",
+          "title": "貿易と食料自給率（しょくりょうじきゅうりつ）",
+          "description": "食料自給率は、国内で使われる食料のうち、国内で生産された分がどれくらいあるかを示す割合です。食料の重さや、食べ物から得られるエネルギー量などによって計算する方法があります。日本では外国からも食料を輸入しており、国内の農業を支えることと、安定した輸入先を確保することの両方が大切です。",
+          "relationship": "輸入品を含む日本の食料供給と国内生産の関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "食料自給率",
+            "農業",
+            "輸入"
+          ],
+          "sources": [
+            {
+              "name": "農林水産省",
+              "url": "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/011.html"
             }
           ]
         }
