@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 12,
-  "related_count": 33,
+  "question_count": 14,
+  "related_count": 35,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -725,6 +725,52 @@
             {
               "name": "外務省",
               "url": "https://www.mofa.go.jp/mofaj/gaiko/fta/j_asean/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-013",
+      "related": [
+        {
+          "id": "20261127-013-R01",
+          "relation_type": "answer",
+          "title": "情報セキュリティの基本",
+          "description": "インターネットのサービスでは、長く複雑（ふくざつ）なパスワードを使い、別のサービスと使い回さないことが大切です。同じパスワードを使うと、一つのサービスから情報が流出したときに、ほかのサービスにも不正に入られるおそれがあります。大切なデータのコピーを別の場所に保存するバックアップも、データを失った場合に役立ちます。",
+          "relationship": "情報の不正利用を防ぐための身近な対策を、問題と正解から発展して学ぶ。",
+          "keywords": [
+            "パスワード",
+            "バックアップ",
+            "不正アクセス"
+          ],
+          "sources": [
+            {
+              "name": "IPA",
+              "url": "https://www.ipa.go.jp/security/anshin/measures/everyday.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-014",
+      "related": [
+        {
+          "id": "20261127-014-R01",
+          "relation_type": "answer",
+          "title": "育児休業と仕事の両立",
+          "description": "民間企業（みんかんきぎょう）で働く人の育児休業は、原則として子どもが1歳になるまで利用でき、父親も母親も対象です。保育所に入れないなどの事情がある場合は、最長2歳まで延長できることがあります。また、雇用保険（こようほけん）の条件を満たす人には、休業中の生活を支える育児休業給付金が支給されます。",
+          "relationship": "子育てのため休業し復職する制度の目的を、問題と正解から発展して学ぶ。",
+          "keywords": [
+            "育児休業",
+            "雇用保険",
+            "育児休業給付金"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省",
+              "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/childcare/"
             }
           ]
         }
