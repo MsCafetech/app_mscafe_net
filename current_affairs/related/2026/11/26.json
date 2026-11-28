@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 70,
+  "related_count": 71,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -931,6 +931,26 @@
             {
               "name": "総務省統計局",
               "url": "https://www.stat.go.jp/naruhodo/15_episode/toukeigaku/senkyoku.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-008-R04",
+          "relation_type": "question",
+          "title": "選挙の四原則",
+          "description": "日本の選挙には、公正さを支える四つの原則があります。普通選挙は、財産や性別などに関係なく、一定の条件を満たす人に選挙権を認めることです。平等選挙は、一人一人の投票を平等に扱うことです。秘密選挙では、誰に投票したかを他人に知られないようにします。直接選挙では、有権者（ゆうけんしゃ）が自ら議員などを選びます。",
+          "relationship": "衆議院（しゅうぎいん）の選挙制度を、公正な投票の原則と結び付けて学びます。",
+          "keywords": [
+            "選挙の四原則",
+            "普通選挙",
+            "平等選挙",
+            "秘密選挙",
+            "直接選挙"
+          ],
+          "sources": [
+            {
+              "name": "東京都選挙管理委員会",
+              "url": "https://www.senkyo.metro.tokyo.lg.jp/documents/d/senkyo/mogi-jyugyou-model1_2"
             }
           ]
         }
