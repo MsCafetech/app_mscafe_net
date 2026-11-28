@@ -12,6 +12,11 @@ Option Explicit
 Private mJs As String
 Private mJp As Long
 
+' 大量処理用（BeginFast / EndFast、HttpCall のトークン再取得）
+Private mFastOn As Boolean
+Private mFastCalc As Long
+Private mAuthFailAt As Date     ' 自動のトークン再取得に失敗した時刻（直後は繰り返さない）
+
 Private Const SH_LOG As String = "実行ログ"   ' シート名が「⑥実行ログ」のように番号付きでも可（LogWs）
 Private Const LOG_FIRST As Long = 6     ' 実行ログ データ開始行
 
@@ -87,15 +92,28 @@ EH:
 End Function
 
 Public Function EnsureToken() As Boolean
-    Dim tokenExp As Variant
-    tokenExp = Range("CFG_TOKEN_EXP").Value
-    If Cfg("CFG_TOKEN") = "" Or Not IsDate(tokenExp) Then
+    ' 有効期限は「取得日時＋有効期間」から直接計算（自動計算を止めている間も正しく判定できるように）
+    If Cfg("CFG_TOKEN") = "" Or Not IsDate(TokenExpiry()) Then
         EnsureToken = FetchToken()
-    ElseIf Now > CDate(tokenExp) - TimeSerial(0, 1, 0) Then
+    ElseIf Now > TokenExpiry() - TimeSerial(0, 1, 0) Then
         EnsureToken = FetchToken()
     Else
         EnsureToken = True
     End If
+End Function
+
+' トークンの有効期限（不明なら Empty）
+Private Function TokenExpiry() As Variant
+    Dim at As Variant, ttl As Variant
+    On Error GoTo Done
+    at = Range("CFG_TOKEN_AT").Value
+    ttl = Range("CFG_TOKEN_TTL").Value
+    If IsDate(at) And IsNumeric(ttl) And CStr(ttl) <> "" Then
+        TokenExpiry = CDate(at) + CDbl(ttl) / 86400#
+    Else
+        TokenExpiry = Range("CFG_TOKEN_EXP").Value
+    End If
+Done:
 End Function
 
 
@@ -105,7 +123,60 @@ End Function
 
 
 ' 同期HTTP（body が空なら送信なし）。戻り値=HTTPステータス、通信エラーは -1
+'   1000件単位の連続実行に備えて（2026-11-19）：
+'   ・トークンの期限が近ければ送信前に取り直す（SCMのトークンは約15分で切れる）
+'   ・401（トークン切れ）なら1回だけ取り直して再送
+'   ・429（呼び出し回数の制限）・502/503/504 は待ってから再送（2,4,8,16,32秒・最大5回）、通信エラーは最大2回
 Public Function HttpCall(ByVal method As String, ByVal url As String, ByVal body As String, ByRef resText As String) As Long
+    Dim st As Long, retry As Long, reauth As Boolean
+    If TokenNearExpiry() Then
+        If Not AutoReauth() Then resText = "トークンを取得できません（基本設定を確認してください）": HttpCall = 401: Exit Function
+    End If
+    Do
+        st = HttpCallOnce(method, url, body, resText)
+        If st = 401 And Not reauth Then
+            reauth = True
+            If Not AutoReauth() Then Exit Do
+        ElseIf (st = 429 Or st = 502 Or st = 503 Or st = 504 Or st = -1) And retry < IIf(st = -1, 2, 5) Then
+            retry = retry + 1
+            Prog "SCMの応答待ち（HTTP " & st & "）。" & (2 ^ retry) & " 秒後に再送します（" & retry & " 回目）"
+            WaitSec 2 ^ retry
+        Else
+            Exit Do
+        End If
+    Loop
+    HttpCall = st
+End Function
+
+' 実行途中のトークン再取得。失敗したら1分間は再試行しない（1000件の連続実行でメッセージが続かないように）
+Private Function AutoReauth() As Boolean
+    If mAuthFailAt <> 0 Then
+        If Now < mAuthFailAt + TimeSerial(0, 1, 0) Then Exit Function
+    End If
+    AutoReauth = FetchToken()
+    If AutoReauth Then mAuthFailAt = 0 Else mAuthFailAt = Now
+End Function
+
+' トークンが空ではなく、期限まで1分を切っているか（期限が分からない場合は False）
+Private Function TokenNearExpiry() As Boolean
+    Dim tokenExp As Variant
+    On Error GoTo Done
+    If Cfg("CFG_TOKEN") = "" Then Exit Function
+    tokenExp = TokenExpiry()
+    If IsDate(tokenExp) Then TokenNearExpiry = (Now > CDate(tokenExp) - TimeSerial(0, 1, 0))
+Done:
+End Function
+
+Private Sub WaitSec(ByVal sec As Double)
+    Dim t As Double
+    t = Timer + sec
+    Do While Timer < t
+        DoEvents
+        If Timer < t - sec - 1 Then Exit Do      ' 日付をまたいで Timer が 0 に戻った場合
+    Loop
+End Sub
+
+Private Function HttpCallOnce(ByVal method As String, ByVal url As String, ByVal body As String, ByRef resText As String) As Long
     Dim http As Object
     On Error GoTo EH
     Set http = NewHttp()
@@ -119,12 +190,35 @@ Public Function HttpCall(ByVal method As String, ByVal url As String, ByVal body
         http.send
     End If
     resText = http.responseText
-    HttpCall = http.Status
+    HttpCallOnce = http.Status
     Exit Function
 EH:
     resText = Err.Description
-    HttpCall = -1
+    HttpCallOnce = -1
 End Function
+
+'----------------------------------------------------------
+' 大量の書き込みを速くする（1000件単位の取得・作成用）
+'   BeginFast：画面更新と自動計算を止める。EndFast：元に戻して再計算
+'   途中でエラーや Exit Sub で抜けても、マクロ終了後に OnTime で必ず元に戻す
+'----------------------------------------------------------
+Public Sub BeginFast()
+    If mFastOn Then Exit Sub
+    mFastCalc = Application.Calculation
+    mFastOn = True
+    Application.ScreenUpdating = False
+    Application.Calculation = xlCalculationManual
+    On Error Resume Next
+    Application.OnTime Now, "'" & ThisWorkbook.Name & "'!EndFast"
+End Sub
+
+Public Sub EndFast()
+    If Not mFastOn Then Exit Sub
+    mFastOn = False
+    Application.Calculation = mFastCalc
+    Application.ScreenUpdating = True
+    Application.StatusBar = False
+End Sub
 
 Public Function NewHttp() As Object
     Dim http As Object
@@ -197,7 +291,24 @@ End Function
 ' コンテナ名が空欄なら条件なし（folder指定なし）
 Public Function ContainerQuery() As String
     If CfgOpt("CFG_CONT_NAME") = "" Then Exit Function
-    ContainerQuery = CfgOpt("CFG_CONT_TYPE") & "=" & Application.WorksheetFunction.EncodeURL(CfgOpt("CFG_CONT_NAME"))
+    ContainerQuery = CfgOpt("CFG_CONT_TYPE") & "=" & Application.WorksheetFunction.EncodeURL(ContName())
+End Function
+
+' API に送るコンテナ名（基本設定で「Prisma Access」と書いても folder=Shared で送る）
+Private Function ContName() As String
+    ContName = CfgOpt("CFG_CONT_NAME")
+    If LCase$(CfgOpt("CFG_CONT_TYPE")) = "folder" Or CfgOpt("CFG_CONT_TYPE") = "" Then ContName = FolderApi(ContName)
+End Function
+
+' folder の表示名。API の folder=Shared はシート上では「Prisma Access」と表示する
+Public Function FolderDisp(ByVal f As String) As String
+    If LCase$(Trim$(f)) = "shared" Then FolderDisp = "Prisma Access" Else FolderDisp = f
+End Function
+
+' 表示名 → API の folder 名（「Prisma Access」→ Shared。それ以外はそのまま）
+Public Function FolderApi(ByVal f As String) As String
+    f = Trim$(f)
+    If LCase$(f) = "prisma access" Or LCase$(f) = "shared" Then FolderApi = "Shared" Else FolderApi = f
 End Function
 
 Public Function WithQuery(ByVal url As String, ByVal q As String) As String
@@ -209,12 +320,21 @@ Public Function ContainerOf(ByVal item As Object) As String
     Dim k As Variant
     For Each k In Array("folder", "snippet", "device")
         If item.Exists(k) Then
-            ContainerOf = k & "=" & Nz(item, CStr(k))
+            If k = "folder" Then
+                ContainerOf = "folder=" & FolderDisp(Nz(item, "folder"))
+            Else
+                ContainerOf = k & "=" & Nz(item, CStr(k))
+            End If
             Exit Function
         End If
     Next
-    ' レスポンスにfolder等が無い場合は取得条件を表示
-    ContainerOf = ContainerQuery()
+    ' レスポンスにfolder等が無い場合は取得条件を表示（folder=Shared は folder=Prisma Access と表示）
+    If CfgOpt("CFG_CONT_NAME") = "" Then Exit Function
+    If LCase$(CfgOpt("CFG_CONT_TYPE")) = "folder" Then
+        ContainerOf = "folder=" & FolderDisp(ContName())
+    Else
+        ContainerOf = CfgOpt("CFG_CONT_TYPE") & "=" & CfgOpt("CFG_CONT_NAME")
+    End If
 End Function
 
 

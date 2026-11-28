@@ -17,7 +17,7 @@ Private Const SH_LOG As String = "実行ログ"
 Private Const EX_FIRST As Long = 8      ' 既存一覧 データ開始行
 Private Const EX_CERT As Long = 17      ' 既存一覧 証明書プロファイル候補の列(Q)
 Private Const IN_FIRST As Long = 8      ' 登録変更削除 データ開始行
-Private Const IN_LAST As Long = 507     ' 登録変更削除 データ最終行
+Private Const IN_LAST As Long = 2007    ' 登録変更削除 データ最終行（2000行。xlsx の入力規則・関数の範囲と合わせる）
 Private Const IN_JUDGE As Long = 31     ' ③ 判定列(AE)
 Private Const IN_ID As Long = 17        ' ③ 既存id列(Q)
 Private Const JS_FIRST As Long = 10     ' JSON_CURL データ開始行
@@ -67,10 +67,10 @@ Public Sub FetchExisting()
     ' 証明書プロファイルは候補用のため、取得できなくても続行する
     Prog "証明書プロファイルを取得しています..."
     Set certs = FetchAllItems(CertUrl(), "証明書プロファイル取得", True, False)
-    Application.ScreenUpdating = False
+    BeginFast     ' 画面更新・自動計算を止める（1000件単位でも速く）
     WriteExist items
     WriteCertList certs
-    Application.ScreenUpdating = True
+    EndFast
     Application.StatusBar = False
     msg = "EDL " & items.Count & " 件を取得しました。"
     If skipped > 0 Then msg = msg & vbLf & "（定義済みのEDL " & skipped & " 件は一覧に含めていません）"
@@ -348,6 +348,7 @@ Public Sub ExecuteAll()
     End If
     If MsgBox(n & " 件をSCMへ実行します（元に戻せません）。よろしいですか？", vbOKCancel + vbExclamation) <> vbOK Then Exit Sub
     If Not EnsureToken() Then Exit Sub
+    BeginFast
     For r = JS_FIRST To JS_FIRST + n - 1
         Prog "API実行中 " & (r - JS_FIRST + 1) & " / " & n
         st = HttpCall(CStr(ws.Cells(r, 4).Value), CStr(ws.Cells(r, 5).Value), CStr(ws.Cells(r, 6).Value), resText)
@@ -360,6 +361,7 @@ Public Sub ExecuteAll()
     BuildDiffCore
     Application.StatusBar = False
     Worksheets(SH_DIFF).Activate
+    EndFast
     MsgBox "成功 " & ok & " 件／失敗 " & ng & " 件" & vbLf & _
            "EDL_差分確認 に、現在の設定一覧と既存一覧（実行前）からの変化を出力しました。内容を確認してから、SCMの画面でPushしてください。", vbInformation
 End Sub
@@ -386,8 +388,10 @@ End Sub
 Public Sub BuildDiffCheck()
     If Not CheckContainer() Then Exit Sub
     If Not EnsureToken() Then Exit Sub
+    BeginFast
     If BuildDiffCore() Then
         Worksheets(SH_DIFF).Activate
+        EndFast
         MsgBox "差分を作成しました。", vbInformation
     End If
 End Sub
@@ -607,9 +611,14 @@ Private Function FetchAllItems(ByVal baseU As String, ByVal opLabel As String, B
             items.Add item
             cnt = cnt + 1
         Next
-        offset = offset + PAGE_LIMIT
-        If res.Exists("total") Then total = res("total") Else total = 0
-        If cnt < PAGE_LIMIT Or offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る（2026-11-19）
+        offset = offset + cnt
+        If res.Exists("total") Then total = Val(CStr(res("total"))) Else total = 0
+        If cnt = 0 Then Exit Do
+        If total > 0 And offset >= total Then Exit Do
+        If offset >= 1000000 Then Exit Do
+        Prog "取得中 " & Format$(offset, "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & " 件"
     Loop
     If logOk Then WriteLog opLabel, "", "GET", WithQuery(baseU, ContainerQuery()), 200, items.Count & "件取得"
     Set FetchAllItems = items
