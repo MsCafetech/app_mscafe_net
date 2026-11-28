@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 61,
-  "image_count": 81,
+  "related_count": 63,
+  "image_count": 83,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -1425,6 +1425,42 @@
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "著作者がパブリックドメインに提供。出典・作者を表示。",
               "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-019-R01",
+          "images": [
+            {
+              "id": "20261127-019-R01-I01",
+              "type": "photo",
+              "title": "臓器提供の意思を示すカード",
+              "caption": "資料写真：インドで臓器提供の意思表示カードに署名する様子。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sheila_dixit_signing_organ_donation_card.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Sheila_dixit_signing_organ_donation_card.jpg",
+              "credit": "Castroregu / Wikimedia Commons",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。商用利用・改変可能。人物の写真は臓器提供の意思表示の資料として使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-019-R03",
+          "images": [
+            {
+              "id": "20261127-019-R03-I01",
+              "type": "photo",
+              "title": "臓器提供の意思を示すカード",
+              "caption": "資料写真：インドで臓器提供の意思表示カードに署名する様子。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sheila_dixit_signing_organ_donation_card.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Sheila_dixit_signing_organ_donation_card.jpg",
+              "credit": "Castroregu / Wikimedia Commons",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。商用利用・改変可能。人物の写真は臓器提供の意思表示の資料として使用。"
             }
           ]
         }
