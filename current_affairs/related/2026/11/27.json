@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 11,
-  "related_count": 30,
+  "question_count": 12,
+  "related_count": 33,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -658,6 +658,73 @@
             {
               "name": "外務省",
               "url": "https://www.mofa.go.jp/mofaj/area/nz/data.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-012",
+      "related": [
+        {
+          "id": "20261127-012-R01",
+          "relation_type": "answer",
+          "title": "経済連携協定と貿易",
+          "description": "経済連携協定（けいざいれんけいきょうてい・EPA）は、国や地域の間で経済的な結びつきを強めるための約束です。品物にかかる関税（かんぜい）を引き下げたり、サービスの取引や投資（とうし）に関するルールを定めたりします。国どうしの取引をしやすくすることで、さまざまな品物やサービスが行き来することにつながります。",
+          "relationship": "TPPも経済連携協定の一つで、品物の貿易以外にも幅広い分野のルールを含みます。",
+          "keywords": [
+            "経済連携協定",
+            "EPA",
+            "貿易",
+            "投資"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/fta/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-012-R02",
+          "relation_type": "answer",
+          "title": "関税と輸入品",
+          "description": "関税（かんぜい）は、外国から輸入（ゆにゅう）する品物などにかかる税金です。輸入品に関税がかかると、同じ種類の国産品との価格の差が変わり、国内の産業を守る働きがあります。一方、関税が高いと輸入品の価格が上がり、消費者の選択肢（せんたくし）が少なくなることもあります。関税は国の収入にもなります。",
+          "relationship": "TPPが取り組む関税の引下げを理解するために、関税の役割を学びます。",
+          "keywords": [
+            "関税",
+            "輸入",
+            "国内産業",
+            "税"
+          ],
+          "sources": [
+            {
+              "name": "大阪税関 税関キッズ",
+              "url": "https://www.customs.go.jp/osaka/kids/about/index02.html"
+            },
+            {
+              "name": "財務省関税局",
+              "url": "https://www.customs.go.jp/saiyou/pdf/2022/sougou/P7-8.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261127-012-R03",
+          "relation_type": "question",
+          "title": "日本と東南アジアの経済連携",
+          "description": "日本は、東南アジア諸国連合（しょこくれんごう・ASEAN）との間でも、経済連携協定（けいざいれんけいきょうてい）を結んでいます。インドネシアやフィリピンもこの協定に参加しています。国と国が協力して取引のルールを決めることで、品物やサービスが国境を越えて行き来しやすい環境を整えます。",
+          "relationship": "会合で交渉開始が決まった国々との関係から、日本と東南アジアの経済的なつながりを学びます。",
+          "keywords": [
+            "ASEAN",
+            "東南アジア",
+            "経済連携",
+            "インドネシア",
+            "フィリピン"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/fta/j_asean/index.html"
             }
           ]
         }
