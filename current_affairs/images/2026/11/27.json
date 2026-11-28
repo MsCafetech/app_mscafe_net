@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 49,
-  "image_count": 69,
+  "related_count": 50,
+  "image_count": 70,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -1076,6 +1076,24 @@
               "license": "CC BY 4.0",
               "license_url": "https://creativecommons.org/licenses/by/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示。変更した場合は明示。",
+              "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-017-R01",
+          "images": [
+            {
+              "id": "20261127-017-R01-I01",
+              "type": "photo",
+              "title": "中越地震の避難所",
+              "caption": "資料写真：2004年の新潟県中越地震で避難所となった小千谷市の体育館と自衛隊車両。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Chuetsu_earthquake-jieitai1.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chuetsu_earthquake-jieitai1.jpg",
+              "credit": "Tubbi",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
               "is_reference": true
             }
           ]
