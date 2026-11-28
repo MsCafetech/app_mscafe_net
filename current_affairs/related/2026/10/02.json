@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-02",
   "language": "ja",
-  "question_count": 3,
-  "related_count": 5,
+  "question_count": 4,
+  "related_count": 7,
   "questions": [
     {
       "question_id": "20261002-001",
@@ -86,6 +86,52 @@
             {
               "name": "環境省 関東地方環境事務所",
               "url": "https://kanto.env.go.jp/press_00093.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261002-003",
+      "related": [
+        {
+          "id": "20261002-003-R01",
+          "relation_type": "answer",
+          "title": "方言と地域による言葉の違い",
+          "description": "同じ日本語でも、地域によって単語や言い方が違うことがあります。たとえば野菜のナスは、大阪では「ナスビ」とも言います。方言には単語の違いだけでなく、発音や文法の違いもあります。方言と共通語は、どちらか一方だけが正しいという関係ではありません。",
+          "relationship": "方言を具体例から知り、共通語との関係を学ぶ。",
+          "keywords": [
+            "方言",
+            "共通語",
+            "地域差"
+          ],
+          "sources": [
+            {
+              "name": "国立国語研究所",
+              "url": "https://kotoba.ninjal.ac.jp/qa/yokuaru/qa-232/"
+            },
+            {
+              "name": "国立国語研究所",
+              "url": "https://www2.ninjal.ac.jp/past-publications/publication/catalogue/shin_kotoba_series/11_19/pages/kotoba16q01/"
+            }
+          ]
+        },
+        {
+          "id": "20261002-003-R02",
+          "relation_type": "question",
+          "title": "世論調査と標本調査",
+          "description": "世論調査（よろんちょうさ）は、社会の問題などについて、人々がどう考えているかを知るための調査です。全員に聞く代わりに、対象者の中からかたよりが出ないよう選んだ一部の人に質問し、全体の傾向（けいこう）を考える方法があります。これを標本調査（ひょうほんちょうさ）といいます。調査結果には、全員に聞いた場合とのずれが生じることもあります。",
+          "relationship": "国語に関する世論調査をきっかけに、調査の基本的な方法を学ぶ。",
+          "keywords": [
+            "世論調査",
+            "標本調査",
+            "統計",
+            "無作為抽出"
+          ],
+          "sources": [
+            {
+              "name": "内閣官房",
+              "url": "https://www.cas.go.jp/jp/seisaku/npu/policy09/pdf/20120827/shiryo2-5.pdf"
             }
           ]
         }
