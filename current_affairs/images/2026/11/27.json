@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 19,
-  "related_count": 42,
-  "image_count": 60,
+  "question_count": 20,
+  "related_count": 45,
+  "image_count": 63,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -1126,6 +1126,66 @@
         }
       ],
       "related": []
+    },
+    {
+      "question_id": "20261127-014",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261127-014-R01",
+          "images": [
+            {
+              "id": "20261127-014-R01-I01",
+              "type": "photo",
+              "title": "父親と赤ちゃんの手",
+              "caption": "資料写真：父親が赤ちゃんの手を握っています。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Haende-30.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Haende-30.jpg",
+              "credit": "Matthias Süßen",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し、同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-014-R02",
+          "images": [
+            {
+              "id": "20261127-014-R02-I01",
+              "type": "photo",
+              "title": "父親と赤ちゃんの手",
+              "caption": "資料写真：父親が赤ちゃんの手を握っています。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Haende-30.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Haende-30.jpg",
+              "credit": "Matthias Süßen",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し、同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-014-R03",
+          "images": [
+            {
+              "id": "20261127-014-R03-I01",
+              "type": "photo",
+              "title": "父親と赤ちゃんの手",
+              "caption": "資料写真：父親が赤ちゃんの手を握っています。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Haende-30.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Haende-30.jpg",
+              "credit": "Matthias Süßen",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し、同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        }
+      ]
     }
   ]
 }
