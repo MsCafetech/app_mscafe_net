@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-02",
   "language": "ja",
-  "question_count": 1,
-  "related_count": 2,
+  "question_count": 2,
+  "related_count": 4,
   "questions": [
     {
       "question_id": "20261002-001",
@@ -43,6 +43,49 @@
             {
               "name": "外務省",
               "url": "https://www.mofa.go.jp/mofaj/gaiko/summit/hiroshima23/summit/about/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261002-002",
+      "related": [
+        {
+          "id": "20261002-002-R01",
+          "relation_type": "question",
+          "title": "火山活動と西之島",
+          "description": "小笠原諸島（おがさわらしょとう）の西之島では、2013年の噴火（ふんか）で島の南に新しい陸地が現れ、2014年には元の島とつながりました。火山から流れ出た溶岩（ようがん）が重なることで、島の地形は変化してきました。",
+          "relationship": "西之島を例に、火山活動が島の地形を変えることを学ぶ。",
+          "keywords": [
+            "西之島",
+            "火山島",
+            "噴火",
+            "溶岩"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/content/900511258.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261002-002-R02",
+          "relation_type": "question",
+          "title": "火山島の生態系と海鳥",
+          "description": "海鳥は海でえさをとるため、陸上に生物が少ない島でも子育てができます。環境省の調査では、西之島でカツオドリなどの幼鳥が確認されました。海鳥は植物の種を運ぶなど、島の生態系（せいたいけい）ができる過程でも大切な役割を持つと考えられています。",
+          "relationship": "火山活動の後、島に生き物が住みつく過程を学ぶ。",
+          "keywords": [
+            "西之島",
+            "海鳥",
+            "生態系",
+            "種子散布"
+          ],
+          "sources": [
+            {
+              "name": "環境省 関東地方環境事務所",
+              "url": "https://kanto.env.go.jp/press_00093.html"
             }
           ]
         }
