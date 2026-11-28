@@ -3,8 +3,8 @@
   "date": "2026-11-20",
   "language": "ja",
   "question_count": 9,
-  "related_count": 3,
-  "image_count": 12,
+  "related_count": 13,
+  "image_count": 22,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -24,6 +24,24 @@
         }
       ],
       "related": [
+        {
+          "related_id": "20261120-001-R02",
+          "images": [
+            {
+              "id": "20261120-001-R02-I01",
+              "type": "photo",
+              "title": "クロマグロ",
+              "caption": "資料写真：葛西臨海水族園のクロマグロ。漁獲可能量を定めて資源管理を行う魚の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Pacific_bluefin_tuna.jpg/960px-Pacific_bluefin_tuna.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Pacific_bluefin_tuna.jpg",
+              "credit": "aes256（色調整：Togabi）",
+              "license": "CC BY 2.1 JP",
+              "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+              "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
+            }
+          ]
+        },
         {
           "related_id": "20261120-001-R03",
           "images": [
@@ -82,6 +100,24 @@
       ],
       "related": [
         {
+          "related_id": "20261120-003-R01",
+          "images": [
+            {
+              "id": "20261120-003-R01-I01",
+              "type": "photo",
+              "title": "種子島宇宙センターの施設",
+              "caption": "資料写真：2018年の種子島宇宙センターの宇宙科学技術館とロケットの展示。鹿児島県の種子島にあります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Tanegashima_Space_Center_1.jpg/960px-Tanegashima_Space_Center_1.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Tanegashima_Space_Center_1.jpg",
+              "credit": "Brinacor",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
           "related_id": "20261120-003-R03",
           "images": [
             {
@@ -120,6 +156,24 @@
       ],
       "related": [
         {
+          "related_id": "20261120-004-R02",
+          "images": [
+            {
+              "id": "20261120-004-R02-I01",
+              "type": "photo",
+              "title": "日本の水田と稲の天日干し",
+              "caption": "資料写真：収穫後の稲を天日干しする様子。作付面積は土地の広さ、収穫量は取れた米の重さを表します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Paddy_field_-_rice_drying%2C_Japan_001.jpg/960px-Paddy_field_-_rice_drying%2C_Japan_001.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Paddy_field_-_rice_drying,_Japan_001.jpg",
+              "credit": "Kropsoq",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。資料写真。"
+            }
+          ]
+        },
+        {
           "related_id": "20261120-004-R04",
           "images": [
             {
@@ -156,7 +210,44 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261120-100-R01",
+          "images": [
+            {
+              "id": "20261120-100-R01-I01",
+              "type": "photo",
+              "title": "日本のスーパー",
+              "caption": "資料写真：2012年の日本のスーパー。食品などの価格の変化は家計に影響します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
+              "credit": "Yuya Tamai",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-100-R02",
+          "images": [
+            {
+              "id": "20261120-100-R02-I01",
+              "type": "photo",
+              "title": "日本のスーパー",
+              "caption": "資料写真：2012年のスーパー。消費者物価指数では、このような店で家庭が買う商品などの価格の変化を調べます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
+              "credit": "Yuya Tamai",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261120-101",
@@ -175,7 +266,44 @@
           "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261120-101-R01",
+          "images": [
+            {
+              "id": "20261120-101-R01-I01",
+              "type": "photo",
+              "title": "国連安全保障理事会の議場",
+              "caption": "資料写真：2024年のニューヨークの国連安全保障理事会の議場。理事国が平和と安全について話し合う場所です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/United_Nations_Headquarters_-_Security_Council_chamber%2C_straight-on_view.jpg/960px-United_Nations_Headquarters_-_Security_Council_chamber%2C_straight-on_view.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:United_Nations_Headquarters_-_Security_Council_chamber,_straight-on_view.jpg",
+              "credit": "Jdforrester",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-101-R02",
+          "images": [
+            {
+              "id": "20261120-101-R02-I01",
+              "type": "photo",
+              "title": "国連安全保障理事会の議場",
+              "caption": "資料写真：国連安全保障理事会の議場。重要な決議案には理事国が投票します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/United_Nations_Headquarters_-_Security_Council_chamber%2C_straight-on_view.jpg/960px-United_Nations_Headquarters_-_Security_Council_chamber%2C_straight-on_view.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:United_Nations_Headquarters_-_Security_Council_chamber,_straight-on_view.jpg",
+              "credit": "Jdforrester",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元の縮小画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261120-102",
@@ -194,7 +322,44 @@
           "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261120-102-R01",
+          "images": [
+            {
+              "id": "20261120-102-R01-I01",
+              "type": "photo",
+              "title": "教育予算をめぐるデモ",
+              "caption": "資料写真：2010年のロンドンで教育予算について意見を表明する人々。集会やデモは社会に考えを伝える方法の一つです。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Student_protest_march_past_Houses_of_Parliament.jpg/960px-Student_protest_march_past_Houses_of_Parliament.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Student_protest_march_past_Houses_of_Parliament.jpg",
+              "credit": "BillyH",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-102-R03",
+          "images": [
+            {
+              "id": "20261120-102-R03-I01",
+              "type": "photo",
+              "title": "教育予算をめぐるデモ",
+              "caption": "資料写真：2010年、教育予算の削減に反対するロンドンのデモ。看板などを使って意見を伝えています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Student_protest_march_past_Houses_of_Parliament.jpg/960px-Student_protest_march_past_Houses_of_Parliament.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Student_protest_march_past_Houses_of_Parliament.jpg",
+              "credit": "BillyH",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261120-103",
@@ -213,7 +378,26 @@
           "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261120-103-R01",
+          "images": [
+            {
+              "id": "20261120-103-R01-I01",
+              "type": "photo",
+              "title": "東京証券取引所",
+              "caption": "資料写真：2004年の東京証券取引所の内部。株式の売買を支える施設です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Tokyo_stock_exchange.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Tokyo_stock_exchange.jpg",
+              "credit": "Chris 73 / Wikimedia Commons",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261120-104",
