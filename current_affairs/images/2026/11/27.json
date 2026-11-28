@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 60,
-  "image_count": 80,
+  "related_count": 61,
+  "image_count": 81,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -315,6 +315,24 @@
               "license": "CC BY 4.0",
               "license_url": "https://creativecommons.org/licenses/by/4.0/",
               "usage_notes": "商用利用可能。内閣官房内閣広報室・出典・ライセンスを表示し、改変時は明示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-004-R03",
+          "images": [
+            {
+              "id": "20261127-004-R03-I01",
+              "type": "photo",
+              "title": "市の消防防災センター",
+              "caption": "資料写真：千葉県にある富津市消防防災センター。市町村は防災や災害対応に取り組みます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Futtsu_City_Firefighting_%26_Disaster_Control_Center.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Futtsu_City_Firefighting_%26_Disaster_Control_Center.JPG",
+              "credit": "あばさー（Abasaa）",
+              "license": "Public domain (author dedication)",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Futtsu_City_Firefighting_%26_Disaster_Control_Center.JPG",
+              "usage_notes": "作者が全世界でパブリックドメインに提供。商用利用可能。"
             }
           ]
         }
