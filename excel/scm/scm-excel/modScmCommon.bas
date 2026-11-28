@@ -197,7 +197,24 @@ End Function
 ' コンテナ名が空欄なら条件なし（folder指定なし）
 Public Function ContainerQuery() As String
     If CfgOpt("CFG_CONT_NAME") = "" Then Exit Function
-    ContainerQuery = CfgOpt("CFG_CONT_TYPE") & "=" & Application.WorksheetFunction.EncodeURL(CfgOpt("CFG_CONT_NAME"))
+    ContainerQuery = CfgOpt("CFG_CONT_TYPE") & "=" & Application.WorksheetFunction.EncodeURL(ContName())
+End Function
+
+' API に送るコンテナ名（基本設定で「Prisma Access」と書いても folder=Shared で送る）
+Private Function ContName() As String
+    ContName = CfgOpt("CFG_CONT_NAME")
+    If LCase$(CfgOpt("CFG_CONT_TYPE")) = "folder" Or CfgOpt("CFG_CONT_TYPE") = "" Then ContName = FolderApi(ContName)
+End Function
+
+' folder の表示名。API の folder=Shared はシート上では「Prisma Access」と表示する
+Public Function FolderDisp(ByVal f As String) As String
+    If LCase$(Trim$(f)) = "shared" Then FolderDisp = "Prisma Access" Else FolderDisp = f
+End Function
+
+' 表示名 → API の folder 名（「Prisma Access」→ Shared。それ以外はそのまま）
+Public Function FolderApi(ByVal f As String) As String
+    f = Trim$(f)
+    If LCase$(f) = "prisma access" Or LCase$(f) = "shared" Then FolderApi = "Shared" Else FolderApi = f
 End Function
 
 Public Function WithQuery(ByVal url As String, ByVal q As String) As String
@@ -209,12 +226,21 @@ Public Function ContainerOf(ByVal item As Object) As String
     Dim k As Variant
     For Each k In Array("folder", "snippet", "device")
         If item.Exists(k) Then
-            ContainerOf = k & "=" & Nz(item, CStr(k))
+            If k = "folder" Then
+                ContainerOf = "folder=" & FolderDisp(Nz(item, "folder"))
+            Else
+                ContainerOf = k & "=" & Nz(item, CStr(k))
+            End If
             Exit Function
         End If
     Next
-    ' レスポンスにfolder等が無い場合は取得条件を表示
-    ContainerOf = ContainerQuery()
+    ' レスポンスにfolder等が無い場合は取得条件を表示（folder=Shared は folder=Prisma Access と表示）
+    If CfgOpt("CFG_CONT_NAME") = "" Then Exit Function
+    If LCase$(CfgOpt("CFG_CONT_TYPE")) = "folder" Then
+        ContainerOf = "folder=" & FolderDisp(ContName())
+    Else
+        ContainerOf = CfgOpt("CFG_CONT_TYPE") & "=" & CfgOpt("CFG_CONT_NAME")
+    End If
 End Function
 
 
