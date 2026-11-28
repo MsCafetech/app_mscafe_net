@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 43,
-  "image_count": 64,
+  "related_count": 44,
+  "image_count": 65,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -792,6 +792,24 @@
               "license": "CC BY 2.0",
               "license_url": "https://creativecommons.org/licenses/by/2.0/",
               "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-011-R02",
+          "images": [
+            {
+              "id": "20261126-011-R02-I01",
+              "type": "photo",
+              "title": "横浜市の磯子火力発電所",
+              "caption": "資料写真：神奈川県横浜市にある磯子火力発電所。火力発電では燃料を燃やして電気を作ります。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/J-power_isogo.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:J-power_isogo.jpg",
+              "credit": "妖精書士",
+              "license": "パブリックドメイン（著作者による権利放棄）",
+              "license_url": "https://commons.wikimedia.org/wiki/File:J-power_isogo.jpg",
+              "usage_notes": "著作者がパブリックドメインとして公開。出典・作者を表示。",
+              "is_reference": true
             }
           ]
         }
