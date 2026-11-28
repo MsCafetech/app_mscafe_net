@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 12,
-  "related_count": 20,
+  "related_count": 22,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -437,6 +437,24 @@
               "url": "https://www.enecho.meti.go.jp/committee/council/basic_policy_subcommittee/2026/071/071_004.pdf"
             }
           ]
+        },
+        {
+          "id": "20261126-007-R03",
+          "relation_type": "question",
+          "title": "原油と石油製品",
+          "description": "地下から取り出したままの石油を原油といいます。製油所では原油を精製（せいせい）し、ガソリンや灯油、軽油、重油などを作ります。一つの原料から複数の製品が作られるのが特徴（とくちょう）です。原油の輸入価格が変わると、これらの製品の価格にも影響（えいきょう）が出ます。",
+          "relationship": "中東から輸入する原油が精製されガソリンなどになる過程を調べる",
+          "keywords": [
+            "原油",
+            "石油製品",
+            "製油所"
+          ],
+          "sources": [
+            {
+              "name": "経済産業省",
+              "url": "https://www.meti.go.jp/shingikai/enecho/shigen_nenryo/pdf/008_02_02.pdf"
+            }
+          ]
         }
       ]
     },
@@ -459,6 +477,24 @@
             {
               "name": "衆議院",
               "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kousei.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-008-R02",
+          "relation_type": "answer",
+          "title": "小選挙区と比例代表の議席の決まり方",
+          "description": "衆議院（しゅうぎいん）の選挙では、小選挙区では候補者の名前を書いて投票し、各選挙区から一人を選びます。比例代表では政党の名前を書き、地域ごとに政党が得た票の数に応じて議席を配分します。二つの仕組みを組み合わせて国民の意見を国会に届けます。",
+          "relationship": "並立する二つの投票で誰に議席が配分されるかを比べる",
+          "keywords": [
+            "小選挙区",
+            "比例代表",
+            "衆議院"
+          ],
+          "sources": [
+            {
+              "name": "相模原市選挙管理委員会",
+              "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026766/senkyo/1031804/1031806.html"
             }
           ]
         }
