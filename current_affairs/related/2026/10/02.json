@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 2,
+  "questions": [
+    {
+      "question_id": "20261002-001",
+      "related": [
+        {
+          "id": "20261002-001-R01",
+          "relation_type": "answer",
+          "title": "石油備蓄（せきゆびちく）の種類",
+          "description": "日本の石油備蓄には、国が持つ国家備蓄と、石油をあつかう会社などが法律に基づき持つ民間備蓄があります。また、産油国と協力する共同備蓄もあります。共同備蓄では、日本での石油供給（きょうきゅう）が不足したとき、日本向けに優先して供給する仕組みがあります。",
+          "relationship": "石油をたくわえる方法の違いを知り、供給不足への備えを学ぶ。",
+          "keywords": [
+            "石油備蓄",
+            "国家備蓄",
+            "民間備蓄",
+            "産油国共同備蓄"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/statistics/petroleum_and_lpgas/pl001/pdf/2025/250415oil.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261002-001-R02",
+          "relation_type": "question",
+          "title": "G7と国際協力",
+          "description": "G7は、日本、アメリカ、イギリス、フランス、ドイツ、イタリア、カナダの7か国からなるグループです。首脳（しゅのう）が集まるG7サミットには欧州連合（おうしゅうれんごう、EU）も参加し、世界経済やエネルギーなどの課題を話し合います。",
+          "relationship": "石油の安定供給をめぐって協力するG7の参加国と役割を学ぶ。",
+          "keywords": [
+            "G7",
+            "サミット",
+            "欧州連合",
+            "国際協力"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/summit/hiroshima23/summit/about/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
