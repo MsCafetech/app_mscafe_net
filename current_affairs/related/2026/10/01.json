@@ -86,6 +86,25 @@
               "url": "https://www.nta.go.jp/about/organization/kumamoto/education/kyozai_chugaku/oita/02-02zei-bunrui.html"
             }
           ]
+        },
+        {
+          "id": "20261001-002-R02",
+          "relation_type": "question",
+          "title": "税金と公共サービス",
+          "description": "税金は、国や市町村などが人々の生活を支えるために使います。例えば、道路を整えたり、学校をつくったりする費用（ひよう）に役立てられます。税金によって、みんなが利用する施設（しせつ）やサービスが支えられています。",
+          "relationship": "酒税を含（ふく）む税金が社会で果たす役割（やくわり）を学びます。",
+          "keywords": [
+            "税金",
+            "公共サービス",
+            "学校",
+            "道路"
+          ],
+          "sources": [
+            {
+              "name": "国税庁",
+              "url": "https://www.nta.go.jp/about/organization/kantoshinetsu/education/tochigidgbook/20240305/pageindices/index3.html"
+            }
+          ]
         }
       ]
     },
@@ -108,6 +127,25 @@
             {
               "name": "気象庁",
               "url": "https://www.jma.go.jp/jma/kishou/know/env/ghg_obs/station/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261001-003-R02",
+          "relation_type": "answer",
+          "title": "地球温暖化と排出削減",
+          "description": "二酸化炭素（にさんかたんそ）の排出（はいしゅつ）を減らす方法には、使うエネルギーのむだを減らす省エネと、太陽光などの再生可能（さいせいかのう）エネルギーを活用する方法があります。例えば、使っていない部屋の空調を見直すことも省エネの一つです。",
+          "relationship": "温室効果ガスの増加に対して、排出を減らす工夫を学びます。",
+          "keywords": [
+            "地球温暖化",
+            "二酸化炭素",
+            "省エネ",
+            "再生可能エネルギー"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/earth/ondanka/supply_chain/gvc/decarbonization_07.html"
             }
           ]
         }
@@ -134,10 +172,54 @@
               "url": "https://www.mlit.go.jp/report/press/port04_hh_000523.html"
             }
           ]
+        },
+        {
+          "id": "20261001-005-R02",
+          "relation_type": "question",
+          "title": "港の役割と国際貿易",
+          "description": "港は、外国と荷物をやり取りする貿易（ぼうえき）の出入り口です。日本は小麦や石油などを海外から輸入（ゆにゅう）し、国内でつくった製品（せいひん）などを船で輸出（ゆしゅつ）しています。港では荷物を運ぶだけでなく、倉庫（そうこ）に保管する仕事もあります。",
+          "relationship": "コンテナが集まる港の役割を、輸出入と結びつけて学びます。",
+          "keywords": [
+            "港",
+            "貿易",
+            "輸出",
+            "輸入"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省 関東地方整備局",
+              "url": "https://www.pa.ktr.mlit.go.jp/chiba/trivia/import/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261001-004",
+      "related": [
+        {
+          "id": "20261001-004-R01",
+          "relation_type": "question",
+          "title": "原子と元素",
+          "description": "物質（ぶっしつ）は原子という小さな粒（つぶ）からできています。原子の中心には原子核（げんしかく）があり、その中には陽子（ようし）などがあります。原子の種類を元素といい、陽子の数によって元素が決まります。例えば、陽子が6個の元素は炭素です。",
+          "relationship": "元素周期表を理解するために、原子と元素の関係を学びます。",
+          "keywords": [
+            "原子",
+            "原子核",
+            "陽子",
+            "元素",
+            "炭素"
+          ],
+          "sources": [
+            {
+              "name": "理化学研究所",
+              "url": "https://www.riken.jp/pr/hakase/h_sakurai/index.html"
+            }
+          ]
         }
       ]
     }
   ],
-  "question_count": 4,
-  "related_count": 6
+  "question_count": 5,
+  "related_count": 10
 }
