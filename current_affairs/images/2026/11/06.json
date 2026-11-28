@@ -20,7 +20,62 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261106-001-R01",
+          "images": [
+            {
+              "id": "20261106-001-R01-I01",
+              "type": "diagram",
+              "title": "付加価値税の納税のしくみ",
+              "caption": "資料図：税率10%の例。原材料の生産者、製造業者、小売店がそれぞれ0.10、0.02、0.03ドルを納め、合計0.15ドルとなることを示しています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/VAT3b22.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:VAT3b22.png",
+              "credit": "Mmitchell10",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明示し、改変時は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261106-001-R02",
+          "images": [
+            {
+              "id": "20261106-001-R02-I01",
+              "type": "photo",
+              "title": "食料品を販売するスーパー",
+              "caption": "資料写真：商品の代金を支払う消費者が消費税を負担し、事業者が納税する仕組みを考えるための例です。2012年撮影。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
+              "credit": "Yuya Tamai",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。商用利用可能。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261106-001-R03",
+          "images": [
+            {
+              "id": "20261106-001-R03-I01",
+              "type": "photo",
+              "title": "江東病院",
+              "caption": "資料写真：医療機関の例。医療保険などの社会保障制度は税や保険料によって支えられています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Koto_Hospital.JPG/500px-Koto_Hospital.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Koto_Hospital.JPG",
+              "credit": "Waka77",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。商用利用可能。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261106-100",
@@ -39,10 +94,65 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261106-100-R01",
+          "images": [
+            {
+              "id": "20261106-100-R01-I01",
+              "type": "photo",
+              "title": "世界貿易機関の本部",
+              "caption": "資料写真：スイスのジュネーブにある世界貿易機関（WTO）本部の正面入り口。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Cwr_main_entrance.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Cwr_main_entrance.jpg",
+              "credit": "Pierre-Yves Dhinaut / World Trade Organization",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明示し、改変時は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261106-100-R02",
+          "images": [
+            {
+              "id": "20261106-100-R02-I01",
+              "type": "photo",
+              "title": "横浜港のコンテナ船",
+              "caption": "資料写真：外国との貨物輸送に使われるコンテナ船。輸入品には品物に応じて関税がかかる場合があります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/YM_Earth_%28ship%2C_2003%29_001.jpg/960px-YM_Earth_%28ship%2C_2003%29_001.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:YM_Earth_(ship,_2003)_001.jpg",
+              "credit": "Kabacchi",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。商用利用可能。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261106-100-R03",
+          "images": [
+            {
+              "id": "20261106-100-R03-I01",
+              "type": "photo",
+              "title": "日本の水田",
+              "caption": "資料写真：6月の水田。国内で食料を生産する農業の例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Japanese_rice_field_01.jpg/960px-Japanese_rice_field_01.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_rice_field_01.jpg",
+              "credit": "Corpse Reviver",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明示し、改変時は同一または互換ライセンスを適用。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 2,
-  "related_count": 0,
-  "image_count": 2
+  "related_count": 6,
+  "image_count": 8
 }
