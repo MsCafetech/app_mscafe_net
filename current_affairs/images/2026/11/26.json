@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 47,
-  "image_count": 68,
+  "related_count": 49,
+  "image_count": 70,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -1186,6 +1186,24 @@
               "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-018-R03",
+          "images": [
+            {
+              "id": "20261126-018-R03-I01",
+              "type": "historical",
+              "title": "明治時代の長浜旧開知学校",
+              "caption": "資料写真：明治時代末期の長浜旧開知学校。近代的な学校制度が整えられた時代の校舎です。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Nagahama_Kaichi_School_late_Meiji_era.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nagahama_Kaichi_School_late_Meiji_era.jpg",
+              "credit": "撮影者不明／長浜みーな協会『みーな』",
+              "license": "パブリックドメイン（著作権保護期間満了）",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Nagahama_Kaichi_School_late_Meiji_era.jpg",
+              "usage_notes": "旧写真の著作権保護期間満了。資料の出典を表示。",
+              "is_reference": true
+            }
+          ]
         }
       ]
     },
@@ -1260,6 +1278,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用・改変可能。資料写真として明記し、出典と作者を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-020-R03",
+          "images": [
+            {
+              "id": "20261126-020-R03-I01",
+              "type": "photo",
+              "title": "海藻の森にすむウニとヒトデ",
+              "caption": "資料写真：米国モントレー湾の海藻の森にすむウニとヒトデ。さまざまな生き物が関わり合っています。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Leather_Star_And_Purple_Sea_Urchins_%2840176629520%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Leather_Star_And_Purple_Sea_Urchins_(40176629520).jpg",
+              "credit": "Chad King / NOAA",
+              "license": "パブリックドメイン（米国政府著作物）",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Leather_Star_And_Purple_Sea_Urchins_(40176629520).jpg",
+              "usage_notes": "NOAA職員が職務上作成した画像。作者・出典を表示。",
+              "is_reference": true
             }
           ]
         }
