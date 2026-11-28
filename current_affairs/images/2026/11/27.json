@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 52,
-  "image_count": 72,
+  "related_count": 55,
+  "image_count": 75,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -929,6 +929,24 @@
               "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
             }
           ]
+        },
+        {
+          "related_id": "20261127-012-R03",
+          "images": [
+            {
+              "id": "20261127-012-R03-I01",
+              "type": "map",
+              "title": "日本と東南アジアの地図",
+              "caption": "資料地図：日本と東南アジア諸国連合（ASEAN）の位置。",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Map_Highlighting_ASEAN_and_Japan.svg/960px-Map_Highlighting_ASEAN_and_Japan.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Map_Highlighting_ASEAN_and_Japan.svg",
+              "credit": "Byrnachi",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "著作者がパブリックドメインに提供。作者・出典を表示。",
+              "is_reference": true
+            }
+          ]
         }
       ]
     },
@@ -1223,6 +1241,42 @@
               "credit": "hyolee2",
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-018-R01",
+          "images": [
+            {
+              "id": "20261127-018-R01-I01",
+              "type": "photo",
+              "title": "京都・祇園祭の山鉾",
+              "caption": "資料写真：京都の祇園祭の山鉾。八代妙見祭と同じ「山・鉾・屋台行事」の一例です。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Yamaboko_Gion.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Yamaboko_Gion.jpg",
+              "credit": "Japanexperterna",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-018-R02",
+          "images": [
+            {
+              "id": "20261127-018-R02-I01",
+              "type": "photo",
+              "title": "京都・祇園祭の山鉾",
+              "caption": "資料写真：京都の祇園祭の山鉾。八代妙見祭と同じ「山・鉾・屋台行事」の一例です。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Yamaboko_Gion.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Yamaboko_Gion.jpg",
+              "credit": "Japanexperterna",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
               "is_reference": true
             }
