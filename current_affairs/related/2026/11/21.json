@@ -3,7 +3,7 @@
   "date": "2026-11-21",
   "language": "ja",
   "question_count": 3,
-  "related_count": 5,
+  "related_count": 9,
   "questions": [
     {
       "question_id": "20261121-001",
@@ -101,6 +101,47 @@
               "url": "https://www.kunaicho.go.jp/learn/institution/seido/seido01.html"
             }
           ]
+        },
+        {
+          "id": "20261121-002-R02",
+          "relation_type": "question",
+          "title": "日本国憲法（けんぽう）の三原則",
+          "description": "日本国憲法は、国の政治の基本となる三つの考え方を示しています。政治の最終的な決定権が国民にある国民主権（こくみんしゅけん）、一人一人の権利を守る基本的人権の尊重（そんちょう）、戦争をしない平和な世界を目指す平和主義です。天皇の地位も、主権を持つ国民の意思に基づいています。",
+          "relationship": "象徴の規定を入口に国民主権・基本的人権の尊重・平和主義を学ぶ",
+          "keywords": [
+            "日本国憲法",
+            "国民主権",
+            "基本的人権",
+            "平和主義"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館",
+              "url": "https://www.ndl.go.jp/constitution/etc/j01.html"
+            }
+          ]
+        },
+        {
+          "id": "20261121-002-R03",
+          "relation_type": "question",
+          "title": "シンガポールの位置と海上交通",
+          "description": "シンガポールは東南アジアのマレー半島の南端近くにある国です。周辺にはマラッカ海峡（かいきょう）とシンガポール海峡があり、アジアと中東、ヨーロッパなどを結ぶ船が通ります。日本への石油などの輸送にも重要な海上交通路で、沿岸の国々や利用国が航行の安全を守るために協力しています。",
+          "relationship": "交流相手の都市国家と東南アジアの航路を地図で学ぶ",
+          "keywords": [
+            "シンガポール",
+            "マラッカ海峡",
+            "海上交通"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/maritime/gaikoh/masi/index.html"
+            },
+            {
+              "name": "JICA",
+              "url": "https://www.jica.go.jp/oda/project/0805000/"
+            }
+          ]
         }
       ]
     },
@@ -126,6 +167,51 @@
             {
               "name": "国際連合ジュネーブ事務所",
               "url": "https://www.ungeneva.org/en/about/organizations"
+            }
+          ]
+        },
+        {
+          "id": "20261121-100-R02",
+          "relation_type": "question",
+          "title": "スイスとヨーロッパの地理",
+          "description": "スイスはヨーロッパの中央部にある海に面していない国です。ドイツ、フランス、イタリア、オーストリア、リヒテンシュタインと国境を接しています。国土にはアルプス山脈が広がり、中部には平原があります。山脈や国境の位置を地図で確かめると、ヨーロッパの国々のつながりが分かります。",
+          "relationship": "内陸国の位置と周辺国を地図で確認する",
+          "keywords": [
+            "スイス",
+            "ヨーロッパ",
+            "アルプス山脈",
+            "内陸国"
+          ],
+          "sources": [
+            {
+              "name": "スイス連邦外務省",
+              "url": "https://www.aboutswitzerland.eda.admin.ch/ja/chiri"
+            },
+            {
+              "name": "スイス連邦外務省",
+              "url": "https://www.aboutswitzerland.eda.admin.ch/ja/arupususanmyaku"
+            }
+          ]
+        },
+        {
+          "id": "20261121-100-R03",
+          "relation_type": "question",
+          "title": "国際条約と各国の協力",
+          "description": "条約は国どうしなどが交わす、国際法に基づく約束です。貿易や環境（かんきょう）の保護、人権、平和など、国をこえて取り組む問題について約束を作ります。国際社会では、参加した国が約束を守り、話し合いを通して問題を解決することが大切です。",
+          "relationship": "国際ルールを国同士が話し合い取り決める仕組み",
+          "keywords": [
+            "国際条約",
+            "国際法",
+            "国際協力"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/kids/q_a/mondai.html"
+            },
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/annai/honsho/sosiki/joyaku.html"
             }
           ]
         }
