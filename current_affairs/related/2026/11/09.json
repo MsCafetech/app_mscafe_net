@@ -3,7 +3,7 @@
   "date": "2026-11-09",
   "language": "ja",
   "question_count": 2,
-  "related_count": 2,
+  "related_count": 6,
   "questions": [
     {
       "question_id": "20261109-001",
@@ -23,6 +23,47 @@
             {
               "name": "外務省「日・ベトナム首脳会談」",
               "url": "https://www.mofa.go.jp/mofaj/s_sa/sea1/vn/pageit_000001_00016.html"
+            }
+          ]
+        },
+        {
+          "id": "20261109-001-R02",
+          "relation_type": "answer",
+          "title": "ベトナムの位置と首都",
+          "description": "ベトナムは東南アジアのインドシナ半島の東側に位置し、南北に細長い国です。北に中国、西にラオスやカンボジアがあります。首都は北部のハノイです。南部のホーチミン市も大きな都市で、地図では首都と区別して覚えましょう。",
+          "relationship": "東南アジアの地図で国と首都の位置を学ぶ",
+          "keywords": [
+            "ベトナム",
+            "ハノイ",
+            "東南アジア"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/area/vietnam/data.html"
+            }
+          ]
+        },
+        {
+          "id": "20261109-001-R03",
+          "relation_type": "question",
+          "title": "ベトナムの稲作と気候",
+          "description": "ベトナム南部にはメコン川が運んだ土砂でできた広い平野があり、米作りが盛んです。季節風（モンスーン）の影響（えいきょう）を受け、雨が多い雨季と雨が少ない乾季（かんき）があります。暖かい気候や川の水を利用して農業が行われています。",
+          "relationship": "季節風の影響を受ける地域の稲作を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "ベトナム",
+            "稲作",
+            "メコンデルタ",
+            "季節風"
+          ],
+          "sources": [
+            {
+              "name": "JICA",
+              "url": "https://www.jica.go.jp/oda/project/VN17-P2/"
+            },
+            {
+              "name": "ベトナム観光局",
+              "url": "https://vietnam.travel/jp/places-to-go/mekong-delta/mekong-delta"
             }
           ]
         }
@@ -47,6 +88,46 @@
             {
               "name": "国連気候変動枠組条約事務局",
               "url": "https://unfccc.int/process-and-meetings/the-paris-agreement"
+            }
+          ]
+        },
+        {
+          "id": "20261109-002-R02",
+          "relation_type": "answer",
+          "title": "締約国会議（ていやくこくかいぎ）と国際条約",
+          "description": "条約は国どうしなどで交わす国際的な約束です。条約に参加する国などが集まり、約束を実行する方法や今後の取り組みを話し合う会議を締約国会議といいます。気候変動枠組条約の会議はCOPとよばれ、地球温暖化に対する協力を進めています。",
+          "relationship": "条約に参加した国などが協力して話し合う仕組み",
+          "keywords": [
+            "締約国会議",
+            "COP",
+            "国際条約"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/earth/copcmpcma.html"
+            }
+          ]
+        },
+        {
+          "id": "20261109-002-R03",
+          "relation_type": "question",
+          "title": "温室効果と地球温暖化",
+          "description": "太陽の光で温められた地球は、熱を宇宙へ放出しています。大気中の二酸化炭素などはその熱の一部を吸収（きゅうしゅう）し、地球を暖かく保ちます。これを温室効果といいます。温室効果ガスが増えると熱が逃げにくくなり、地球全体の気温が上がる原因になります。",
+          "relationship": "二酸化炭素などの温室効果ガスと気温の関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "温室効果",
+            "二酸化炭素",
+            "地球温暖化"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/ghg/term_ghg.html"
+            },
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/faq/faq6.html"
             }
           ]
         }
