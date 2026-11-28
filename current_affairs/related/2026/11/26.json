@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 69,
+  "related_count": 70,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -522,6 +522,25 @@
             {
               "name": "財務省",
               "url": "https://www.mof.go.jp/public_relations/finance/202507/202507f.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-006-R04",
+          "relation_type": "answer",
+          "title": "海面上昇（かいめんじょうしょう）と島の暮らし",
+          "description": "マーシャル諸島では、海面の上昇や海岸の浸食（しんしょく）、海水による浸水（しんすい）などが、町や道路、暮らしを支える施設（しせつ）への危険を高めています。首都マジュロでは、海岸を守る対策や公共施設の強化、災害（さいがい）への備えを進めています。海に囲まれた島々の暮らしを考えるうえで、気候変動への対応は大切な課題です。",
+          "relationship": "マーシャル諸島の地理と、海面上昇が暮らしに与える影響（えいきょう）を結び付けて学びます。",
+          "keywords": [
+            "マーシャル諸島",
+            "海面上昇",
+            "浸水",
+            "気候変動"
+          ],
+          "sources": [
+            {
+              "name": "世界銀行",
+              "url": "https://www.worldbank.org/en/news/press-release/2026/04/08/new-world-bank-support-to-strengthen-disaster-resilience-and-protect-jobs-in-the-marshall-islands"
             }
           ]
         }
