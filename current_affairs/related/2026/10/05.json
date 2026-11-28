@@ -2,9 +2,52 @@
   "schema_version": 1,
   "date": "2026-10-05",
   "language": "ja",
-  "question_count": 3,
-  "related_count": 5,
+  "question_count": 4,
+  "related_count": 7,
   "questions": [
+    {
+      "question_id": "20261005-001",
+      "related": [
+        {
+          "id": "20261005-001-R01",
+          "relation_type": "question",
+          "title": "脊髄と反射",
+          "description": "脳（のう）につながる脊髄（せきずい）は、体の各部分と情報をやりとりするほか、反射（はんしゃ）にも関わります。反射とは、刺激（しげき）に対して体が自然に起こす反応です。ひざの下を軽くたたくと足が動く反射などがあり、脊髄や脳の一部が情報を受けて筋肉に信号を送ります。",
+          "relationship": "神経を伝わる情報が、体の反応にどのように結びつくかを学ぶ。",
+          "keywords": [
+            "脊髄",
+            "脳",
+            "反射",
+            "神経"
+          ],
+          "sources": [
+            {
+              "name": "理化学研究所",
+              "url": "https://www.riken.jp/medialibrary/riken/pr/publications/news/2004/rn200402-02.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261005-001-R02",
+          "relation_type": "question",
+          "title": "光で神経の働きを調べる",
+          "description": "光遺伝学（ひかりいでんがく）は、光に反応する分子を利用し、特定の神経細胞（しんけいさいぼう）の活動を光で変える研究方法です。活動を強めたりおさえたりしたときに、動物の行動がどう変わるかを調べることで、それぞれの神経の働きを考える手がかりになります。",
+          "relationship": "ニュースに登場する光遺伝学を使い、神経の役割を調べる方法を学ぶ。",
+          "keywords": [
+            "光遺伝学",
+            "神経細胞",
+            "脳科学",
+            "研究"
+          ],
+          "sources": [
+            {
+              "name": "生理学研究所",
+              "url": "https://www.nips.ac.jp/srpbs/media/newsletter/vol_12.pdf"
+            }
+          ]
+        }
+      ]
+    },
     {
       "question_id": "20261005-002",
       "related": [
