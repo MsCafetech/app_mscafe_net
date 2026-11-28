@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 44,
-  "image_count": 65,
+  "related_count": 46,
+  "image_count": 67,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -944,7 +944,26 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示する。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-014-R02",
+          "images": [
+            {
+              "id": "20261126-014-R02-I01",
+              "type": "photo",
+              "title": "原子力発電所の蒸気タービン",
+              "caption": "資料写真：ロシアの原子力発電所にある蒸気タービン。蒸気の力で回転します。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/BalakovoNPP_turb.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:BalakovoNPP_turb.JPG",
+              "credit": "Alexander Seetenky",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-015",
@@ -1169,7 +1188,26 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。改変時は明示し、派生作品は同等ライセンスで配布。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-019-R02",
+          "images": [
+            {
+              "id": "20261126-019-R02-I01",
+              "type": "photo",
+              "title": "卵を産む哺乳類、カモノハシ",
+              "caption": "資料写真：水族館のカモノハシ。卵を産む哺乳類の一つです。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Platypus.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Platypus.jpg",
+              "credit": "Stefan Kraft",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-020",
