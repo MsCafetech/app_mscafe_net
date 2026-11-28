@@ -20,10 +20,139 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261105-001-R01",
+          "images": [
+            {
+              "id": "20261105-001-R01-I01",
+              "type": "photo",
+              "title": "書道の練習",
+              "caption": "資料写真：筆と墨を使う書道の練習。受け継がれてきた技術の例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Japanese_calligraphy_in_action_01.jpg/960px-Japanese_calligraphy_in_action_01.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_calligraphy_in_action_01.jpg",
+              "credit": "Douglas Perkins",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。商用利用可能。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261105-001-R02",
+          "images": [
+            {
+              "id": "20261105-001-R02-I01",
+              "type": "photo",
+              "title": "佐渡の能舞台",
+              "caption": "資料写真：佐渡で上演された能。演じる人や演奏する人が伝統芸能を支えています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Noh_Performance_%28235951661%29.jpeg/960px-Noh_Performance_%28235951661%29.jpeg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Noh_Performance_%28235951661%29.jpeg",
+              "credit": "Yoshiyuki Ito",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明示し、改変時は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261105-001-R03",
+          "images": [
+            {
+              "id": "20261105-001-R03-I01",
+              "type": "photo",
+              "title": "佐渡の能舞台",
+              "caption": "資料写真：佐渡で上演された能。演じる人や演奏する人が伝統芸能を支えています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Noh_Performance_%28235951661%29.jpeg/960px-Noh_Performance_%28235951661%29.jpeg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Noh_Performance_%28235951661%29.jpeg",
+              "credit": "Yoshiyuki Ito",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明示し、改変時は同一または互換ライセンスを適用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261105-002",
+      "images": [
+        {
+          "id": "20261105-002-I01",
+          "type": "photo",
+          "title": "共同訓練マラバールの艦船",
+          "caption": "資料写真：2020年の共同訓練マラバールに参加した艦船。今回の訓練の写真ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/US%2C_Indian_and_Australian_Navy_ships_participating_in_Malabar_2020.jpg/960px-US%2C_Indian_and_Australian_Navy_ships_participating_in_Malabar_2020.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:US%2C_Indian_and_Australian_Navy_ships_participating_in_Malabar_2020.jpg",
+          "credit": "海上自衛隊",
+          "license": "Government of Japan Standard Terms of Use 2.0 (CC BY 4.0 compatible)",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "海上自衛隊の出典を表示。政府標準利用規約2.0に基づく利用。変更時は明示。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261105-002-R01",
+          "images": [
+            {
+              "id": "20261105-002-R01-I01",
+              "type": "map",
+              "title": "日本列島と小笠原諸島周辺",
+              "caption": "資料地図：日本列島の南に島々が連なる様子を示した地形図。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Map_of_ogasawara_islands.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_ogasawara_islands.png",
+              "credit": "DEMIS World Map Server / Tdk",
+              "license": "Public Domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。商用利用可能。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261105-002-R02",
+          "images": [
+            {
+              "id": "20261105-002-R02-I01",
+              "type": "photo",
+              "title": "国際海難救助訓練に参加する巡視船",
+              "caption": "資料写真：2025年6月、日本・米国・フィリピンの海難救助訓練に参加した海上保安庁の巡視船。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/USCG_Cutter_Stratton_%28WMSL_752%29_conducts_trilateral_engagements_with_Japan_Coast_Guard_and_Philippine_Coast_Guard_in_Kagoshima%2C_Japan_%289130605%29.jpg/960px-USCG_Cutter_Stratton_%28WMSL_752%29_conducts_trilateral_engagements_with_Japan_Coast_Guard_and_Philippine_Coast_Guard_in_Kagoshima%2C_Japan_%289130605%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:USCG_Cutter_Stratton_%28WMSL_752%29_conducts_trilateral_engagements_with_Japan_Coast_Guard_and_Philippine_Coast_Guard_in_Kagoshima%2C_Japan_%289130605%29.jpg",
+              "credit": "U.S. Coast Guard / Kate Kilroy",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。商用利用可能。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261105-002-R03",
+          "images": [
+            {
+              "id": "20261105-002-R03-I01",
+              "type": "map",
+              "title": "日本列島を囲む海",
+              "caption": "資料地図：日本海、太平洋、東シナ海、オホーツク海などの位置を示す地図。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Sea-of-Japan-Map-Japanese-%E6%97%A5%E6%9C%AC%E6%B5%B7%E3%81%AE%E5%9C%B0%E5%9B%B3.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Sea-of-Japan-Map-Japanese-%E6%97%A5%E6%9C%AC%E6%B5%B7%E3%81%AE%E5%9C%B0%E5%9B%B3.png",
+              "credit": "DEMIS World Map Server, Artanisen",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。商用利用可能。"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "question_count": 1,
-  "related_count": 0,
-  "image_count": 1
+  "question_count": 2,
+  "related_count": 6,
+  "image_count": 8
 }
