@@ -20,10 +20,65 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261104-001-R01",
+          "images": [
+            {
+              "id": "20261104-001-R01-I01",
+              "type": "photo",
+              "title": "アメリカの連邦議会議事堂",
+              "caption": "資料写真：アメリカの連邦議会議事堂。上院と下院が法律について話し合う場所です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/United_States_Capitol_-_west_front.jpg/960px-United_States_Capitol_-_west_front.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_-_west_front.jpg",
+              "credit": "Architect of the Capitol",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261104-001-R02",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "アメリカの中間選挙の投票率",
+              "caption": "資料図：1946年から2018年までのアメリカ中間選挙の投票率。4年ごとに行われていることも読み取れます。2018年は推計値です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Turnout_in_US_midterm_elections.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Turnout_in_US_midterm_elections.png",
+              "credit": "Orser67 / Michael McDonald (データ)",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明示し、改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261104-001-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261104-001-R03",
+          "images": [
+            {
+              "type": "photo",
+              "title": "日本の選挙の投票箱",
+              "caption": "資料写真：2024年静岡県知事選挙の投票箱。投票を始める前に中が空であることを確認する様子です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Zero-vote_confirmation_02.jpg/960px-Zero-vote_confirmation_02.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Zero-vote_confirmation_02.jpg",
+              "credit": "Halowand",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明示し、改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261104-001-R03-I01"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 1,
-  "related_count": 0,
-  "image_count": 1
+  "related_count": 3,
+  "image_count": 4
 }
