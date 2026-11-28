@@ -20,10 +20,65 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261102-001-R01",
+          "images": [
+            {
+              "type": "map",
+              "title": "富士山火山防災マップ",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Hazard_Map_of_Mt.Fuji_common_l.jpg/960px-Hazard_Map_of_Mt.Fuji_common_l.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hazard_Map_of_Mt.Fuji_common_l.jpg",
+              "credit": "富士山火山防災協議会／内閣府防災のページ",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "出典・作者・ライセンスを表示し、変更時は明示。2004年の学習用資料であり、実際の避難判断には最新の自治体資料を使用。",
+              "caption": "資料地図：2004年の富士山火山防災マップ。噴火に伴うさまざまな危険の範囲を地図で確認する例です。",
+              "id": "20261102-001-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261102-001-R02",
+          "images": [
+            {
+              "type": "map",
+              "title": "富士山火山防災マップ",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Hazard_Map_of_Mt.Fuji_common_l.jpg/960px-Hazard_Map_of_Mt.Fuji_common_l.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hazard_Map_of_Mt.Fuji_common_l.jpg",
+              "credit": "富士山火山防災協議会／内閣府防災のページ",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "出典・作者・ライセンスを表示し、変更時は明示。2004年の学習用資料であり、実際の避難判断には最新の自治体資料を使用。",
+              "caption": "資料地図：富士山の噴火に備える防災マップの例。危険な場所を確認して避難に備えます。2004年作成の資料です。",
+              "id": "20261102-001-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261102-001-R03",
+          "images": [
+            {
+              "id": "20261102-001-R03-I01",
+              "type": "photo",
+              "title": "消防隊などが協力する防災訓練",
+              "caption": "資料写真：相模原市の総合防災訓練。消防隊などが協力して救助の練習を行います。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/USAG_Japan_trains_alongside_Sagamihara_City_partners_to_ensure_community_safety_%2810066872%29.jpg/960px-USAG_Japan_trains_alongside_Sagamihara_City_partners_to_ensure_community_safety_%2810066872%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:USAG_Japan_trains_alongside_Sagamihara_City_partners_to_ensure_community_safety_%2810066872%29.jpg",
+              "credit": "U.S. Army / Noriko Kudo",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 1,
-  "related_count": 0,
-  "image_count": 1
+  "related_count": 3,
+  "image_count": 4
 }
