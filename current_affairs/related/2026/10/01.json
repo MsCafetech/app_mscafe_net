@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-01",
+  "language": "ja",
+  "questions": [
+    {
+      "question_id": "20261001-001",
+      "related": [
+        {
+          "id": "20261001-001-R01",
+          "relation_type": "answer",
+          "title": "前線と空気の境目",
+          "description": "冷たい空気が暖かい空気の下に入りこむ寒冷前線では、強い雨が短時間に降ることがあります。暖かい空気が冷たい空気の上にのぼる温暖前線では、広い範囲（はんい）で雨が続くことがあります。",
+          "relationship": "前線の種類による雨の降り方の違いを学ぶ。",
+          "keywords": [
+            "寒冷前線",
+            "温暖前線"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kids/kids/faq/a5_20.html"
+            }
+          ]
+        },
+        {
+          "id": "20261001-001-R02",
+          "relation_type": "question",
+          "title": "秋雨前線と長雨",
+          "description": "秋雨前線は夏から秋に変わる時期に日本付近に現れる停滞前線（ていたいぜんせん）です。前線が同じ場所の近くにとどまるため、雨の日が続きやすくなります。春から夏にかけての梅雨前線（ばいうぜんせん）も同じ仲間です。",
+          "relationship": "季節の変化と長雨の関係を学ぶ。",
+          "keywords": [
+            "秋雨前線",
+            "停滞前線",
+            "梅雨前線"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/yougo_hp/haichi3.html"
+            }
+          ]
+        },
+        {
+          "id": "20261001-001-R03",
+          "relation_type": "answer",
+          "title": "低気圧と天気の変化",
+          "description": "前線をともなう低気圧では、進む方向の前方に温暖前線、後方に寒冷前線が見られることがあります。温暖前線では雲が広がり、寒冷前線では背の高い雲が発達して強い雨が降ることがあります。天気図で前線の位置を調べると天気の変化を考える手がかりになります。",
+          "relationship": "低気圧と前線の位置から天気の変化を学ぶ。",
+          "keywords": [
+            "低気圧",
+            "天気図",
+            "前線"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/expert/pdf/tenkizu/06_kaiseki.pdf"
+            },
+            {
+              "name": "気象庁 はれるんランド",
+              "url": "https://www.jma.go.jp/jma/kids/kids/faq/a5_20.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "question_count": 1,
+  "related_count": 3
+}
