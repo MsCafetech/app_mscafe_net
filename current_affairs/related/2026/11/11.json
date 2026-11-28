@@ -3,7 +3,7 @@
   "date": "2026-11-11",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261111-001",
@@ -23,6 +23,47 @@
             {
               "name": "関西電力「美浜発電所3号機の50年以降運転における長期施設管理計画の認可」",
               "url": "https://www.kepco.co.jp/corporate/pr/2026/pdf/20261111_2j.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261111-001-R02",
+          "relation_type": "answer",
+          "title": "日本海と福井県の位置",
+          "description": "福井県は本州の中部にあり、日本海に面しています。石川県や岐阜県、滋賀県、京都府と接しています。県の南西部には若狭湾（わかさわん）があり、海岸線には入り組んだ場所もあります。地図で日本海と若狭湾の位置を確かめましょう。",
+          "relationship": "日本海に面する県とその位置を地図で確認する",
+          "keywords": [
+            "福井県",
+            "日本海",
+            "若狭湾"
+          ],
+          "sources": [
+            {
+              "name": "福井県",
+              "url": "https://www.pref.fukui.lg.jp/doc/about/map.html"
+            },
+            {
+              "name": "福井県",
+              "url": "https://www.pref.fukui.lg.jp/doc/suisan/ryutsu/jizakana.html"
+            }
+          ]
+        },
+        {
+          "id": "20261111-001-R03",
+          "relation_type": "question",
+          "title": "日本海側の冬の気候",
+          "description": "冬には大陸から冷たい北西の季節風が吹きます。この風が日本海をわたるときに海から水蒸気を受け取り、雪雲ができます。湿（しめ）った空気が山にぶつかって上にのぼると、雪が降りやすくなります。そのため、日本海側は冬に雪の日が多く、太平洋側では晴れる日が多くなります。",
+          "relationship": "季節風と日本海からの水蒸気が雪を降らせる仕組みを元問題とのつながりから学ぶ。",
+          "keywords": [
+            "日本海側",
+            "季節風",
+            "雪",
+            "水蒸気"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kids/kids/faq/a1_26.html"
             }
           ]
         }

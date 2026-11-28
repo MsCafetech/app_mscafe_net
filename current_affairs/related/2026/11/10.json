@@ -3,7 +3,7 @@
   "date": "2026-11-10",
   "language": "ja",
   "question_count": 3,
-  "related_count": 3,
+  "related_count": 9,
   "questions": [
     {
       "question_id": "20261110-001",
@@ -23,6 +23,42 @@
             {
               "name": "WWFジャパン「地球環境の危機と希望」",
               "url": "https://www.wwf.or.jp/activities/lib/6415.html"
+            }
+          ]
+        },
+        {
+          "id": "20261110-001-R02",
+          "relation_type": "answer",
+          "title": "生物多様性と生息地（せいそくち）の保全",
+          "description": "地球にはさまざまな種類の生き物がいて、森林や川、湖などで生活しています。生き物の種類や住む場所などの豊かさを生物多様性といいます。生き物が暮らす場所が失われると、そこに住む生き物も減ることがあります。自然の環境（かんきょう）を守ることは、生物多様性を守るために重要です。",
+          "relationship": "生物が暮らす環境を守る意味を調べる",
+          "keywords": [
+            "生物多様性",
+            "生息地",
+            "保全"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/nature/biodiversity/kihonhou.html"
+            }
+          ]
+        },
+        {
+          "id": "20261110-001-R03",
+          "relation_type": "question",
+          "title": "食物連鎖（しょくもつれんさ）と生物のつながり",
+          "description": "植物は光合成で養分を作る生産者です。植物を食べる動物や、その動物を食べる動物を消費者といいます。例えば草をバッタが食べ、そのバッタをカエルが食べます。このように食べる・食べられる関係がつながることを食物連鎖といいます。生き物が減ると、ほかの生き物にも影響（えいきょう）が出ることがあります。",
+          "relationship": "生息地を守ることと食べる・食べられる関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "食物連鎖",
+            "生産者",
+            "消費者"
+          ],
+          "sources": [
+            {
+              "name": "大日本図書",
+              "url": "https://cc.dainippon-tosho.co.jp/er/2024/contents/link/sdgs68.html"
             }
           ]
         }
@@ -48,6 +84,44 @@
               "url": "https://www.mofa.go.jp/mofaj/gaiko/summit/ko_2000/faq/index.html"
             }
           ]
+        },
+        {
+          "id": "20261110-002-R02",
+          "relation_type": "answer",
+          "title": "G7の参加国と役割",
+          "description": "G7は日本、アメリカ、イギリス、フランス、ドイツ、イタリア、カナダの7か国を中心とした国際的なグループです。欧州連合（おうしゅうれんごう、EU）も参加します。世界の経済や平和、環境（かんきょう）など、一つの国だけでは解決しにくい問題について話し合います。",
+          "relationship": "先進国の首脳や外相が国際課題を話し合う枠組み",
+          "keywords": [
+            "G7",
+            "国際協力",
+            "EU"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/summit/hiroshima23/summit/about/faq/"
+            }
+          ]
+        },
+        {
+          "id": "20261110-002-R03",
+          "relation_type": "question",
+          "title": "カナダの自然と産業",
+          "description": "カナダは北アメリカ大陸の北部にあり、広い森林や豊かな地下資源を持ちます。木材などの林産品や石油、天然ガス、農産品などは日本にも輸出されています。一方、日本からは自動車や機械などを輸出しています。国によって自然条件や産業が異なるため、貿易によって互いに必要な品物を得ています。",
+          "relationship": "カナダの位置と森林・鉱産資源などの産業を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "カナダ",
+            "北アメリカ",
+            "森林",
+            "資源",
+            "貿易"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/area/canada/data.html"
+            }
+          ]
         }
       ]
     },
@@ -69,6 +143,43 @@
             {
               "name": "農林水産省「食料システム法に基づく指導について」",
               "url": "https://www.maff.go.jp/j/press/shokuhin/kikaku/261110.html"
+            }
+          ]
+        },
+        {
+          "id": "20261110-003-R02",
+          "relation_type": "answer",
+          "title": "第一次産業と農業",
+          "description": "自然を利用して食料や原料などを得る農業、林業、漁業を第一次産業といいます。農業で作られた米を工場で加工する仕事は第二次産業、店で売る仕事は第三次産業です。食べ物が私たちに届くまでには、さまざまな産業が関わっています。",
+          "relationship": "自然を利用する農業・漁業・林業の分類",
+          "keywords": [
+            "第一次産業",
+            "農業",
+            "林業",
+            "漁業"
+          ],
+          "sources": [
+            {
+              "name": "農林水産省",
+              "url": "https://www.maff.go.jp/j/tokei/sihyo/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261110-003-R03",
+          "relation_type": "question",
+          "title": "農業と食料自給率（しょくりょうじきゅうりつ）",
+          "description": "食料自給率は、国内で使う食料のうち国内で生産した分の割合を示すものです。食料全体を比べる場合には、食べ物から得られるエネルギーなどを基準にする方法があります。国内の農業を支え、食料を安定して手に入れられるようにすることが大切です。",
+          "relationship": "国内の食料生産と輸入に頼る割合の関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "農業",
+            "食料自給率",
+            "食料供給"
+          ],
+          "sources": [
+            {
+              "name": "農林水産省",
+              "url": "https://www.maff.go.jp/j/zyukyu/zikyu_ritu/011.html"
             }
           ]
         }
