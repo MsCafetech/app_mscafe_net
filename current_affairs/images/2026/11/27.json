@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 17,
+  "question_count": 18,
   "related_count": 40,
-  "image_count": 56,
+  "image_count": 57,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -1051,6 +1051,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261127-018",
+      "images": [
+        {
+          "id": "20261127-018-I01",
+          "type": "photo",
+          "title": "地震で被害を受けた八代神社の神門",
+          "caption": "資料写真：2026年の熊本地震で被害を受けた八代神社の神門。8月に撮影。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Damage_to_the_sacred_gate_%28shinmon%29_of_Myoken-gu%2C_caused_by_the_2026_Kumamoto_Earthquake._Yatsushiro_City%2C_Japan.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Damage_to_the_sacred_gate_(shinmon)_of_Myoken-gu,_caused_by_the_2026_Kumamoto_Earthquake._Yatsushiro_City,_Japan.jpg",
+          "credit": "Katorisi",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。"
+        }
+      ],
+      "related": []
     }
   ]
 }
