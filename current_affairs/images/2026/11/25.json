@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 18,
-  "related_count": 50,
-  "image_count": 68,
+  "question_count": 20,
+  "related_count": 66,
+  "image_count": 86,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -369,6 +369,24 @@
               "license": "Public Domain",
               "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
               "usage_notes": "出典を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-014-R02",
+          "images": [
+            {
+              "id": "20261125-014-R02-I01",
+              "type": "photo",
+              "title": "防衛省庁舎",
+              "caption": "資料写真：2014年の東京都新宿区の防衛省庁舎。防衛政策の策定や見直しを担当する機関の施設です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Japan_Ministry_of_Defense_in_Ichigaya.png/960px-Japan_Ministry_of_Defense_in_Ichigaya.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japan_Ministry_of_Defense_in_Ichigaya.png",
+              "credit": "Guilhem Vellut",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
             }
           ]
         },
@@ -815,6 +833,24 @@
               "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-020-R03",
+          "images": [
+            {
+              "id": "20261125-020-R03-I01",
+              "type": "photo",
+              "title": "スマートフォン",
+              "caption": "資料写真：スマートフォン。年齢確認を行うサービスもありますが、写真は年齢確認の画面ではありません。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Smart-Phone.jpg/960px-Smart-Phone.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Smart-Phone.jpg",
+              "credit": "Ka Kit Pang",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
         }
       ]
     },
@@ -925,6 +961,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-022-R02",
+          "images": [
+            {
+              "id": "20261125-022-R02-I01",
+              "type": "photo",
+              "title": "特別養護老人ホーム",
+              "caption": "資料写真：2010年の日本の特別養護老人ホーム。介護保険のサービスを提供する施設の一例です。利用条件は年齢や認定などによって異なります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Special_elderly_nursing_home_of_Japan.jpg/960px-Special_elderly_nursing_home_of_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Special_elderly_nursing_home_of_Japan.jpg",
+              "credit": "Corpse Reviver",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
             }
           ]
         },
@@ -1075,6 +1129,24 @@
               "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-024-R03",
+          "images": [
+            {
+              "id": "20261125-024-R03-I01",
+              "type": "map",
+              "title": "中米とカリブ海の国々",
+              "caption": "資料地図：2021年の中米・カリブ海の地図。キューバ、ジャマイカ、ハイチなどの位置が分かります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Central_America_and_the_Caribbean_Political_Map_CIA_World_Factbook.png/960px-Central_America_and_the_Caribbean_Political_Map_CIA_World_Factbook.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Central_America_and_the_Caribbean_Political_Map_CIA_World_Factbook.png",
+              "credit": "CIA / The World Factbook",
+              "license": "Public Domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-CIA-WF",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
         }
       ]
     },
@@ -1187,6 +1259,116 @@
               "usage_notes": "NASA/JPL-Caltechを出典として表示。NASAの推奨・承認を示唆しない。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-027-R02",
+          "images": [
+            {
+              "id": "20261125-027-R02-I01",
+              "type": "diagram",
+              "title": "月の満ち欠けと公転",
+              "caption": "資料図：地球の周りを回る月と太陽の光の向き（黄色の矢印）。月の見え方が変わる仕組みを示しています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Lunar-Phase-Diagram.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Lunar-Phase-Diagram.png",
+              "credit": "Minesweeper / Before My Ken（視認性調整）",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-027-R03",
+          "images": [
+            {
+              "id": "20261125-027-R03-I01",
+              "type": "satellite",
+              "title": "月の南極の水の手がかり",
+              "caption": "資料画像：NASAの月探査機の観測に基づく図。青い部分は水の存在を示唆する観測結果で、実際に青い氷が見えるわけではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/LEND_Looks_for_Water_at_the_South_Pole.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:LEND_Looks_for_Water_at_the_South_Pole.jpg",
+              "credit": "Ernie Wright / NASA Scientific Visualization Studio",
+              "license": "Public Domain (US government)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-028",
+      "images": [
+        {
+          "id": "20261125-028-I01",
+          "type": "photo",
+          "title": "地域の食事支援の調理風景",
+          "caption": "資料写真：2011年の米国モンタナ州の食事支援活動で、食事の準備をする人々。日本の子ども食堂そのものの写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Meals_on_Wheels_food_prep.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Meals_on_Wheels_food_prep.jpg",
+          "credit": "U.S. Air Force / Airman 1st Class Katrina Heikkinen",
+          "license": "Public Domain (US government)",
+          "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Air_Force",
+          "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261125-028-R01",
+          "images": [
+            {
+              "id": "20261125-028-R01-I01",
+              "type": "photo",
+              "title": "食料支援のために集められた食品",
+              "caption": "資料写真：2012年のカナダ・トロントのフードバンク。支援に使う食品が箱に入れられています。日本の子ども食堂の写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Toronto_Consulate_volunteers_at_food_bank_-b.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Toronto_Consulate_volunteers_at_food_bank_-b.jpg",
+              "credit": "US Mission Canada",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-028-R02",
+          "images": [
+            {
+              "id": "20261125-028-R02-I01",
+              "type": "photo",
+              "title": "地域の食事支援の調理風景",
+              "caption": "資料写真：2011年の米国の食事支援活動で、食事を作るボランティア。地域で協力する活動の例です。日本の子ども食堂の写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Meals_on_Wheels_food_prep.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Meals_on_Wheels_food_prep.jpg",
+              "credit": "U.S. Air Force / Airman 1st Class Katrina Heikkinen",
+              "license": "Public Domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military-Air_Force",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-028-R03",
+          "images": [
+            {
+              "id": "20261125-028-R03-I01",
+              "type": "photo",
+              "title": "食料支援のために集められた食品",
+              "caption": "資料写真：カナダのフードバンクに集められた食品。地域の食料支援の例です。日本の制度や施設の写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Toronto_Consulate_volunteers_at_food_bank_-b.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Toronto_Consulate_volunteers_at_food_bank_-b.jpg",
+              "credit": "US Mission Canada",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
         }
       ]
     },
@@ -1207,7 +1389,136 @@
           "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261125-029-R01",
+          "images": [
+            {
+              "id": "20261125-029-R01-I01",
+              "type": "photo",
+              "title": "文部科学省の入口",
+              "caption": "資料写真：2009年の文部科学省の入口。行政機関が政策案などについて意見を募集する制度がパブリックコメントです。写真は意見募集画面ではありません。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg/960px-Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg",
+              "credit": "Dick Thomas Johnson",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-029-R02",
+          "images": [
+            {
+              "id": "20261125-029-R02-I01",
+              "type": "photo",
+              "title": "新潟県議会の庁舎",
+              "caption": "資料写真：2014年の新潟県議会。地方自治では条例などを議会で審議し、住民には直接請求などで参加する仕組みもあります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Building_of_Niigata_Prefectural_Assembly.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Building_of_Niigata_Prefectural_Assembly.JPG",
+              "credit": "KishujiRapid",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-029-R03",
+          "images": [
+            {
+              "id": "20261125-029-R03-I01",
+              "type": "photo",
+              "title": "選挙で使う投票箱",
+              "caption": "資料写真：2024年の静岡県知事選挙の投票箱。選挙は国民が政治に参加する方法の一つです。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Zero-vote_confirmation_02.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Zero-vote_confirmation_02.jpg",
+              "credit": "Halowand",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-030",
+      "images": [
+        {
+          "id": "20261125-030-I01",
+          "type": "photo",
+          "title": "新潟地方裁判所の庁舎",
+          "caption": "資料写真：2018年の新潟地方裁判所。今回の弾劾裁判が行われた場所を示す写真ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Niigata_District_Court_1.jpg/960px-Niigata_District_Court_1.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Niigata_District_Court_1.jpg",
+          "credit": "Ebiebi2",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261125-030-R01",
+          "images": [
+            {
+              "id": "20261125-030-R01-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：2015年の国会議事堂。裁判官弾劾裁判所は国会に設けられた機関です。写真は弾劾裁判の法廷そのものではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
+              "credit": "尾崎歩夢（Ayumu Ozaki）",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-030-R02",
+          "images": [
+            {
+              "id": "20261125-030-R02-I01",
+              "type": "photo",
+              "title": "新潟地方裁判所の庁舎",
+              "caption": "資料写真：2018年の新潟地方裁判所。裁判所は司法を担当し、裁判官は独立して判断します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Niigata_District_Court_1.jpg/960px-Niigata_District_Court_1.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Niigata_District_Court_1.jpg",
+              "credit": "Ebiebi2",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-030-R03",
+          "images": [
+            {
+              "id": "20261125-030-R03-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：2015年の国会議事堂。衆議院と参議院の二つの議院があります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
+              "credit": "尾崎歩夢（Ayumu Ozaki）",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261125-031",
@@ -1260,6 +1571,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用・加工可能。出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-031-R03",
+          "images": [
+            {
+              "id": "20261125-031-R03-I01",
+              "type": "photo",
+              "title": "長崎税関の庁舎",
+              "caption": "資料写真：2023年の長崎税関。輸出入する品物について税関の手続きが行われます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Nagasaki_Customs_ac.jpg/960px-Nagasaki_Customs_ac.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nagasaki_Customs_ac.jpg",
+              "credit": "Asturio Cantabrio",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
             }
           ]
         }
