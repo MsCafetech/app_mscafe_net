@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-06",
   "language": "ja",
-  "question_count": 3,
-  "related_count": 3,
+  "question_count": 4,
+  "related_count": 4,
   "questions": [
     {
       "question_id": "20261006-001",
@@ -72,6 +72,34 @@
             {
               "name": "宇宙航空研究開発機構（JAXA）",
               "url": "https://www.jaxa.jp/press/2026/10/20261006-1_j.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261006-004",
+      "related": [
+        {
+          "id": "20261006-004-R01",
+          "relation_type": "question",
+          "title": "建築士の仕事と工事監理",
+          "description": "建築士（けんちくし）は、建物の設計や工事監理（こうじかんり）などを行う専門家です。工事監理では、実際の工事を設計図などの内容と照らし合わせ、図面のとおりに進められているか確認します。一級建築士は、試験に合格し、国土交通大臣の免許を受けて仕事をします。",
+          "relationship": "設計などの契約に関わる建築士の仕事を学ぶ。",
+          "keywords": [
+            "建築士",
+            "設計",
+            "工事監理",
+            "建築"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/jutakukentiku/build/architect.html"
+            },
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/totikensangyo/const/content/001362396.pdf"
             }
           ]
         }
