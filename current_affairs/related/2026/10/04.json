@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "language": "ja",
+  "question_count": 1,
+  "related_count": 2,
+  "questions": [
+    {
+      "question_id": "20261004-001",
+      "related": [
+        {
+          "id": "20261004-001-R01",
+          "relation_type": "question",
+          "title": "アジア競技大会の歴史",
+          "description": "アジア競技大会は、アジアの国や地域の選手が多くのスポーツで競う国際大会です。原則として4年ごとに開かれ、第1回の夏の大会は1951年にインドのニューデリーで行われました。冬の大会もあり、第1回は1986年に日本の札幌（さっぽろ）で開かれました。",
+          "relationship": "愛知・名古屋大会をきっかけに、アジア競技大会の歴史を学ぶ。",
+          "keywords": [
+            "アジア競技大会",
+            "ニューデリー",
+            "札幌",
+            "国際交流"
+          ],
+          "sources": [
+            {
+              "name": "日本オリンピック委員会",
+              "url": "https://joc.or.jp/games/asia/"
+            }
+          ]
+        },
+        {
+          "id": "20261004-001-R02",
+          "relation_type": "answer",
+          "title": "天然ガスとLNGの輸送",
+          "description": "天然ガスの産出国の一つであるカタールからは、日本も天然ガスを輸入しています。天然ガスを約マイナス162度に冷やすと液体になり、体積は気体のときの約600分の1になります。この液化天然ガス（えきかてんねんガス、LNG）は、専用の船で大量に運ぶことができます。",
+          "relationship": "カタールなどの天然ガスを、日本へ運ぶための工夫を学ぶ。",
+          "keywords": [
+            "カタール",
+            "天然ガス",
+            "LNG",
+            "タンカー"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/category/resources_and_fuel/enecaree/assets/pdf/enecaree_seminar1.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
