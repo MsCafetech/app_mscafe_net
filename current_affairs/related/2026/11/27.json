@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 10,
-  "related_count": 27,
+  "question_count": 11,
+  "related_count": 30,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -592,6 +592,72 @@
             {
               "name": "宇宙科学研究所",
               "url": "https://curation.isas.jaxa.jp/sample-curation/ryugu/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-011",
+      "related": [
+        {
+          "id": "20261127-011-R01",
+          "relation_type": "answer",
+          "title": "連立政権と政党の協力",
+          "description": "連立政権（れんりつせいけん）は、二つ以上の政党が協力して作る政権です。一つの政党だけでは議会で十分な支持を得られない場合などに、政党どうしが政策を話し合い、協力することがあります。協力するときは、それぞれの政党の考えの違いを調整し、共通の目標を決めることが大切です。",
+          "relationship": "正解の連立政権が、政党間の話し合いを通じて作られる仕組みを学べます。",
+          "keywords": [
+            "連立政権",
+            "政党",
+            "議会",
+            "政策"
+          ],
+          "sources": [
+            {
+              "name": "衆議院",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_shitsumon.nsf/html/shitsumon/b219024.htm"
+            },
+            {
+              "name": "ニュージーランド議会",
+              "url": "https://www3.parliament.nz/en/visit-and-learn/parliament-in-election-year/how-votes-create-a-government/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-011-R02",
+          "relation_type": "answer",
+          "title": "選挙と議会の議席",
+          "description": "ニュージーランドの選挙では、有権者（ゆうけんしゃ）は政党に対する票と、地域の代表となる候補者（こうほしゃ）に対する票を投じます。政党に対する票の割合は、議会で各政党が得る議席（ぎせき）の数に大きく関わります。選ばれた議員は、法律を作ることや政府の仕事を確かめることなどを通じて、政治に参加します。",
+          "relationship": "連立政権を考えるうえで、選挙と議会の議席の関係が分かります。",
+          "keywords": [
+            "選挙",
+            "政党",
+            "議会",
+            "ニュージーランド"
+          ],
+          "sources": [
+            {
+              "name": "ニュージーランド議会",
+              "url": "https://www3.parliament.nz/en/visit-and-learn/parliament-in-election-year/how-votes-create-a-government/"
+            }
+          ]
+        },
+        {
+          "id": "20261127-011-R03",
+          "relation_type": "question",
+          "title": "ニュージーランドの位置と島々",
+          "description": "ニュージーランドは南半球（みなみはんきゅう）にある国で、太平洋の南西部に位置します。主な島には北島と南島があります。日本と同じく、海に囲まれた島国です。地図では、オーストラリアとの位置関係や、赤道より南にあることも確かめてみましょう。",
+          "relationship": "選挙が行われた国を、世界の地図の中で確認できます。",
+          "keywords": [
+            "ニュージーランド",
+            "オセアニア",
+            "南半球",
+            "島国"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/area/nz/data.html"
             }
           ]
         }
