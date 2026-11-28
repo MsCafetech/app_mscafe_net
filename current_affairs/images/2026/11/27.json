@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 12,
-  "related_count": 27,
-  "image_count": 38,
+  "question_count": 13,
+  "related_count": 30,
+  "image_count": 41,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -310,6 +310,24 @@
               "type": "photo",
               "title": "四日市市の工場と煙突",
               "caption": "資料写真：2007年に撮影された三重県四日市市の工場と煙突。四日市ぜんそくが問題になった高度経済成長期の写真ではなく、写っている工場が健康被害の原因であることを示すものではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/0704_Australia_Memorial_Hall_%26_Yokkaichi_complex.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:0704_Australia_Memorial_Hall_%26_Yokkaichi_complex.jpg",
+              "credit": "名古屋太郎",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "商用利用可。作者・出典・ライセンスを表示し、改変時は明記、派生作品は同等ライセンスで提供。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-005-R03",
+          "images": [
+            {
+              "id": "20261127-005-R03-I01",
+              "type": "photo",
+              "title": "四日市市の工場と煙突",
+              "caption": "資料写真：四日市の工場地帯。かつて工場などの排出物による大気汚染が四日市ぜんそくの原因となりました。",
               "is_reference": true,
               "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/0704_Australia_Memorial_Hall_%26_Yokkaichi_complex.jpg",
               "source_url": "https://commons.wikimedia.org/wiki/File:0704_Australia_Memorial_Hall_%26_Yokkaichi_complex.jpg",
@@ -715,7 +733,50 @@
           "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261127-016-R01",
+          "images": [
+            {
+              "id": "20261127-016-R01-I01",
+              "type": "photo",
+              "title": "ヒグマの仲間",
+              "caption": "資料写真：ヒグマの仲間。植物や動物を食べる雑食性の動物です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Brown_Bear_us_fish.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Brown_Bear_us_fish.jpg",
+              "credit": "Steve Hillebrand / USFWS",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-012",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261127-012-R02",
+          "images": [
+            {
+              "id": "20261127-012-R02-I01",
+              "type": "photo",
+              "title": "長崎税関",
+              "caption": "資料写真：長崎税関。税関では輸入品の関税の徴収などを行います。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Nagasaki_Customs_ac.jpg/960px-Nagasaki_Customs_ac.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nagasaki_Customs_ac.jpg",
+              "credit": "Asturio Cantabrio",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
