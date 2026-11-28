@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 9,
-  "related_count": 24,
+  "question_count": 10,
+  "related_count": 27,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -522,6 +522,76 @@
             {
               "name": "文部科学省",
               "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2011/01/05/1234912_006.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-010",
+      "related": [
+        {
+          "id": "20261127-010-R01",
+          "relation_type": "answer",
+          "title": "引力を利用するスイングバイ",
+          "description": "宇宙探査機（たんさき）は、惑星（わくせい）の近くを通るとき、その惑星の引力を利用して進む向きや速さを変えられます。この方法をスイングバイといいます。探査機が遠くの天体へ向かうとき、エンジンの燃料を節約するために役立ちます。どの天体にどのように近づくかによって、その後の進路が変わります。",
+          "relationship": "正解のスイングバイが宇宙探査で役立つ理由を学べます。",
+          "keywords": [
+            "スイングバイ",
+            "引力",
+            "惑星",
+            "探査機"
+          ],
+          "sources": [
+            {
+              "name": "宇宙航空研究開発機構（JAXA）",
+              "url": "https://edu.jaxa.jp/contents/other/spaceinf/hayabusa/about/principle1.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-010-R02",
+          "relation_type": "answer",
+          "title": "太陽系の惑星と公転",
+          "description": "太陽系では、地球をふくむ八つの惑星（わくせい）が太陽の周りを回っています。この動きを公転（こうてん）といいます。太陽に近い方から、水星、金星、地球、火星、木星、土星、天王星、海王星の順です。宇宙探査機（たんさき）は、太陽や惑星の引力と、それぞれの天体の動きを考えながら進路を決めます。",
+          "relationship": "惑星の引力を使うスイングバイから、太陽系の天体の動きへ学びを広げます。",
+          "keywords": [
+            "太陽系",
+            "惑星",
+            "公転",
+            "引力"
+          ],
+          "sources": [
+            {
+              "name": "国立天文台",
+              "url": "https://www.nao.ac.jp/faq/a0508.html"
+            },
+            {
+              "name": "宇宙航空研究開発機構（JAXA）",
+              "url": "https://edu.jaxa.jp/contents/other/spaceinf/hayabusa/about/principle1.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-010-R03",
+          "relation_type": "question",
+          "title": "小惑星リュウグウの試料を調べる",
+          "description": "小惑星（しょうわくせい）探査機はやぶさ2は、リュウグウの表面などから物質を採取し、2020年にその入ったカプセルを地球へ届けました。持ち帰った試料（しりょう）を詳しく調べることで、太陽系ができたころの物質や、水に関わる歴史を知る手がかりが得られています。探査機の観測と、地球上の研究施設での分析を組み合わせることが大切です。",
+          "relationship": "はやぶさ2が小惑星を調べる目的と、太陽系の歴史とのつながりを学べます。",
+          "keywords": [
+            "はやぶさ2",
+            "リュウグウ",
+            "試料",
+            "太陽系"
+          ],
+          "sources": [
+            {
+              "name": "宇宙航空研究開発機構（JAXA）",
+              "url": "https://www.jaxa.jp/projects/sas/hayabusa2/index_j.html"
+            },
+            {
+              "name": "宇宙科学研究所",
+              "url": "https://curation.isas.jaxa.jp/sample-curation/ryugu/"
             }
           ]
         }
