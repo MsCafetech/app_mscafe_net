@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-07",
+  "language": "ja",
+  "question_count": 2,
+  "related_count": 2,
+  "questions": [
+    {
+      "question_id": "20261007-002",
+      "related": [
+        {
+          "id": "20261007-002-R01",
+          "relation_type": "question",
+          "title": "公正取引委員会の役割",
+          "description": "公正取引委員会（こうせいとりひきいいんかい）は、独占禁止法（どくせんきんしほう）に違反（いはん）する疑（うたが）いがある行為を調べます。一般の人からの情報が調査のきっかけになることもあります。違反が確認された場合、行為をやめるよう命令することなどがあります。",
+          "relationship": "会社の公正な競争を守るために、法律を運用する機関の役割（やくわり）を学びます。",
+          "keywords": [
+            "公正取引委員会",
+            "独占禁止法",
+            "調査"
+          ],
+          "sources": [
+            {
+              "name": "公正取引委員会",
+              "url": "https://www.jftc.go.jp/ippan/part3/action_top.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261007-003",
+      "related": [
+        {
+          "id": "20261007-003-R01",
+          "relation_type": "answer",
+          "title": "再生二期作と稲の生育",
+          "description": "稲（いね）は、収穫（しゅうかく）した後の刈（か）り株から新しい芽を出すことがあります。この芽を「ひこばえ」といい、育てて再び米を収穫する方法が再生二期作です。農研機構（のうけんきこう）は、最初の収穫で高い位置を刈り、葉や茎（くき）を多く残す方法などを研究しました。",
+          "relationship": "一度の田植えから二度収穫する仕組みと栽培（さいばい）の工夫を学びます。",
+          "keywords": [
+            "再生二期作",
+            "稲",
+            "ひこばえ"
+          ],
+          "sources": [
+            {
+              "name": "農研機構",
+              "url": "https://www.naro.go.jp/publicity_report/publication/responsive/naro/naro18-cont05.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
