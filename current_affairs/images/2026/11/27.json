@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 16,
-  "related_count": 33,
-  "image_count": 48,
+  "question_count": 17,
+  "related_count": 36,
+  "image_count": 52,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -75,6 +75,24 @@
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。",
               "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-001-R04",
+          "images": [
+            {
+              "id": "20261127-001-R04-I01",
+              "type": "photo",
+              "title": "アマミノクロウサギ",
+              "caption": "資料写真：奄美大島などの固有種、アマミノクロウサギ。生息地の森林を守ることが大切です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/%E3%82%A2%E3%83%9E%E3%83%9F%E3%83%8E%E3%82%AF%E3%83%AD%E3%82%A6%E3%82%B5%E3%82%AE_Pentalagus_furnessi_Amami-Oshima%2C_Japan.jpg/960px-%E3%82%A2%E3%83%9E%E3%83%9F%E3%83%8E%E3%82%AF%E3%83%AD%E3%82%A6%E3%82%B5%E3%82%AE_Pentalagus_furnessi_Amami-Oshima%2C_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E3%82%A2%E3%83%9E%E3%83%9F%E3%83%8E%E3%82%AF%E3%83%AD%E3%82%A6%E3%82%B5%E3%82%AE_Pentalagus_furnessi_Amami-Oshima%2C_Japan.jpg",
+              "credit": "Mmsmr",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用可。出典を表示。"
             }
           ]
         }
@@ -770,7 +788,21 @@
     },
     {
       "question_id": "20261127-012",
-      "images": [],
+      "images": [
+        {
+          "id": "20261127-012-I01",
+          "type": "photo",
+          "title": "横浜港のコンテナ船",
+          "caption": "資料写真：横浜港で撮影されたコンテナ船。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/YM_Earth_%28ship%2C_2003%29_001.jpg/960px-YM_Earth_%28ship%2C_2003%29_001.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:YM_Earth_(ship%2C_2003)_001.jpg",
+          "credit": "Kabacchi",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
+        }
+      ],
       "related": [
         {
           "related_id": "20261127-012-R02",
@@ -787,6 +819,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-012-R01",
+          "images": [
+            {
+              "id": "20261127-012-R01-I01",
+              "type": "photo",
+              "title": "日EU経済連携協定の署名",
+              "caption": "資料写真：2018年の日EU経済連携協定の署名。経済連携協定の一例です。今回のTPP会合ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/EU-Japan_EPA_Signing_%287%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:EU-Japan_EPA_Signing_(7).jpg",
+              "credit": "内閣官房内閣広報室",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
             }
           ]
         }
@@ -901,6 +951,30 @@
               "license": "CC BY 4.0",
               "license_url": "https://creativecommons.org/licenses/by/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-015",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261127-015-R02",
+          "images": [
+            {
+              "id": "20261127-015-R02-I01",
+              "type": "photo",
+              "title": "衆議院の議場",
+              "caption": "資料写真：衆議院の議場。選挙で選ばれた議員が法律や予算について議論します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chamber_of_the_House_of_Representatives_of_Japan.jpg/960px-Chamber_of_the_House_of_Representatives_of_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Representatives_of_Japan.jpg",
+              "credit": "Kimtaro",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。"
             }
           ]
         }
