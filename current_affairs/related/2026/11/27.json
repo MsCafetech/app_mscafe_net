@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 6,
-  "related_count": 15,
+  "question_count": 7,
+  "related_count": 18,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -324,6 +324,76 @@
             {
               "name": "奈良文化財研究所・平城宮跡資料館",
               "url": "https://sitereports.nabunken.go.jp/files/attach/44/44039/63643_2_%E5%B9%B3%E5%9F%8E%E5%AE%AE%E8%B7%A1%E8%B3%87%E6%96%99%E9%A4%A8%E5%B9%B3%E6%88%9025%E5%B9%B4%E5%BA%A6%E7%89%B9%E5%88%A5%E4%BC%81%E7%94%BB%E5%B1%95%E5%9C%B0%E4%B8%8B%E3%81%AE%E6%AD%A3%E5%80%89%E9%99%A2%E5%B1%95%E3%83%BC%E6%9C%A8%E7%B0%A1%E5%AD%A6%E3%81%93.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-006",
+      "related": [
+        {
+          "id": "20261127-006-R01",
+          "relation_type": "answer",
+          "title": "植物の根と水の通り道",
+          "description": "植物の根は、土の中から水や、水にとけた無機養分（むきようぶん）を取り入れます。若い根の先の近くには、根毛（こんもう）という細い毛のような部分があり、水などを取り入れるのに役立ちます。取り入れた水は、道管（どうかん）と呼ばれる管を通って茎（くき）や葉へ運ばれます。根は水を吸うだけでなく、植物の体を土の中で支える役割も持っています。",
+          "relationship": "塩分が多い土で水を取り入れにくくなる問題を、根の働きから考えられます。",
+          "keywords": [
+            "根毛",
+            "道管",
+            "水",
+            "無機養分"
+          ],
+          "sources": [
+            {
+              "name": "日本植物生理学会",
+              "url": "https://jspp.org/hiroba/q_and_a/detail.html?id=1485"
+            },
+            {
+              "name": "教育出版",
+              "url": "https://www.kyoiku-shuppan.co.jp/textbook/chuu/rika/files/PDF17_R1_3_ari.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261127-006-R02",
+          "relation_type": "question",
+          "title": "農地に塩分がたまる塩害",
+          "description": "乾燥（かんそう）した地域などで農地に水を与えると、水に含まれる塩分が土に残ることがあります。水のやりすぎや排水（はいすい）の悪さなどが重なり、地下水が地表近くに上がって、水が蒸発（じょうはつ）することで、塩分がたまる場合もあります。塩分が多くなりすぎると、作物が育ちにくくなります。水の使い方や排水を改善することは、被害を減らす対策の一つです。",
+          "relationship": "問題にある塩害を、土と水の管理につなげて考えられます。",
+          "keywords": [
+            "塩害",
+            "農地",
+            "灌漑",
+            "排水"
+          ],
+          "sources": [
+            {
+              "name": "農林水産省・国際農林水産業研究センター",
+              "url": "https://www.maff.go.jp/j/kokusai/kokkyo/nousui_bunya/pdf/9_3_chikasuiseigyo.pdf"
+            },
+            {
+              "name": "農林水産省",
+              "url": "https://www.maff.go.jp/j/seisan/kankyo/hozen_type/h_sehi_kizyun/pdf/tuti233.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261127-006-R03",
+          "relation_type": "question",
+          "title": "農業用水を届ける水路",
+          "description": "田や畑で作物を育てるには、必要なときに水を届け、余分な水を外へ流すことが大切です。川から取った水や、ダム・ため池にためた水は、用水路を通って農地に送られます。農地の余分な水を集めて流すのが排水路（はいすいろ）です。地域の水の量や土地の特徴に合わせて、用水と排水を管理することが、安定した農業を支えています。",
+          "relationship": "塩害と関わる農地の水の管理を、用水路と排水路の役割から学べます。",
+          "keywords": [
+            "農業用水",
+            "用水路",
+            "排水路",
+            "農業"
+          ],
+          "sources": [
+            {
+              "name": "農林水産省関東農政局",
+              "url": "https://www.maff.go.jp/kanto/nouson/sekkei/tamen/01.html"
             }
           ]
         }
