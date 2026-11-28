@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 53,
-  "image_count": 74,
+  "related_count": 54,
+  "image_count": 75,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -1312,6 +1312,24 @@
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
               "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-019-R03",
+          "images": [
+            {
+              "id": "20261126-019-R03-I01",
+              "type": "photo",
+              "title": "卵から生まれるペンギンの親子",
+              "caption": "鳥類のペンギンは卵から生まれます。巣穴の近くにいる親と育った子ども（資料写真）。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Familia_de_Ping%C3%BCinos.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Familia_de_Ping%C3%BCinos.jpg",
+              "credit": "Ariel Eberle 1",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。商用利用・改変可能。"
             }
           ]
         }
