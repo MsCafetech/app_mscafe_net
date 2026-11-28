@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 12,
-  "related_count": 22,
+  "question_count": 14,
+  "related_count": 39,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -218,6 +218,43 @@
               "url": "https://www.mof.go.jp/tax_information/qanda022.html"
             }
           ]
+        },
+        {
+          "id": "20261126-003-R02",
+          "relation_type": "answer",
+          "title": "租税収入と税外収入",
+          "description": "租税（そぜい）収入は、所得税や消費税などの税金による国の収入です。税金以外にも、国が持つ財産の売却代金などによる収入があります。国はこうした収入や国債によって必要な資金を集めます。",
+          "relationship": "税金と国の収入の関係を学ぶ。",
+          "keywords": [
+            "租税",
+            "税外収入",
+            "歳入"
+          ],
+          "sources": [
+            {
+              "name": "財務省",
+              "url": "https://www.mof.go.jp/policy/exchequer/reference/receipts_payments/term.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-003-R03",
+          "relation_type": "question",
+          "title": "国の予算と財政",
+          "description": "国の一年間の収入と支出の計画を予算といいます。収入を歳入、支出を歳出と呼びます。税金などで不足する資金を国債で調達する場合もあります。予算を通じて国の政策に必要な資金を配分します。",
+          "relationship": "税収と財政の仕組みを学ぶ。",
+          "keywords": [
+            "予算",
+            "歳入",
+            "歳出",
+            "国債"
+          ],
+          "sources": [
+            {
+              "name": "財務省",
+              "url": "https://www.mof.go.jp/policy/budget/reference/statistics/term.htm"
+            }
+          ]
         }
       ]
     },
@@ -239,6 +276,42 @@
             {
               "name": "文部科学省",
               "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1406848.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-004-R02",
+          "relation_type": "answer",
+          "title": "教育委員会と国の役割",
+          "description": "都道府県や市町村には教育委員会が置かれ、地域の教育に関する仕事を担当します。学校の管理などを行い、国は教育の制度や基準を整えます。教育委員会は教育行政の中立性を保つための仕組みでもあります。",
+          "relationship": "学校教育に関わる行政機関の役割を学ぶ。",
+          "keywords": [
+            "教育委員会",
+            "文部科学省",
+            "地方自治"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/a_menu/chihou/05071301.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-004-R03",
+          "relation_type": "answer",
+          "title": "学習指導要領と学校教育",
+          "description": "学習指導要領は、学校で教える内容などについて国が定めた基準です。全国のどの地域でも一定の水準の教育を受けられるようにするためのものです。学校はこの基準をもとに教育課程を編成します。",
+          "relationship": "国と学校の教育に関する役割を学ぶ。",
+          "keywords": [
+            "学習指導要領",
+            "教育課程",
+            "学校"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/a_menu/shotou/gakuryoku/faq/001.htm"
             }
           ]
         }
@@ -267,6 +340,43 @@
             {
               "name": "環境省・環境省が行う直轄防除",
               "url": "https://www.env.go.jp/nature/intro/3control/bojokankyo.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-005-R02",
+          "relation_type": "question",
+          "title": "島の固有種と生息地の分断",
+          "description": "固有種（こゆうしゅ）とは、限られた地域に自然に分布する生物のことです。島が大陸などから離れると、生物が独自に進化したり、昔の特徴を残したりする場合があります。奄美大島（あまみおおしま）などの固有種を守るには、生息する森林を保つことも重要です。",
+          "relationship": "島の生物が独自の特徴を持つ理由を学ぶ。",
+          "keywords": [
+            "固有種",
+            "島",
+            "生息地",
+            "奄美大島"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/nature/isan/worldheritage/amami/uiversal/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-005-R03",
+          "relation_type": "answer",
+          "title": "世界自然遺産と奄美の自然",
+          "description": "奄美大島（あまみおおしま）、徳之島（とくのしま）、沖縄島北部、西表島（いりおもてじま）は2021年に世界自然遺産になりました。アマミノクロウサギなどの貴重な生物が暮らし、生物多様性を守る上で重要な地域です。",
+          "relationship": "奄美の自然を世界自然遺産の観点から学ぶ。",
+          "keywords": [
+            "世界自然遺産",
+            "奄美大島",
+            "生物多様性"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://kyushu.env.go.jp/okinawa/amami-okinawa/description/index.html"
             }
           ]
         }
@@ -324,6 +434,42 @@
               "url": "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-3.html"
             }
           ]
+        },
+        {
+          "id": "20261126-011-R02",
+          "relation_type": "question",
+          "title": "火力発電の燃料と二酸化炭素",
+          "description": "火力発電では石炭や石油、天然ガスなどの燃料を使い、電気をつくります。燃料を燃やすと二酸化炭素が発生します。天然ガスは一般に石炭などと比べて燃焼（ねんしょう）時の二酸化炭素排出量が少ない化石燃料ですが、排出がないわけではありません。",
+          "relationship": "燃料の違いと地球温暖化の関係を学ぶ。",
+          "keywords": [
+            "火力発電",
+            "天然ガス",
+            "二酸化炭素"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/energykihonkeikaku2025_kaisetu06.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-011-R03",
+          "relation_type": "question",
+          "title": "天然ガスと化石燃料",
+          "description": "石炭、石油、天然ガスは化石燃料と呼ばれます。天然ガスは主にメタンという気体で、発電や家庭などの燃料に利用されます。日本は化石燃料の多くを海外から輸入しており、安定した供給が重要です。",
+          "relationship": "天然ガスと化石燃料の関係を学ぶ。",
+          "keywords": [
+            "天然ガス",
+            "化石燃料",
+            "LNG"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/energykihonkeikaku2025_kaisetu06.html"
+            }
+          ]
         }
       ]
     },
@@ -345,6 +491,42 @@
             {
               "name": "気象庁",
               "url": "https://www.jma.go.jp/jma/kishou/know/jishin/eew/shikumi/shikumi.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-012-R02",
+          "relation_type": "answer",
+          "title": "震度とマグニチュード",
+          "description": "震度（しんど）は、ある場所での地震のゆれの強さを表します。マグニチュードは地震そのものの規模を表します。同じ地震でも、震源からの距離や地盤の性質によって各地の震度は異なります。",
+          "relationship": "地震の規模と各地のゆれを区別する。",
+          "keywords": [
+            "震度",
+            "マグニチュード",
+            "地震"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/faq/faq27.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-012-R03",
+          "relation_type": "question",
+          "title": "地震の震源と震央",
+          "description": "震源（しんげん）は地震が発生した地下の場所で、震央（しんおう）は震源の真上の地表の地点です。地震情報では震源の位置や深さ、地震の規模などが発表されます。震央に近ければ必ずゆれが最も強いとは限りません。",
+          "relationship": "地震情報で使われる地理的な用語を学ぶ。",
+          "keywords": [
+            "震源",
+            "震央",
+            "地震情報"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/svd/text/chapter_2.html"
             }
           ]
         }
@@ -495,6 +677,142 @@
             {
               "name": "相模原市選挙管理委員会",
               "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026766/senkyo/1031804/1031806.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-008-R03",
+          "relation_type": "answer",
+          "title": "一票の格差と選挙区の区割り",
+          "description": "同じ一人の議員を選ぶ選挙区でも、住む人の数に大きな差があると、一票の重みに差が生じます。これを一票の格差（かくさ）といいます。国勢調査の人口などを参考に選挙区の区割りを見直す仕組みがあります。",
+          "relationship": "選挙と投票価値の平等を学ぶ。",
+          "keywords": [
+            "一票の格差",
+            "選挙区",
+            "国勢調査"
+          ],
+          "sources": [
+            {
+              "name": "総務省統計局",
+              "url": "https://www.stat.go.jp/naruhodo/15_episode/toukeigaku/senkyoku.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-009",
+      "related": [
+        {
+          "id": "20261126-009-R01",
+          "relation_type": "answer",
+          "title": "国際開発金融機関の融資と技術協力",
+          "description": "国際開発金融機関は、発展途上国（とじょうこく）などの経済や社会の発展を支える機関です。道路や発電所などの整備に必要な資金を貸し付けるほか、専門知識を生かした支援を行います。",
+          "relationship": "開発を支える国際金融の役割を学ぶ。",
+          "keywords": [
+            "国際開発金融機関",
+            "融資",
+            "技術協力"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/shiryo/hakusyo/13_hakusho/honbun/b0/yogo.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-009-R02",
+          "relation_type": "answer",
+          "title": "政府開発援助と多国間協力",
+          "description": "政府開発援助（えんじょ）はODAとも呼ばれ、発展途上国などの経済発展や福祉の向上を支える公的な援助です。国が直接支援する二国間援助と、国際機関を通じて支援する多国間援助があります。",
+          "relationship": "日本などの国が国際機関と協力する仕組みを学ぶ。",
+          "keywords": [
+            "ODA",
+            "二国間援助",
+            "多国間援助"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/about/oda/oda_keitai.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-009-R03",
+          "relation_type": "question",
+          "title": "SDGsと開発資金",
+          "description": "SDGsは貧困や環境など世界共通の課題を解決するための目標です。安全な水を届ける施設や道路などを整えるには資金が必要です。国や国際機関が協力して資金や技術を提供することは、目標達成を支える方法の一つです。",
+          "relationship": "国際協力と持続可能な開発を結びつける。",
+          "keywords": [
+            "SDGs",
+            "開発資金",
+            "国際協力"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/shiryo/hakusyo/13_hakusho/honbun/b0/yogo.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-010",
+      "related": [
+        {
+          "id": "20261126-010-R01",
+          "relation_type": "answer",
+          "title": "EUとユーロ圏",
+          "description": "欧州連合（おうしゅうれんごう、EU）はヨーロッパの国々が協力する組織です。ユーロは多くのEU加盟国で使われる共通通貨ですが、すべての加盟国が使用しているわけではありません。ユーロを使う国々をユーロ圏と呼びます。",
+          "relationship": "EUと共通通貨の関係を理解する。",
+          "keywords": [
+            "EU",
+            "ユーロ",
+            "共通通貨"
+          ],
+          "sources": [
+            {
+              "name": "欧州連合",
+              "url": "https://european-union.europa.eu/institutions-law-budget/euro/countries-using-euro_en"
+            }
+          ]
+        },
+        {
+          "id": "20261126-010-R02",
+          "relation_type": "answer",
+          "title": "単一市場と域内の取引",
+          "description": "EUの単一市場では、人、物、サービス、資本が国境を越えて自由に移動しやすくなるよう共通のルールを整えています。加盟国の人が別の加盟国で働いたり、企業が商品を販売したりすることを支える仕組みです。",
+          "relationship": "EUの経済統合の仕組みを学ぶ。",
+          "keywords": [
+            "EU",
+            "単一市場",
+            "経済統合"
+          ],
+          "sources": [
+            {
+              "name": "欧州連合",
+              "url": "https://european-union.europa.eu/priorities-and-actions/actions-topic/single-market_en"
+            }
+          ]
+        },
+        {
+          "id": "20261126-010-R03",
+          "relation_type": "question",
+          "title": "為替レートの仕組み",
+          "description": "為替（かわせ）レートとは、異なる国や地域の通貨を交換するときの比率です。例えば1ユーロが160円なら、10ユーロは1600円に相当します。この比率が変わると、海外旅行や輸入品の価格にも影響（えいきょう）します。",
+          "relationship": "ユーロと日本円を交換する仕組みを学ぶ。",
+          "keywords": [
+            "為替レート",
+            "ユーロ",
+            "円"
+          ],
+          "sources": [
+            {
+              "name": "日本銀行",
+              "url": "https://www.boj.or.jp/about/education/oshiete/intl/g17.htm"
             }
           ]
         }
