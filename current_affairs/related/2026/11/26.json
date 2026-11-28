@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 14,
-  "related_count": 39,
+  "question_count": 20,
+  "related_count": 63,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -403,6 +403,42 @@
               "url": "https://www.mofa.go.jp/mofaj/area/marshall/data.html"
             }
           ]
+        },
+        {
+          "id": "20261126-006-R02",
+          "relation_type": "answer",
+          "title": "サンゴ礁と環礁の地形",
+          "description": "サンゴ礁（しょう）はサンゴなどが長い時間をかけてつくる地形です。中央に浅い海を囲む輪のような形のサンゴ礁を環礁（かんしょう）といいます。マーシャル諸島には環礁が多く見られます。",
+          "relationship": "島の成り立ちを地形から学ぶ。",
+          "keywords": [
+            "サンゴ礁",
+            "環礁",
+            "マーシャル諸島"
+          ],
+          "sources": [
+            {
+              "name": "国土地理院",
+              "url": "https://www.gsi.go.jp/kikaku/tenkei_umi.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-006-R03",
+          "relation_type": "answer",
+          "title": "太平洋の島々の区分",
+          "description": "太平洋の島々は、歴史や文化などの特徴からミクロネシア、メラネシア、ポリネシアという地域に分けられます。マーシャル諸島はミクロネシア、フィジーはメラネシアに含まれます。地図を見てそれぞれの位置を確かめましょう。",
+          "relationship": "マーシャル諸島と周辺地域の位置を学ぶ。",
+          "keywords": [
+            "ミクロネシア",
+            "メラネシア",
+            "ポリネシア"
+          ],
+          "sources": [
+            {
+              "name": "財務省",
+              "url": "https://www.mof.go.jp/public_relations/finance/202507/202507f.html"
+            }
+          ]
         }
       ]
     },
@@ -556,6 +592,43 @@
               "url": "https://www.maff.go.jp/j/pr/aff/2310/spe1_01.html"
             }
           ]
+        },
+        {
+          "id": "20261126-015-R02",
+          "relation_type": "answer",
+          "title": "賞味期限と消費期限",
+          "description": "消費期限は、決められた方法で保存した未開封の食品を安全に食べられる期限です。賞味期限は、同じ条件でおいしく食べられる目安の期限です。賞味期限が過ぎてもすぐに食べられなくなるわけではなく、二つの違いを知ることが食品ロスの削減（さくげん）につながります。",
+          "relationship": "期限表示と食品ロスの関係を学ぶ。",
+          "keywords": [
+            "賞味期限",
+            "消費期限",
+            "食品ロス"
+          ],
+          "sources": [
+            {
+              "name": "東京都",
+              "url": "https://www.hokeniryo.metro.tokyo.lg.jp/anzen/anzen/food_faq/hyoji/hyoji04"
+            }
+          ]
+        },
+        {
+          "id": "20261126-015-R03",
+          "relation_type": "question",
+          "title": "食品の生産から消費まで",
+          "description": "食べ物は農家などの生産者から、加工工場や卸売（おろしうり）市場、小売店などを経て家庭に届きます。この流れを食品の流通といいます。売れ残りや食べ残しを減らすには、生産、流通、消費のそれぞれの段階での工夫が必要です。",
+          "relationship": "食品が家庭に届くまでの流れを学ぶ。",
+          "keywords": [
+            "生産",
+            "流通",
+            "消費",
+            "食品ロス"
+          ],
+          "sources": [
+            {
+              "name": "農林水産省",
+              "url": "https://www.maff.go.jp/j/shokusan/ryutu/soumu/index.html"
+            }
+          ]
         }
       ]
     },
@@ -576,6 +649,42 @@
             {
               "name": "文化庁",
               "url": "https://www.bunka.go.jp/seisaku/bunkazai/shokai/yukei_kenzobutsu/toroku_yukei.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-018-R02",
+          "relation_type": "answer",
+          "title": "明治期の農業教育と地域産業",
+          "description": "明治時代には農業の技術や知識を学ぶ農学校などがつくられました。例えば札幌農学校では農業とともに自然科学も教えられました。農業教育は地域の産業を発展させるための人材を育てる役割を持ちました。",
+          "relationship": "農業教育の歴史と地域産業を学ぶ。",
+          "keywords": [
+            "明治時代",
+            "農学校",
+            "農業教育"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1317598.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-018-R03",
+          "relation_type": "question",
+          "title": "明治維新と近代化",
+          "description": "明治維新（めいじいしん）の後、日本では政治や産業、教育などの制度が大きく変わりました。1872年には学制が公布され、近代的な学校制度の整備が進みました。専門的な技術や知識を学ぶ学校もつくられました。",
+          "relationship": "学校施設の歴史を明治時代の近代化と結びつける。",
+          "keywords": [
+            "明治維新",
+            "学制",
+            "近代化"
+          ],
+          "sources": [
+            {
+              "name": "国立公文書館",
+              "url": "https://www.archives.go.jp/exhibition/digital/meiji/history.html"
             }
           ]
         }
@@ -813,6 +922,361 @@
             {
               "name": "日本銀行",
               "url": "https://www.boj.or.jp/about/education/oshiete/intl/g17.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-013",
+      "related": [
+        {
+          "id": "20261126-013-R01",
+          "relation_type": "answer",
+          "title": "認証の三つの要素",
+          "description": "認証（にんしょう）とは、利用者が本人かどうかを確かめることです。本人しか知らないパスワードなどの知識、持っている機器などの所持情報、指紋などの生体情報という三つの要素があります。異なる要素を組み合わせる多要素認証は安全性を高める方法です。",
+          "relationship": "本人確認の仕組みを学ぶ。",
+          "keywords": [
+            "認証",
+            "多要素認証",
+            "パスワード"
+          ],
+          "sources": [
+            {
+              "name": "情報処理推進機構",
+              "url": "https://www.ipa.go.jp/about/ipanews/ipanews202409.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-013-R02",
+          "relation_type": "answer",
+          "title": "認証とアクセス権限",
+          "description": "認証（にんしょう）は本人かどうかを確かめること、アクセス権限（けんげん）はどの情報や機能を使ってよいかを決めることです。例えば学校のシステムでも、先生と児童が使える機能は異なる場合があります。必要最小限の権限にすることが安全につながります。",
+          "relationship": "本人確認と利用できる範囲の違いを学ぶ。",
+          "keywords": [
+            "認証",
+            "アクセス権限",
+            "情報安全"
+          ],
+          "sources": [
+            {
+              "name": "情報処理推進機構",
+              "url": "https://www.ipa.go.jp/security/anshin/attention/2021/mgdayori20210914.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-013-R03",
+          "relation_type": "question",
+          "title": "フィッシングと偽サイト",
+          "description": "フィッシングは、本物に見せかけたメールやウェブサイトなどで利用者をだまし、パスワードなどの情報を盗もうとする行為です。知らないリンクをすぐに開かず、公式サイトや公式アプリから確認することが大切です。",
+          "relationship": "本人確認を破ろうとする手口への備えを学ぶ。",
+          "keywords": [
+            "フィッシング",
+            "偽サイト",
+            "個人情報"
+          ],
+          "sources": [
+            {
+              "name": "情報処理推進機構",
+              "url": "https://www.ipa.go.jp/security/anshin/attention/2026/mgdayori20261026.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-014",
+      "related": [
+        {
+          "id": "20261126-014-R01",
+          "relation_type": "answer",
+          "title": "廃炉の工程と放射性廃棄物の管理",
+          "description": "廃炉（はいろ）は、原子力発電所の運転を終え、設備を安全に取り除く作業です。使用済み燃料を運び出し、放射性物質の量などを調べながら設備を解体します。発生した廃棄物（はいきぶつ）は放射能の程度に応じて適切に管理します。",
+          "relationship": "原子力発電所を安全に終了する仕組みを学ぶ。",
+          "keywords": [
+            "廃炉",
+            "原子力発電",
+            "放射性廃棄物"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/hairo.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-014-R02",
+          "relation_type": "question",
+          "title": "原子力発電で電気を作る仕組み",
+          "description": "原子力発電では、ウランなどの原子核が分裂する時に生じる熱を使います。水を加熱して蒸気（じょうき）をつくり、タービンを回して発電機を動かします。火力発電と熱のつくり方は異なりますが、蒸気で発電機を回す点は共通します。",
+          "relationship": "発電所の設備の働きを理解する。",
+          "keywords": [
+            "原子力発電",
+            "核分裂",
+            "タービン"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/category/electricity_and_gas/nuclear/001/pamph/manga_denki/html/006/"
+            }
+          ]
+        },
+        {
+          "id": "20261126-014-R03",
+          "relation_type": "question",
+          "title": "放射線と放射性物質",
+          "description": "放射線はエネルギーを持つ粒子（りゅうし）や電磁波などです。放射線を出す能力を放射能といい、その能力を持つ物質が放射性物質です。物質と、そこから出る放射線を区別して考えることが大切です。",
+          "relationship": "廃炉に関係する基本用語の違いを学ぶ。",
+          "keywords": [
+            "放射線",
+            "放射能",
+            "放射性物質"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/chemi/rhm/current/01-01-02.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-016",
+      "related": [
+        {
+          "id": "20261126-016-R01",
+          "relation_type": "answer",
+          "title": "今昔物語集と近代小説",
+          "description": "今昔物語集（こんじゃくものがたりしゅう）は、平安時代末期ごろにまとめられた説話集です。芥川龍之介（あくたがわりゅうのすけ）は昔の説話を題材にして『羅生門（らしょうもん）』などの小説を書きました。古典文学が後の時代の作品にも生かされる例です。",
+          "relationship": "古典と近代文学のつながりを学ぶ。",
+          "keywords": [
+            "今昔物語集",
+            "芥川龍之介",
+            "羅生門"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館",
+              "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000002043230"
+            }
+          ]
+        },
+        {
+          "id": "20261126-016-R02",
+          "relation_type": "question",
+          "title": "一次資料としての直筆原稿",
+          "description": "作家が自分で書いた直筆原稿（ちょくひつげんこう）は、作品が作られた過程を知るための貴重な資料です。文字の書き直しや消された文章を調べることで、完成した本だけでは分からない作家の工夫を研究できます。",
+          "relationship": "原稿を歴史研究の一次資料として考える。",
+          "keywords": [
+            "直筆原稿",
+            "一次資料",
+            "文学"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館レファレンス協同データベース",
+              "url": "https://crd.ndl.go.jp/reference/entry/reference/show?id=1000319340"
+            }
+          ]
+        },
+        {
+          "id": "20261126-016-R03",
+          "relation_type": "question",
+          "title": "大正時代の文学",
+          "description": "大正時代は1912年から1926年までの時代です。芥川龍之介（あくたがわりゅうのすけ）はこの時期を代表する小説家の一人で、『羅生門（らしょうもん）』などを書きました。短い物語を通して、人間の心や行動を深く考えさせる作品を残しました。",
+          "relationship": "作家の活躍した時代と作品を学ぶ。",
+          "keywords": [
+            "大正時代",
+            "芥川龍之介",
+            "文学"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館",
+              "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000570013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-017",
+      "related": [
+        {
+          "id": "20261126-017-R01",
+          "relation_type": "question",
+          "title": "高田松原と海岸林",
+          "description": "岩手県の陸前高田市にある高田松原は、海岸の松林として知られています。海岸林は風や飛んでくる砂を弱めるなどの働きがあります。東日本大震災の津波で大きな被害を受けた後、地域の人などの協力で植栽（しょくさい）が進められました。",
+          "relationship": "海岸林の役割と復旧の取り組みを学ぶ。",
+          "keywords": [
+            "高田松原",
+            "海岸林",
+            "防潮林"
+          ],
+          "sources": [
+            {
+              "name": "岩手県",
+              "url": "https://www.pref.iwate.jp/engan/ofuna_nourin/1045706.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-017-R02",
+          "relation_type": "answer",
+          "title": "三陸海岸の地形と津波",
+          "description": "三陸海岸には入り江が複雑に入り込んだリアス海岸が広がっています。海から奥へ向かって湾（わん）が狭くなる場所では、津波の高さが大きくなることがあります。海岸の地形と津波の危険性を結びつけて考えましょう。",
+          "relationship": "三陸海岸の地形と津波の特徴を学ぶ。",
+          "keywords": [
+            "三陸海岸",
+            "リアス海岸",
+            "津波"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/river/kaigan/main/kaigandukuri/tsunamibousai/03/index3_1.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-017-R03",
+          "relation_type": "question",
+          "title": "東日本大震災の津波と防災",
+          "description": "2011年3月11日の東日本大震災では、東北地方などの太平洋側が大きな津波におそわれました。津波の危険がある時は海岸から離れ、高い場所などに避難（ひなん）することが大切です。地形や過去の浸水（しんすい）範囲を調べることも防災に役立ちます。",
+          "relationship": "過去の震災から津波への備えを学ぶ。",
+          "keywords": [
+            "東日本大震災",
+            "津波",
+            "避難"
+          ],
+          "sources": [
+            {
+              "name": "国土地理院",
+              "url": "https://www.gsi.go.jp/REPORT/JIHO/vol122-abst-09.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-019",
+      "related": [
+        {
+          "id": "20261126-019-R01",
+          "relation_type": "answer",
+          "title": "胎盤と胎児の成長",
+          "description": "人の胎児（たいじ）は母親の子宮の中で成長します。胎盤（たいばん）では母親と胎児の間で酸素や養分などがやり取りされます。胎児はへその緒を通じて養分や酸素を受け取り、成長します。",
+          "relationship": "母親の体内で子が成長する仕組みを学ぶ。",
+          "keywords": [
+            "胎盤",
+            "胎児",
+            "へその緒"
+          ],
+          "sources": [
+            {
+              "name": "名古屋市科学館",
+              "url": "https://www.ncsm.city.nagoya.jp/cgi-bin/visit/exhibition_guide/exhibit.cgi?id=L423"
+            }
+          ]
+        },
+        {
+          "id": "20261126-019-R02",
+          "relation_type": "answer",
+          "title": "哺乳類の共通点と多様性",
+          "description": "哺乳類（ほにゅうるい）は、子が母親の乳を飲んで育つ動物の仲間です。人、イヌ、クジラ、コウモリなど、暮らす場所や体の形が異なる動物も含まれます。多くは母親の体内で子が育ちますが、卵を産むカモノハシのような例外もいます。",
+          "relationship": "哺乳類の共通点と違いを学ぶ。",
+          "keywords": [
+            "哺乳類",
+            "母乳",
+            "カモノハシ"
+          ],
+          "sources": [
+            {
+              "name": "コトバンク",
+              "url": "https://kotobank.jp/word/%E5%93%BA%E4%B9%B3%E9%A1%9E-133848"
+            }
+          ]
+        },
+        {
+          "id": "20261126-019-R03",
+          "relation_type": "question",
+          "title": "動物の子の育ち方",
+          "description": "子が卵の中で成長し、卵からかえる育ち方を卵生（らんせい）といいます。母親の体内で子が育ち、子の姿で生まれる育ち方は胎生（たいせい）です。鳥類などは卵生で、多くの哺乳類（ほにゅうるい）は胎生です。",
+          "relationship": "動物による子の育ち方の違いを学ぶ。",
+          "keywords": [
+            "卵生",
+            "胎生",
+            "動物"
+          ],
+          "sources": [
+            {
+              "name": "学研キッズネット",
+              "url": "https://kids.gakken.co.jp/jiten/dictionary04100126/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-020",
+      "related": [
+        {
+          "id": "20261126-020-R01",
+          "relation_type": "answer",
+          "title": "ワシントン条約の附属書と許可制度",
+          "description": "ワシントン条約は、絶滅（ぜつめつ）のおそれがある野生の動植物を国際取引から守るための条約です。保護の必要性に応じて附属書（ふぞくしょ）で分類し、取引を禁止したり、許可書を必要としたりします。",
+          "relationship": "野生生物の国際取引を管理する仕組みを学ぶ。",
+          "keywords": [
+            "ワシントン条約",
+            "CITES",
+            "附属書"
+          ],
+          "sources": [
+            {
+              "name": "経済産業省",
+              "url": "https://www.meti.go.jp/policy/external_economy/trade_control/02_exandim/06_washington/cites_about.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-020-R02",
+          "relation_type": "question",
+          "title": "ラッコとコンブの森の食物網",
+          "description": "ラッコはウニなどを食べます。ウニはコンブの仲間などの海藻を食べるため、ラッコが少なくなるとウニが増え、海藻の森が減る場合があります。一つの動物の数の変化が、ほかの生物の生活にも影響（えいきょう）する例です。",
+          "relationship": "ラッコが海の生態系を支える働きを学ぶ。",
+          "keywords": [
+            "ラッコ",
+            "ウニ",
+            "コンブ",
+            "食物網"
+          ],
+          "sources": [
+            {
+              "name": "モントレーベイ水族館",
+              "url": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/sea-otter"
+            }
+          ]
+        },
+        {
+          "id": "20261126-020-R03",
+          "relation_type": "question",
+          "title": "生物多様性と生態系",
+          "description": "生態系（せいたいけい）とは、生き物と周りの環境が関わり合うまとまりです。海藻の森には魚やウニなど多くの生物が暮らし、食べる・食べられる関係でつながっています。さまざまな生物やその生活場所を守ることが、生態系を保つことにつながります。",
+          "relationship": "野生生物保護を生物多様性の視点から学ぶ。",
+          "keywords": [
+            "生態系",
+            "生物多様性",
+            "食物網"
+          ],
+          "sources": [
+            {
+              "name": "モントレーベイ水族館",
+              "url": "https://www.montereybayaquarium.org/animals-the-ocean/ecosystems/kelp-forest"
             }
           ]
         }
