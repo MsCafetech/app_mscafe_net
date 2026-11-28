@@ -3,7 +3,7 @@
   "date": "2026-11-12",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261112-001",
@@ -23,6 +23,52 @@
             {
               "name": "科学技術振興機構「動植物ハイブリッド細胞の作製に成功」",
               "url": "https://www.jst.go.jp/pr/announce/20261112-4/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261112-001-R02",
+          "relation_type": "answer",
+          "title": "葉緑体（ようりょくたい）と光合成",
+          "description": "植物の葉などの細胞（さいぼう）には、光合成を行う葉緑体があります。植物は光のエネルギーを使い、水と二酸化炭素から糖などの養分を作り、酸素を出します。作られた養分の一部はでんぷんとしてたくわえられます。葉に日光が当たることは、植物が育つために重要です。",
+          "relationship": "光を使い二酸化炭素と水から養分をつくる過程",
+          "keywords": [
+            "葉緑体",
+            "光合成",
+            "二酸化炭素",
+            "酸素"
+          ],
+          "sources": [
+            {
+              "name": "学校図書",
+              "url": "https://r7-kagaku.gakuto-plus.jp/2-2/2-2/2p094/"
+            },
+            {
+              "name": "浜島書店",
+              "url": "https://www.hamajima.co.jp/d-rika/demo/files/1a0cbf46-489d-52ca-99ef-86206c79d873/data/item/term-22321201/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261112-001-R03",
+          "relation_type": "question",
+          "title": "光合成と食物連鎖（しょくもつれんさ）",
+          "description": "植物は光合成によって自分で養分を作るため、生産者とよばれます。植物を食べる動物は、その養分を利用して成長します。例えば草を食べるバッタをカエルが食べると、植物が作った養分は別の生き物へと受けつがれます。光合成は多くの生き物の生活を支えるはたらきです。",
+          "relationship": "植物が光を使い作る養分が生物を支える関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "光合成",
+            "食物連鎖",
+            "生産者",
+            "消費者"
+          ],
+          "sources": [
+            {
+              "name": "大日本図書",
+              "url": "https://cc.dainippon-tosho.co.jp/er/2024/contents/link/sdgs68.html"
+            },
+            {
+              "name": "学校図書",
+              "url": "https://r7-kagaku.gakuto-plus.jp/3-2/3-1/"
             }
           ]
         }

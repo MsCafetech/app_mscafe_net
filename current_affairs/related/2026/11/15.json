@@ -3,7 +3,7 @@
   "date": "2026-11-15",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261115-001",
@@ -23,6 +23,52 @@
             {
               "name": "福岡県「行政と政治のしくみを学ぼう」",
               "url": "https://www.pref.fukuoka.lg.jp/contents/gyousei-seiji.html"
+            }
+          ]
+        },
+        {
+          "id": "20261115-001-R02",
+          "relation_type": "answer",
+          "title": "地方自治と直接選挙",
+          "description": "地方自治とは、地域の住民の意思をもとに地域の政治を行う仕組みです。都道府県の知事や市町村長、地方議会の議員は、住民のうち選挙権を持つ人が直接投票して選びます。国会が内閣総理大臣を指名する国の仕組みとは異なります。住民は選挙を通じて地域の政治に参加できます。",
+          "relationship": "住民が知事を選ぶ仕組みと地方自治の関係",
+          "keywords": [
+            "地方自治",
+            "直接選挙",
+            "知事",
+            "地方議会"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館 日本国憲法第93条",
+              "url": "https://www.ndl.go.jp/constitution/etc/j01.html"
+            },
+            {
+              "name": "e-Gov法令検索 地方自治法",
+              "url": "https://laws.e-gov.go.jp/law/322AC0000000067"
+            }
+          ]
+        },
+        {
+          "id": "20261115-001-R03",
+          "relation_type": "question",
+          "title": "都道府県と市町村の役割",
+          "description": "市町村は、ごみの収集や小中学校の運営など、住民の生活に身近な仕事を行います。都道府県は、複数の市町村にまたがる広い地域の仕事や、市町村だけでは行いにくい仕事を担当します。都道府県と市町村はそれぞれ独立した地方公共団体であり、協力しながら地域を支えます。",
+          "relationship": "県と市町村が分担する住民に身近な仕事を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "都道府県",
+            "市町村",
+            "地方自治",
+            "役割分担"
+          ],
+          "sources": [
+            {
+              "name": "東京都",
+              "url": "https://www.metro.tokyo.lg.jp/tosei/tokyoto/profile/gaiyo/shikumi/shikumi09"
+            },
+            {
+              "name": "e-Gov法令検索 地方自治法",
+              "url": "https://laws.e-gov.go.jp/law/322AC0000000067"
             }
           ]
         }

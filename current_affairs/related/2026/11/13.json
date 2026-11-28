@@ -3,7 +3,7 @@
   "date": "2026-11-13",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261113-001",
@@ -23,6 +23,54 @@
             {
               "name": "防衛省「令和8年版防衛白書 自衛官の処遇改善」",
               "url": "https://www.mod.go.jp/j/press/wp/wp2026/html/n520101000.html"
+            }
+          ]
+        },
+        {
+          "id": "20261113-001-R02",
+          "relation_type": "answer",
+          "title": "法律の公布と国事行為",
+          "description": "国会で法律が成立すると、その内容を国民に知らせるために公布します。日本国憲法（けんぽう）第7条では、法律の公布は天皇の国事行為の一つと定められています。天皇は内閣の助言と承認（しょうにん）により行い、内閣が責任を負います。公布と法律の効力が始まる施行（しこう）は、同じ日とは限りません。",
+          "relationship": "法律成立後に公布する国事行為と内閣の助言・承認",
+          "keywords": [
+            "法律",
+            "公布",
+            "国事行為",
+            "天皇",
+            "内閣"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館",
+              "url": "https://www.ndl.go.jp/constitution/etc/j01.html"
+            },
+            {
+              "name": "首相官邸",
+              "url": "https://www.kantei.go.jp/jp/seido/seido_2_2.html"
+            }
+          ]
+        },
+        {
+          "id": "20261113-001-R03",
+          "relation_type": "question",
+          "title": "三権分立と法律の成立",
+          "description": "日本では国会が法律を作り、内閣が法律に基づいて政治を行い、裁判所が法律に基づいて争いなどを解決します。これを三権分立といいます。法律案は原則として衆議院（しゅうぎいん）と参議院で可決されると成立します。三つの機関が互（たが）いに行きすぎを防ぎ、国民の権利を守る仕組みです。",
+          "relationship": "国会・内閣・裁判所の役割と法律制定の流れを元問題とのつながりから学ぶ。",
+          "keywords": [
+            "三権分立",
+            "国会",
+            "内閣",
+            "裁判所",
+            "法律"
+          ],
+          "sources": [
+            {
+              "name": "参議院",
+              "url": "https://www.sangiin.go.jp/japanese/kids/html/shikumi/index.html"
+            },
+            {
+              "name": "衆議院",
+              "url": "https://www.shugiin.go.jp/Internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
             }
           ]
         }

@@ -3,7 +3,7 @@
   "date": "2026-11-14",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261114-001",
@@ -23,6 +23,51 @@
             {
               "name": "国土交通省「航空管制官」",
               "url": "https://www.mlit.go.jp/koku/atc/work.html"
+            }
+          ]
+        },
+        {
+          "id": "20261114-001-R02",
+          "relation_type": "answer",
+          "title": "電波と無線通信",
+          "description": "電波は空間を伝わる電磁波（でんじは）の一種です。無線通信では、声や文字などの情報を電波に乗せて送り、受け取った機器が情報を取り出します。スマートフォンやラジオ、航空機の通信などに利用されています。電線をつながなくても離れた場所へ情報を送れるのが特徴（とくちょう）です。",
+          "relationship": "電波が空間を伝わり音声などの情報を運ぶ仕組み",
+          "keywords": [
+            "電波",
+            "無線通信",
+            "電磁波"
+          ],
+          "sources": [
+            {
+              "name": "NTTドコモ",
+              "url": "https://www.docomo.ne.jp/area/connect/know/index.html"
+            },
+            {
+              "name": "e-Gov法令検索 電波法",
+              "url": "https://laws.e-gov.go.jp/document?lawid=325AC0000000131"
+            }
+          ]
+        },
+        {
+          "id": "20261114-001-R03",
+          "relation_type": "question",
+          "title": "音と電波の違い",
+          "description": "音は空気や水などが振動（しんどう）することで伝わります。空気などの物質がない真空では音は伝わりません。一方、電波は真空でも伝わるため、宇宙にある人工衛星（じんこうえいせい）とも通信できます。無線で声が届くのは、声そのものが空間を飛ぶのではなく、電波が情報を運んでいるからです。",
+          "relationship": "音は空気などを伝わり電波は真空中も伝わる性質を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "音",
+            "電波",
+            "真空",
+            "無線通信"
+          ],
+          "sources": [
+            {
+              "name": "理化工業",
+              "url": "https://www.rkcinst.co.jp/technical_commentary/582222/"
+            },
+            {
+              "name": "NTTドコモ",
+              "url": "https://www.docomo.ne.jp/area/connect/know/index.html"
             }
           ]
         }
