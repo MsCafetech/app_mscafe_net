@@ -3,7 +3,7 @@
   "date": "2026-11-08",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261108-001",
@@ -23,6 +23,50 @@
             {
               "name": "気象庁「令和8年11月8日の地震に伴う土砂災害に関する警報等の暫定的な運用」",
               "url": "https://www.jma.go.jp/jma/press/2611/08b/20261108_zantei.html"
+            }
+          ]
+        },
+        {
+          "id": "20261108-001-R02",
+          "relation_type": "answer",
+          "title": "地震と雨による土砂災害",
+          "description": "地震で山やがけが強くゆれると、地面にひびが入り、土がくずれやすくなることがあります。その後に雨が降ると、ひびから水が入り、土砂災害が起きやすくなります。地震が収まった後も雨の情報を確認し、危険ながけなどには近づかないことが大切です。",
+          "relationship": "揺れで緩んだ斜面が雨水で崩れやすくなる関係",
+          "keywords": [
+            "地震",
+            "土砂災害",
+            "雨"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/press/2607/28c/20260728_zantei.html"
+            },
+            {
+              "name": "京都大学防災研究所",
+              "url": "https://www.dpri.kyoto-u.ac.jp/faq/ground/"
+            }
+          ]
+        },
+        {
+          "id": "20261108-001-R03",
+          "relation_type": "question",
+          "title": "土砂災害とハザードマップ",
+          "description": "ハザードマップは災害の危険がある場所を地図に示したものです。土砂災害の危険がある場所と、避難先（ひなんさき）までの道をふだんから家族と確かめましょう。大雨のときは気象情報も確認し、危険が高まる前に安全な場所へ移動することが大切です。",
+          "relationship": "土砂災害の危険箇所と避難経路を事前に調べる方法を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "土砂災害",
+            "ハザードマップ",
+            "避難"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/mizukokudo/sabo/dosyasaigai_kikendo.html"
+            },
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/mizukokudo/sabo/keikaihinan.html"
             }
           ]
         }
