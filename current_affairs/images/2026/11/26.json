@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 22,
-  "image_count": 43,
+  "related_count": 30,
+  "image_count": 51,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -256,6 +256,42 @@
               "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記する。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-003-R02",
+          "images": [
+            {
+              "id": "20261126-003-R02-I01",
+              "type": "photo",
+              "title": "長崎税関",
+              "caption": "資料写真：税関では輸入品にかかる関税などを取り扱います。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Nagasaki_Customs_ac.jpg/960px-Nagasaki_Customs_ac.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nagasaki_Customs_ac.jpg",
+              "credit": "Asturio Cantabrio",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-003-R03",
+          "images": [
+            {
+              "id": "20261126-003-R03-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：国の予算は国会で審議されます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
+              "credit": "尾崎歩夢（Ayumu Ozaki）",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
         }
       ]
     },
@@ -292,6 +328,24 @@
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
               "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記する。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-004-R02",
+          "images": [
+            {
+              "id": "20261126-004-R02-I01",
+              "type": "photo",
+              "title": "文部科学省",
+              "caption": "資料写真：国の教育行政を担当する文部科学省の入口です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg/960px-Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg",
+              "credit": "Dick Thomas Johnson",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
             }
           ]
         }
@@ -332,6 +386,24 @@
               "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。奄美大島での撮影ではない。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-005-R03",
+          "images": [
+            {
+              "id": "20261126-005-R03-I01",
+              "type": "photo",
+              "title": "奄美大島のマングローブ林",
+              "caption": "資料写真：奄美大島の豊かな自然環境の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Mangrove_forest_in_Amami_Oshima.jpg/960px-Mangrove_forest_in_Amami_Oshima.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Mangrove_forest_in_Amami_Oshima.jpg",
+              "credit": "Indiana jo",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
         }
       ]
     },
@@ -368,6 +440,42 @@
               "license": "Public Domain (PD-Japan-oldphoto, PD-1996)",
               "license_url": "https://commons.wikimedia.org/wiki/File:South_Pacific_Mandate_map_in_1930s.PNG#Licensing",
               "usage_notes": "掲載元では日本および米国で著作権保護期間満了と表示。出典を明記。歴史資料であり現在の国境を示すものではない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-006-R02",
+          "images": [
+            {
+              "id": "20261126-006-R02-I01",
+              "type": "photo",
+              "title": "マジュロ環礁の航空写真",
+              "caption": "資料写真：マーシャル諸島のマジュロ。サンゴ礁に囲まれた細長い島と浅い海が見えます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Majuro_aerial_%2810703502814%29.jpg/960px-Majuro_aerial_%2810703502814%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Majuro_aerial_(10703502814).jpg",
+              "credit": "Erin Magee/AusAID",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-006-R03",
+          "images": [
+            {
+              "id": "20261126-006-R03-I01",
+              "type": "map",
+              "title": "オセアニアの地域区分",
+              "caption": "資料地図：ミクロネシア、メラネシア、ポリネシアの位置を示しています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Oceania_regions_map_%28ja%29.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Oceania_regions_map_(ja).png",
+              "credit": "Tmv",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
             }
           ]
         }
@@ -614,6 +722,24 @@
               "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。配布元の縮小画像を使用。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-012-R03",
+          "images": [
+            {
+              "id": "20261126-012-R03-I01",
+              "type": "diagram",
+              "title": "震源と震央",
+              "caption": "資料図：地震が発生する地下の震源と、その真上の地表の震央の位置関係です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%E9%9C%87%E6%BA%90%E3%81%A8%E9%9C%87%E5%A4%AE.svg/960px-%E9%9C%87%E6%BA%90%E3%81%A8%E9%9C%87%E5%A4%AE.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:震源と震央.svg",
+              "credit": "すじにくシチュー",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
         }
       ]
     },
@@ -764,6 +890,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-018-R02",
+          "images": [
+            {
+              "id": "20261126-018-R02-I01",
+              "type": "photo",
+              "title": "岩手大学農業教育資料館",
+              "caption": "資料写真：旧盛岡高等農林学校の建物。明治時代から続く農業教育の歴史を伝えます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg/960px-171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg",
+              "credit": "663highland",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
             }
           ]
         }
