@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 56,
-  "image_count": 76,
+  "related_count": 57,
+  "image_count": 77,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -371,6 +371,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "商用利用可。作者・出典・ライセンスを表示し、改変時は明記、派生作品は同等ライセンスで提供。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-005-R04",
+          "images": [
+            {
+              "id": "20261127-005-R04-I01",
+              "type": "photo",
+              "title": "酸性雨の影響を受けた森林",
+              "caption": "資料写真：チェコのイゼラ山地にある、酸性雨の影響を受けた森林。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Acid_rain_woods1.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Acid_rain_woods1.JPG",
+              "credit": "Lovecz",
+              "license": "Public domain (author dedication)",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Acid_rain_woods1.JPG",
+              "usage_notes": "作者が全世界でパブリックドメインに提供。商用利用可能。"
             }
           ]
         }
