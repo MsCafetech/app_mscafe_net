@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 54,
-  "image_count": 75,
+  "related_count": 55,
+  "image_count": 76,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -216,6 +216,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用・再配布・加工可能。出典を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-002-R05",
+          "images": [
+            {
+              "id": "20261126-002-R05-I01",
+              "type": "photo",
+              "title": "日本銀行本店",
+              "caption": "資料写真：日本の中央銀行である日本銀行の本店。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Bank_of_Japan_headquarters_in_Tokyo%2C_Japan.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_headquarters_in_Tokyo,_Japan.jpg",
+              "credit": "Fg2",
+              "license": "Public domain (author dedication)",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_headquarters_in_Tokyo,_Japan.jpg",
+              "usage_notes": "著作者がパブリックドメインに提供。出典と作者を表示。"
             }
           ]
         }
