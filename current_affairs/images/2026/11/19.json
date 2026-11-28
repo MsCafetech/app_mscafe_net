@@ -20,7 +20,62 @@
           "usage_notes": "CC BY-SA 4.0。作者名「Charlie fong」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261119-100-R01",
+          "images": [
+            {
+              "id": "20261119-100-R01-I01",
+              "type": "photo",
+              "title": "APEC首脳会議の集合写真",
+              "caption": "資料写真：2023年11月16日、米国サンフランシスコで開かれたAPEC首脳会議。参加する国や地域などの代表者が集まっています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/President_Joe_Biden_participates_in_a_family_photo_with_APEC_leaders_and_guest_leaders_on_November_16%2C_2023_in_San_Francisco%2C_California.jpg/960px-President_Joe_Biden_participates_in_a_family_photo_with_APEC_leaders_and_guest_leaders_on_November_16%2C_2023_in_San_Francisco%2C_California.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:President_Joe_Biden_participates_in_a_family_photo_with_APEC_leaders_and_guest_leaders_on_November_16%2C_2023_in_San_Francisco%2C_California.jpg",
+              "credit": "The White House / Oliver Contreras",
+              "license": "Public Domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261119-100-R02",
+          "images": [
+            {
+              "id": "20261119-100-R02-I01",
+              "type": "map",
+              "title": "APECに参加する国と地域",
+              "caption": "資料地図：太平洋を中心に、APECの参加国・地域を緑で示した地図。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/APECMitgliedsstaaten_map_redraw.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:APECMitgliedsstaaten_map_redraw.png",
+              "credit": "Jjw",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261119-100-R03",
+          "images": [
+            {
+              "id": "20261119-100-R03-I01",
+              "type": "photo",
+              "title": "横浜港のコンテナ船",
+              "caption": "資料写真：外国との貿易で荷物を運ぶコンテナ船。輸入品には品物に応じて関税がかかる場合があります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/YM_Earth_%28ship%2C_2003%29_001.jpg/960px-YM_Earth_%28ship%2C_2003%29_001.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:YM_Earth_%28ship%2C_2003%29_001.jpg",
+              "credit": "Kabacchi",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認を示唆しない。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261119-101",
@@ -55,6 +110,42 @@
               "license": "Public Domain (NOAA)",
               "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NOAA",
               "usage_notes": "出典・提供元を表示。提供元の推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261119-101-R02",
+          "images": [
+            {
+              "id": "20261119-101-R02-I01",
+              "type": "photo",
+              "title": "水管を伸ばしたアサリ",
+              "caption": "資料写真：アサリの貝がらから白い水管が伸びている様子。水を取り入れたり外へ出したりする部分です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Ruditapes_philippinarum_01.jpg/960px-Ruditapes_philippinarum_01.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Ruditapes_philippinarum_01.jpg",
+              "credit": "Σ64",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261119-101-R03",
+          "images": [
+            {
+              "id": "20261119-101-R03-I01",
+              "type": "photo",
+              "title": "藤前干潟",
+              "caption": "資料写真：愛知県名古屋市の藤前干潟にある庄内川の河口。潮の満ち引きで水に覆われたり泥が現れたりする場所です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Fujimae-higata02.jpg/960px-Fujimae-higata02.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Fujimae-higata02.jpg",
+              "credit": "KAMUI",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。配布元画像を使用。"
             }
           ]
         }
@@ -95,11 +186,47 @@
               "usage_notes": "撮影者・出典・ライセンスリンクを表示し、変更を明記。提供者の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用。"
             }
           ]
+        },
+        {
+          "related_id": "20261119-102-R02",
+          "images": [
+            {
+              "id": "20261119-102-R02-I01",
+              "type": "photo",
+              "title": "国際刑事裁判所（ICC）の建物",
+              "caption": "資料写真：オランダのハーグにあるICC。国際司法裁判所（ICJ）が入る平和宮とは異なる建物です。2019年撮影。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/International_Criminal_Court_building_%282019%29_in_The_Hague_01.jpg/960px-International_Criminal_Court_building_%282019%29_in_The_Hague_01.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:International_Criminal_Court_building_%282019%29_in_The_Hague_01.jpg",
+              "credit": "OSeveno",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261119-102-R03",
+          "images": [
+            {
+              "id": "20261119-102-R03-I01",
+              "type": "photo",
+              "title": "ロヒンギャの難民キャンプ",
+              "caption": "資料写真：2026年7月17日、バングラデシュのコックスバザール県ウキヤで撮影された難民キャンプ。多くの人の住まいが丘に並んでいます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Life_in_the_World%27s_Largest_Refugee_Camp.jpg/960px-Life_in_the_World%27s_Largest_Refugee_Camp.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Life_in_the_World%27s_Largest_Refugee_Camp.jpg",
+              "credit": "Md shameem ul islam",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認を示唆しない。"
+            }
+          ]
         }
       ]
     }
   ],
   "question_count": 3,
-  "related_count": 2,
-  "image_count": 5
+  "related_count": 9,
+  "image_count": 12
 }
