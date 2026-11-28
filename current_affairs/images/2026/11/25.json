@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 17,
-  "related_count": 44,
-  "image_count": 61,
+  "question_count": 18,
+  "related_count": 50,
+  "image_count": 68,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -593,6 +593,24 @@
               "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-017-R03",
+          "images": [
+            {
+              "id": "20261125-017-R03-I01",
+              "type": "map",
+              "title": "フランスと周辺国",
+              "caption": "資料地図：2004年のフランスの地図。首都パリやドイツ、スペインなど周辺国の位置が分かります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/France-CIA_WFB_Map.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:France-CIA_WFB_Map.png",
+              "credit": "CIA / The World Factbook (2004)",
+              "license": "Public Domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-CIA-WF",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
         }
       ]
     },
@@ -965,6 +983,42 @@
               "usage_notes": "提供元を表示し、NASAの推奨を示唆しない。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-023-R02",
+          "images": [
+            {
+              "id": "20261125-023-R02-I01",
+              "type": "photo",
+              "title": "紫やピンクに光るオーロラ",
+              "caption": "資料写真：2024年5月11日に米国サウスカロライナ州で撮影したオーロラ。長時間露光による写真です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/May_2024_Aurora_SC.jpg/960px-May_2024_Aurora_SC.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:May_2024_Aurora_SC.jpg",
+              "credit": "SpacePod9",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-023-R03",
+          "images": [
+            {
+              "id": "20261125-023-R03-I01",
+              "type": "satellite",
+              "title": "太陽フレアの観測画像",
+              "caption": "資料画像：2012年3月13日にNASAの太陽観測衛星が撮影した太陽フレア。太陽の活動を調べる資料です。色は観測波長に合わせて付けられています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sunspots_and_Solar_Flares.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Sunspots_and_Solar_Flares.jpg",
+              "credit": "NASA / SDO",
+              "license": "Public Domain (US government)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
         }
       ]
     },
@@ -1003,6 +1057,24 @@
               "usage_notes": "提供元・出典を表示。CC BYの場合はライセンスリンクと変更の有無を明記。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-024-R02",
+          "images": [
+            {
+              "id": "20261125-024-R02-I01",
+              "type": "map",
+              "title": "キューバの地図",
+              "caption": "資料地図：2004年のキューバの地図。首都ハバナとカリブ海の位置が分かります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Cuba-CIA_WFB_Map.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Cuba-CIA_WFB_Map.png",
+              "credit": "CIA / The World Factbook (2004)",
+              "license": "Public Domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-CIA-WF",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+            }
+          ]
         }
       ]
     },
@@ -1039,6 +1111,42 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "著作者・出典・ライセンスを表示。変更を明記し、改変画像は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-026-R02",
+          "images": [
+            {
+              "id": "20261125-026-R02-I01",
+              "type": "photo",
+              "title": "秋吉台の草原",
+              "caption": "資料写真：2009年の秋吉台。山焼きなどによって維持されてきた草原に石灰岩が点在しています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/View_of_Karst_landscape_at_Akiyoshidai_1.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:View_of_Karst_landscape_at_Akiyoshidai_1.jpg",
+              "credit": "Motokoka",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-026-R03",
+          "images": [
+            {
+              "id": "20261125-026-R03-I01",
+              "type": "photo",
+              "title": "秋芳洞の鍾乳石",
+              "caption": "資料写真：2009年の秋芳洞。天井から伸びる鍾乳石が見られます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Stalactite_at_Akiyoshi_Cave.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Stalactite_at_Akiyoshi_Cave.jpg",
+              "credit": "pastaitaken",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
             }
           ]
         }
@@ -1081,6 +1189,25 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261125-029",
+      "images": [
+        {
+          "id": "20261125-029-I01",
+          "type": "photo",
+          "title": "文部科学省の入口",
+          "caption": "資料写真：2009年に撮影された文部科学省の入口。教育に関する行政を担当する機関です。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg/960px-Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ministry_of_Education%2C_Culture%2C_Sports%2C_Science_and_Technology.jpg",
+          "credit": "Dick Thomas Johnson",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。提供元の承認・推奨を示唆しない。"
+        }
+      ],
+      "related": []
     },
     {
       "question_id": "20261125-031",
