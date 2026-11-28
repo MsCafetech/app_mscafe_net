@@ -26,7 +26,7 @@ Private Const R2 As String = "参照_HIPベンダー一覧"
 Private Const SH_RES As String = "チェック結果"
 
 Private Const IN_FIRST As Long = 8      ' ③～⑪ データ開始行
-Private Const IN_LAST As Long = 507     ' ③～⑪ データ最終行
+Private Const IN_LAST As Long = 2007    ' ③～⑪ データ最終行（2,000行。2026-11-19 に 500行から拡大）
 Private Const EX_FIRST As Long = 8      ' ② データ開始行
 
 ' ② 既存データ抽出：ブロックの開始位置（列のずれ。ブロック内の列番号 + OFF_xxx = シートの列番号）
@@ -45,9 +45,9 @@ Private Const EX_LAST As Long = 5000
 Private Const EXP_LAST As Long = 2000      ' HIPプロファイル
 Private Const URLV_LAST As Long = 30007    ' URL（1行1件）
 
-' ⑦ カスタムURLカテゴリ（横長：B列～AY列が1列1カテゴリ）
+' ⑦ カスタムURLカテゴリ（横長：B列から右へ1列1カテゴリ、最大1,500列）
 Private Const U_C1 As Long = 2
-Private Const U_C2 As Long = 51
+Private Const U_C2 As Long = 1501      ' 1,500カテゴリ（2026-11-19 に 50列から拡大）
 Private Const U_OP As Long = 6
 Private Const U_NAME As Long = 7
 Private Const U_TYPE As Long = 8
@@ -554,8 +554,9 @@ Private Sub CheckUrlSheet()
     End If
     ws.Range(ws.Cells(U_FIRST, U_C1), ws.Cells(U_LAST, U_C2)).Interior.Pattern = xlNone
     ws.Range(ws.Cells(U_VBA, U_C1), ws.Cells(U_VBA, U_C2)).ClearContents
-    v = ws.Range(ws.Cells(U_FIRST, U_C1), ws.Cells(U_LAST, U_C2)).Value
-    For c = U_C1 To U_C2
+    ' 記入のある最後の列までを1列ずつ読む（1,500列×3,000行を一度に読むとメモリが足りなくなるため）
+    For c = U_C1 To UrlLastCol(ws)
+        v = ws.Range(ws.Cells(U_FIRST, c), ws.Cells(U_LAST, c)).Value
         nm = Trim$(SafeStr(ws.Cells(U_NAME, c).Value))
         op = SafeStr(ws.Cells(U_OP, c).Value)
         isCm = (SafeStr(ws.Cells(U_TYPE, c).Value) = "Category Match")
@@ -565,7 +566,7 @@ Private Sub CheckUrlSheet()
         ngCells = "": wnCells = "": firstNg = ""
         If op <> "削除" Then
             For r = 1 To UBound(v, 1)
-                e = Trim$(SafeStr(v(r, c - U_C1 + 1)))
+                e = Trim$(SafeStr(v(r, 1)))
                 If e <> "" Then
                     cnt = cnt + 1
                     msg = EntryCheck(e, isCm)
@@ -615,6 +616,24 @@ Private Sub CheckUrlSheet()
         End If
     Next
 End Sub
+
+' ⑦で記入のある最後の列（6～9行目・URL欄のどこかに値がある列）。無ければ U_C1 - 1
+Private Function UrlLastCol(ByVal ws As Worksheet) As Long
+    Dim r As Long, c As Long, f As Range
+    UrlLastCol = U_C1 - 1
+    For r = U_OP To U_DESC
+        c = ws.Cells(r, U_C2).End(xlToLeft).Column
+        If Not IsEmpty(ws.Cells(r, U_C2).Value) Then c = U_C2
+        If c > UrlLastCol Then UrlLastCol = c
+    Next
+    Set f = ws.Range(ws.Cells(U_FIRST, U_C1), ws.Cells(U_LAST, U_C2)).Find(What:="*", LookIn:=xlValues, _
+            SearchOrder:=xlByColumns, SearchDirection:=xlPrevious)
+    If Not f Is Nothing Then
+        If f.Column > UrlLastCol Then UrlLastCol = f.Column
+    End If
+    If UrlLastCol > U_C2 Then UrlLastCol = U_C2
+    If UrlLastCol < U_C1 - 1 Then UrlLastCol = U_C1 - 1
+End Function
 
 Private Function EntryCheck(ByVal e As String, ByVal isCm As Boolean) As String
     Dim i As Long, cd As Long
@@ -1089,13 +1108,57 @@ End Sub
 
 ' カンマ・セル内改行のどちらの区切りにも対応
 Public Function SplitItems(ByVal s As String) As Collection
-    Dim c As New Collection, parts() As String, i As Long, t As String
-    parts = Split(Replace(Replace(s, vbCr, ""), vbLf, ","), ",")
-    For i = LBound(parts) To UBound(parts)
-        t = Trim$(parts(i))
-        If t <> "" Then c.Add t
+    Dim c As New Collection, a As Variant, i As Long
+    a = SplitVals(s)      ' DN（CN=…,OU=…）は1件のまま
+    For i = 0 To UBound(a)
+        c.Add CStr(a(i))
     Next
     Set SplitItems = c
+End Function
+
+' 複数値の分割（カンマ・セル内改行）。DN（CN=…,OU=…,DC=…）の途中のカンマでは分けない
+'   同じ行でカンマの後が OU= / DC= / O= / L= / ST= / C= / STREET= で始まり、直前の値が「=」を含むときは、1つの値として続ける
+'   例：CN=xxxx,OU=xxxx,DC=xxx,DC=local → 1件 ／ CN=a,OU=x,CN=b,OU=y → 2件
+Private Function SplitVals(ByVal s As String) As Variant
+    Dim lines() As String, parts() As String, res() As String, i As Long, j As Long, n As Long, t As String, lineTop As Long, joinIt As Boolean
+    SplitVals = Split("")
+    If Len(s) = 0 Then Exit Function
+    ReDim res(0 To Len(s))
+    n = -1
+    lines = Split(Replace(s, vbCr, ""), vbLf)
+    For i = 0 To UBound(lines)
+        lineTop = n + 1
+        parts = Split(lines(i), ",")
+        For j = 0 To UBound(parts)
+            t = Trim$(parts(j))
+            If t <> "" Then
+                ' VBA の And は短絡評価しないので、res(n) を見るのは n >= 0 を確かめてから
+                joinIt = False
+                If n >= lineTop Then
+                    If IsDnPart(t) Then joinIt = (InStr(res(n), "=") > 0)
+                End If
+                If joinIt Then
+                    res(n) = res(n) & "," & t
+                Else
+                    n = n + 1
+                    res(n) = t
+                End If
+            End If
+        Next
+    Next
+    If n < 0 Then Exit Function
+    ReDim Preserve res(0 To n)
+    SplitVals = res
+End Function
+
+' DN の2番目以降の要素（OU= など）か
+Private Function IsDnPart(ByVal t As String) As Boolean
+    Dim p As Long
+    p = InStr(t, "=")
+    If p < 2 Then Exit Function
+    Select Case UCase$(Trim$(Left$(t, p - 1)))
+        Case "OU", "DC", "O", "L", "ST", "C", "STREET": IsDnPart = True
+    End Select
 End Function
 
 '----------------------------------------------------------

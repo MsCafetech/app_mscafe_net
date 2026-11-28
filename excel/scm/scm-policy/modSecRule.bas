@@ -92,6 +92,7 @@ Private Const EP_PROF As String = "/sse/config/v1/profile-groups"
 ' ---- メンバー選択画面 用 ----
 Private Const PICK_KEY As String = "^+m"            ' Ctrl+Shift+M
 Private Const CELL_MAX As Long = 32767
+Private Const LIST_MAX As Long = 20     ' 入力チェックの理由欄に名前を並べる上限（超えた分は件数だけ表示）
 Private Const SH_OVERFLOW As String = "ピッカー_選択結果"
 
 Private mEvents As clsPickerEvents
@@ -164,7 +165,7 @@ Private Function Cmp(ByVal i As Long, ByVal s As String) As String
     InitF
     If i = 0 Then Cmp = Trim$(s): Exit Function
     Select Case mFT(i - 1)
-        Case "a", "g": Cmp = Join(SplitMembers(s), vbLf)
+        Case "a", "g": Cmp = Join(SplitVals(s), vbLf)
         Case "b": If LCase$(Trim$(s)) = "true" Then Cmp = "true"
         Case Else
             If mFK(i - 1) = "description" Then Cmp = s Else Cmp = Trim$(s)
@@ -500,6 +501,7 @@ Private Function GetAll(ByVal url0 As String, ByVal q As String, ByVal opLabel A
                         ByRef st As Long, ByRef resMsg As String) As Collection
     Dim url As String, resText As String, res As Object, item As Variant
     Dim offset As Long, cnt As Long, total As Long, lim As Long, items As New Collection
+    Dim pages As Long, firstId As String, prevFirst As String
     lim = PageLimit()
     Do
         url = WithQuery(url0, q & "&limit=" & lim & "&offset=" & offset)
@@ -522,14 +524,23 @@ Private Function GetAll(ByVal url0 As String, ByVal q As String, ByVal opLabel A
                     For Each item In res("data")
                         items.Add item
                         cnt = cnt + 1
+                        If cnt = 1 And TypeName(item) = "Dictionary" Then firstId = Nz(item, "id")
                     Next
                 End If
             End If
             If res.Exists("total") Then total = Val(SafeStr(res("total")))
         End If
-        offset = offset + lim
-        If cnt < lim Then Exit Do
-        If total > 0 And offset >= total Then Exit Do
+        ' SCM は1回に返す件数を limit より少なく抑えることがある（例：50件）。
+        ' 返ってきた件数で offset を進め、total（無ければ空のページ）まで取り切る
+        offset = offset + cnt
+        pages = pages + 1
+        If cnt = 0 Then Exit Do
+        If total > 0 Then
+            If offset >= total Then Exit Do
+        End If
+        If firstId <> "" And firstId = prevFirst Then Exit Do     ' offset が効かず同じページが返る場合の保険
+        prevFirst = firstId: firstId = ""
+        If pages >= 100000 Then Exit Do
         Prog opLabel & " 取得中 " & items.Count & " / " & total & " 件"
     Loop
     Set GetAll = items
@@ -916,7 +927,7 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
                 judge = ""
             End If
             ws.Cells(r, S_JUDGE).Value = judge
-            ws.Cells(r, S_REASON).Value = Mid$(ngs & warns, 2)
+            ws.Cells(r, S_REASON).Value = Left$(Mid$(ngs & warns, 2), 32000)     ' セル上限（32,767文字）を超えないように
             Select Case judge
                 Case "NG": ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_REASON)).Interior.Color = DIFF_NG: ng = ng + 1
                 Case "警告": ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_REASON)).Interior.Color = C_WARN
@@ -947,7 +958,7 @@ Private Function ContentNg(ByVal v As Variant, ByRef warns As String) As String
         k = mFK(i)
         Select Case mFT(i)
             Case "a"
-                a = SplitMembers(CStr(v(i + 1)))
+                a = SplitVals(CStr(v(i + 1)))
                 Select Case k
                     Case "from", "source", "source_user", "to", "destination", "application", "service", "category"
                         If UBound(a) < 0 Then s = s & vbLf & "NG:" & mFL(i) & " は必須です（指定しないときは any）"
@@ -969,7 +980,7 @@ Private Function ContentNg(ByVal v As Variant, ByRef warns As String) As String
         Case "": s = s & vbLf & "NG:アクション（allow / deny / drop 等）を選択してください"
         Case Else: s = s & vbLf & "NG:アクションは allow / deny / drop / reset-client / reset-server / reset-both のいずれかです"
     End Select
-    a = SplitMembers(CStr(v(FIdx("profile_setting"))))
+    a = SplitVals(CStr(v(FIdx("profile_setting"))))
     If UBound(a) >= 0 Then
         If UBound(a) > 0 Then s = s & vbLf & "NG:プロファイルグループは1つだけ指定してください"
         Set profs = ProfileNames()
@@ -1060,6 +1071,7 @@ End Sub
 ' 追加・変更する行の参照チェック（ゾーン・オブジェクトが⑧にあるか、ルールの folder から見えるか）
 Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns As String) As String
     Dim i As Long, grp As String, a As Variant, j As Long, nm As String, s As String, unk As String, sc As String
+    Dim unkN As Long, ngN As Long
     InitF
     If mRef Is Nothing Then Set mRef = BuildRefMap()
     For i = 0 To NF - 1
@@ -1074,24 +1086,27 @@ Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns A
             Case Else: grp = ""
         End Select
         If grp <> "" Then
-            a = SplitMembers(CStr(v(i + 1)))
-            unk = ""
+            a = SplitVals(CStr(v(i + 1)))
+            unk = "": unkN = 0: ngN = 0
             For j = 0 To UBound(a)
                 nm = CStr(a(j))
                 If LCase$(nm) = "any" Then
                 ElseIf grp = "svc" And (nm = "application-default" Or nm = "service-http" Or nm = "service-https") Then
                 ElseIf grp = "addr" And IsIpLike(nm) Then
                 ElseIf Not mRef.Exists(grp & "|" & nm) Then
-                    unk = unk & "、" & nm
+                    unkN = unkN + 1
+                    If unkN <= LIST_MAX Then unk = unk & "、" & nm      ' 理由欄が長くなりすぎないよう先頭だけ表示
                 Else
                     sc = mRef(grp & "|" & nm)
                     If sc <> "*" And Not ScopeAllowed(sc, folder) Then
-                        s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & sc & " の定義のため、" & ScopeLabel(folder) & " のルールでは使えません"
+                        ngN = ngN + 1
+                        If ngN = LIST_MAX + 1 Then s = s & vbLf & "NG:" & mFL(i) & " ほかにもスコープ外の値があります（先頭 " & LIST_MAX & " 件のみ表示）"
+                        If ngN <= LIST_MAX Then s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & sc & " の定義のため、" & ScopeLabel(folder) & " のルールでは使えません"
                     End If
                 End If
             Next
             If unk <> "" Then
-                warns = warns & vbLf & "警告:" & mFL(i) & " の「" & Mid$(unk, 2) & "」が⑧選択肢にありません" & _
+                warns = warns & vbLf & "警告:" & mFL(i) & " の「" & Mid$(unk, 2) & IIf(unkN > LIST_MAX, "」ほか " & (unkN - LIST_MAX) & " 件（計 " & unkN & " 件）", "」") & "が⑧選択肢にありません" & _
                         IIf(grp = "app", "（定義済みApp-IDなら問題ありません）", IIf(grp = "zone", "（⑧にゾーンとスコープを追記してください）", ""))
             End If
         End If
@@ -1239,13 +1254,13 @@ Private Function BuildBody(ByVal v As Variant) As String
         s = CStr(v(i + 1))
         Select Case mFT(i)
             Case "a"
-                If UBound(SplitMembers(s)) >= 0 Then js = js & ",""" & k & """:" & JsonArr(s)
+                If UBound(SplitVals(s)) >= 0 Then js = js & ",""" & k & """:" & JsonArr(s)
             Case "b"
                 Select Case LCase$(Trim$(s))
                     Case "true", "false": js = js & ",""" & k & """:" & LCase$(Trim$(s))
                 End Select
             Case "g"
-                If UBound(SplitMembers(s)) >= 0 Then js = js & ",""" & k & """:{""group"":" & JsonArr(s) & "}"
+                If UBound(SplitVals(s)) >= 0 Then js = js & ",""" & k & """:{""group"":" & JsonArr(s) & "}"
             Case "s"
                 If k = "description" Then
                     If s <> "" Then js = js & ",""" & k & """:" & JsonStr(s)
@@ -1259,7 +1274,7 @@ End Function
 
 Private Function JsonArr(ByVal s As String) As String
     Dim a As Variant, i As Long, r As String
-    a = SplitMembers(s)
+    a = SplitVals(s)
     For i = 0 To UBound(a)
         If r <> "" Then r = r & ","
         r = r & JsonStr(CStr(a(i)))
@@ -2053,7 +2068,7 @@ Private Sub AddUsedZones()
         f = SafeStr(arr(i, G_FOLDER))
         If SafeStr(arr(i, 1)) <> HDR And f <> "" Then
             For Each fi In Array(FIdx("from"), FIdx("to"))
-                a = SplitMembers(SafeStr(arr(i, G_NAME + fi)))
+                a = SplitVals(SafeStr(arr(i, G_NAME + fi)))
                 For j = 0 To UBound(a)
                     z = CStr(a(j))
                     If LCase$(z) <> "any" And Not known.Exists(z) Then
@@ -2114,12 +2129,15 @@ Private Function CustomApps(ByVal q As String, ByVal folder As String, ByRef c A
                 End If
             End If
         End If
-        offset = offset + lim
+        ' SCM が limit より少なく返すことがあるため、返ってきた件数で offset を進める
+        offset = offset + rawN
         Prog "選択肢：applications を確認中 " & Format$(IIf(total > 0 And offset > total, total, offset), "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & _
              " 件（自作App " & c.Count & " 件・経過 " & Format$(Timer - t0, "0") & " 秒。Esc で中止）"
         DoEvents
-        If rawN < lim Then Exit Do
-        If total > 0 And offset >= total Then Exit Do
+        If rawN = 0 Then Exit Do
+        If total > 0 Then
+            If offset >= total Then Exit Do
+        End If
     Loop
     WriteLog "選択肢取得", "自作App", "GET", WithQuery(ApiBase() & "/sse/config/v1/applications", q), 200, _
              c.Count & " 件（定義済みを除く。確認 " & offset & " 件・" & Format$(Timer - t0, "0") & " 秒）"
@@ -2300,7 +2318,7 @@ Private Sub AddUsed(ByVal sh As String, ByVal col As Long, ByVal kind As String,
     If Not ReadCols(sh, col, FIRST, G_FOLDER, ws, v, fv) Then Exit Sub
     For i = 1 To UBound(v, 1)
         If ScopeAllowed(SafeStr(fv(i, 1)), folder) Then
-            a = SplitMembers(SafeStr(v(i, 1)))
+            a = SplitVals(SafeStr(v(i, 1)))
             For j = 0 To UBound(a)
                 nm = CStr(a(j))
                 If nm <> "" And Not mNames.Exists(nm) Then mNames.Add nm, kind
@@ -2399,13 +2417,57 @@ End Sub
 
 ' カンマ・セル内改行のどちらの区切りにも対応
 Public Function SplitItems(ByVal s As String) As Collection
-    Dim c As New Collection, parts() As String, i As Long, t As String
-    parts = Split(Replace(Replace(s, vbCr, ""), vbLf, ","), ",")
-    For i = LBound(parts) To UBound(parts)
-        t = Trim$(parts(i))
-        If t <> "" Then c.Add t
+    Dim c As New Collection, a As Variant, i As Long
+    a = SplitVals(s)      ' DN（CN=…,OU=…）は1件のまま
+    For i = 0 To UBound(a)
+        c.Add CStr(a(i))
     Next
     Set SplitItems = c
+End Function
+
+' 複数値の分割（カンマ・セル内改行）。DN（CN=…,OU=…,DC=…）の途中のカンマでは分けない
+'   同じ行でカンマの後が OU= / DC= / O= / L= / ST= / C= / STREET= で始まり、直前の値が「=」を含むときは、1つの値として続ける
+'   例：CN=xxxx,OU=xxxx,DC=xxx,DC=local → 1件 ／ CN=a,OU=x,CN=b,OU=y → 2件
+Private Function SplitVals(ByVal s As String) As Variant
+    Dim lines() As String, parts() As String, res() As String, i As Long, j As Long, n As Long, t As String, lineTop As Long, joinIt As Boolean
+    SplitVals = Split("")
+    If Len(s) = 0 Then Exit Function
+    ReDim res(0 To Len(s))
+    n = -1
+    lines = Split(Replace(s, vbCr, ""), vbLf)
+    For i = 0 To UBound(lines)
+        lineTop = n + 1
+        parts = Split(lines(i), ",")
+        For j = 0 To UBound(parts)
+            t = Trim$(parts(j))
+            If t <> "" Then
+                ' VBA の And は短絡評価しないので、res(n) を見るのは n >= 0 を確かめてから
+                joinIt = False
+                If n >= lineTop Then
+                    If IsDnPart(t) Then joinIt = (InStr(res(n), "=") > 0)
+                End If
+                If joinIt Then
+                    res(n) = res(n) & "," & t
+                Else
+                    n = n + 1
+                    res(n) = t
+                End If
+            End If
+        Next
+    Next
+    If n < 0 Then Exit Function
+    ReDim Preserve res(0 To n)
+    SplitVals = res
+End Function
+
+' DN の2番目以降の要素（OU= など）か
+Private Function IsDnPart(ByVal t As String) As Boolean
+    Dim p As Long
+    p = InStr(t, "=")
+    If p < 2 Then Exit Function
+    Select Case UCase$(Trim$(Left$(t, p - 1)))
+        Case "OU", "DC", "O", "L", "ST", "C", "STREET": IsDnPart = True
+    End Select
 End Function
 
 Private Function SafeStr(ByVal v As Variant) As String

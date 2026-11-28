@@ -29,7 +29,7 @@ Private Const S11 As String = "⑪ユーザ・グループ"
 
 Private Const FIRST As Long = 8
 Private Const IN_FIRST As Long = 8
-Private Const IN_LAST As Long = 507
+Private Const IN_LAST As Long = 2007    ' ③～⑪ データ最終行（2,000行）
 Private Const CHO_LAST As Long = 10007
 Private Const HDR As String = "▼"
 
@@ -45,7 +45,7 @@ Private Const OFF_PG As Long = 153
 
 ' ⑦ カスタムURLカテゴリ（横長）
 Private Const U_C1 As Long = 2
-Private Const U_C2 As Long = 51
+Private Const U_C2 As Long = 1501      ' ⑦ 1,500カテゴリ
 Private Const U_OP As Long = 6
 Private Const U_NAME As Long = 7
 
@@ -97,6 +97,7 @@ Private Const C_NG As Long = &HCEC7FF
 Private Const C_CHG As Long = &HADCBF8
 
 Private Const CELL_MAX As Long = 32767
+Private Const LIST_MAX As Long = 20     ' 入力チェックの理由欄に名前を並べる上限（超えた分は件数だけ表示）
 
 ' モード（sec / dec）
 Private mMode As String
@@ -728,7 +729,7 @@ Private Function CheckSet(ByRef okN As Long, ByRef warnN As Long) As Long
                 judge = ""
             End If
             ws.Cells(r, S_JUDGE).Value = judge
-            ws.Cells(r, S_REASON).Value = Mid$(ngs & warns, 2)
+            ws.Cells(r, S_REASON).Value = Left$(Mid$(ngs & warns, 2), 32000)     ' セル上限（32,767文字）を超えないように
             Select Case judge
                 Case "NG"
                     ws.Range(ws.Cells(r, S_JUDGE), ws.Cells(r, S_REASON)).Interior.Color = C_NG
@@ -906,6 +907,7 @@ End Sub
 ' 参照チェック：③～⑪で削除予定でないか、選択肢にあるか、ルールの folder から見えるか
 Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns As String) As String
     Dim i As Long, grp As String, a As Variant, j As Long, nm As String, s As String, unk As String, sc As String, dsh As String
+    Dim unkN As Long, ngN As Long
     If mRef Is Nothing Then BuildChoices
     For i = 0 To NF - 1
         Select Case mFK(i)
@@ -921,7 +923,7 @@ Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns A
         End Select
         If grp <> "" Then
             a = PSplit(CStr(v(i + 1)))
-            unk = ""
+            unk = "": unkN = 0: ngN = 0
             For j = 0 To UBound(a)
                 nm = CStr(a(j))
                 dsh = DelSheet(grp, nm)
@@ -932,16 +934,19 @@ Private Function RefNg(ByVal v As Variant, ByVal folder As String, ByRef warns A
                 ElseIf dsh <> "" Then
                     s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & dsh & " で削除予定です"
                 ElseIf Not mRef.Exists(grp & "|" & nm) Then
-                    unk = unk & "、" & nm
+                    unkN = unkN + 1
+                    If unkN <= LIST_MAX Then unk = unk & "、" & nm      ' 理由欄が長くなりすぎないよう先頭だけ表示
                 Else
                     sc = mRef(grp & "|" & nm)
                     If sc <> "*" And Not ScopeAllowed(sc, folder) Then
-                        s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & sc & " の定義のため、" & ScopeLabel(folder) & " のルールでは使えません"
+                        ngN = ngN + 1
+                        If ngN = LIST_MAX + 1 Then s = s & vbLf & "NG:" & mFL(i) & " ほかにもスコープ外の値があります（先頭 " & LIST_MAX & " 件のみ表示）"
+                        If ngN <= LIST_MAX Then s = s & vbLf & "NG:" & mFL(i) & "「" & nm & "」は " & sc & " の定義のため、" & ScopeLabel(folder) & " のルールでは使えません"
                     End If
                 End If
             Next
             If unk <> "" Then
-                warns = warns & vbLf & "警告:" & mFL(i) & " の「" & Mid$(unk, 2) & "」が②既存データにも③～⑪の登録にもありません" & UnkHint(grp)
+                warns = warns & vbLf & "警告:" & mFL(i) & " の「" & Mid$(unk, 2) & IIf(unkN > LIST_MAX, "」ほか " & (unkN - LIST_MAX) & " 件（計 " & unkN & " 件）", "」") & "が②既存データにも③～⑪の登録にもありません" & UnkHint(grp)
             End If
         End If
     Next
@@ -1492,12 +1497,15 @@ Private Function CustomApps(ByVal q As String, ByVal folder As String, ByRef c A
                 End If
             End If
         End If
-        offset = offset + lim
+        ' SCM が limit より少なく返すことがあるため、返ってきた件数で offset を進める
+        offset = offset + rawN
         Prog "選択肢：applications を確認中 " & Format$(IIf(total > 0 And offset > total, total, offset), "#,##0") & IIf(total > 0, " / " & Format$(total, "#,##0"), "") & _
              " 件（自作App " & c.Count & " 件・経過 " & Format$(Timer - t0, "0") & " 秒）"
         DoEvents
-        If rawN < lim Then Exit Do
-        If total > 0 And offset >= total Then Exit Do
+        If rawN = 0 Then Exit Do
+        If total > 0 Then
+            If offset >= total Then Exit Do
+        End If
     Loop
     WriteLog "選択肢取得（自作App）", "", "GET", WithQuery(modInFetch.InApiBase() & "/sse/config/v1/applications", q), 200, _
              c.Count & " 件（定義済みを除く。確認 " & offset & " 件）"
@@ -1524,7 +1532,7 @@ Private Sub AddUsedZones()
                 f = SafeStr(arr(i, G_FOLDER))
                 If SafeStr(arr(i, 1)) <> HDR And f <> "" Then
                     For Each fi In Array(FIdx("from"), FIdx("to"))
-                        a = SplitMembers(SafeStr(arr(i, G_NAME + fi)))
+                        a = PSplit(SafeStr(arr(i, G_NAME + fi)))
                         For j = 0 To UBound(a)
                             z = CStr(a(j))
                             If LCase$(z) <> "any" And Not known.Exists(z) Then
@@ -1737,22 +1745,52 @@ End Sub
 '==========================================================
 ' セル内改行・カンマ区切り → 配列（空は UBound=-1）
 Private Function PSplit(ByVal s As String) As Variant
-    Dim parts() As String, i As Long, n As Long, out() As String, t As String
-    PSplit = Split("")
-    parts = Split(Replace(Replace(s, vbCr, ""), vbLf, ","), ",")
-    If UBound(parts) < 0 Then Exit Function
-    ReDim out(0 To UBound(parts))
+    PSplit = SplitVals(s)     ' DN（CN=…,OU=…）は1件のまま
+End Function
+
+' 複数値の分割（カンマ・セル内改行）。DN（CN=…,OU=…,DC=…）の途中のカンマでは分けない
+'   同じ行でカンマの後が OU= / DC= / O= / L= / ST= / C= / STREET= で始まり、直前の値が「=」を含むときは、1つの値として続ける
+'   例：CN=xxxx,OU=xxxx,DC=xxx,DC=local → 1件 ／ CN=a,OU=x,CN=b,OU=y → 2件
+Private Function SplitVals(ByVal s As String) As Variant
+    Dim lines() As String, parts() As String, res() As String, i As Long, j As Long, n As Long, t As String, lineTop As Long, joinIt As Boolean
+    SplitVals = Split("")
+    If Len(s) = 0 Then Exit Function
+    ReDim res(0 To Len(s))
     n = -1
-    For i = 0 To UBound(parts)
-        t = Trim$(parts(i))
-        If t <> "" Then
-            n = n + 1
-            out(n) = t
-        End If
+    lines = Split(Replace(s, vbCr, ""), vbLf)
+    For i = 0 To UBound(lines)
+        lineTop = n + 1
+        parts = Split(lines(i), ",")
+        For j = 0 To UBound(parts)
+            t = Trim$(parts(j))
+            If t <> "" Then
+                ' VBA の And は短絡評価しないので、res(n) を見るのは n >= 0 を確かめてから
+                joinIt = False
+                If n >= lineTop Then
+                    If IsDnPart(t) Then joinIt = (InStr(res(n), "=") > 0)
+                End If
+                If joinIt Then
+                    res(n) = res(n) & "," & t
+                Else
+                    n = n + 1
+                    res(n) = t
+                End If
+            End If
+        Next
     Next
     If n < 0 Then Exit Function
-    ReDim Preserve out(0 To n)
-    PSplit = out
+    ReDim Preserve res(0 To n)
+    SplitVals = res
+End Function
+
+' DN の2番目以降の要素（OU= など）か
+Private Function IsDnPart(ByVal t As String) As Boolean
+    Dim p As Long
+    p = InStr(t, "=")
+    If p < 2 Then Exit Function
+    Select Case UCase$(Trim$(Left$(t, p - 1)))
+        Case "OU", "DC", "O", "L", "ST", "C", "STREET": IsDnPart = True
+    End Select
 End Function
 
 ' 1～12列のうち一番下のデータ行（見出し行・ルール行のどちらかが入る列）
