@@ -3,8 +3,8 @@
   "date": "2026-11-21",
   "language": "ja",
   "question_count": 3,
-  "related_count": 1,
-  "image_count": 4,
+  "related_count": 9,
+  "image_count": 12,
   "questions": [
     {
       "question_id": "20261121-001",
@@ -41,6 +41,42 @@
               "usage_notes": "出典・提供元を表示。提供元の推奨を示唆しない。"
             }
           ]
+        },
+        {
+          "related_id": "20261121-001-R02",
+          "images": [
+            {
+              "type": "photo",
+              "title": "1986年伊豆大島噴火",
+              "caption": "資料写真：1986年伊豆大島噴火による溶岩流。赤く光る溶岩が斜面を流れる様子。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/%E4%BC%8A%E8%B1%86%E5%A4%A7%E5%B3%B6_1986%E5%B9%B4.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:伊豆大島_1986年.png",
+              "credit": "気象庁",
+              "license": "CC BY 4.0 (公共データ利用規約1.0互換)",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261121-001-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261121-001-R03",
+          "images": [
+            {
+              "type": "map",
+              "title": "富士山火山防災マップ",
+              "caption": "資料地図：2004年の富士山火山防災マップ。災害の危険範囲を確認する例。実際の避難には最新の自治体資料を使用する。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Hazard_Map_of_Mt.Fuji_common_l.jpg/960px-Hazard_Map_of_Mt.Fuji_common_l.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hazard_Map_of_Mt.Fuji_common_l.jpg",
+              "credit": "富士山火山防災協議会／内閣府防災のページ（制作：砂防・地すべり技術センター）",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261121-001-R03-I01"
+            }
+          ]
         }
       ]
     },
@@ -61,7 +97,62 @@
           "usage_notes": "出典を表示。商用利用可能。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261121-002-R01",
+          "images": [
+            {
+              "type": "document",
+              "title": "日本国憲法の公布文書",
+              "caption": "歴史資料：日本国憲法の公布文書。天皇の署名・印と内閣の大臣の署名が記されている。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Constitution_of_Japan_original_copy.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Constitution_of_Japan_original_copy.jpg",
+              "credit": "日本政府",
+              "license": "Public domain (PD-Japan-exempt)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-Japan-exempt",
+              "usage_notes": "日本の著作権法第13条により憲法は保護対象外。出典を明示。",
+              "id": "20261121-002-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261121-002-R02",
+          "images": [
+            {
+              "type": "document",
+              "title": "日本国憲法原本の前文",
+              "caption": "歴史資料：国民主権や基本的人権、平和主義の考え方が示される日本国憲法の前文冒頭。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Nihon_Kenpo03.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nihon_Kenpo03.jpg",
+              "credit": "日本政府",
+              "license": "Public domain (PD-Japan-exempt)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-Japan-exempt",
+              "usage_notes": "日本の著作権法第13条により憲法は保護対象外。出典を明示。",
+              "id": "20261121-002-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261121-002-R03",
+          "images": [
+            {
+              "type": "map",
+              "title": "マラッカ海峡とシンガポール",
+              "caption": "資料地図：2006年のマラッカ海峡周辺地図。シンガポールは海上交通の要所に位置する。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Strait_of_malacca.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Strait_of_malacca.jpg",
+              "credit": "U.S. Department of Defense",
+              "license": "Public domain (U.S. government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+              "usage_notes": "米国政府著作物。出典を明示。",
+              "id": "20261121-002-R03-I01"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261121-100",
@@ -80,7 +171,62 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261121-100-R01",
+          "images": [
+            {
+              "type": "photo",
+              "title": "ジュネーブの国連会議室",
+              "caption": "資料写真：ジュネーブのパレ・デ・ナシオンの会議室。国際連盟から国連へ引き継がれた施設。2023年撮影。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/United_Nations_Geneva_Council_Chamber.jpg/960px-United_Nations_Geneva_Council_Chamber.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:United_Nations_Geneva_Council_Chamber.jpg",
+              "credit": "Nacaru",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261121-100-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261121-100-R02",
+          "images": [
+            {
+              "type": "map",
+              "title": "スイスの地図",
+              "caption": "資料地図：2004年のスイスの地図。周辺国やアルプス山脈の位置を確認できる。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Switzerland-CIA_WFB_Map.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Switzerland-CIA_WFB_Map.png",
+              "credit": "CIA World Factbook",
+              "license": "Public domain (U.S. government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+              "usage_notes": "米国政府著作物。出典を明示。",
+              "id": "20261121-100-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261121-100-R03",
+          "images": [
+            {
+              "type": "photo",
+              "title": "国連憲章に署名したペン",
+              "caption": "資料写真：1945年6月26日に国連憲章へ署名した際に使われたペン。国際的な約束を交わした歴史資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Pen_used_to_sign_UN_Charter.jpg/960px-Pen_used_to_sign_UN_Charter.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Pen_used_to_sign_UN_Charter.jpg",
+              "credit": "Simiprof",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0で公開。出典を明示。",
+              "id": "20261121-100-R03-I01"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
