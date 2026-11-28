@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 65,
+  "related_count": 66,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -305,6 +305,24 @@
             {
               "name": "内閣府",
               "url": "https://www.bousai.go.jp/kaigirep/hakusho/r07/honbun/1b_1s_01_01.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-004-R04",
+          "relation_type": "question",
+          "title": "洪水に備えるハザードマップ",
+          "description": "洪水（こうずい）のハザードマップには、川があふれたときに水につかるおそれのある場所などが示されています。ふだんから自分の住む地域の危険な場所や避難先（ひなんさき）、そこまでの道を確認しておくことが大切です。大雨になってからの移動は危険な場合があるため、早めの避難を心がけます。",
+          "relationship": "災害後の復旧だけでなく、大雨の前にできる備えを学びます。",
+          "keywords": [
+            "洪水",
+            "ハザードマップ",
+            "避難"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/bosai/flood.html"
             }
           ]
         }

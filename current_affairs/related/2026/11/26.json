@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 71,
+  "related_count": 76,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -756,6 +756,24 @@
               "url": "https://www.maff.go.jp/j/shokusan/ryutu/soumu/index.html"
             }
           ]
+        },
+        {
+          "id": "20261126-015-R04",
+          "relation_type": "question",
+          "title": "食品ごみの処理と再利用",
+          "description": "家庭から出る食品のごみは、多くの場合、燃やすごみとして処理されます。燃やした後に残る灰などは、最終処分場（さいしゅうしょぶんじょう）に埋（う）め立てられます。一方、事業者などから出る食品廃棄物（しょくひんはいきぶつ）の一部は、再利用される場合もあります。",
+          "relationship": "食品ロスを減らすことと、捨てられた食品の処理の関係を学びます。",
+          "keywords": [
+            "食品ロス",
+            "食品廃棄物",
+            "ごみ処理"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/policy/keizai_portal/A_basic/a08.html"
+            }
+          ]
         }
       ]
     },
@@ -1208,6 +1226,24 @@
               "url": "https://www.env.go.jp/chemi/rhm/current/01-01-02.html"
             }
           ]
+        },
+        {
+          "id": "20261126-014-R04",
+          "relation_type": "question",
+          "title": "東日本大震災（ひがしにほんだいしんさい）と復興（ふっこう）",
+          "description": "2011年の東日本大震災では、大きな地震と津波（つなみ）に加え、東京電力福島第一原子力発電所の事故が起きました。住まいや道路などが大きな被害を受け、多くの人が避難（ひなん）しました。復興では、住まいや道路を整えるだけでなく、被災した人の生活や地域の産業を支えることも大切です。",
+          "relationship": "原子力発電所の事故を、地震・津波と被災地の復興につなげて学びます。",
+          "keywords": [
+            "東日本大震災",
+            "津波",
+            "復興"
+          ],
+          "sources": [
+            {
+              "name": "復興庁",
+              "url": "https://www.reconstruction.go.jp/311kyoukun/archive/hajimeni.html"
+            }
+          ]
         }
       ]
     },
@@ -1267,6 +1303,24 @@
               "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000570013"
             }
           ]
+        },
+        {
+          "id": "20261126-016-R04",
+          "relation_type": "question",
+          "title": "平安京の朱雀大路と羅城門",
+          "description": "平安京（へいあんきょう）には、中心を南北に通る朱雀大路（すざくおおじ）という大きな道がありました。この道は北の朱雀門から南の羅城門（らじょうもん）まで続き、幅は約84メートルありました。都を左右に分ける中心の道でした。",
+          "relationship": "小説の題名にも使われた門を手がかりに、平安京のつくりを学びます。",
+          "keywords": [
+            "平安京",
+            "朱雀大路",
+            "羅城門"
+          ],
+          "sources": [
+            {
+              "name": "京都市",
+              "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/ishibumi/html/na119.html"
+            }
+          ]
         }
       ]
     },
@@ -1324,6 +1378,24 @@
             {
               "name": "国土地理院",
               "url": "https://www.gsi.go.jp/REPORT/JIHO/vol122-abst-09.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-017-R04",
+          "relation_type": "question",
+          "title": "岩手県の沿岸と北上山地",
+          "description": "岩手県の中央には、北上山地（きたかみさんち）が南北に走っています。その東側の三陸沿岸（さんりくえんがん）は太平洋に面し、陸前高田市（りくぜんたかたし）などがあります。山地から続く山々は海岸に近くまでせまり、宮古市以南には入り江の多いリアス海岸が見られます。",
+          "relationship": "陸前高田市のある岩手県の地形と海岸の位置を学びます。",
+          "keywords": [
+            "岩手県",
+            "北上山地",
+            "三陸海岸"
+          ],
+          "sources": [
+            {
+              "name": "岩手県",
+              "url": "https://www.pref.iwate.jp/engan/gaiyou/1013957.html"
             }
           ]
         }
@@ -1443,6 +1515,24 @@
             {
               "name": "モントレーベイ水族館",
               "url": "https://www.montereybayaquarium.org/animals-the-ocean/ecosystems/kelp-forest"
+            }
+          ]
+        },
+        {
+          "id": "20261126-020-R04",
+          "relation_type": "question",
+          "title": "外来種と在来種への影響",
+          "description": "外来種（がいらいしゅ）とは、人の活動によって、もともといなかった地域に入ってきた生き物です。海外からだけでなく、日本国内の別の地域から持ちこまれる場合もあります。外来種の中には、もともとその地域にいた生き物と食べ物やすみかを取り合うなど、生態系（せいたいけい）に大きな影響（えいきょう）を与えるものがあります。",
+          "relationship": "野生生物の取引や移動が、生き物のつながりに与える影響を学びます。",
+          "keywords": [
+            "外来種",
+            "在来種",
+            "生態系"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/nature/intro/2outline/invasive.html"
             }
           ]
         }
