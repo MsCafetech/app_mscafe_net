@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 16,
-  "related_count": 44,
+  "question_count": 20,
+  "related_count": 65,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -576,6 +576,25 @@
               "url": "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/japan/eu-japan-agreement/factsheets-and-guides/factsheet-eu-japan-economic-partnership-agreement-epa_en?prefLang=ru"
             }
           ]
+        },
+        {
+          "id": "20261125-017-R03",
+          "relation_type": "question",
+          "title": "フランスとEUの地理",
+          "description": "フランスはヨーロッパ西部にある国で、首都はパリです。ドイツやベルギー、スペインなどと国境を接し、欧州連合（おうしゅうれんごう、EU）の一員です。EUでは国境を越えた経済活動が進められています。",
+          "relationship": "EUの加盟国を地図で理解する。",
+          "keywords": [
+            "フランス",
+            "パリ",
+            "EU",
+            "ヨーロッパ"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/area/france/data.html"
+            }
+          ]
         }
       ]
     },
@@ -747,6 +766,24 @@
               "url": "https://www.esafety.gov.au/key-topics/cyberbullying/report-cyberbullying"
             }
           ]
+        },
+        {
+          "id": "20261125-020-R03",
+          "relation_type": "answer",
+          "title": "インターネットの年齢確認",
+          "description": "インターネットでは、年齢に応じたサービスを提供するため、利用者の年齢を確認する場合があります。オーストラリアでは対象のSNSが16歳未満の利用者のアカウント作成などを防ぐために合理的な対策を取ることが求められます。確認に使う個人情報を守ることも重要です。",
+          "relationship": "SNS利用の年齢制限を実施する仕組みを学ぶ。",
+          "keywords": [
+            "年齢確認",
+            "SNS",
+            "個人情報"
+          ],
+          "sources": [
+            {
+              "name": "豪州eSafety Commissioner",
+              "url": "https://www.esafety.gov.au/parents/social-media-age-restrictions"
+            }
+          ]
         }
       ]
     },
@@ -889,6 +926,43 @@
               "url": "https://swc.nict.go.jp/knowledge/magnetosphere.html"
             }
           ]
+        },
+        {
+          "id": "20261125-023-R02",
+          "relation_type": "question",
+          "title": "オーロラが光る仕組み",
+          "description": "オーロラは、宇宙から地球の大気に入った電気を帯びた粒子（りゅうし）が、酸素や窒素（ちっそ）などにエネルギーを伝えて光る現象です。酸素は緑や赤、窒素は紫やピンクの光に関わります。地球の磁場の働きで極地方に多く見られます。",
+          "relationship": "地球の磁気圏と発光現象の関係を学ぶ。",
+          "keywords": [
+            "オーロラ",
+            "太陽風",
+            "酸素",
+            "窒素"
+          ],
+          "sources": [
+            {
+              "name": "防災科学技術研究所",
+              "url": "https://www.bosai.go.jp/poster-earth/aurora/"
+            }
+          ]
+        },
+        {
+          "id": "20261125-023-R03",
+          "relation_type": "question",
+          "title": "太陽の活動と地球への影響",
+          "description": "太陽の活動が活発になると、大量の粒子（りゅうし）や電磁波が宇宙に放出されることがあります。地球周辺の磁場などが乱れると、人工衛星や電波通信に影響（えいきょう）が出ることがあります。情報通信研究機構はこうした宇宙天気を観測し予報しています。",
+          "relationship": "太陽活動が地球周辺や社会に及ぼす影響を学ぶ。",
+          "keywords": [
+            "太陽活動",
+            "宇宙天気",
+            "磁気嵐"
+          ],
+          "sources": [
+            {
+              "name": "情報通信研究機構",
+              "url": "https://origin-swc.nict.go.jp/knowledge/guide.html"
+            }
+          ]
         }
       ]
     },
@@ -910,6 +984,24 @@
           "sources": [
             {
               "name": "外務省 キューバ基礎データ",
+              "url": "https://www.mofa.go.jp/mofaj/area/cuba/data.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-024-R02",
+          "relation_type": "answer",
+          "title": "カリブ海とキューバの位置",
+          "description": "キューバはカリブ海にある島国です。首都はハバナで、北にはアメリカのフロリダ半島があります。南北アメリカの間にある海域に位置するため、地図では島と周囲の海の関係に注目しましょう。",
+          "relationship": "キューバの位置と首都を学ぶ。",
+          "keywords": [
+            "キューバ",
+            "ハバナ",
+            "カリブ海"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
               "url": "https://www.mofa.go.jp/mofaj/area/cuba/data.html"
             }
           ]
@@ -937,6 +1029,42 @@
               "url": "https://www2.city.mine.lg.jp/soshiki/kyoiku/hogoka/bunkazai/bunkazai/kunishitei/tokubetsu/1530.html"
             }
           ]
+        },
+        {
+          "id": "20261125-026-R02",
+          "relation_type": "answer",
+          "title": "草原の維持と人の活動",
+          "description": "秋吉台（あきよしだい）では山焼きなどの人の活動によって広い草原が維持されています。草原にはススキなどが生え、草原を生活の場とする生物がいます。人が自然に働きかけて保ってきた景観にも注目しましょう。",
+          "relationship": "秋吉台の地形だけでなく草原の維持を学ぶ。",
+          "keywords": [
+            "秋吉台",
+            "草原",
+            "山焼き"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://www.env.go.jp/nature/satoyama/35_yamaguchi/no35-5.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-026-R03",
+          "relation_type": "question",
+          "title": "石灰岩と鍾乳洞",
+          "description": "石灰岩（せっかいがん）は水にとけた二酸化炭素の働きで少しずつとけ、地下に空洞ができることがあります。洞内で水にとけた成分が再び固まると鍾乳石（しょうにゅうせき）が成長します。秋芳洞（あきよしどう）ではさまざまな形の鍾乳石が見られます。",
+          "relationship": "カルスト台地と地下の洞窟の関係を学ぶ。",
+          "keywords": [
+            "石灰岩",
+            "鍾乳洞",
+            "秋芳洞"
+          ],
+          "sources": [
+            {
+              "name": "山口大学",
+              "url": "https://www.yamaguchi-u.ac.jp/weekly/53774/index.html"
+            }
+          ]
         }
       ]
     },
@@ -960,6 +1088,283 @@
             {
               "name": "JAXA 国際宇宙探査センター",
               "url": "https://www.exploration.jaxa.jp/program/lunarpolar/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-027-R02",
+          "relation_type": "question",
+          "title": "月と地球の公転・自転",
+          "description": "月は地球の周りを公転しながら、自分自身も自転しています。月の公転と自転にかかる時間はほぼ同じなので、地球からはいつもほぼ同じ面が見えます。月の満ち欠けは、太陽に照らされる部分が地球からどう見えるかで起こります。",
+          "relationship": "月の運動を理解して月の環境を学ぶ。",
+          "keywords": [
+            "月",
+            "自転",
+            "公転",
+            "満ち欠け"
+          ],
+          "sources": [
+            {
+              "name": "国立天文台",
+              "url": "https://www.miz.nao.ac.jp/rise/c/reading/about-libration.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-027-R03",
+          "relation_type": "question",
+          "title": "水の状態変化と月の環境",
+          "description": "水は温度や気圧などの条件によって固体、液体、気体になります。月の極地方には日光が長く当たらない永久影（えい）があり、水が氷として残っている可能性があります。JAXAなどは月の水資源について調べる計画を進めています。",
+          "relationship": "水の状態変化と月の極地方の環境を結びつける。",
+          "keywords": [
+            "水",
+            "氷",
+            "永久影",
+            "月"
+          ],
+          "sources": [
+            {
+              "name": "JAXA",
+              "url": "https://www.exploration.jaxa.jp/program/lunarpolar/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-028",
+      "related": [
+        {
+          "id": "20261125-028-R01",
+          "relation_type": "answer",
+          "title": "NPOと社会課題の解決",
+          "description": "NPOは社会のために活動し、活動で得た利益を構成員に分けることを目的としない団体です。子どもの支援や環境保全などさまざまな活動を行います。必要な費用を得るために事業を行うことはでき、得た利益を活動に生かします。",
+          "relationship": "子ども食堂などを支える団体の仕組みを学ぶ。",
+          "keywords": [
+            "NPO",
+            "非営利",
+            "社会貢献"
+          ],
+          "sources": [
+            {
+              "name": "内閣府",
+              "url": "https://www.npo-homepage.go.jp/about/npo-kisochishiki/npoiroha"
+            }
+          ]
+        },
+        {
+          "id": "20261125-028-R02",
+          "relation_type": "question",
+          "title": "ボランティアと地域の支え合い",
+          "description": "子ども食堂などでは、地域の人が食事作りや運営に協力します。食事を提供するだけでなく、人と人が出会い、安心して過ごせる場所をつくることにもつながります。地域の課題をみんなで支える活動の一例です。",
+          "relationship": "地域のボランティア活動の役割を理解する。",
+          "keywords": [
+            "子ども食堂",
+            "ボランティア",
+            "地域"
+          ],
+          "sources": [
+            {
+              "name": "こども家庭庁",
+              "url": "https://www.cfa.go.jp/policies/kodomonohinkon/seikatsushien"
+            }
+          ]
+        },
+        {
+          "id": "20261125-028-R03",
+          "relation_type": "question",
+          "title": "社会保障と地域の福祉",
+          "description": "子育てや生活で困っている人を支えるには、行政による制度と地域の活動の両方が大切です。こども家庭庁は食事や生活用品を提供する地域の活動を支援し、必要な支援につながる仕組みづくりを進めています。",
+          "relationship": "地域の福祉と行政の支援の関係を学ぶ。",
+          "keywords": [
+            "福祉",
+            "子育て支援",
+            "地域"
+          ],
+          "sources": [
+            {
+              "name": "こども家庭庁",
+              "url": "https://www.cfa.go.jp/policies/kodomonohinkon/seikatsushien"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-029",
+      "related": [
+        {
+          "id": "20261125-029-R01",
+          "relation_type": "answer",
+          "title": "パブリックコメントの手続き",
+          "description": "パブリックコメントは、行政機関が政令や省令などの案を公表し、広く国民から意見を集める手続きです。集まった意見を考慮して決定し、結果を公表します。単に多数決で決める仕組みではありません。",
+          "relationship": "行政の意見募集の意味を学ぶ。",
+          "keywords": [
+            "パブリックコメント",
+            "意見公募",
+            "行政"
+          ],
+          "sources": [
+            {
+              "name": "e-Gov",
+              "url": "https://public-comment.e-gov.go.jp/contents/about-public-comment/"
+            }
+          ]
+        },
+        {
+          "id": "20261125-029-R02",
+          "relation_type": "question",
+          "title": "国民の政治参加と地方自治",
+          "description": "地方自治では住民が選挙で市長や議員などを選びます。また、一定数の署名（しょめい）を集めて条例の制定などを求める直接請求（せいきゅう）という制度もあります。住民が地域の政治に参加する仕組みの一つです。",
+          "relationship": "意見募集以外の住民参加の制度を学ぶ。",
+          "keywords": [
+            "地方自治",
+            "直接請求",
+            "条例"
+          ],
+          "sources": [
+            {
+              "name": "名古屋市",
+              "url": "https://www.city.nagoya.jp/lifescene/1042302/senkyo/1033683.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-029-R03",
+          "relation_type": "question",
+          "title": "日本国憲法と国民の政治参加",
+          "description": "日本国憲法（けんぽう）では国民主権（しゅけん）が基本原理です。国民は選挙を通じて代表者を選ぶほか、請願（せいがん）などによって意見や希望を伝えることもできます。政治について情報を集め、自分で考えることが民主政治を支えます。",
+          "relationship": "国民の政治参加の基本を学ぶ。",
+          "keywords": [
+            "日本国憲法",
+            "国民主権",
+            "請願"
+          ],
+          "sources": [
+            {
+              "name": "衆議院",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-030",
+      "related": [
+        {
+          "id": "20261125-030-R01",
+          "relation_type": "answer",
+          "title": "裁判官弾劾裁判所の仕組み",
+          "description": "裁判官弾劾（だんがい）裁判所は、裁判官を辞めさせるべきかどうかを裁判するため、国会に設けられた機関です。衆議院と参議院からそれぞれ選ばれた議員で構成されます。裁判官訴追（そつい）委員会とは役割が異なります。",
+          "relationship": "裁判官の弾劾を行う機関を理解する。",
+          "keywords": [
+            "裁判官弾劾裁判所",
+            "国会",
+            "訴追"
+          ],
+          "sources": [
+            {
+              "name": "参議院",
+              "url": "https://www.sangiin.go.jp/japanese/aramashi/saibankan.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-030-R02",
+          "relation_type": "question",
+          "title": "三権分立と裁判官の独立",
+          "description": "日本では国会が立法、内閣が行政、裁判所が司法を担当します。裁判官は自分の良心に従って独立して仕事を行い、憲法（けんぽう）と法律にのみ従います。この仕組みは政治から不当に影響（えいきょう）を受けず、公正に裁判するために大切です。",
+          "relationship": "裁判官の独立と三権分立を結びつける。",
+          "keywords": [
+            "三権分立",
+            "司法",
+            "裁判官"
+          ],
+          "sources": [
+            {
+              "name": "衆議院",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261125-030-R03",
+          "relation_type": "question",
+          "title": "国会の二院制",
+          "description": "日本の国会は衆議院と参議院の二つの議院から成り立っています。法律案などを両院で話し合う仕組みを二院制といいます。裁判官弾劾（だんがい）裁判所も両方の議院の議員で構成されます。",
+          "relationship": "弾劾裁判所の構成を二院制から理解する。",
+          "keywords": [
+            "国会",
+            "二院制",
+            "衆議院",
+            "参議院"
+          ],
+          "sources": [
+            {
+              "name": "参議院",
+              "url": "https://www.sangiin.go.jp/japanese/aramashi/saibankan.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-031",
+      "related": [
+        {
+          "id": "20261125-031-R01",
+          "relation_type": "answer",
+          "title": "船荷証券と海上輸送",
+          "description": "船荷証券（ふなにしょうけん）は、海上輸送で運ぶ貨物について運送人が発行する書類です。貨物を受け取る権利を示す役割もあり、原則として輸入者は証券を運送人に渡すことで貨物の引渡しを求めます。",
+          "relationship": "海上輸送の書類と貨物の受け取りを理解する。",
+          "keywords": [
+            "船荷証券",
+            "海上輸送",
+            "貿易"
+          ],
+          "sources": [
+            {
+              "name": "日本貿易振興機構",
+              "url": "https://www.jetro.go.jp/world/qa/04A-010932.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-031-R02",
+          "relation_type": "question",
+          "title": "日本の貿易と海上輸送",
+          "description": "海に囲まれた日本では、輸出入する貨物の重さの大部分を船が運びます。船は大量の資源や製品をまとめて運ぶことに適しています。港は船と陸上の輸送を結びつける重要な場所です。",
+          "relationship": "日本の貿易における海上輸送の役割を学ぶ。",
+          "keywords": [
+            "海運",
+            "貿易",
+            "港",
+            "輸出入"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/statistics/file000004/html/n2533000.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-031-R03",
+          "relation_type": "question",
+          "title": "輸入と輸出の流れ",
+          "description": "外国から品物を買うことを輸入、外国に品物を売ることを輸出といいます。船で日本に届いた貨物は、必要な書類を提出し、税関の手続きを経て引き取ります。税関は品物の内容などを確認し、必要な税の徴収（ちょうしゅう）などを行います。",
+          "relationship": "輸入貨物が港から国内へ届く仕組みを学ぶ。",
+          "keywords": [
+            "輸入",
+            "輸出",
+            "税関",
+            "通関"
+          ],
+          "sources": [
+            {
+              "name": "日本貿易振興機構",
+              "url": "https://www.jetro.go.jp/world/qa/04A-010136.html"
             }
           ]
         }
