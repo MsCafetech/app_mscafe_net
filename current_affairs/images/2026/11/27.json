@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 50,
-  "image_count": 70,
+  "related_count": 51,
+  "image_count": 71,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -1229,7 +1229,26 @@
           "is_reference": true
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261127-019-R02",
+          "images": [
+            {
+              "id": "20261127-019-R02-I01",
+              "type": "diagram",
+              "title": "人体の主な臓器",
+              "caption": "資料図：心臓や肺、肝臓など、人体にある主な臓器の位置。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Internal_organs.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Internal_organs.png",
+              "credit": "Mikael Häggström",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "著作者がパブリックドメインに提供。出典・作者を表示。",
+              "is_reference": true
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261127-014",
