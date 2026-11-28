@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-07",
   "language": "ja",
-  "question_count": 2,
-  "related_count": 2,
+  "question_count": 3,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261007-002",
@@ -46,6 +46,34 @@
             {
               "name": "農研機構",
               "url": "https://www.naro.go.jp/publicity_report/publication/responsive/naro/naro18-cont05.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261007-001",
+      "related": [
+        {
+          "id": "20261007-001-R01",
+          "relation_type": "question",
+          "title": "酵素という生体触媒",
+          "description": "生物の体の中では、食べたものを分解するなど、さまざまな化学反応が起きています。酵素（こうそ）は、こうした反応を進みやすくする生物の触媒（しょくばい）です。例えば、アミラーゼはデンプンを分解する消化酵素の一つです。",
+          "relationship": "触媒が生き物の体の中でも働くことを学びます。",
+          "keywords": [
+            "酵素",
+            "触媒",
+            "消化",
+            "アミラーゼ"
+          ],
+          "sources": [
+            {
+              "name": "東京大学",
+              "url": "https://enzyme13.bt.a.u-tokyo.ac.jp/enzymology.html"
+            },
+            {
+              "name": "北里大学保健衛生専門学院",
+              "url": "https://www.niigata-kitasato-u.ac.jp/blog/2017/05/23/post-ea06/"
             }
           ]
         }
