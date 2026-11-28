@@ -23,6 +23,49 @@
               "url": "https://www.enecho.meti.go.jp/about/energytrends/202506/html/s-1-1.html"
             }
           ]
+        },
+        {
+          "id": "20261118-100-R02",
+          "relation_type": "answer",
+          "title": "貿易収支の計算",
+          "description": "外国へ品物を売る輸出と、外国から品物を買う輸入の金額の差を貿易収支といいます。輸出額から輸入額を引いて求めます。例えば輸出額が100億円、輸入額が80億円なら20億円の黒字です。逆に輸入額が輸出額より多い場合は赤字になります。",
+          "relationship": "輸出額と輸入額の差から黒字・赤字を考える",
+          "keywords": [
+            "貿易収支",
+            "輸出",
+            "輸入",
+            "黒字",
+            "赤字"
+          ],
+          "sources": [
+            {
+              "name": "財務省",
+              "url": "https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/preliminary/pg2026half.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261118-100-R03",
+          "relation_type": "question",
+          "title": "円相場と輸入価格",
+          "description": "円と外国のお金を交換する割合を為替相場（かわせそうば）といいます。例えば1ドルが100円から150円になると円安です。10ドルの品物を買うには1000円ではなく1500円が必要になります。外国での価格が同じでも、円安になると輸入にかかる円の金額が増えることがあります。",
+          "relationship": "円と外国通貨の交換比率が輸入額に関係する仕組みを元問題とのつながりから学ぶ。",
+          "keywords": [
+            "円安",
+            "円高",
+            "為替相場",
+            "輸入価格"
+          ],
+          "sources": [
+            {
+              "name": "日本銀行",
+              "url": "https://www.boj.or.jp/about/education/oshiete/intl/g18.htm"
+            },
+            {
+              "name": "デジタルこどもBASE",
+              "url": "https://digitalkodomo.jp/kids-study/tanoshii/keizai/c/enyasu.html"
+            }
+          ]
         }
       ]
     },
@@ -165,5 +208,5 @@
     }
   ],
   "question_count": 3,
-  "related_count": 7
+  "related_count": 9
 }

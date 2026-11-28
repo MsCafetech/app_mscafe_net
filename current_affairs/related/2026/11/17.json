@@ -246,10 +246,55 @@
               "url": "https://www.mofa.go.jp/mofaj/area/asean/page25_001325.html"
             }
           ]
+        },
+        {
+          "id": "20261117-100-R02",
+          "relation_type": "question",
+          "title": "東南アジアの島々と海上交通",
+          "description": "東南アジアにはインドネシアなど、多くの島でできた国があります。マレー半島とスマトラ島の間にあるマラッカ海峡（かいきょう）は、インド洋と太平洋を結ぶ海上交通の重要な通り道です。日本に石油などを運ぶ船もこの周辺の海を通るため、安全な航行が大切です。",
+          "relationship": "インドネシアの位置と国際的な海上交通を地図で学ぶ",
+          "keywords": [
+            "東南アジア",
+            "マラッカ海峡",
+            "海上交通"
+          ],
+          "sources": [
+            {
+              "name": "JICA",
+              "url": "https://www.jica.go.jp/overseas/indonesia/index.html"
+            },
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/toko/medi/asia/indonesia.html"
+            }
+          ]
+        },
+        {
+          "id": "20261117-100-R03",
+          "relation_type": "question",
+          "title": "インドネシアの地形と気候",
+          "description": "インドネシアは赤道付近に広がる島国で、ジャワ島やスマトラ島など多くの島から成り立っています。熱帯の気候で、一年を通して気温が高い地域が多く、雨の多い時期と少ない時期があります。火山も多く、地震や火山の噴火（ふんか）に備えることも大切です。",
+          "relationship": "多くの島々からなる国の位置と赤道周辺の気候を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "インドネシア",
+            "赤道",
+            "熱帯",
+            "火山"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/toko/medi/asia/indonesia.html"
+            },
+            {
+              "name": "JICA",
+              "url": "https://www.jica.go.jp/overseas/indonesia/index.html"
+            }
+          ]
         }
       ]
     }
   ],
   "question_count": 3,
-  "related_count": 11
+  "related_count": 13
 }

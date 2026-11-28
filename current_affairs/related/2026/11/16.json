@@ -206,10 +206,56 @@
               "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/suiso.html"
             }
           ]
+        },
+        {
+          "id": "20261116-101-R02",
+          "relation_type": "answer",
+          "title": "水素の燃焼（ねんしょう）と水",
+          "description": "水素が酸素と反応して燃えると、水ができ、熱が発生します。水素そのものには炭素が含まれないため、この反応では二酸化炭素は発生しません。ただし、水素を作るために使うエネルギーによっては二酸化炭素が出る場合もあります。水素を利用するときは、作り方にも注目する必要があります。",
+          "relationship": "水素と酸素が反応して水ができる現象",
+          "keywords": [
+            "水素",
+            "燃焼",
+            "酸素",
+            "水"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/suiso.html"
+            },
+            {
+              "name": "日本特殊鋼業会",
+              "url": "https://www.tokushuko.or.jp/carbonneutral/answer.html"
+            }
+          ]
+        },
+        {
+          "id": "20261116-101-R03",
+          "relation_type": "question",
+          "title": "水の電気分解",
+          "description": "水に電気のエネルギーを加えて、水素と酸素に分けることを水の電気分解といいます。逆に水素と酸素を反応させて電気を取り出す仕組みが燃料電池です。太陽光や風力で作った電気を水素の製造に使うことも、環境（かんきょう）への負担を減らす方法として研究されています。",
+          "relationship": "水を電気で分けて水素と酸素を得る反応を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "水",
+            "電気分解",
+            "水素",
+            "燃料電池"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/nenryodenchi_01.html"
+            },
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/suiso_tukurikata.html"
+            }
+          ]
         }
       ]
     }
   ],
   "question_count": 3,
-  "related_count": 9
+  "related_count": 11
 }
