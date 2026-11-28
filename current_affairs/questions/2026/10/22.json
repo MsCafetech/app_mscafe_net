@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-10-22",
   "language": "ja",
-  "question_count": 2,
+  "question_count": 3,
   "questions": [
     {
       "id": "20261022-001",
@@ -60,6 +60,37 @@
         {
           "name": "外務省",
           "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04334.html"
+        }
+      ]
+    },
+    {
+      "id": "20261022-003",
+      "news_date": "2026-10-22",
+      "category": "environment",
+      "difficulty": 2,
+      "question_type": "current_affairs",
+      "news_title": "下水汚泥（げすいおでい）の肥料利用を進める情報サイトを公開",
+      "news_summary": "国土交通省が全国の地方公共団体の下水汚泥の肥料利用状況を比較できる情報サイトを公開した。",
+      "question": "国土交通省は、下水を処理する際に出る下水汚泥を肥料として利用する取り組みを進めるため、全国の自治体の利用状況が分かる情報サイトを公開しました。\n\n植物の成長に必要な肥料の三要素はどれですか。",
+      "choices": [
+        "酸素・水素・ヘリウム",
+        "窒素（ちっそ）・リン酸・カリウム",
+        "鉄・銅・アルミニウム",
+        "炭素・酸素・ネオン"
+      ],
+      "correct_index": 1,
+      "explanation": "肥料の三要素は窒素、リン酸、カリウムです。これらは植物の葉や根の成長などに必要です。下水汚泥には肥料に利用できる成分が含まれるため、安全性を確かめて利用することで、肥料原料の確保や資源の有効利用につながります。",
+      "keywords": [
+        "下水汚泥",
+        "資源循環",
+        "肥料原料",
+        "食料安全保障",
+        "国土交通省"
+      ],
+      "sources": [
+        {
+          "name": "国土交通省",
+          "url": "https://www.mlit.go.jp/report/press/mizukokudo13_hh_000767.html"
         }
       ]
     }
