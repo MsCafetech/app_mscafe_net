@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 17,
-  "related_count": 38,
-  "image_count": 54,
+  "related_count": 40,
+  "image_count": 56,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -689,6 +689,24 @@
               "usage_notes": "NASA/JPLの出典を表示。推奨・承認を示唆しない。原画像を使用。"
             }
           ]
+        },
+        {
+          "related_id": "20261127-010-R03",
+          "images": [
+            {
+              "id": "20261127-010-R03-I01",
+              "type": "illustration",
+              "title": "はやぶさ2と小惑星リュウグウの想像図",
+              "caption": "資料イラスト：小惑星リュウグウの近くを飛ぶ探査機はやぶさ2の想像図。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Hayabusa2_near_Ryugu_%2841404161811%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hayabusa2_near_Ryugu_(41404161811).jpg",
+              "credit": "DLR German Aerospace Center",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更した場合は明示。",
+              "is_reference": true
+            }
+          ]
         }
       ]
     },
@@ -987,6 +1005,24 @@
               "license": "CC BY 4.0",
               "license_url": "https://creativecommons.org/licenses/by/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-017-R03",
+          "images": [
+            {
+              "id": "20261127-017-R03-I01",
+              "type": "photo",
+              "title": "能登半島地震による地割れ",
+              "caption": "資料写真：2024年の能登半島地震で地割れした石川県輪島市の公園。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/R6_noto_earthquake_wajima_seaside_2024-02-17_1.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:R6_noto_earthquake_wajima_seaside_2024-02-17_1.jpg",
+              "credit": "Hurohukidaikon",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更した場合は明示。",
+              "is_reference": true
             }
           ]
         }
