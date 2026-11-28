@@ -20,7 +20,98 @@
           "usage_notes": "作者・出典・ライセンス表示。変更を明記し、改変画像は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261116-001-R01",
+          "images": [
+            {
+              "id": "20261116-001-R01-I01",
+              "type": "photo",
+              "title": "連続する恐竜の足跡化石",
+              "caption": "資料写真：ポルトガルに残る竜脚類の足跡。足跡の並びから歩き方を調べられます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Sauropod_footprints.jpg/960px-Sauropod_footprints.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Sauropod_footprints.jpg",
+              "credit": "Britoca",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261116-001-R02",
+          "images": [
+            {
+              "id": "20261116-001-R02-I01",
+              "type": "photo",
+              "title": "恐竜の前足の跡",
+              "caption": "資料写真：ポルトガルの竜脚類の前足の化石。足の指の跡や周囲に押し出された泥の跡が残っています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Sauropod_manus_footprint.jpg/960px-Sauropod_manus_footprint.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Sauropod_manus_footprint.jpg",
+              "credit": "Britoca",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261116-001-R03",
+          "images": [
+            {
+              "id": "20261116-001-R03-I01",
+              "type": "photo",
+              "title": "アンモナイトの化石",
+              "caption": "資料写真：ドイツのシュヴァーベン地方のジュラ紀のアンモナイト。地層の年代を考える手がかりになる化石の例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Ammonite_fossil.jpg/960px-Ammonite_fossil.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Ammonite_fossil.jpg",
+              "credit": "Tiia Monto",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261116-001-R04",
+          "images": [
+            {
+              "id": "20261116-001-R04-I01",
+              "type": "photo",
+              "title": "竜脚類の全身骨格",
+              "caption": "資料写真：ベルリン自然史博物館のギラファティタンの骨格。長い首と四本の足を持つ竜脚類の例です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Berlin_-_Museum_f%C3%BCr_Naturkunde_-_Brachiosaurus_brancai.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Berlin_-_Museum_f%C3%BCr_Naturkunde_-_Brachiosaurus_brancai.jpg",
+              "credit": "© Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons)",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261116-001-R05",
+          "images": [
+            {
+              "id": "20261116-001-R05-I01",
+              "type": "photo",
+              "title": "ジュラ紀の竜脚類の骨格",
+              "caption": "資料写真：ジュラ紀後期に生息したギラファティタンの骨格。恐竜が栄えた時代の生物の例です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Berlin_-_Museum_f%C3%BCr_Naturkunde_-_Brachiosaurus_brancai.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Berlin_-_Museum_f%C3%BCr_Naturkunde_-_Brachiosaurus_brancai.jpg",
+              "credit": "© Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons)",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261116-100",
@@ -39,7 +130,62 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261116-100-R01",
+          "images": [
+            {
+              "id": "20261116-100-R01-I01",
+              "type": "photo",
+              "title": "パンの製造工場",
+              "caption": "資料写真：パンを製造する作業。原材料を加工して新しい価値を生み出す仕事の例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Industrial_bakery.JPG/960px-Industrial_bakery.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Industrial_bakery.JPG",
+              "credit": "RudolfSimon",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261116-100-R02",
+          "images": [
+            {
+              "id": "20261116-100-R02-I01",
+              "type": "diagram",
+              "title": "日本の実質GDPの推移",
+              "caption": "資料図：1955年から2010年までの日本の実質GDP。青線は1990年基準、赤線は2000年基準。現在のGDPの数値を示すものではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%AE%9F%E8%B3%AAGDP%E3%81%AE%E6%8E%A8%E7%A7%BB.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E6%9C%AC%E3%81%AE%E5%AE%9F%E8%B3%AAGDP%E3%81%AE%E6%8E%A8%E7%A7%BB.jpg",
+              "credit": "CosA / DOSS（目盛り追加）、データ：内閣府",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261116-100-R03",
+          "images": [
+            {
+              "id": "20261116-100-R03-I01",
+              "type": "diagram",
+              "title": "生産・支出・所得のつながり",
+              "caption": "資料図：家庭と企業の間で商品・サービス、支出、所得、労働が行き来することを示す図。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Circular_flow_of_income_and_expenditure.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Circular_flow_of_income_and_expenditure.png",
+              "credit": "U.S. Bureau of Economic Analysis (BEA)",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261116-101",
@@ -58,10 +204,65 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261116-101-R01",
+          "images": [
+            {
+              "id": "20261116-101-R01-I01",
+              "type": "diagram",
+              "title": "再生可能エネルギーから水素を作る仕組み",
+              "caption": "資料図：太陽光や風力で得た電気を使い、水を分解して水素を作る流れ。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/How_Green_Hydrogen_IS_Produced.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:How_Green_Hydrogen_IS_Produced.jpg",
+              "credit": "Rladuswns",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261116-101-R02",
+          "images": [
+            {
+              "id": "20261116-101-R02-I01",
+              "type": "diagram",
+              "title": "水素と酸素から水ができる反応",
+              "caption": "資料図：水素と酸素の分子が組み替わり、水の分子ができる様子。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/H2%2BO2%3DH2O.svg/960px-H2%2BO2%3DH2O.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:H2%2BO2%3DH2O.svg",
+              "credit": "すじにくシチュー",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261116-101-R03",
+          "images": [
+            {
+              "id": "20261116-101-R03-I01",
+              "type": "diagram",
+              "title": "水の電気分解の実験図",
+              "caption": "資料図：H字管で水を電気分解し、水素と酸素が発生する様子。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/H%E5%AD%97%E7%AE%A1_%E6%B0%97%E4%BD%93%E7%99%BA%E7%94%9F%E5%BE%8C.svg/960px-H%E5%AD%97%E7%AE%A1_%E6%B0%97%E4%BD%93%E7%99%BA%E7%94%9F%E5%BE%8C.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:H%E5%AD%97%E7%AE%A1_%E6%B0%97%E4%BD%93%E7%99%BA%E7%94%9F%E5%BE%8C.svg",
+              "credit": "すじにくシチュー",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 3,
-  "related_count": 0,
-  "image_count": 3
+  "related_count": 11,
+  "image_count": 14
 }
