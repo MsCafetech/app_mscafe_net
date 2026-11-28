@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-10-02",
   "language": "ja",
-  "question_count": 2,
-  "related_count": 4,
+  "question_count": 3,
+  "related_count": 5,
   "questions": [
     {
       "question_id": "20261002-001",
@@ -86,6 +86,30 @@
             {
               "name": "環境省 関東地方環境事務所",
               "url": "https://kanto.env.go.jp/press_00093.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261002-004",
+      "related": [
+        {
+          "id": "20261002-004-R01",
+          "relation_type": "question",
+          "title": "領海と排他的経済水域",
+          "description": "領海（りょうかい）は、原則として領海の幅を測る基線から12海里（約22キロメートル）までの海で、沿岸国（えんがんこく）の主権が及びます。排他的経済水域（はいたてきけいざいすいいき、EEZ）は、原則として同じ基線から200海里までの領海を除く海域です。沿岸国には、そこで魚や海底の資源を調べ、開発し、守るための権利が認められています。",
+          "relationship": "海の利用を定める国連海洋法条約に関連して、海域ごとの権利の違いを学ぶ。",
+          "keywords": [
+            "領海",
+            "排他的経済水域",
+            "EEZ",
+            "海洋資源"
+          ],
+          "sources": [
+            {
+              "name": "海上保安庁",
+              "url": "https://www.kaiho.mlit.go.jp/questions/situgi/faq16.html"
             }
           ]
         }
