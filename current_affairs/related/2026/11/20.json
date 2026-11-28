@@ -3,7 +3,7 @@
   "date": "2026-11-20",
   "language": "ja",
   "question_count": 9,
-  "related_count": 25,
+  "related_count": 29,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -586,6 +586,47 @@
               "url": "https://www.jpx.co.jp/tse-school/learn/03.html"
             }
           ]
+        },
+        {
+          "id": "20261120-103-R02",
+          "relation_type": "question",
+          "title": "株式と企業の資金調達（しきんちょうたつ）",
+          "description": "会社が新しい商品を作ったり工場を建てたりするにはお金が必要です。株式会社は株式を新たに発行し、買ってもらうことでお金を集められます。株式を持つ人を株主といい、会社の利益の一部を受け取れる場合もあります。ただし、株式の価格は変わり、損をすることもあります。",
+          "relationship": "株式を発行して資金を集める企業と株主の関係",
+          "keywords": [
+            "株式",
+            "株式会社",
+            "株主",
+            "資金調達"
+          ],
+          "sources": [
+            {
+              "name": "金融経済教育推進機構",
+              "url": "https://www.j-flec.go.jp/public/learn/glossary/k_kabushiki/"
+            },
+            {
+              "name": "日本取引所グループ",
+              "url": "https://www.jpx.co.jp/glossary/ta/524.html"
+            }
+          ]
+        },
+        {
+          "id": "20261120-103-R03",
+          "relation_type": "question",
+          "title": "平均値と株価指数",
+          "description": "複数の数の合計を個数で割ると平均値になります。例えば100円、200円、300円の平均は200円です。株価指数は多くの会社の株価の動きをまとめて示す数値です。実際の株価指数には単純な平均だけでなく、会社の株式の価値の大きさを反映する計算方法もあります。",
+          "relationship": "複数の銘柄から市場の動きを表す指数の考え方",
+          "keywords": [
+            "平均値",
+            "株価指数",
+            "TOPIX"
+          ],
+          "sources": [
+            {
+              "name": "日本取引所グループ",
+              "url": "https://www.jpx.co.jp/faq/stock_price_index.html"
+            }
+          ]
         }
       ]
     },
@@ -607,6 +648,50 @@
             {
               "name": "厚生労働省",
               "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/infulenza/QA2024.html"
+            }
+          ]
+        },
+        {
+          "id": "20261120-104-R02",
+          "relation_type": "answer",
+          "title": "予防接種（よぼうせっしゅ）と免疫（めんえき）の仕組み",
+          "description": "体には病原体から身を守る免疫というはたらきがあります。予防接種ではワクチンを使い、病原体に対する体の備えを作ります。後で同じ病原体に出会ったときに、体がすばやく対応できるようにする仕組みです。病気にかかる可能性や重症になる可能性を下げる効果が期待されますが、必ず病気を防げるわけではありません。",
+          "relationship": "病原体に備える免疫とワクチンの関係",
+          "keywords": [
+            "予防接種",
+            "免疫",
+            "ワクチン"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/yobou-sesshu/vaccine/influenza/"
+            },
+            {
+              "name": "厚生労働省",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/kihonteki_keikaku/index_00001.html"
+            }
+          ]
+        },
+        {
+          "id": "20261120-104-R03",
+          "relation_type": "question",
+          "title": "手洗いと感染予防（かんせんよぼう）",
+          "description": "病原体がついた手で口や鼻などにふれることで病気がうつることがあります。外から帰ったときや食事の前には、せっけんと流水で手を洗い、指の間なども洗うことが大切です。手洗いは手についた病原体を減らし、感染が広がるのを防ぐ基本的な方法です。",
+          "relationship": "病原体が広がる経路と手洗いの関係",
+          "keywords": [
+            "手洗い",
+            "感染予防",
+            "インフルエンザ"
+          ],
+          "sources": [
+            {
+              "name": "厚生労働省",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/infulenza/QA2024.html"
+            },
+            {
+              "name": "厚生労働省",
+              "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/infulenza/index.html"
             }
           ]
         }

@@ -3,7 +3,7 @@
   "date": "2026-11-19",
   "language": "ja",
   "question_count": 3,
-  "related_count": 5,
+  "related_count": 9,
   "questions": [
     {
       "question_id": "20261119-100",
@@ -23,6 +23,46 @@
             {
               "name": "外務省",
               "url": "https://www.mofa.go.jp/mofaj/gaiko/apec/soshiki/gaiyo.html"
+            }
+          ]
+        },
+        {
+          "id": "20261119-100-R02",
+          "relation_type": "question",
+          "title": "太平洋を囲む国と地域",
+          "description": "太平洋の西側には日本や中国、東南アジアの国々があり、東側にはアメリカやカナダ、チリなどがあります。南側にはオーストラリアやニュージーランドなどがあります。これらの国や地域は海を通じた貿易などでつながり、APECを通して経済協力を進めています。",
+          "relationship": "環太平洋の位置を地図で確認し交流や貿易につなげる",
+          "keywords": [
+            "太平洋",
+            "APEC",
+            "アジア太平洋"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/apec/soshiki/gaiyo.html"
+            }
+          ]
+        },
+        {
+          "id": "20261119-100-R03",
+          "relation_type": "question",
+          "title": "貿易と関税",
+          "description": "国どうしで品物を売り買いすることを貿易といいます。関税は輸入品にかけられる税で、国内産業の保護などの役割があります。国どうしで関税を引き下げる約束をすると、輸入にかかる費用を減らし、貿易をしやすくすることにつながります。",
+          "relationship": "アジア太平洋地域の経済協力と国を越える取引の関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "貿易",
+            "関税",
+            "輸入"
+          ],
+          "sources": [
+            {
+              "name": "財務省",
+              "url": "https://www.mof.go.jp/policy/customs_tariff/summary/index.html"
+            },
+            {
+              "name": "農林水産省",
+              "url": "https://www.maff.go.jp/j/yusyutu_kokusai/i_meeting/apec/index.html"
             }
           ]
         }
@@ -46,6 +86,51 @@
             {
               "name": "海洋研究開発機構",
               "url": "https://www.jamstec.go.jp/j/about/press_release/20260309/"
+            }
+          ]
+        },
+        {
+          "id": "20261119-101-R02",
+          "relation_type": "answer",
+          "title": "二枚貝の体のつくり",
+          "description": "アサリやハマグリは、二枚の貝がらで体を守る二枚貝です。アサリには海水を取り入れる入水管（にゅうすいかん）と外へ出す出水管があります。海水から小さなプランクトンなどを取り出して食べます。また、足を使って砂の中にもぐることができます。",
+          "relationship": "二枚の殻やえらの働きとアサリのくらし",
+          "keywords": [
+            "二枚貝",
+            "アサリ",
+            "入水管",
+            "出水管"
+          ],
+          "sources": [
+            {
+              "name": "国立科学博物館",
+              "url": "https://www.kahaku.go.jp/gakushu/shougakusei/homestudy/kyoushitu/challenge_02/"
+            },
+            {
+              "name": "兵庫県立農林水産技術総合センター",
+              "url": "https://hyogo-nourinsuisangc.jp/_97ippann/suisan/9.html"
+            }
+          ]
+        },
+        {
+          "id": "20261119-101-R03",
+          "relation_type": "question",
+          "title": "干潟（ひがた）とアサリの生息環境（せいそくかんきょう）",
+          "description": "干潟は潮（しお）が引くと海底の砂や泥（どろ）が現れ、潮が満ちると海水におおわれる場所です。アサリなどの二枚貝が生活し、海水に含まれる小さな生き物などを食べています。干潟を守ることは、海の生き物が暮らす場所や漁業を守ることにもつながります。",
+          "relationship": "アサリの暮らす干潟と水中の生物の関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "干潟",
+            "アサリ",
+            "生息環境"
+          ],
+          "sources": [
+            {
+              "name": "水産庁",
+              "url": "https://www.jfa.maff.go.jp/j/kikaku/tamenteki/kaisetu/moba/higata_katudou/index2.html"
+            },
+            {
+              "name": "国土技術政策総合研究所",
+              "url": "https://www.ysk.nilim.go.jp/kankyo/kenkyu/asari030718/introduction.htm"
             }
           ]
         }
