@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 60,
+  "related_count": 62,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -64,6 +64,24 @@
             {
               "name": "石垣島地方気象台",
               "url": "https://www.jma-net.go.jp/ishigaki/know/kiko/index_yaekiko.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-001-R04",
+          "relation_type": "question",
+          "title": "固有種（こゆうしゅ）と生息地（せいそくち）の保全",
+          "description": "限られた地域にだけ自然に分布する生物を、その地域の固有種といいます。例えばアマミノクロウサギは奄美大島（あまみおおしま）と徳之島だけにすんでいます。森林の開発や外来生物に食べられることなどで数が減ると、その地域だけでなく世界全体から失われるおそれがあります。生物そのものに加え、食べ物やすみかとなる森林を守ることが大切です。",
+          "relationship": "島にすむ生物が固有の分布を持つことと生息地を守る理由を調べる",
+          "keywords": [
+            "固有種",
+            "生息地",
+            "アマミノクロウサギ"
+          ],
+          "sources": [
+            {
+              "name": "環境省",
+              "url": "https://kyushu.env.go.jp/okinawa/wildlife/kisyou.html"
             }
           ]
         }
@@ -127,6 +145,24 @@
             {
               "name": "政府広報オンライン",
               "url": "https://www.gov-online.go.jp/article/202607/entry-11422.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-002-R04",
+          "relation_type": "question",
+          "title": "大雨と土砂災害（どしゃさいがい）",
+          "description": "大雨で山の地面に水がしみこむと、がけがくずれることがあります。谷にたまった土や石が水と混じって一気に流れ下る現象を土石流（どせきりゅう）といいます。また、地下水の影響（えいきょう）で広い範囲（はんい）の地面が動く地すべりもあります。急な谷や山のふもとでは、こうした災害に注意する必要があります。",
+          "relationship": "強い雨が地中にしみ込み斜面の崩壊や土石流につながる仕組みを調べる",
+          "keywords": [
+            "土砂災害",
+            "土石流",
+            "地すべり"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.ktr.mlit.go.jp/river/bousai/river_bousai00000078.html"
             }
           ]
         }
