@@ -3,8 +3,8 @@
   "date": "2026-11-18",
   "language": "ja",
   "question_count": 3,
-  "related_count": 0,
-  "image_count": 3,
+  "related_count": 9,
+  "image_count": 12,
   "questions": [
     {
       "question_id": "20261118-001",
@@ -23,7 +23,62 @@
           "usage_notes": "作者・出典・ライセンス表示。変更を明記し、改変画像は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261118-001-R01",
+          "images": [
+            {
+              "id": "20261118-001-R01-I01",
+              "type": "photo",
+              "title": "最高裁判所の大法廷",
+              "caption": "資料写真：日本の最高裁判所の大法廷。裁判官が座る席が並んでいます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/The_Grand_Bench_of_the_Japanese_Supreme_Court.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_Grand_Bench_of_the_Japanese_Supreme_Court.jpg",
+              "credit": "Tetsu2266",
+              "license": "Public Domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "出典と作者を表示。商用利用可能。承認・推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261118-001-R02",
+          "images": [
+            {
+              "id": "20261118-001-R02-I01",
+              "type": "diagram",
+              "title": "最高裁判所裁判官国民審査の投票用紙の例",
+              "caption": "資料図：やめさせたい裁判官の欄に×を記入する投票用紙の見本。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/The_vote_paper_sample_of_the_People%27s_Examination_of_the_Japan_Supreme_Court_Judges.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_vote_paper_sample_of_the_People%27s_Examination_of_the_Japan_Supreme_Court_Judges.png",
+              "credit": "Hisi21",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変物は同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261118-001-R03",
+          "images": [
+            {
+              "id": "20261118-001-R03-I01",
+              "type": "photo",
+              "title": "裁判員裁判の法廷",
+              "caption": "資料写真：地方裁判所の裁判員裁判が行われる法廷。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%E8%A3%81%E5%88%A4%E6%89%80%E6%B3%95%E5%BB%B7%E3%81%AE%E6%A7%98%E5%AD%90.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E8%A3%81%E5%88%A4%E6%89%80%E6%B3%95%E5%BB%B7%E3%81%AE%E6%A7%98%E5%AD%90.jpg",
+              "credit": "Saya10",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変物は同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261118-100",
@@ -42,7 +97,62 @@
           "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261118-100-R01",
+          "images": [
+            {
+              "id": "20261118-100-R01-I01",
+              "type": "historical",
+              "title": "石油危機当時のガソリンスタンド",
+              "caption": "歴史資料：1973～74年の石油危機当時の米国ポートランド。輸入ガソリンの価格が高かったことを示す看板。日本の写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/IMPORTED_GASOLINE_WAS_SOLD_AT_THIS_SERVICE_STATION%2C_DURING_THE_FUEL_CRISIS_IN_THE_FALL_AND_WINTER_OF_1973-74._IT_WAS..._-_NARA_-_555494.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:IMPORTED_GASOLINE_WAS_SOLD_AT_THIS_SERVICE_STATION%2C_DURING_THE_FUEL_CRISIS_IN_THE_FALL_AND_WINTER_OF_1973-74._IT_WAS..._-_NARA_-_555494.jpg",
+              "credit": "U.S. Environmental Protection Agency / National Archives (NARA 555494)",
+              "license": "Public Domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "出典と作者を表示。商用利用可能。承認・推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261118-100-R02",
+          "images": [
+            {
+              "id": "20261118-100-R02-I01",
+              "type": "diagram",
+              "title": "EUの輸出・輸入・貿易収支",
+              "caption": "資料図：2007～2013年のEUの貿易。赤は輸入、緑は輸出、青は貿易収支。輸出額から輸入額を引いた差を読み取れます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Imports%2C_exports%2C_balance_of_EU_trade_in_goods.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Imports%2C_exports%2C_balance_of_EU_trade_in_goods.JPG",
+              "credit": "Avidius / Eurostat（データ）",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変物は同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261118-100-R03",
+          "images": [
+            {
+              "id": "20261118-100-R03-I01",
+              "type": "diagram",
+              "title": "円と米ドルの為替レート",
+              "caption": "資料図：1989～2006年の1ドルあたりの円の金額。数字が大きいほど1ドルを買うのに多くの円が必要です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/JPY-USD_1989-.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:JPY-USD_1989-.png",
+              "credit": "Monaneko / 日本銀行（データ）",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変物は同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261118-101",
@@ -61,7 +171,62 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261118-101-R01",
+          "images": [
+            {
+              "id": "20261118-101-R01-I01",
+              "type": "diagram",
+              "title": "火の三角形",
+              "caption": "資料図：燃焼に必要な酸素（OXYGEN）、熱（HEAT）、燃えるもの（FUEL）の三条件。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/The-fire-triangle.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The-fire-triangle.jpg",
+              "credit": "GRPH3B18",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変物は同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261118-101-R02",
+          "images": [
+            {
+              "id": "20261118-101-R02-I01",
+              "type": "photo",
+              "title": "消防車による消火訓練",
+              "caption": "資料写真：2016年に青森県の三沢基地で行われた消火訓練。消防車を使って火災を消す訓練です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Misawa_firefighters_light_the_night_161012-F-MZ237-248.jpg/330px-Misawa_firefighters_light_the_night_161012-F-MZ237-248.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Misawa_firefighters_light_the_night_161012-F-MZ237-248.jpg",
+              "credit": "U.S. Air Force / Sadie Colbert",
+              "license": "Public Domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "出典と作者を表示。商用利用可能。承認・推奨を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261118-101-R03",
+          "images": [
+            {
+              "id": "20261118-101-R03-I01",
+              "type": "photo",
+              "title": "災害後の仮設住宅",
+              "caption": "資料写真：2011年4月、岩手県陸前高田市に設けられた仮設住宅。佐賀関の火災とは別の災害の例です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/VOA_Herman_-_2011-04-11_Temporary_Houses_for_Japan_Disaster_Survivors.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:VOA_Herman_-_2011-04-11_Temporary_Houses_for_Japan_Disaster_Survivors.jpg",
+              "credit": "Steven L. Herman / Voice of America",
+              "license": "Public Domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "出典と作者を表示。商用利用可能。承認・推奨を示唆しない。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
