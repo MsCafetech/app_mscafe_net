@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 65,
+  "related_count": 67,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -253,6 +253,25 @@
             {
               "name": "財務省",
               "url": "https://www.mof.go.jp/policy/budget/reference/statistics/term.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-003-R04",
+          "relation_type": "question",
+          "title": "直接税と間接税",
+          "description": "税金は、負担（ふたん）する人と納（おさ）める人の関係で分けることができます。所得税（しょとくぜい）などの直接税は、税を負担する人が納めます。消費税などの間接税は、実際に負担する人と納める人が異なります。消費税は、買い物をする人が価格を通じて負担し、事業者が納める仕組みです。",
+          "relationship": "消費税を例に、税を負担する人と納める人の違いを学びます。",
+          "keywords": [
+            "直接税",
+            "間接税",
+            "所得税",
+            "消費税"
+          ],
+          "sources": [
+            {
+              "name": "国税庁「税金の分類」",
+              "url": "https://www.nta.go.jp/about/organization/kumamoto/education/kyozai_chugaku/oita/02-02zei-bunrui.html"
             }
           ]
         }
@@ -967,6 +986,25 @@
             {
               "name": "日本銀行",
               "url": "https://www.boj.or.jp/about/education/oshiete/intl/g17.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261126-010-R04",
+          "relation_type": "question",
+          "title": "第二次世界大戦後の欧州統合（おうしゅうとうごう）",
+          "description": "第二次世界大戦後のヨーロッパでは、国どうしの協力が進みました。1952年には6か国で欧州石炭鉄鋼共同体（おうしゅうせきたんてっこうきょうどうたい）ができ、1993年には欧州連合（EU）が発足しました。その後、共通通貨ユーロも導入され、2002年から紙幣（しへい）や硬貨（こうか）が使われています。",
+          "relationship": "共通通貨ユーロが生まれた背景として、欧州の国々の協力の歩みを学びます。",
+          "keywords": [
+            "欧州統合",
+            "EU",
+            "欧州石炭鉄鋼共同体",
+            "ユーロ"
+          ],
+          "sources": [
+            {
+              "name": "外務省「欧州連合（EU）概況」",
+              "url": "https://www.mofa.go.jp/mofaj/area/eu/data.html"
             }
           ]
         }
