@@ -27,7 +27,7 @@ window.addEventListener('error', function (e) {
 window.addEventListener('load', function () {
   var a = document.getElementById('app');
   if (a && !a.children.length && !window.__siteReady) {
-    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 541,246 バイト）。</pre>';
+    a.innerHTML = '<pre style="white-space:pre-wrap;padding:16px;font:13px/1.6 monospace;color:#b00020;background:#fff">表示エラー: スクリプトが実行されませんでした。ファイルが途中で切れていないか確認してください（正しいサイズ: 543,045 バイト）。</pre>';
   }
 });
 </script>
@@ -1630,8 +1630,8 @@ const APPS = [
         [L('料金', 'Price'), L('無料（広告あり）', 'Free (with ads)')], [L('配布', 'Available on'), L('Google Play・App Store（準備中）', 'Google Play and the App Store (in preparation)')],
         [L('問題', 'Questions'), L('毎日更新（1日10問まで、直近1年分）', 'Updated daily (up to 10 a day; the last year is kept)')],
         [L('記録', 'Records'), L('回答の記録・お気に入り・設定は、端末の中だけに保存します。', 'Your answers, favorites and settings are saved on the device only.')],
-        [L('外部との通信', 'External connections'), L('問題データの取得（GitHub）、写真の表示（掲載元）、広告の表示（Google AdMob）、不具合の調査・利用状況の分析（Firebase）、間違い連絡の送信（送るときだけ）。',
-        'Downloading question data (GitHub), showing photos (from their sources), showing ads (Google AdMob), bug reports and usage analytics (Firebase), and sending mistake reports (only when you send one).')],
+        [L('外部との通信', 'External connections'), L('問題データの取得（本サイトのサーバー）、写真の表示（掲載元）、広告の表示（Google AdMob）、不具合の調査・利用状況の分析（Firebase）、間違い連絡の送信（送るときだけ）。',
+        'Downloading question data (this website’s server), showing photos (from their sources), showing ads (Google AdMob), bug reports and usage analytics (Firebase), and sending mistake reports (only when you send one).')],
         [L('言語', 'Languages'), L('日本語', 'Japanese')]],
     note: L('開発中のため、内容は変わることがあります。問題はニュースや資料をもとに作っていますが、誤りがあることや、その後の動きで内容が古くなることがあります。気づいたときは、アプリの「間違い連絡」からお知らせください。',
         'The app is in development, so details may change. Questions are made from news and reference materials, but they may contain mistakes or become out of date as events move on. If you notice one, please let us know with “Report a mistake” in the app.'),
@@ -2368,9 +2368,11 @@ const LEGAL = [
     'MP3変換の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）だけです。Firebase などの利用状況の分析やクラッシュ報告は使っていません。',
     'RAY の記録（進み具合、敵の強さ、累計撃破数、強化、解放したビーム、最高 WAVE など）は、端末内に保存し、店長には送信しません。端末の Android のバックアップ機能（Google のバックアップ）が有効な場合は、利用者の Google アカウントのバックアップに含まれ、機種変更のときに新しい端末へ移せます。バックアップは Google が利用者のアカウントで管理するもので、店長は見ることも受け取ることもできません。',
     'RAY の通信は、広告の表示と広告の同意の確認（Google AdMob、Google の User Messaging Platform）と、不具合の調査・利用状況の分析（Firebase Crashlytics / Analytics）だけです。',
-    '時事Q の回答の記録（回答履歴、正答率、お気に入り）と設定（テーマカラーなど）は、端末内に保存し、店長には送信しません。アプリのオプションの「回答履歴とお気に入りを消す」で消せます。',
-    '時事Q は、問題・関連知識・写真の情報（教材データ）を GitHub（GitHub, Inc.）の公開リポジトリから取得します（raw.githubusercontent.com）。起動時（前回の取得から24時間以上たったとき）、利用者が「教材データを更新」を押したとき、端末の仕組みによる1日1回ほどの自動更新（Android の WorkManager、iOS のバックグラウンド更新）で取得します。'
-      + 'このとき、IP アドレスと、アプリの通信に必要な情報（アプリの版を含みます）が GitHub に送られます。店長は GitHub からこれらの情報を受け取りません。',
+    '時事Q の回答の記録（回答履歴、正答率、お気に入り）と設定（テーマカラーなど）は、端末内に保存し、店長には送信しません。回答履歴（回答数・正答率・学習履歴）は、アプリのオプションの「回答データの初期化」で消せます（お気に入りと設定は残ります）。'
+      + 'Android 版では、端末の Android のバックアップ機能（Google のバックアップ）が有効な場合、これらの記録と設定が利用者の Google アカウントのバックアップに含まれます。バックアップは Google が利用者のアカウントで管理するもので、店長は見ることも受け取ることもできません。',
+    '時事Q は、問題・関連知識・写真の情報（教材データ）を、本サイト（app.mscafe.net）のサーバーから取得します。初めて起動したとき、利用者が「教材データ更新」で「更新する」を押したとき、「回答データの初期化」のあと、端末の仕組みによる1日1回ほどの自動更新（Android の WorkManager、iOS のバックグラウンド更新）で取得します。'
+      + 'また、起動時と、起動している間の1時間ごとに、更新データがあるかどうかだけを確かめます（教材データの一覧だけを見る軽い通信です）。'
+      + 'このとき、IP アドレスと、アプリの通信に必要な情報（アプリの版を含みます）が本サイトのサーバーに送られ、本サイトのアクセスログと同じく、ホスティング側で記録されて約90日間保存されます。',
     '時事Q の写真は、掲載元（Wikimedia Commons など）のサーバーから直接読み込んで表示し、端末内に一時的に保存（キャッシュ）します。読み込むとき、IP アドレスとアプリの通信に必要な情報が掲載元に送られます。',
     '時事Q の「間違い連絡」は、利用者が理由を選んで「送信」を押したときだけ、問題の番号、問題データの版、選んだ理由（正しい答え・問題文・解説・その他）の3つを、店長の受付窓口（Cloudflare, Inc. のサービスを利用）へ送ります。名前・メールアドレス・自由記述・端末の識別子は送りません。'
       + '受付窓口は、送りすぎを防ぐため、送信元の IP アドレスを送信回数の確認に利用します。受け付けた内容は、問題の確認と修正のために店長が管理します。自動で送り直すことはありません。',
@@ -2464,9 +2466,11 @@ const LEGAL = [
     'MP3 Converter connects to the network only to show ads and to check ad consent (Google AdMob and Google’s User Messaging Platform). It does not use Firebase or any other usage analytics or crash reporting.',
     'RAY’s records (progress, enemy strength, total kills, upgrades, unlocked beams, best wave, etc.) are stored on your device and are not sent to the Manager. If Android’s backup feature (Google backup) is turned on for your device, they are included in your Google Account backup and can be moved to a new device when you switch devices. The backup is managed by Google in your account; the Manager can neither see nor receive it.',
     'RAY connects to the network only to show ads and check ad consent (Google AdMob and Google’s User Messaging Platform) and for bug reports and usage analytics (Firebase Crashlytics / Analytics).',
-    'JijiQ’s records (answer history, accuracy and favorites) and settings (such as the theme color) are stored on your device and are not sent to the Manager. You can erase them with “Clear answer history and favorites” in the app’s options.',
-    'JijiQ downloads question, related-knowledge and photo information (learning data) from a public repository on GitHub (GitHub, Inc.) at raw.githubusercontent.com: at startup (when 24 hours or more have passed since the last download), when you press “Update learning data”, and in automatic updates about once a day run by the device (WorkManager on Android, background refresh on iOS). '
-      + 'At that time, your IP address and the information needed for the connection (including the app version) are sent to GitHub. The Manager does not receive this information from GitHub.',
+    'JijiQ’s records (answer history, accuracy and favorites) and settings (such as the theme color) are stored on your device and are not sent to the Manager. You can erase your answer history (answers, accuracy and learning history) with “Reset answer data” in the app’s options (favorites and settings are kept). '
+      + 'On Android, if the device’s Android backup (Google backup) is turned on, these records and settings are included in the backup of your Google account. The backup is managed by Google under your account, and the Manager can neither see nor receive it.',
+    'JijiQ downloads question, related-knowledge and photo information (learning data) from the server of this website (app.mscafe.net): at first launch, when you choose “Update” under “Update learning data”, after “Reset answer data”, and in automatic updates about once a day run by the device (WorkManager on Android, background refresh on iOS). '
+      + 'It also checks only whether new data is available at startup and every hour while the app is running (a light request that reads only the list of learning data). '
+      + 'At that time, your IP address and the information needed for the connection (including the app version) are sent to this website’s server and, like this website’s access logs, are recorded by the hosting provider and kept for about 90 days.',
     'JijiQ loads photos directly from their sources’ servers (such as Wikimedia Commons) and keeps them temporarily on your device (cache). When loading them, your IP address and the information needed for the connection are sent to those sources.',
     'JijiQ’s “Report a mistake” sends three items, the question number, the version of the question data and the reason you chose (answer, question, explanation or other), to the Manager’s reception service (which runs on services of Cloudflare, Inc.), only when you choose a reason and press “Send”. No name, email address, free text or device identifier is sent. '
       + 'To prevent excessive sending, the reception service uses the sender’s IP address to check how many reports are sent. The Manager handles the reports to check and fix questions. Reports are never re-sent automatically.',
@@ -2557,7 +2561,8 @@ const LEGAL = [
     'BOMBOM の文字には、Dela Gothic One・Kaisei Decol・M PLUS 1p・M PLUS Rounded 1c・Russo One（SIL Open Font License 1.1）と Luckiest Guy（Apache License 2.0）の一部を利用しています。BOMBOM のキャラクターや背景の絵の制作には、生成AIを利用しています。BOMBOM の音楽などの音源は、店長が Flow Music（生成AI）で作成したもので、著作権は店長に帰属します。',
     'タップる？のロゴの文字には、M PLUS Rounded 1c（SIL Open Font License 1.1）の一部を利用しています。',
     'RAY の WAVE・WARNING・GAME OVER などの表示の文字には、Black Ops One（SIL Open Font License 1.1）の一部を利用しています。RAY の背景や画面の部品の絵の制作には、生成AIを利用しています。RAY の BGM は、店長が Flow Music（生成AI）で作成したもので、著作権は店長に帰属します。',
-    '時事Q の問題・解説・関連知識は、報道や公的機関などの資料をもとに、店長が独自の文章で作成したもので（作成には生成AIを活用しています）、参考にした資料はアプリ内に出典として表示します。ニュースの記事そのものの著作権は、各報道機関などに帰属します。',
+    '時事Q の問題・解説・関連知識は、報道や公的機関などの資料をもとに、店長が独自の文章で作成したもので（作成には生成AIを活用しています）、参考にした資料はアプリ内に出典として表示します。'
+      + '問題づくりで話題さがしや内容の確認に使う報道機関・官公庁・研究機関・国際機関などは、アプリのオプションの「時事情報収集先」に一覧で載せています。ニュースの記事や各資料の内容・著作権は、それぞれの報道機関・運営者に帰属します。',
     '時事Q の写真は、Wikimedia Commons など、利用の条件を確かめた掲載元のものを、それぞれのライセンス（CC BY-SA など）の条件に従って表示しています。写真を長押しすると、撮影者・出典・ライセンスを確認できます。写真の著作権は、それぞれの撮影者・権利者に帰属します。',
     `MP3変換は、音声の変換に ${A(L_FFMPEG, 'FFmpeg')}（LGPL 2.1 以降）と ${A(L_FFMPEGKIT, 'FFmpegKit')}（LGPL 3.0。アプリに組み込んでいるのは、その後継として公開されている com.antonkarpenko:ffmpeg-kit-audio 2.2.3 で、FFmpeg 8.1 を含みます）を、MP3 の作成に ${A(L_LAME, 'LAME')}（LGPL）を利用しています。` +
     `これらは店長が改変せず、LGPL の条件に従って、置き換えのできるライブラリとして組み込んでいます。ソースコードは各プロジェクトの公開ページから入手でき、ライセンスの全文は ${A(L_LGPL21, 'GNU LGPL 2.1')}・${A(L_LGPL3, 'GNU LGPL 3.0')} でご覧いただけます。FFmpegKit の audio 版に含まれるそのほかの音声ライブラリも、それぞれのライセンスに従って利用しています。アプリのメニューの「アプリについて」にも、使用しているソフトウェアを表示しています。`,
@@ -2590,7 +2595,8 @@ const LEGAL = [
     'BOMBOM uses parts of the Dela Gothic One, Kaisei Decol, M PLUS 1p, M PLUS Rounded 1c and Russo One fonts (SIL Open Font License 1.1) and the Luckiest Guy font (Apache License 2.0). Generative AI is used in creating BOMBOM’s character and background art. BOMBOM’s music and other audio were created by the Manager with Flow Music (generative AI), and their copyright belongs to the Manager.',
     'The TaPru logo uses part of the M PLUS Rounded 1c font (SIL Open Font License 1.1).',
     'RAY’s on-screen titles such as WAVE, WARNING and GAME OVER use part of the Black Ops One font (SIL Open Font License 1.1). Generative AI is used in creating RAY’s background and on-screen artwork. RAY’s BGM was made by the Manager with Flow Music (generative AI), and its copyright belongs to the Manager.',
-    'JijiQ’s questions, explanations and related knowledge are written by the Manager in original wording based on news reports and materials from public bodies and others (with the help of generative AI), and the materials used are shown as sources in the app. The copyright of the news articles themselves belongs to the news organizations and other owners.',
+    'JijiQ’s questions, explanations and related knowledge are written by the Manager in original wording based on news reports and materials from public bodies and others (with the help of generative AI), and the materials used are shown as sources in the app. '
+      + 'The news organizations, government offices, research institutes, international organizations and others used to find topics and check facts are listed under “News sources” in the app’s options. The content and copyright of news articles and other materials belong to their news organizations and operators.',
     'JijiQ’s photos come from sources whose terms of use have been checked, such as Wikimedia Commons, and are shown under the terms of their licenses (such as CC BY-SA). Long-press a photo to see its author, source and license. The copyright of each photo belongs to its author or owner.',
     `MP3 Converter uses ${A(L_FFMPEG, 'FFmpeg')} (LGPL 2.1 or later) and ${A(L_FFMPEGKIT, 'FFmpegKit')} (LGPL 3.0; the app includes com.antonkarpenko:ffmpeg-kit-audio 2.2.3, a successor release that contains FFmpeg 8.1) for audio conversion, and ${A(L_LAME, 'LAME')} (LGPL) for creating MP3 files.` +
     ` The Manager has not modified them, and they are included as replaceable libraries under the terms of the LGPL. Their source code is available from each project’s website, and the full license texts are at ${A(L_LGPL21, 'GNU LGPL 2.1')} and ${A(L_LGPL3, 'GNU LGPL 3.0')}. The other audio libraries included in the audio edition of FFmpegKit are also used under their respective licenses. The software used is also listed under “About” in the app’s menu.`,
