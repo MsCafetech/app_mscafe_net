@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 8,
-  "related_count": 21,
+  "question_count": 9,
+  "related_count": 24,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -460,6 +460,68 @@
             {
               "name": "環境省",
               "url": "https://kyushu.env.go.jp/okinawa/coremoc/sango.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-009",
+      "related": [
+        {
+          "id": "20261127-009-R01",
+          "relation_type": "answer",
+          "title": "感覚と体の動きをつなぐ神経",
+          "description": "目や耳などで外からの情報を受け取ると、その情報は感覚神経（かんかくしんけい）を通って脳（のう）やせきずいに伝わります。脳から出た命令は運動神経を通って筋肉（きんにく）などに伝わり、体を動かします。たとえば、目で物を見て手を伸ばすときにも、このような情報のやり取りが働いています。",
+          "relationship": "神経細胞が体内で情報を伝える役割を、感覚と運動の例で学べます。",
+          "keywords": [
+            "神経",
+            "感覚器官",
+            "脳",
+            "筋肉"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2016/05/19/1370871_4.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261127-009-R02",
+          "relation_type": "answer",
+          "title": "脳とせきずいの役割",
+          "description": "脳（のう）とせきずいは、体の各部分からの情報を受け取り、命令を伝える中心となります。脳は頭の骨、せきずいは背骨に守られています。熱いものに触（ふ）れたときに、とっさに手を引っ込めるような反応では、せきずいを通る経路が働き、意識してから動くよりも速く反応する場合があります。このような反応を反射（はんしゃ）といいます。",
+          "relationship": "神経を通る情報が脳やせきずいでどのように扱われるかを学べます。",
+          "keywords": [
+            "脳",
+            "せきずい",
+            "神経",
+            "反射"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/content/20250331-mxt_tokubetu01-000040846_14.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261127-009-R03",
+          "relation_type": "question",
+          "title": "細胞からできている体",
+          "description": "人をはじめとする生き物の体は、細胞（さいぼう）という小さな単位からできています。同じような形や働きを持つ細胞が集まると組織（そしき）ができ、いくつかの組織が組み合わさって器官（きかん）を作ります。脳（のう）や心臓（しんぞう）などの器官は、それぞれ異なる働きをしながら体を支えています。",
+          "relationship": "神経細胞の研究を、細胞・組織・器官という体のつくりへ広げます。",
+          "keywords": [
+            "細胞",
+            "組織",
+            "器官",
+            "人体"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2011/01/05/1234912_006.pdf"
             }
           ]
         }
