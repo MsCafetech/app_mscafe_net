@@ -58,10 +58,48 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
+      "related": [
+        {
+          "related_id": "20261030-002-R01",
+          "images": [
+            {
+              "id": "20261030-002-R01-I01",
+              "type": "photo",
+              "title": "日本銀行の建物",
+              "caption": "資料写真：日本銀行本店の建物。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Bank_of_Japan_building_%2862865%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_building_(62865).jpg",
+              "credit": "Syced / Wikimedia Commons",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。商用利用・改変可能。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261030-003",
+      "images": [
+        {
+          "id": "20261030-003-I01",
+          "type": "photo",
+          "title": "日本銀行の建物",
+          "caption": "資料写真：日本銀行本店の建物。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Bank_of_Japan_building_%2862865%29.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_building_(62865).jpg",
+          "credit": "Syced / Wikimedia Commons",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "CC0 1.0。商用利用・改変可能。"
+        }
+      ],
       "related": []
     }
   ],
-  "question_count": 2,
-  "related_count": 1,
-  "image_count": 3
+  "question_count": 3,
+  "related_count": 2,
+  "image_count": 5
 }
