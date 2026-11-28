@@ -3,8 +3,8 @@
   "date": "2026-11-22",
   "language": "ja",
   "question_count": 3,
-  "related_count": 5,
-  "image_count": 8,
+  "related_count": 11,
+  "image_count": 14,
   "questions": [
     {
       "question_id": "20261122-001",
@@ -24,6 +24,42 @@
         }
       ],
       "related": [
+        {
+          "related_id": "20261122-001-R01",
+          "images": [
+            {
+              "type": "satellite",
+              "title": "冬の日本海に広がる筋状の雪雲",
+              "caption": "資料画像：2018年2月5日の衛星画像。日本海を渡る寒気によって筋状の雲が発達している。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/20180205_Sea_of_Japan_cold_wave_turbulences_by_Aqua.jpg/960px-20180205_Sea_of_Japan_cold_wave_turbulences_by_Aqua.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:20180205_Sea_of_Japan_cold_wave_turbulences_by_Aqua.jpg",
+              "credit": "NASA Aqua/MODIS; © OpenStreetMap contributors（海岸線）",
+              "license": "Public Domain (NASA); 海岸線 OpenStreetMap",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASAの推奨・後援を示唆しない。海岸線の出典 © OpenStreetMap contributors と https://www.openstreetmap.org/copyright を表示。",
+              "id": "20261122-001-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261122-001-R02",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "西高東低の冬型の気圧配置",
+              "caption": "資料図：2006年1月4日の天気図を参考にした模式図。日本の西側に高気圧、東側に低気圧がある。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Weathermap_eastasia_1.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Weathermap_eastasia_1.png",
+              "credit": "気象庁（原資料）／Pekachu（模式図）",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261122-001-R02-I01"
+            }
+          ]
+        },
         {
           "related_id": "20261122-001-R03",
           "images": [
@@ -79,6 +115,42 @@
               "usage_notes": "撮影者・出典・ライセンスリンクを表示し、変更を明記。提供者の推奨を示唆しない。 加工画像を配布する場合は同一または互換ライセンスを適用。"
             }
           ]
+        },
+        {
+          "related_id": "20261122-003-R02",
+          "images": [
+            {
+              "type": "photo",
+              "title": "道路に凍結抑制剤を散布する車両",
+              "caption": "資料写真：2016年に米国オレゴン州で道路に塩を散布した車両。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Spreading_salt_%2831652293186%29.jpg/960px-Spreading_salt_%2831652293186%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Spreading_salt_(31652293186).jpg",
+              "credit": "Oregon Department of Transportation",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261122-003-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261122-003-R03",
+          "images": [
+            {
+              "type": "photo",
+              "title": "クロヤマアリ",
+              "caption": "資料写真：身近なアリの一種であるクロヤマアリ。今回の研究対象個体の写真ではない。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Formica_japonica.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Formica_japonica.JPG",
+              "credit": "Imuzak",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+              "usage_notes": "作者が世界的にパブリックドメインへ提供。出典を明示。",
+              "id": "20261122-003-R03-I01"
+            }
+          ]
         }
       ]
     },
@@ -119,6 +191,24 @@
           ]
         },
         {
+          "related_id": "20261122-008-R02",
+          "images": [
+            {
+              "id": "20261122-008-R02-I01",
+              "type": "satellite",
+              "title": "赤外線で見た水星",
+              "caption": "赤外線で観測した水星の表面。太陽に近く大気がほとんどない水星の環境を学ぶための観測資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/First_mid-infrared_light_observations_of_Mercury_ESA504690.png/960px-First_mid-infrared_light_observations_of_Mercury_ESA504690.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:First_mid-infrared_light_observations_of_Mercury_ESA504690.png",
+              "credit": "European Space Agency",
+              "license": "CC BY-SA 3.0 IGO",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+              "usage_notes": "提供元・出典URL・ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。赤外線観測資料。"
+            }
+          ]
+        },
+        {
           "related_id": "20261122-008-R03",
           "images": [
             {
@@ -137,20 +227,38 @@
           ]
         },
         {
-          "related_id": "20261122-008-R02",
+          "related_id": "20261122-008-R04",
           "images": [
             {
-              "id": "20261122-008-R02-I01",
-              "type": "satellite",
-              "title": "赤外線で見た水星",
-              "caption": "赤外線で観測した水星の表面。太陽に近く大気がほとんどない水星の環境を学ぶための観測資料。",
+              "type": "diagram",
+              "title": "水星の磁気圏と太陽風",
+              "caption": "資料図：2023年のベピコロンボの水星接近時の観測に基づく磁気圏の模式図。太陽風で磁場が変形する様子を示す。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/First_mid-infrared_light_observations_of_Mercury_ESA504690.png/960px-First_mid-infrared_light_observations_of_Mercury_ESA504690.png",
-              "source_url": "https://commons.wikimedia.org/wiki/File:First_mid-infrared_light_observations_of_Mercury_ESA504690.png",
-              "credit": "European Space Agency",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Mercury%E2%80%99s_magnetosphere_during_BepiColombo%E2%80%99s_third_flyby_%28annotated%29_ESA501746.jpg/960px-Mercury%E2%80%99s_magnetosphere_during_BepiColombo%E2%80%99s_third_flyby_%28annotated%29_ESA501746.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Mercury’s_magnetosphere_during_BepiColombo’s_third_flyby_(annotated)_ESA501746.jpg",
+              "credit": "European Space Agency (ESA); ATG under contract to ESA; based on Hadid et al. (2024)",
               "license": "CC BY-SA 3.0 IGO",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
-              "usage_notes": "提供元・出典URL・ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。赤外線観測資料。"
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261122-008-R04-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261122-008-R05",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "ベピコロンボの水星接近計画のグラフ",
+              "caption": "資料図：2019年時点の計画に基づく水星までの距離と相対速度の変化。赤丸はスイングバイ。実際の2026年到着日程とは異なる。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Timeline_of_BepiColombo.svg/960px-Timeline_of_BepiColombo.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Timeline_of_BepiColombo.svg",
+              "credit": "Phoenix7777 / NASA JPL HORIZONS",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261122-008-R05-I01"
             }
           ]
         }
