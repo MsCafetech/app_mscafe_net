@@ -3,7 +3,7 @@
   "date": "2026-11-01",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261101-001",
@@ -23,6 +23,43 @@
             {
               "name": "国土交通省「物資の流通の効率化に関する法律の一部を改正する法律の施行期日を定める政令」",
               "url": "https://www.mlit.go.jp/report/press/tokatsu03_hh_000023.html"
+            }
+          ]
+        },
+        {
+          "id": "20261101-001-R02",
+          "relation_type": "answer",
+          "title": "国内貨物輸送とトラック",
+          "description": "国内で運ぶ荷物の重さを合計すると、自動車による輸送が大きな割合を占めています。貨物の重さだけでなく運んだ距離も考えるときは、トンキロという単位を使います。例えば2トンの荷物を10km運ぶと20トンキロです。輸送手段を比べるときには、どちらの単位で表した数字かを確かめましょう。",
+          "relationship": "国内輸送で自動車が担う役割と貨物量の見方",
+          "keywords": [
+            "貨物輸送",
+            "トラック",
+            "トンキロ"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/tetudo/tetudo_tk2_000015.html"
+            }
+          ]
+        },
+        {
+          "id": "20261101-001-R03",
+          "relation_type": "question",
+          "title": "輸送手段と環境（かんきょう）",
+          "description": "トラックで運んでいた荷物の一部を鉄道や船に切り替えることをモーダルシフトといいます。同じ重さの荷物を同じ距離だけ運ぶ場合、鉄道や船は一般にトラックより二酸化炭素の排出量（はいしゅつりょう）が少なくなります。荷物の量や目的地に合わせて輸送手段を組み合わせることが大切です。",
+          "relationship": "トラック・鉄道・船の利用とエネルギーの関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "モーダルシフト",
+            "鉄道",
+            "船",
+            "二酸化炭素"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/seisakutokatsu/freight/modalshift.html"
             }
           ]
         }
