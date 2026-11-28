@@ -3,7 +3,7 @@
   "date": "2026-11-25",
   "language": "ja",
   "question_count": 20,
-  "related_count": 65,
+  "related_count": 66,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -1003,6 +1003,25 @@
             {
               "name": "外務省",
               "url": "https://www.mofa.go.jp/mofaj/area/cuba/data.html"
+            }
+          ]
+        },
+        {
+          "id": "20261125-024-R03",
+          "relation_type": "question",
+          "title": "カリブ海の島々と世界地理",
+          "description": "カリブ海にはキューバのほか、ジャマイカやハイチなどの島国があります。島々にはそれぞれ異なる歴史や文化があり、一部の国はカリブ共同体（CARICOM）をつくって経済や防災などで協力しています。日本もこの地域の国々と交流しています。",
+          "relationship": "キューバだけでなく周辺の島国と地域協力を学ぶ。",
+          "keywords": [
+            "カリブ海",
+            "ジャマイカ",
+            "ハイチ",
+            "CARICOM"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/kids/q_a/imi.html"
             }
           ]
         }
