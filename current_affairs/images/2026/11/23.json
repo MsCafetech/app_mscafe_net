@@ -3,8 +3,8 @@
   "date": "2026-11-23",
   "language": "ja",
   "question_count": 12,
-  "related_count": 44,
-  "image_count": 57,
+  "related_count": 52,
+  "image_count": 65,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -245,7 +245,62 @@
           "usage_notes": "提供元・出典URL・ライセンスを表示。政府による推奨を示唆しない。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261123-009-R01",
+          "images": [
+            {
+              "type": "photo",
+              "title": "ネパール南部の洪水",
+              "caption": "資料写真：ネパール南部タライ地方の雨季の洪水。今回の水害の写真ではない。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Flood_in_nepal_%28terai_region_at_rainy_season%29_%2817%29.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Flood_in_nepal_(terai_region_at_rainy_season)_(17).jpg",
+              "credit": "Beemall.99",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-009-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-009-R02",
+          "images": [
+            {
+              "type": "map",
+              "title": "ネパールの標高分布",
+              "caption": "資料地図：北部のヒマラヤ山脈から南部の低い平野へ標高が下がる。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Nepal_topo_en.jpg/960px-Nepal_topo_en.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nepal_topo_en.jpg",
+              "credit": "Captain Blood",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-009-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-009-R03",
+          "images": [
+            {
+              "type": "map",
+              "title": "ガンジス川などの流域",
+              "caption": "資料地図：ガンジス川、ブラマプトラ川、メグナ川の流域。ヒマラヤ山脈周辺からベンガル湾へ流れる水系の例。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Ganges-Brahmaputra-Meghna_basins.jpg/960px-Ganges-Brahmaputra-Meghna_basins.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Ganges-Brahmaputra-Meghna_basins.jpg",
+              "credit": "Pfly",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-009-R03-I01"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261123-011",
@@ -663,6 +718,24 @@
           ]
         },
         {
+          "related_id": "20261123-014-R04",
+          "images": [
+            {
+              "type": "photo",
+              "title": "足場材料の上で育つ細胞",
+              "caption": "資料写真：ナノファイバーの足場材料上で培養したマウスの線維芽細胞の走査電子顕微鏡画像。今回のiPS細胞・神経の研究画像ではない。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Fibroblasts_2.jpg/960px-Fibroblasts_2.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Fibroblasts_2.jpg",
+              "credit": "Judyta Dulnik",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-014-R04-I01"
+            }
+          ]
+        },
+        {
           "related_id": "20261123-014-R05",
           "images": [
             {
@@ -700,6 +773,42 @@
         }
       ],
       "related": [
+        {
+          "related_id": "20261123-015-R01",
+          "images": [
+            {
+              "type": "photo",
+              "title": "千葉県議会の庁舎",
+              "caption": "資料写真：2011年撮影の千葉県議会棟。条例などを審議する地方議会の施設。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Chiba_Prefectural_Assembly_Hall.jpg/960px-Chiba_Prefectural_Assembly_Hall.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chiba_Prefectural_Assembly_Hall.jpg",
+              "credit": "掬茶",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-015-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-015-R02",
+          "images": [
+            {
+              "type": "photo",
+              "title": "千葉県庁と県議会",
+              "caption": "資料写真：千葉県庁の議会棟（左）、中庁舎（右）、本庁舎（奥）。知事と議会はそれぞれの役割を担う。2009年撮影。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Chiba_prefectural_office%2CChiba-city%2CJapan.JPG/960px-Chiba_prefectural_office%2CChiba-city%2CJapan.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chiba_prefectural_office,Chiba-city,Japan.JPG",
+              "credit": "katorisi",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-015-R02-I01"
+            }
+          ]
+        },
         {
           "related_id": "20261123-015-R03",
           "images": [
@@ -807,6 +916,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "CC0として公開。商用利用、複製、改変が可能。出典表示を推奨。資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-016-R03",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "家きんの感染症を防ぐ工夫",
+              "caption": "資料図：米国農務省の2004年の感染症予防ポスター。野鳥との接触を避け、靴や器具を清潔にする対策を示す。日本の最新指針ではない。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Backyard_biosecurity_%28picture%29_-_6_ways_to_prevent_poultry_diseases_%28IA_CAT30917911%29.pdf/page1-960px-Backyard_biosecurity_%28picture%29_-_6_ways_to_prevent_poultry_diseases_%28IA_CAT30917911%29.pdf.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Backyard_biosecurity_(picture)_-_6_ways_to_prevent_poultry_diseases_(IA_CAT30917911).pdf",
+              "credit": "USDA Animal and Plant Health Inspection Service",
+              "license": "Public domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
+              "usage_notes": "米国政府著作物。出典を表示。配布元のページ画像を使用。",
+              "id": "20261123-016-R03-I01"
             }
           ]
         },
@@ -935,6 +1062,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。2015年撮影の資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-017-R05",
+          "images": [
+            {
+              "type": "photo",
+              "title": "東京ゲームショウ2026",
+              "caption": "資料写真：2026年9月19日の東京ゲームショウ。ゲーム展示会は国内外の企業やファンが交流する機会となる。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Tokyo_Game_Show_2026.jpg/960px-Tokyo_Game_Show_2026.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Tokyo_Game_Show_2026.jpg",
+              "credit": "Syced",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "出典を明示。写り込んだ商標等について公式の推薦・提携を示唆しない。",
+              "id": "20261123-017-R05-I01"
             }
           ]
         }
