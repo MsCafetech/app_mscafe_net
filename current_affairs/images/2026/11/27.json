@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 55,
-  "image_count": 75,
+  "related_count": 56,
+  "image_count": 76,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -723,6 +723,24 @@
               "license_url": "https://creativecommons.org/licenses/by/2.0/",
               "usage_notes": "作者・出典・ライセンスを表示。変更した場合は明示。",
               "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-010-R01",
+          "images": [
+            {
+              "id": "20261127-010-R01-I01",
+              "type": "diagram",
+              "title": "探査機ジュノーの飛行経路",
+              "caption": "資料図：探査機ジュノーは地球の重力を利用して進路を変え、木星へ向かいました。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Juno_cruise_trajectory.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Juno_cruise_trajectory.jpg",
+              "credit": "NASA/JPL-Caltech",
+              "license": "Public domain (NASA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+              "usage_notes": "NASA/JPL-Caltechを明記。NASAのロゴや名称を推薦のように使わない。"
             }
           ]
         }
