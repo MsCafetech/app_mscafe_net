@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 13,
-  "related_count": 30,
-  "image_count": 41,
+  "question_count": 16,
+  "related_count": 33,
+  "image_count": 48,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -620,7 +620,21 @@
     },
     {
       "question_id": "20261127-010",
-      "images": [],
+      "images": [
+        {
+          "id": "20261127-010-I01",
+          "type": "photo",
+          "title": "はやぶさ2の実物大模型",
+          "caption": "資料写真：筑波宇宙センターに展示された小惑星探査機の実物大模型。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Full-scale_model_of_Hayabusa_2,_JAXA_01.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Full-scale_model_of_Hayabusa_2,_JAXA_01.jpg",
+          "credit": "Σ64",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。"
+        }
+      ],
       "related": [
         {
           "related_id": "20261127-010-R02",
@@ -773,6 +787,120 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-013",
+      "images": [
+        {
+          "id": "20261127-013-I01",
+          "type": "photo",
+          "title": "サーバー設備",
+          "caption": "資料写真：コンピューターを収納したサーバーラック。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/CSIRO_ScienceImage_2042_A_row_of_computer_servers_in_a_server_rack.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_2042_A_row_of_computer_servers_in_a_server_rack.jpg",
+          "credit": "CSIRO",
+          "license": "CC BY 3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/",
+          "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261127-013-R01",
+          "images": [
+            {
+              "id": "20261127-013-R01-I01",
+              "type": "photo",
+              "title": "サーバー設備",
+              "caption": "資料写真：データを扱うサーバー設備。情報を守るための対策が必要です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/CSIRO_ScienceImage_2042_A_row_of_computer_servers_in_a_server_rack.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_2042_A_row_of_computer_servers_in_a_server_rack.jpg",
+              "credit": "CSIRO",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-020",
+      "images": [
+        {
+          "id": "20261127-020-I01",
+          "type": "photo",
+          "title": "タイラギ",
+          "caption": "資料写真：二枚貝のタイラギ。有明海での今回の漁獲物ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Pen_shells.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pen_shells.jpg",
+          "credit": "국립국어원（韓国国立国語院）",
+          "license": "CC BY-SA 2.0 KR",
+          "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/",
+          "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。改変画像は同一または互換ライセンスで配布。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261127-020-R03",
+          "images": [
+            {
+              "id": "20261127-020-R03-I01",
+              "type": "photo",
+              "title": "タイラギ",
+              "caption": "資料写真：タイラギ。水産資源を守るため、漁獲量や生息環境を管理することが重要です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Pen_shells.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Pen_shells.jpg",
+              "credit": "국립국어원（韓国国立国語院）",
+              "license": "CC BY-SA 2.0 KR",
+              "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/",
+              "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。改変画像は同一または互換ライセンスで配布。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-017",
+      "images": [
+        {
+          "id": "20261127-017-I01",
+          "type": "photo",
+          "title": "能登半島地震の住民避難支援",
+          "caption": "資料写真：2024年1月4日の能登半島地震で、住民の避難を支援する自衛隊。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/JSDF_Noto_Earthquake_2024-01-04_3_(Evacuation_Assist_by_JGSDF_35th_Infantry_Regiment).jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:JSDF_Noto_Earthquake_2024-01-04_3_(Evacuation_Assist_by_JGSDF_35th_Infantry_Regiment).jpg",
+          "credit": "防衛省",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261127-017-R02",
+          "images": [
+            {
+              "id": "20261127-017-R02-I01",
+              "type": "photo",
+              "title": "能登半島地震の住民避難支援",
+              "caption": "資料写真：能登半島地震で自衛隊が住民の避難を支援する様子。公助の一例です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/JSDF_Noto_Earthquake_2024-01-04_3_(Evacuation_Assist_by_JGSDF_35th_Infantry_Regiment).jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:JSDF_Noto_Earthquake_2024-01-04_3_(Evacuation_Assist_by_JGSDF_35th_Infantry_Regiment).jpg",
+              "credit": "防衛省",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示し、改変時は明示。"
             }
           ]
         }
