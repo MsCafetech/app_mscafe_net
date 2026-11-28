@@ -20,10 +20,139 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261109-001-R01",
+          "images": [
+            {
+              "id": "20261109-001-R01-I01",
+              "type": "photo",
+              "title": "レアアースを含む鉱石",
+              "caption": "資料写真：アメリカのカリフォルニア州で採取されたバストネサイトを含む鉱石。重要鉱物の原料の一例です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Bastnaesite_%28GeoDIL_number_-_821%29.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bastnaesite_(GeoDIL_number_-_821).jpg",
+              "credit": "Darla Sondrol / Geoscience Digital Image Library",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し、継承条件がある場合は同一または互換ライセンスで配布。原画像または配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261109-001-R02",
+          "images": [
+            {
+              "id": "20261109-001-R02-I01",
+              "type": "map",
+              "title": "ベトナムの地図",
+              "caption": "資料地図：2004年のベトナムの地図。北部のハノイと南部のホーチミン市などの位置が分かります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Vietnam-CIA_WFB_Map.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Vietnam-CIA_WFB_Map.png",
+              "credit": "CIA / The World Factbook (2004)",
+              "license": "Public Domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-CIA-WF",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し、継承条件がある場合は同一または互換ライセンスで配布。原画像または配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261109-001-R03",
+          "images": [
+            {
+              "id": "20261109-001-R03-I01",
+              "type": "satellite",
+              "title": "宇宙から見たメコンデルタの水田",
+              "caption": "資料写真：2023年3月26日に衛星が撮影したベトナム南部の水田。細かく区切られた農地が広がっています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Rice_fields%2C_Mekong_Delta_ESA25022055.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Rice_fields,_Mekong_Delta_ESA25022055.jpg",
+              "credit": "European Space Agency; Contains modified Copernicus Sentinel data 2023",
+              "license": "CC BY-SA 3.0 IGO",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+              "usage_notes": "ESAと指定のCopernicus帰属表示、出典・ライセンスへのリンクを表示。変更を明示し改変時は同一または互換ライセンスで配布。EUやESAによる承認を示唆しない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261109-002",
+      "images": [
+        {
+          "id": "20261109-002-I01",
+          "type": "photo",
+          "title": "2015年の国連気候変動会議",
+          "caption": "資料写真：2015年12月12日、パリで開かれた気候変動会議の様子。今回の会議ではありません。",
+          "is_reference": true,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Adoption_of_the_Paris_Agreement_%2823677269226%29.jpg/960px-Adoption_of_the_Paris_Agreement_%2823677269226%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Adoption_of_the_Paris_Agreement_(23677269226).jpg",
+          "credit": "UNclimatechange",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し、継承条件がある場合は同一または互換ライセンスで配布。原画像または配布元の縮小画像を使用。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261109-002-R01",
+          "images": [
+            {
+              "id": "20261109-002-R01-I01",
+              "type": "photo",
+              "title": "パリ協定の採択",
+              "caption": "資料写真：2015年12月12日、パリ協定が採択されたときの様子。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Adoption_of_the_Paris_Agreement_%2823677269226%29.jpg/960px-Adoption_of_the_Paris_Agreement_%2823677269226%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Adoption_of_the_Paris_Agreement_(23677269226).jpg",
+              "credit": "UNclimatechange",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し、継承条件がある場合は同一または互換ライセンスで配布。原画像または配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261109-002-R02",
+          "images": [
+            {
+              "id": "20261109-002-R02-I01",
+              "type": "photo",
+              "title": "2015年の国連気候変動会議",
+              "caption": "資料写真：2015年の気候変動に関する締約国会議。国際条約の参加国が話し合う場の例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Adoption_of_the_Paris_Agreement_%2823677269226%29.jpg/960px-Adoption_of_the_Paris_Agreement_%2823677269226%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Adoption_of_the_Paris_Agreement_(23677269226).jpg",
+              "credit": "UNclimatechange",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し、継承条件がある場合は同一または互換ライセンスで配布。原画像または配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261109-002-R03",
+          "images": [
+            {
+              "id": "20261109-002-R03-I01",
+              "type": "diagram",
+              "title": "温室効果と熱の移動",
+              "caption": "資料図：太陽の光や地表から出る熱の一部を大気が吸収する仕組みを示した日本語の図。数値は資料のモデル値です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Greenhouse_Effect_ja.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Greenhouse_Effect_ja.png",
+              "credit": "Robert A. Rohde / Pekachu（日本語版）",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し、継承条件がある場合は同一または互換ライセンスで配布。原画像または配布元の縮小画像を使用。"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "question_count": 1,
-  "related_count": 0,
-  "image_count": 1
+  "question_count": 2,
+  "related_count": 6,
+  "image_count": 8
 }
