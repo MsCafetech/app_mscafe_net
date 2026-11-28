@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 62,
+  "related_count": 63,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -353,6 +353,25 @@
             {
               "name": "環境再生保全機構",
               "url": "https://www.erca.go.jp/fukakin/y_tebiki/situgi/q03.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-005-R04",
+          "relation_type": "question",
+          "title": "酸性雨と森林・湖への影響（えいきょう）",
+          "description": "酸性雨が続くと、土が酸性にかたむき、森林の生き物に影響が出ることがあります。また、湖や川に流れこむことで水が酸性になり、魚などの生き物に影響をおよぼすこともあります。影響の現れ方は、土地や水の性質によって異なります。",
+          "relationship": "酸性雨の原因を、森林や湖の環境への影響と結びつけて学びます。",
+          "keywords": [
+            "酸性雨",
+            "森林",
+            "湖",
+            "生態系"
+          ],
+          "sources": [
+            {
+              "name": "環境省「環境白書」",
+              "url": "https://www.env.go.jp/policy/hakusyo/h05/9132.html"
             }
           ]
         }

@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 63,
+  "related_count": 65,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -314,6 +314,28 @@
               "url": "https://www.mext.go.jp/a_menu/shotou/gakuryoku/faq/001.htm"
             }
           ]
+        },
+        {
+          "id": "20261126-004-R04",
+          "relation_type": "answer",
+          "title": "日本国憲法（にほんこくけんぽう）と教育を受ける権利",
+          "description": "日本国憲法の第26条は、国民が能力に応じてひとしく教育を受ける権利を定めています。また、保護者（ほごしゃ）が子どもに普通教育を受けさせる義務（ぎむ）も定めています。義務教育は9年間で、国公立の学校では授業料（じゅぎょうりょう）がかかりません。",
+          "relationship": "学校教育を担当する行政の背景にある、教育を受ける権利を学びます。",
+          "keywords": [
+            "日本国憲法",
+            "教育を受ける権利",
+            "義務教育"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省「日本国憲法（条文抜粋）」",
+              "url": "https://www.mext.go.jp/b_menu/kihon/about/a002.htm"
+            },
+            {
+              "name": "文部科学省「義務教育」",
+              "url": "https://www.mext.go.jp/b_menu/kihon/about/004/a004_04.htm"
+            }
+          ]
         }
       ]
     },
@@ -563,6 +585,29 @@
             {
               "name": "気象庁",
               "url": "https://www.jma.go.jp/jma/kishou/know/svd/text/chapter_2.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-012-R04",
+          "relation_type": "question",
+          "title": "地震への事前の備え",
+          "description": "地震（じしん）のゆれに備え、家の家具（かぐ）を固定して倒れにくくしたり、家族で避難（ひなん）場所を確かめたりしておくことが大切です。非常用（ひじょうよう）の持ち出し品も用意します。緊急地震速報が間に合わない場合もあるため、日ごろの備えが役立ちます。",
+          "relationship": "緊急地震速報を知るとともに、地震が起きる前の備えを学びます。",
+          "keywords": [
+            "地震",
+            "防災",
+            "家具の固定",
+            "避難場所"
+          ],
+          "sources": [
+            {
+              "name": "気象庁「地震について」",
+              "url": "https://www.jma.go.jp/jma/kishou/know/faq/faq7.html"
+            },
+            {
+              "name": "気象庁「緊急地震速報の特性や限界」",
+              "url": "https://www.jma.go.jp/jma/kishou/know/jishin/eew/shikumi/tokusei.html"
             }
           ]
         }
