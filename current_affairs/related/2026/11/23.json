@@ -3,7 +3,7 @@
   "date": "2026-11-23",
   "language": "ja",
   "question_count": 12,
-  "related_count": 44,
+  "related_count": 52,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -22,6 +22,47 @@
             {
               "name": "原子力発電環境整備機構",
               "url": "https://www.numo.or.jp/q_and_a/100009.html"
+            }
+          ]
+        },
+        {
+          "id": "20261123-001-R02",
+          "relation_type": "question",
+          "title": "地層と地下水",
+          "description": "地面に降った雨の一部は土や岩石のすき間に入り、地下水となります。砂やれきの層は水が通りやすい一方、泥（どろ）の多い層などは水を通しにくい場合があります。地下水が流れる方向や速さは地層の性質によって異なります。地下を利用するときには地層と水の動きを調べることが重要です。",
+          "relationship": "地下の地層や地下水の動きが処分場所の検討に関わる理由",
+          "keywords": [
+            "地層",
+            "地下水",
+            "透水性"
+          ],
+          "sources": [
+            {
+              "name": "内閣官房 地下水マネジメント推進プラットフォーム",
+              "url": "https://www.cas.go.jp/jp/seisaku/gmpp/guide/technologies/fundamentals.html"
+            }
+          ]
+        },
+        {
+          "id": "20261123-001-R03",
+          "relation_type": "question",
+          "title": "地層と土地の成り立ち",
+          "description": "川が運んだ砂や泥（どろ）、れきなどが海や湖の底に積もると、層ができます。火山の噴火（ふんか）による火山灰が積もることでも地層はできます。地層の中のつぶの大きさや化石を調べると、昔その土地がどのような場所だったかを考える手がかりになります。",
+          "relationship": "地下に重なる地層や岩石を観察し土地の歴史を調べる方法を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "地層",
+            "火山灰",
+            "土地の成り立ち",
+            "化石"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/river/bousai/education/teacher.html"
+            },
+            {
+              "name": "ベネッセ",
+              "url": "https://benesse.jp/kyouiku/teikitest/chu/science/science/c00582.html"
             }
           ]
         }
@@ -47,6 +88,51 @@
               "url": "https://www.mofa.go.jp/mofaj/gaiko/kaku/npt/gaiyo.html"
             }
           ]
+        },
+        {
+          "id": "20261123-007-R02",
+          "relation_type": "question",
+          "title": "広島・長崎と平和への取り組み",
+          "description": "1945年8月6日に広島、8月9日に長崎に原子爆弾が投下され、多くの人々が被害を受けました。両市では平和を願う式典が開かれ、資料館などで当時の出来事や被爆者（ひばくしゃ）の体験を伝えています。戦争の歴史を学び、核兵器のない世界について考えることが大切です。",
+          "relationship": "被爆の歴史と平和を伝える活動を学ぶ",
+          "keywords": [
+            "広島",
+            "長崎",
+            "平和",
+            "原爆"
+          ],
+          "sources": [
+            {
+              "name": "広島市",
+              "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/1036662/1003065/1015259.html"
+            },
+            {
+              "name": "広島平和文化センター",
+              "url": "https://www.pcf.city.hiroshima.jp/hpcf/"
+            }
+          ]
+        },
+        {
+          "id": "20261123-007-R03",
+          "relation_type": "question",
+          "title": "核兵器禁止条約と国際協力",
+          "description": "核兵器禁止条約は、核兵器の開発、保有、使用などを参加国に対して禁止する国際条約で、2021年に効力を持ち始めました。核兵器をなくすための国際的な取り組みの一つですが、すべての国が参加しているわけではありません。核兵器のない世界に向けて、各国が話し合いを続けることが重要です。",
+          "relationship": "核兵器に関する国際的な取決めと平和への協力を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "核兵器禁止条約",
+            "国際協力",
+            "核軍縮"
+          ],
+          "sources": [
+            {
+              "name": "軍縮会議日本政府代表部",
+              "url": "https://www.disarm.emb-japan.go.jp/itpr_ja/chap3.html"
+            },
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/gaiko/bluebook/2026/html/chapter3_01_04.html"
+            }
+          ]
         }
       ]
     },
@@ -70,6 +156,52 @@
               "url": "https://www.mof.go.jp/faq/budget/01al.htm"
             }
           ]
+        },
+        {
+          "id": "20261123-008-R02",
+          "relation_type": "question",
+          "title": "国の予算と国会",
+          "description": "国が一年間にどのくらいお金を集め、何に使うかの計画を予算といいます。内閣が予算案を作って国会へ提出し、国会で審議（しんぎ）して議決します。予算はまず衆議院（しゅうぎいん）に提出されます。国民の代表が国のお金の使い方を決める仕組みです。",
+          "relationship": "予算案が国会で審議され議決される仕組みを調べる",
+          "keywords": [
+            "予算",
+            "国会",
+            "内閣",
+            "衆議院"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館 日本国憲法",
+              "url": "https://www.ndl.go.jp/constitution/etc/j01.html"
+            },
+            {
+              "name": "e-Gov法令検索 財政法",
+              "url": "https://laws.e-gov.go.jp/law/322AC0000000034/20261102_508AC0000000062"
+            }
+          ]
+        },
+        {
+          "id": "20261123-008-R03",
+          "relation_type": "question",
+          "title": "税金と公共サービス",
+          "description": "税金は国や地方公共団体が行う公共サービスの費用を支えています。例えば学校教育、道路の整備、警察や消防、医療（いりょう）などに使われます。社会全体で必要な費用を分担し、多くの人が安心して生活できるようにする仕組みです。",
+          "relationship": "税金が学校や防災などの公共サービスを支える関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "税金",
+            "公共サービス",
+            "教育",
+            "社会保障"
+          ],
+          "sources": [
+            {
+              "name": "財務省",
+              "url": "https://www.mof.go.jp/tax_policy/"
+            },
+            {
+              "name": "財務省",
+              "url": "https://www.mof.go.jp/zaisei/financial-structure/financial-structure-02.html"
+            }
+          ]
         }
       ]
     },
@@ -91,6 +223,51 @@
             {
               "name": "外務省",
               "url": "https://www.mofa.go.jp/mofaj/press/release/press4_008453.html"
+            }
+          ]
+        },
+        {
+          "id": "20261123-009-R02",
+          "relation_type": "question",
+          "title": "ヒマラヤ山脈とネパールの地形",
+          "description": "ネパールは中国とインドに接する内陸国です。北部にはヒマラヤ山脈の高い山々があり、南部にはテライ平野が広がっています。北から南へ流れる川も多く、地域によって高さや地形、気候が大きく異なります。山地では土砂災害、低い土地では洪水（こうずい）などへの備えが大切です。",
+          "relationship": "中国とインドの間にある国の地形と高い山々を学ぶ",
+          "keywords": [
+            "ネパール",
+            "ヒマラヤ山脈",
+            "テライ平野"
+          ],
+          "sources": [
+            {
+              "name": "ネパール観光局",
+              "url": "https://ntb.gov.np/ja/plan-your-trip/about-nepal/geography"
+            },
+            {
+              "name": "JICA",
+              "url": "https://www.jica.go.jp/overseas/nepal/"
+            }
+          ]
+        },
+        {
+          "id": "20261123-009-R03",
+          "relation_type": "question",
+          "title": "アジアの大河と山脈",
+          "description": "ヒマラヤ山脈とその周辺の高い山々は、アジアの大きな川の水源となっています。ガンジス川、インダス川、ブラマプトラ川などが流れ、下流の人々の生活や農業を支えています。雨や雪解け水は川に集まるため、上流と下流の国々が水の利用や災害対策で協力することが重要です。",
+          "relationship": "高い山地に源を持つ川と下流の生活・農業の関係を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "ヒマラヤ山脈",
+            "ガンジス川",
+            "インダス川",
+            "ブラマプトラ川"
+          ],
+          "sources": [
+            {
+              "name": "国際総合山岳開発センター（ICIMOD）",
+              "url": "https://www.icimod.org/who-we-are/the-hindu-kush-himalaya/"
+            },
+            {
+              "name": "ICIMOD",
+              "url": "https://www.icimod.org/mountain/water/"
             }
           ]
         }

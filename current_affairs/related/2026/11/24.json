@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-24",
   "language": "ja",
-  "question_count": 6,
-  "related_count": 30,
+  "question_count": 7,
+  "related_count": 33,
   "questions": [
     {
       "question_id": "20261124-011",
@@ -654,6 +654,75 @@
             {
               "name": "農林水産省「消費者と食・農とのつながりの深化」",
               "url": "https://www.maff.go.jp/j/wpaper/w_maff/r2/r2_h/trend/part1/chap2/c2_5_00.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261124-018",
+      "related": [
+        {
+          "id": "20261124-018-R01",
+          "relation_type": "answer",
+          "title": "エルニーニョ現象と海面水温",
+          "description": "エルニーニョ現象は、太平洋の赤道付近の中央部から東部にかけて、海面の水温が平年より高い状態が長く続く現象です。海の温度が変わると大気の流れにも影響（えいきょう）が出て、日本を含む各地の天候が変わることがあります。逆に水温が低い状態が長く続く現象をラニーニャ現象といいます。",
+          "relationship": "赤道付近の太平洋東部の海面水温と現象の関係を調べる",
+          "keywords": [
+            "エルニーニョ現象",
+            "ラニーニャ現象",
+            "海面水温"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.data.jma.go.jp/cpd/data/elnino/learning/faq/whatiselnino.html"
+            }
+          ]
+        },
+        {
+          "id": "20261124-018-R02",
+          "relation_type": "question",
+          "title": "貿易風と太平洋の海水",
+          "description": "太平洋の赤道付近では、ふだん東から西へ貿易風が吹きます。その風によって暖かい海水は西側に集まり、東側では深い所から冷たい海水が上がってきます。貿易風が弱くなると暖かい海水が東へ広がりやすくなります。風と海水の動きは互（たが）いに関わっています。",
+          "relationship": "赤道付近で吹く風と海水の動きが海面水温に関係する仕組みを学ぶ",
+          "keywords": [
+            "貿易風",
+            "太平洋",
+            "海水",
+            "エルニーニョ"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kids/kids/faq/d1_08.html"
+            },
+            {
+              "name": "気象庁",
+              "url": "https://www.data.jma.go.jp/cpd/elnino/mikata/mikata3.html"
+            }
+          ]
+        },
+        {
+          "id": "20261124-018-R03",
+          "relation_type": "question",
+          "title": "日本の冬の季節風と雪",
+          "description": "冬の日本では大陸から冷たい季節風が吹きます。冷たい空気が日本海を渡るとき、水蒸気を受け取って雪雲ができます。山にぶつかると空気が上昇して冷やされるため、日本海側では雪が降りやすくなります。太平洋側では晴れる日が多くなります。",
+          "relationship": "太平洋の海面水温の変化が冬の天候に関わる背景として季節風と日本海側の雪を調べる",
+          "keywords": [
+            "季節風",
+            "日本海側",
+            "雪",
+            "冬"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/faq/faq1.html"
+            },
+            {
+              "name": "気象庁",
+              "url": "https://www.data.jma.go.jp/cpd/j_climate/tohoku/winter.html"
             }
           ]
         }
