@@ -3,8 +3,8 @@
   "date": "2026-11-20",
   "language": "ja",
   "question_count": 9,
-  "related_count": 13,
-  "image_count": 22,
+  "related_count": 29,
+  "image_count": 38,
   "questions": [
     {
       "question_id": "20261120-001",
@@ -24,6 +24,24 @@
         }
       ],
       "related": [
+        {
+          "related_id": "20261120-001-R01",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "タイセイヨウクロマグロの漁獲量の変化",
+              "caption": "資料図：1950～2009年の漁獲量。漁獲量は年によって大きく変化します。魚の資源量を直接示す図ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Fisheries_capture_of_Thunnus_thynnus.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Fisheries_capture_of_Thunnus_thynnus.jpg",
+              "credit": "Epipelagic / FAO fisheries（データ）",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-001-R01-I01"
+            }
+          ]
+        },
         {
           "related_id": "20261120-001-R02",
           "images": [
@@ -79,7 +97,62 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261120-002-R01",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "プレートの沈み込み",
+              "caption": "資料図：海洋側のプレートが陸側のプレートの下へ沈み込む仕組み。海溝ができる場所が分かります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Subduction-ja.svg/960px-Subduction-ja.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Subduction-ja.svg",
+              "credit": "KDS4444（原図） / ObladiOblada（日本語訳）",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-002-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-002-R02",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "地震と地震の間にたまるひずみ",
+              "caption": "資料図：プレート境界が固着すると、陸側の地盤がゆっくり変形します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Eq-gen2.svg/960px-Eq-gen2.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Eq-gen2.svg",
+              "credit": "U.S. Geological Survey / Brian F. Atwater, Marco Cisternas V., Joanne Bourgeois, Walter C. Dudley, James W. Hendley II, Peter H. Stauffer",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-002-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-002-R03",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "海底の変動で広がる津波",
+              "caption": "資料図：海底の動きによって生じた津波が両側へ広がる様子。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Eq-gen4.svg/960px-Eq-gen4.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Eq-gen4.svg",
+              "credit": "U.S. Geological Survey / Brian F. Atwater, Marco Cisternas V., Joanne Bourgeois, Walter C. Dudley, James W. Hendley II, Peter H. Stauffer",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-002-R03-I01"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261120-003",
@@ -114,6 +187,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-003-R02",
+          "images": [
+            {
+              "type": "photo",
+              "title": "種子島のロケット発射台",
+              "caption": "資料写真：2014年2月28日、種子島宇宙センターの発射台に置かれたH-IIAロケット。発射場は海に近い場所にあります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/H-IIA_with_GPM_on_launch_pad_before_liftoff.jpg/960px-H-IIA_with_GPM_on_launch_pad_before_liftoff.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:H-IIA_with_GPM_on_launch_pad_before_liftoff.jpg",
+              "credit": "NASA/Bill Ingalls",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "NASAの出典を表示。承認・推奨を示唆しない。",
+              "id": "20261120-003-R02-I01"
             }
           ]
         },
@@ -156,6 +247,24 @@
       ],
       "related": [
         {
+          "related_id": "20261120-004-R01",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "ヘクタールとアールの関係",
+              "caption": "資料図：1ヘクタールは100メートル四方、1アールは10メートル四方。1ヘクタールは100アールです。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Hectare_Diagram.svg/500px-Hectare_Diagram.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hectare_Diagram.svg",
+              "credit": "Martinvl（原図） / Aflafla1（SVG化） / TAKASUGI Shinji（編集）",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-004-R01-I01"
+            }
+          ]
+        },
+        {
           "related_id": "20261120-004-R02",
           "images": [
             {
@@ -174,6 +283,24 @@
           ]
         },
         {
+          "related_id": "20261120-004-R03",
+          "images": [
+            {
+              "type": "photo",
+              "title": "米不足で空になった商品棚",
+              "caption": "資料写真：2024年9月2日の東京都内のスーパー。米の需要と供給のバランスが崩れた例です。今回のニュースの写真ではありません。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Rice_shelves_empty_in_some_supermarket_in_Tokyo_Japan_20240902_175221.jpg/960px-Rice_shelves_empty_in_some_supermarket_in_Tokyo_Japan_20240902_175221.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Rice_shelves_empty_in_some_supermarket_in_Tokyo_Japan_20240902_175221.jpg",
+              "credit": "LERK / Rice shelves empty in some supermarket in Tokyo Japan 20240902 175221.jpg / Wikimedia Commons",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-004-R03-I01"
+            }
+          ]
+        },
+        {
           "related_id": "20261120-004-R04",
           "images": [
             {
@@ -188,6 +315,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。2016年撮影の資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-004-R05",
+          "images": [
+            {
+              "type": "photo",
+              "title": "政府備蓄米",
+              "caption": "資料写真：30キログラム入りの袋に入れて保管される政府備蓄米。食料を安定して確保するための取り組みの例です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Government%27s_stockpiled_rice.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Government%27s_stockpiled_rice.jpg",
+              "credit": "農林水産省（MAFF）",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-004-R05-I01"
             }
           ]
         }
@@ -246,6 +391,24 @@
               "usage_notes": "提供元・出典・ライセンスを表示。変更は明記。"
             }
           ]
+        },
+        {
+          "related_id": "20261120-100-R03",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "日本の消費者物価上昇率",
+              "caption": "資料図：1960～2025年の日本の消費者物価の年間変化率。前年同月比そのものではなく、物価の変化率の読み方を学ぶための資料です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Inflation_of_consumer_prices%2C_JPN.svg/960px-Inflation_of_consumer_prices%2C_JPN.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Inflation_of_consumer_prices%2C_JPN.svg",
+              "credit": "Our World in Data / IMF International Financial Statistics via World Bank (2026)",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-100-R03-I01"
+            }
+          ]
         }
       ]
     },
@@ -302,6 +465,24 @@
               "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元の縮小画像を使用。"
             }
           ]
+        },
+        {
+          "related_id": "20261120-101-R03",
+          "images": [
+            {
+              "type": "photo",
+              "title": "国連総会の議場",
+              "caption": "資料写真：2007年の国連総会の議場。国連事務総長は安全保障理事会の推薦を受け、総会が任命します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/UnitedNations_GeneralAssemblyChamber.jpg/960px-UnitedNations_GeneralAssemblyChamber.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:UnitedNations_GeneralAssemblyChamber.jpg",
+              "credit": "ChrisErbach",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-101-R03-I01"
+            }
+          ]
         }
       ]
     },
@@ -331,6 +512,24 @@
               "type": "photo",
               "title": "教育予算をめぐるデモ",
               "caption": "資料写真：2010年のロンドンで教育予算について意見を表明する人々。集会やデモは社会に考えを伝える方法の一つです。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Student_protest_march_past_Houses_of_Parliament.jpg/960px-Student_protest_march_past_Houses_of_Parliament.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Student_protest_march_past_Houses_of_Parliament.jpg",
+              "credit": "BillyH",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-102-R02",
+          "images": [
+            {
+              "id": "20261120-102-R02-I01",
+              "type": "photo",
+              "title": "教育予算をめぐるデモ",
+              "caption": "資料写真：2010年のロンドンのデモ。文字を書いた看板を掲げ、自分たちの意見を社会に伝える表現の例です。",
               "is_reference": true,
               "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Student_protest_march_past_Houses_of_Parliament.jpg/960px-Student_protest_march_past_Houses_of_Parliament.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
               "source_url": "https://commons.wikimedia.org/wiki/File:Student_protest_march_past_Houses_of_Parliament.jpg",
@@ -396,6 +595,42 @@
               "usage_notes": "作者・出典・ライセンスリンクを表示。変更を明記し、改変画像の配布は同一または互換ライセンス。"
             }
           ]
+        },
+        {
+          "related_id": "20261120-103-R02",
+          "images": [
+            {
+              "type": "historical",
+              "title": "1906年の株券",
+              "caption": "歴史資料：1906年の株券。株式を持つことを証明するために発行された文書の例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Stock_certificate.jpg/960px-Stock_certificate.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Stock_certificate.jpg",
+              "credit": "作者不詳 / Museum of Vojvodinian Slovaks（所蔵・提供、資料番号2333）",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-103-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-103-R03",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "日経平均株価の推移",
+              "caption": "資料図：1985～1995年の日経平均株価。多くの株式の価格の動きをまとめた株価指数の例です。TOPIXとは異なる指数です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Nikkei_225%281985-1995%29_Ja.svg/960px-Nikkei_225%281985-1995%29_Ja.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Nikkei_225%281985-1995%29_Ja.svg",
+              "credit": "HFWMan",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-103-R03-I01"
+            }
+          ]
         }
       ]
     },
@@ -416,7 +651,62 @@
           "usage_notes": "提供元・出典を表示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261120-104-R01",
+          "images": [
+            {
+              "type": "photo",
+              "title": "児童がいない教室",
+              "caption": "資料写真：2011年の教室。感染症にかかったときに登校を控える理由を考えるための資料であり、感染症による休校の写真ではありません。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Empty_classroom.jpg/960px-Empty_classroom.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Empty_classroom.jpg",
+              "credit": "Onderwijsgek (nl.wikipedia.org)",
+              "license": "CC BY-SA 3.0 NL",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/nl/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-104-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-104-R02",
+          "images": [
+            {
+              "type": "historical",
+              "title": "インフルエンザの予防接種",
+              "caption": "歴史資料：1976年に米国で行われたインフルエンザ予防接種。当時の接種器具を使った写真で、現在の一般的な接種方法とは異なります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Influenza_Vaccination_1976.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Influenza_Vaccination_1976.jpg",
+              "credit": "CDC",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-104-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261120-104-R03",
+          "images": [
+            {
+              "type": "photo",
+              "title": "流水で手を洗う",
+              "caption": "資料写真：手洗いの様子。せっけんと流水で手を洗うことは感染予防の基本です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Person_washing_hands.jpg/960px-Person_washing_hands.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Person_washing_hands.jpg",
+              "credit": "CDC / Kimberly Smith / Christine Ford",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261120-104-R03-I01"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
