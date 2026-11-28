@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-24",
   "language": "ja",
-  "question_count": 6,
-  "related_count": 30,
-  "image_count": 36,
+  "question_count": 7,
+  "related_count": 33,
+  "image_count": 40,
   "questions": [
     {
       "question_id": "20261124-011",
@@ -79,24 +79,6 @@
           ]
         },
         {
-          "related_id": "20261124-011-R05",
-          "images": [
-            {
-              "id": "20261124-011-R05-I01",
-              "type": "photo",
-              "title": "学校で行う地震訓練",
-              "caption": "資料写真：児童が地震を想定した訓練をしている様子。ふだんから安全な行動を練習しておくことが、地震の時の落ち着いた行動につながります。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Students_practice_earthquake_drill._%2810726996365%29.jpg/1280px-Students_practice_earthquake_drill._%2810726996365%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Students_practice_earthquake_drill._(10726996365).jpg",
-              "credit": "Department of Foreign Affairs and Trade",
-              "license": "CC BY 4.0",
-              "license_url": "https://creativecommons.org/licenses/by/4.0/",
-              "usage_notes": "CC BY 4.0。提供者「Department of Foreign Affairs and Trade」とライセンスを表示。"
-            }
-          ]
-        },
-        {
           "related_id": "20261124-011-R04",
           "images": [
             {
@@ -111,6 +93,24 @@
               "license": "CC BY 4.0",
               "license_url": "https://creativecommons.org/licenses/by/4.0/",
               "usage_notes": "CC BY 4.0。作者名「RuinDig/Yuki Uchida」とライセンスを表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-011-R05",
+          "images": [
+            {
+              "id": "20261124-011-R05-I01",
+              "type": "photo",
+              "title": "学校で行う地震訓練",
+              "caption": "資料写真：児童が地震を想定した訓練をしている様子。ふだんから安全な行動を練習しておくことが、地震の時の落ち着いた行動につながります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Students_practice_earthquake_drill._%2810726996365%29.jpg/1280px-Students_practice_earthquake_drill._%2810726996365%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Students_practice_earthquake_drill._(10726996365).jpg",
+              "credit": "Department of Foreign Affairs and Trade",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "CC BY 4.0。提供者「Department of Foreign Affairs and Trade」とライセンスを表示。"
             }
           ]
         }
@@ -135,20 +135,20 @@
       ],
       "related": [
         {
-          "related_id": "20261124-012-R03",
+          "related_id": "20261124-012-R01",
           "images": [
             {
-              "id": "20261124-012-R03-I01",
+              "id": "20261124-012-R01-I01",
               "type": "photo",
-              "title": "気象衛星GOES-Uの搬入",
-              "caption": "資料写真：気象を観測するための人工衛星GOES-U。ひまわりと同じように、雲の動きなどを続けて観測する気象衛星の一例です。",
+              "title": "地球資源技術衛星（ERTS）",
+              "caption": "資料写真：地球の周りを回り、地表や雲などを観測する人工衛星。地球観測衛星は広い地域をくり返し調べ、防災や環境の研究に役立ちます。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_%288208855%29.jpg/1280px-9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_%288208855%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_(8208855).jpg",
-              "credit": "U.S. Air Force photo by Staff Sgt. Marco Gomez",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Earth_Resources_Technology_Satellite_%28ERTS%29_-_GPN-2003-00022.jpg/1280px-Earth_Resources_Technology_Satellite_%28ERTS%29_-_GPN-2003-00022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Earth_Resources_Technology_Satellite_(ERTS)_-_GPN-2003-00022.jpg",
+              "credit": "NASA",
               "license": "Public domain",
-              "license_url": "https://www.usa.gov/government-copyright",
-              "usage_notes": "米空軍提供のパブリックドメイン画像。撮影者名とWikimedia Commonsの掲載元を出典として表示。"
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         },
@@ -171,6 +171,24 @@
           ]
         },
         {
+          "related_id": "20261124-012-R03",
+          "images": [
+            {
+              "id": "20261124-012-R03-I01",
+              "type": "photo",
+              "title": "気象衛星GOES-Uの搬入",
+              "caption": "資料写真：気象を観測するための人工衛星GOES-U。ひまわりと同じように、雲の動きなどを続けて観測する気象衛星の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_%288208855%29.jpg/1280px-9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_%288208855%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:9th_AS_offload_NOAA_GOES-U_weather_satellite_at_NASA_Kennedy_Space_Center_(8208855).jpg",
+              "credit": "U.S. Air Force photo by Staff Sgt. Marco Gomez",
+              "license": "Public domain",
+              "license_url": "https://www.usa.gov/government-copyright",
+              "usage_notes": "米空軍提供のパブリックドメイン画像。撮影者名とWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
           "related_id": "20261124-012-R04",
           "images": [
             {
@@ -181,24 +199,6 @@
               "is_reference": true,
               "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/NASA_Elbe_flood_2002_before_after.jpg/1280px-NASA_Elbe_flood_2002_before_after.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
               "source_url": "https://commons.wikimedia.org/wiki/File:NASA_Elbe_flood_2002_before_after.jpg",
-              "credit": "NASA",
-              "license": "Public domain",
-              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-              "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-012-R01",
-          "images": [
-            {
-              "id": "20261124-012-R01-I01",
-              "type": "photo",
-              "title": "地球資源技術衛星（ERTS）",
-              "caption": "資料写真：地球の周りを回り、地表や雲などを観測する人工衛星。地球観測衛星は広い地域をくり返し調べ、防災や環境の研究に役立ちます。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Earth_Resources_Technology_Satellite_%28ERTS%29_-_GPN-2003-00022.jpg/1280px-Earth_Resources_Technology_Satellite_%28ERTS%29_-_GPN-2003-00022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Earth_Resources_Technology_Satellite_(ERTS)_-_GPN-2003-00022.jpg",
               "credit": "NASA",
               "license": "Public domain",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
@@ -355,42 +355,6 @@
       ],
       "related": [
         {
-          "related_id": "20261124-015-R02",
-          "images": [
-            {
-              "id": "20261124-015-R02-I01",
-              "type": "diagram",
-              "title": "食物連鎖で有害物質が増えるしくみ",
-              "caption": "資料図：小さな生き物から魚、さらに大きな生き物へと食べられる関係の中で、体の外へ出にくい物質がたまる場合を示しています。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/The_build_up_of_toxins_in_a_food_chain.svg/1280px-The_build_up_of_toxins_in_a_food_chain.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:The_build_up_of_toxins_in_a_food_chain.svg",
-              "credit": "Øystein Paulsen",
-              "license": "CC BY-SA 3.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "CC BY-SA 3.0。作者名「Øystein Paulsen」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-015-R05",
-          "images": [
-            {
-              "id": "20261124-015-R05-I01",
-              "type": "map",
-              "title": "水俣条約の締約国・参加状況",
-              "caption": "資料地図：水銀による環境と健康への影響を減らすための水俣条約について、各国の参加状況を示した図です。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Minamata_Convention_Ratification_Map.svg/1280px-Minamata_Convention_Ratification_Map.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Convention_Ratification_Map.svg",
-              "credit": "M.Bitton",
-              "license": "CC BY-SA 4.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-              "usage_notes": "CC BY-SA 4.0。作者名「M.Bitton」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
-            }
-          ]
-        },
-        {
           "related_id": "20261124-015-R01",
           "images": [
             {
@@ -405,6 +369,24 @@
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
               "usage_notes": "CC BY 3.0。原著作権者Ground Truth Trekkingおよび派生版作者Osado、ライセンスを表示する。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-015-R02",
+          "images": [
+            {
+              "id": "20261124-015-R02-I01",
+              "type": "diagram",
+              "title": "食物連鎖で有害物質が増えるしくみ",
+              "caption": "資料図：小さな生き物から魚、さらに大きな生き物へと食べられる関係の中で、体の外へ出にくい物質がたまる場合を示しています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/The_build_up_of_toxins_in_a_food_chain.svg/1280px-The_build_up_of_toxins_in_a_food_chain.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_build_up_of_toxins_in_a_food_chain.svg",
+              "credit": "Øystein Paulsen",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「Øystein Paulsen」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
             }
           ]
         },
@@ -443,6 +425,24 @@
               "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
             }
           ]
+        },
+        {
+          "related_id": "20261124-015-R05",
+          "images": [
+            {
+              "id": "20261124-015-R05-I01",
+              "type": "map",
+              "title": "水俣条約の締約国・参加状況",
+              "caption": "資料地図：水銀による環境と健康への影響を減らすための水俣条約について、各国の参加状況を示した図です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Minamata_Convention_Ratification_Map.svg/1280px-Minamata_Convention_Ratification_Map.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Minamata_Convention_Ratification_Map.svg",
+              "credit": "M.Bitton",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "CC BY-SA 4.0。作者名「M.Bitton」、ライセンスとWikimedia Commons掲載元を表示。加工・再配布時は同一条件で許諾。"
+            }
+          ]
         }
       ]
     },
@@ -464,6 +464,42 @@
         }
       ],
       "related": [
+        {
+          "related_id": "20261124-016-R01",
+          "images": [
+            {
+              "id": "20261124-016-R01-I01",
+              "type": "photo",
+              "title": "国際刑事裁判所（ICC）の建物",
+              "caption": "資料写真：オランダのハーグにある国際刑事裁判所。戦争犯罪などの重大な犯罪について、個人の責任を国際法に基づいて問う機関です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/International_Criminal_Court_building_%282019%29_in_The_Hague_02.jpg/1280px-International_Criminal_Court_building_%282019%29_in_The_Hague_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:International_Criminal_Court_building_(2019)_in_The_Hague_02.jpg",
+              "credit": "OSeveno",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「OSeveno」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-016-R02",
+          "images": [
+            {
+              "id": "20261124-016-R02-I01",
+              "type": "historical",
+              "title": "国際刑事裁判所ローマ規程の表紙",
+              "caption": "歴史資料：国際刑事裁判所のしくみを定めた「ローマ規程」の公文書。国どうしが共通の約束をつくり、裁判所の活動の土台にしています。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Rome_Statute_of_the_International_Criminal_Court_%28A_CONF.183_9-EN%29.pdf/page1-960px-The_Rome_Statute_of_the_International_Criminal_Court_%28A_CONF.183_9-EN%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_Rome_Statute_of_the_International_Criminal_Court_(A_CONF.183_9-EN).pdf",
+              "credit": "United Nations",
+              "license": "Public domain",
+              "license_url": "https://www.un.org/en/about-us/terms-of-use",
+              "usage_notes": "国際連合提供のパブリックドメイン資料。国際連合およびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
         {
           "related_id": "20261124-016-R03",
           "images": [
@@ -497,42 +533,6 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-016-R02",
-          "images": [
-            {
-              "id": "20261124-016-R02-I01",
-              "type": "historical",
-              "title": "国際刑事裁判所ローマ規程の表紙",
-              "caption": "歴史資料：国際刑事裁判所のしくみを定めた「ローマ規程」の公文書。国どうしが共通の約束をつくり、裁判所の活動の土台にしています。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/The_Rome_Statute_of_the_International_Criminal_Court_%28A_CONF.183_9-EN%29.pdf/page1-960px-The_Rome_Statute_of_the_International_Criminal_Court_%28A_CONF.183_9-EN%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:The_Rome_Statute_of_the_International_Criminal_Court_(A_CONF.183_9-EN).pdf",
-              "credit": "United Nations",
-              "license": "Public domain",
-              "license_url": "https://www.un.org/en/about-us/terms-of-use",
-              "usage_notes": "国際連合提供のパブリックドメイン資料。国際連合およびWikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-016-R01",
-          "images": [
-            {
-              "id": "20261124-016-R01-I01",
-              "type": "photo",
-              "title": "国際刑事裁判所（ICC）の建物",
-              "caption": "資料写真：オランダのハーグにある国際刑事裁判所。戦争犯罪などの重大な犯罪について、個人の責任を国際法に基づいて問う機関です。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/International_Criminal_Court_building_%282019%29_in_The_Hague_02.jpg/1280px-International_Criminal_Court_building_%282019%29_in_The_Hague_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:International_Criminal_Court_building_(2019)_in_The_Hague_02.jpg",
-              "credit": "OSeveno",
-              "license": "CC BY-SA 3.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "CC BY-SA 3.0。作者名「OSeveno」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
             }
           ]
         },
@@ -575,60 +575,6 @@
       ],
       "related": [
         {
-          "related_id": "20261124-017-R04",
-          "images": [
-            {
-              "id": "20261124-017-R04-I01",
-              "type": "photo",
-              "title": "正月のおせち料理",
-              "caption": "資料写真：正月に食べるおせち料理。節目の食事を家族や地域で分け合い、料理の意味や作り方を伝える行事食の一つです。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Osechi.jpg/1280px-Osechi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Osechi.jpg",
-              "credit": "Akihito Kurono",
-              "license": "CC0 1.0",
-              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-              "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-017-R03",
-          "images": [
-            {
-              "id": "20261124-017-R03-I01",
-              "type": "photo",
-              "title": "ご飯・汁物・おかずのある和食の定食",
-              "caption": "資料写真：ご飯、汁物、主菜や副菜を組み合わせた和食の定食。一汁三菜の考え方では、主食・汁物・おかずをそろえて食事を整えます。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Japanese_set_meal_with_tonkatsu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_set_meal_with_tonkatsu.jpg",
-              "credit": "Betsylavolette",
-              "license": "CC BY-SA 4.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-              "usage_notes": "CC BY-SA 4.0。作者名「Betsylavolette」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261124-017-R05",
-          "images": [
-            {
-              "id": "20261124-017-R05-I01",
-              "type": "photo",
-              "title": "群馬県の郷土料理「おきりこみ」",
-              "caption": "資料写真：幅広い麺や野菜を煮込む群馬県の郷土料理「おきりこみ」。地域の食材や作り方を受け継ぐ食文化の一例です。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Okirikomi.jpg/1280px-Okirikomi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Okirikomi.jpg",
-              "credit": "禁樹なずな",
-              "license": "CC BY-SA 3.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "CC BY-SA 3.0。作者名「禁樹なずな」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
-            }
-          ]
-        },
-        {
           "related_id": "20261124-017-R01",
           "images": [
             {
@@ -661,6 +607,134 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "CC BY-SA 4.0。作者名「Betsylavolette」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-017-R03",
+          "images": [
+            {
+              "id": "20261124-017-R03-I01",
+              "type": "photo",
+              "title": "ご飯・汁物・おかずのある和食の定食",
+              "caption": "資料写真：ご飯、汁物、主菜や副菜を組み合わせた和食の定食。一汁三菜の考え方では、主食・汁物・おかずをそろえて食事を整えます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Japanese_set_meal_with_tonkatsu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_set_meal_with_tonkatsu.jpg",
+              "credit": "Betsylavolette",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "CC BY-SA 4.0。作者名「Betsylavolette」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-017-R04",
+          "images": [
+            {
+              "id": "20261124-017-R04-I01",
+              "type": "photo",
+              "title": "正月のおせち料理",
+              "caption": "資料写真：正月に食べるおせち料理。節目の食事を家族や地域で分け合い、料理の意味や作り方を伝える行事食の一つです。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Osechi.jpg/1280px-Osechi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Osechi.jpg",
+              "credit": "Akihito Kurono",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "CC0 1.0。Wikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-017-R05",
+          "images": [
+            {
+              "id": "20261124-017-R05-I01",
+              "type": "photo",
+              "title": "群馬県の郷土料理「おきりこみ」",
+              "caption": "資料写真：幅広い麺や野菜を煮込む群馬県の郷土料理「おきりこみ」。地域の食材や作り方を受け継ぐ食文化の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Okirikomi.jpg/1280px-Okirikomi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Okirikomi.jpg",
+              "credit": "禁樹なずな",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。作者名「禁樹なずな」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261124-018",
+      "images": [
+        {
+          "id": "20261124-018-I01",
+          "type": "photo",
+          "title": "冬の福島県の雪景色",
+          "caption": "資料写真：2010年12月の福島県下郷町の雪景色。今回の冬の予報を示した写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Houses_under_snow_in_Fukushima%2C_2010.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Houses_under_snow_in_Fukushima%2C_2010.jpg",
+          "credit": "Syuzo Tsushima",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261124-018-R01",
+          "images": [
+            {
+              "id": "20261124-018-R01-I01",
+              "type": "diagram",
+              "title": "エルニーニョ時の海水温と大気の動き",
+              "caption": "資料図：赤道付近の太平洋で暖かい海水（赤やオレンジ色）が中央部から東部に広がる様子。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Enso_elnino.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Enso_elnino.png",
+              "credit": "NOAA/PMEL/TAO",
+              "license": "Public Domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NOAA",
+              "usage_notes": "出典・提供元を表示。提供元の承認・推奨を示唆しない。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-018-R02",
+          "images": [
+            {
+              "id": "20261124-018-R02-I01",
+              "type": "diagram",
+              "title": "通常時の貿易風と太平洋の海水",
+              "caption": "資料図：通常時は赤道付近の東風で暖かい海水が西側に集まり、南米沖では冷たい海水が上がります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Enso_normal.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Enso_normal.png",
+              "credit": "NOAA/PMEL/TAO",
+              "license": "Public Domain (US government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NOAA",
+              "usage_notes": "出典・提供元を表示。提供元の承認・推奨を示唆しない。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261124-018-R03",
+          "images": [
+            {
+              "id": "20261124-018-R03-I01",
+              "type": "satellite",
+              "title": "日本海に広がる筋状の雲",
+              "caption": "資料画像：2021年12月22日のNASA衛星画像。大陸から冷たい空気が日本海を渡ると筋状の雲ができます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Cloud_Streets_over_the_Sea_of_Japan_%28MODIS_2021-12-24%29.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Cloud_Streets_over_the_Sea_of_Japan_%28MODIS_2021-12-24%29.jpg",
+              "credit": "NASA / MODIS",
+              "license": "Public Domain (US government)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "出典・提供元を表示。提供元の承認・推奨を示唆しない。原画像を使用。"
             }
           ]
         }
