@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 7,
-  "related_count": 18,
+  "question_count": 8,
+  "related_count": 21,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -394,6 +394,72 @@
             {
               "name": "農林水産省関東農政局",
               "url": "https://www.maff.go.jp/kanto/nouson/sekkei/tamen/01.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-008",
+      "related": [
+        {
+          "id": "20261127-008-R01",
+          "relation_type": "answer",
+          "title": "イソギンチャクとサンゴの仲間",
+          "description": "イソギンチャクやクラゲ、サンゴは、刺胞動物（しほうどうぶつ）の仲間です。サンゴは植物や石のようにも見えますが、動物です。サンゴの中には、体の周りにかたい骨格（こっかく）を作り、それが積み重なってサンゴ礁（しょう）を形づくる種類があります。姿がちがって見える生き物でも、体のつくりを比べると共通点が見つかります。",
+          "relationship": "正解のイソギンチャクと、クラゲやサンゴの分類上のつながりを学べます。",
+          "keywords": [
+            "イソギンチャク",
+            "クラゲ",
+            "サンゴ",
+            "刺胞動物"
+          ],
+          "sources": [
+            {
+              "name": "環境省 国際サンゴ礁研究・モニタリングセンター",
+              "url": "https://kyushu.env.go.jp/okinawa/coremoc/sango.html"
+            }
+          ]
+        },
+        {
+          "id": "20261127-008-R02",
+          "relation_type": "question",
+          "title": "動物の分類と背骨",
+          "description": "動物は、体のつくりなどを比べて仲間分けできます。人や魚のように背骨を持つ仲間を脊椎動物（せきついどうぶつ）と呼び、背骨を持たない仲間を無脊椎動物（むせきついどうぶつ）と呼びます。クラゲのほか、昆虫（こんちゅう）やエビ、イカなども無脊椎動物です。背骨の有無だけでなく、それぞれの体のつくりや暮らし方にも注目してみましょう。",
+          "relationship": "背骨のないクラゲをきっかけに、動物の分類を学べます。",
+          "keywords": [
+            "脊椎動物",
+            "無脊椎動物",
+            "背骨",
+            "分類"
+          ],
+          "sources": [
+            {
+              "name": "文部科学省",
+              "url": "https://www.mext.go.jp/content/20250331-mxt_tokubetu01-000040846_13.pdf"
+            }
+          ]
+        },
+        {
+          "id": "20261127-008-R03",
+          "relation_type": "answer",
+          "title": "サンゴ礁と生き物のつながり",
+          "description": "サンゴ礁（しょう）は、サンゴを中心とした生き物が長い時間をかけて作る地形です。魚など多くの生き物がすみかとして利用し、海の生態系（せいたいけい）を支えています。サンゴが減ると、そこにすむ生き物や、それらを食べる生き物にも影響が及ぶことがあります。海へ流れ込む土砂（どしゃ）や汚（よご）れを減らすことは、サンゴ礁を守る取組の一つです。",
+          "relationship": "イソギンチャクと同じ仲間のサンゴから、海の生態系へ学習を広げます。",
+          "keywords": [
+            "サンゴ礁",
+            "生態系",
+            "生物多様性",
+            "海"
+          ],
+          "sources": [
+            {
+              "name": "国立環境研究所",
+              "url": "https://www.nies.go.jp/pr/publications/kankyogi/53/04-09.html"
+            },
+            {
+              "name": "環境省",
+              "url": "https://kyushu.env.go.jp/okinawa/coremoc/sango.html"
             }
           ]
         }
