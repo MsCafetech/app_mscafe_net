@@ -3,7 +3,7 @@
   "date": "2026-11-04",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261104-001",
@@ -23,6 +23,51 @@
             {
               "name": "米国上院「Constitution」",
               "url": "https://www.senate.gov/artandhistory/senate-stories/constitution.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261104-001-R02",
+          "relation_type": "answer",
+          "title": "アメリカの中間選挙",
+          "description": "アメリカでは大統領選挙が4年ごとに行われ、その間の2年目に中間選挙が行われます。連邦（れんぽう）議会の下院議員全員と上院議員の約3分の1が選ばれます。議会でどの政党が多数を占めるかは、大統領が進めたい政策にも関係します。",
+          "relationship": "大統領任期の中間に議会選挙が行われる仕組み",
+          "keywords": [
+            "中間選挙",
+            "アメリカ",
+            "連邦議会"
+          ],
+          "sources": [
+            {
+              "name": "米国政府",
+              "url": "https://www.usa.gov/midterm-elections"
+            }
+          ]
+        },
+        {
+          "id": "20261104-001-R03",
+          "relation_type": "question",
+          "title": "アメリカと日本の選挙制度",
+          "description": "アメリカと日本はどちらも国民が議会の代表を選びます。アメリカでは大統領選挙と議会選挙が別に行われます。日本では国会議員を国民が選び、国会が内閣総理大臣を指名します。日本の衆議院（しゅうぎいん）選挙には小選挙区と比例代表の二つの仕組みがあります。",
+          "relationship": "国の代表を選ぶ制度の共通点と違いを元問題とのつながりから学ぶ。",
+          "keywords": [
+            "選挙",
+            "アメリカ",
+            "日本",
+            "国会"
+          ],
+          "sources": [
+            {
+              "name": "米国政府・東京都選挙管理委員会",
+              "url": "https://www.usa.gov/midterm-elections"
+            },
+            {
+              "name": "東京都選挙管理委員会",
+              "url": "https://www.senkyo.metro.tokyo.lg.jp/qa/yougo"
+            },
+            {
+              "name": "国立国会図書館",
+              "url": "https://www.ndl.go.jp/constitution/etc/j01.html"
             }
           ]
         }

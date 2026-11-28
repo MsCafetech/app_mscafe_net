@@ -3,7 +3,7 @@
   "date": "2026-11-02",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261102-001",
@@ -23,6 +23,43 @@
             {
               "name": "国土地理院「ハザードマップポータルサイトの新機能の紹介」",
               "url": "https://disaportal.gsi.go.jp/hazardmap/faq/new_function.html"
+            }
+          ]
+        },
+        {
+          "id": "20261102-001-R02",
+          "relation_type": "answer",
+          "title": "ハザードマップと避難（ひなん）",
+          "description": "ハザードマップは、洪水（こうずい）や土砂災害などが起こるおそれのある場所を示す地図です。自宅や学校の周りの危険な場所を調べ、災害の種類に合った避難先や安全な道を家族と確認しておきましょう。地図で色が付いていない場所でも、必ず安全とは限りません。",
+          "relationship": "洪水や土砂災害の危険と避難先を地図で確認する",
+          "keywords": [
+            "ハザードマップ",
+            "洪水",
+            "避難"
+          ],
+          "sources": [
+            {
+              "name": "政府広報オンライン",
+              "url": "https://www.gov-online.go.jp/tokusyu/bousai/preparation.html"
+            }
+          ]
+        },
+        {
+          "id": "20261102-001-R03",
+          "relation_type": "question",
+          "title": "防災の自助・共助・公助",
+          "description": "自助（じじょ）は自分や家族で災害に備えること、共助（きょうじょ）は地域の人々が助け合うこと、公助（こうじょ）は国や地方公共団体などが行う支援（しえん）です。水や食料を用意すること、近所の人と協力すること、消防による救助などを組み合わせることで、災害の被害を減らします。",
+          "relationship": "避難の備えを個人・地域・行政が分担する考え方を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "自助",
+            "共助",
+            "公助",
+            "防災"
+          ],
+          "sources": [
+            {
+              "name": "政府広報オンライン",
+              "url": "https://www.gov-online.go.jp/article/201108/entry-8072.html"
             }
           ]
         }

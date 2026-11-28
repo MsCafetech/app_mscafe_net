@@ -3,7 +3,7 @@
   "date": "2026-11-03",
   "language": "ja",
   "question_count": 1,
-  "related_count": 1,
+  "related_count": 3,
   "questions": [
     {
       "question_id": "20261103-001",
@@ -23,6 +23,43 @@
             {
               "name": "国立国会図書館「日本国憲法の誕生 年表」",
               "url": "https://www.ndl.go.jp/constitution/etc/history.html"
+            }
+          ]
+        },
+        {
+          "id": "20261103-001-R02",
+          "relation_type": "answer",
+          "title": "文化の日と日本国憲法（けんぽう）",
+          "description": "11月3日の文化の日は、日本国憲法が公布された1946年11月3日と同じ日付です。祝日法では、自由と平和を大切にし、文化を発展させる日とされています。一方、憲法記念日は5月3日で、1947年に憲法が施行（しこう）されたことを記念する祝日です。",
+          "relationship": "憲法公布の日と祝日の由来",
+          "keywords": [
+            "文化の日",
+            "日本国憲法",
+            "祝日"
+          ],
+          "sources": [
+            {
+              "name": "衆議院",
+              "url": "https://www.shugiin.go.jp/internet/itdb_housei.nsf/html/houritsu/00219480720178.htm"
+            }
+          ]
+        },
+        {
+          "id": "20261103-001-R03",
+          "relation_type": "question",
+          "title": "日本国憲法の三原則（さんげんそく）",
+          "description": "日本国憲法（けんぽう）には、政治の最終的な決定権が国民にある国民主権（こくみんしゅけん）、人が生まれながらに持つ権利を大切にする基本的人権の尊重（そんちょう）、戦争のない平和な社会を目指す平和主義という三つの基本的な考え方があります。",
+          "relationship": "公布された憲法が掲げる国民主権・基本的人権・平和主義を元問題とのつながりから学ぶ。",
+          "keywords": [
+            "日本国憲法",
+            "国民主権",
+            "基本的人権",
+            "平和主義"
+          ],
+          "sources": [
+            {
+              "name": "国立国会図書館",
+              "url": "https://www.ndl.go.jp/constitution/etc/j01.html"
             }
           ]
         }
