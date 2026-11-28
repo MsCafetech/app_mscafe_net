@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 11,
-  "related_count": 22,
-  "image_count": 32,
+  "question_count": 12,
+  "related_count": 27,
+  "image_count": 38,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -415,6 +415,24 @@
       ],
       "related": [
         {
+          "related_id": "20261127-007-R01",
+          "images": [
+            {
+              "id": "20261127-007-R01-I01",
+              "type": "photo",
+              "title": "平城宮跡から出土した木簡",
+              "caption": "資料写真：平城宮跡の木簡の展示。税の品物に付けられた札の例も見られます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Mokkan.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Mokkan.jpg",
+              "credit": "Wikiwikiyarou",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        },
+        {
           "related_id": "20261127-007-R02",
           "images": [
             {
@@ -429,6 +447,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-007-R03",
+          "images": [
+            {
+              "id": "20261127-007-R03-I01",
+              "type": "photo",
+              "title": "平城宮跡から出土した木簡",
+              "caption": "資料写真：平城宮跡の木簡の展示。税の品物に付けられた札の例も見られます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Mokkan.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Mokkan.jpg",
+              "credit": "Wikiwikiyarou",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。"
             }
           ]
         }
@@ -509,6 +545,62 @@
       ]
     },
     {
+      "question_id": "20261127-009",
+      "images": [
+        {
+          "id": "20261127-009-I01",
+          "type": "photo",
+          "title": "顕微鏡で見た神経細胞",
+          "caption": "資料写真：顕微鏡で撮影し色を付けた神経細胞。今回の研究の写真ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Confocal_image_of_spiny_neuron.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Confocal_image_of_spiny_neuron.jpg",
+          "credit": "Margaret I. Davis / NIH",
+          "license": "Public domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261127-009-R01",
+          "images": [
+            {
+              "id": "20261127-009-R01-I01",
+              "type": "photo",
+              "title": "顕微鏡で見た神経細胞",
+              "caption": "資料写真：顕微鏡で撮影し色を付けた神経細胞。今回の研究の写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Confocal_image_of_spiny_neuron.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Confocal_image_of_spiny_neuron.jpg",
+              "credit": "Margaret I. Davis / NIH",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-009-R03",
+          "images": [
+            {
+              "id": "20261127-009-R03-I01",
+              "type": "photo",
+              "title": "顕微鏡で見た神経細胞",
+              "caption": "資料写真：顕微鏡で撮影し色を付けた神経細胞。今回の研究の写真ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Confocal_image_of_spiny_neuron.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Confocal_image_of_spiny_neuron.jpg",
+              "credit": "Margaret I. Davis / NIH",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "question_id": "20261127-010",
       "images": [],
       "related": [
@@ -583,6 +675,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-011-R03",
+          "images": [
+            {
+              "id": "20261127-011-R03-I01",
+              "type": "map",
+              "title": "ニュージーランドの地図",
+              "caption": "資料地図：北島と南島、首都ウェリントンなどを示した地図。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/New_zealand_map.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:New_zealand_map.png",
+              "credit": "CIA World Factbook / tzzzpfff（翻訳）",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "商用利用可能。出典を表示。原画像を使用。"
             }
           ]
         }
