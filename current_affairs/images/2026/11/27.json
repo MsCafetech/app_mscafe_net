@@ -3,8 +3,8 @@
   "date": "2026-11-27",
   "language": "ja",
   "question_count": 20,
-  "related_count": 47,
-  "image_count": 67,
+  "related_count": 49,
+  "image_count": 69,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -817,6 +817,42 @@
               "license": "Public domain",
               "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
               "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-016-R02",
+          "images": [
+            {
+              "id": "20261127-016-R02-I01",
+              "type": "photo",
+              "title": "北海道のエゾヒグマ",
+              "caption": "資料写真：北海道にすむエゾヒグマ。写真は登別市のクマ牧場で撮影されたものです。",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hokkaido_Brown_Bear.jpg/960px-Hokkaido_Brown_Bear.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hokkaido_Brown_Bear.jpg",
+              "credit": "Ozizo",
+              "license": "パブリックドメイン（著作者による権利放棄）",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Hokkaido_Brown_Bear.jpg",
+              "usage_notes": "著作者がパブリックドメインとして公開。出典・作者を表示。",
+              "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-016-R03",
+          "images": [
+            {
+              "id": "20261127-016-R03-I01",
+              "type": "photo",
+              "title": "北海道のエゾヒグマ",
+              "caption": "資料写真：北海道にすむエゾヒグマ。写真は登別市のクマ牧場で撮影されたものです。",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Hokkaido_Brown_Bear.jpg/960px-Hokkaido_Brown_Bear.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hokkaido_Brown_Bear.jpg",
+              "credit": "Ozizo",
+              "license": "パブリックドメイン（著作者による権利放棄）",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Hokkaido_Brown_Bear.jpg",
+              "usage_notes": "著作者がパブリックドメインとして公開。出典・作者を表示。",
+              "is_reference": true
             }
           ]
         }
