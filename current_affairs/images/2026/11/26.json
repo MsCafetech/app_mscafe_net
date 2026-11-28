@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 49,
-  "image_count": 70,
+  "related_count": 51,
+  "image_count": 72,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -922,6 +922,42 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。変更時は明示し同等ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-013-R02",
+          "images": [
+            {
+              "id": "20261126-013-R02-I01",
+              "type": "illustration",
+              "title": "ログイン画面と情報の保護",
+              "caption": "資料イラスト：IDとパスワードでログインする画面。認証は利用者を確かめるために使われます。",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Cartoon_Secured_Web_Login_Page.svg/960px-Cartoon_Secured_Web_Login_Page.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Cartoon_Secured_Web_Login_Page.svg",
+              "credit": "Free Clip Art / Vectortoons",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-013-R03",
+          "images": [
+            {
+              "id": "20261126-013-R03-I01",
+              "type": "illustration",
+              "title": "フィッシングメールの架空例",
+              "caption": "資料イラスト：フィッシングの特徴を説明するために作られた架空のメール例。",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Example_phishing_email.svg/960px-Example_phishing_email.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Example_phishing_email.svg",
+              "credit": "Isochrone、Wikimedia Foundation、Philip Metschan",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
             }
           ]
         }
