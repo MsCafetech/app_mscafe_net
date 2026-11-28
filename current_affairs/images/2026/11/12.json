@@ -20,10 +20,65 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。改変画像の配布は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261112-001-R01",
+          "images": [
+            {
+              "id": "20261112-001-R01-I01",
+              "type": "diagram",
+              "title": "人の染色体の模式図",
+              "caption": "資料図：人の染色体を番号順に並べた図。染色体には遺伝情報が含まれます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Karyotype.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Karyotype.png",
+              "credit": "National Human Genome Research Institute / TedE（編集）",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更を明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。商用利用可能。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261112-001-R02",
+          "images": [
+            {
+              "id": "20261112-001-R02-I01",
+              "type": "photo",
+              "title": "水草の細胞にある葉緑体",
+              "caption": "資料写真：カナダモの細胞を顕微鏡で観察したもの。緑色の粒が葉緑体です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Chloroplasts_-_Microscopic_view_of_Elodea_canadensis.jpg/960px-Chloroplasts_-_Microscopic_view_of_Elodea_canadensis.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chloroplasts_-_Microscopic_view_of_Elodea_canadensis.jpg",
+              "credit": "Juan Carlos Fonseca Mata",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更を明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。商用利用可能。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261112-001-R03",
+          "images": [
+            {
+              "id": "20261112-001-R03-I01",
+              "type": "photo",
+              "title": "葉を食べるバッタ",
+              "caption": "資料写真：植物の葉を食べるバッタ。植物が作った養分が動物に受け継がれる例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Grasshopper_eating_leaf.jpg/500px-Grasshopper_eating_leaf.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Grasshopper_eating_leaf.jpg",
+              "credit": "Faunagalaxy",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更を明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。商用利用可能。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 1,
-  "related_count": 0,
-  "image_count": 1
+  "related_count": 3,
+  "image_count": 4
 }
