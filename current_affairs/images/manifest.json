@@ -3,8 +3,8 @@
   "last_updated": "2026-11-28T15:28:00+09:00",
   "language": "ja",
   "total_questions": 187,
-  "total_related": 181,
-  "total_images": 369,
+  "total_related": 188,
+  "total_images": 376,
   "total_files": 77,
   "files": [
     {
@@ -18,10 +18,10 @@
     {
       "date": "2026-11-26",
       "path": "2026/11/26.json",
-      "revision": 26,
+      "revision": 27,
       "question_count": 20,
-      "related_count": 15,
-      "image_count": 36
+      "related_count": 22,
+      "image_count": 43
     },
     {
       "date": "2026-11-25",
@@ -624,5 +624,5 @@
       "revision": 2
     }
   ],
-  "total_relateds": 181
+  "total_relateds": 188
 }

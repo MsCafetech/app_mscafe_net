@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 15,
-  "image_count": 36,
+  "related_count": 22,
+  "image_count": 43,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -24,6 +24,24 @@
         }
       ],
       "related": [
+        {
+          "related_id": "20261126-001-R01",
+          "images": [
+            {
+              "id": "20261126-001-R01-I01",
+              "type": "photo",
+              "title": "衆議院の議場",
+              "caption": "資料写真：内閣不信任決議を行う衆議院の議場。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chamber_of_the_House_of_Representatives_of_Japan.jpg/960px-Chamber_of_the_House_of_Representatives_of_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Representatives_of_Japan.jpg",
+              "credit": "Kimtaro",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。"
+            }
+          ]
+        },
         {
           "related_id": "20261126-001-R02",
           "images": [
@@ -56,20 +74,20 @@
           ]
         },
         {
-          "related_id": "20261126-001-R01",
+          "related_id": "20261126-001-R03",
           "images": [
             {
-              "id": "20261126-001-R01-I01",
+              "id": "20261126-001-R03-I01",
               "type": "photo",
-              "title": "衆議院の議場",
-              "caption": "資料写真：内閣不信任決議を行う衆議院の議場。",
+              "title": "国会議事堂",
+              "caption": "資料写真：国政調査権を持つ国会の議事堂。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chamber_of_the_House_of_Representatives_of_Japan.jpg/960px-Chamber_of_the_House_of_Representatives_of_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Representatives_of_Japan.jpg",
-              "credit": "Kimtaro",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/NationalDietBuilding.jpg/960px-NationalDietBuilding.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:NationalDietBuilding.jpg",
+              "credit": "Douglas P. Perkins",
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
-              "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。"
+              "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更した場合は明記。"
             }
           ]
         },
@@ -88,24 +106,6 @@
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
               "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更時は明記。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261126-001-R03",
-          "images": [
-            {
-              "id": "20261126-001-R03-I01",
-              "type": "photo",
-              "title": "国会議事堂",
-              "caption": "資料写真：国政調査権を持つ国会の議事堂。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/NationalDietBuilding.jpg/960px-NationalDietBuilding.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:NationalDietBuilding.jpg",
-              "credit": "Douglas P. Perkins",
-              "license": "CC BY 3.0",
-              "license_url": "https://creativecommons.org/licenses/by/3.0/",
-              "usage_notes": "作者名・出典・ライセンスリンクを表示し、変更した場合は明記。"
             }
           ]
         },
@@ -148,20 +148,20 @@
       ],
       "related": [
         {
-          "related_id": "20261126-002-R04",
+          "related_id": "20261126-002-R01",
           "images": [
             {
-              "id": "20261126-002-R04-I01",
+              "id": "20261126-002-R01-I01",
               "type": "photo",
-              "title": "日本銀行の建物",
-              "caption": "資料写真：金融政策を決める日本銀行の建物。",
+              "title": "日本のスーパーマーケット",
+              "caption": "資料写真：商品と値札が並ぶ店内。物価は買い物にかかる費用に関係する。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Bank_of_Japan_building.jpg/960px-Bank_of_Japan_building.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_building.jpg",
-              "credit": "Syced",
-              "license": "CC0 1.0",
-              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-              "usage_notes": "商用利用・再配布・加工可能。出典を表示。"
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
+              "credit": "Yuya Tamai",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
             }
           ]
         },
@@ -184,24 +184,6 @@
           ]
         },
         {
-          "related_id": "20261126-002-R01",
-          "images": [
-            {
-              "id": "20261126-002-R01-I01",
-              "type": "photo",
-              "title": "日本のスーパーマーケット",
-              "caption": "資料写真：商品と値札が並ぶ店内。物価は買い物にかかる費用に関係する。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
-              "credit": "Yuya Tamai",
-              "license": "CC BY 2.0",
-              "license_url": "https://creativecommons.org/licenses/by/2.0/",
-              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
-            }
-          ]
-        },
-        {
           "related_id": "20261126-002-R03",
           "images": [
             {
@@ -216,6 +198,24 @@
               "license": "CC BY-SA 2.5",
               "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
               "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。改変物は同一または互換ライセンスで配布。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-002-R04",
+          "images": [
+            {
+              "id": "20261126-002-R04-I01",
+              "type": "photo",
+              "title": "日本銀行の建物",
+              "caption": "資料写真：金融政策を決める日本銀行の建物。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Bank_of_Japan_building.jpg/960px-Bank_of_Japan_building.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bank_of_Japan_building.jpg",
+              "credit": "Syced",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用・再配布・加工可能。出典を表示。"
             }
           ]
         }
@@ -390,7 +390,62 @@
           "usage_notes": "作者によるパブリックドメインへの提供。商用利用可能。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-007-R01",
+          "images": [
+            {
+              "id": "20261126-007-R01-I01",
+              "type": "satellite",
+              "title": "宇宙から見たホルムズ海峡",
+              "caption": "資料写真：ペルシャ湾とオマーン湾をつなぐ海峡（2022年）。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/The_Strait_of_Hormuz_connects_the_Gulf_of_Oman_with_the_Persian_Gulf.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:The_Strait_of_Hormuz_connects_the_Gulf_of_Oman_with_the_Persian_Gulf.jpg",
+              "credit": "NASA",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASAの出典を表示。推奨・承認を示唆しない。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-007-R02",
+          "images": [
+            {
+              "id": "20261126-007-R02-I01",
+              "type": "photo",
+              "title": "原油を積むタンカー",
+              "caption": "資料写真：米国アラスカ州の港で原油を積み込むタンカー。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/VMT-tanker.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:VMT-tanker.jpg",
+              "credit": "Joint Pipeline Office",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-007-R03",
+          "images": [
+            {
+              "id": "20261126-007-R03-I01",
+              "type": "photo",
+              "title": "石油の製油所",
+              "caption": "資料写真：カナダのセントローレンス川沿いの製油所。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Oil_refinery_across_the_St._Lawrence_in_winter.jpg/960px-Oil_refinery_across_the_St._Lawrence_in_winter.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Oil_refinery_across_the_St._Lawrence_in_winter.jpg",
+              "credit": "Wilfredor",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。配布元の縮小画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-008",
@@ -409,7 +464,44 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更があれば明示する。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-008-R01",
+          "images": [
+            {
+              "id": "20261126-008-R01-I01",
+              "type": "photo",
+              "title": "日本の国会議事堂",
+              "caption": "資料写真：衆議院と参議院が置かれている国会議事堂。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/NationalDietBuilding.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:NationalDietBuilding.jpg",
+              "credit": "Douglaspperkins",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-008-R02",
+          "images": [
+            {
+              "id": "20261126-008-R02-I01",
+              "type": "photo",
+              "title": "選挙の投票箱",
+              "caption": "資料写真：県知事選挙の投票箱。選挙で票を集める道具の例です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Zero-vote_confirmation_02.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Zero-vote_confirmation_02.jpg",
+              "credit": "Halowand",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-009",
@@ -504,7 +596,26 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、変更時は明示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-012-R01",
+          "images": [
+            {
+              "id": "20261126-012-R01-I01",
+              "type": "diagram",
+              "title": "P波とS波の到着",
+              "caption": "資料図：P波が先に届き、続いてS波が届くことを示した地震波形の説明図。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Diagram-of-seismic-waves_jp.svg/960px-Diagram-of-seismic-waves_jp.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Diagram-of-seismic-waves_jp.svg",
+              "credit": "すじにくシチュー",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。配布元の縮小画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-013",
@@ -621,23 +732,42 @@
       "related": []
     },
     {
-      "question_id": "20261126-020",
+      "question_id": "20261126-018",
       "images": [
         {
-          "id": "20261126-020-I01",
+          "id": "20261126-018-I01",
           "type": "photo",
-          "title": "アラスカの野生のラッコ",
-          "caption": "資料写真：アラスカの海に浮かぶ野生のラッコ。海遊館に受け入れられた4頭とは別の個体です。",
+          "title": "旧盛岡高等農林学校の歴史的校舎",
+          "caption": "資料写真：旧盛岡高等農林学校の本館として使われた歴史的な木造校舎（現・岩手大学農業教育資料館）。今回登録文化財に答申された1902年築の図書館収蔵庫とは別の建物です。",
           "is_reference": true,
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Sea_Otter_in_Alaska.jpg",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Sea_Otter_in_Alaska.jpg",
-          "credit": "RndmCrs",
-          "license": "CC0 1.0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "usage_notes": "商用利用・改変可能。資料写真として明記し、出典と作者を表示。"
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg/960px-171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg",
+          "credit": "663highland",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "商用利用可能。作者663highland・出典・CC BY-SA 4.0を表示。変更時は明示して派生著作物に同等ライセンスを適用。表示用960px縮小画像を使用。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-018-R01",
+          "images": [
+            {
+              "id": "20261126-018-R01-I01",
+              "type": "photo",
+              "title": "登録有形文化財の標示板",
+              "caption": "資料写真：旧堀田家住宅に取り付けられた登録有形文化財の標示板。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/%E6%97%A7%E5%A0%80%E7%94%B0%E5%AE%B6%E4%BD%8F%E5%AE%85%E2%91%A0.jpg/960px-%E6%97%A7%E5%A0%80%E7%94%B0%E5%AE%B6%E4%BD%8F%E5%AE%85%E2%91%A0.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E6%97%A7%E5%A0%80%E7%94%B0%E5%AE%B6%E4%BD%8F%E5%AE%85%E2%91%A0.jpg",
+              "credit": "ピンクリコリス",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。配布元の縮小画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-019",
@@ -659,20 +789,20 @@
       "related": []
     },
     {
-      "question_id": "20261126-018",
+      "question_id": "20261126-020",
       "images": [
         {
-          "id": "20261126-018-I01",
+          "id": "20261126-020-I01",
           "type": "photo",
-          "title": "旧盛岡高等農林学校の歴史的校舎",
-          "caption": "資料写真：旧盛岡高等農林学校の本館として使われた歴史的な木造校舎（現・岩手大学農業教育資料館）。今回登録文化財に答申された1902年築の図書館収蔵庫とは別の建物です。",
+          "title": "アラスカの野生のラッコ",
+          "caption": "資料写真：アラスカの海に浮かぶ野生のラッコ。海遊館に受け入れられた4頭とは別の個体です。",
           "is_reference": true,
-          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg/960px-171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg",
-          "source_url": "https://commons.wikimedia.org/wiki/File:171103_Iwate_University_Historical_Museum_for_Agricultural_Education_Morioka_Iwate_pref_Japan02s3.jpg",
-          "credit": "663highland",
-          "license": "CC BY-SA 4.0",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-          "usage_notes": "商用利用可能。作者663highland・出典・CC BY-SA 4.0を表示。変更時は明示して派生著作物に同等ライセンスを適用。表示用960px縮小画像を使用。"
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Sea_Otter_in_Alaska.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sea_Otter_in_Alaska.jpg",
+          "credit": "RndmCrs",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "商用利用・改変可能。資料写真として明記し、出典と作者を表示。"
         }
       ],
       "related": []
