@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 76,
+  "related_count": 80,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -610,6 +610,24 @@
               "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/energykihonkeikaku2025_kaisetu06.html"
             }
           ]
+        },
+        {
+          "id": "20261126-011-R04",
+          "relation_type": "question",
+          "title": "日本のエネルギー自給率（じきゅうりつ）",
+          "description": "エネルギー自給率は、国内に供給される一次エネルギーのうち、国内で産出した分がどれくらいあるかを示す割合です。資源エネルギー庁によると、2024年度の日本の自給率は16.3％でした。エネルギーの安定供給を考えるうえで、国内で得られる量や輸入先を知ることが大切です。",
+          "relationship": "燃料の輸入をきっかけに、日本のエネルギー供給を学びます。",
+          "keywords": [
+            "エネルギー自給率",
+            "輸入",
+            "エネルギー"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/statistics/total_energy/pdf/honbun2024fykaku.pdf"
+            }
+          ]
         }
       ]
     },
@@ -891,6 +909,24 @@
               "url": "https://www.meti.go.jp/shingikai/enecho/shigen_nenryo/pdf/008_02_02.pdf"
             }
           ]
+        },
+        {
+          "id": "20261126-007-R04",
+          "relation_type": "question",
+          "title": "サウジアラビアの気候と砂漠（さばく）",
+          "description": "アラビア半島にあるサウジアラビアでは、国土のほとんどが高温の砂漠気候（さばくきこう）に属し、雨は主に冬と春にわずかに降ります。ただし、南西部の山地には夏にも雨が降る地域があり、国の中でも気候に違いがあります。",
+          "relationship": "中東の国を手がかりに、半島の気候を学びます。",
+          "keywords": [
+            "アラビア半島",
+            "サウジアラビア",
+            "砂漠"
+          ],
+          "sources": [
+            {
+              "name": "外務省",
+              "url": "https://www.mofa.go.jp/mofaj/toko/medi/nm_east/saudi.html"
+            }
+          ]
         }
       ]
     },
@@ -1165,6 +1201,24 @@
             {
               "name": "情報処理推進機構",
               "url": "https://www.ipa.go.jp/security/anshin/attention/2026/mgdayori20261026.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-013-R04",
+          "relation_type": "question",
+          "title": "写真に含まれる個人情報",
+          "description": "写真や動画には、顔や名前のほか、位置情報（いちじょうほう）など、だれのことか分かる手がかりが含まれる場合があります。自分だけでなく、ほかの人の情報が写りこんでいることもあります。インターネットに投稿する前に、公開してよい情報か確認することが大切です。",
+          "relationship": "情報流出の問題から、個人情報の公開範囲を考えます。",
+          "keywords": [
+            "個人情報",
+            "写真",
+            "位置情報"
+          ],
+          "sources": [
+            {
+              "name": "個人情報保護委員会",
+              "url": "https://www.ppc.go.jp/campaign/paw/"
             }
           ]
         }
@@ -1455,6 +1509,24 @@
             {
               "name": "学研キッズネット",
               "url": "https://kids.gakken.co.jp/jiten/dictionary04100126/"
+            }
+          ]
+        },
+        {
+          "id": "20261126-019-R04",
+          "relation_type": "question",
+          "title": "セキツイ動物の仲間分け",
+          "description": "背骨（せぼね）のある動物をセキツイ動物といいます。学校の理科では、魚類、両生類（りょうせいるい）、ハチュウ類、鳥類、哺乳類（ほにゅうるい）の五つの仲間に分けて学びます。体のつくりや子の育ち方などを比べることで、それぞれの特徴（とくちょう）を理解できます。",
+          "relationship": "哺乳類から学習を広げ、背骨のある動物の仲間を比べます。",
+          "keywords": [
+            "セキツイ動物",
+            "分類",
+            "哺乳類"
+          ],
+          "sources": [
+            {
+              "name": "静岡県総合教育センター",
+              "url": "https://gakusyu.shizuoka-c.ed.jp/science/chu_1/seimei/doubutunobunrui/11.html"
             }
           ]
         }
