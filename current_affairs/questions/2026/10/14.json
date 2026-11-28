@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-10-14",
   "language": "ja",
-  "question_count": 1,
+  "question_count": 2,
   "questions": [
     {
       "id": "20261014-001",
@@ -31,6 +31,37 @@
         {
           "name": "国土交通省",
           "url": "https://www.mlit.go.jp/report/press/mizukokudo03_hh_001366.html"
+        }
+      ]
+    },
+    {
+      "id": "20261014-002",
+      "news_date": "2026-10-14",
+      "question_type": "current_affairs",
+      "category": "science",
+      "difficulty": 1,
+      "news_title": "X線を使う顕微鏡（けんびきょう）で細胞（さいぼう）の内部を観察",
+      "news_summary": "理化学研究所などがX線を使い、細胞内部の立体的な構造をこわさずに調べる技術の成果を発表した。",
+      "question": "理化学研究所の国際共同研究グループは、大型放射光施設SPring-8のX線を利用して、細胞内部の小さな目印の位置を立体的に詳しく調べることに成功しました。\n\nX線の性質を利用した身近な医療検査はどれですか。",
+      "choices": [
+        "聴力検査（ちょうりょくけんさ）",
+        "体温測定",
+        "レントゲン検査",
+        "視力表による視力検査"
+      ],
+      "correct_index": 2,
+      "explanation": "X線は、目には見えない電磁波（でんじは）の一種で、物質の種類や厚さによって通り抜けやすさが異なります。医療では、この性質を利用して骨などの画像を得ることができます。研究施設では、細胞の内部など非常に小さな構造を調べるためにも利用されています。",
+      "keywords": [
+        "理化学研究所",
+        "SPring-8",
+        "ライトシート顕微鏡",
+        "細胞",
+        "放射光"
+      ],
+      "sources": [
+        {
+          "name": "理化学研究所",
+          "url": "https://www.riken.jp/press/2026/20261014_1/index.html"
         }
       ]
     }
