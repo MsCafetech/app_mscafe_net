@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 51,
-  "image_count": 72,
+  "related_count": 53,
+  "image_count": 74,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -738,6 +738,24 @@
               "is_reference": true
             }
           ]
+        },
+        {
+          "related_id": "20261126-010-R03",
+          "images": [
+            {
+              "id": "20261126-010-R03-I01",
+              "type": "diagram",
+              "title": "ユーロと円の為替レート",
+              "caption": "資料図：ユーロと日本円の為替レートが時期によって変化する様子。過去のデータです。",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/JPY-EUR_v2.svg/960px-JPY-EUR_v2.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:JPY-EUR_v2.svg",
+              "credit": "Monaneko",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示。",
+              "is_reference": true
+            }
+          ]
         }
       ]
     },
@@ -1052,6 +1070,24 @@
               "license": "CC BY 2.0",
               "license_url": "https://creativecommons.org/licenses/by/2.0/",
               "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-015-R02",
+          "images": [
+            {
+              "id": "20261126-015-R02-I01",
+              "type": "photo",
+              "title": "食品の賞味期限の表示例",
+              "caption": "資料写真：カナダの食品の箱に表示された、賞味期限（best before）の例。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Best_before_Canada.JPG",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Best_before_Canada.JPG",
+              "credit": "CambridgeBayWeather",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は変更を明示し同一または互換ライセンスで公開。",
+              "is_reference": true
             }
           ]
         }
