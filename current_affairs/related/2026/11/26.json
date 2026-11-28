@@ -2,8 +2,8 @@
   "schema_version": 1,
   "date": "2026-11-26",
   "language": "ja",
-  "question_count": 10,
-  "related_count": 17,
+  "question_count": 12,
+  "related_count": 20,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -394,6 +394,71 @@
             {
               "name": "文化庁",
               "url": "https://www.bunka.go.jp/seisaku/bunkazai/shokai/yukei_kenzobutsu/toroku_yukei.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-007",
+      "related": [
+        {
+          "id": "20261126-007-R01",
+          "relation_type": "question",
+          "title": "ホルムズ海峡（かいきょう）と海上交通",
+          "description": "中東の産油国から石油を運ぶ船にとって、ホルムズ海峡は重要な通り道です。船が通れる場所が限られているため、ここで交通が止まると、石油を輸入する国にも影響（えいきょう）が広がります。日本はこの海峡を通らない輸入先を確保する取り組みも進めています。",
+          "relationship": "オマーン近くの海峡の位置とエネルギー輸送との関係",
+          "keywords": [
+            "ホルムズ海峡",
+            "海上交通",
+            "原油"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/about/whitepaper/2025/html/2-1-1.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-007-R02",
+          "relation_type": "question",
+          "title": "日本の原油輸入と輸送経路",
+          "description": "2025年の日本の原油輸入量の94％は中東からのものでした。主な輸入先はアラブ首長国連邦（れんぽう）とサウジアラビアです。原油の多くはタンカーという船で運ばれます。特定の地域に輸入先が集中すると、その地域で問題が起きたときに国内の生活や産業にも影響（えいきょう）が出やすくなります。",
+          "relationship": "中東との協力から原油の輸入先とタンカーの役割を調べる",
+          "keywords": [
+            "原油輸入",
+            "中東",
+            "タンカー"
+          ],
+          "sources": [
+            {
+              "name": "資源エネルギー庁",
+              "url": "https://www.enecho.meti.go.jp/committee/council/basic_policy_subcommittee/2026/071/071_004.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261126-008",
+      "related": [
+        {
+          "id": "20261126-008-R01",
+          "relation_type": "question",
+          "title": "国会の二院制",
+          "description": "日本の国会は衆議院（しゅうぎいん）と参議院の二つの議院から成り立ちます。衆議院議員の任期は4年ですが、解散（かいさん）すると任期が終わります。参議院議員の任期は6年で、3年ごとに半数を選び直します。このように二つの議院は異なる仕組みを持ち、法律などについて話し合います。",
+          "relationship": "衆議院の議員選挙を起点に参議院との任期や解散の違いを比較する",
+          "keywords": [
+            "二院制",
+            "衆議院",
+            "参議院",
+            "任期"
+          ],
+          "sources": [
+            {
+              "name": "衆議院",
+              "url": "https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/kokkai/kokkai_kousei.htm"
             }
           ]
         }
