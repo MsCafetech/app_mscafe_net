@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 67,
+  "related_count": 68,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -195,6 +195,26 @@
             }
           ],
           "relation_type": "question"
+        },
+        {
+          "id": "20261126-002-R05",
+          "relation_type": "answer",
+          "title": "中央銀行と民間銀行の役割",
+          "description": "日本銀行は日本の中央銀行で、日本銀行券（お札）を発行します。民間銀行は、人や会社からお金を預かり、必要とする人や会社に貸し出すなどの仕事をしています。日本銀行は一般の人や会社から預金を受け入れず、銀行などの金融機関（きんゆうきかん）から預金を受け入れたり、資金を貸したりします。",
+          "relationship": "銀行券を発行する日本銀行と、私たちが利用する民間銀行の役割の違いを学びます。",
+          "keywords": [
+            "日本銀行",
+            "中央銀行",
+            "民間銀行",
+            "預金",
+            "貸出"
+          ],
+          "sources": [
+            {
+              "name": "日本銀行「おしえて！日本銀行」",
+              "url": "https://www.boj.or.jp/about/education/oshiete.pdf"
+            }
+          ]
         }
       ]
     },
