@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 35,
-  "image_count": 56,
+  "related_count": 40,
+  "image_count": 61,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -422,6 +422,24 @@
               "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-005-R02",
+          "images": [
+            {
+              "id": "20261126-005-R02-I01",
+              "type": "photo",
+              "title": "アマミノクロウサギ",
+              "caption": "資料写真：奄美大島などの固有種であるアマミノクロウサギ。生息する森林の保全が大切です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/%E3%82%A2%E3%83%9E%E3%83%9F%E3%83%8E%E3%82%AF%E3%83%AD%E3%82%A6%E3%82%B5%E3%82%AE_Pentalagus_furnessi_Amami-Oshima%2C_Japan.jpg/960px-%E3%82%A2%E3%83%9E%E3%83%9F%E3%83%8E%E3%82%AF%E3%83%AD%E3%82%A6%E3%82%B5%E3%82%AE_Pentalagus_furnessi_Amami-Oshima%2C_Japan.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E3%82%A2%E3%83%9E%E3%83%9F%E3%83%8E%E3%82%AF%E3%83%AD%E3%82%A6%E3%82%B5%E3%82%AE_Pentalagus_furnessi_Amami-Oshima%2C_Japan.jpg",
+              "credit": "Mmsmr",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用可。出典を表示。"
+            }
+          ]
         }
       ]
     },
@@ -739,6 +757,24 @@
               "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-011-R03",
+          "images": [
+            {
+              "id": "20261126-011-R03-I01",
+              "type": "photo",
+              "title": "LNGタンカー",
+              "caption": "資料写真：天然ガスを液化して運ぶLNGタンカー。天然ガスは化石燃料の一つです。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lng_tanker.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Lng_tanker.jpg",
+              "credit": "lightgraphs",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記。"
+            }
+          ]
         }
       ]
     },
@@ -795,6 +831,24 @@
               "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、改変物は同一または互換ライセンスで配布。"
             }
           ]
+        },
+        {
+          "related_id": "20261126-012-R02",
+          "images": [
+            {
+              "id": "20261126-012-R02-I01",
+              "type": "map",
+              "title": "青森県東方沖地震の揺れの分布図",
+              "caption": "資料地図：一つの地震でも観測場所によって揺れの強さが異なる例です。地震そのものの規模と各地の震度は異なります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/2023-03-28_Misawa%2C_Japan_M6_earthquake_intensity_map_%28USGS%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:2023-03-28_Misawa,_Japan_M6_earthquake_intensity_map_(USGS).jpg",
+              "credit": "United States Geological Survey",
+              "license": "Public domain",
+              "license_url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+              "usage_notes": "米国地質調査所（USGS）提供のパブリックドメイン資料。USGSおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
         }
       ]
     },
@@ -815,7 +869,26 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。変更時は明示し同等ライセンスで配布。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-013-R01",
+          "images": [
+            {
+              "id": "20261126-013-R01-I01",
+              "type": "illustration",
+              "title": "二要素認証の設定画面",
+              "caption": "資料画像：認証用アプリやセキュリティキーなど、複数の認証要素を利用できる設定画面の例。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Two-factor_authentication_on_Wikimedia_as_of_2025_with_WebAuthn_screenshot.webp?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Two-factor_authentication_on_Wikimedia_as_of_2025_with_WebAuthn_screenshot.webp",
+              "credit": "Wikimedia Foundation and contributors; screenshot: VulcanSphere",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。変更時は明示し同等ライセンスで配布。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-014",
@@ -869,6 +942,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用・改変可能。出典と作者を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261126-015-R03",
+          "images": [
+            {
+              "id": "20261126-015-R03-I01",
+              "type": "photo",
+              "title": "日本のスーパーマーケット",
+              "caption": "資料写真：スーパーマーケット。食品が生産者から消費者に届くまでの流通の一段階です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Japanese_Supermarket.jpg/960px-Japanese_Supermarket.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Supermarket.jpg",
+              "credit": "Yuya Tamai",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
             }
           ]
         }
