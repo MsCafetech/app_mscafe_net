@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-25",
   "language": "ja",
-  "question_count": 16,
-  "related_count": 42,
-  "image_count": 58,
+  "question_count": 17,
+  "related_count": 44,
+  "image_count": 61,
   "questions": [
     {
       "question_id": "20261125-011",
@@ -25,20 +25,20 @@
       ],
       "related": [
         {
-          "related_id": "20261125-011-R05",
+          "related_id": "20261125-011-R01",
           "images": [
             {
-              "id": "20261125-011-R05-I01",
-              "type": "satellite",
-              "title": "国際宇宙ステーションから見た首都圏の夜",
-              "caption": "観測写真：夜の首都圏に広がる明かり。人や仕事、交通が大都市圏に集まる様子を考える資料の一つです。",
+              "id": "20261125-011-R01-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：首都機能の一つである国会の議事堂。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Night_in_the_Greater_Tokyo_Area_ISS054.jpg/1280px-Night_in_the_Greater_Tokyo_Area_ISS054.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Night_in_the_Greater_Tokyo_Area_ISS054.jpg",
-              "credit": "NASA Johnson Space Center / Image Science and Analysis Laboratory",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
+              "credit": "Ayumu Ozaki",
               "license": "Public domain",
-              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者名を出典として表示。"
             }
           ]
         },
@@ -61,6 +61,24 @@
           ]
         },
         {
+          "related_id": "20261125-011-R03",
+          "images": [
+            {
+              "id": "20261125-011-R03-I01",
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：首都機能の移転を考える際に対象となる国会議事堂。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
+              "credit": "Ayumu Ozaki",
+              "license": "Public domain",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+            }
+          ]
+        },
+        {
           "related_id": "20261125-011-R04",
           "images": [
             {
@@ -79,38 +97,20 @@
           ]
         },
         {
-          "related_id": "20261125-011-R01",
+          "related_id": "20261125-011-R05",
           "images": [
             {
-              "id": "20261125-011-R01-I01",
-              "type": "photo",
-              "title": "国会議事堂",
-              "caption": "資料写真：首都機能の一つである国会の議事堂。",
+              "id": "20261125-011-R05-I01",
+              "type": "satellite",
+              "title": "国際宇宙ステーションから見た首都圏の夜",
+              "caption": "観測写真：夜の首都圏に広がる明かり。人や仕事、交通が大都市圏に集まる様子を考える資料の一つです。",
               "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
-              "credit": "Ayumu Ozaki",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Night_in_the_Greater_Tokyo_Area_ISS054.jpg/1280px-Night_in_the_Greater_Tokyo_Area_ISS054.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Night_in_the_Greater_Tokyo_Area_ISS054.jpg",
+              "credit": "NASA Johnson Space Center / Image Science and Analysis Laboratory",
               "license": "Public domain",
-              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-              "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者名を出典として表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261125-011-R03",
-          "images": [
-            {
-              "id": "20261125-011-R03-I01",
-              "type": "photo",
-              "title": "国会議事堂",
-              "caption": "資料写真：首都機能の移転を考える際に対象となる国会議事堂。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/National_Diet_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_2015.jpg",
-              "credit": "Ayumu Ozaki",
-              "license": "Public domain",
-              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-              "usage_notes": "パブリックドメイン。Wikimedia Commonsの掲載元と作者名を出典として表示。"
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         }
@@ -135,42 +135,6 @@
       ],
       "related": [
         {
-          "related_id": "20261125-012-R02",
-          "images": [
-            {
-              "id": "20261125-012-R02-I01",
-              "type": "diagram",
-              "title": "宇宙ステーションのモジュール構成",
-              "caption": "資料図：宇宙ステーションは、役割の異なる部分（モジュール）をロケットで運び、宇宙でつないでつくられます。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/ISS_configuration_2019-08.png/1280px-ISS_configuration_2019-08.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:ISS_configuration_2019-08.png",
-              "credit": "NASA and various contributors",
-              "license": "Public domain",
-              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-              "usage_notes": "NASA提供を含むパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261125-012-R05",
-          "images": [
-            {
-              "id": "20261125-012-R05-I01",
-              "type": "diagram",
-              "title": "国際宇宙ステーションの水再生システム",
-              "caption": "資料図：宇宙ステーションでは、水を回収してきれいにし、できるだけ再利用します。宇宙で長く暮らすための生命維持の工夫です。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/ISS_Water_Recovery_System.svg/1280px-ISS_Water_Recovery_System.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:ISS_Water_Recovery_System.svg",
-              "credit": "NASA",
-              "license": "Public domain",
-              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
           "related_id": "20261125-012-R01",
           "images": [
             {
@@ -185,6 +149,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "CC BY-SA 4.0。作者名「Shujianyang」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-012-R02",
+          "images": [
+            {
+              "id": "20261125-012-R02-I01",
+              "type": "diagram",
+              "title": "宇宙ステーションのモジュール構成",
+              "caption": "資料図：宇宙ステーションは、役割の異なる部分（モジュール）をロケットで運び、宇宙でつないでつくられます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/ISS_configuration_2019-08.png/1280px-ISS_configuration_2019-08.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:ISS_configuration_2019-08.png",
+              "credit": "NASA and various contributors",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供を含むパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
         },
@@ -223,6 +205,24 @@
               "usage_notes": "NASA提供のパブリックドメイン画像。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-012-R05",
+          "images": [
+            {
+              "id": "20261125-012-R05-I01",
+              "type": "diagram",
+              "title": "国際宇宙ステーションの水再生システム",
+              "caption": "資料図：宇宙ステーションでは、水を回収してきれいにし、できるだけ再利用します。宇宙で長く暮らすための生命維持の工夫です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/ISS_Water_Recovery_System.svg/1280px-ISS_Water_Recovery_System.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:ISS_Water_Recovery_System.svg",
+              "credit": "NASA",
+              "license": "Public domain",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
         }
       ]
     },
@@ -245,42 +245,6 @@
       ],
       "related": [
         {
-          "related_id": "20261125-013-R02",
-          "images": [
-            {
-              "id": "20261125-013-R02-I01",
-              "type": "map",
-              "title": "オセアニアのメラネシア地域",
-              "caption": "資料地図：オセアニアのうちメラネシアと呼ばれる地域を示した図。ソロモン諸島は、この地域にある島国の一つです。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Oceania_-_Map_of_Melanesia.svg/1280px-Oceania_-_Map_of_Melanesia.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Oceania_-_Map_of_Melanesia.svg",
-              "credit": "Tintazul; derivative work by Cruickshanks",
-              "license": "CC BY-SA 3.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "CC BY-SA 3.0。原作者Tintazulおよび派生版作者Cruickshanks、ライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261125-013-R05",
-          "images": [
-            {
-              "id": "20261125-013-R05-I01",
-              "type": "map",
-              "title": "ガダルカナル島の戦いを示す地図",
-              "caption": "歴史地図：第二次世界大戦中のガダルカナル島周辺の戦いを示した図。ソロモン諸島が太平洋の歴史で重要な場所だったことを考える資料です。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png/1280px-Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png",
-              "credit": "U.S. Navy",
-              "license": "Public domain",
-              "license_url": "https://www.usa.gov/government-copyright",
-              "usage_notes": "米海軍提供のパブリックドメイン資料。米海軍およびWikimedia Commonsの掲載元を出典として表示。"
-            }
-          ]
-        },
-        {
           "related_id": "20261125-013-R01",
           "images": [
             {
@@ -295,6 +259,24 @@
               "license": "Public domain",
               "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
               "usage_notes": "NASA提供のパブリックドメイン資料。NASAおよびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-013-R02",
+          "images": [
+            {
+              "id": "20261125-013-R02-I01",
+              "type": "map",
+              "title": "オセアニアのメラネシア地域",
+              "caption": "資料地図：オセアニアのうちメラネシアと呼ばれる地域を示した図。ソロモン諸島は、この地域にある島国の一つです。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Oceania_-_Map_of_Melanesia.svg/1280px-Oceania_-_Map_of_Melanesia.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Oceania_-_Map_of_Melanesia.svg",
+              "credit": "Tintazul; derivative work by Cruickshanks",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "CC BY-SA 3.0。原作者Tintazulおよび派生版作者Cruickshanks、ライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
             }
           ]
         },
@@ -333,6 +315,24 @@
               "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示。加工した場合は変更内容を明記。提供者がアプリを推奨していると誤解させないこと。960px縮小版を使用。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-013-R05",
+          "images": [
+            {
+              "id": "20261125-013-R05-I01",
+              "type": "map",
+              "title": "ガダルカナル島の戦いを示す地図",
+              "caption": "歴史地図：第二次世界大戦中のガダルカナル島周辺の戦いを示した図。ソロモン諸島が太平洋の歴史で重要な場所だったことを考える資料です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png/1280px-Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Guadalcanal_map_22_Jan_to_10_Feb_1943.png",
+              "credit": "U.S. Navy",
+              "license": "Public domain",
+              "license_url": "https://www.usa.gov/government-copyright",
+              "usage_notes": "米海軍提供のパブリックドメイン資料。米海軍およびWikimedia Commonsの掲載元を出典として表示。"
+            }
+          ]
         }
       ]
     },
@@ -355,24 +355,6 @@
       ],
       "related": [
         {
-          "related_id": "20261125-014-R03",
-          "images": [
-            {
-              "id": "20261125-014-R03-I01",
-              "type": "photo",
-              "title": "呉の造船所",
-              "caption": "資料写真：広島県呉市の造船所。船を造ったり修理したりするための大型設備が見えます。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Japan_Marine_United_Kure_Shipyard_(1).jpg/960px-Japan_Marine_United_Kure_Shipyard_(1).jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Japan_Marine_United_Kure_Shipyard_(1).jpg",
-              "credit": "liveinvain",
-              "license": "CC BY 2.0",
-              "license_url": "https://creativecommons.org/licenses/by/2.0/",
-              "usage_notes": "作者・出典・ライセンスを表示し、加工時は変更を明記。縮小版を使用。"
-            }
-          ]
-        },
-        {
           "related_id": "20261125-014-R01",
           "images": [
             {
@@ -387,6 +369,24 @@
               "license": "Public Domain",
               "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
               "usage_notes": "出典を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-014-R03",
+          "images": [
+            {
+              "id": "20261125-014-R03-I01",
+              "type": "photo",
+              "title": "呉の造船所",
+              "caption": "資料写真：広島県呉市の造船所。船を造ったり修理したりするための大型設備が見えます。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Japan_Marine_United_Kure_Shipyard_(1).jpg/960px-Japan_Marine_United_Kure_Shipyard_(1).jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japan_Marine_United_Kure_Shipyard_(1).jpg",
+              "credit": "liveinvain",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示し、加工時は変更を明記。縮小版を使用。"
             }
           ]
         }
@@ -429,24 +429,6 @@
           ]
         },
         {
-          "related_id": "20261125-015-R03",
-          "images": [
-            {
-              "id": "20261125-015-R03-I01",
-              "type": "photo",
-              "title": "ライチョウの親子",
-              "caption": "資料写真：生息地の保全が必要なライチョウ。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Lagopus_muta_japonica_Yukikura.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Lagopus_muta_japonica_Yukikura.jpg",
-              "credit": "Alpsdake",
-              "license": "CC BY-SA 3.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
-            }
-          ]
-        },
-        {
           "related_id": "20261125-015-R02",
           "images": [
             {
@@ -461,6 +443,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "商用利用・複製可。出典を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-015-R03",
+          "images": [
+            {
+              "id": "20261125-015-R03-I01",
+              "type": "photo",
+              "title": "ライチョウの親子",
+              "caption": "資料写真：生息地の保全が必要なライチョウ。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Lagopus_muta_japonica_Yukikura.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Lagopus_muta_japonica_Yukikura.jpg",
+              "credit": "Alpsdake",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "掲載元・撮影者または提供元・ライセンスへのリンクを表示し、加工した場合はその旨を記載。加工した画像を配布する場合は同一または互換ライセンスで提供。"
             }
           ]
         }
@@ -559,24 +559,6 @@
       ],
       "related": [
         {
-          "related_id": "20261125-017-R02",
-          "images": [
-            {
-              "id": "20261125-017-R02-I01",
-              "type": "photo",
-              "title": "日EU経済連携協定の署名",
-              "caption": "資料写真：2018年7月17日に日本とEUの代表が経済連携協定に署名する様子。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/EU-Japan_EPA_Signing_%287%29.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:EU-Japan_EPA_Signing_(7).jpg",
-              "credit": "内閣官房内閣広報室",
-              "license": "CC BY 4.0",
-              "license_url": "https://creativecommons.org/licenses/by/4.0/",
-              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
-            }
-          ]
-        },
-        {
           "related_id": "20261125-017-R01",
           "images": [
             {
@@ -591,6 +573,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
               "usage_notes": "作者・出典・ライセンスを表示し、変更時は明記する。加工物は同一または互換ライセンスで配布する。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-017-R02",
+          "images": [
+            {
+              "id": "20261125-017-R02-I01",
+              "type": "photo",
+              "title": "日EU経済連携協定の署名",
+              "caption": "資料写真：2018年7月17日に日本とEUの代表が経済連携協定に署名する様子。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/EU-Japan_EPA_Signing_%287%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:EU-Japan_EPA_Signing_(7).jpg",
+              "credit": "内閣官房内閣広報室",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更があれば明記。"
             }
           ]
         }
@@ -614,24 +614,6 @@
         }
       ],
       "related": [
-        {
-          "related_id": "20261125-018-R03",
-          "images": [
-            {
-              "id": "20261125-018-R03-I01",
-              "type": "photo",
-              "title": "米国の中央銀行の本部",
-              "caption": "資料写真：物価の安定と雇用を目標とする米国の中央銀行制度の本部建物。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg/960px-Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg",
-              "credit": "AgnosticPreachersKid（Jbartaによる補正・切り抜き）",
-              "license": "CC BY-SA 3.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物を配布する場合は同一または互換ライセンスを適用。"
-            }
-          ]
-        },
         {
           "related_id": "20261125-018-R01",
           "images": [
@@ -667,6 +649,24 @@
               "usage_notes": "撮影者・出典ページ・ライセンスへのリンクを表示。加工した場合は変更内容を明記。提供者がアプリを推奨していると誤解させないこと。960px縮小版を使用。"
             }
           ]
+        },
+        {
+          "related_id": "20261125-018-R03",
+          "images": [
+            {
+              "id": "20261125-018-R03-I01",
+              "type": "photo",
+              "title": "米国の中央銀行の本部",
+              "caption": "資料写真：物価の安定と雇用を目標とする米国の中央銀行制度の本部建物。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg/960px-Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Marriner_S._Eccles_Federal_Reserve_Board_Building.jpg",
+              "credit": "AgnosticPreachersKid（Jbartaによる補正・切り抜き）",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
         }
       ]
     },
@@ -688,6 +688,24 @@
         }
       ],
       "related": [
+        {
+          "related_id": "20261125-019-R01",
+          "images": [
+            {
+              "id": "20261125-019-R01-I01",
+              "type": "satellite",
+              "title": "二つの小惑星",
+              "caption": "資料写真（観測画像）：探査機DARTが2022年に撮影したディディモス（大）とディモルフォス（小）。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Last_image_showing_all_of_Didymos_%26_Dimorphos_by_DART.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Last_image_showing_all_of_Didymos_%26_Dimorphos_by_DART.png",
+              "credit": "NASA/Johns Hopkins APL",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
+              "usage_notes": "提供元を表示し、NASAの推奨を示唆しない。"
+            }
+          ]
+        },
         {
           "related_id": "20261125-019-R02",
           "images": [
@@ -721,24 +739,6 @@
               "license": "Public Domain (NASA)",
               "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
               "usage_notes": "出典と提供元を表示。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261125-019-R01",
-          "images": [
-            {
-              "id": "20261125-019-R01-I01",
-              "type": "satellite",
-              "title": "二つの小惑星",
-              "caption": "資料写真（観測画像）：探査機DARTが2022年に撮影したディディモス（大）とディモルフォス（小）。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Last_image_showing_all_of_Didymos_%26_Dimorphos_by_DART.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Last_image_showing_all_of_Didymos_%26_Dimorphos_by_DART.png",
-              "credit": "NASA/Johns Hopkins APL",
-              "license": "Public Domain (NASA)",
-              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NASA",
-              "usage_notes": "提供元を表示し、NASAの推奨を示唆しない。"
             }
           ]
         }
@@ -819,20 +819,20 @@
       ],
       "related": [
         {
-          "related_id": "20261125-021-R03",
+          "related_id": "20261125-021-R01",
           "images": [
             {
-              "id": "20261125-021-R03-I01",
-              "type": "photo",
-              "title": "カタルーニャ自治州議会の議場",
-              "caption": "資料写真：住民が選んだ議員が法律や予算を話し合う議場。",
+              "id": "20261125-021-R01-I01",
+              "type": "map",
+              "title": "スペインの自治州の地図",
+              "caption": "地図：スペインの自治州の境界を色分けした地図。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Hemicycle_of_the_Parliament_of_Catalonia_01.jpg/960px-Hemicycle_of_the_Parliament_of_Catalonia_01.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Hemicycle_of_the_Parliament_of_Catalonia_01.jpg",
-              "credit": "Kent Wang",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Comunidades_Aut%C3%B3nomas_Espa%C3%B1olas.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Comunidades_Aut%C3%B3nomas_Espa%C3%B1olas.png",
+              "credit": "giruivan（Fobos92による修正）",
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-              "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物を配布する場合は同一または互換ライセンスを適用。"
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物は同一または互換ライセンスで配布。"
             }
           ]
         },
@@ -855,20 +855,20 @@
           ]
         },
         {
-          "related_id": "20261125-021-R01",
+          "related_id": "20261125-021-R03",
           "images": [
             {
-              "id": "20261125-021-R01-I01",
-              "type": "map",
-              "title": "スペインの自治州の地図",
-              "caption": "地図：スペインの自治州の境界を色分けした地図。",
+              "id": "20261125-021-R03-I01",
+              "type": "photo",
+              "title": "カタルーニャ自治州議会の議場",
+              "caption": "資料写真：住民が選んだ議員が法律や予算を話し合う議場。",
               "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Comunidades_Aut%C3%B3nomas_Espa%C3%B1olas.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Comunidades_Aut%C3%B3nomas_Espa%C3%B1olas.png",
-              "credit": "giruivan（Fobos92による修正）",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Hemicycle_of_the_Parliament_of_Catalonia_01.jpg/960px-Hemicycle_of_the_Parliament_of_Catalonia_01.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Hemicycle_of_the_Parliament_of_Catalonia_01.jpg",
+              "credit": "Kent Wang",
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-              "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物は同一または互換ライセンスで配布。"
+              "usage_notes": "著作者・出典・ライセンスを表示し、変更を明記。改変物を配布する場合は同一または互換ライセンスを適用。"
             }
           ]
         }
@@ -1077,6 +1077,62 @@
               "license": "Public domain (NASA)",
               "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov",
               "usage_notes": "NASA/JPL-Caltechを出典として表示。NASAの推奨・承認を示唆しない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261125-031",
+      "images": [
+        {
+          "id": "20261125-031-I01",
+          "type": "photo",
+          "title": "東京港に入るコンテナ船",
+          "caption": "資料写真：コンテナを積んで東京港に入る船。2021年撮影。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ocean_Network_Express_container_ship_entering_Tokyo_harbor.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ocean_Network_Express_container_ship_entering_Tokyo_harbor.jpg",
+          "credit": "Syced / Wikimedia Commons",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "usage_notes": "商用利用・加工可能。出典を表示。原画像を使用。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261125-031-R01",
+          "images": [
+            {
+              "id": "20261125-031-R01-I01",
+              "type": "photo",
+              "title": "東京港に入るコンテナ船",
+              "caption": "資料写真：コンテナを積んで東京港に入る船。2021年撮影。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ocean_Network_Express_container_ship_entering_Tokyo_harbor.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Ocean_Network_Express_container_ship_entering_Tokyo_harbor.jpg",
+              "credit": "Syced / Wikimedia Commons",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用・加工可能。出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261125-031-R02",
+          "images": [
+            {
+              "id": "20261125-031-R02-I01",
+              "type": "photo",
+              "title": "東京港に入るコンテナ船",
+              "caption": "資料写真：コンテナを積んで東京港に入る船。2021年撮影。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ocean_Network_Express_container_ship_entering_Tokyo_harbor.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Ocean_Network_Express_container_ship_entering_Tokyo_harbor.jpg",
+              "credit": "Syced / Wikimedia Commons",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "商用利用・加工可能。出典を表示。原画像を使用。"
             }
           ]
         }
