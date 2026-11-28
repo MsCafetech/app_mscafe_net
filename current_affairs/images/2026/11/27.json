@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-27",
   "language": "ja",
-  "question_count": 5,
-  "related_count": 12,
-  "image_count": 17,
+  "question_count": 9,
+  "related_count": 18,
+  "image_count": 26,
   "questions": [
     {
       "question_id": "20261127-001",
@@ -155,24 +155,6 @@
       ],
       "related": [
         {
-          "related_id": "20261127-003-R02",
-          "images": [
-            {
-              "id": "20261127-003-R02-I01",
-              "type": "diagram",
-              "title": "DNAの塩基が対になる仕組み",
-              "caption": "資料図：DNAを作る二本の鎖では、AとT、GとCが組み合わさります。親子関係を調べるDNA検査の基礎になる遺伝情報の仕組みです。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/DNA_Diagram.png",
-              "source_url": "https://commons.wikimedia.org/wiki/File:DNA_Diagram.png",
-              "credit": "Christinelmiller",
-              "license": "CC BY 4.0",
-              "license_url": "https://creativecommons.org/licenses/by/4.0/",
-              "usage_notes": "商用利用可能。作者・出典・ライセンスURLを表示し、改変時は変更を明示。図中の英語表記を残す場合は補足の日本語説明を併記する。"
-            }
-          ]
-        },
-        {
           "related_id": "20261127-003-R01",
           "images": [
             {
@@ -187,6 +169,24 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "商用利用可能。作者・出典・ライセンスを表示し、改変時は変更を明記して同等ライセンスで提供。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-003-R02",
+          "images": [
+            {
+              "id": "20261127-003-R02-I01",
+              "type": "diagram",
+              "title": "DNAの塩基が対になる仕組み",
+              "caption": "資料図：DNAを作る二本の鎖では、AとT、GとCが組み合わさります。親子関係を調べるDNA検査の基礎になる遺伝情報の仕組みです。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/DNA_Diagram.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:DNA_Diagram.png",
+              "credit": "Christinelmiller",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "商用利用可能。作者・出典・ライセンスURLを表示し、改変時は変更を明示。図中の英語表記を残す場合は補足の日本語説明を併記する。"
             }
           ]
         },
@@ -285,6 +285,24 @@
       ],
       "related": [
         {
+          "related_id": "20261127-005-R01",
+          "images": [
+            {
+              "id": "20261127-005-R01-I01",
+              "type": "diagram",
+              "title": "酸性雨ができるしくみ",
+              "caption": "資料図：工場などの排出物が大気中で変化し、雨などとともに地表へ戻る過程を示したアメリカ環境保護庁の図。図中の英語は汚染物質や地表に戻る過程を表します。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Origins_of_acid_rain.svg/500px-Origins_of_acid_rain.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Origins_of_acid_rain.svg",
+              "credit": "U.S. Environmental Protection Agency (EPA); vector adaptation Zazou",
+              "license": "Public domain (U.S. federal government work)",
+              "license_url": "https://commons.wikimedia.org/wiki/File:Origins_of_acid_rain.svg#Licensing",
+              "usage_notes": "商用利用可能。米国環境保護庁が公務として制作した図を元にした資料。SVGの500px PNG版を直接配信。出典を表示。"
+            }
+          ]
+        },
+        {
           "related_id": "20261127-005-R02",
           "images": [
             {
@@ -301,22 +319,178 @@
               "usage_notes": "商用利用可。作者・出典・ライセンスを表示し、改変時は明記、派生作品は同等ライセンスで提供。"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-006",
+      "images": [
         {
-          "related_id": "20261127-005-R01",
+          "id": "20261127-006-I01",
+          "type": "photo",
+          "title": "塩分がたまった農地",
+          "caption": "資料写真：塩分がたまった農地の例。今回の研究で使われた農地ではありません。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Soil_Salinity.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Soil_Salinity.jpg",
+          "credit": "R.J.Oosterbaan",
+          "license": "Public domain",
+          "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+          "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261127-006-R02",
           "images": [
             {
-              "id": "20261127-005-R01-I01",
-              "type": "diagram",
-              "title": "酸性雨ができるしくみ",
-              "caption": "資料図：工場などの排出物が大気中で変化し、雨などとともに地表へ戻る過程を示したアメリカ環境保護庁の図。図中の英語は汚染物質や地表に戻る過程を表します。",
+              "id": "20261127-006-R02-I01",
+              "type": "photo",
+              "title": "塩分がたまった農地",
+              "caption": "資料写真：塩分がたまった農地の例。今回の研究で使われた農地ではありません。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Origins_of_acid_rain.svg/500px-Origins_of_acid_rain.svg.png",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Origins_of_acid_rain.svg",
-              "credit": "U.S. Environmental Protection Agency (EPA); vector adaptation Zazou",
-              "license": "Public domain (U.S. federal government work)",
-              "license_url": "https://commons.wikimedia.org/wiki/File:Origins_of_acid_rain.svg#Licensing",
-              "usage_notes": "商用利用可能。米国環境保護庁が公務として制作した図を元にした資料。SVGの500px PNG版を直接配信。出典を表示。"
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Soil_Salinity.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Soil_Salinity.jpg",
+              "credit": "R.J.Oosterbaan",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-006-R03",
+          "images": [
+            {
+              "id": "20261127-006-R03-I01",
+              "type": "photo",
+              "title": "農業用の水路",
+              "caption": "資料写真：アフガニスタンの農業用水路。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Agricultural_irrigation_canal.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Agricultural_irrigation_canal.jpg",
+              "credit": "The White House",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-008",
+      "images": [
+        {
+          "id": "20261127-008-I01",
+          "type": "photo",
+          "title": "水族館のクラゲ",
+          "caption": "資料写真：水族館で撮影されたミズクラゲ。今回発表された新種とは異なります。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Jellyfish01.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Jellyfish01.jpg",
+          "credit": "ErgoSum88",
+          "license": "Public domain",
+          "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+          "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261127-008-R02",
+          "images": [
+            {
+              "id": "20261127-008-R02-I01",
+              "type": "photo",
+              "title": "水族館のクラゲ",
+              "caption": "資料写真：水族館で撮影されたミズクラゲ。今回発表された新種とは異なります。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Jellyfish01.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Jellyfish01.jpg",
+              "credit": "ErgoSum88",
+              "license": "Public domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "商用利用可能。作者と出典を表示。原画像を使用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-010",
+      "images": [],
+      "related": [
+        {
+          "related_id": "20261127-010-R02",
+          "images": [
+            {
+              "id": "20261127-010-R02-I01",
+              "type": "photo",
+              "title": "太陽系の惑星",
+              "caption": "資料写真：探査機が撮影した八つの惑星と月を組み合わせた画像。大きさや間隔は正確な縮尺ではありません。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Solar_system.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Solar_system.jpg",
+              "credit": "NASA/JPL",
+              "license": "Public domain",
+              "license_url": "https://www.jpl.nasa.gov/jpl-image-use-policy/",
+              "usage_notes": "NASA/JPLの出典を表示。推奨・承認を示唆しない。原画像を使用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261127-011",
+      "images": [
+        {
+          "id": "20261127-011-I01",
+          "type": "photo",
+          "title": "ニュージーランドの国会議事堂",
+          "caption": "資料写真：首都ウェリントンにある議会の建物。2019年撮影。",
+          "is_reference": true,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/NZ_Parliamentary_Buildings.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+          "source_url": "https://commons.wikimedia.org/wiki/File:NZ_Parliamentary_Buildings.jpg",
+          "credit": "Tom Ackroyd",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。"
+        }
+      ],
+      "related": [
+        {
+          "related_id": "20261127-011-R01",
+          "images": [
+            {
+              "id": "20261127-011-R01-I01",
+              "type": "photo",
+              "title": "ニュージーランドの国会議事堂",
+              "caption": "資料写真：首都ウェリントンにある議会の建物。2019年撮影。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/NZ_Parliamentary_Buildings.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:NZ_Parliamentary_Buildings.jpg",
+              "credit": "Tom Ackroyd",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261127-011-R02",
+          "images": [
+            {
+              "id": "20261127-011-R02-I01",
+              "type": "photo",
+              "title": "ニュージーランドの国会議事堂",
+              "caption": "資料写真：首都ウェリントンにある議会の建物。2019年撮影。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/NZ_Parliamentary_Buildings.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:NZ_Parliamentary_Buildings.jpg",
+              "credit": "Tom Ackroyd",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。改変時は明示し同一または互換ライセンスで配布。原画像を使用。"
             }
           ]
         }
