@@ -3,8 +3,8 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 42,
-  "image_count": 63,
+  "related_count": 43,
+  "image_count": 64,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -720,7 +720,26 @@
           "usage_notes": "商用利用可能。作者・出典・ライセンスを表示。変更時は明示。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261126-010-R01",
+          "images": [
+            {
+              "id": "20261126-010-R01-I01",
+              "type": "photo",
+              "title": "ユーロの紙幣と硬貨",
+              "caption": "資料写真：ヨーロッパの国々で使われる共通通貨ユーロの紙幣と硬貨。",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Twenty_euro_banknote_and_coins.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Twenty_euro_banknote_and_coins.jpg",
+              "credit": "Daniel Lobo",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示。",
+              "is_reference": true
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261126-011",
