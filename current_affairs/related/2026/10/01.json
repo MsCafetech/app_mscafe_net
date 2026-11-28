@@ -64,8 +64,80 @@
           ]
         }
       ]
+    },
+    {
+      "question_id": "20261001-002",
+      "related": [
+        {
+          "id": "20261001-002-R01",
+          "relation_type": "question",
+          "title": "直接税と間接税",
+          "description": "税金には、税を負担（ふたん）する人が自分で納める直接税と、負担する人と納める人が異（こと）なる間接税があります。所得税は直接税の例です。消費税は事業者が納めますが、税額は商品の価格に含（ふく）まれ、消費者が負担します。酒税も間接税の一つです。",
+          "relationship": "酒税のしくみから、税を負担する人と納める人の違いを学びます。",
+          "keywords": [
+            "直接税",
+            "間接税",
+            "消費税",
+            "所得税"
+          ],
+          "sources": [
+            {
+              "name": "国税庁",
+              "url": "https://www.nta.go.jp/about/organization/kumamoto/education/kyozai_chugaku/oita/02-02zei-bunrui.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261001-003",
+      "related": [
+        {
+          "id": "20261001-003-R01",
+          "relation_type": "question",
+          "title": "温室効果ガスの観測",
+          "description": "気象庁（きしょうちょう）は、大気中の二酸化炭素などの温室効果ガスを観測しています。長い期間にわたって測り、国内外のデータを比べることで、濃度（のうど）の変化を知る手がかりになります。南鳥島では、周囲（しゅうい）の人間活動の影響（えいきょう）が小さい場所で観測しています。",
+          "relationship": "温室効果ガスについて、観測を続ける意味を学びます。",
+          "keywords": [
+            "温室効果ガス",
+            "観測",
+            "二酸化炭素",
+            "南鳥島"
+          ],
+          "sources": [
+            {
+              "name": "気象庁",
+              "url": "https://www.jma.go.jp/jma/kishou/know/env/ghg_obs/station/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "20261001-005",
+      "related": [
+        {
+          "id": "20261001-005-R01",
+          "relation_type": "question",
+          "title": "物流と温室効果ガス",
+          "description": "港では、船の荷物を積み下ろしする機械などにエネルギーを使います。国土交通省は、港での温室効果ガスを減らす取り組みを進めています。横浜港（よこはまこう）では、ディーゼルエンジンの発電機を水素燃料電池（すいそねんりょうでんち）に取りかえたクレーンを動かす実験が始まりました。",
+          "relationship": "港の取り組みを通して、荷物を運ぶ仕事と温室効果ガスの削減（さくげん）を考えます。",
+          "keywords": [
+            "港湾",
+            "荷役機械",
+            "水素",
+            "温室効果ガス"
+          ],
+          "sources": [
+            {
+              "name": "国土交通省",
+              "url": "https://www.mlit.go.jp/report/press/port04_hh_000523.html"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "question_count": 1,
-  "related_count": 3
+  "question_count": 4,
+  "related_count": 6
 }
