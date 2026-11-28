@@ -20,10 +20,65 @@
           "usage_notes": "提供元・出典・ライセンスを表示。変更を明記。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261113-001-R01",
+          "images": [
+            {
+              "id": "20261113-001-R01-I01",
+              "type": "photo",
+              "title": "自衛官の勤務の様子",
+              "caption": "資料写真：沖縄で米軍との交流に参加し、部隊の仕事について説明する陸上自衛隊の隊員。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Japan_Ground-Self_Defense_Force_visits_7th_Communication_Battalion_%2810031543%29.jpg/960px-Japan_Ground-Self_Defense_Force_visits_7th_Communication_Battalion_%2810031543%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Japan_Ground-Self_Defense_Force_visits_7th_Communication_Battalion_%2810031543%29.jpg",
+              "credit": "U.S. Marine Corps / John-Paul Haubeil",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。原画像または配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261113-001-R02",
+          "images": [
+            {
+              "id": "20261113-001-R02-I01",
+              "type": "historical",
+              "title": "日本国憲法の公布に関する原本",
+              "caption": "歴史資料：1946年11月3日の憲法公布の文書。天皇の署名と印、内閣の各大臣の署名が記されています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Constitution_of_Japan_original_copy.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Constitution_of_Japan_original_copy.jpg",
+              "credit": "日本政府",
+              "license": "Public Domain (Japan, Copyright Act Art. 13)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-Japan-exempt",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。原画像または配布元の縮小画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261113-001-R03",
+          "images": [
+            {
+              "id": "20261113-001-R03-I01",
+              "type": "diagram",
+              "title": "三権分立のしくみ",
+              "caption": "資料図：国会・内閣・裁判所が役割を分担し、互いに行きすぎを防ぐ仕組み。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E4%B8%89%E6%A8%A9%E5%88%86%E7%AB%8B%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF.svg/960px-%E4%B8%89%E6%A8%A9%E5%88%86%E7%AB%8B%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E6%A8%A9%E5%88%86%E7%AB%8B%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF.svg",
+              "credit": "すじにくシチュー",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "出典・作者・ライセンスを表示。変更時は明示。原画像または配布元の縮小画像を使用。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 1,
-  "related_count": 0,
-  "image_count": 1
+  "related_count": 3,
+  "image_count": 4
 }
