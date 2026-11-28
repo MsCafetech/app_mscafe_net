@@ -3,8 +3,8 @@
   "date": "2026-11-23",
   "language": "ja",
   "question_count": 12,
-  "related_count": 37,
-  "image_count": 50,
+  "related_count": 44,
+  "image_count": 57,
   "questions": [
     {
       "question_id": "20261123-001",
@@ -23,7 +23,62 @@
           "usage_notes": "CC BY-SA 2.0。提供者「IAEA Imagebank」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261123-001-R01",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "地層処分用の廃棄物容器",
+              "caption": "資料図：米国ユッカマウンテンの処分計画で検討された容器と地下施設の例。日本の処分設計そのものではない。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Yucca_Mountain_waste_packages.jpg/960px-Yucca_Mountain_waste_packages.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Yucca_Mountain_waste_packages.jpg",
+              "credit": "U.S. Department of Energy",
+              "license": "Public Domain (U.S. government)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-DOE",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-001-R01-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-001-R02",
+          "images": [
+            {
+              "type": "diagram",
+              "title": "地層を流れる地下水",
+              "caption": "資料図：水を通しやすい地層と通しにくい地層によって地下水の流れ方が異なる。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Groundwater_flow.svg/960px-Groundwater_flow.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Groundwater_flow.svg",
+              "credit": "USGS / T.C. Winter, J.W. Harvey, O.L. Franke, W.M. Alley",
+              "license": "Public Domain (USGS)",
+              "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-USGS",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-001-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-001-R03",
+          "images": [
+            {
+              "type": "photo",
+              "title": "伊豆大島の地層大切断面",
+              "caption": "資料写真：火山噴出物が積み重なった伊豆大島の地層。2022年撮影。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/%E5%9C%B0%E5%B1%A4%E5%A4%A7%E5%88%87%E6%96%AD%E9%9D%A2-02.jpg/960px-%E5%9C%B0%E5%B1%A4%E5%A4%A7%E5%88%87%E6%96%AD%E9%9D%A2-02.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:地層大切断面-02.jpg",
+              "credit": "斑猫",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-001-R03-I01"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261123-007",
@@ -58,6 +113,42 @@
               "license": "Public Domain (US government work)",
               "license_url": "https://www.law.cornell.edu/uscode/text/17/105",
               "usage_notes": "米国政府著作物。出典を表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-007-R02",
+          "images": [
+            {
+              "type": "photo",
+              "title": "広島平和記念公園と原爆ドーム",
+              "caption": "資料写真：2007年の広島平和記念公園。慰霊碑の向こうに原爆ドームが見える。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Genbaku_Dome_and_Hiroshima_Peace_Memorial_%288062056099%29.jpg/960px-Genbaku_Dome_and_Hiroshima_Peace_Memorial_%288062056099%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Genbaku_Dome_and_Hiroshima_Peace_Memorial_(8062056099).jpg",
+              "credit": "Peter Broster",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-007-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-007-R03",
+          "images": [
+            {
+              "type": "map",
+              "title": "核兵器禁止条約への各国の参加状況",
+              "caption": "資料地図：2024年時点の核兵器禁止条約に関する各国の状況。青は承認、黄色は署名、赤紫は未署名。現在の状況とは異なる場合がある。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Prohibition_of_nuclear_weapons%2C_World%2C_2024.svg/1280px-Prohibition_of_nuclear_weapons%2C_World%2C_2024.svg.png?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Prohibition_of_nuclear_weapons,_World,_2024.svg",
+              "credit": "Our World in Data / United Nations Office for Disarmament Affairs (2025)",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-007-R03-I01"
             }
           ]
         }
@@ -96,6 +187,42 @@
               "license": "CC BY-SA 4.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
               "usage_notes": "作者・出典・ライセンスを表示。変更を明記し、改変画像を配布する場合は同一または互換ライセンス。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-008-R02",
+          "images": [
+            {
+              "type": "photo",
+              "title": "国会議事堂",
+              "caption": "資料写真：東京都千代田区の国会議事堂。国の予算は国会で審議される。2018年撮影。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/National_Diet_Building.jpg/960px-National_Diet_Building.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:National_Diet_Building.jpg",
+              "credit": "Kakidai",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-008-R02-I01"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-008-R03",
+          "images": [
+            {
+              "type": "photo",
+              "title": "公立小学校の校舎",
+              "caption": "資料写真：東京都港区立南山小学校。公立学校の運営は税金で支える公共サービスの一例。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/%E6%B8%AF%E5%8C%BA%E7%AB%8B%E5%8D%97%E5%B1%B1%E5%B0%8F%E5%AD%A6%E6%A0%A1.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:港区立南山小学校.jpg",
+              "credit": "Syced",
+              "license": "CC0 1.0",
+              "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。",
+              "id": "20261123-008-R03-I01"
             }
           ]
         }
@@ -139,6 +266,24 @@
       ],
       "related": [
         {
+          "related_id": "20261123-011-R01",
+          "images": [
+            {
+              "id": "20261123-011-R01-I01",
+              "type": "photo",
+              "title": "参議院の本会議場",
+              "caption": "資料写真：二院制を構成する参議院の議場。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Chamber_of_the_House_of_Councillors_P5200850.jpg/960px-Chamber_of_the_House_of_Councillors_P5200850.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Councillors_P5200850.jpg",
+              "credit": "Kestrel",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。資料写真。"
+            }
+          ]
+        },
+        {
           "related_id": "20261123-011-R02",
           "images": [
             {
@@ -166,24 +311,6 @@
               "license": "CC BY 3.0",
               "license_url": "https://creativecommons.org/licenses/by/3.0/",
               "usage_notes": "作者名、出典URL、CC BY 3.0ライセンスを表示。資料写真。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261123-011-R01",
-          "images": [
-            {
-              "id": "20261123-011-R01-I01",
-              "type": "photo",
-              "title": "参議院の本会議場",
-              "caption": "資料写真：二院制を構成する参議院の議場。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Chamber_of_the_House_of_Councillors_P5200850.jpg/960px-Chamber_of_the_House_of_Councillors_P5200850.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Chamber_of_the_House_of_Councillors_P5200850.jpg",
-              "credit": "Kestrel",
-              "license": "CC BY-SA 4.0",
-              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一または互換ライセンスを適用。資料写真。"
             }
           ]
         },
@@ -280,20 +407,20 @@
           ]
         },
         {
-          "related_id": "20261123-012-R04",
+          "related_id": "20261123-012-R02",
           "images": [
             {
-              "id": "20261123-012-R04-I01",
-              "type": "map",
-              "title": "沖縄県の地図",
-              "caption": "日本の南西部に広がる沖縄県を示した地図。琉球王国があった地域が現在の沖縄県につながることを学ぶ資料。",
+              "id": "20261123-012-R02-I01",
+              "type": "photo",
+              "title": "那覇港の旅客ターミナル",
+              "caption": "沖縄県那覇市の港にある旅客ターミナル。海上交易で栄えた那覇が港町として担った役割を考える資料写真。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Map_of_Okinawa_Prefecture_Ja.svg/960px-Map_of_Okinawa_Prefecture_Ja.svg.png",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_Okinawa_Prefecture_Ja.svg",
-              "credit": "Lincun",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Naha_Port_terminal_Okinawa_JAPAN.jpg/960px-Naha_Port_terminal_Okinawa_JAPAN.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Naha_Port_terminal_Okinawa_JAPAN.jpg",
+              "credit": "Rsa",
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。既存の地図。"
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。資料写真。"
             }
           ]
         },
@@ -316,20 +443,20 @@
           ]
         },
         {
-          "related_id": "20261123-012-R02",
+          "related_id": "20261123-012-R04",
           "images": [
             {
-              "id": "20261123-012-R02-I01",
-              "type": "photo",
-              "title": "那覇港の旅客ターミナル",
-              "caption": "沖縄県那覇市の港にある旅客ターミナル。海上交易で栄えた那覇が港町として担った役割を考える資料写真。",
+              "id": "20261123-012-R04-I01",
+              "type": "map",
+              "title": "沖縄県の地図",
+              "caption": "日本の南西部に広がる沖縄県を示した地図。琉球王国があった地域が現在の沖縄県につながることを学ぶ資料。",
               "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Naha_Port_terminal_Okinawa_JAPAN.jpg/960px-Naha_Port_terminal_Okinawa_JAPAN.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Naha_Port_terminal_Okinawa_JAPAN.jpg",
-              "credit": "Rsa",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Map_of_Okinawa_Prefecture_Ja.svg/960px-Map_of_Okinawa_Prefecture_Ja.svg.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_Okinawa_Prefecture_Ja.svg",
+              "credit": "Lincun",
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。資料写真。"
+              "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。既存の地図。"
             }
           ]
         },
@@ -371,42 +498,6 @@
         }
       ],
       "related": [
-        {
-          "related_id": "20261123-013-R04",
-          "images": [
-            {
-              "id": "20261123-013-R04-I01",
-              "type": "photo",
-              "title": "太陽光パネル",
-              "caption": "太陽の光を電気に変える太陽光パネル。再生可能エネルギーを学ぶための資料写真。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Cleaning_solar_panels_%281053%29.jpg/960px-Cleaning_solar_panels_%281053%29.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Cleaning_solar_panels_(1053).jpg",
-              "credit": "Oliver Rudkin",
-              "license": "CC BY 2.0",
-              "license_url": "https://creativecommons.org/licenses/by/2.0/",
-              "usage_notes": "作者名、出典URL、CC BY 2.0ライセンスを表示。資料写真。"
-            }
-          ]
-        },
-        {
-          "related_id": "20261123-013-R05",
-          "images": [
-            {
-              "id": "20261123-013-R05-I01",
-              "type": "satellite",
-              "title": "ブータンの氷河湖",
-              "caption": "NASAの衛星画像に写るブータンの氷河と氷河湖。温暖化が氷や水に与える影響を考えるための観測資料。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Glacial_lakes%2C_Bhutan.jpg/960px-Glacial_lakes%2C_Bhutan.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Glacial_lakes,_Bhutan.jpg",
-              "credit": "NASA",
-              "license": "Public Domain (NASA)",
-              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
-              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。衛星による観測資料。"
-            }
-          ]
-        },
         {
           "related_id": "20261123-013-R01",
           "images": [
@@ -460,6 +551,42 @@
               "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。"
             }
           ]
+        },
+        {
+          "related_id": "20261123-013-R04",
+          "images": [
+            {
+              "id": "20261123-013-R04-I01",
+              "type": "photo",
+              "title": "太陽光パネル",
+              "caption": "太陽の光を電気に変える太陽光パネル。再生可能エネルギーを学ぶための資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Cleaning_solar_panels_%281053%29.jpg/960px-Cleaning_solar_panels_%281053%29.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Cleaning_solar_panels_(1053).jpg",
+              "credit": "Oliver Rudkin",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者名、出典URL、CC BY 2.0ライセンスを表示。資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-013-R05",
+          "images": [
+            {
+              "id": "20261123-013-R05-I01",
+              "type": "satellite",
+              "title": "ブータンの氷河湖",
+              "caption": "NASAの衛星画像に写るブータンの氷河と氷河湖。温暖化が氷や水に与える影響を考えるための観測資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Glacial_lakes%2C_Bhutan.jpg/960px-Glacial_lakes%2C_Bhutan.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Glacial_lakes,_Bhutan.jpg",
+              "credit": "NASA",
+              "license": "Public Domain (NASA)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASA作成画像。NASAの推奨・後援を示唆しない。衛星による観測資料。"
+            }
+          ]
         }
       ]
     },
@@ -481,24 +608,6 @@
         }
       ],
       "related": [
-        {
-          "related_id": "20261123-014-R03",
-          "images": [
-            {
-              "id": "20261123-014-R03-I01",
-              "type": "photo",
-              "title": "研究室で扱うiPS細胞",
-              "caption": "研究室で培養されるiPS細胞。iPS細胞が研究で扱われる様子を示す資料写真。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
-              "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
-              "credit": "CSIRO",
-              "license": "CC BY 3.0",
-              "license_url": "https://creativecommons.org/licenses/by/3.0/",
-              "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。iPS細胞の一般的な資料写真。"
-            }
-          ]
-        },
         {
           "related_id": "20261123-014-R01",
           "images": [
@@ -532,6 +641,24 @@
               "license": "Public Domain",
               "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
               "usage_notes": "パブリックドメインとして公開。出典・作者の表示を推奨。既存の模式図。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-014-R03",
+          "images": [
+            {
+              "id": "20261123-014-R03-I01",
+              "type": "photo",
+              "title": "研究室で扱うiPS細胞",
+              "caption": "研究室で培養されるiPS細胞。iPS細胞が研究で扱われる様子を示す資料写真。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg/960px-CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+              "source_url": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_1521_iPS_cells_in_the_lab.jpg",
+              "credit": "CSIRO",
+              "license": "CC BY 3.0",
+              "license_url": "https://creativecommons.org/licenses/by/3.0/",
+              "usage_notes": "作者・出典・CC BY 3.0ライセンスを表示。iPS細胞の一般的な資料写真。"
             }
           ]
         },
@@ -666,24 +793,6 @@
           ]
         },
         {
-          "related_id": "20261123-016-R04",
-          "images": [
-            {
-              "id": "20261123-016-R04-I01",
-              "type": "photo",
-              "title": "養鶏場のニワトリと卵",
-              "caption": "資料写真：ニワトリを飼育し、卵を集める養鶏場の一例です。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Chickens_in_cages_with_eggs_in_a_farm_setting.jpg/960px-Chickens_in_cages_with_eggs_in_a_farm_setting.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:Chickens_in_cages_with_eggs_in_a_farm_setting.jpg",
-              "credit": "Shixart1985 (Nenad Stojković)",
-              "license": "CC BY 2.0",
-              "license_url": "https://creativecommons.org/licenses/by/2.0/",
-              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。"
-            }
-          ]
-        },
-        {
           "related_id": "20261123-016-R02",
           "images": [
             {
@@ -698,6 +807,24 @@
               "license": "CC0 1.0",
               "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
               "usage_notes": "CC0として公開。商用利用、複製、改変が可能。出典表示を推奨。資料写真。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-016-R04",
+          "images": [
+            {
+              "id": "20261123-016-R04-I01",
+              "type": "photo",
+              "title": "養鶏場のニワトリと卵",
+              "caption": "資料写真：ニワトリを飼育し、卵を集める養鶏場の一例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Chickens_in_cages_with_eggs_in_a_farm_setting.jpg/960px-Chickens_in_cages_with_eggs_in_a_farm_setting.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Chickens_in_cages_with_eggs_in_a_farm_setting.jpg",
+              "credit": "Shixart1985 (Nenad Stojković)",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。"
             }
           ]
         },
@@ -758,6 +885,24 @@
           ]
         },
         {
+          "related_id": "20261123-017-R02",
+          "images": [
+            {
+              "id": "20261123-017-R02-I01",
+              "type": "map",
+              "title": "アメリカ合衆国の地理地図",
+              "caption": "資料地図：西には太平洋、東には大西洋が広がっています。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/US_map_-_geographic.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:US_map_-_geographic.png",
+              "credit": "US Department of Interior",
+              "license": "Public Domain (US government work)",
+              "license_url": "https://www.law.cornell.edu/uscode/text/17/105",
+              "usage_notes": "米国政府著作物。出典を表示。"
+            }
+          ]
+        },
+        {
           "related_id": "20261123-017-R03",
           "images": [
             {
@@ -792,24 +937,6 @@
               "usage_notes": "作者名、出典URL、ライセンスURLを表示。加工・再配布時は同一ライセンス条件に従う。2015年撮影の資料写真。"
             }
           ]
-        },
-        {
-          "related_id": "20261123-017-R02",
-          "images": [
-            {
-              "id": "20261123-017-R02-I01",
-              "type": "map",
-              "title": "アメリカ合衆国の地理地図",
-              "caption": "資料地図：西には太平洋、東には大西洋が広がっています。",
-              "is_reference": true,
-              "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/US_map_-_geographic.png?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-              "source_url": "https://commons.wikimedia.org/wiki/File:US_map_-_geographic.png",
-              "credit": "US Department of Interior",
-              "license": "Public Domain (US government work)",
-              "license_url": "https://www.law.cornell.edu/uscode/text/17/105",
-              "usage_notes": "米国政府著作物。出典を表示。"
-            }
-          ]
         }
       ]
     },
@@ -832,24 +959,6 @@
       ],
       "related": [
         {
-          "related_id": "20261123-018-R02",
-          "images": [
-            {
-              "id": "20261123-018-R02-I01",
-              "type": "diagram",
-              "title": "東アジアの前線と気団",
-              "caption": "東アジアで暖かい空気と冷たい空気が接する前線の模式図。前線と雨の関係を学ぶ資料。",
-              "is_reference": true,
-              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/East_asian_baiu-front_and_air_masses.png/960px-East_asian_baiu-front_and_air_masses.png",
-              "source_url": "https://commons.wikimedia.org/wiki/File:East_asian_baiu-front_and_air_masses.png",
-              "credit": "Wikimedia Commons contributor",
-              "license": "Public Domain",
-              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
-              "usage_notes": "パブリックドメインとして公開。出典表示を推奨。既存の模式図。"
-            }
-          ]
-        },
-        {
           "related_id": "20261123-018-R01",
           "images": [
             {
@@ -864,6 +973,24 @@
               "license": "CC BY-SA 3.0",
               "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
               "usage_notes": "撮影者・出典・ライセンスへのリンクを表示し、変更内容を明記する。提供元の推奨を示唆しない。加工画像を配布する場合は同一または互換ライセンスを適用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261123-018-R02",
+          "images": [
+            {
+              "id": "20261123-018-R02-I01",
+              "type": "diagram",
+              "title": "東アジアの前線と気団",
+              "caption": "東アジアで暖かい空気と冷たい空気が接する前線の模式図。前線と雨の関係を学ぶ資料。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/East_asian_baiu-front_and_air_masses.png/960px-East_asian_baiu-front_and_air_masses.png",
+              "source_url": "https://commons.wikimedia.org/wiki/File:East_asian_baiu-front_and_air_masses.png",
+              "credit": "Wikimedia Commons contributor",
+              "license": "Public Domain",
+              "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+              "usage_notes": "パブリックドメインとして公開。出典表示を推奨。既存の模式図。"
             }
           ]
         },
