@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "language": "ja",
   "question_count": 20,
-  "related_count": 68,
+  "related_count": 69,
   "questions": [
     {
       "question_id": "20261126-001",
@@ -438,6 +438,30 @@
             {
               "name": "環境省",
               "url": "https://kyushu.env.go.jp/okinawa/amami-okinawa/description/index.html"
+            }
+          ]
+        },
+        {
+          "id": "20261126-005-R04",
+          "relation_type": "answer",
+          "title": "南西諸島と奄美（あまみ）群島",
+          "description": "南西諸島（なんせいしょとう）は、九州の南から台湾に向かって連なる島々です。その一部である奄美群島には、鹿児島県の奄美大島や徳之島（とくのしま）などがあります。奄美群島は亜熱帯（あねったい）に位置し、一年を通して暖かく、雨が多い地域です。",
+          "relationship": "アマミノクロウサギがすむ島々の位置と気候を学びます。",
+          "keywords": [
+            "南西諸島",
+            "奄美群島",
+            "奄美大島",
+            "徳之島",
+            "亜熱帯"
+          ],
+          "sources": [
+            {
+              "name": "環境省 奄美群島の紹介",
+              "url": "https://kyushu.env.go.jp/okinawa/awcc/amami.html"
+            },
+            {
+              "name": "環境省 奄美・琉球世界自然遺産推薦書案",
+              "url": "https://kyushu.env.go.jp/okinawa/272%E8%B3%87%E6%96%993_1_%E5%A5%84%E7%BE%8E%E3%83%BB%E7%90%89%E7%90%83%E4%B8%96%E7%95%8C%E8%87%AA%E7%84%B6%E9%81%BA%E7%94%A3%E6%8E%A8%E8%96%A6%E6%9B%B8%EF%BC%88%E3%83%89%E3%83%A9%E3%83%95%E3%83%88%E6%A1%88%EF%BC%89.pdf"
             }
           ]
         }
