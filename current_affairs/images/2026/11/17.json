@@ -20,7 +20,98 @@
           "usage_notes": "作者・出典・ライセンス表示。変更を明記し、改変画像は同一または互換ライセンス。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261117-001-R01",
+          "images": [
+            {
+              "id": "20261117-001-R01-I01",
+              "type": "photo",
+              "title": "海岸でできたプラスチックを含む岩状物体",
+              "caption": "資料写真：ハワイの海岸で見つかったプラスティグロメレート。自然の物質とプラスチックごみが混ざった例であり、沖縄のプラスティコーラルそのものではありません。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Plastiglomerate_Museon.jpg/960px-Plastiglomerate_Museon.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Plastiglomerate_Museon.jpg",
+              "credit": "Aaikevanoord",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261117-001-R02",
+          "images": [
+            {
+              "id": "20261117-001-R02-I01",
+              "type": "photo",
+              "title": "渡名喜島のサンゴ礁",
+              "caption": "資料写真：沖縄県の渡名喜島のサンゴ礁。岸に近い浅い海に広がり、波の力を弱める働きがあります。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Coral_reef_of_Tonaki_Island_202407.jpg/960px-Coral_reef_of_Tonaki_Island_202407.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Coral_reef_of_Tonaki_Island_202407.jpg",
+              "credit": "Kugel~commonswiki",
+              "license": "CC BY-SA 4.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261117-001-R03",
+          "images": [
+            {
+              "id": "20261117-001-R03-I01",
+              "type": "photo",
+              "title": "白化したサンゴと白化していないサンゴ",
+              "caption": "資料写真：左は白化していないサンゴ、右は白化したサンゴ。色の違いを比べられます。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/CoralBleaching.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:CoralBleaching.jpg",
+              "credit": "NOAA",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261117-001-R04",
+          "images": [
+            {
+              "id": "20261117-001-R04-I01",
+              "type": "photo",
+              "title": "ライン川の堆積物に含まれるマイクロプラスチック",
+              "caption": "資料写真：ライン川の堆積物中の砂やガラス粒とマイクロプラスチック。白い目盛りは1ミリメートルです。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Microplastics_in_sediment_from_the_Rhine.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Microplastics_in_sediment_from_the_Rhine.jpg",
+              "credit": "Martin Wagner et al.（配布元で切り抜き・変更済み）",
+              "license": "CC BY 4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261117-001-R05",
+          "images": [
+            {
+              "id": "20261117-001-R05-I01",
+              "type": "photo",
+              "title": "2019年G20大阪サミット",
+              "caption": "資料写真：2019年6月28日のG20大阪サミットの集合写真。この会議で海洋プラスチックごみ対策についても話し合われました。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Family_photo_of_the_2019_G20_Osaka_summit.jpg/960px-Family_photo_of_the_2019_G20_Osaka_summit.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Family_photo_of_the_2019_G20_Osaka_summit.jpg",
+              "credit": "Alan Santos/PR",
+              "license": "CC BY 2.0",
+              "license_url": "https://creativecommons.org/licenses/by/2.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        }
+      ]
     },
     {
       "question_id": "20261117-002",
@@ -73,6 +164,24 @@
               "license": "CC BY 2.0",
               "license_url": "https://creativecommons.org/licenses/by/2.0/",
               "usage_notes": "CC BY 2.0。作者名「SEDACMaps」とライセンスを表示。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261117-002-R03",
+          "images": [
+            {
+              "id": "20261117-002-R03-I01",
+              "type": "satellite",
+              "title": "国境をこえて広がる煙",
+              "caption": "資料衛星画像：2013年6月19日、スマトラ島の火災による煙がマレー半島周辺へ広がる様子。越境大気汚染の一例です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Satellite_image_of_2013_Southeast_Asian_haze_-_20130619.jpg/960px-Satellite_image_of_2013_Southeast_Asian_haze_-_20130619.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Satellite_image_of_2013_Southeast_Asian_haze_-_20130619.jpg",
+              "credit": "NASA Earth Observatory / Jeff Schmaltz, LANCE/EOSDIS Rapid Response",
+              "license": "Public Domain (US government)",
+              "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+              "usage_notes": "NASAの出典を表示。承認・推奨を示唆しない。"
             }
           ]
         },
@@ -131,10 +240,65 @@
           "usage_notes": "CC BY-SA 4.0。作者名「Ralff Nestor Nacor」とライセンスを表示し、改変・再配布時は同一ライセンス条件を継承。"
         }
       ],
-      "related": []
+      "related": [
+        {
+          "related_id": "20261117-100-R01",
+          "images": [
+            {
+              "id": "20261117-100-R01-I01",
+              "type": "photo",
+              "title": "米国とASEANの首脳会議",
+              "caption": "資料写真：2022年11月12日、カンボジアで行われた米国・ASEAN首脳会議。ASEANが地域外の国とも協力している例です。",
+              "is_reference": true,
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Group_photo_of_the_10th_U.S.-ASEAN_Summit.jpg/960px-Group_photo_of_the_10th_U.S.-ASEAN_Summit.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Group_photo_of_the_10th_U.S.-ASEAN_Summit.jpg",
+              "credit": "Office of the President of the United States",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261117-100-R02",
+          "images": [
+            {
+              "id": "20261117-100-R02-I01",
+              "type": "map",
+              "title": "マラッカ海峡の位置",
+              "caption": "資料地図：マレー半島とスマトラ島の間にあるマラッカ海峡。インド洋と東南アジアの海を結ぶ通り道です。2006年の地図です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Strait_of_malacca.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Strait_of_malacca.jpg",
+              "credit": "U.S. Department of Defense",
+              "license": "Public Domain (US government)",
+              "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        },
+        {
+          "related_id": "20261117-100-R03",
+          "images": [
+            {
+              "id": "20261117-100-R03-I01",
+              "type": "photo",
+              "title": "ジャワ島のブロモ火山",
+              "caption": "資料写真：インドネシアのジャワ島にあるブロモ火山周辺。火山が多い地形を学ぶ資料です。",
+              "is_reference": true,
+              "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bromo_volcano_on_Java_in_Indonesia.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+              "source_url": "https://commons.wikimedia.org/wiki/File:Bromo_volcano_on_Java_in_Indonesia.jpg",
+              "credit": "Peter van der Sluijs",
+              "license": "CC BY-SA 3.0",
+              "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+              "usage_notes": "作者・出典・ライセンスを表示。変更時は明示し、CC BY-SAの改変物は同一または互換ライセンスで配布。配布元画像を使用。"
+            }
+          ]
+        }
+      ]
     }
   ],
   "question_count": 3,
-  "related_count": 4,
-  "image_count": 7
+  "related_count": 13,
+  "image_count": 16
 }
